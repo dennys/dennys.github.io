@@ -9,21 +9,11 @@
       <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>我的第2C篇文章</title>
-      <link>https://examplesite.com/post/test21/</link>
-      <pubDate>Tue, 07 Jun 2022 22:18:32 +0800</pubDate>
-      
-      <guid>https://examplesite.com/post/test21/</guid>
-      <description>我的第一篇文章內容 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie). sdfadsf YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
-YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).</description>
-    </item>
-    
+    <lastBuildDate>Fri, 03 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的第3篇文章</title>
       <link>https://examplesite.com/post/test3/</link>
-      <pubDate>Tue, 07 Jun 2022 22:18:32 +0800</pubDate>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
       
       <guid>https://examplesite.com/post/test3/</guid>
       <description>我的第一篇文章內容 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie). sdfadsf YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
@@ -31,9 +21,19 @@ YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片�
     </item>
     
     <item>
+      <title>我的第2C篇文章</title>
+      <link>https://examplesite.com/post/test21/</link>
+      <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://examplesite.com/post/test21/</guid>
+      <description>我的第一篇文章內容 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie). sdfadsf YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
+YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).</description>
+    </item>
+    
+    <item>
       <title>我的第2A篇文章</title>
       <link>https://examplesite.com/post/test2/</link>
-      <pubDate>Sun, 05 Jun 2022 22:18:32 +0800</pubDate>
+      <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
       <guid>https://examplesite.com/post/test2/</guid>
       <description>我的第一篇文章內容 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
