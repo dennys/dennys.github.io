@@ -31,7 +31,7 @@
     <pubDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
     <guid>https://example.com/update-unlock-pixel-5/</guid>
-    <description><![CDATA[<h1 id="事前準備">事前準備</h1>
+    <description><![CDATA[<h2 id="事前準備">事前準備</h2>
 <ol>
 <li>下載
 <ol>
@@ -47,7 +47,7 @@
 
 <!-- /wp:image -->
 <br>
-<h1 id="更新">更新</h1>
+<h2 id="更新">更新</h2>
 <ol>
 <li>
 <p>執行以下指令重新開機進入sideload mode</p>
@@ -72,7 +72,7 @@
 <p>進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.</li></ol></p>
 </li>
 </ol>
-<h1 id="參考">參考</h1>
+<h2 id="參考">參考</h2>
 <ol>
 <li><a href="https://forum.xda-developers.com/t/4356219/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/4356219/</a></li>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=565&amp;t=6487485" target="_blank" rel="noopener noreffer">https://www.mobile01.com/topicdetail.php?f=565&t=6487485</a></li>
@@ -85,8 +85,9 @@
     <pubDate>Thu, 02 Jun 2022 10:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
     <guid>https://example.com/realvnc/</guid>
-    <description><![CDATA[<h1 id="需求">需求</h1>
-<h1 id="步驟-server-端">步驟 (Server 端)</h1>
+    <description><![CDATA[<h2 id="需求">需求</h2>
+<p>要做一個</p>
+<h2 id="步驟-server-端">步驟 (Server 端)</h2>
 <ol>
 <li>把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</li>
 </ol>
@@ -103,7 +104,7 @@
 <!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
 
 <!-- /wp:image -->
-<h1 id="步驟-client-端">步驟 (Client 端)</h1>
+<h2 id="步驟-client-端">步驟 (Client 端)</h2>
 <ol>
 <li>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</li>
 </ol>
@@ -111,12 +112,12 @@
 
 <!-- /wp:image -->
 <br/>
-<h1 id="成果">成果</h1>
+<h2 id="成果">成果</h2>
 <p>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.</p>
 <!-- wp:image {"id":760,"sizeSlug":"large","linkDestination":"media"} -->
 
 <!-- /wp:image -->
-<h1 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h1>
+<h2 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h2>
 <p>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</p>
 <!-- wp:image {"id":762,"sizeSlug":"large","linkDestination":"media"} -->
 
@@ -130,7 +131,7 @@
     <guid>https://example.com/openvpn/</guid>
     <description><![CDATA[<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.</p>
-<h1 id="在-asuswrt-merlin-設定-openvpn">在 Asuswrt-Merlin 設定 OpenVPN</h1>
+<h2 id="在-asuswrt-merlin-設定-openvpn">在 Asuswrt-Merlin 設定 OpenVPN</h2>
 <ol>
 <li>進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我是只有要透過 VPN 來連內網, 所以設定 &ldquo;LAN only&rdquo;. 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.</li>
 </ol>
@@ -176,11 +177,11 @@ comp-lzo adaptive
 keepalive 15 60
 remote-cert-tls server
 </code></pre>
-<h1 id="openvpn-client-for-windows">OpenVPN Client for Windows</h1>
+<h2 id="openvpn-client-for-windows">OpenVPN Client for Windows</h2>
 <!-- wp:paragraph -->
 <p>可從這裡下載: https://openvpn.net/community-downloads/, 裝好後選 import -&gt; 匯入設定檔, 把上面的檔案輸入進去, 就可以使用了.</p>
 <!-- /wp:paragraph -->
-<h1 id="openvpn-client-for-android">OpenVPN Client for Android</h1>
+<h2 id="openvpn-client-for-android">OpenVPN Client for Android</h2>
 <p>可從這裡下載: <a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn" target="_blank" rel="noopener noreffer">https://play.google.com/store/apps/details?id=net.openvpn.openvpn</a></p>
 <p>連線成功後, 會出現這樣的通知, 可以直接在通知的地方暫停或斷線, 還滿方便的.</p>
 <!-- wp:image {"id":777,"sizeSlug":"large","linkDestination":"media"} -->
@@ -190,16 +191,16 @@ remote-cert-tls server
 <!-- wp:image {"id":779,"width":304,"height":615,"sizeSlug":"large","linkDestination":"media"} -->
 
 <!-- /wp:image -->
-<h1 id="openvpn-client-for-ios-macos-linux">OpenVPN Client for iOS, MacOS, Linux</h1>
+<h2 id="openvpn-client-for-ios-macos-linux">OpenVPN Client for iOS, MacOS, Linux</h2>
 <p>可在<a href="https://openvpn.net/download-open-vpn/">這裡</a>下載其他平台的 client.</p>
 <p>OpenVPN Server 上的連線狀況</p>
 <p>從這裡可以看出他有幾個 client, 實際和VPN的IP, 從甚麼時候連的, 使用的資料量等等.</p>
 <!-- wp:image {"id":784,"sizeSlug":"large","linkDestination":"media"} -->
 
 <!-- /wp:image -->
-<h1 id="softether-vpn">SoftEther VPN</h1>
+<h2 id="softether-vpn">SoftEther VPN</h2>
 <p><a href="https://www.softether.org/">SoftEther VPN</a> 的官方文件說明他是 <em>An Open-Source Free ​Cross-platform Multi-protocol VPN Program</em>, 是看到有些人說他的 GUI 比 OpenVPN 好用, 但我用 OpenVPN 一切順利, 就懶得試了.</p>
-<h1 id="asuswrt-openvpn-還不足的地方">Asuswrt OpenVPN 還不足的地方</h1>
+<h2 id="asuswrt-openvpn-還不足的地方">Asuswrt OpenVPN 還不足的地方</h2>
 <p>感覺這還是比較陽春的 VPN server, 想到幾個不足的地方, 不過個人使用綽綽有餘了.</p>
 <ol>
 <li>沒有 timeout 機制, 連上來了就不會斷線.</li>

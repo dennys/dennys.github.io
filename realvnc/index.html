@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>無聲遠端桌面連線 - VNC - Dennys Diary</title><meta name="Description" content="Dennys Diary"><meta property="og:title" content="無聲遠端桌面連線 - VNC" />
-<meta property="og:description" content="需求 步驟 (Server 端) 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
+<meta property="og:description" content="需求 要做一個
+步驟 (Server 端) 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
 步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠. 成果 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
 如果臨時想去移動對方的鍵盤滑鼠怎麼辦? 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了." />
 <meta property="og:type" content="article" />
@@ -17,7 +18,8 @@
 <meta name="twitter:image" content="https://example.com/logo.png"/>
 
 <meta name="twitter:title" content="無聲遠端桌面連線 - VNC"/>
-<meta name="twitter:description" content="需求 步驟 (Server 端) 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
+<meta name="twitter:description" content="需求 要做一個
+步驟 (Server 端) 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
 步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠. 成果 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
 如果臨時想去移動對方的鍵盤滑鼠怎麼辦? 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了."/>
 <meta name="application-name" content="Dennys Diary">
@@ -34,7 +36,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/example.com\/realvnc\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "VNC","wordcount":  75 ,
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "VNC","wordcount":  76 ,
         "url": "https:\/\/example.com\/realvnc\/","datePublished": "2022-06-02T10:18:32+08:00","dateModified": "2022-06-02T10:18:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
@@ -113,7 +115,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">無聲遠端桌面連線 - VNC</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-02">2022-06-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;75 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-02">2022-06-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;76 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;<span id="/realvnc/" class="leancloud_visitors" data-flag-title="無聲遠端桌面連線 - VNC">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
@@ -122,9 +124,18 @@
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><h1 id="需求">需求</h1>
-<h1 id="步驟-server-端">步驟 (Server 端)</h1>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#步驟-server-端">步驟 (Server 端)</a></li>
+    <li><a href="#步驟-client-端">步驟 (Client 端)</a></li>
+    <li><a href="#成果">成果</a></li>
+    <li><a href="#如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="需求">需求</h2>
+<p>要做一個</p>
+<h2 id="步驟-server-端">步驟 (Server 端)</h2>
 <ol>
 <li>把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</li>
 </ol>
@@ -141,7 +152,7 @@
 <!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></figure>
 <!-- /wp:image -->
-<h1 id="步驟-client-端">步驟 (Client 端)</h1>
+<h2 id="步驟-client-端">步驟 (Client 端)</h2>
 <ol>
 <li>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</li>
 </ol>
@@ -149,12 +160,12 @@
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a></figure>
 <!-- /wp:image -->
 <br/>
-<h1 id="成果">成果</h1>
+<h2 id="成果">成果</h2>
 <p>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.</p>
 <!-- wp:image {"id":760,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a></figure>
 <!-- /wp:image -->
-<h1 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h1>
+<h2 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h2>
 <p>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</p>
 <!-- wp:image {"id":762,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-9.png"><img src="https://dennys.files.wordpress.com/2022/06/image-9.png?w=469" alt="" class="wp-image-762"/></a></figure>

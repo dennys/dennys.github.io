@@ -1,7 +1,7 @@
 # 更新 Unlock 過的 Pixel 5
 
 
-# 事前準備
+## 事前準備
 
 1. 下載
     1. [Pixel OTA Images](https://developers.google.com/android/ota)
@@ -15,7 +15,7 @@
 <!-- /wp:image -->
 <br>
 
-# 更新
+## 更新
 
 1. 執行以下指令重新開機進入sideload mode
 
@@ -37,7 +37,7 @@
 
 1. 進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.</li></ol>
 
-# 參考
+## 參考
 1. https://forum.xda-developers.com/t/4356219/
 1. https://www.mobile01.com/topicdetail.php?f=565&t=6487485
 

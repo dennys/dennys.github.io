@@ -5,7 +5,7 @@
 
 註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 https://www.asus.com/tw/support/FAQ/1044190/, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
 
-# 在 Asuswrt-Merlin 設定 OpenVPN
+## 在 Asuswrt-Merlin 設定 OpenVPN
 
 1. 進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我是只有要透過 VPN 來連內網, 所以設定 "LAN only". 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.
 
@@ -54,13 +54,13 @@
     keepalive 15 60
     remote-cert-tls server
 
-# OpenVPN Client for Windows
+## OpenVPN Client for Windows
 
 <!-- wp:paragraph -->
 <p>可從這裡下載: https://openvpn.net/community-downloads/, 裝好後選 import -&gt; 匯入設定檔, 把上面的檔案輸入進去, 就可以使用了.</p>
 <!-- /wp:paragraph -->
 
-# OpenVPN Client for Android
+## OpenVPN Client for Android
 
 可從這裡下載: https://play.google.com/store/apps/details?id=net.openvpn.openvpn
 
@@ -76,7 +76,7 @@ App 本身也會顯示使用的網路狀況
 <figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/06/image-16.png"><img src="https://dennys.files.wordpress.com/2022/06/image-16.png?w=390" alt="" class="wp-image-779" width="304" height="615"/></a></figure>
 <!-- /wp:image -->
 
-# OpenVPN Client for iOS, MacOS, Linux
+## OpenVPN Client for iOS, MacOS, Linux
 
 可在<a href="https://openvpn.net/download-open-vpn/">這裡</a>下載其他平台的 client.
 
@@ -88,11 +88,11 @@ OpenVPN Server 上的連線狀況
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-17.png"><img src="https://dennys.files.wordpress.com/2022/06/image-17.png?w=757" alt="" class="wp-image-784"/></a></figure>
 <!-- /wp:image -->
 
-# SoftEther VPN
+## SoftEther VPN
 
 <a href="https://www.softether.org/">SoftEther VPN</a> 的官方文件說明他是 <em>An Open-Source Free ​Cross-platform Multi-protocol VPN Program</em>, 是看到有些人說他的 GUI 比 OpenVPN 好用, 但我用 OpenVPN 一切順利, 就懶得試了.
 
-# Asuswrt OpenVPN 還不足的地方
+## Asuswrt OpenVPN 還不足的地方
 
 感覺這還是比較陽春的 VPN server, 想到幾個不足的地方, 不過個人使用綽綽有餘了.
 1. 沒有 timeout 機制, 連上來了就不會斷線.

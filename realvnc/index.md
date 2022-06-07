@@ -1,9 +1,11 @@
 # 無聲遠端桌面連線 - VNC
 
 
-# 需求
+## 需求
 
-# 步驟 (Server 端)
+要做一個
+
+## 步驟 (Server 端)
 
 1. 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
 
@@ -23,7 +25,7 @@
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></figure>
 <!-- /wp:image -->
 
-# 步驟 (Client 端)
+## 步驟 (Client 端)
 
 1. 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
 
@@ -32,7 +34,7 @@
 <!-- /wp:image -->
 <br/>
 
-# 成果
+## 成果
 
 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
 
@@ -40,7 +42,7 @@
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a></figure>
 <!-- /wp:image -->
 
-# 如果臨時想去移動對方的鍵盤滑鼠怎麼辦?
+## 如果臨時想去移動對方的鍵盤滑鼠怎麼辦?
 
 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.
 
