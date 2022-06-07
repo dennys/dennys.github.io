@@ -21,7 +21,7 @@
 <!-- /wp:image -->
 <br>
 
-如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
+如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :yum:
 
 <!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></figure>
