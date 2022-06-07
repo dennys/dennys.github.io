@@ -7,32 +7,35 @@
 
 ## 步驟 (Server 端)
 
-1. 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
 
 <!-- wp:image {"id":749,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-3.png"><img src="https://dennys.files.wordpress.com/2022/06/image-3.png?w=608" alt="" class="wp-image-749"/></a></figure>
 <!-- /wp:image -->
+<br>
 
-2. 關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
 
 <!-- wp:image {"id":751,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-4.png"><img src="https://dennys.files.wordpress.com/2022/06/image-4.png?w=608" alt="" class="wp-image-751"/></a></figure>
 <!-- /wp:image -->
+<br>
 
 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :p
 
 <!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></figure>
 <!-- /wp:image -->
+<br>
 
 ## 步驟 (Client 端)
 
-1. 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
+在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
 
 <!-- wp:image {"id":758,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a></figure>
 <!-- /wp:image -->
-<br/>
+<br>
 
 ## 成果
 
@@ -41,6 +44,7 @@
 <!-- wp:image {"id":760,"sizeSlug":"large","linkDestination":"media"} -->
 <figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a></figure>
 <!-- /wp:image -->
+<br>
 
 ## 如果臨時想去移動對方的鍵盤滑鼠怎麼辦?
 
