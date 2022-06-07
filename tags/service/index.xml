@@ -1,0 +1,29 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>service - Tag - Dennys Diary</title>
+        <link>https://example.com/tags/service/</link>
+        <description>service - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/service/" rel="self" type="application/rss+xml" /><item>
+    <title>Java RESTful service</title>
+    <link>https://example.com/java-restful-service/</link>
+    <pubDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://example.com/java-restful-service/</guid>
+    <description><![CDATA[<ol>
+<li>Service</li>
+<li>Document (Swagger)</li>
+<li>Validation</li>
+<li>Authentication</li>
+<li>Authorizatio</li>
+<li>Log</li>
+<li>Test</li>
+<li>Stress test</li>
+<li>Auto test, mock, …</li>
+<li>Management – supervisor – Python vs Golang</li>
+<li>Monitor – Grafana</li>
+<li>Monitor – OpenTelemetry, Jaeger,</li>
+</ol>
+]]></description>
+</item>
+</channel>
+</rss>
