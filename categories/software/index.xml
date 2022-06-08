@@ -5,10 +5,10 @@
         <description>software - Category - Dennys Diary</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Jun 2022 10:18:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/software/" rel="self" type="application/rss+xml" /><item>
     <title>無聲遠端桌面連線 - VNC</title>
-    <link>https://example.com/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/</link>
+    <link>https://example.com/2022/06/realvnc/</link>
     <pubDate>Thu, 02 Jun 2022 10:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/</guid>
+    <guid>https://example.com/2022/06/realvnc/</guid>
     <description><![CDATA[<h2 id="需求">需求</h2>
 <p>要做一個</p>
 <h2 id="步驟-server-端">步驟 (Server 端)</h2>

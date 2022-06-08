@@ -4,54 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>更新 Unlock 過的 Pixel 5 - Dennys Diary</title><meta name="Description" content="Dennys Diary"><meta property="og:title" content="更新 Unlock 過的 Pixel 5" />
-<meta property="og:description" content="事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新 執行以下指令重新開機進入sideload mode
-adb reboot sideload
-刷入安全性更新檔案, 這個步驟會比較久
-adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
-完成上傳後勿重新開機，&ldquo;在手機上&rdquo; 選擇Reboot to bootloader
-刷入被 Magisk 修補後的 boot.img
-fastboot flash boot &ndash;slot=all magisk_patched-24201_LSQ4E.img
-執行以下指令重新開機
-fastboot reboot
-進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.
-參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&t=6487485 " />
+        <title>無聲遠端桌面連線 - VNC - Dennys Diary</title><meta name="Description" content="Dennys Diary"><meta property="og:title" content="無聲遠端桌面連線 - VNC" />
+<meta property="og:description" content="需求 要做一個
+步驟 (Server 端) 先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋
+步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
+成果 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
+如果臨時想去移動對方的鍵盤滑鼠怎麼辦? 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/update-unlock-pixel-5/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-06-02T22:18:32+08:00" />
-<meta property="article:modified_time" content="2022-06-02T22:18:32+08:00" /><meta property="og:site_name" content="Dennys Diary" />
+<meta property="og:url" content="https://example.com/2022/06/realvnc/" /><meta property="og:image" content="https://example.com/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-02T10:18:32+08:00" />
+<meta property="article:modified_time" content="2022-06-02T10:18:32+08:00" /><meta property="og:site_name" content="Dennys Diary" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://example.com/logo.png"/>
 
-<meta name="twitter:title" content="更新 Unlock 過的 Pixel 5"/>
-<meta name="twitter:description" content="事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新 執行以下指令重新開機進入sideload mode
-adb reboot sideload
-刷入安全性更新檔案, 這個步驟會比較久
-adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
-完成上傳後勿重新開機，&ldquo;在手機上&rdquo; 選擇Reboot to bootloader
-刷入被 Magisk 修補後的 boot.img
-fastboot flash boot &ndash;slot=all magisk_patched-24201_LSQ4E.img
-執行以下指令重新開機
-fastboot reboot
-進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.
-參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&t=6487485 "/>
+<meta name="twitter:title" content="無聲遠端桌面連線 - VNC"/>
+<meta name="twitter:description" content="需求 要做一個
+步驟 (Server 端) 先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋
+步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
+成果 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
+如果臨時想去移動對方的鍵盤滑鼠怎麼辦? 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了."/>
 <meta name="application-name" content="Dennys Diary">
 <meta name="apple-mobile-web-app-title" content="Dennys Diary"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/update-unlock-pixel-5/" /><link rel="prev" href="https://example.com/realvnc/" /><link rel="next" href="https://example.com/java-restful-service/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://example.com/2022/06/realvnc/" /><link rel="prev" href="https://example.com/2022/06/openvpn-asuswrt-merlin/" /><link rel="next" href="https://example.com/2022/06/update-unlocked-pixel5/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><meta name="yandex-verification" content="89132458" /><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "更新 Unlock 過的 Pixel 5",
+        "headline": "無聲遠端桌面連線 - VNC",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/example.com\/update-unlock-pixel-5\/"
-        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Android","wordcount":  59 ,
-        "url": "https:\/\/example.com\/update-unlock-pixel-5\/","datePublished": "2022-06-02T22:18:32+08:00","dateModified": "2022-06-02T22:18:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/example.com\/2022\/06\/realvnc\/"
+        },"image": ["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "VNC","wordcount":  76 ,
+        "url": "https:\/\/example.com\/2022\/06\/realvnc\/","datePublished": "2022-06-02T10:18:32+08:00","dateModified": "2022-06-02T10:18:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/example.com\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -68,7 +60,7 @@ fastboot reboot
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/update-unlock-pixel-5/" selected>English</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/2022/06/realvnc/" selected>English</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
@@ -115,7 +107,7 @@ fastboot reboot
                 </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/update-unlock-pixel-5/" selected>English</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/2022/06/realvnc/" selected>English</option></select>
                 </a></div>
     </div>
 </header><div class="search-dropdown desktop">
@@ -127,10 +119,10 @@ fastboot reboot
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">更新 Unlock 過的 Pixel 5</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-02">2022-06-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;59 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;<span id="/update-unlock-pixel-5/" class="leancloud_visitors" data-flag-title="更新 Unlock 過的 Pixel 5">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">無聲遠端桌面連線 - VNC</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-06-02">2022-06-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;76 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;<span id="/2022/06/realvnc/" class="leancloud_visitors" data-flag-title="無聲遠端桌面連線 - VNC">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -140,58 +132,48 @@ fastboot reboot
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#事前準備">事前準備</a></li>
-    <li><a href="#更新">更新</a></li>
-    <li><a href="#參考">參考</a></li>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#步驟-server-端">步驟 (Server 端)</a></li>
+    <li><a href="#步驟-client-端">步驟 (Client 端)</a></li>
+    <li><a href="#成果">成果</a></li>
+    <li><a href="#如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="事前準備">事前準備</h2>
-<ol>
-<li>下載
-<ol>
-<li><a href="https://developers.google.com/android/ota" target="_blank" rel="noopener noreffer">Pixel OTA Images</a></li>
-<li><a href="https://developers.google.com/android/images" target="_blank" rel="noopener noreffer">Pixel Factory Images</a></li>
-</ol>
-</li>
-<li>把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img</li>
-<li>利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中</li>
-<li>進入開發者模式並確定 adb devices 可以連</li>
-</ol>
-<!-- wp:image {"id":256,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/01/auth.jpg"><img src="https://dennys.files.wordpress.com/2022/01/auth.jpg?w=197" alt="" class="wp-image-256"/></a></figure>
+            </div><div class="content" id="content"><h2 id="需求">需求</h2>
+<p>要做一個</p>
+<h2 id="步驟-server-端">步驟 (Server 端)</h2>
+<p>先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</p>
+<!-- wp:image {"id":749,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-3.png"><img src="https://dennys.files.wordpress.com/2022/06/image-3.png?w=608" alt="" class="wp-image-749"/></a></figure>
 <!-- /wp:image -->
 <br>
-<h2 id="更新">更新</h2>
-<ol>
-<li>
-<p>執行以下指令重新開機進入sideload mode</p>
-<p>adb reboot sideload</p>
-</li>
-<li>
-<p>刷入安全性更新檔案, 這個步驟會比較久</p>
-<p>adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip</p>
-</li>
-<li>
-<p>完成上傳後<strong><mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">勿重新開機，&ldquo;在手機上&rdquo; 選擇Reboot to bootloader</mark></strong></p>
-</li>
-<li>
-<p>刷入被 Magisk 修補後的 boot.img</p>
-<p>fastboot flash boot &ndash;slot=all magisk_patched-24201_LSQ4E.img</p>
-</li>
-<li>
-<p>執行以下指令重新開機</p>
-<p>fastboot reboot</p>
-</li>
-<li>
-<p>進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.</li></ol></p>
-</li>
-</ol>
-<h2 id="參考">參考</h2>
-<ol>
-<li><a href="https://forum.xda-developers.com/t/4356219/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/4356219/</a></li>
-<li><a href="https://www.mobile01.com/topicdetail.php?f=565&amp;t=6487485" target="_blank" rel="noopener noreffer">https://www.mobile01.com/topicdetail.php?f=565&t=6487485</a></li>
-</ol>
-</div><div class="post-footer" id="post-footer">
+<p>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)</p>
+<!-- wp:image {"id":751,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-4.png"><img src="https://dennys.files.wordpress.com/2022/06/image-4.png?w=608" alt="" class="wp-image-751"/></a></figure>
+<!-- /wp:image -->
+<br>
+<p>如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋</p>
+<!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></figure>
+<!-- /wp:image -->
+<br>
+<h2 id="步驟-client-端">步驟 (Client 端)</h2>
+<p>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</p>
+<!-- wp:image {"id":758,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a></figure>
+<!-- /wp:image -->
+<br>
+<h2 id="成果">成果</h2>
+<p>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.</p>
+<!-- wp:image {"id":760,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a></figure>
+<!-- /wp:image -->
+<br>
+<h2 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h2>
+<p>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</p>
+<!-- wp:image {"id":762,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/06/image-9.png"><img src="https://dennys.files.wordpress.com/2022/06/image-9.png?w=469" alt="" class="wp-image-762"/></a></figure>
+<!-- /wp:image --></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -199,23 +181,23 @@ fastboot reboot
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/update-unlock-pixel-5/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/2022/06/realvnc/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://example.com/update-unlock-pixel-5/" data-title="更新 Unlock 過的 Pixel 5" data-via="xxxx" data-hashtags="Android"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://example.com/update-unlock-pixel-5/" data-hashtag="Android"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://example.com/update-unlock-pixel-5/" data-title="更新 Unlock 過的 Pixel 5"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://example.com/update-unlock-pixel-5/" data-title="更新 Unlock 過的 Pixel 5"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.0.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://example.com/update-unlock-pixel-5/" data-title="更新 Unlock 過的 Pixel 5"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://example.com/2022/06/realvnc/" data-title="無聲遠端桌面連線 - VNC" data-via="xxxx" data-hashtags="VNC"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://example.com/2022/06/realvnc/" data-hashtag="VNC"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://example.com/2022/06/realvnc/" data-title="無聲遠端桌面連線 - VNC"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://example.com/2022/06/realvnc/" data-title="無聲遠端桌面連線 - VNC"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.0.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://example.com/2022/06/realvnc/" data-title="無聲遠端桌面連線 - VNC"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/android/">Android</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vnc/">VNC</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/realvnc/" class="prev" rel="prev" title="無聲遠端桌面連線 - VNC"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>無聲遠端桌面連線 - VNC</a>
-            <a href="/java-restful-service/" class="next" rel="next" title="Java RESTful service">Java RESTful service<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/2022/06/openvpn-asuswrt-merlin/" class="prev" rel="prev" title="OpenVPN"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>OpenVPN</a>
+            <a href="/2022/06/update-unlocked-pixel5/" class="next" rel="next" title="更新 Unlock 過的 Pixel 5">更新 Unlock 過的 Pixel 5<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

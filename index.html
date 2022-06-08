@@ -110,7 +110,7 @@
         <a href="/2022/06/java-restful-service/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/service/">service</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2022/06/%E6%9B%B4%E6%96%B0-unlock-%E9%81%8E%E7%9A%84-pixel-5/">更新 Unlock 過的 Pixel 5</a>
+        <a href="/2022/06/update-unlocked-pixel5/">更新 Unlock 過的 Pixel 5</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-02">2022-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a></span></div><div class="content">事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新 執行以下指令重新開機進入sideload mode
 adb reboot sideload
 刷入安全性更新檔案, 這個步驟會比較久
@@ -122,10 +122,10 @@ fastboot flash boot &ndash;slot=all magisk_patched-24201_LSQ4E.img
 fastboot reboot
 進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.
 參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&t=6487485 </div><div class="post-footer">
-        <a href="/2022/06/%E6%9B%B4%E6%96%B0-unlock-%E9%81%8E%E7%9A%84-pixel-5/">Read More</a><div class="post-tags">
+        <a href="/2022/06/update-unlocked-pixel5/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/android/">Android</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/">無聲遠端桌面連線 - VNC</a>
+        <a href="/2022/06/realvnc/">無聲遠端桌面連線 - VNC</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-02">2022-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div><div class="content">需求 要做一個
 步驟 (Server 端) 先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
 再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
@@ -133,7 +133,7 @@ fastboot reboot
 步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
 成果 依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.
 如果臨時想去移動對方的鍵盤滑鼠怎麼辦? 很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</div><div class="post-footer">
-        <a href="/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/">Read More</a><div class="post-tags">
+        <a href="/2022/06/realvnc/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vnc/">VNC</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/2022/06/openvpn-asuswrt-merlin/">OpenVPN</a>
