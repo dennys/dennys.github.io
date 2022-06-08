@@ -21,10 +21,26 @@
                     hreflang="en"
                     href="https://example.com/"
                     /></url><url>
-            <loc>https://example.com/categories/it/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/it/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-tw"
+                        href="https://example.com/zh-tw/categories/it/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/categories/it/"
+                    /></url><url>
             <loc>https://example.com/categories/java/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/2022/06/java-restful-service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-tw"
+                        href="https://example.com/zh-tw/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://example.com/posts/"
+                    /></url><url>
             <loc>https://example.com/tags/service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://example.com/tags/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
@@ -35,11 +51,15 @@
                     hreflang="en"
                     href="https://example.com/tags/"
                     /></url><url>
-            <loc>https://example.com/tags/android/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/2022/06/update-unlocked-pixel5/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/categories/software/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/vnc/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/2022/06/realvnc/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/openvpn/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/2022/06/openvpn-asuswrt-merlin/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/vpn/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>https://example.com/tags/.net/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/categories/devops/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/tags/gitlab/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/2022/03/gitlab-dotnet4-ci-cd/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/tags/ifttt/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/2022/03/use-ifttt-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/2022/03/use-wise-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/tags/checkmarx/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/2022/01/gitlab-checkmarx-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/tags/sonarqube/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://example.com/tags/ci/cd/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

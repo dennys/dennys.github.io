@@ -2,7 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/zh-tw/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/zh-tw/tags/android/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/categories/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/categories/"
@@ -11,7 +12,7 @@
                     hreflang="zh-tw"
                     href="https://example.com/zh-tw/categories/"
                     /></url><url>
-            <loc>https://example.com/zh-tw/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/zh-tw/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/"
@@ -20,7 +21,25 @@
                     hreflang="zh-tw"
                     href="https://example.com/zh-tw/"
                     /></url><url>
-            <loc>https://example.com/zh-tw/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://example.com/zh-tw/categories/it/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://example.com/categories/it/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-tw"
+                    href="https://example.com/zh-tw/categories/it/"
+                    /></url><url>
+            <loc>https://example.com/zh-tw/posts/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://example.com/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="zh-tw"
+                    href="https://example.com/zh-tw/posts/"
+                    /></url><url>
+            <loc>https://example.com/zh-tw/tags/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://example.com/tags/"
@@ -28,4 +47,11 @@
                     rel="alternate"
                     hreflang="zh-tw"
                     href="https://example.com/zh-tw/tags/"
-                    /></url></urlset>
+                    /></url><url>
+            <loc>https://example.com/zh-tw/2022/06/update-unlocked-pixel5/</loc><lastmod>2022-06-02T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/categories/software/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/tags/vnc/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/2022/06/realvnc/</loc><lastmod>2022-06-02T10:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/tags/openvpn/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/2022/06/openvpn-asuswrt-merlin/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/zh-tw/tags/vpn/</loc><lastmod>2022-06-01T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
