@@ -25,7 +25,7 @@
 
 <!-- /wp:image -->
 <br>
-<h2 id="更新">更新</h2>
+<h2 id="更新步驟">更新步驟</h2>
 <ol>
 <li>
 <p>執行以下指令重新開機進入sideload mode</p>
@@ -64,7 +64,12 @@
     <author>Dennys</author>
     <guid>https://example.com/zh-tw/2022/06/realvnc/</guid>
     <description><![CDATA[<h2 id="需求">需求</h2>
-<p>要做一個</p>
+<p>要做一個遠端登入的功能, 而且需要做到以下幾項</p>
+<ol>
+<li>進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思</li>
+<li>進去的時候, 預設是只有 &ldquo;看&rdquo; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺</li>
+<li>有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了</li>
+</ol>
 <h2 id="步驟-server-端">步驟 (Server 端)</h2>
 <p>先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</p>
 <!-- wp:image {"id":749,"sizeSlug":"large","linkDestination":"media"} -->
