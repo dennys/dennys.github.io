@@ -7,10 +7,10 @@
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Java RESTful service</title>
-    <link>https://example.com/java-restful-service/</link>
+    <link>https://example.com/2022/06/java-restful-service/</link>
     <pubDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/java-restful-service/</guid>
+    <guid>https://example.com/2022/06/java-restful-service/</guid>
     <description><![CDATA[<ol>
 <li>Service</li>
 <li>Document (Swagger)</li>
@@ -29,10 +29,10 @@
 </item>
 <item>
     <title>更新 Unlock 過的 Pixel 5</title>
-    <link>https://example.com/update-unlock-pixel-5/</link>
+    <link>https://example.com/2022/06/%E6%9B%B4%E6%96%B0-unlock-%E9%81%8E%E7%9A%84-pixel-5/</link>
     <pubDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/update-unlock-pixel-5/</guid>
+    <guid>https://example.com/2022/06/%E6%9B%B4%E6%96%B0-unlock-%E9%81%8E%E7%9A%84-pixel-5/</guid>
     <description><![CDATA[<h2 id="事前準備">事前準備</h2>
 <ol>
 <li>下載
@@ -83,10 +83,10 @@
 </item>
 <item>
     <title>無聲遠端桌面連線 - VNC</title>
-    <link>https://example.com/realvnc/</link>
+    <link>https://example.com/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/</link>
     <pubDate>Thu, 02 Jun 2022 10:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/realvnc/</guid>
+    <guid>https://example.com/2022/06/%E7%84%A1%E8%81%B2%E9%81%A0%E7%AB%AF%E6%A1%8C%E9%9D%A2%E9%80%A3%E7%B7%9A-vnc/</guid>
     <description><![CDATA[<h2 id="需求">需求</h2>
 <p>要做一個</p>
 <h2 id="步驟-server-端">步驟 (Server 端)</h2>
@@ -125,10 +125,10 @@
 </item>
 <item>
     <title>OpenVPN</title>
-    <link>https://example.com/openvpn/</link>
+    <link>https://example.com/2022/06/openvpn-asuswrt-merlin/</link>
     <pubDate>Wed, 01 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/openvpn/</guid>
+    <guid>https://example.com/2022/06/openvpn-asuswrt-merlin/</guid>
     <description><![CDATA[<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
 <br></p>

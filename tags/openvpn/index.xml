@@ -5,10 +5,10 @@
         <description>OpenVPN - Tag - Dennys Diary</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/openvpn/" rel="self" type="application/rss+xml" /><item>
     <title>OpenVPN</title>
-    <link>https://example.com/openvpn/</link>
+    <link>https://example.com/2022/06/openvpn-asuswrt-merlin/</link>
     <pubDate>Wed, 01 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/openvpn/</guid>
+    <guid>https://example.com/2022/06/openvpn-asuswrt-merlin/</guid>
     <description><![CDATA[<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
 <br></p>
