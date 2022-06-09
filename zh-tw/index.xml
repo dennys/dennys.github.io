@@ -204,5 +204,28 @@ remote-cert-tls server
 </ol>
 ]]></description>
 </item>
+<item>
+    <title>把 Android 12 鎖定畫面的時鐘改單行</title>
+    <link>https://dennys.github.io/zh-tw/2022/04/android-12-lock-screen-double-line-clock/</link>
+    <pubDate>Sun, 10 Apr 2022 00:18:32 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/04/android-12-lock-screen-double-line-clock/</guid>
+    <description><![CDATA[<h2 id="前言">前言</h2>
+<p>自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-1.png"></a></p>
+<p>看起來<a href="https://support.google.com/pixelphone/thread/133395984/">評價</a>不是很好, 我也覺得很不直覺&hellip;</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-3.png"></a></p>
+<p>不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-12.png"></a></p>
+<h2 id="成果">成果</h2>
+<p>結果就會變成如下</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-2.png"></a></p>
+<h2 id="參考">參考:</h2>
+<ol>
+<li>Google Pixel Update - March 2022(<a href="https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022" target="_blank" rel="noopener noreffer">https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022</a>) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.)</li>
+<li>Google community 的說明: <a href="https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966" target="_blank" rel="noopener noreffer">https://support.google.com/pixelphone/thread/133395984?hl=en&msgid=154180966</a></li>
+</ol>
+]]></description>
+</item>
 </channel>
 </rss>
