@@ -1,11 +1,11 @@
 # GitLab Checkmarx SonarQube integration
 
 
+![GitLab](/images/GitLab_logo.webp)
+![Checkmarx](/images/Checkmarx_logo.png)
+![SonarQube](/images/SonarQube_logo.webp)
+
 ## Purpose
-
-<img src="https://dennys.files.wordpress.com/2022/01/image-2.png" alt=""></p>
-
-<a href="https://dennys.files.wordpress.com/2022/01/image-5.png"><img src="https://dennys.files.wordpress.com/2022/01/image-5.png?w=253" alt="" class="wp-image-186"/></a>
 
 When we commit code to [GitLab](https://gitlab.com/), we want GitLab to trigger these actions automatically:
 
