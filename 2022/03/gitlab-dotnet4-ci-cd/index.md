@@ -60,7 +60,7 @@ check_interval = 0
 
 If you always see the Credential Helper Selector, please choose "no helper" and "Always use this from now on".
 
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"><img src="https://dennys.files.wordpress.com/2021/12/image-4.png?w=386" alt="" class="wp-image-146" width="322" height="208"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2021/12/image-4.png"><img src="https://dennys.files.wordpress.com/2021/12/image-4.png?w=386" alt="" class="wp-image-146" width="322" height="208"/></a>
 
 ### Step 4 - Write .gitlab-ci.yml
 

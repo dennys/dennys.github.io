@@ -78,7 +78,7 @@ check_interval = 0
     &#91;runners.cache.azure]</code></pre>
 <!-- /wp:code -->
 <p>If you always see the Credential Helper Selector, please choose &ldquo;no helper&rdquo; and &ldquo;Always use this from now on&rdquo;.</p>
-
+<p><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"></a></p>
 <h3 id="step-4---write-gitlab-ciyml">Step 4 - Write .gitlab-ci.yml</h3>
 <ol>
 <li>Edit .gitlab-ci.yml, the following is a sample:</li>

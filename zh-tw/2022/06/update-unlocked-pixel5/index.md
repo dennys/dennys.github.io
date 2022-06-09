@@ -1,6 +1,10 @@
 # 更新 Unlock 過的 Pixel 5
 
 
+## 前言
+
+Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.
+
 ## 事前準備
 
 1. 下載
@@ -10,9 +14,7 @@
 1. 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中
 1. 進入開發者模式並確定 adb devices 可以連
 
-<!-- wp:image {"id":256,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/01/auth.jpg"><img src="https://dennys.files.wordpress.com/2022/01/auth.jpg?w=197" alt="" class="wp-image-256"/></a></figure>
-<!-- /wp:image -->
+<a href="https://dennys.files.wordpress.com/2022/01/auth.jpg"><img src="https://dennys.files.wordpress.com/2022/01/auth.jpg?w=197" alt="" class="wp-image-256"/></a>
 <br>
 
 ## 更新步驟

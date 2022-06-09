@@ -11,7 +11,9 @@
     <pubDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
     <guid>https://dennys.github.io/zh-tw/2022/06/update-unlocked-pixel5/</guid>
-    <description><![CDATA[<h2 id="事前準備">事前準備</h2>
+    <description><![CDATA[<h2 id="前言">前言</h2>
+<p>Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.</p>
+<h2 id="事前準備">事前準備</h2>
 <ol>
 <li>下載
 <ol>
@@ -23,10 +25,8 @@
 <li>利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中</li>
 <li>進入開發者模式並確定 adb devices 可以連</li>
 </ol>
-<!-- wp:image {"id":256,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/01/auth.jpg"></a>
+<br></p>
 <h2 id="更新步驟">更新步驟</h2>
 <ol>
 <li>
@@ -74,76 +74,60 @@
 </ol>
 <h2 id="步驟-server-端">步驟 (Server 端)</h2>
 <p>先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</p>
-<!-- wp:image {"id":749,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-3.png"></a>
+<br></p>
 <p>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)</p>
-<!-- wp:image {"id":751,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-4.png"></a>
+<br></p>
 <p>如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋</p>
-<!-- wp:image {"id":754,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"></a>
+<br></p>
 <h2 id="步驟-client-端">步驟 (Client 端)</h2>
 <p>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</p>
-<!-- wp:image {"id":758,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"></a>
+<br></p>
 <h2 id="成果">成果</h2>
 <p>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.</p>
-<!-- wp:image {"id":760,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"></a>
+<br></p>
 <h2 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h2>
 <p>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</p>
-<!-- wp:image {"id":762,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->]]></description>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-9.png"></a></p>
+]]></description>
 </item>
 <item>
-    <title>OpenVPN</title>
-    <link>https://dennys.github.io/zh-tw/2022/06/openvpn-asuswrt-merlin/</link>
+    <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
+    <link>https://dennys.github.io/zh-tw/2022/06/asuswrt-merlin-openvpn-server/</link>
     <pubDate>Wed, 01 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://dennys.github.io/zh-tw/2022/06/openvpn-asuswrt-merlin/</guid>
-    <description><![CDATA[<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
-<p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
-<br></p>
+    <guid>https://dennys.github.io/zh-tw/2022/06/asuswrt-merlin-openvpn-server/</guid>
+    <description><![CDATA[<h2 id="asuswrt-merlin-的-vpn-方案">Asuswrt-Merlin 的 VPN 方案</h2>
+<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
+<p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.</p>
+<h2 id="測試平台">測試平台</h2>
+<ul>
+<li>Asus RC-AC66U B1</li>
+<li>Asuswrt-Merlin 386.5 (這個版本的 OpenVPN 是 2.5.5)</li>
+</ul>
 <h2 id="openvpn-server-設定-在-asuswrt-merlin">OpenVPN server 設定 (在 Asuswrt-Merlin)</h2>
 <h3 id="1-openvpn-server-一般設定">1. OpenVPN server 一般設定</h3>
-<p>進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我是只有要透過 VPN 來連內網, 所以設定 &ldquo;LAN only&rdquo;. 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.</p>
-<!-- wp:image {"id":768,"width":654,"height":731,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p>首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &ldquo;LAN only&rdquo;. 另外, 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-10.png"></a>
+<br></p>
 <h3 id="2-openvpn-server-進階設定">2. OpenVPN server 進階設定</h3>
-<p>先在下拉式選單這裡改選 &ldquo;進階設定&rdquo;</p>
-<!-- wp:image {"id":770,"width":534,"height":215,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p>再來是設定其他的細節, 先在下拉式選單這裡選 &ldquo;進階設定&rdquo;</p>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-11.png"></a>
+<br></p>
 <p>進階設定內容如下, 如果希望 user 在 login 的時候要輸入帳號密碼, 那 &ldquo;Username/Password Authentication 就需要選 &ldquo;是&rdquo;.</p>
-<!-- wp:image {"id":773,"width":580,"height":476,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-13.png"></a>
+<br></p>
 <p>設定好後, 請再回到一般設定, 然後把設定值輸出到成一個 .opvn 檔案.</p>
-<!-- wp:image {"id":775,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
-<p>要注意的是, Asuswrt-Merlin 產生的 client1.ovpn 裡面給的是 IP, 而如果你用的不是固定 IP, 而是使用 DDNS 之類的, 請記得修改裡面 remote 後面的 IP. 下面是 DDNS 的設定</p>
-<!-- wp:image {"id":785,"width":599,"height":377,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
-<p>以這個例子來講, 就要修改 .opvn 檔案的紅色部分</p>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-14.png"></a>
+<br></p>
+<p>要注意的是, Asuswrt-Merlin 產生的 client1.ovpn 裡面給的是 IP, 如果你用的不是固定 IP, 而是使用 <a href="https://www.asus.com/tw/support/FAQ/1011725/" target="_blank" rel="noopener noreffer">DDNS</a> 之類的, 請記得修改裡面 remote 後面的 IP. 下面是 DDNS 的設定</p>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-18.png"></a>
+<br></p>
+<p>以這個例子來講, 請注意我這邊要自己修改 remote 後面的 test12345.asuscomm.com</p>
 <pre><code># Config generated by Asuswrt-Merlin 386.5, requires OpenVPN 2.4.0 or newer.
 
 client
@@ -165,23 +149,17 @@ remote-cert-tls server
 <h2 id="openvpn-client-for-android">OpenVPN Client for Android</h2>
 <p>從這裡下載: <a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn" target="_blank" rel="noopener noreffer">https://play.google.com/store/apps/details?id=net.openvpn.openvpn</a></p>
 <p>連線成功後, 會出現這樣的通知, 可以直接在通知的地方暫停或斷線, 還滿方便的.</p>
-<!-- wp:image {"id":777,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-15.png"></a></p>
 <p>App 本身也會顯示使用的網路狀況</p>
-<!-- wp:image {"id":779,"width":304,"height":615,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-16.png"></a>
+<br><br></p>
 <h2 id="openvpn-client-for-ios-macos-linux">OpenVPN Client for iOS, MacOS, Linux</h2>
 <p>可在<a href="https://openvpn.net/download-open-vpn/">這裡</a>下載其他平台的 client.
-<br></p>
+<br><br></p>
 <h2 id="openvpn-server-上的連線狀況">OpenVPN Server 上的連線狀況</h2>
 <p>從這裡可以看出他有幾個 client, 實際和VPN的IP, 從甚麼時候連的, 使用的資料量等等.</p>
-<!-- wp:image {"id":784,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<br>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-17.png"></a>
+<br></p>
 <h2 id="softether-vpn">SoftEther VPN</h2>
 <p><a href="https://www.softether.org/">SoftEther VPN</a> 的官方文件說明他是 <em>An Open-Source Free ​Cross-platform Multi-protocol VPN Program</em>, 是看到有些人說他的 GUI 比 OpenVPN 好用, 但我用 OpenVPN 一切順利, 就懶得試了.
 <br><br></p>

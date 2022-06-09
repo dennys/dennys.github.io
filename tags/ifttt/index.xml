@@ -27,49 +27,49 @@
 <li>Add a new &ldquo;If This&rdquo;</li>
 </ol>
 <!-- wp:image {"id":432,"width":382,"height":180,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"></a></p>
 <!-- /wp:image -->
 <ol start="3">
 <li>Choose &ldquo;finance&rdquo; service</li>
 </ol>
 <!-- wp:image {"id":416,"width":446,"height":274,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image.png"></a></p>
 <!-- /wp:image -->
 <ol start="4">
 <li>Choose &ldquo;Today&rsquo;s exchange rate report&rdquo;</li>
 </ol>
 <!-- wp:image {"id":418,"width":568,"height":280,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"></a></p>
 <!-- /wp:image -->
 <ol start="5">
 <li>Choose the input/output currency and trigger time.</li>
 </ol>
 <!-- wp:image {"id":420,"width":385,"height":373,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"></a></p>
 <!-- /wp:image -->
 <ol start="6">
 <li>Add a new &ldquo;Then That&rdquo;</li>
 </ol>
 <!-- wp:image {"id":434,"width":288,"height":148,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"></a></p>
 <!-- /wp:image -->
 <ol start="7">
 <li>Choose a &ldquo;gmail&rdquo; service</li>
 </ol>
 <!-- wp:image {"id":422,"width":329,"height":207,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"></a></p>
 <!-- /wp:image -->
 <ol start="8">
 <li>If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.</li>
 </ol>
 <!-- wp:image {"id":424,"width":484,"height":226,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"></a></p>
 <!-- /wp:image -->
 <ol start="9">
 <li>This is an example to send your self an email.</li>
 </ol>
 <!-- wp:image {"id":426,"width":339,"height":489,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"></a></p>
 <!-- /wp:image -->
 <p>9.1 This is my email body</p>
 <!-- wp:code -->
@@ -109,7 +109,7 @@ via {{InfoUrl}}
 <!-- /wp:code -->
 <h2 id="mail-result">Mail result</h2>
 <!-- wp:image {"id":430,"sizeSlug":"large","linkDestination":"media"} -->
-
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"></a>
 <!-- /wp:image -->
 <h2 id="ifttt-applet-location">IFTTT applet location</h2>
 <p>This is my IFTTT applet: <a href="https://ifttt.com/applets/SxPJ2fpv-" target="_blank" rel="noopener noreffer">https://ifttt.com/applets/SxPJ2fpv-</a></p>

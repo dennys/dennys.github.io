@@ -3,29 +3,7 @@
         <title>All Posts - Dennys Diary</title>
         <link>https://dennys.github.io/posts/</link>
         <description>All Posts | Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Java RESTful service</title>
-    <link>https://dennys.github.io/2022/06/java-restful-service/</link>
-    <pubDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/2022/06/java-restful-service/</guid>
-    <description><![CDATA[<ol>
-<li>Service</li>
-<li>Document (Swagger)</li>
-<li>Validation</li>
-<li>Authentication</li>
-<li>Authorizatio</li>
-<li>Log</li>
-<li>Test</li>
-<li>Stress test</li>
-<li>Auto test, mock, …</li>
-<li>Management – supervisor – Python vs Golang</li>
-<li>Monitor – Grafana</li>
-<li>Monitor – OpenTelemetry, Jaeger,</li>
-</ol>
-]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Use GitLab to do .NET 4.X CI/CD</title>
     <link>https://dennys.github.io/2022/03/gitlab-dotnet4-ci-cd/</link>
     <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
@@ -100,7 +78,7 @@ check_interval = 0
     &#91;runners.cache.azure]</code></pre>
 <!-- /wp:code -->
 <p>If you always see the Credential Helper Selector, please choose &ldquo;no helper&rdquo; and &ldquo;Always use this from now on&rdquo;.</p>
-
+<p><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"></a></p>
 <h3 id="step-4---write-gitlab-ciyml">Step 4 - Write .gitlab-ci.yml</h3>
 <ol>
 <li>Edit .gitlab-ci.yml, the following is a sample:</li>
@@ -157,49 +135,49 @@ test:
 <li>Add a new &ldquo;If This&rdquo;</li>
 </ol>
 <!-- wp:image {"id":432,"width":382,"height":180,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"></a></p>
 <!-- /wp:image -->
 <ol start="3">
 <li>Choose &ldquo;finance&rdquo; service</li>
 </ol>
 <!-- wp:image {"id":416,"width":446,"height":274,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image.png"></a></p>
 <!-- /wp:image -->
 <ol start="4">
 <li>Choose &ldquo;Today&rsquo;s exchange rate report&rdquo;</li>
 </ol>
 <!-- wp:image {"id":418,"width":568,"height":280,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"></a></p>
 <!-- /wp:image -->
 <ol start="5">
 <li>Choose the input/output currency and trigger time.</li>
 </ol>
 <!-- wp:image {"id":420,"width":385,"height":373,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"></a></p>
 <!-- /wp:image -->
 <ol start="6">
 <li>Add a new &ldquo;Then That&rdquo;</li>
 </ol>
 <!-- wp:image {"id":434,"width":288,"height":148,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"></a></p>
 <!-- /wp:image -->
 <ol start="7">
 <li>Choose a &ldquo;gmail&rdquo; service</li>
 </ol>
 <!-- wp:image {"id":422,"width":329,"height":207,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"></a></p>
 <!-- /wp:image -->
 <ol start="8">
 <li>If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.</li>
 </ol>
 <!-- wp:image {"id":424,"width":484,"height":226,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"></a></p>
 <!-- /wp:image -->
 <ol start="9">
 <li>This is an example to send your self an email.</li>
 </ol>
 <!-- wp:image {"id":426,"width":339,"height":489,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"></a></p>
 <!-- /wp:image -->
 <p>9.1 This is my email body</p>
 <!-- wp:code -->
@@ -239,7 +217,7 @@ via {{InfoUrl}}
 <!-- /wp:code -->
 <h2 id="mail-result">Mail result</h2>
 <!-- wp:image {"id":430,"sizeSlug":"large","linkDestination":"media"} -->
-
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"></a>
 <!-- /wp:image -->
 <h2 id="ifttt-applet-location">IFTTT applet location</h2>
 <p>This is my IFTTT applet: <a href="https://ifttt.com/applets/SxPJ2fpv-" target="_blank" rel="noopener noreffer">https://ifttt.com/applets/SxPJ2fpv-</a></p>
@@ -265,14 +243,12 @@ via {{InfoUrl}}
 <li>Connect to <a href="https://wise.com/tools/exchange-rate-alerts/" target="_blank" rel="noopener noreffer">https://wise.com/tools/exchange-rate-alerts/</a></li>
 <li>Input the currency exchange rate you want to know and your email address.</li>
 </ol>
-<!-- wp:image {"id":443,"sizeSlug":"large","linkDestination":"media"} -->
-
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-10.png"></a></p>
 <!-- /wp:image -->
 <h2 id="mail-result">Mail result</h2>
 <p>You will receive the mail daily.</p>
-<!-- wp:image {"id":445,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->]]></description>
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-11.png"></a></p>
+]]></description>
 </item>
 <item>
     <title>GitLab Checkmarx integration</title>

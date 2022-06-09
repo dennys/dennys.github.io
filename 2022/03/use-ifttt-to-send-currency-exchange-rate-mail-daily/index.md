@@ -16,49 +16,49 @@ Use ifttt.com
 2. Add a new "If This"
 
 <!-- wp:image {"id":432,"width":382,"height":180,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"><img src="https://dennys.files.wordpress.com/2022/03/image-8.png?w=605" alt="" class="wp-image-432" width="382" height="180"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-8.png"><img src="https://dennys.files.wordpress.com/2022/03/image-8.png?w=605" alt="" class="wp-image-432" width="382" height="180"/></a>
 <!-- /wp:image -->
 
 3. Choose "finance" service
 
 <!-- wp:image {"id":416,"width":446,"height":274,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image.png"><img src="https://dennys.files.wordpress.com/2022/03/image.png?w=811" alt="" class="wp-image-416" width="446" height="274"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image.png"><img src="https://dennys.files.wordpress.com/2022/03/image.png?w=811" alt="" class="wp-image-416" width="446" height="274"/></a>
 <!-- /wp:image -->
 
 4. Choose "Today's exchange rate report"
 
 <!-- wp:image {"id":418,"width":568,"height":280,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"><img src="https://dennys.files.wordpress.com/2022/03/image-1.png?w=1024" alt="" class="wp-image-418" width="568" height="280"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-1.png"><img src="https://dennys.files.wordpress.com/2022/03/image-1.png?w=1024" alt="" class="wp-image-418" width="568" height="280"/></a>
 <!-- /wp:image -->
 
 5. Choose the input/output currency and trigger time.
 
 <!-- wp:image {"id":420,"width":385,"height":373,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"><img src="https://dennys.files.wordpress.com/2022/03/image-2.png?w=702" alt="" class="wp-image-420" width="385" height="373"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-2.png"><img src="https://dennys.files.wordpress.com/2022/03/image-2.png?w=702" alt="" class="wp-image-420" width="385" height="373"/></a>
 <!-- /wp:image -->
 
 6. Add a new "Then That"
 
 <!-- wp:image {"id":434,"width":288,"height":148,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"><img src="https://dennys.files.wordpress.com/2022/03/image-9.png?w=597" alt="" class="wp-image-434" width="288" height="148"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-9.png"><img src="https://dennys.files.wordpress.com/2022/03/image-9.png?w=597" alt="" class="wp-image-434" width="288" height="148"/></a>
 <!-- /wp:image -->
 
 7. Choose a "gmail" service
 
 <!-- wp:image {"id":422,"width":329,"height":207,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"><img src="https://dennys.files.wordpress.com/2022/03/image-3.png?w=666" alt="" class="wp-image-422" width="329" height="207"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-3.png"><img src="https://dennys.files.wordpress.com/2022/03/image-3.png?w=666" alt="" class="wp-image-422" width="329" height="207"/></a>
 <!-- /wp:image -->
 
 8. If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.
 
 <!-- wp:image {"id":424,"width":484,"height":226,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"><img src="https://dennys.files.wordpress.com/2022/03/image-4.png?w=609" alt="" class="wp-image-424" width="484" height="226"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-4.png"><img src="https://dennys.files.wordpress.com/2022/03/image-4.png?w=609" alt="" class="wp-image-424" width="484" height="226"/></a>
 <!-- /wp:image -->
 
 9. This is an example to send your self an email.
 
 <!-- wp:image {"id":426,"width":339,"height":489,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large is-resized"><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"><img src="https://dennys.files.wordpress.com/2022/03/image-5.png?w=548" alt="" class="wp-image-426" width="339" height="489"/></a></figure>
+<a href="https://dennys.files.wordpress.com/2022/03/image-5.png"><img src="https://dennys.files.wordpress.com/2022/03/image-5.png?w=548" alt="" class="wp-image-426" width="339" height="489"/></a>
 <!-- /wp:image -->
 
 9.1 This is my email body
@@ -102,7 +102,7 @@ via {{InfoUrl}}
 ## Mail result
 
 <!-- wp:image {"id":430,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"><img src="https://dennys.files.wordpress.com/2022/03/image-7.png?w=668" alt="" class="wp-image-430"/></a></figure>
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"><img src="https://dennys.files.wordpress.com/2022/03/image-7.png?w=668" alt="" class="wp-image-430"/></a>
 <!-- /wp:image -->
 
 ## IFTTT applet location
