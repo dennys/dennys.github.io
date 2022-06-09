@@ -5,6 +5,10 @@
 ![Checkmarx](/images/software/logo/Checkmarx_logo.png)
 ![SonarQube](/images/software/logo/SonarQube_logo.webp)
 
+image.png
+
+image.png
+
 ## Purpose
 
 When we commit code to [GitLab](https://gitlab.com/), we want GitLab to trigger these actions automatically:
