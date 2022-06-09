@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>DevOps - Category - Dennys Diary</title>
-        <link>https://example.com/categories/devops/</link>
+        <link>https://dennys.github.io/categories/devops/</link>
         <description>DevOps - Category - Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/devops/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/categories/devops/" rel="self" type="application/rss+xml" /><item>
     <title>Use GitLab to do .NET 4.X CI/CD</title>
-    <link>https://example.com/2022/03/gitlab-dotnet4-ci-cd/</link>
+    <link>https://dennys.github.io/2022/03/gitlab-dotnet4-ci-cd/</link>
     <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/03/gitlab-dotnet4-ci-cd/</guid>
+    <guid>https://dennys.github.io/2022/03/gitlab-dotnet4-ci-cd/</guid>
     <description><![CDATA[<h2 id="precondition">Precondition</h2>
 <p>You already have a GitLab (<a href="http://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab Saas</a> or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/&hellip;, you can use docker to run GitLab Runner.</p>
 <h3 id="step-1---install-git-client">Step 1 - Install Git client</h3>
@@ -113,10 +113,10 @@ test:
 </item>
 <item>
     <title>GitLab Checkmarx integration</title>
-    <link>https://example.com/2022/01/gitlab-checkmarx-integration/</link>
+    <link>https://dennys.github.io/2022/01/gitlab-checkmarx-integration/</link>
     <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/01/gitlab-checkmarx-integration/</guid>
+    <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-integration/</guid>
     <description><![CDATA[
 <h2 id="purpose">Purpose</h2>
 <p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab sends the code to [Checkmarx] (<a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">https://checkmarx.com/</a>) to scan. (the next step is to integrate the scan result to SonarQube)</p>
@@ -165,10 +165,10 @@ variables:
 </item>
 <item>
     <title>GitLab Checkmarx SonarQube integration</title>
-    <link>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</link>
+    <link>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</link>
     <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
+    <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
     <description><![CDATA[<h2 id="purpose">Purpose</h2>
 <!-- wp:paragraph -->
 <p></p>

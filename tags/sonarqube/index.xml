@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>SonarQube - Tag - Dennys Diary</title>
-        <link>https://example.com/tags/sonarqube/</link>
+        <link>https://dennys.github.io/tags/sonarqube/</link>
         <description>SonarQube - Tag - Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/sonarqube/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/sonarqube/" rel="self" type="application/rss+xml" /><item>
     <title>GitLab Checkmarx SonarQube integration</title>
-    <link>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</link>
+    <link>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</link>
     <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
+    <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
     <description><![CDATA[<h2 id="purpose">Purpose</h2>
 <!-- wp:paragraph -->
 <p></p>

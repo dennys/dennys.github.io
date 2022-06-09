@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>所有文章 - Dennys Diary</title>
-        <link>https://example.com/zh-tw/posts/</link>
+        <link>https://dennys.github.io/zh-tw/posts/</link>
         <description>所有文章 | Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/zh-tw/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-TW</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/posts/" rel="self" type="application/rss+xml" /><item>
     <title>更新 Unlock 過的 Pixel 5</title>
-    <link>https://example.com/zh-tw/2022/06/update-unlocked-pixel5/</link>
+    <link>https://dennys.github.io/zh-tw/2022/06/update-unlocked-pixel5/</link>
     <pubDate>Thu, 02 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/zh-tw/2022/06/update-unlocked-pixel5/</guid>
+    <guid>https://dennys.github.io/zh-tw/2022/06/update-unlocked-pixel5/</guid>
     <description><![CDATA[<h2 id="事前準備">事前準備</h2>
 <ol>
 <li>下載
@@ -59,10 +59,10 @@
 </item>
 <item>
     <title>無聲遠端桌面連線 - VNC</title>
-    <link>https://example.com/zh-tw/2022/06/realvnc/</link>
+    <link>https://dennys.github.io/zh-tw/2022/06/realvnc/</link>
     <pubDate>Thu, 02 Jun 2022 10:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/zh-tw/2022/06/realvnc/</guid>
+    <guid>https://dennys.github.io/zh-tw/2022/06/realvnc/</guid>
     <description><![CDATA[<h2 id="需求">需求</h2>
 <p>要做一個遠端登入的功能, 而且需要做到以下幾項</p>
 <ol>
@@ -106,10 +106,10 @@
 </item>
 <item>
     <title>OpenVPN</title>
-    <link>https://example.com/zh-tw/2022/06/openvpn-asuswrt-merlin/</link>
+    <link>https://dennys.github.io/zh-tw/2022/06/openvpn-asuswrt-merlin/</link>
     <pubDate>Wed, 01 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/zh-tw/2022/06/openvpn-asuswrt-merlin/</guid>
+    <guid>https://dennys.github.io/zh-tw/2022/06/openvpn-asuswrt-merlin/</guid>
     <description><![CDATA[<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener noreffer">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN" target="_blank" rel="noopener noreffer">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844" target="_blank" rel="noopener noreffer">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/" target="_blank" rel="noopener noreffer">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
 <br></p>

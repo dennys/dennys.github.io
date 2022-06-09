@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Java - Category - Dennys Diary</title>
-        <link>https://example.com/categories/java/</link>
+        <link>https://dennys.github.io/categories/java/</link>
         <description>Java - Category - Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://example.com/categories/java/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/categories/java/" rel="self" type="application/rss+xml" /><item>
     <title>Java RESTful service</title>
-    <link>https://example.com/2022/06/java-restful-service/</link>
+    <link>https://dennys.github.io/2022/06/java-restful-service/</link>
     <pubDate>Fri, 03 Jun 2022 22:18:32 &#43;0800</pubDate>
     <author>Dennys</author>
-    <guid>https://example.com/2022/06/java-restful-service/</guid>
+    <guid>https://dennys.github.io/2022/06/java-restful-service/</guid>
     <description><![CDATA[<ol>
 <li>Service</li>
 <li>Document (Swagger)</li>

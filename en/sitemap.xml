@@ -2,64 +2,64 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://example.com/about/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/categories/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://dennys.github.io/about/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dennys.github.io/categories/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-tw"
-                        href="https://example.com/zh-tw/categories/"
+                        href="https://dennys.github.io/zh-tw/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://example.com/categories/"
+                    href="https://dennys.github.io/categories/"
                     /></url><url>
-            <loc>https://example.com/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://dennys.github.io/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-tw"
-                        href="https://example.com/zh-tw/"
+                        href="https://dennys.github.io/zh-tw/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://example.com/"
+                    href="https://dennys.github.io/"
                     /></url><url>
-            <loc>https://example.com/categories/it/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://dennys.github.io/categories/it/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-tw"
-                        href="https://example.com/zh-tw/categories/it/"
+                        href="https://dennys.github.io/zh-tw/categories/it/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://example.com/categories/it/"
+                    href="https://dennys.github.io/categories/it/"
                     /></url><url>
-            <loc>https://example.com/categories/java/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/2022/06/java-restful-service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/posts/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://dennys.github.io/categories/java/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dennys.github.io/2022/06/java-restful-service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dennys.github.io/posts/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-tw"
-                        href="https://example.com/zh-tw/posts/"
+                        href="https://dennys.github.io/zh-tw/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://example.com/posts/"
+                    href="https://dennys.github.io/posts/"
                     /></url><url>
-            <loc>https://example.com/tags/service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://example.com/tags/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://dennys.github.io/tags/service/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dennys.github.io/tags/</loc><lastmod>2022-06-03T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-tw"
-                        href="https://example.com/zh-tw/tags/"
+                        href="https://dennys.github.io/zh-tw/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://example.com/tags/"
+                    href="https://dennys.github.io/tags/"
                     /></url><url>
-            <loc>https://example.com/tags/.net/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/categories/devops/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/gitlab/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/2022/03/gitlab-dotnet4-ci-cd/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/ifttt/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/2022/03/use-ifttt-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/2022/03/use-wise-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/checkmarx/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/2022/01/gitlab-checkmarx-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/2022/01/gitlab-checkmarx-sonarqube-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/sonarqube/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://example.com/tags/ci/cd/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://dennys.github.io/tags/.net/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/categories/devops/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/gitlab/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/2022/03/gitlab-dotnet4-ci-cd/</loc><lastmod>2022-03-25T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/ifttt/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/2022/03/use-ifttt-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/2022/03/use-wise-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/checkmarx/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/2022/01/gitlab-checkmarx-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/sonarqube/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/ci/cd/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
