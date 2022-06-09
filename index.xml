@@ -258,7 +258,8 @@ via {{InfoUrl}}
     <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
     <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-integration/</guid>
-    <description><![CDATA[<p><a href="https://dennys.files.wordpress.com/2022/01/image.png"></a><figcaption></figcaption></p>
+    <description><![CDATA[<p>
+</p>
 <h2 id="purpose">Purpose</h2>
 <p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab sends the code to [Checkmarx] (<a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">https://checkmarx.com/</a>) to scan. (the next step is to integrate the scan result to SonarQube)</p>
 <h2 id="procedure">Procedure</h2>
