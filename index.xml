@@ -258,7 +258,7 @@ via {{InfoUrl}}
     <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
     <author>Dennys</author>
     <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-integration/</guid>
-    <description><![CDATA[
+    <description><![CDATA[<p><a href="https://dennys.files.wordpress.com/2022/01/image.png"></a><figcaption></figcaption></p>
 <h2 id="purpose">Purpose</h2>
 <p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab sends the code to [Checkmarx] (<a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">https://checkmarx.com/</a>) to scan. (the next step is to integrate the scan result to SonarQube)</p>
 <h2 id="procedure">Procedure</h2>
@@ -277,9 +277,7 @@ variables:
 <li>Edit GitLab CI/CD variables</li>
 </ol>
 <p>Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.</p>
-<!-- wp:image {"id":181,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-4.png"></a></p>
 <ol start="3">
 <li>Trigger build - Checkmarx analysis will be triggered when you create a merge request or you commit to master stream directly.</li>
 </ol>
@@ -287,22 +285,15 @@ variables:
 <pre><code>2022-01-12 02:51:22.748  INFO 11 --- [main] c.c.s.s.CxService [x4DNMhOL] : Found team /CxServer/Team1 with ID 16
 </code></pre>
 <p>During the analysis, you can check the status from Checkmarx, it takes long time to analyze.</p>
-<!-- wp:image {"id":193,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-6.png"></a></p>
 <p>After the analysis, you can check the result in Checkmarx.</p>
 <p>You can also check it from GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of merge request.</p>
-<!-- wp:image {"id":197,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-7.png"></a></p>
 <p>In the above report, there are 5 issues, it will creates 5 issues by file/by category.</p>
-<!-- wp:image {"id":199,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-8.png"></a></p>
 <p>In the issue, it shows the detail vulnerability information.</p>
-<!-- wp:image {"id":201,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->]]></description>
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-9.png"></a></p>
+]]></description>
 </item>
 <item>
     <title>GitLab Checkmarx SonarQube integration</title>
@@ -311,13 +302,9 @@ variables:
     <author>Dennys</author>
     <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
     <description><![CDATA[<h2 id="purpose">Purpose</h2>
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-<!-- wp:image {"id":186,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<p>When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want</p></p>
+<p></p></p>
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-5.png"></a></p>
+<p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
 <ol>
 <li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> sends the code to <a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">Checkmarx</a> to scan.</li>
 <li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> triggers <a href="https://www.sonarqube.org/" target="_blank" rel="noopener noreffer">SonarQube</a> to sacn.</li>

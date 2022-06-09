@@ -3,15 +3,11 @@
 
 ## Purpose
 
-<!-- wp:paragraph -->
-<p><img src="https://dennys.files.wordpress.com/2022/01/image-2.png" alt=""></p>
-<!-- /wp:paragraph -->
+<img src="https://dennys.files.wordpress.com/2022/01/image-2.png" alt=""></p>
 
-<!-- wp:image {"id":186,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/01/image-5.png"><img src="https://dennys.files.wordpress.com/2022/01/image-5.png?w=253" alt="" class="wp-image-186"/></a></figure>
-<!-- /wp:image -->
+<a href="https://dennys.files.wordpress.com/2022/01/image-5.png"><img src="https://dennys.files.wordpress.com/2022/01/image-5.png?w=253" alt="" class="wp-image-186"/></a>
 
-When we commit code to&nbsp;<a href="https://gitlab.com/">GitLab</a>, we want</p>
+When we commit code to [GitLab](https://gitlab.com/), we want GitLab to trigger these actions automatically:
 
 1. [GitLab](https://gitlab.com/) sends the code to [Checkmarx](https://checkmarx.com/) to scan.
 1. [GitLab](https://gitlab.com/) triggers [SonarQube](https://www.sonarqube.org/) to sacn.

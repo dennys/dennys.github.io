@@ -10,13 +10,9 @@
     <author>Dennys</author>
     <guid>https://dennys.github.io/2022/01/gitlab-checkmarx-sonarqube-integration/</guid>
     <description><![CDATA[<h2 id="purpose">Purpose</h2>
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-<!-- wp:image {"id":186,"sizeSlug":"large","linkDestination":"media"} -->
-
-<!-- /wp:image -->
-<p>When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want</p></p>
+<p></p></p>
+<p><a href="https://dennys.files.wordpress.com/2022/01/image-5.png"></a></p>
+<p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
 <ol>
 <li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> sends the code to <a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">Checkmarx</a> to scan.</li>
 <li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> triggers <a href="https://www.sonarqube.org/" target="_blank" rel="noopener noreffer">SonarQube</a> to sacn.</li>
