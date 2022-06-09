@@ -203,6 +203,58 @@ remote-cert-tls server
 ]]></description>
 </item>
 <item>
+    <title>如何設定 Android 零打擾的時間長度</title>
+    <link>https://dennys.github.io/zh-tw/2022/05/android-do-not-disturb/</link>
+    <pubDate>Mon, 23 May 2022 10:18:32 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/05/android-do-not-disturb/</guid>
+    <description><![CDATA[<h2 id="需求">需求</h2>
+<p>Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/05/image-8.png"></a></p>
+<h2 id="作法">作法</h2>
+<p>如果要調整零打擾的長度, 可從這裡修改: 設定 -&gt; 通知 -&gt; 零打擾 -&gt; 從快速設定開啟時的持續時間長度</p>
+<p><a href="https://dennys.files.wordpress.com/2022/05/image-2.png"></a></p>
+<p>預設值是&quot;直到你關閉為止&quot;, 因此他就只能開和關. 我是把它改成&quot;每次都詢問&quot;</p>
+<p><a href="https://dennys.files.wordpress.com/2022/05/image-3.png"></a></p>
+<p>改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項</p>
+<p><a href="https://dennys.files.wordpress.com/2022/05/image-7.png"></a></p>
+<h2 id="結果">結果</h2>
+<p>這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/05/image-4.png"></a></p>
+]]></description>
+</item>
+<item>
+    <title>Google Maps 音樂接藍牙, 語音不接</title>
+    <link>https://dennys.github.io/zh-tw/2022/04/google-maps-bluetooth-voice-music/</link>
+    <pubDate>Wed, 20 Apr 2022 10:18:32 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/04/google-maps-bluetooth-voice-music/</guid>
+    <description><![CDATA[<h2 id="需求">需求</h2>
+<p>不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.</p>
+<h2 id="作法">作法</h2>
+<p>後來找到的解法是, 設定不要&quot;透過藍牙撥放語音&quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-8.png"></a></p>
+]]></description>
+</item>
+<item>
+    <title>將 Gmail 的通知改成可以直接刪除</title>
+    <link>https://dennys.github.io/zh-tw/2022/04/gmail-notify-delete-archive/</link>
+    <pubDate>Wed, 20 Apr 2022 10:18:32 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/04/gmail-notify-delete-archive/</guid>
+    <description><![CDATA[<h2 id="需求">需求</h2>
+<p>Gmail 的通知, 預設是可以在通知的地方選&quot;封存&quot;或&quot;回覆&quot;, 但其實可以修改.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-6.png"></a></p>
+<h2 id="作法">作法</h2>
+<p>打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&quot;封存&quot;, 把它改成刪除.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/image-10.png"></a></p>
+<p>修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/04/image-7.png"></a></p>
+<h2 id="後記">後記</h2>
+<p>如果可以讓封存和刪除都出來就更好了.</p>
+]]></description>
+</item>
+<item>
     <title>把 Android 12 鎖定畫面的時鐘改單行</title>
     <link>https://dennys.github.io/zh-tw/2022/04/android-12-lock-screen-double-line-clock/</link>
     <pubDate>Sun, 10 Apr 2022 00:18:32 &#43;0800</pubDate>
@@ -223,6 +275,129 @@ remote-cert-tls server
 <li>Google Pixel Update - March 2022(<a href="https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022" target="_blank" rel="noopener noreffer">https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022</a>) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.)</li>
 <li>Google community 的說明: <a href="https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966" target="_blank" rel="noopener noreffer">https://support.google.com/pixelphone/thread/133395984?hl=en&msgid=154180966</a></li>
 </ol>
+]]></description>
+</item>
+<item>
+    <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
+    <link>https://dennys.github.io/zh-tw/2022/03/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+    <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/03/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+    <description><![CDATA[<p><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-vivid-red-color"><strong>注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</strong></mark></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-amber-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p>======================================================</p>
+<h2 id="更新紀錄">更新紀錄</h2>
+<ol>
+<li>2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式</li>
+</ol>
+<h2 id="wi-fi-ca-憑證驗證在-android-11-的改變">Wi-Fi CA 憑證驗證在 Android 11 的改變</h2>
+<p>Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &ldquo;不要驗證&rdquo;, 如下:</p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/image-13.png"></a></p>
+<p>自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &ldquo;不要驗證&rdquo;, 原因可參考 <a href="https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/" target="_blank" rel="noopener noreffer">https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/</a>. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">而且 iPhone 至少到 15.4 都沒有卡這個&hellip;</mark>)</p>
+<p>爬了一下文, 看來是可以直接把這個設定加回去 (參考: <a href="https://android.stackexchange.com/questions/231859/%29" target="_blank" rel="noopener noreffer">https://android.stackexchange.com/questions/231859/)</a>, 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">必須 Unlock 才能修改</mark>. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.</p>
+<h2 id="修改步驟">修改步驟</h2>
+<p>1. 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://wordpress.com/post/dennys.wordpress.com/280">https://wordpress.com/post/dennys.wordpress.com/280</a>. (要做到把 boot.img 換掉)</p>
+<p>2. 試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">當然是不會成功</mark>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/1-1.png"></a></p>
+<p>3. 先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
+<pre class="wp-block-code"><code>adb shell
+su
+cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code></pre>
+<p>若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.</p>
+<pre class="wp-block-code"><code>127|redfin:/system/bin $ su
+/system/bin/sh: su: inaccessible or not found</code></pre>
+<p>讀出來的 WifiConfigStore.xml 內容如下, 可找 WifiEnterpriseConfiguration 這個關鍵字, 目的是要把紅色的設定值拿掉</p>
+<pre class="wp-block-code"><code>&lt;WifiEnterpriseConfiguration&gt;
+&lt;string name="Identity"&gt;這裡是帳號名字&lt;/string&gt;
+&lt;string name="AnonIdentity"&gt;&lt;/string&gt;
+&lt;string name="Password"&gt;這裡是密碼&lt;/string&gt;
+&lt;string name="ClientCert"&gt;&lt;/string&gt;
+&lt;string name="CaCert"&gt;&lt;/string&gt;
+&lt;string name="SubjectMatch"&gt;&lt;/string&gt;
+&lt;string name="Engine"&gt;0&lt;/string&gt;
+&lt;string name="EngineId"&gt;&lt;/string&gt;
+&lt;string name="PrivateKeyId"&gt;&lt;/string&gt;
+&lt;string name="AltSubjectMatch"&gt;&lt;/string&gt;
+&lt;<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">string name="DomSuffixMatch"&gt;這裡是上面隨便輸入的網域&lt;/string&gt;
+&lt;string name="CaPath"&gt;/system/etc/security/cacerts&lt;/string&gt;</mark>
+&lt;int name="EapMethod" value="0" /&gt;
+&lt;int name="Phase2Method" value="4" /&gt;
+&lt;string name="PLMN"&gt;&lt;/string&gt;
+&lt;string name="Realm"&gt;&lt;/string&gt;
+&lt;int name="Ocsp" value="0" /&gt;
+&lt;string name="WapiCertSuite"&gt;&lt;/string&gt;
+&lt;boolean name="AppInstalledRootCaCert" value="false" /&gt;
+&lt;boolean name="AppInstalledPrivateKey" value="false" /&gt;
+&lt;null name="KeyChainAlias" /&gt;
+&lt;null name="DecoratedIdentityPrefix" /&gt;
+&lt;/WifiEnterpriseConfiguration&gt;</code></pre>
+<p>4. 執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">CaPath</mark> 和 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">DomSuffixMatch</mark> 的內容改成空白. 最後一個步驟會重開, <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">要重開才會生效</mark>.</p>
+<pre class="wp-block-code"><code>adb shell
+su
+sed -i 's%&lt;string name="CaPath"&gt;.*&lt;/string&gt;%&lt;string name="CaPath"&gt;&lt;/string&gt;%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
+sed -i 's%&lt;string name="DomSuffixMatch"&gt;.*&lt;/string&gt;%&lt;string name="DomSuffixMatch"&gt;&lt;/string&gt;%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
+reboot</code></pre>
+<p>5. 重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了</p>
+<pre class="wp-block-code"><code>&lt;WifiEnterpriseConfiguration&gt;
+&lt;string name="Identity"&gt;這裡是帳號名字&lt;/string&gt;
+&lt;string name="AnonIdentity"&gt;&lt;/string&gt;
+&lt;string name="Password"&gt;這裡是密碼&lt;/string&gt;
+&lt;string name="ClientCert"&gt;&lt;/string&gt;
+&lt;string name="CaCert"&gt;&lt;/string&gt;
+&lt;string name="SubjectMatch"&gt;&lt;/string&gt;
+&lt;string name="Engine"&gt;0&lt;/string&gt;
+&lt;string name="EngineId"&gt;&lt;/string&gt;
+&lt;string name="PrivateKeyId"&gt;&lt;/string&gt;
+&lt;string name="AltSubjectMatch"&gt;&lt;/string&gt;
+<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">&lt;string name="DomSuffixMatch"&gt;&lt;/string&gt;</mark>
+<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">&lt;string name="CaPath"&gt;&lt;/string&gt;</mark>
+&lt;int name="EapMethod" value="0" /&gt;
+&lt;int name="Phase2Method" value="4" /&gt;
+&lt;string name="PLMN"&gt;&lt;/string&gt;
+&lt;string name="Realm"&gt;&lt;/string&gt;
+&lt;int name="Ocsp" value="0" /&gt;
+&lt;string name="WapiCertSuite"&gt;&lt;/string&gt;
+&lt;boolean name="AppInstalledRootCaCert" value="false" /&gt;
+&lt;boolean name="AppInstalledPrivateKey" value="false" /&gt;
+&lt;null name="KeyChainAlias" /&gt;
+&lt;null name="DecoratedIdentityPrefix" /&gt;
+&lt;/WifiEnterpriseConfiguration&gt;</code></pre>
+<p>6. 這時候應該就可以連線了</p>
+<p>7. 因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 https://dennys.wordpress.com/?p=330</p>
+<h2 id="系統更新後如何處理">系統更新後如何處理?</h2>
+<p>不用處理, 至少目前我的 Pixel 5 更新到 2022 年 5 月更新 (12.1.0 (SP2A.220505.002, May 2022) 時, 都不需要處理.</p>
+<h2 id="wi-fi-密碼更新後如何處理">Wi-Fi 密碼更新後如何處理?</h2>
+<ol>
+<li>如果系統有更新過, 就得先用 Magisk 重新 patch 一次.</li>
+<li>一樣要試著連線 (當然不會成功), 重點是把密碼寫進去.</li>
+<li>然後再用 adb shell 跑一次上面的 sed 指令修改 WifiConfigStore.xml 即可.</li>
+</ol>
+<h2 id="後記">後記</h2>
+<p>這個方法並不是把不要驗證 (Do Not Validate) 的設定加回去, 而是先嘗試連線一個要驗證的 Wi-Fi (當然這裡會失敗), 等他把設定檔存下來之後, 再進系統把憑證的設定改掉, 所以還是和 Android 10 以前不太一樣. 而且<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">每次連上一個新的要使用 EAP 的 Wi-Fi 基地台都要重新執行一次</mark>, 會比較麻煩.</p>
+]]></description>
+</item>
+<item>
+    <title>Android 移除 Root 和 Magisk</title>
+    <link>https://dennys.github.io/zh-tw/2022/03/android-remove-root-magisk/</link>
+    <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/zh-tw/2022/03/android-remove-root-magisk/</guid>
+    <description><![CDATA[<p><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-vivid-red-color"><strong>注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</strong></mark></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-amber-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p>======================================================</p>
+<h2 id="需求">需求</h2>
+<p>在上次這篇 <a href="https://dennys.wordpress.com/?p=305"><a href="https://dennys.wordpress.com/?p=305" target="_blank" rel="noopener noreffer">https://dennys.wordpress.com/?p=305</a></a> 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:</p>
+<p>1. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式</p>
+<p>2. 用 fastboot 刷回原始的 boot.img</p>
+<pre class="wp-block-code"><code>fastboot boot boot.img</code></pre>
+<p>2.1 其實 Magisk 有這個功能刷回原始的 boot.img</p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/image-3.png"></a></p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/image-4.png"></a></p>
+<p>2.2 但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷</p>
+<p><a href="https://dennys.files.wordpress.com/2022/02/image-5.png"></a></p>
+<p>3. 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.</p>
 ]]></description>
 </item>
 </channel>

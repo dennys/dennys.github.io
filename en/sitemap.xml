@@ -60,7 +60,15 @@
                     href="https://dennys.github.io/tags/"
                     /></url><url>
             <loc>https://dennys.github.io/2022/03/gitlab-dotnet4-ci-cd/</loc><lastmod>2022-06-09T22:18:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dennys.github.io/tags/ifttt/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://dennys.github.io/tags/ifttt/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-tw"
+                        href="https://dennys.github.io/zh-tw/tags/ifttt/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://dennys.github.io/tags/ifttt/"
+                    /></url><url>
             <loc>https://dennys.github.io/2022/03/use-ifttt-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dennys.github.io/2022/03/use-wise-to-send-currency-exchange-rate-mail-daily/</loc><lastmod>2022-03-24T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dennys.github.io/tags/checkmarx/</loc><lastmod>2022-01-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
