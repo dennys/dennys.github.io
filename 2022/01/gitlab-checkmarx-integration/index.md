@@ -1,8 +1,8 @@
 # GitLab Checkmarx integration
 
 
-![GitLab](/images/GitLab_logo.webp)
-![Checkmarx](/images/Checkmarx_logo.png)
+![GitLab](/images/software/logo/GitLab_logo.webp)
+![Checkmarx](/images/software/logo/Checkmarx_logo.png)
 
 ## Purpose
 When we commit code to [GitLab](https://gitlab.com/), we want GitLab sends the code to [Checkmarx] (https://checkmarx.com/) to scan. (the next step is to integrate the scan result to SonarQube)

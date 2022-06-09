@@ -1,9 +1,9 @@
 # GitLab Checkmarx SonarQube integration
 
 
-![GitLab](/images/GitLab_logo.webp)
-![Checkmarx](/images/Checkmarx_logo.png)
-![SonarQube](/images/SonarQube_logo.webp)
+![GitLab](/images/software/logo/GitLab_logo.webp)
+![Checkmarx](/images/software/logo/Checkmarx_logo.png)
+![SonarQube](/images/software/logo/SonarQube_logo.webp)
 
 ## Purpose
 
