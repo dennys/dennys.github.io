@@ -7,5 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/ifttt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use IFTTT to send currency exchange rate mail daily</title>
+      <link>https://dennys.github.io/posts/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/posts/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
+      <description>
+        
+          
+            Requirement I want to have a daily mail including currency exchange rate information.
+Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
+Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;quot;finance&amp;quot; service Choose &amp;quot;Today&#39;s exchange rate report&amp;quot; Choose the input/output currency and trigger time. Add a new &amp;quot;Then That&amp;quot; Choose a &amp;quot;gmail&amp;quot; service If you just want to send yourself an email, you can click the right button.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

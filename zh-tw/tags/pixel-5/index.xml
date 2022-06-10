@@ -7,5 +7,78 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Sun, 10 Apr 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/pixel-5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>把 Android 12 鎖定畫面的時鐘改單行</title>
+      <link>https://dennys.github.io/zh-tw/posts/202204/android-12-lock-screen-double-line-clock/</link>
+      <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/posts/202204/android-12-lock-screen-double-line-clock/</guid>
+      <description>
+        
+          
+            前言 自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.
+看起來評價不是很好, 我也覺得很不直覺...
+不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
+成果 結果就會變成如下
+參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;amp;msgid=154180966 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Android 移除 Root 和 Magisk</title>
+      <link>https://dennys.github.io/zh-tw/posts/202203/android-remove-root-magisk/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/posts/202203/android-remove-root-magisk/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+需求 在上次這篇 https://dennys.wordpress.com/?p=305 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+1. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
+2. 用 fastboot 刷回原始的 boot.img
+fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
+2.2 但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷
+3. 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Google Pixel 5 Root &amp; Magisk</title>
+      <link>https://dennys.github.io/zh-tw/posts/202203/google-pixel-5-root-magisk/</link>
+      <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/posts/202203/google-pixel-5-root-magisk/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 ps: 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息
+===================================================
+安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好.
+https://developer.android.com/studio/releases/platform-tools#downloads
+===================================================
+手機解鎖 Unlock 請記得先備份資料, 因為解鎖會清空資料
+請記得先備份資料, 因為解鎖會清空資料
+請記得先備份資料, 因為解鎖會清空資料
+1. 手機進入開發者模式並確定 adb devices 可以連上手機
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
