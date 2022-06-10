@@ -299,10 +299,18 @@ remote-cert-tls server
 <p>自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &ldquo;不要驗證&rdquo;, 原因可參考 <a href="https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/" target="_blank" rel="noopener noreffer">https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/</a>. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">而且 iPhone 至少到 15.4 都沒有卡這個&hellip;</mark>)</p>
 <p>爬了一下文, 看來是可以直接把這個設定加回去 (參考: <a href="https://android.stackexchange.com/questions/231859/%29" target="_blank" rel="noopener noreffer">https://android.stackexchange.com/questions/231859/)</a>, 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">必須 Unlock 才能修改</mark>. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.</p>
 <h2 id="修改步驟">修改步驟</h2>
-<p>1. 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://wordpress.com/post/dennys.wordpress.com/280">https://wordpress.com/post/dennys.wordpress.com/280</a>. (要做到把 boot.img 換掉)</p>
-<p>2. 試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">當然是不會成功</mark>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p>
+<ol>
+<li>
+<p>首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://dennys.github.io/zh-tw/2022/03/google-pixel-5-root-magisk" target="_blank" rel="noopener noreffer">https://dennys.github.io/zh-tw/2022/03/google-pixel-5-root-magisk</a>. (要做到把 boot.img 換掉)</p>
+</li>
+<li>
+<p>試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">當然是不會成功</mark>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p></p>
+</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/02/1-1.png"></a></p>
-<p>3. 先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
+<ol start="3">
+<li>先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p></li>
+</ol>
 <pre class="wp-block-code"><code>adb shell
 su
 cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code></pre>
@@ -334,13 +342,17 @@ cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code></pre>
 &lt;null name="KeyChainAlias" /&gt;
 &lt;null name="DecoratedIdentityPrefix" /&gt;
 &lt;/WifiEnterpriseConfiguration&gt;</code></pre>
-<p>4. 執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">CaPath</mark> 和 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">DomSuffixMatch</mark> 的內容改成空白. 最後一個步驟會重開, <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">要重開才會生效</mark>.</p>
+<ol start="4">
+<li>執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">CaPath</mark> 和 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">DomSuffixMatch</mark> 的內容改成空白. 最後一個步驟會重開, <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">要重開才會生效</mark>.</li>
+</ol>
 <pre class="wp-block-code"><code>adb shell
 su
 sed -i 's%&lt;string name="CaPath"&gt;.*&lt;/string&gt;%&lt;string name="CaPath"&gt;&lt;/string&gt;%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
 sed -i 's%&lt;string name="DomSuffixMatch"&gt;.*&lt;/string&gt;%&lt;string name="DomSuffixMatch"&gt;&lt;/string&gt;%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
 reboot</code></pre>
-<p>5. 重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了</p>
+<ol start="5">
+<li>重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了</li>
+</ol>
 <pre class="wp-block-code"><code>&lt;WifiEnterpriseConfiguration&gt;
 &lt;string name="Identity"&gt;這裡是帳號名字&lt;/string&gt;
 &lt;string name="AnonIdentity"&gt;&lt;/string&gt;
@@ -365,8 +377,14 @@ reboot</code></pre>
 &lt;null name="KeyChainAlias" /&gt;
 &lt;null name="DecoratedIdentityPrefix" /&gt;
 &lt;/WifiEnterpriseConfiguration&gt;</code></pre>
-<p>6. 這時候應該就可以連線了</p>
-<p>7. 因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 https://dennys.wordpress.com/?p=330</p>
+<ol start="6">
+<li>
+<p>這時候應該就可以連線了</p>
+</li>
+<li>
+<p>因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 <a href="https://dennys.wordpress.com/?p=330" target="_blank" rel="noopener noreffer">https://dennys.wordpress.com/?p=330</a></p>
+</li>
+</ol>
 <h2 id="系統更新後如何處理">系統更新後如何處理?</h2>
 <p>不用處理, 至少目前我的 Pixel 5 更新到 2022 年 5 月更新 (12.1.0 (SP2A.220505.002, May 2022) 時, 都不需要處理.</p>
 <h2 id="wi-fi-密碼更新後如何處理">Wi-Fi 密碼更新後如何處理?</h2>

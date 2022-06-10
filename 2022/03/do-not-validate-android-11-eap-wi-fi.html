@@ -1,0 +1,111 @@
+# 如何將不要驗證 (Do Not Validate) 加回 Android 11 以上的 EAP Wi-Fi
+
+
+ **注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!**
+
+**注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!**
+
+**注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!**
+
+\===================================================================
+
+Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 不要驗證, 如下:
+
+[![](https://dennys.files.wordpress.com/2022/02/image-13.png?w=346)](https://dennys.files.wordpress.com/2022/02/image-13.png)
+
+自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 不要驗證, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向應該是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 竟然沒有卡這個...)
+
+爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
+
+步驟如下
+
+1\. 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 [https://wordpress.com/post/dennys.wordpress.com/280](https://wordpress.com/post/dennys.wordpress.com/280). (做到 Unlock 解鎖就可以了, 不需要 Root)
+
+2\. 試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這當然是不會成功, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.
+
+[![](https://dennys.files.wordpress.com/2022/02/1-1.png?w=373)](https://dennys.files.wordpress.com/2022/02/1-1.png)
+
+3\. 先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看
+
+```
+adb shell  
+su  
+cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
+```
+
+WifiConfigStore.xml 內容如下, 可找 WifiEnterpriseConfiguration 這個關鍵字, 目的是要把紅色的設定值拿掉
+
+```
+<WifiEnterpriseConfiguration>  
+<string name="Identity">這裡是帳號名字</string>  
+<string name="AnonIdentity"></string>  
+<string name="Password">這裡是密碼</string>  
+<string name="ClientCert"></string>  
+<string name="CaCert"></string>  
+<string name="SubjectMatch"></string>  
+<string name="Engine">0</string>  
+<string name="EngineId"></string>  
+<string name="PrivateKeyId"></string>  
+<string name="AltSubjectMatch"></string>  
+<string name="DomSuffixMatch">這裡是上面隨便輸入的網域</string>  
+<string name="CaPath">/system/etc/security/cacerts</string>  
+<int name="EapMethod" value="0" />  
+<int name="Phase2Method" value="4" />  
+<string name="PLMN"></string>  
+<string name="Realm"></string>  
+<int name="Ocsp" value="0" />  
+<string name="WapiCertSuite"></string>  
+<boolean name="AppInstalledRootCaCert" value="false" />  
+<boolean name="AppInstalledPrivateKey" value="false" />  
+<null name="KeyChainAlias" />  
+<null name="DecoratedIdentityPrefix" />  
+</WifiEnterpriseConfiguration>
+```
+
+4\. 執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 CaPath 和 DomSuffixMatch 的內容改成空白. 最後一個步驟會重開, 要重開才會生效.
+
+```
+adb shell  
+su  
+sed -i 's%<string name="CaPath">.*</string>%<string name="CaPath"></string>%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml  
+sed -i 's%<string name="DomSuffixMatch">.*</string>%<string name="DomSuffixMatch"></string>%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml  
+reboot
+```
+
+5\. 重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了
+
+```
+<WifiEnterpriseConfiguration>  
+<string name="Identity">這裡是帳號名字</string>  
+<string name="AnonIdentity"></string>  
+<string name="Password">這裡是密碼</string>  
+<string name="ClientCert"></string>  
+<string name="CaCert"></string>  
+<string name="SubjectMatch"></string>  
+<string name="Engine">0</string>  
+<string name="EngineId"></string>  
+<string name="PrivateKeyId"></string>  
+<string name="AltSubjectMatch"></string>  
+<string name="DomSuffixMatch"></string>  
+<string name="CaPath"></string>  
+<int name="EapMethod" value="0" />  
+<int name="Phase2Method" value="4" />  
+<string name="PLMN"></string>  
+<string name="Realm"></string>  
+<int name="Ocsp" value="0" />  
+<string name="WapiCertSuite"></string>  
+<boolean name="AppInstalledRootCaCert" value="false" />  
+<boolean name="AppInstalledPrivateKey" value="false" />  
+<null name="KeyChainAlias" />  
+<null name="DecoratedIdentityPrefix" />  
+</WifiEnterpriseConfiguration>
+```
+
+6\. 這時候應該就可以連線了
+
+7\. 因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 https://dennys.wordpress.com/?p=330
+
+後記
+--
+
+1\. 這個方法並不是把不要驗證 (Do Not Validate) 的設定加回去, 而是先嘗試連線一個要驗證的 Wi-Fi (當然這裡會失敗), 等他把設定檔存下來之後, 再進系統把它改掉, 所以還是和 Android 10 以前不太一樣. 所以每次連上一個新的要使用 EAP 的 Wi-Fi 基地台都要重新執行一次, 會比較麻煩.

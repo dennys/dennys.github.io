@@ -1,0 +1,292 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Camera - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/tags/camera/</link>
+        <description>Camera - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 08 Dec 2012 18:17:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/camera/" rel="self" type="application/rss+xml" /><item>
+    <title>PTool 修改 Panasonic G2</title>
+    <link>https://dennys.github.io/2012/12/ptool-panasonic-g2.html</link>
+    <pubDate>Sat, 08 Dec 2012 18:17:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/2012/12/ptool-panasonic-g2.html</guid>
+    <description><![CDATA[<p><strong>1. Basic</strong></p>
+<ul>
+<li>Version incremental (打勾)</li>
+<li>Prevent version compare (打勾)</li>
+</ul>
+<p><strong>2. FPS change</strong></p>
+<p>G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps</p>
+<ul>
+<li>720p59,94fps-&gt;29.97</li>
+<li>PAL &lt;-&gt; NTSC</li>
+</ul>
+<p><strong>3. Manual movie mode</strong></p>
+<ul>
+<li>Manual Movie Modes (打勾)</li>
+</ul>
+<p>手動錄影的操作方式如下 (不需要轉到錄影模式)</p>
+<ol>
+<li>開機</li>
+<li>選 PASM 任一種</li>
+<li>按下 Menu/Set</li>
+<li>再按一下 Menu/Set</li>
+<li>這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了.</li>
+</ol>
+<p><strong>4. 流量</strong></p>
+<p>這個研究中, 雖然改了 potplayer 可以看到 Overall Bitrate 變了, 但檔案大小和實際流量似乎還是一樣?</p>
+<ul>
+<li>Video Bitrate FHD/SH (設成 50)</li>
+<li>Video Bitrate H: (設成 32)</li>
+<li>Video Bitrate L: (設成 20)</li>
+<li>Overall Bitrate (設成 52)</li>
+</ul>
+]]></description>
+</item>
+<item>
+    <title>GF5, LX7, RX100</title>
+    <link>https://dennys.github.io/2012/10/gf5-lx7-rx100.html</link>
+    <pubDate>Sat, 06 Oct 2012 20:22:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/2012/10/gf5-lx7-rx100.html</guid>
+    <description><![CDATA[<p>Panasonic GF5 + 20mm F1.7</p>
+<p>Panasonic LX7</p>
+<p>Sony RX100</p>
+<p>焦段</p>
+<p>20mm</p>
+<p>24-90mm</p>
+<p>28-100mm </p>
+<p>光圈</p>
+<p>F1.7</p>
+<p>F1.4-2.3</p>
+<p>F1.8-4.9</p>
+<p>體積 (mm)</p>
+<p>107.7 x 66.6 x 36.8mm<br>
+鏡頭: 63x25.5mm</p>
+<p>111 x 67 x 46 mm</p>
+<p>102 x 59 x 36 mm</p>
+<p>重量 (g)</p>
+<p>225g (不含鏡頭)</p>
+<p>269g</p>
+<p>213g</p>
+<p>重量 (含電池,SD)</p>
+<p>267g (不含鏡頭)<br>
+367g (含20mm鏡頭)</p>
+<p>298g</p>
+<p>240g</p>
+<p>像素</p>
+<p>1210 萬</p>
+<p>1270 萬</p>
+<p>2020 萬</p>
+<p>CCD</p>
+<p>4/3&quot;</p>
+<p>1/1.7&quot;</p>
+<p>1&quot;</p>
+<p>連拍</p>
+<p>4fps</p>
+<p>5fps</p>
+<p>10fps</p>
+<p>錄影</p>
+<p>1920x1080@60i (17Mbps)<br>
+AVHCD, MP4</p>
+<p>1920x1080@60p (28Mbps)<br>
+AVHCD, MP4</p>
+<p>1920x1080@60p (28Mbps)<br>
+AVHCD, MP4</p>
+<p>麥克風</p>
+<p>立體聲</p>
+<p>立體聲</p>
+<p>立體聲</p>
+<p>液晶螢幕</p>
+<p>3.0&quot; 92 萬像素觸控</p>
+<p>3.0&quot; 92 萬像素</p>
+<p>3.0&quot; 122.9萬像素</p>
+<p>價格</p>
+<p>15K</p>
+<p>20K</p>
+<p>參考:</p>
+<ul>
+<li></li>
+</ul>
+]]></description>
+</item>
+<item>
+    <title>Panasonic m43 相機, 鏡頭規格</title>
+    <link>https://dennys.github.io/2012/09/panasonic-m43.html</link>
+    <pubDate>Sat, 22 Sep 2012 00:23:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/2012/09/panasonic-m43.html</guid>
+    <description><![CDATA[<p>G2</p>
+<p>GH2</p>
+<p>G5</p>
+<p>GH3</p>
+<p>發佈日期</p>
+<p>2010年4月</p>
+<p>2010年9月</p>
+<p>2012年10月 </p>
+<p>2012年12月 </p>
+<p>體積 (mm)</p>
+<p>124 x 84 x 74</p>
+<p>124 x 90 x 76</p>
+<p>112 x 83 x 71</p>
+<p>133 x 93 x 82.0</p>
+<p>重量 (g)</p>
+<p>371g</p>
+<p>392g</p>
+<p>346g</p>
+<p>470g</p>
+<p>重量 (含電池,SD)</p>
+<p>428g</p>
+<p>434g</p>
+<p>396g</p>
+<p>550g</p>
+<p>像素</p>
+<p>1210 萬</p>
+<p>1605 萬</p>
+<p>1605 萬</p>
+<p>1605 萬</p>
+<p>連拍</p>
+<p>3.2 fps</p>
+<p>5 fps</p>
+<p>6 fps</p>
+<p>6 fps</p>
+<p>錄影</p>
+<p>AVCHD Lite:<br>
+720, 60p (30 fps)<br>
+720, 50p (25 fps)</p>
+<p>AVHCD:<br>
+1080i@60 FPS<br>
+1080p@24FPS ( 24Mbps)<br>
+720p@60FPS</p>
+<p>AVCHD:<br>
+1080p@60fps (28Mbps)<br>
+錄影過程無法調整光圈、快門、EV</p>
+<p>AVCHD:<br>
+1080@60p (28Mbps)<br>
+MP4:<br>
+1080@30p/24p @ 30p (72Mbps, ALL-Intra)<br>
+1080@60p/24p @ 60p (50Mbps, IPB)</p>
+<p>麥克風</p>
+<p>Mono<br>
+可外接mic</p>
+<p>Stereo<br>
+可外接mic</p>
+<p>Stereo<br>
+不可外接mic</p>
+<p>Stereo</p>
+<p>液晶螢幕</p>
+<p>3.0 吋 46 萬</p>
+<p>3.0 吋 46 萬</p>
+<p>3.0 吋 92 萬</p>
+<p>3 吋 61 萬(電容式)</p>
+<p>其他</p>
+<p>電子快門 (但無法使用內外閃)</p>
+<p>Wifi</p>
+<p>參考:</p>
+<ul>
+<li><a href="http://blog.planet.idv.tw/2012/07/panasonic-dmc-g5.html" target="_blank" rel="noopener noreffer">錄影功能 G5 v.s. GH2</a> </li>
+</ul>
+<p>LUMIX G 20mm / F1.7 ASPH</p>
+<p>Leica Summilux 25mm F/1.4 DG ASPH</p>
+<p>LUMIX G X VARIO 35-100mm F2.8 ASPH</p>
+<p>LUMIX G X 14-42mm HD</p>
+<p>LUMIX G X Vario PZ 45-175mm F4-5.6 Power O.I.S. HD</p>
+<p>焦段</p>
+<p>20 mm 定焦</p>
+<p>25 mm 定焦</p>
+<p>35-100 mm</p>
+<p>14-42 mm</p>
+<p>45-175 mm</p>
+<p>變焦方式</p>
+<p>N/A</p>
+<p>N/A</p>
+<p>內變焦</p>
+<p>?</p>
+<p>內變焦</p>
+<p>最大光圈</p>
+<p>F1.7</p>
+<p>F1.4</p>
+<p>F2.8</p>
+<p>F3.5-F5.6</p>
+<p>F4-5.6</p>
+<p>體積 (mm)</p>
+<p>63 x 25.5</p>
+<p>63 x 54.5</p>
+<p>67.6 x 99.9</p>
+<p>26.8 x 61</p>
+<p>90 x 61.6</p>
+<p>重量</p>
+<p>100 g</p>
+<p>200 g</p>
+<p>360 g</p>
+<p>95 g</p>
+<p>210 g</p>
+<p>最近對焦距離</p>
+<p>20 cm</p>
+<p>30 cm</p>
+<p>85 cm</p>
+<p>20 cm（廣角端）/ 3 0cm（望遠端）</p>
+<p>90 cm</p>
+<p>濾鏡口徑</p>
+<p>46 mm</p>
+<p>46 mm</p>
+<p>58 mm</p>
+<p>其他</p>
+<p>附贈方型遮光罩</p>
+<p>HD 等級 0.1 秒自動對焦、並針對錄影對焦最佳化</p>
+<p>HD 等級 0.15 秒自動對焦、並針對錄影對焦最佳化</p>
+]]></description>
+</item>
+<item>
+    <title>m43 用閃光燈</title>
+    <link>https://dennys.github.io/2012/09/flash.html</link>
+    <pubDate>Sat, 08 Sep 2012 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/2012/09/flash.html</guid>
+    <description><![CDATA[<p>For Panasonic m43</p>
+<p>型號</p>
+<p>GN</p>
+<p>重量<br>
+(無電池)</p>
+<p>體積</p>
+<p>優點</p>
+<p>缺點</p>
+<p>價位</p>
+<p>備註</p>
+<p>Nissin Di466</p>
+<p>33</p>
+<p>240g</p>
+<p>67x105x95mm</p>
+<p>不能擺頭</p>
+<p>&lt;4,000</p>
+<p>Panasonic DMW-FL360</p>
+<p>36</p>
+<p>270g</p>
+<p>67x108x95mm</p>
+<p>支援FP</p>
+<p>回電速度慢</p>
+<p>8,000~9,000</p>
+<p>Panasonic DMW-FL500</p>
+<p>50</p>
+<p>375g</p>
+<p>79x141x107mm</p>
+<p>支援FP</p>
+<p>貴</p>
+<p>16,000~17,000</p>
+<p>很少二手貨</p>
+<p>Metz 50 AF-1</p>
+<p>50</p>
+<p>340g</p>
+<p>71x137x99mm</p>
+<p>10,000~11,000</p>
+<p>Metz 58 AF-2</p>
+<p>58 (ISO 100/105mm)<br>
+42 (ISO 100/50mm)</p>
+<p>355g</p>
+<p>71×148×99mm</p>
+<p>12,000~15,000</p>
+<p>Cactus AF50</p>
+<p>不常見?</p>
+]]></description>
+</item>
+</channel>
+</rss>

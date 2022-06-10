@@ -25,19 +25,19 @@ Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可�
 
 ## 修改步驟
 
-<p>1. 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://wordpress.com/post/dennys.wordpress.com/280">https://wordpress.com/post/dennys.wordpress.com/280</a>. (要做到把 boot.img 換掉)</p>
+1. 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 https://dennys.github.io/zh-tw/2022/03/google-pixel-5-root-magisk. (要做到把 boot.img 換掉)
 
-<p>2. 試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">當然是不會成功</mark>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p>
+1. 試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">當然是不會成功</mark>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p>
 
 <a href="https://dennys.files.wordpress.com/2022/02/1-1.png"><img src="https://dennys.files.wordpress.com/2022/02/1-1.png?w=373" alt="" class="wp-image-316" width="261" height="369"/></a>
 
-<p>3. 先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
+3. 先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
 
 <pre class="wp-block-code"><code>adb shell
 su
 cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code></pre>
 
-<p>若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.</p>
+若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.
 
 <pre class="wp-block-code"><code>127|redfin:/system/bin $ su
 /system/bin/sh: su: inaccessible or not found</code></pre>
@@ -69,7 +69,7 @@ cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code></pre>
 &lt;null name="DecoratedIdentityPrefix" /&gt;
 &lt;/WifiEnterpriseConfiguration&gt;</code></pre>
 
-<p>4. 執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">CaPath</mark> 和 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">DomSuffixMatch</mark> 的內容改成空白. 最後一個步驟會重開, <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">要重開才會生效</mark>.</p>
+4. 執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">CaPath</mark> 和 <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">DomSuffixMatch</mark> 的內容改成空白. 最後一個步驟會重開, <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">要重開才會生效</mark>.
 
 <pre class="wp-block-code"><code>adb shell
 su
@@ -77,7 +77,7 @@ sed -i 's%&lt;string name="CaPath"&gt;.*&lt;/string&gt;%&lt;string name="CaPath"
 sed -i 's%&lt;string name="DomSuffixMatch"&gt;.*&lt;/string&gt;%&lt;string name="DomSuffixMatch"&gt;&lt;/string&gt;%' /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
 reboot</code></pre>
 
-<p>5. 重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了</p>
+5. 重開完後, 檢查 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml 的內容, 確認下面紅色這段的設定被清空了
 
 <pre class="wp-block-code"><code>&lt;WifiEnterpriseConfiguration&gt;
 &lt;string name="Identity"&gt;這裡是帳號名字&lt;/string&gt;
@@ -104,9 +104,9 @@ reboot</code></pre>
 &lt;null name="DecoratedIdentityPrefix" /&gt;
 &lt;/WifiEnterpriseConfiguration&gt;</code></pre>
 
-<p>6. 這時候應該就可以連線了</p>
+6. 這時候應該就可以連線了
 
-<p>7. 因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 https://dennys.wordpress.com/?p=330</p>
+7. 因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 https://dennys.wordpress.com/?p=330
 
 ## 系統更新後如何處理?
 
