@@ -13,17 +13,17 @@ Diversion 安裝可參考: https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin
 
 <ol><li>執行 b (blocking list)</li><li>執行 8 (YouTube video ads blocking) =&gt; 還是 experimental feature</li></ol>
 
-<figure class="wp-block-image size-large"><img src="https://dennys.files.wordpress.com/2020/06/image.png?w=525" alt="" class="wp-image-60"/></figure>
+<img src="https://dennys.files.wordpress.com/2020/06/image.png?w=525" alt="" class="wp-image-60"/>
 
 <p></p>
 
 <p>3. 選擇 8 以後, 他會要你再確認一次</p>
 
-<figure class="wp-block-image size-large"><img src="https://dennys.files.wordpress.com/2020/06/image-1.png?w=526" alt="" class="wp-image-61"/></figure>
+<img src="https://dennys.files.wordpress.com/2020/06/image-1.png?w=526" alt="" class="wp-image-61"/>
 
 <p>4. 然後他就會開始安裝了</p>
 
-<figure class="wp-block-image size-large"><img src="https://dennys.files.wordpress.com/2020/06/image-3.png?w=805" alt="" class="wp-image-63"/></figure>
+<img src="https://dennys.files.wordpress.com/2020/06/image-3.png?w=805" alt="" class="wp-image-63"/>
 
 <p></p>
 
