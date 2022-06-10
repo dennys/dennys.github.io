@@ -49,7 +49,9 @@ https://dl.twrp.me/hero2lte/twrp-3.6.0_9-0-hero2lte.img.tar.html, 注意, 一開
 
 如果要用 ADB, 指令如下:
 
-<pre class="wp-block-code"><code>adb sideload open_gapps-arm64-11.0-nano-20220202.zip</code></pre>
+```
+adb sideload open_gapps-arm64-11.0-nano-20220202.zip
+```
 
 ## TWRP 被 LineageOS Recovery 蓋掉的問題
 

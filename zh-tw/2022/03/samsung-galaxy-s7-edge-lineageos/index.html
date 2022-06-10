@@ -30,7 +30,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/dennys.github.io\/zh-tw\/2022\/03\/samsung-galaxy-s7-edge-lineageos\/"
-        },"image": ["https:\/\/dennys.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Root, Magisk, 改機, Galaxy S7","wordcount":  617 ,
+        },"image": ["https:\/\/dennys.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Root, Magisk, 改機, Galaxy S7","wordcount":  618 ,
         "url": "https:\/\/dennys.github.io\/zh-tw\/2022\/03\/samsung-galaxy-s7-edge-lineageos\/","datePublished": "2022-03-25T00:00:00+08:00","dateModified": "2022-03-25T00:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/dennys.github.io\/images\/avatar.png"},"author": {
@@ -109,7 +109,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Samsung Galaxy S7 Edge 刷 LineageOS</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/zh-tw/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">收錄於 <a href="/zh-tw/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/zh-tw/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-25">2022-03-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 617 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-25">2022-03-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 618 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id="/zh-tw/2022/03/samsung-galaxy-s7-edge-lineageos/" class="leancloud_visitors" data-flag-title="Samsung Galaxy S7 Edge 刷 LineageOS">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
                     </span>&nbsp;</div>
@@ -174,8 +174,15 @@
 <h3 id="刷-lineageos-和-open-gapps">刷 LineageOS 和 Open Gapps</h3>
 <p>執行 adb reboot recovery 或是先關機, 然後按音量上+Home+Power 鍵進入 TWRP Recovery. 選 INSTALL, 把LineageOS 和 Open Gapps 的 zip 檔案裝上去, 重開機就可以了.</p>
 <p>如果要用 ADB, 指令如下:</p>
-<pre class="wp-block-code"><code>adb sideload open_gapps-arm64-11.0-nano-20220202.zip</code></pre>
-<h2 id="twrp-被-lineageos-recovery-蓋掉的問題">TWRP 被 LineageOS Recovery 蓋掉的問題</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">adb sideload open_gapps-arm64-11.0-nano-20220202.zip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="twrp-被-lineageos-recovery-蓋掉的問題">TWRP 被 LineageOS Recovery 蓋掉的問題</h2>
 <p>自 LineageOS 17 開始, 他自己有帶一個 Recovery, 嘗試刷回 TWRP 又常常失敗.</p>
 <p>可試試看 <a href="https://forum.xda-developers.com/t/3334084/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/3334084/</a> 的 step 6~8</p>
 <p>=================================================</p>

@@ -3,7 +3,7 @@
 
 ## 請先安裝 Diversion
 
-Diversion 安裝可參考: https://dennys.github.io/
+Diversion 安裝可參考: https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin-diversion/
 
 ## 說明
 
