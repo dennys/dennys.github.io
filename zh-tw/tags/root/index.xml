@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Root on Dennys Diary</title>
+    <link>https://dennys.github.io/zh-tw/tags/root/</link>
+    <description>Recent content in Root on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/root/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
+      <link>https://dennys.github.io/zh-tw/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
+自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個...)
+爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
+      <link>https://dennys.github.io/zh-tw/202203/samsung-galaxy-s7-edge-lineageos/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/202203/samsung-galaxy-s7-edge-lineageos/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
+*最有名的 LineageOS 15~19 (Android 8~12) *FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能
+作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Google Pixel 5 Root &amp; Magisk</title>
+      <link>https://dennys.github.io/zh-tw/202203/google-pixel-5-root-magisk/</link>
+      <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/202203/google-pixel-5-root-magisk/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 ps: 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下
+1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
+安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好.
+https://developer.android.com/studio/releases/platform-tools#downloads
+===================================================
+手機解鎖 Unlock 請記得先備份資料, 因為解鎖會清空資料
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
