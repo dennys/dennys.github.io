@@ -1,37 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>IFTTT on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/ifttt/</link>
-    <description>Recent content in IFTTT on Dennys Diary</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/ifttt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
-      <link>https://dennys.github.io/en/202203/line-robot-send-currency-exchange-rate-ifttt/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/202203/line-robot-send-currency-exchange-rate-ifttt/</guid>
-      <description>
-        
-          
-            需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊.
-匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務, 他的名字是 if this then that 的縮寫. 以這個應用來講, 我們要的是, IF 拿到一個匯率, THEN 發一個 LINE 訊息, 作法如下:
-1. 在 IFTTT 建立一個新的 Applet
-2. 新增一個 &#34;If This&#34;
-3. 選擇 &#34;Finance&#34; service, 這個服務目前是由 Yahoo 提供的
-4. 選擇&#34;Today&#39;s exchange rate report&#34;
-5. 在這裡輸入你需要的幣別和通知 (發 LINE) 的時間
-6. 新增一個 &#34;Then That&#34;
-7. 選擇 &#34;LINE&#34; service
-8. 目前他只有一個功能就是 Send message, 就選這個
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>IFTTT - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/en/tags/ifttt/</link>
+        <description>IFTTT - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/ifttt/" rel="self" type="application/rss+xml" /><item>
+    <title>Use IFTTT to send currency exchange rate mail daily</title>
+    <link>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</link>
+    <pubDate>Thu, 24 Mar 2022 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
+    <description><![CDATA[<h2 id="requirement">Requirement</h2>
+<p>I want to have a daily mail including currency exchange rate information.</p>
+<ol>
+<li>Mail subject: include the exchange rate in the mail subject.</li>
+<li>Mail content:
+<ol>
+<li>Has some links to banks&rsquo; exchange rate page.</li>
+<li>Include some exchange rate history chart.</li>
+</ol>
+</li>
+</ol>
+<h2 id="solution">Solution</h2>
+<p>Use ifttt.com</p>
+<ol>
+<li>Create a new Applet on IFTTT</li>
+<li>Add a new &ldquo;If This&rdquo;</li>
+</ol>
+<!-- wp:image {"id":432,"width":382,"height":180,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"></a></p>
+<!-- /wp:image -->
+<ol start="3">
+<li>Choose &ldquo;finance&rdquo; service</li>
+</ol>
+<!-- wp:image {"id":416,"width":446,"height":274,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image.png"></a></p>
+<!-- /wp:image -->
+<ol start="4">
+<li>Choose &ldquo;Today&rsquo;s exchange rate report&rdquo;</li>
+</ol>
+<!-- wp:image {"id":418,"width":568,"height":280,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"></a></p>
+<!-- /wp:image -->
+<ol start="5">
+<li>Choose the input/output currency and trigger time.</li>
+</ol>
+<!-- wp:image {"id":420,"width":385,"height":373,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"></a></p>
+<!-- /wp:image -->
+<ol start="6">
+<li>Add a new &ldquo;Then That&rdquo;</li>
+</ol>
+<!-- wp:image {"id":434,"width":288,"height":148,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"></a></p>
+<!-- /wp:image -->
+<ol start="7">
+<li>Choose a &ldquo;gmail&rdquo; service</li>
+</ol>
+<!-- wp:image {"id":422,"width":329,"height":207,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"></a></p>
+<!-- /wp:image -->
+<ol start="8">
+<li>If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.</li>
+</ol>
+<!-- wp:image {"id":424,"width":484,"height":226,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"></a></p>
+<!-- /wp:image -->
+<ol start="9">
+<li>This is an example to send your self an email.</li>
+</ol>
+<!-- wp:image {"id":426,"width":339,"height":489,"sizeSlug":"large","linkDestination":"media"} -->
+<p><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"></a></p>
+<!-- /wp:image -->
+<p>9.1 This is my email body</p>
+<!-- wp:code -->
+<pre class="wp-block-code"><code>As of {{CheckTime}}, 1 {{InputCurrency}} equals {{ExchangeRate}} {{OutputCurrency}}.&lt;br&gt;
+&lt;br&gt;
+via {{InfoUrl}}
+
+&lt;b&gt;美元匯率:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;
+&lt;a href="https://rate.bot.com.tw/xrt?Lang=zh-TW"&gt;即時&lt;/a&gt;(台銀)&amp;nbsp;
+&lt;a href="https://rate.bot.com.tw/xrt/quote/day/USD"&gt;當日&lt;/a&gt;(台銀)&amp;nbsp;
+&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1W"&gt;1周&lt;/a&gt;(XE)&amp;nbsp;
+&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1M"&gt;1個月&lt;/a&gt;(XE)&amp;nbsp;
+&lt;a href="https://rate.bot.com.tw/xrt/quote/ltm/USD"&gt;3個月&lt;/a&gt;(台銀)&amp;nbsp;
+&lt;a href="https://rate.bot.com.tw/xrt/quote/l6m/USD"&gt;6個月&lt;/a&gt;(台銀)
+&lt;/li&gt;&lt;li&gt;
+&lt;a href="https://rate.bot.com.tw/xrt/quote/l1y/USD"&gt;1年&lt;/a&gt;(台銀)&amp;nbsp;
+&lt;a href="https://www.esunbank.com.tw/bank/personal/deposit/rate/forex/exchange-rate-chart?Currency=USD/TWD"&gt;1年&lt;/a&gt;(玉山)&amp;nbsp;
+&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1Y"&gt;1年&lt;/a&gt;(XE)&amp;nbsp;
+&lt;a href="https://rate.bot.com.tw/xrt/quote/l3y/USD"&gt;3年&lt;/a&gt;(台銀)&amp;nbsp;
+&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=5Y"&gt;5年&lt;/a&gt;(XE)&amp;nbsp;
+&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=10Y"&gt;10年&lt;/a&gt;(XE)&amp;nbsp;
+&lt;a href="https://fxtop.com/en/historical-exchange-rates.php?A=1&amp;C1=USD&amp;C2=TWD&amp;DD1=&amp;MM1=&amp;YYYY1=&amp;B=1&amp;P=&amp;I=1&amp;DD2=03&amp;MM2=03&amp;YYYY2=2099&amp;btnOK=Go%21"&gt;1983~現在&lt;/a&gt;(FXTOP)&amp;nbsp;
+&lt;/li&gt;&lt;li&gt;
+&lt;a href="https://historical.findrate.tw/USD/"&gt;1個月+1年+10年&lt;/a&gt;(FindRate)
+&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;
+
+&lt;b&gt;2022/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
+&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2022&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
+&lt;b&gt;2021/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
+&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2021&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
+&lt;b&gt;2020/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
+&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2020&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
+&lt;b&gt;2000/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
+&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2000&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
+</code></pre>
+<!-- /wp:code -->
+<h2 id="mail-result">Mail result</h2>
+<!-- wp:image {"id":430,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"></a>
+<!-- /wp:image -->
+<h2 id="ifttt-applet-location">IFTTT applet location</h2>
+<p>This is my IFTTT applet: <a href="https://ifttt.com/applets/SxPJ2fpv-" target="_blank" rel="noopener noreffer">https://ifttt.com/applets/SxPJ2fpv-</a></p>
+<h2 id="about-the-exchange-rate-history-chart">About the exchange rate history chart</h2>
+<p>I only find 2 websites provides exchange rate chart to embed in the mail content.</p>
+<ol>
+<li><a href="https://fxtop.com/" target="_blank" rel="noopener noreffer">https://fxtop.com/</a>, it provides PNG format chart, I already include it in my IFTTT applet.</li>
+<li><a href="https://www.currencyconverterrate.com/" target="_blank" rel="noopener noreffer">https://www.currencyconverterrate.com/</a>, it provides SVG format chart (ex: <a href="https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg%29" target="_blank" rel="noopener noreffer">https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg)</a>, but I cannot find a solution to show SVG in gmail. If you find a solution, please let me know, thanks.</li>
+</ol>
+]]></description>
+</item>
+</channel>
 </rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/doc/</link>
+    <description>Recent content in Docs on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google TV 如何擷圖</title>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
+      <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</guid>
+      <description>要對 Google TV 截圖還滿麻煩的</description>
+    </item>
+    
+    <item>
+      <title>Google TV 開關 Infocus 電視</title>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</link>
+      <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google TV 調整 Infocus 電視音量的妥協做法</title>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</link>
+      <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
