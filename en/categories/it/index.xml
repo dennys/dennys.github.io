@@ -1,459 +1,101 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>IT - Category - Dennys Diary</title>
-        <link>https://dennys.github.io/en/categories/it/</link>
-        <description>IT - Category - Dennys Diary</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/" rel="self" type="application/rss+xml" /><item>
-    <title>Use GitLab to do .NET 4.X CI/CD</title>
-    <link>https://dennys.github.io/en/202203/gitlab-dotnet4-ci-cd/</link>
-    <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/en/202203/gitlab-dotnet4-ci-cd/</guid>
-    <description><![CDATA[<h2 id="precondition">Precondition</h2>
-<p>You already have a GitLab (<a href="http://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab Saas</a> or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/&hellip;, you can use docker to run GitLab Runner.</p>
-<h3 id="step-1---install-git-client">Step 1 - Install Git client</h3>
-<p>Download and install <a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreffer">Git for Windows</a>. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.</p>
-<h3 id="step-2---prepare-net-build-environment">Step 2 - prepare .NET build environment</h3>
-<p>Download and install <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noopener noreffer">Visual Studio</a>. (Please let me know if I can build a .NET build environment without Visual Studio, thanks.)</p>
-<h3 id="step-3---install-gitlab-runner">Step 3 - Install GitLab Runner</h3>
-<ol>
-<li>
-<p>Download <a href="https://docs.gitlab.com/runner/install/windows.html" target="_blank" rel="noopener noreffer">GitLab Runner</a></p>
-</li>
-<li>
-<p>Rename <em><strong>gitlab-runner-windows-amd64.exe</strong></em> to <em><strong>gitlab-runner.exe</strong></em></p>
-</li>
-<li>
-<p>Get the token to run GitLab Runner
-</p>
-</li>
-<li>
-<p>Generate GitLab Runner configuration file (config.toml)</p>
-<ol>
-<li>Run the command
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gitlab-runner.exe register --url https://gitlab.com/ --registration-token $REGISTRATION_TOKEN
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ol>
-</li>
-<li>
-<p>Modify config.toml</p>
-<ol>
-<li>Because Gitlab Runner doesn&rsquo;t suppoer Windows shell after version 13, you need to use PowerShell. If you use Power Shell, please open config.toml and rename &lsquo;pwsh&rsquo; to &lsquo;powershell&rsquo;. (If you use <a href="https://github.com/PowerShell/PowerShell" target="_blank" rel="noopener noreffer">Power Shell Core</a>, you don&rsquo;t need to do anything)</li>
-<li>If you use a portable Git, you need to modify <code>$env:Path</code> of PowerShell.</li>
-<li>If you find your log is garbled (ex: your Windows server is not English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
-</ol>
-</li>
-<li>
-<p>Register GitLab Runner as a Windows service and start it.</p>
-<ol>
-<li>Run the command <code>gitlab-runner install</code> to install as a Windows service.</li>
-<li>Run the command <code>gitlab-runner start</code> to start the service.</li>
-</ol>
-</li>
-<li>
-<p>config.toml sample =&gt; <mark style="background-color:#ff675f;" class="has-inline-color">remember, if you modify the file, please execute <code>gitlab-runner.exe restart</code> to restart GitLab runner.</mark></p>
-</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">concurrent = 1
-</span></span><span class="line"><span class="cl">check_interval = 0
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[session_server]
-</span></span><span class="line"><span class="cl">  session_timeout = 1800
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[[runners]]
-</span></span><span class="line"><span class="cl">  name = &#34;GitLab Runner 007&#34;
-</span></span><span class="line"><span class="cl">  url = &#34;https://gitlab.com/&#34;
-</span></span><span class="line"><span class="cl">  token = &#34;******************&#34;
-</span></span><span class="line"><span class="cl">  executor = &#34;shell&#34;
-</span></span><span class="line"><span class="cl">  shell = &#34;powershell&#34;
-</span></span><span class="line"><span class="cl">  pre_clone_script = &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">      chcp 65001
-</span></span><span class="line"><span class="cl">      $env:Path += &#34;;C:\\Gitlab\\PortableGit\\cmd&#34;
-</span></span><span class="line"><span class="cl">  &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">  [runners.custom_build_dir]
-</span></span><span class="line"><span class="cl">  [runners.cache]
-</span></span><span class="line"><span class="cl">    [runners.cache.s3]
-</span></span><span class="line"><span class="cl">    [runners.cache.gcs]
-</span></span><span class="line"><span class="cl">    [runners.cache.azure]
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>If you always see the Credential Helper Selector, please choose &ldquo;no helper&rdquo; and &ldquo;Always use this from now on&rdquo;.</p>
-<p><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"></a></p>
-<h3 id="step-4---write-gitlab-ciyml">Step 4 - Write .gitlab-ci.yml</h3>
-<ol>
-<li>Edit .gitlab-ci.yml, the following is a sample:</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">stages:
-</span></span><span class="line"><span class="cl">    - build
-</span></span><span class="line"><span class="cl">    - test
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">build:
-</span></span><span class="line"><span class="cl">    stage: build
-</span></span><span class="line"><span class="cl">    script:
-</span></span><span class="line"><span class="cl">        - &#34;dotnet build&#34;
-</span></span><span class="line"><span class="cl">    artifacts:
-</span></span><span class="line"><span class="cl">      paths:
-</span></span><span class="line"><span class="cl">        - .\test
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">test:
-</span></span><span class="line"><span class="cl">    stage: test
-</span></span><span class="line"><span class="cl">    script: 
-</span></span><span class="line"><span class="cl">        - &#34;dotnet test&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="step-5---start-to-buildtestdeploy-code-local-machine">Step 5 - Start to build/test/deploy code (local machine)</h3>
-<p>Change directory to the location of .gitlab-ci.yml and execute this command</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gitlab-runner.exe exec shell build
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="step-6---start-to-test-cicd-local-machine">Step 6 - Start to test CI/CD (local machine)</h3>
-<p>If everything is ok, you can commit .gitlab-ci.yml and GitLab should run it automatically.</p>
-<h3 id="sast-static-application-security-testing">SAST (Static Application Security Testing)</h3>
-<p>GitLab can check your source code for known vulnerabilities, unfortunately, it only support Linux container, Windows containers are not yet supported. (reference: <a href="https://docs.gitlab.com/ee/user/application_security/sast/" target="_blank" rel="noopener noreffer">https://docs.gitlab.com/ee/user/application_security/sast/</a>)</p>
-]]></description>
-</item>
-<item>
-    <title>Use IFTTT to send currency exchange rate mail daily</title>
-    <link>https://dennys.github.io/en/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</link>
-    <pubDate>Thu, 24 Mar 2022 00:00:00 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/en/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
-    <description><![CDATA[<h2 id="requirement">Requirement</h2>
-<p>I want to have a daily mail including currency exchange rate information.</p>
-<ol>
-<li>Mail subject: include the exchange rate in the mail subject.</li>
-<li>Mail content:
-<ol>
-<li>Has some links to banks&rsquo; exchange rate page.</li>
-<li>Include some exchange rate history chart.</li>
-</ol>
-</li>
-</ol>
-<h2 id="solution">Solution</h2>
-<p>Use ifttt.com</p>
-<ol>
-<li>Create a new Applet on IFTTT</li>
-<li>Add a new &ldquo;If This&rdquo;</li>
-</ol>
-<!-- wp:image {"id":432,"width":382,"height":180,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"></a></p>
-<!-- /wp:image -->
-<ol start="3">
-<li>Choose &ldquo;finance&rdquo; service</li>
-</ol>
-<!-- wp:image {"id":416,"width":446,"height":274,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image.png"></a></p>
-<!-- /wp:image -->
-<ol start="4">
-<li>Choose &ldquo;Today&rsquo;s exchange rate report&rdquo;</li>
-</ol>
-<!-- wp:image {"id":418,"width":568,"height":280,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"></a></p>
-<!-- /wp:image -->
-<ol start="5">
-<li>Choose the input/output currency and trigger time.</li>
-</ol>
-<!-- wp:image {"id":420,"width":385,"height":373,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"></a></p>
-<!-- /wp:image -->
-<ol start="6">
-<li>Add a new &ldquo;Then That&rdquo;</li>
-</ol>
-<!-- wp:image {"id":434,"width":288,"height":148,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"></a></p>
-<!-- /wp:image -->
-<ol start="7">
-<li>Choose a &ldquo;gmail&rdquo; service</li>
-</ol>
-<!-- wp:image {"id":422,"width":329,"height":207,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"></a></p>
-<!-- /wp:image -->
-<ol start="8">
-<li>If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.</li>
-</ol>
-<!-- wp:image {"id":424,"width":484,"height":226,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"></a></p>
-<!-- /wp:image -->
-<ol start="9">
-<li>This is an example to send your self an email.</li>
-</ol>
-<!-- wp:image {"id":426,"width":339,"height":489,"sizeSlug":"large","linkDestination":"media"} -->
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"></a></p>
-<!-- /wp:image -->
-<p>9.1 This is my email body</p>
-<!-- wp:code -->
-<pre class="wp-block-code"><code>As of {{CheckTime}}, 1 {{InputCurrency}} equals {{ExchangeRate}} {{OutputCurrency}}.&lt;br&gt;
-&lt;br&gt;
-via {{InfoUrl}}
-
-&lt;b&gt;美元匯率:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;
-&lt;a href="https://rate.bot.com.tw/xrt?Lang=zh-TW"&gt;即時&lt;/a&gt;(台銀)&amp;nbsp;
-&lt;a href="https://rate.bot.com.tw/xrt/quote/day/USD"&gt;當日&lt;/a&gt;(台銀)&amp;nbsp;
-&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1W"&gt;1周&lt;/a&gt;(XE)&amp;nbsp;
-&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1M"&gt;1個月&lt;/a&gt;(XE)&amp;nbsp;
-&lt;a href="https://rate.bot.com.tw/xrt/quote/ltm/USD"&gt;3個月&lt;/a&gt;(台銀)&amp;nbsp;
-&lt;a href="https://rate.bot.com.tw/xrt/quote/l6m/USD"&gt;6個月&lt;/a&gt;(台銀)
-&lt;/li&gt;&lt;li&gt;
-&lt;a href="https://rate.bot.com.tw/xrt/quote/l1y/USD"&gt;1年&lt;/a&gt;(台銀)&amp;nbsp;
-&lt;a href="https://www.esunbank.com.tw/bank/personal/deposit/rate/forex/exchange-rate-chart?Currency=USD/TWD"&gt;1年&lt;/a&gt;(玉山)&amp;nbsp;
-&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1Y"&gt;1年&lt;/a&gt;(XE)&amp;nbsp;
-&lt;a href="https://rate.bot.com.tw/xrt/quote/l3y/USD"&gt;3年&lt;/a&gt;(台銀)&amp;nbsp;
-&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=5Y"&gt;5年&lt;/a&gt;(XE)&amp;nbsp;
-&lt;a href="https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=10Y"&gt;10年&lt;/a&gt;(XE)&amp;nbsp;
-&lt;a href="https://fxtop.com/en/historical-exchange-rates.php?A=1&amp;C1=USD&amp;C2=TWD&amp;DD1=&amp;MM1=&amp;YYYY1=&amp;B=1&amp;P=&amp;I=1&amp;DD2=03&amp;MM2=03&amp;YYYY2=2099&amp;btnOK=Go%21"&gt;1983~現在&lt;/a&gt;(FXTOP)&amp;nbsp;
-&lt;/li&gt;&lt;li&gt;
-&lt;a href="https://historical.findrate.tw/USD/"&gt;1個月+1年+10年&lt;/a&gt;(FindRate)
-&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;
-
-&lt;b&gt;2022/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
-&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2022&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
-&lt;b&gt;2021/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
-&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2021&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
-&lt;b&gt;2020/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
-&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2020&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
-&lt;b&gt;2000/1/1~2022/12/31:&lt;/b&gt;&lt;br/&gt;
-&lt;img src="https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2000&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF"&gt;&lt;br/&gt;
-</code></pre>
-<!-- /wp:code -->
-<h2 id="mail-result">Mail result</h2>
-<!-- wp:image {"id":430,"sizeSlug":"large","linkDestination":"media"} -->
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"></a>
-<!-- /wp:image -->
-<h2 id="ifttt-applet-location">IFTTT applet location</h2>
-<p>This is my IFTTT applet: <a href="https://ifttt.com/applets/SxPJ2fpv-" target="_blank" rel="noopener noreffer">https://ifttt.com/applets/SxPJ2fpv-</a></p>
-<h2 id="about-the-exchange-rate-history-chart">About the exchange rate history chart</h2>
-<p>I only find 2 websites provides exchange rate chart to embed in the mail content.</p>
-<ol>
-<li><a href="https://fxtop.com/" target="_blank" rel="noopener noreffer">https://fxtop.com/</a>, it provides PNG format chart, I already include it in my IFTTT applet.</li>
-<li><a href="https://www.currencyconverterrate.com/" target="_blank" rel="noopener noreffer">https://www.currencyconverterrate.com/</a>, it provides SVG format chart (ex: <a href="https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg%29" target="_blank" rel="noopener noreffer">https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg)</a>, but I cannot find a solution to show SVG in gmail. If you find a solution, please let me know, thanks.</li>
-</ol>
-]]></description>
-</item>
-<item>
-    <title>Use WISE to send currency exchange rate mail daily</title>
-    <link>https://dennys.github.io/en/202203/use-wise-to-send-currency-exchange-rate-mail-daily/</link>
-    <pubDate>Thu, 24 Mar 2022 00:00:00 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/en/202203/use-wise-to-send-currency-exchange-rate-mail-daily/</guid>
-    <description><![CDATA[<h2 id="requirement">Requirement</h2>
-<p>I want to have a daily mail including currency exchange rate information.</p>
-<h3 id="solution">Solution</h3>
-<p>use <a href="https://wise.com" target="_blank" rel="noopener noreffer">https://wise.com</a> (no need to register an account)</p>
-<ol>
-<li>Connect to <a href="https://wise.com/tools/exchange-rate-alerts/" target="_blank" rel="noopener noreffer">https://wise.com/tools/exchange-rate-alerts/</a></li>
-<li>Input the currency exchange rate you want to know and your email address.</li>
-</ol>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-10.png"></a></p>
-<!-- /wp:image -->
-<h2 id="mail-result">Mail result</h2>
-<p>You will receive the mail daily.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-11.png"></a></p>
-]]></description>
-</item>
-<item>
-    <title>GitLab Checkmarx integration</title>
-    <link>https://dennys.github.io/en/202201/gitlab-checkmarx-integration/</link>
-    <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/en/202201/gitlab-checkmarx-integration/</guid>
-    <description><![CDATA[<p>
-</p>
-<h2 id="purpose">Purpose</h2>
-<p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab sends the code to <a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">Checkmarx</a> to scan. (the next step is to integrate the scan result to SonarQube)</p>
-<h2 id="procedure">Procedure</h2>
-<p>You can reference official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab&#43;Integration" target="_blank" rel="noopener noreffer">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a></p></p>
-<ol>
-<li>Edit .gitlab-ci.yml</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">include: &#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">variables:
-</span></span><span class="line"><span class="cl">    CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="2">
-<li>Edit GitLab CI/CD variables</li>
-</ol>
-<p>Please remember to set <em><strong>GITLAB_URL</strong></em> and <em><strong>GITLAB_TOKEN</strong></em>, then Checkmarx will create GitLab issue for Checkmarx issues.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-4.png"></a></p>
-<ol start="3">
-<li>Trigger build - Checkmarx analysis will be triggered when you create a merge request or you commit to master stream directly.</li>
-</ol>
-<p>Suggest to use pure English for CX_TEAM, if you use non English (ex: Chinese), you can check the log and find it cannot find the team.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">2022-01-12 02:51:22.748  INFO 11 --- [main] c.c.s.s.CxService [x4DNMhOL] : Found team /CxServer/Team1 with ID 16
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>During the analysis, you can check the status from Checkmarx, it takes long time to analyze.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-6.png"></a></p>
-<p>After the analysis, you can check the result in Checkmarx.</p>
-<p>You can also check it from GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of merge request.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-7.png"></a></p>
-<p>In the above report, there are 5 issues, it will creates 5 issues by file/by category.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-8.png"></a></p>
-<p>In the issue, it shows the detail vulnerability information.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-9.png"></a></p>
-]]></description>
-</item>
-<item>
-    <title>GitLab Checkmarx SonarQube integration</title>
-    <link>https://dennys.github.io/en/202201/gitlab-checkmarx-sonarqube-integration/</link>
-    <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0800</pubDate>
-    <author>Dennys</author>
-    <guid>https://dennys.github.io/en/202201/gitlab-checkmarx-sonarqube-integration/</guid>
-    <description><![CDATA[<p>
-
-</p>
-<h2 id="purpose">Purpose</h2>
-<p>When we commit code to <a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
-<ol>
-<li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> sends the code to <a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">Checkmarx</a> to scan.</li>
-<li><a href="https://gitlab.com/" target="_blank" rel="noopener noreffer">GitLab</a> triggers <a href="https://www.sonarqube.org/" target="_blank" rel="noopener noreffer">SonarQube</a> to sacn.</li>
-<li><a href="https://www.sonarqube.org/" target="_blank" rel="noopener noreffer">SonarQube</a> integrate <a href="https://checkmarx.com/" target="_blank" rel="noopener noreffer">Checkmarx</a>&rsquo;s report.</li>
-</ol>
-<h2 id="procedure">Procedure</h2>
-<p>You can reference the official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube&#43;Plugin&#43;v8.5.0&#43;and&#43;up" target="_blank" rel="noopener noreffer">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up</a></p>
-<ol>
-<li>Download the plugin from <a href="https://checkmarx.com/plugins/">here</a>, it only supports SonarQube LTS version (for now, it&rsquo;s 8.x)</li>
-<li>Configurea Quality Gate/Profiles of SonarQube for Checkmarx&rsquo;s rules.</li>
-<li>Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.</li>
-<li>Configure Checkmarx data in SonarQube, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up">here</a>.</li>
-<li>Trigger GitLab CI again, you will see the following log in your SonarQube job</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">INFO: Sensor Import Checkmarx scan results to SonarQube [checkmarx]
-</span></span><span class="line"><span class="cl">INFO: Retrieving Checkmarx scan results for current module [Checkmarx plugin version: 2021.2.1]
-</span></span><span class="line"><span class="cl">INFO: Getting Checkmarx configuration data from sonar Database.
-</span></span><span class="line"><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
-</span></span><span class="line"><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
-</span></span><span class="line"><span class="cl">INFO: Sonar server token is provided
-</span></span><span class="line"><span class="cl">INFO: Checkmarx credentials migration not needed
-</span></span><span class="line"><span class="cl">INFO: Sonar server token is provided
-</span></span><span class="line"><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
-</span></span><span class="line"><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
-</span></span><span class="line"><span class="cl">INFO: Checkmarx server version [9.2.0.41015]. Hotfix [24].
-</span></span><span class="line"><span class="cl">INFO: Logging into the Checkmarx service.
-</span></span><span class="line"><span class="cl">INFO: Connecting to https://your.checkmarx.server/
-</span></span><span class="line"><span class="cl">INFO: Initializing Cx client [2020.2.4.NO.SCA]
-</span></span><span class="line"><span class="cl">INFO: Checkmarx server version [9.2.0.41015]. Hotfix [24].
-</span></span><span class="line"><span class="cl">INFO: Logging into the Checkmarx service.
-</span></span><span class="line"><span class="cl">INFO: full team path: \CxServer\\Team1
-</span></span><span class="line"><span class="cl">INFO: preset name: All
-</span></span><span class="line"><span class="cl">INFO: ---------------------------------Get Last CxSAST Results:--------------------------------
-</span></span><span class="line"><span class="cl">INFO: Waiting for server to generate xml report. 4990 seconds left to timeout
-</span></span><span class="line"><span class="cl">INFO: Checkmarx High vulnerabilities: 3
-</span></span><span class="line"><span class="cl">INFO: Checkmarx New-High vulnerabilities: 0
-</span></span><span class="line"><span class="cl">INFO: Checkmarx Medium vulnerabilities: 23
-</span></span><span class="line"><span class="cl">INFO: Checkmarx New-Medium vulnerabilities: 1
-</span></span><span class="line"><span class="cl">INFO: Checkmarx Low vulnerabilities: 142
-</span></span><span class="line"><span class="cl">INFO: Checkmarx New-Low vulnerabilities: 7
-</span></span><span class="line"><span class="cl">INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId=1000157&amp;ProjectID=67
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="6">
-<li>You can see the Checkmarx issues in SonarQube now.</li>
-</ol>
-]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on Dennys Diary</title>
+    <link>https://dennys.github.io/en/categories/it/</link>
+    <description>Recent content in IT on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use GitLab to do .NET 4.X CI/CD</title>
+      <link>https://dennys.github.io/en/posts/202203/gitlab-dotnet4-ci-cd/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202203/gitlab-dotnet4-ci-cd/</guid>
+      <description>
+        
+          
+            Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+Step 1 - Install Git client Download and install Git for Windows. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.
+Step 2 - prepare .NET build environment Download and install Visual Studio.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use IFTTT to send currency exchange rate mail daily</title>
+      <link>https://dennys.github.io/en/posts/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
+      <description>
+        
+          
+            Requirement I want to have a daily mail including currency exchange rate information.
+Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
+Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;quot;finance&amp;quot; service Choose &amp;quot;Today&#39;s exchange rate report&amp;quot; Choose the input/output currency and trigger time. Add a new &amp;quot;Then That&amp;quot; Choose a &amp;quot;gmail&amp;quot; service If you just want to send yourself an email, you can click the right button.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use WISE to send currency exchange rate mail daily</title>
+      <link>https://dennys.github.io/en/posts/202203/use-wise-to-send-currency-exchange-rate-mail-daily/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202203/use-wise-to-send-currency-exchange-rate-mail-daily/</guid>
+      <description>
+        
+          
+            Requirement I want to have a daily mail including currency exchange rate information.
+Solution use https://wise.com (no need to register an account)
+Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab Checkmarx integration</title>
+      <link>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-integration/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-integration/</guid>
+      <description>
+        
+          
+            Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
+Procedure You can reference official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration
+Edit .gitlab-ci.yml 1include: &amp;#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&amp;#39; 2 3variables: 4 CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx Edit GitLab CI/CD variables Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab Checkmarx SonarQube integration</title>
+      <link>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-sonarqube-integration/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-sonarqube-integration/</guid>
+      <description>
+        
+          
+            Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.x) Configurea Quality Gate/Profiles of SonarQube for Checkmarx&#39;s rules. Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
 </rss>
