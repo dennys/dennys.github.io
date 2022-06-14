@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YouTube on </title>
+    <link>https://dennys.github.io/tw/tags/youtube/</link>
+    <description>Recent content in YouTube on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 02 Jun 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
+      <link>https://dennys.github.io/tw/202206/download-youtube-private-video/</link>
+      <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202206/download-youtube-private-video/</guid>
+      <description>
+        
+          
+            需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

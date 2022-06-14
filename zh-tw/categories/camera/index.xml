@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camera on </title>
+    <link>https://dennys.github.io/tw/categories/camera/</link>
+    <description>Recent content in Camera on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 08 Dec 2012 18:17:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/camera/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PTool 修改 Panasonic G2</title>
+      <link>https://dennys.github.io/tw/201212/ptool-panasonic-g2/</link>
+      <pubDate>Sat, 08 Dec 2012 18:17:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/201212/ptool-panasonic-g2/</guid>
+      <description>
+        
+          
+            PTool PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

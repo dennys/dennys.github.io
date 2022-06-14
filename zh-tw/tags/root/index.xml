@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Root on </title>
+    <link>https://dennys.github.io/tw/tags/root/</link>
+    <description>Recent content in Root on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/root/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
+      <link>https://dennys.github.io/tw/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意: 系統刷機有一定的風險, 可能導致手機無法
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
+      <link>https://dennys.github.io/tw/202203/samsung-galaxy-s7-edge-lineageos/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202203/samsung-galaxy-s7-edge-lineageos/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意: 系統刷機有一定的風險, 可能導致手機無法
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Google Pixel 5 Root &amp; Magisk</title>
+      <link>https://dennys.github.io/tw/202203/google-pixel-5-root-magisk/</link>
+      <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202203/google-pixel-5-root-magisk/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意: 系統刷機有一定的風險, 可能導致手機無法
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IFTTT on </title>
+    <link>https://dennys.github.io/tw/tags/ifttt/</link>
+    <description>Recent content in IFTTT on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/ifttt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
+      <link>https://dennys.github.io/tw/202203/line-robot-send-currency-exchange-rate-ifttt/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202203/line-robot-send-currency-exchange-rate-ifttt/</guid>
+      <description>
+        
+          
+            需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊. 匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTC U Ultra on </title>
+    <link>https://dennys.github.io/tw/tags/htc-u-ultra/</link>
+    <description>Recent content in HTC U Ultra on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 30 Jan 2020 08:04:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/htc-u-ultra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTC U Ultra 刷機</title>
+      <link>https://dennys.github.io/tw/202001/htc-u-ultra-root/</link>
+      <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/202001/htc-u-ultra-root/</guid>
+      <description>
+        
+          
+            HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1) Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ 安裝 htc driver https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z TWRP 可參考以下兩篇 https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.com/root-htc-ultra/ Magisk 安裝 參考: https://izaka.tw/android-magisk-installation-guide/ 用手機從這裡下載 Magisk-v20.3.zip https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 重開進入 TWRP
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
