@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CI/CD on </title>
+    <title>CI/CD on Dennys Diary</title>
     <link>https://dennys.github.io/en/tags/ci/cd/</link>
-    <description>Recent content in CI/CD on </description>
+    <description>Recent content in CI/CD on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://dennys.github.io/en/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><atom:link href="https://dennys.github.io/en/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use GitLab to do .NET 4.X CI/CD</title>
       <link>https://dennys.github.io/en/202203/gitlab-dotnet4-ci-cd/</link>
