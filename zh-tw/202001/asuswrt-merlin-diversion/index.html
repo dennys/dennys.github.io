@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Asuswrt Merlin Diversion (分享器擋廣告) - Dennys Diary</title><meta name="Description" content="Dennys Diary"><meta property="og:title" content="Asuswrt Merlin Diversion (分享器擋廣告)" />
+<meta property="og:description" content="Asuswrt-Merlin Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹) Diversion Diversion" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" /><meta property="og:image" content="https://dennys.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-24T00:00:00+08:00" />
+<meta property="article:modified_time" content="2020-01-24T00:00:00+08:00" /><meta property="og:site_name" content="Dennys Diary" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dennys.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Asuswrt Merlin Diversion (分享器擋廣告)"/>
+<meta name="twitter:description" content="Asuswrt-Merlin Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹) Diversion Diversion"/>
+<meta name="application-name" content="Dennys Diary">
+<meta name="apple-mobile-web-app-title" content="Dennys Diary"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" /><link rel="prev" href="https://dennys.github.io/zh-tw/201310/suv-7/" /><link rel="next" href="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-freshjr-adaptive-qos/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><meta name="yandex-verification" content="89134454" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Asuswrt Merlin Diversion (分享器擋廣告)",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dennys.github.io\/zh-tw\/202001\/asuswrt-merlin-diversion\/"
+        },"image": ["https:\/\/dennys.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "RT-AC66U, Asuswrt-Merlin, 改機","wordcount":  860 ,
+        "url": "https:\/\/dennys.github.io\/zh-tw\/202001\/asuswrt-merlin-diversion\/","datePublished": "2020-01-24T00:00:00+08:00","dateModified": "2020-01-24T00:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/dennys.github.io\/img\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Dennys"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-tw/" title="Dennys Diary"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-tw/posts/"> 所有文章 </a><a class="menu-item" href="/zh-tw/tags/"> 標籤 </a><a class="menu-item" href="/zh-tw/categories/"> 分類 </a><a class="menu-item" href="/zh-tw/categories/documentation/"> 文件 </a><a class="menu-item" href="/zh-tw/about/"> 關於 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/zh-tw/202001/asuswrt-merlin-diversion/" selected>繁體中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章標題或內容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-tw/" title="Dennys Diary"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章標題或內容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-tw/posts/" title="">所有文章</a><a class="menu-item" href="/zh-tw/tags/" title="">標籤</a><a class="menu-item" href="/zh-tw/categories/" title="">分類</a><a class="menu-item" href="/zh-tw/categories/documentation/" title="">文件</a><a class="menu-item" href="/zh-tw/about/" title="">關於</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/zh-tw/202001/asuswrt-merlin-diversion/" selected>繁體中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目錄</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Asuswrt Merlin Diversion (分享器擋廣告)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-tw/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">收錄於 <a href="/zh-tw/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/zh-tw/categories/router/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Router</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-01-24">2020-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 860 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id="/zh-tw/202001/asuswrt-merlin-diversion/" class="leancloud_visitors" data-flag-title="Asuswrt Merlin Diversion (分享器擋廣告)">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目錄</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#asuswrt-merlin">Asuswrt-Merlin</a></li>
+    <li><a href="#diversion">Diversion</a></li>
+    <li><a href="#安裝步驟">安裝步驟</a>
+      <ul>
+        <li><a href="#asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</a></li>
+        <li><a href="#diversion-安裝">Diversion 安裝</a></li>
+        <li><a href="#特別注意">特別注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#diversion-使用">Diversion 使用</a></li>
+    <li><a href="#ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="asuswrt-merlin">Asuswrt-Merlin</h2>
+<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: <a href="https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation" target="_blank" rel="noopener noreffer">https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation</a> (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)</p>
+<h2 id="diversion">Diversion</h2>
+<p><a href="https://diversion.ch/" target="_blank" rel="noopener noreffer">Diversion</a> 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.</p>
+<h2 id="安裝步驟">安裝步驟</h2>
+<p>然後他為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 <a href="https://diversion.ch/faq-reader/what-does-pixelserv-tls-do.html" target="_blank" rel="noopener noreffer">FAQ</a> 看一下這是甚麼東西他能做的事情</p>
+<h3 id="asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</h3>
+<p>Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v"
+        data-srcset="https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v, https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v 1.5x, https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v"
+        title="https://lh6.googleusercontent.com/tukvZsPBBrBjzmLtgIkggBHigfjFp_SH9d_-JCFjysGeW0AeOIgc2LcMy0JtmoE_Zb9HSY23cOHDwSdnUj60cVzaDTiCLRz8kuTU8TVN6AGCCq1WnazKwLd1Lk6zt-fnkGCiMU0v" /></p>
+<h3 id="diversion-安裝">Diversion 安裝</h3>
+<ol>
+<li>
+<p>在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sda1, 而且格式是 NTFS (可用 fdisk 看)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1532    126304   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2868     61388   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             60058960     11712  60047248   0% /tmp/mnt/sda1
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安裝 <a href="https://diversion.ch/amtm.html" target="_blank" rel="noopener noreffer">amtm</a>, 指令如下 (Asuswrt-Merlin 384.15 已內建 amtm, 不須另外安裝):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -Os https://diversion.ch/amtm/amtm sh amtm
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>把 USB 格式化成 ext, 步驟如下</p>
+<ol>
+<li>執行 <code>/jffs/scripts/amtm</code></li>
+<li>執行 <code>fd</code></li>
+<li>然後照著說明格式化, 格式化完後會重開機</li>
+<li>完成後 df 如下</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1528    126308   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2860     61396   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             59144340    184232  55955696   0% /tmp/mnt/usb
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4"
+        data-srcset="https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4, https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4 1.5x, https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4 2x"
+        data-sizes="auto"
+        alt="https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4"
+        title="https://lh4.googleusercontent.com/w8S_1GldhU_MCeQsCReKihYCczmWEyRHzgG961hPjo_bh4bkqRpSu5NooBt1iiS_X6pqlkwO23q29vx1xy7HGbffROw9XJQc5GOimSH_BjlaifctXdFZq65laEsKbQ_YHqCRE1M4" /></p>
+</li>
+<li>
+<p>安裝 Diversion, 在 amtm 裡面執行 &lsquo;1&rsquo; (可先用 &lsquo;i&rsquo; 指令確認一下是用 1 來安裝 Diversion). 注意, 這裡本來應該先安裝 Entware, 但如果你嘗試安裝, amtm 會建議你直接裝 Diversion, 然後他在安裝過程中會自動安裝 Entware</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O"
+        data-srcset="https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O, https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O 1.5x, https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O 2x"
+        data-sizes="auto"
+        alt="https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O"
+        title="https://lh4.googleusercontent.com/d3FokoWGjjCVb5hbTM7V7ynQId8c2-TFRINHntncnbdPm5MZMYDd3OQPE_bjI6N1UKHzgym1SpYsLKbPFQnvvj0WxX25ruPmopdJ7QviokV_WDlYr4InFgVGSY_rw29gyaPC7t0O" /></p>
+</li>
+<li>
+<p>Diversion 安裝結果如下, 注意, 他移除了 LAN 的 DNS 8.8.8.8/8.8.4.4. 不過他沒有動到 WAN 的 DNS.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL"
+        data-srcset="https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL, https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL 1.5x, https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL"
+        title="https://lh6.googleusercontent.com/H8pQRnMIaas9yTSlXmtVM-wCyXSm4Iie3R6AwVQpGFLjJPn5wwyojmgX2SqNW2s-MT0Yit2sVE3u68youQlJHhKI6pE7-7-Wyun5tuSjTg8HJEtu9UEzXDkMw9YHFVhL1RjobjQL" /></p>
+</li>
+<li>
+<p>安裝 Diversion Standard</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG"
+        data-srcset="https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG, https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG 1.5x, https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG 2x"
+        data-sizes="auto"
+        alt="https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG"
+        title="https://lh3.googleusercontent.com/ED9LZcxJQ9TbOnIE4V4CpmgZ45yJ5QdBziUFAT4Vo37HFrLtNIuHHX99lJ61GkH-NktK4zYwSW1IYEfm8sM3FS5j8fiFpSAsyJtx2wMopjje_iZxwMJwhW0VJ-6vatrUHyk2zicG" /></p>
+</li>
+<li>
+<p>這邊注意, 要回到 Asuswrt-Merlin Web 設定</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc"
+        data-srcset="https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc, https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc 1.5x, https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc"
+        title="https://lh6.googleusercontent.com/keypYuXHnWmu0I4avokSRMaYRwf9IqdYSsVdwcA2maOQRnMQmq-SCFrAE3shwLN_8oJ1gL1yhZzKP3U_ol3PXTYwcD2HncTQlacFka3ieTRQVVid1rjNLOFJJOf77vjlwNpxn1Fc" /></p>
+</li>
+<li>
+<p>上面是寫要跳過 192.168.1.2, 但因為 pixelserv-tls 也需要 IP, 所以 192.168.1.3 也要跳過. 我後來是把 192.168.1.1~10 當成特殊用途, 所以我把 DHCP 設成從 192.168.1.11 開始分配.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA"
+        data-srcset="https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA, https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA 1.5x, https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA 2x"
+        data-sizes="auto"
+        alt="https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA"
+        title="https://lh3.googleusercontent.com/QasKfCJT9_-CGhJpEY_zibQDyON3_2Z9kgaxqP5NkFIWJTg_qbXilZutSLI2mJyd5FbQTA7T7_7HL1UiEviVPobwb6AMIZP0V1nRAfjT_tdC3QgXCiEYGDhza_VUzlkx8rfz56zA" /></p>
+</li>
+<li>
+<p>接下來要輸入 pixelserv-tls 的 IP, 這裡就避開 DHCP 網段就好
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9"
+        data-srcset="https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9, https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9 1.5x, https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9 2x"
+        data-sizes="auto"
+        alt="https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9"
+        title="https://lh3.googleusercontent.com/-K22T7E3GI5rKiQxWerVjQzcHOedPUdPiKo4R_AQEeAjGRAlIMK1xF4OmYTjwFCLuRxJG1kJCkMgs6mcAxlzdafL7LQpzIfD3eV-AZ5L8drPzNE8wx_8WEwjttMQIfMN_97oKvV9" /></p>
+</li>
+<li>
+<p>選擇 log 方式, 如果你要把 log 寫下來, 就選 1</p>
+</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX"
+        data-srcset="https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX, https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX 1.5x, https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX 2x"
+        data-sizes="auto"
+        alt="https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX"
+        title="https://lh4.googleusercontent.com/1B0TCneezPe7bt3lHHj79BoOuoaoqIgplRuHlmU2jtpAdEz8P2ERxzlzoya-hmOniHrERSst_IWhxM0X5p95u-mcTUaYGI3v5r0pxJSRDxIoCvgI-W2c4TXKqCosixrw9NxZzHiX" /></p>
+<ol start="12">
+<li>他會安裝到這個目錄 /tmp/mnt/usb/entware</li>
+</ol>
+<h3 id="特別注意">特別注意</h3>
+<p>因為 Diversion 是使用 DNS 來 block AD, 因此 WAN 的地方可以指定 DNS</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx"
+        data-srcset="https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx, https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx 1.5x, https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx 2x"
+        data-sizes="auto"
+        alt="https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx"
+        title="https://lh5.googleusercontent.com/hNHM9nTtdidgejAeACTYduF5nOqfcbW2a4qdsVYXVWzg2Sd7hm-LhpVPSOIqQoTBD3kjc-XcsGwfU-fks4QLRhoOqGA3ptFTKU1p-QKVlMVGa4QKJ2IO6Ktx5CJoXHJddTp3nKAx" /></p>
+<p>但 LAN 的地方必須清空, client 的 DNS 必須是 192.168.1.1. 因為所有連到這台 router 的電腦或手機, 他們的 DNS server 都必須是 192.168.1.1, 這樣 Diversion 才會有作用.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY"
+        data-srcset="https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY, https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY 1.5x, https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY"
+        title="https://lh6.googleusercontent.com/sISw_lsJrNFDCPV2VJM7PlhPWlR7HN9pVkpwose1lXadrvbLEDz7sqgZKsWycFd0zR6IA5lNuSEjpqp-q7IscNsDXknZzXbJEX2kREQagqwtJokEIhX3U3VblCrDGf7Hfgz9qBKY" /></p>
+<p>在 Windows 可用 ipconfig /all 檢查 DNS 是否有設定正確</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h"
+        data-srcset="https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h, https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h 1.5x, https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h"
+        title="https://lh6.googleusercontent.com/Gchww0d3cH0tqRDh0rAXm815Ay16VBa7p8ZMkMS5gcLJpfxjHI1Gts24B9pbrlIcWlG6XkjCanQi7LUlnxNXvJP-1yd91ZemhezLguVER1h3s31oewpcuffJmxOrhtamPtQZlB9h" /></p>
+<h2 id="diversion-使用">Diversion 使用</h2>
+<ol>
+<li>使用 putty 連進去後, 執行 diversion, 看到如下畫面就是安裝成功了</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z"
+        data-srcset="https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z, https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z 1.5x, https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z 2x"
+        data-sizes="auto"
+        alt="https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z"
+        title="https://lh3.googleusercontent.com/7GGlp5ISzGoZyPoZ4P0dmqDFp5whAQAizmk0H8SNrxqoX24xr0Jx425wRJ-FfCudnOqlsqA6vrghEJ_dfeAa8ILDs3y7QYcIM4ZFm0sWMDbPn3nlLShbsOywkkl_EEU5qUxmiT2z" /></p>
+<ol start="2">
+<li>選擇 f (follow dnsmasq.log) 可以看 log, 有以下幾種模式可以選 (實際 log 在 <code>/tmp/mnt/sda1/entware/var/log/dnsmasq.log</code>, 紅色的部分要看一開始設定的名字)</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs"
+        data-srcset="https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs, https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs 1.5x, https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs 2x"
+        data-sizes="auto"
+        alt="https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs"
+        title="https://lh3.googleusercontent.com/dOwr8ybF5ARO42i_BB6__4QftiL00c1Fn2BXfLMzxE1psNvchu6P0dtAGE9ZzfP3LnT9INu85XVTou1cqeocHEXqq5_BCDjm_pXqHTuL9bEAjHn3Kgoc-XxthS-4ynwaiowtCwrs" /></p>
+<ol start="3">
+<li>選擇 1, 可看到如下就是有成功了</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ"
+        data-srcset="https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ, https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ 1.5x, https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ 2x"
+        data-sizes="auto"
+        alt="https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ"
+        title="https://lh6.googleusercontent.com/B0IQoBEt2umQoXitstSdMMhMCymi0imsMkr4hVrVQIb-G_rQZ7JzLqdHCpC7sOcJbvqCP66rljETXQqUABxEzHqdyAzh-k-6nX542NOvywHuDfbw9IW4RR1t08SyRySBJjpzbyNJ" /></p>
+<ol start="4">
+<li>瀏覽器會看到如下</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1"
+        data-srcset="https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1, https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1 1.5x, https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1 2x"
+        data-sizes="auto"
+        alt="https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1"
+        title="https://lh4.googleusercontent.com/BhtZxDDIYtXjLMBP8RibzRdGABZj-RW9SVyPK_kkTg6U-WdxshalYPRJ32yhjy3b1JEr_njA8abB6xwbBTGpppOL1352jJOfrGyGGFayCc3cNMRMhoq3Ear9dGv25LAYg2ZERbD1" /></p>
+<h2 id="ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</h2>
+<ol>
+<li>要先打開安全性: 設定 -&gt; 捷徑 -&gt; 允許不受信任的捷徑</li>
+<li>打開 https://diversion.ch/ios-shortcut.html, 選擇最新的版本</li>
+</ol>
+<h2 id="參考">參考</h2>
+<ol>
+<li><a href="https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/" target="_blank" rel="noopener noreffer">https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/</a></li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新於 2020-01-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/zh-tw/202001/asuswrt-merlin-diversion/index.md" target="_blank">閱讀原始文檔</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" data-title="Asuswrt Merlin Diversion (分享器擋廣告)" data-hashtags="RT-AC66U,Asuswrt-Merlin,改機"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" data-hashtag="RT-AC66U"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" data-title="Asuswrt Merlin Diversion (分享器擋廣告)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" data-title="Asuswrt Merlin Diversion (分享器擋廣告)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.0.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://dennys.github.io/zh-tw/202001/asuswrt-merlin-diversion/" data-title="Asuswrt Merlin Diversion (分享器擋廣告)"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/zh-tw/tags/rt-ac66u/">RT-AC66U</a>,&nbsp;<a href="/zh-tw/tags/asuswrt-merlin/">Asuswrt-Merlin</a>,&nbsp;<a href="/zh-tw/tags/%E6%94%B9%E6%A9%9F/">改機</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-tw/">主頁</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-tw/201310/suv-7/" class="prev" rel="prev" title="7 人座休旅車"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>7 人座休旅車</a>
+            <a href="/zh-tw/202001/asuswrt-merlin-freshjr-adaptive-qos/" class="next" rel="next" title="Asuswrt Merlin FreshJR Adaptive QoS (流量管理)">Asuswrt Merlin FreshJR Adaptive QoS (流量管理)<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.1">Hugo</a> 強力驅動 | 主題 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-tw/" target="_blank">Dennys</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-TW","pageSize":10,"placeholder":"你的評論 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"data":{"id-1":"Dennys Diary","id-2":"Dennys Diary"},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-tw","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"沒有找到結果","snippetLength":50,"type":"algolia"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-440571-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-440571-1" async></script><script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+           ym("89134454", "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/89134454" style="position:absolute; left:-9999px;" alt="" /></div></noscript></body>
+</html>
