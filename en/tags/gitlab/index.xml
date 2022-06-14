@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitLab on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/gitlab/</link>
+    <description>Recent content in GitLab on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use GitLab to do .NET 4.X CI/CD</title>
+      <link>https://dennys.github.io/en/posts/202203/gitlab-dotnet4-ci-cd/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202203/gitlab-dotnet4-ci-cd/</guid>
+      <description>
+        
+          
+            Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+Step 1 - Install Git client Download and install Git for Windows. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.
+Step 2 - prepare .NET build environment Download and install Visual Studio.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab Checkmarx integration</title>
+      <link>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-integration/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-integration/</guid>
+      <description>
+        
+          
+            Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
+Procedure You can reference official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration
+Edit .gitlab-ci.yml 1include: &amp;#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&amp;#39; 2 3variables: 4 CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx Edit GitLab CI/CD variables Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab Checkmarx SonarQube integration</title>
+      <link>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-sonarqube-integration/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202201/gitlab-checkmarx-sonarqube-integration/</guid>
+      <description>
+        
+          
+            Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.x) Configurea Quality Gate/Profiles of SonarQube for Checkmarx&#39;s rules. Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

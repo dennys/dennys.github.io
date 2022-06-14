@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drupal on Dennys Diary</title>
+    <link>https://dennys.github.io/zh-tw/tags/drupal/</link>
+    <description>Recent content in Drupal on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 26 Mar 2009 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何對 Drupal 的 cron 做 Debug</title>
+      <link>https://dennys.github.io/zh-tw/posts/200903/drupal-cron-debug/</link>
+      <pubDate>Thu, 26 Mar 2009 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/zh-tw/posts/200903/drupal-cron-debug/</guid>
+      <description>
+        
+          
+            Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:
+1DELETE FROM variable WHERE name=&amp;#34;cron_semaphore&amp;#34;; 另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
