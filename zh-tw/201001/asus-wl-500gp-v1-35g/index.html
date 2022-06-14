@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>使用 Asus WL-500gP v1 的 3.5G 無線上網 - Dennys Diary</title><meta name="Description" content="Dennys Diary"><meta property="og:title" content="使用 Asus WL-500gP v1 的 3.5G 無線上網" />
+<meta property="og:description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!! 前言: 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" /><meta property="og:image" content="https://dennys.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2010-01-09T00:00:00+08:00" />
+<meta property="article:modified_time" content="2010-01-09T00:00:00+08:00" /><meta property="og:site_name" content="Dennys Diary" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dennys.github.io/logo.png"/>
+
+<meta name="twitter:title" content="使用 Asus WL-500gP v1 的 3.5G 無線上網"/>
+<meta name="twitter:description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!! 前言: 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給"/>
+<meta name="application-name" content="Dennys Diary">
+<meta name="apple-mobile-web-app-title" content="Dennys Diary"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" /><link rel="prev" href="https://dennys.github.io/zh-tw/201001/tomato-dualwan-3g/" /><link rel="next" href="https://dennys.github.io/zh-tw/201003/cdma-wifi-oleg-3g/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><meta name="yandex-verification" content="89134454" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "使用 Asus WL-500gP v1 的 3.5G 無線上網",
+        "inLanguage": "zh-TW",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dennys.github.io\/zh-tw\/201001\/asus-wl-500gp-v1-35g\/"
+        },"image": ["https:\/\/dennys.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "改機","wordcount":  1517 ,
+        "url": "https:\/\/dennys.github.io\/zh-tw\/201001\/asus-wl-500gp-v1-35g\/","datePublished": "2010-01-09T00:00:00+08:00","dateModified": "2010-01-09T00:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/dennys.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Dennys"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-tw/" title="Dennys Diary"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-tw/posts/"> 所有文章 </a><a class="menu-item" href="/zh-tw/tags/"> 標籤 </a><a class="menu-item" href="/zh-tw/categories/"> 分類 </a><a class="menu-item" href="/zh-tw/categories/documentation/"> 文件 </a><a class="menu-item" href="/zh-tw/about/"> 關於 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/zh-tw/201001/asus-wl-500gp-v1-35g/" selected>繁體中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章標題或內容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-tw/" title="Dennys Diary"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章標題或內容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-tw/posts/" title="">所有文章</a><a class="menu-item" href="/zh-tw/tags/" title="">標籤</a><a class="menu-item" href="/zh-tw/categories/" title="">分類</a><a class="menu-item" href="/zh-tw/categories/documentation/" title="">文件</a><a class="menu-item" href="/zh-tw/about/" title="">關於</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切換主題">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/zh-tw/201001/asus-wl-500gp-v1-35g/" selected>繁體中文</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目錄</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">使用 Asus WL-500gP v1 的 3.5G 無線上網</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/zh-tw/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-category">收錄於 <a href="/zh-tw/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/zh-tw/categories/router/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Router</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2010-01-09">2010-01-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 1517 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 4 分鐘&nbsp;<span id="/zh-tw/201001/asus-wl-500gp-v1-35g/" class="leancloud_visitors" data-flag-title="使用 Asus WL-500gP v1 的 3.5G 無線上網">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目錄</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg" target="_blank" rel="noopener noreffer"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg"
+        data-srcset="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg, http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg 1.5x, http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg 2x"
+        data-sizes="auto"
+        alt="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg"
+        title="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s320/Asus_500gp_1.jpg" /></a></p>
+<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong><br>
+<strong>前言:</strong><br>
+一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 <a href="http://www.mobile01.com/topicdetail.php?f=61&amp;t=1466&amp;last=11879" target="_blank" rel="noopener noreffer">ad-hoc mode</a>. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.</p>
+<p>因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, 原來已經有人做出這種產品了, 譬如 <a href="http://store.pchome.com.tw/wellcome/M02587782.htm" target="_blank" rel="noopener noreffer">EDIMAX 3G-6200n</a> 或是 <a href="http://shopping.pchome.com.tw/?m=item&amp;f=exhibit&amp;IT_NO=DRAF0Z-A44360058-000&amp;SR_NO=DRAF0Z" target="_blank" rel="noopener noreffer">ZALiP CDW530AM</a>, 價錢也還好. 不過呢, 一來都是沒聽過的廠牌, 二來則是, 這樣就不好玩了啊, 所以最後還是決定找一個可以自行改機的方案來實現透過分享器的 3G 上網來玩玩.<br>
+ps: Vigor 的 hub 也有<a href="http://www.draytek.co.uk/support/kb_vigor_3g.html" target="_blank" rel="noopener noreffer">支援 3G</a>, 不過目前還沒有研究.</p>
+<p><strong>硬體:</strong></p>
+<ul>
+<li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2" target="_blank" rel="noopener noreffer">Asus WL-500gP V1</a></li>
+<li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181" target="_blank" rel="noopener noreffer">Huawei E169</a></li>
+</ul>
+<p>選用 500gP V1 的原因在於 (1) 他有 8MB firmware, 可以玩的花樣比較多 (2) 有人已經改機改到 128MB RAM 了<br>
+選用 E169 的原因在於, 他可以拿來打電話, 只要電腦有麥克風和喇叭就可以了. 當然 <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=282" target="_blank" rel="noopener noreffer">E220</a> 也可以, 只是剛好碰到有人願意用半價賣一隻保固還有半年的 E169, 我就買了.<br>
+其實如果要更便宜的 3G 組合, 買 Asus WL-HDD + E220 也可以.</p>
+<p><strong>Firmware:</strong><br>
+目前比較流行的 firmware 大概有這幾個系列, <a href="http://oleg.wl500g.info/" target="_blank" rel="noopener noreffer">Oleg</a>, <a href="http://www.polarcloud.com/tomato" target="_blank" rel="noopener noreffer">Tomato</a>, <a href="http://openwrt.org/" target="_blank" rel="noopener noreffer">OpenWrt</a> 以及 <a href="http://www.dd-wrt.com/" target="_blank" rel="noopener noreffer">DD-WRT</a> (參考<a href="http://digiland.tw/viewtopic.php?pid=2796" target="_blank" rel="noopener noreffer">無線路由器韌體關係圖</a>)</p>
+<ul>
+<li>
+<p>Oleg 系列:</p>
+</li>
+<li>
+<p>Oleg: 無內建 3G 支援</p>
+</li>
+<li>
+<p>lly: 無內建 3G 支援, 但可外掛, 參考<a href="http://digiland.tw/viewtopic.php?id=706&amp;p=2" target="_blank" rel="noopener noreffer">這裡</a></p>
+</li>
+<li>
+<p><a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a>: 內建支援 3G</p>
+</li>
+<li>
+<p>Tomato 系列:</p>
+</li>
+<li>
+<p>Tomato: 無內建 3G 支援</p>
+</li>
+<li>
+<p><a href="http://dualwan.cn/" target="_blank" rel="noopener noreffer">Tomato DualWan</a>: 內建支援 3G</p>
+</li>
+<li>
+<p>OpenWrt 系列:</p>
+</li>
+<li>
+<p>我沒碰過這個系列的 firmware&hellip;</p>
+</li>
+<li>
+<p>DD-WRT 系列:</p>
+</li>
+<li>
+<p><a href="http://dd-wrt.com/" target="_blank" rel="noopener noreffer">DD-WRT</a>: 無內建 3G 支援, 但可外掛</p>
+</li>
+<li>
+<p><a href="http://www.dd-wrt.com/phpBB2/viewtopic.php?t=50531" target="_blank" rel="noopener noreffer">DD-WRT mod</a>: 這個是有人修改的 DD-WRT, 內建 3G 支援, 但似乎還不完整, 我沒用過, 可參考<a href="http://digiland.tw/viewtopic.php?id=893" target="_blank" rel="noopener noreffer">這裡</a></p>
+</li>
+</ul>
+<p><strong>前置準備:</strong></p>
+<ul>
+<li>設定 SIM 卡
+要注意的是, 必須把 SIM 卡的 pin code 關掉 (就是說不要設定密碼, 預設一般是 0000, 這個也不行, 要把他 disable). 可以用手機設定,如果使用的是 Huawei 的 3G 網卡, 也可以用他的 Mobile Partner 來改. 其實這部份或許也可以保留 pin code, 只是目前不知道如何設定 firmware 去輸入 pin code, 所以只能先把他 disable.</li>
+</ul>
+<p><strong>步驟:</strong></p>
+<p>以下以 CDMA@wifi 為例子, 基本上各家的刷法都差不多. 原則上就是第一次刷要用 Asus Recovery Utility, 之後的版本升級就直接用 Web UI 即可.</p>
+<p>1. 準備 Asus Recovery Utility</p>
+<p>如果直接使用 Asus 的 Web UI 是無法上傳非 Asus 的 firmware 的, 因此要使用 Asus 的 Recovery Utility, 可在<a href="http://support.asus.com/download/download.aspx?model=WL-500gP&amp;f_name=UT_WL500gP_3500.zip&amp;f_type=14&amp;os=17" target="_blank" rel="noopener noreffer">這裡</a>下載.</p>
+<p>2. 下載 firmware</p>
+<p>3rd party 的 firmware 有很多家, 目前應該是 <a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a>的用起來最簡單, 所以先測試這版本, 之後會再嘗試其他版本的 firmware. 首先從 <a href="http://koppel.cz/cdmawifi/download/" target="_blank" rel="noopener noreffer">http://koppel.cz/cdmawifi/download/</a> 下載 firmware, 因為我的是 500gP V1, 所以使用 <a href="http://koppel.cz/cdmawifi/download/171/WL500gp-1.9.2.7-10-USB-1.71.trx" target="_blank" rel="noopener noreffer">WL500gp-1.9.2.7-10-USB-1.71.trx</a></p>
+<p>3. 更換 firmware</p>
+<p>詳細的步驟可以參考 DD-WRT 上的 <a href="http://www.dd-wrt.com/wiki/index.php/All_Asus_WL-500xx_series_routers#Asus_Recovery_Utility" target="_blank" rel="noopener noreffer">Asus Recovery Utility</a>, 簡單寫起來如下:</p>
+<ol>
+<li>把 route 的電源拔掉</li>
+<li>按著 reset (或是 500gP 上的 restore) 按鈕不放, 同時插上電源</li>
+<li>當你看到 power LED 是一閃一閃的時候, 就代表 router 已經成功進入 recover 模式</li>
+<li>如果這時候無法使用 192.168.1.1 連上 router (用 ping 的, web ui 這時不作用), 請自行設定 IP 192.168.1.10, subnet mask 255.255.255.0</li>
+<li>使用 Asus 的 Recovery tool 把 WL500gp-1.9.2.7-10-USB-1.71.trx 傳上去</li>
+<li>完成, 收工</li>
+</ol>
+<p>4. 設定 128MB 卡 (Optional)</p>
+<p>這個步驟是給有 128MB 的才需要, 如果是 64MB 以下的, 應該會自動偵測到.</p>
+<p><strong>注意：這個動作有可能會把機器變磚, 請小心!!</strong></p>
+<p>指令很簡單, 只有兩行.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvram set sdram\_init=0x0011  
+</span></span><span class="line"><span class="cl">nvram commit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果要回復成 64MB 也很簡單</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvram set sdram\_init=0x0009  
+</span></span><span class="line"><span class="cl">nvram commit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一些關於 128MB 的參考文件:<br>
+<a href="http://oleg.wl500g.info/sdram.html" title="http://oleg.wl500g.info/sdram.html" target="_blank" rel="noopener noreffer">http://oleg.wl500g.info/sdram.html</a><br>
+<a href="http://svn.dd-wrt.com:8000/dd-wrt/ticket/466" title="http://svn.dd-wrt.com:8000/dd-wrt/ticket/466" target="_blank" rel="noopener noreffer">http://svn.dd-wrt.com:8000/dd-wrt/ticket/466</a><br>
+<a href="http://oleg.wl500g.info/wl500gp_ram.html" title="http://oleg.wl500g.info/wl500gp_ram.html" target="_blank" rel="noopener noreffer">http://oleg.wl500g.info/wl500gp_ram.html</a></p>
+<p>5. 設定 3G (因為各家步驟不一, 因此我會另外拆開成幾篇)</p>
+<ul>
+<li>CDMA@wifi</li>
+<li>Tomato DualWan</li>
+<li>DD-WRT</li>
+</ul>
+<p>6. 心得比較</p>
+<ul>
+<li>CDMA@wifi
+這個最好裝, 也很穩定, 把 USB 網卡拔來拔去也都能很快抓到.<br>
+缺點是他的 QoS 只有看到 bandwidth</li>
+<li>Tomato DualWan
+這個也很好裝, 但是把 USB 網卡拔來拔去之後, 常常會抓不到. 不過一旦抓到了, 倒是也滿穩定的.<br>
+但是有個問題是, 他會有一堆錯誤訊息的 log, 而且多到幾分鐘被 purge 掉, 因此用起來會很不方便.</li>
+<li>DD-WRT
+這個因為要外掛, 還在測試.</li>
+</ul>
+<p><strong>Next Step:</strong></p>
+<ul>
+<li>把 USB storage 掛上去, 裝一些軟體來玩玩看. 基本的如 MRTG, Samba, FTP 是一定要的, 再來就是 <a href="http://httpd.apache.org/" title="Apache" target="_blank" rel="noopener noreffer">Apache</a>, <a href="http://www.mysql.com/" target="_blank" rel="noopener noreffer">MySQL</a>, <a href="http://www.php.net/" target="_blank" rel="noopener noreffer">PHP</a> 了. 目前本站是住在一個 Linux 的 VMWare 裡面 (Host OS 是 Windows), 之前請教過數位天堂的站長, 我的流量遠小於數位天堂, 這樣應該撐得住才是. 如果成功的話, 就可以不用整天開電腦了. 比較擔心的是, 一般似乎是比較推薦使用 <a href="http://www.lighttpd.net/" target="_blank" rel="noopener noreffer">lighttpd</a> 在這種平台上, 不過我沒用過</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新於 2010-01-09</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/zh-tw/201001/asus-wl-500gp-v1-35g/index.md" target="_blank">閱讀原始文檔</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" data-title="使用 Asus WL-500gP v1 的 3.5G 無線上網" data-hashtags="改機"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" data-hashtag="改機"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" data-title="使用 Asus WL-500gP v1 的 3.5G 無線上網"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" data-title="使用 Asus WL-500gP v1 的 3.5G 無線上網"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.0.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://dennys.github.io/zh-tw/201001/asus-wl-500gp-v1-35g/" data-title="使用 Asus WL-500gP v1 的 3.5G 無線上網"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/zh-tw/tags/%E6%94%B9%E6%A9%9F/">改機</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-tw/">主頁</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-tw/201001/tomato-dualwan-3g/" class="prev" rel="prev" title="Tomato DualWan 之 3G 上網"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Tomato DualWan 之 3G 上網</a>
+            <a href="/zh-tw/201003/cdma-wifi-oleg-3g/" class="next" rel="next" title="CDMA@wifi (Oleg) 之 3G 上網">CDMA@wifi (Oleg) 之 3G 上網<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.1">Hugo</a> 強力驅動 | 主題 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/zh-tw/" target="_blank">Dennys</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.5.4/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼板","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-TW","pageSize":10,"placeholder":"你的評論 ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"data":{"id-1":"Dennys Diary","id-2":"Dennys Diary"},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-tw","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"沒有找到結果","snippetLength":50,"type":"algolia"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-440571-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-440571-1" async></script><script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+           ym("89134454", "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/89134454" style="position:absolute; left:-9999px;" alt="" /></div></noscript></body>
+</html>
