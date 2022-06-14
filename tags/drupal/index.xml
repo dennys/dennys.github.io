@@ -1,0 +1,71 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Drupal - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/tags/drupal/</link>
+        <description>Drupal - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 26 Mar 2009 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/drupal/" rel="self" type="application/rss+xml" /><item>
+    <title>如何對 Drupal 的 cron 做 Debug</title>
+    <link>https://dennys.github.io/200903/drupal-cron-debug/</link>
+    <pubDate>Thu, 26 Mar 2009 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/200903/drupal-cron-debug/</guid>
+    <description><![CDATA[<h2 id="drupals-cron">Drupal&rsquo;s cron</h2>
+<p><a href="http://drupal.org/" target="_blank" rel="noopener noreffer">Drupal</a> 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Attempting to re-run cron while it is already running.  
+</span></span><span class="line"><span class="cl">Cron run exceeded the time limit and was aborted.  
+</span></span><span class="line"><span class="cl">Cron has been running for more than an hour and is most likely stuck.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="debug-方法">Debug 方法</h2>
+<p>在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DELETE FROM variable WHERE name=&#34;cron_semaphore&#34;;  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.inc</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">   foreach (module\_implements($hook) as $module) {  
+</span></span><span class="line"><span class="cl">    $function = $module .&#39;\_&#39;. $hook;  
+</span></span><span class="line"><span class="cl">    if ($hook == &#39;cron&#39;) watchdog(&#39;cron&#39;, &#34;hit $module cron&#34;);   // add this line  
+</span></span><span class="line"><span class="cl">    $result = call\_user\_func\_array($function, $args);  
+</span></span><span class="line"><span class="cl">    if (isset($result) &amp;&amp; is\_array($result)) {  
+</span></span><span class="line"><span class="cl">      $return = array\_merge($return, $result);  
+</span></span><span class="line"><span class="cl">    }  
+</span></span><span class="line"><span class="cl">    else if (isset($result)) {  
+</span></span><span class="line"><span class="cl">      $return\[\] = $result;  
+</span></span><span class="line"><span class="cl">    }  
+</span></span><span class="line"><span class="cl">  }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="執行結果">執行結果</h2>
+<p>如下, 可以看出 cron 執行到哪裡了.</p>
+<p><a href="http://www.flickr.com/photos/dennys_blog/2365667427/" title="Flickr 上 Dennys Blog 的 Drupal cron" target="_blank" rel="noopener noreffer"></a></p>
+]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,786 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Router - Category - Dennys Diary</title>
+        <link>https://dennys.github.io/categories/router/</link>
+        <description>Router - Category - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Jun 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/categories/router/" rel="self" type="application/rss+xml" /><item>
+    <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
+    <link>https://dennys.github.io/202006/asuswrt-merlin-diversion-youtube/</link>
+    <pubDate>Wed, 10 Jun 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202006/asuswrt-merlin-diversion-youtube/</guid>
+    <description><![CDATA[<h2 id="請先安裝-diversion">請先安裝 Diversion</h2>
+<p>Diversion 安裝可參考: <a href="https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin-diversion/" target="_blank" rel="noopener noreffer">https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin-diversion/</a></p>
+<h2 id="diversion-for-youtube">Diversion for YouTube</h2>
+<p>自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的實驗性功能 (參考: <a href="https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html" target="_blank" rel="noopener noreffer">https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html</a>)</p>
+<h2 id="安裝方法">安裝方法</h2>
+<ol>
+<li>
+<p>執行 b (blocking list)</p>
+</li>
+<li>
+<p>執行 8 (YouTube video ads blocking) =&gt; 還是 experimental feature
+</p>
+</li>
+<li>
+<p>選擇 8 以後, 他會要你再確認一次</p>
+ 
+</li>
+<li>
+<p>然後他就會開始安裝了, 如下</p>
+ 
+</li>
+<li>
+<p>安裝好後一開始還是會有廣告, 之後就會愈來愈少了.</p>
+</li>
+</ol>
+]]></description>
+</item>
+<item>
+    <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
+    <link>https://dennys.github.io/202001/asuswrt-merlin-freshjr-adaptive-qos/</link>
+    <pubDate>Mon, 27 Jan 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202001/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+    <description><![CDATA[<h2 id="freshjr-adaptive-qos">FreshJR Adaptive QOS</h2>
+<p><a href="https://www.snbforums.com/threads/36836/" target="_blank" rel="noopener noreffer">FreshJR Adaptive QoS</a> 是個可安裝在 Asus Merlin 上的流量管理軟體</p>
+<h2 id="安裝步驟">安裝步驟</h2>
+<ol>
+<li>
+<p>用 <a href="https://diversion.ch/amtm.html" target="_blank" rel="noopener noreffer">amtm</a> (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明</p>
+<ul>
+<li>原文: <a href="https://www.snbforums.com/threads/36836/" target="_blank" rel="noopener noreffer">https://www.snbforums.com/threads/36836/</a></li>
+<li>中文摘要翻譯: <a href="https://www.ptt.cc/bbs/Broad" target="_blank" rel="noopener noreffer">https://www.ptt.cc/bbs/Broad</a>_Band/M.1546556091.A.F79.html</li>
+</ul>
+</li>
+<li>
+<p>如何確定安裝成功</p>
+<ol>
+<li>執行 <code>/jffs/script/FreshJR\_QOS -debug</code></li>
+<li>Undf FlowID 的值如果不是 17, 那就安裝成功了
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="安裝前">安裝前</h2>
+<p>設定如下:</p>
+<p></p>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58928634" target="_blank" rel="noopener noreffer">http://www.dslreports.com/speedtest/58928634</a></p>
+<p></p>
+<p></p>
+<h2 id="安裝後">安裝後</h2>
+<p>設定如下:</p>
+<p></p>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58929066" target="_blank" rel="noopener noreffer">http://www.dslreports.com/speedtest/58929066</a></p>
+<p></p>
+<p></p>
+]]></description>
+</item>
+<item>
+    <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
+    <link>https://dennys.github.io/202001/asuswrt-merlin-diversion/</link>
+    <pubDate>Fri, 24 Jan 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202001/asuswrt-merlin-diversion/</guid>
+    <description><![CDATA[<h2 id="asuswrt-merlin">Asuswrt-Merlin</h2>
+<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: <a href="https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation" target="_blank" rel="noopener noreffer">https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation</a> (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)</p>
+<h2 id="diversion">Diversion</h2>
+<p><a href="https://diversion.ch/" target="_blank" rel="noopener noreffer">Diversion</a> 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.</p>
+<h2 id="安裝步驟">安裝步驟</h2>
+<p>然後他為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 <a href="https://diversion.ch/faq-reader/what-does-pixelserv-tls-do.html" target="_blank" rel="noopener noreffer">FAQ</a> 看一下這是甚麼東西他能做的事情</p>
+<h3 id="asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</h3>
+<p>Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.</p>
+<p></p>
+<h3 id="diversion-安裝">Diversion 安裝</h3>
+<ol>
+<li>
+<p>在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sda1, 而且格式是 NTFS (可用 fdisk 看)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1532    126304   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2868     61388   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             60058960     11712  60047248   0% /tmp/mnt/sda1
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安裝 <a href="https://diversion.ch/amtm.html" target="_blank" rel="noopener noreffer">amtm</a>, 指令如下 (Asuswrt-Merlin 384.15 已內建 amtm, 不須另外安裝):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -Os https://diversion.ch/amtm/amtm sh amtm
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>把 USB 格式化成 ext, 步驟如下</p>
+<ol>
+<li>執行 <code>/jffs/scripts/amtm</code></li>
+<li>執行 <code>fd</code></li>
+<li>然後照著說明格式化, 格式化完後會重開機</li>
+<li>完成後 df 如下</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1528    126308   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2860     61396   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             59144340    184232  55955696   0% /tmp/mnt/usb
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下</p>
+<p></p>
+</li>
+<li>
+<p>安裝 Diversion, 在 amtm 裡面執行 &lsquo;1&rsquo; (可先用 &lsquo;i&rsquo; 指令確認一下是用 1 來安裝 Diversion). 注意, 這裡本來應該先安裝 Entware, 但如果你嘗試安裝, amtm 會建議你直接裝 Diversion, 然後他在安裝過程中會自動安裝 Entware</p>
+<p></p>
+</li>
+<li>
+<p>Diversion 安裝結果如下, 注意, 他移除了 LAN 的 DNS 8.8.8.8/8.8.4.4. 不過他沒有動到 WAN 的 DNS.</p>
+<p></p>
+</li>
+<li>
+<p>安裝 Diversion Standard</p>
+<p></p>
+</li>
+<li>
+<p>這邊注意, 要回到 Asuswrt-Merlin Web 設定</p>
+<p></p>
+</li>
+<li>
+<p>上面是寫要跳過 192.168.1.2, 但因為 pixelserv-tls 也需要 IP, 所以 192.168.1.3 也要跳過. 我後來是把 192.168.1.1~10 當成特殊用途, 所以我把 DHCP 設成從 192.168.1.11 開始分配.</p>
+<p></p>
+</li>
+<li>
+<p>接下來要輸入 pixelserv-tls 的 IP, 這裡就避開 DHCP 網段就好
+</p>
+</li>
+<li>
+<p>選擇 log 方式, 如果你要把 log 寫下來, 就選 1</p>
+</li>
+</ol>
+<p></p>
+<ol start="12">
+<li>他會安裝到這個目錄 /tmp/mnt/usb/entware</li>
+</ol>
+<h3 id="特別注意">特別注意</h3>
+<p>因為 Diversion 是使用 DNS 來 block AD, 因此 WAN 的地方可以指定 DNS</p>
+<p></p>
+<p>但 LAN 的地方必須清空, client 的 DNS 必須是 192.168.1.1. 因為所有連到這台 router 的電腦或手機, 他們的 DNS server 都必須是 192.168.1.1, 這樣 Diversion 才會有作用.</p>
+<p></p>
+<p>在 Windows 可用 ipconfig /all 檢查 DNS 是否有設定正確</p>
+<p></p>
+<h2 id="diversion-使用">Diversion 使用</h2>
+<ol>
+<li>使用 putty 連進去後, 執行 diversion, 看到如下畫面就是安裝成功了</li>
+</ol>
+<p></p>
+<ol start="2">
+<li>選擇 f (follow dnsmasq.log) 可以看 log, 有以下幾種模式可以選 (實際 log 在 <code>/tmp/mnt/sda1/entware/var/log/dnsmasq.log</code>, 紅色的部分要看一開始設定的名字)</li>
+</ol>
+<p></p>
+<ol start="3">
+<li>選擇 1, 可看到如下就是有成功了</li>
+</ol>
+<p></p>
+<ol start="4">
+<li>瀏覽器會看到如下</li>
+</ol>
+<p></p>
+<h2 id="ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</h2>
+<ol>
+<li>要先打開安全性: 設定 -&gt; 捷徑 -&gt; 允許不受信任的捷徑</li>
+<li>打開 https://diversion.ch/ios-shortcut.html, 選擇最新的版本</li>
+</ol>
+<h2 id="參考">參考</h2>
+<ol>
+<li><a href="https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/" target="_blank" rel="noopener noreffer">https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/</a></li>
+</ol>
+]]></description>
+</item>
+<item>
+    <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
+    <link>https://dennys.github.io/201003/dd-wrt-3g-lly-driver/</link>
+    <pubDate>Thu, 04 Mar 2010 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/201003/dd-wrt-3g-lly-driver/</guid>
+    <description><![CDATA[<p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg" target="_blank" rel="noopener noreffer"></a></p>
+<p>**注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失&hellip;<br>
+**<br>
+<strong>前言:</strong><br>
+DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 <a href="http://digiland.tw/viewtopic.php?id=914" title="http://digiland.tw/viewtopic.php?id=914" target="_blank" rel="noopener noreffer">http://digiland.tw/viewtopic.php?id=914</a> 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.</p>
+<p><strong>參考文章:</strong></p>
+<ul>
+<li><a href="http://digiland.tw/viewtopic.php?id=914" target="_blank" rel="noopener noreffer">數位天堂: DD-WRT 3G 測試</a></li>
+<li><a href="http://digiland.tw/viewtopic.php?pid=4215#p4215" target="_blank" rel="noopener noreffer">數位天堂: Lly 韌體 (Oleg 韌體分支)</a></li>
+</ul>
+<p><strong>軟硬體:</strong></p>
+<ul>
+<li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2" target="_blank" rel="noopener noreffer">Asus WL-500gP V1</a></li>
+<li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181" target="_blank" rel="noopener noreffer">Huawei E169</a></li>
+<li>Firmware: <a href="http://dd-wrt.com/" target="_blank" rel="noopener noreffer">DD-WRT</a></li>
+</ul>
+<p><strong>前置準備:</strong></p>
+<ul>
+<li>DD-WRT firmware 已經刷好 (我是用<a href="http://dd-wrt.com/routerdb/de/download/Asus/WL500G%20Premium/v1/dd-wrt.v24_mega_generic.bin/1958" target="_blank" rel="noopener noreffer">這個</a>)</li>
+<li>在 Hub 開機前把 USB 網卡插入 (這地方還需要多測試, 目前開機後再插入常常會抓不到)</li>
+<li>要打開DD-WRT的PPPoE (這裡不懂為何一定要開, 因為後面反正還是要 kill 掉. 或許是有某些設定檔案會產生?)</li>
+<li>把 SIM 卡的 pin code 給 disable</li>
+</ul>
+<p><strong>步驟:</strong></p>
+<p>1. 建立暫時的ipkg/jffs環境</p>
+<p>執行下列指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ mkdir /tmp/jffs  
+</span></span><span class="line"><span class="cl">$ mount -o bind /tmp/jffs /jffs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2. 準備 kernel library (從 lly 取得)</p>
+<p>因為我使用的 DD-WRT 是 2.4.37, 因此要抓一樣版本的 lly, 路徑如下:<br>
+<a href="http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz" title="http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz" target="_blank" rel="noopener noreffer">http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz</a></p>
+<p>3. 準備 package (從 openwrt 取得)</p>
+<p>需要以下這些軟體:</p>
+<ul>
+<li>chat: 使用 AT command 撥號</li>
+<li><a href="http://www.draisberghof.de/usb_modeswitch/" target="_blank" rel="noopener noreffer">usb-modeswitch</a>: 切換 USB 網卡模式</li>
+<li>usbutils</li>
+<li>libusb</li>
+<li>zlib</li>
+</ul>
+<p>因為 3G 網路沒通, 所以沒法直接用 ipkg 線上安裝, 因此我的作法是分兩段, 先用 PC 下載以下檔案, 再上傳到 500gp, 並用 ipkg install ******.ipk 安裝起來. 如果你的 500gp 已經有可以用的網路 (i.e. ADSL), 可以直接安裝, 不用這麼麻煩.</p>
+<p><a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/chat_2.4.4-4_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/chat_2.4.4-4_brcm-2.4.ipk" target="_blank" rel="noopener noreffer">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/chat_2.4&hellip;.</a><br>
+<a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/libusb_0.1.12-2_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/libusb_0.1.12-2_brcm-2.4.ipk" target="_blank" rel="noopener noreffer">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/libusb_0&hellip;.</a><br>
+<a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modeswitch_1.1.0-1_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modeswitch_1.1.0-1_brcm-2.4.ipk" target="_blank" rel="noopener noreffer">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modes&hellip;</a><br>
+<a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_0.86-1_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_0.86-1_brcm-2.4.ipk" target="_blank" rel="noopener noreffer">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_&hellip;</a><br>
+<a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2.3-5_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2.3-5_brcm-2.4.ipk" target="_blank" rel="noopener noreffer">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2&hellip;.</a></p>
+<p>4. 載入 kernel driver</p>
+<p>把前面下載的 modules-1.9.2.7-d-r240.tgz 解開, 然後切換目錄到解開之後的 lib/modules/2.4.37/kernel/drivers/usb/serial. 載入時要注意順序, 使用 insmod 的話, 要先載入usbserial, 再載入option. </p>
+<p>首先載入 usbserial, 執行下列指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ insmod usbserial.o
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>這時候用dmesg應該會看到下列訊息</p>
+<p>usb.c: registered new driver serial<br>
+usbserial.c: USB Serial support registered for Generic<br>
+usbserial.c: USB Serial Driver core v1.4</p>
+<p>再來載入 option, 執行下列指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ insmod option.o
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>這時候用dmesg應該會看到下列訊息</p>
+<p>usbserial.c: USB Serial support registered for Option GSM modem<br>
+option.c: USB Driver for GSM modems: v0.7.2a</p>
+<p>執行lsusb看driver是否有抓到usb裝置, 最後一行(12d1代表Huawei, 1001代表E169) 表示抓到了. (前面第一行的錯誤訊息應該可以忽略吧?)</p>
+<p>$ lsusb<br>
+lsusb: cannot open &ldquo;/usr/share/usb.ids&rdquo;, No such file or directory<br>
+Bus 004 Device 001: ID 0000:0000<br>
+Bus 003 Device 001: ID 0000:0000<br>
+Bus 002 Device 001: ID 0000:0000<br>
+Bus 001 Device 001: ID 0000:0000<br>
+Bus 001 Device 002: ID 12d1:1001</p>
+<p>最後確定/dev/usb/tts/0, /dev/usb/tts/1 有被建立起來</p>
+<p>$ ls -l /dev/usb/tts/<br>
+crw&mdash;&mdash;- 1 root root 188, 0 Jan 1 00:01 0<br>
+crw&mdash;&mdash;- 1 root root 188, 1 Jan 1 00:00 1</p>
+<p>5. 使用usb_modeswitch將網卡模式從 ZeroCD 切換到 modem</p>
+<p>編寫 /tmp/usb-modeswitch.conf, 內容如下 (可參考 <a href="http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf" title="http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf" target="_blank" rel="noopener noreffer">http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf</a>, 將 DefaultVendor 和 DefaultProduct 修改成合適的值)</p>
+<p>$ more /tmp/usb-modeswitch.conf<br>
+# Huawei E169<br>
+DefaultVendor=0x12d1;<br>
+DefaultProduct=0x1001<br>
+;TargetClass=0xff</p>
+<p># choose one of these:<br>
+;DetachStorageOnly=1<br>
+HuaweiMode=1</p>
+<p>執行下列指令, 使用usb_modeswitch將網卡切換到modem模式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ usb\_modeswitch -c /tmp/usb-modeswitch.conf  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Looking for default devices &hellip;<br>
+Found default devices (1)<br>
+Accessing device 002 on bus 001 &hellip;<br>
+Using endpoints 0x02 (out) and 0x82 (in)<br>
+Not a storage device, skipping SCSI inquiry</p>
+<p>USB description data (for identification)<br>
+-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br>
+Manufacturer: <br>
+Product: HUAWEI Mobile<br>
+Serial No.: <br>
+-&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br>
+Sending Huawei control message &hellip;<br>
+OK, Huawei control message sent<br>
+-&gt; Run lsusb to note any changes. Bye.</p>
+<p>如果執行 usb_modeswitch之後的訊息和上面不同, 而是像下面這段一樣, 則代表沒有抓到裝置</p>
+<p>$ usb_modeswitch -c /tmp/usb_modeswitch.conf<br>
+Looking for default devices &hellip;<br>
+No default device found. Is it connected? Bye.</p>
+<p><strong>到這個步驟如果沒有抓到 USB 網卡, 那後續的恐怕就不用測了&hellip;</strong></p>
+<p>6. 使用pppd, chat撥號</p>
+<p>編寫 /tmp/e169.chat. 這邊是中華電信, 所以用的是 internet 和 *99#</p>
+<p>$ more /tmp/e169.chat<br>
+&rsquo;&rsquo; &rsquo;&rsquo;<br>
+&rsquo;&rsquo; &lsquo;ATZ&rsquo;<br>
+&lsquo;OK&rsquo; &lsquo;ATI&rsquo;<br>
+&lsquo;OK&rsquo; &lsquo;AT+COPS?&rsquo;<br>
+&lsquo;OK&rsquo; &lsquo;AT+CGDCONT=1,&ldquo;IP&rdquo;,&ldquo;internet&rdquo;&rsquo;<br>
+&lsquo;OK&rsquo; &lsquo;ATD*99#&rsquo;<br>
+&lsquo;CONNECT&rsquo; '&rsquo;</p>
+<p>編寫 /tmp/ppp/options.pppoe</p>
+<p>$more /tmp/ppp/options.pppoe<br>
+/dev/usb/tts/0<br>
+460800<br>
+debug<br>
+crtscts<br>
+noipdefault<br>
+ipcp-accept-local<br>
+lcp-echo-interval 60<br>
+lcp-echo-failure 5<br>
+usepeerdns<br>
+noauth<br>
+nodetach<br>
+user &quot;&quot;<br>
+connect &ldquo;/jffs/usr/sbin/chat -s -S -V -t 30 -f /tmp/e169.chat 2&gt;/tmp/chat.log&rdquo;</p>
+<p>先停掉redial, pppd. 這裡要注意的是, 我用 killall pppd 沒有作用, 得用 kill -9 *** 才行.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ killall redial  
+</span></span><span class="line"><span class="cl">$ killall pppd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用pppd撥號</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ pppd file /tmp/ppp/options.pppoe
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>檢查 /tmp/chat.log</p>
+<p>$ more /tmp/chat.log<br>
+ATZ</p>
+<p>OK<br>
+ATI<br>
+Manufacturer: huawei<br>
+Model: E169<br>
+Revision: 11.314.13.00.00<br>
+IMEI: ***************<br>
++GCAP: +CGSM,+DS,+ES</p>
+<p>OK<br>
+AT+COPS?<br>
++COPS: 0,2,&ldquo;46692&rdquo;,2</p>
+<p>OK<br>
+AT+CGDCONT=1,&ldquo;IP&rdquo;,&ldquo;internet&rdquo;<br>
+OK<br>
+ATD*99#CONNECT</p>
+<p>看到最後面的 ATD 代表撥號, 後面出現 CONNECT 就代表成功了, YA! </p>
+<p><strong>故障排除</strong></p>
+<p>1. dmesg 是最基本的<br>
+2. 把 syslog 打開 (從 Web UI), 然後看 /tmp/message 也是個方法.<br>
+3. minicom 我抓下來的版本似乎已經 hard code 要把設定檔放在 /etc, 但是 /etc 又是唯讀的, 所以搞不定.</p>
+<p><strong>Next Step:</strong></p>
+<p>因為用的是 DD-WRT 的 mega 版本, 基本上已經沒有什麼空的 flash 了. 下一步是嘗試一下 size 比較小的 DD-WRT, 然後把這些 3G 相關程式放到 flash 裡面. 最終目的是把 DD-WRT 弄成一個開機即可上 3G 網路的環境, 而且不需要外接任何 storage.</p>
+]]></description>
+</item>
+<item>
+    <title>CDMA@wifi (Oleg) 之 3G 上網</title>
+    <link>https://dennys.github.io/201003/cdma-wifi-oleg-3g/</link>
+    <pubDate>Mon, 01 Mar 2010 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/201003/cdma-wifi-oleg-3g/</guid>
+    <description><![CDATA[<p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg" target="_blank" rel="noopener noreffer"></a></p>
+<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong></p>
+<p><strong>前言:</strong><br>
+<a href="http://oleg.wl500g.info/" target="_blank" rel="noopener noreffer">Oleg</a>官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. <a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a> 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.</p>
+<p><strong>參考文章:</strong></p>
+<ul>
+<li><a href="http://digiland.tw/viewtopic.php?id=455" target="_blank" rel="noopener noreffer">數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網)</a></li>
+<li><a href="http://digiland.tw/viewtopic.php?id=158" target="_blank" rel="noopener noreffer">數位天堂: WL-500g 系列改機基本步驟</a></li>
+</ul>
+<p><strong>軟硬體:</strong></p>
+<ul>
+<li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2" target="_blank" rel="noopener noreffer">Asus WL-500gP V1</a></li>
+<li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181" target="_blank" rel="noopener noreffer">Huawei E169</a></li>
+<li>Firmware: <a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a> <a href="http://koppel.cz/cdmawifi/download/171/WL500gp-1.9.2.7-10-USB-1.71.trx" target="_blank" rel="noopener noreffer">1.9.2.7-10-USB-1.71</a></li>
+</ul>
+<p><strong>前置準備:</strong></p>
+<ul>
+<li>將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟)</li>
+<li>把 SIM 卡的 pin code 給 disable</li>
+</ul>
+<p><strong>步驟:</strong><br>
+1. 設定 3G 上網</p>
+<ol>
+<li>將 IP Config -&gt; WAN Connection Type 設定成 USB Connection 模式</li>
+<li>將 System Setup -&gt; Operation Mode 設定成 Home Gateway 模式</li>
+<li>將 USB Connection -&gt; Connection Mode設定成 GPRS/EDGE/UMTS 模式</li>
+<li>[重要] 這時請按下 F5 將整個畫面 refresh, 左邊功能表才會出現下面會用到的項目</li>
+<li>將 USB Connection -&gt; GPRS/EDGE/UMTS Config 設定如下:</li>
+</ol>
+<p><strong>GPRS</strong><br>
+Username: 空白<br>
+Password: 空白<br>
+APN: internet<br>
+Dial Number (usually *99***1#): *99#<br>
+USB device serial speed (usually 115200): 460800<br>
+USB device location ID: 空白<br>
+<strong>Custom USB device parameters</strong><br>
+USB device Vendor ID (0xabcd): 0x12d1<br>
+USB device Product ID (0xefgh): 0x1001<br>
+USB device packet size (0 for default): 4096<br>
+<strong>Zero CD Configuration</strong><br>
+Modem type: Huawei E169
+<br></p>
+<p>以上設定如下圖所示:</p>
+<p><a href="http://www.flickr.com/photos/dennys_blog/4258857614" title="Asus WL-500gp V1 3.5G" target="_blank" rel="noopener noreffer"><figure><a class="lightgallery" href="http://farm5.static.flickr.com/4047/4258857614_639c8a09d5.jpg" title="Asus WL-500gp V1 3.5G" data-thumbnail="http://farm5.static.flickr.com/4047/4258857614_639c8a09d5.jpg" data-sub-html="<h2>Asus WL-500gp V1 3.5G</h2><p>Asus WL-500gp V1 3.5G</p>">
+        
+    </a><figcaption class="image-caption">Asus WL-500gp V1 3.5G</figcaption>
+    </figure></a></p>
+<p>有些設定可能會依據情況而不太一樣</p>
+<pre><code>1. Dial Number 也有人設定 \*99\*\*\*# 或是 \*99\*\*1#, 我是已經可以用 Mobile Partner 上網, 直接參考裡面的值  
+2. USB device packet size 的數值是從數位天堂看來的, 這樣會快很多  
+3. USB device Vendor ID 的部份, 似乎有人沒有設定也可以使用, 我是有找到一個[列表](http://www.linux-usb.org/usb.ids)
+</code></pre>
+<br>
+<ol start="2">
+<li>按下 Finish, 等待 router 重新啟動 (這裡只按 Apply 雖然會存檔, 但是似乎不 work)</li>
+<li>插入 E169, 按下 connect, 應該就會開始 ppp 撥號, 然後就可以看是否連線成功了, 如果成功了, log 應該如下:</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: hub.c: new USB device 01:03.0-1, assigned address 4  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: Manufacturer:   
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: Product: HUAWEI Mobile  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: SerialNumber:   
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_in is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_out is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB0 (or usb/tts/0 for devfs)  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_in is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_out is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB1 (or usb/tts/1 for devfs)  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_in is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size for bulk\_out is 4096 modem reports 64  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB2 (or usb/tts/2 for devfs)  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:52 pppd\[227\]: pppd 2.4.2 started by admin, uid 0  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:55 pppd\[227\]: Serial connection established.  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:55 pppd\[227\]: Using interface ppp0  
+</span></span><span class="line"><span class="cl">Jan  1 01:18:55 pppd\[227\]: Connect: ppp0 &lt;--&gt; /dev/usb/tts/0  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 pppd\[227\]: Could not determine remote IP address: defaulting to 10.64.64.64  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 pppd\[227\]: local  IP address 114.xxx.xxx.xxx  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 pppd\[227\]: remote IP address 10.64.64.64  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 pppd\[227\]: primary   DNS address 168.95.1.1  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 pppd\[227\]: secondary DNS address 168.95.192.1  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 dnsmasq\[73\]: read /etc/hosts - 5 addresses  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 dnsmasq\[73\]: reading /tmp/resolv.conf  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 dnsmasq\[73\]: using nameserver 168.95.192.1#53  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:03 dnsmasq\[73\]: using nameserver 168.95.1.1#53  
+</span></span><span class="line"><span class="cl">Jan  1 01:19:06 USB Connection: connected to ISP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4. 無意中發現的好處<br>
+測試了幾天, 發現透過 hub 的 3G 上網, 似乎比直接用 Mobile Partner 還快滿多的, 不知道是不是 USB device packet size 的功勞?</p>
+<p><strong>故障排除</strong><br>
+1. dmesg 是最基本的<br>
+2. /tmp/syslog.log</p>
+<p><strong>測試心得:</strong><br>
+用了快兩個月, 基本上就是很好, 很穩, 很不錯!!</p>
+]]></description>
+</item>
+<item>
+    <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
+    <link>https://dennys.github.io/201001/asus-wl-500gp-v1-35g/</link>
+    <pubDate>Sat, 09 Jan 2010 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/201001/asus-wl-500gp-v1-35g/</guid>
+    <description><![CDATA[<p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg" target="_blank" rel="noopener noreffer"></a></p>
+<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong><br>
+<strong>前言:</strong><br>
+一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 <a href="http://www.mobile01.com/topicdetail.php?f=61&amp;t=1466&amp;last=11879" target="_blank" rel="noopener noreffer">ad-hoc mode</a>. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.</p>
+<p>因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, 原來已經有人做出這種產品了, 譬如 <a href="http://store.pchome.com.tw/wellcome/M02587782.htm" target="_blank" rel="noopener noreffer">EDIMAX 3G-6200n</a> 或是 <a href="http://shopping.pchome.com.tw/?m=item&amp;f=exhibit&amp;IT_NO=DRAF0Z-A44360058-000&amp;SR_NO=DRAF0Z" target="_blank" rel="noopener noreffer">ZALiP CDW530AM</a>, 價錢也還好. 不過呢, 一來都是沒聽過的廠牌, 二來則是, 這樣就不好玩了啊, 所以最後還是決定找一個可以自行改機的方案來實現透過分享器的 3G 上網來玩玩.<br>
+ps: Vigor 的 hub 也有<a href="http://www.draytek.co.uk/support/kb_vigor_3g.html" target="_blank" rel="noopener noreffer">支援 3G</a>, 不過目前還沒有研究.</p>
+<p><strong>硬體:</strong></p>
+<ul>
+<li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2" target="_blank" rel="noopener noreffer">Asus WL-500gP V1</a></li>
+<li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181" target="_blank" rel="noopener noreffer">Huawei E169</a></li>
+</ul>
+<p>選用 500gP V1 的原因在於 (1) 他有 8MB firmware, 可以玩的花樣比較多 (2) 有人已經改機改到 128MB RAM 了<br>
+選用 E169 的原因在於, 他可以拿來打電話, 只要電腦有麥克風和喇叭就可以了. 當然 <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=282" target="_blank" rel="noopener noreffer">E220</a> 也可以, 只是剛好碰到有人願意用半價賣一隻保固還有半年的 E169, 我就買了.<br>
+其實如果要更便宜的 3G 組合, 買 Asus WL-HDD + E220 也可以.</p>
+<p><strong>Firmware:</strong><br>
+目前比較流行的 firmware 大概有這幾個系列, <a href="http://oleg.wl500g.info/" target="_blank" rel="noopener noreffer">Oleg</a>, <a href="http://www.polarcloud.com/tomato" target="_blank" rel="noopener noreffer">Tomato</a>, <a href="http://openwrt.org/" target="_blank" rel="noopener noreffer">OpenWrt</a> 以及 <a href="http://www.dd-wrt.com/" target="_blank" rel="noopener noreffer">DD-WRT</a> (參考<a href="http://digiland.tw/viewtopic.php?pid=2796" target="_blank" rel="noopener noreffer">無線路由器韌體關係圖</a>)</p>
+<ul>
+<li>
+<p>Oleg 系列:</p>
+</li>
+<li>
+<p>Oleg: 無內建 3G 支援</p>
+</li>
+<li>
+<p>lly: 無內建 3G 支援, 但可外掛, 參考<a href="http://digiland.tw/viewtopic.php?id=706&amp;p=2" target="_blank" rel="noopener noreffer">這裡</a></p>
+</li>
+<li>
+<p><a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a>: 內建支援 3G</p>
+</li>
+<li>
+<p>Tomato 系列:</p>
+</li>
+<li>
+<p>Tomato: 無內建 3G 支援</p>
+</li>
+<li>
+<p><a href="http://dualwan.cn/" target="_blank" rel="noopener noreffer">Tomato DualWan</a>: 內建支援 3G</p>
+</li>
+<li>
+<p>OpenWrt 系列:</p>
+</li>
+<li>
+<p>我沒碰過這個系列的 firmware&hellip;</p>
+</li>
+<li>
+<p>DD-WRT 系列:</p>
+</li>
+<li>
+<p><a href="http://dd-wrt.com/" target="_blank" rel="noopener noreffer">DD-WRT</a>: 無內建 3G 支援, 但可外掛</p>
+</li>
+<li>
+<p><a href="http://www.dd-wrt.com/phpBB2/viewtopic.php?t=50531" target="_blank" rel="noopener noreffer">DD-WRT mod</a>: 這個是有人修改的 DD-WRT, 內建 3G 支援, 但似乎還不完整, 我沒用過, 可參考<a href="http://digiland.tw/viewtopic.php?id=893" target="_blank" rel="noopener noreffer">這裡</a></p>
+</li>
+</ul>
+<p><strong>前置準備:</strong></p>
+<ul>
+<li>設定 SIM 卡
+要注意的是, 必須把 SIM 卡的 pin code 關掉 (就是說不要設定密碼, 預設一般是 0000, 這個也不行, 要把他 disable). 可以用手機設定,如果使用的是 Huawei 的 3G 網卡, 也可以用他的 Mobile Partner 來改. 其實這部份或許也可以保留 pin code, 只是目前不知道如何設定 firmware 去輸入 pin code, 所以只能先把他 disable.</li>
+</ul>
+<p><strong>步驟:</strong></p>
+<p>以下以 CDMA@wifi 為例子, 基本上各家的刷法都差不多. 原則上就是第一次刷要用 Asus Recovery Utility, 之後的版本升級就直接用 Web UI 即可.</p>
+<p>1. 準備 Asus Recovery Utility</p>
+<p>如果直接使用 Asus 的 Web UI 是無法上傳非 Asus 的 firmware 的, 因此要使用 Asus 的 Recovery Utility, 可在<a href="http://support.asus.com/download/download.aspx?model=WL-500gP&amp;f_name=UT_WL500gP_3500.zip&amp;f_type=14&amp;os=17" target="_blank" rel="noopener noreffer">這裡</a>下載.</p>
+<p>2. 下載 firmware</p>
+<p>3rd party 的 firmware 有很多家, 目前應該是 <a href="http://koppel.cz/cdmawifi/english/" target="_blank" rel="noopener noreffer">CDMA@wifi</a>的用起來最簡單, 所以先測試這版本, 之後會再嘗試其他版本的 firmware. 首先從 <a href="http://koppel.cz/cdmawifi/download/" target="_blank" rel="noopener noreffer">http://koppel.cz/cdmawifi/download/</a> 下載 firmware, 因為我的是 500gP V1, 所以使用 <a href="http://koppel.cz/cdmawifi/download/171/WL500gp-1.9.2.7-10-USB-1.71.trx" target="_blank" rel="noopener noreffer">WL500gp-1.9.2.7-10-USB-1.71.trx</a></p>
+<p>3. 更換 firmware</p>
+<p>詳細的步驟可以參考 DD-WRT 上的 <a href="http://www.dd-wrt.com/wiki/index.php/All_Asus_WL-500xx_series_routers#Asus_Recovery_Utility" target="_blank" rel="noopener noreffer">Asus Recovery Utility</a>, 簡單寫起來如下:</p>
+<ol>
+<li>把 route 的電源拔掉</li>
+<li>按著 reset (或是 500gP 上的 restore) 按鈕不放, 同時插上電源</li>
+<li>當你看到 power LED 是一閃一閃的時候, 就代表 router 已經成功進入 recover 模式</li>
+<li>如果這時候無法使用 192.168.1.1 連上 router (用 ping 的, web ui 這時不作用), 請自行設定 IP 192.168.1.10, subnet mask 255.255.255.0</li>
+<li>使用 Asus 的 Recovery tool 把 WL500gp-1.9.2.7-10-USB-1.71.trx 傳上去</li>
+<li>完成, 收工</li>
+</ol>
+<p>4. 設定 128MB 卡 (Optional)</p>
+<p>這個步驟是給有 128MB 的才需要, 如果是 64MB 以下的, 應該會自動偵測到.</p>
+<p><strong>注意：這個動作有可能會把機器變磚, 請小心!!</strong></p>
+<p>指令很簡單, 只有兩行.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvram set sdram\_init=0x0011  
+</span></span><span class="line"><span class="cl">nvram commit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果要回復成 64MB 也很簡單</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvram set sdram\_init=0x0009  
+</span></span><span class="line"><span class="cl">nvram commit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一些關於 128MB 的參考文件:<br>
+<a href="http://oleg.wl500g.info/sdram.html" title="http://oleg.wl500g.info/sdram.html" target="_blank" rel="noopener noreffer">http://oleg.wl500g.info/sdram.html</a><br>
+<a href="http://svn.dd-wrt.com:8000/dd-wrt/ticket/466" title="http://svn.dd-wrt.com:8000/dd-wrt/ticket/466" target="_blank" rel="noopener noreffer">http://svn.dd-wrt.com:8000/dd-wrt/ticket/466</a><br>
+<a href="http://oleg.wl500g.info/wl500gp_ram.html" title="http://oleg.wl500g.info/wl500gp_ram.html" target="_blank" rel="noopener noreffer">http://oleg.wl500g.info/wl500gp_ram.html</a></p>
+<p>5. 設定 3G (因為各家步驟不一, 因此我會另外拆開成幾篇)</p>
+<ul>
+<li>CDMA@wifi</li>
+<li>Tomato DualWan</li>
+<li>DD-WRT</li>
+</ul>
+<p>6. 心得比較</p>
+<ul>
+<li>CDMA@wifi
+這個最好裝, 也很穩定, 把 USB 網卡拔來拔去也都能很快抓到.<br>
+缺點是他的 QoS 只有看到 bandwidth</li>
+<li>Tomato DualWan
+這個也很好裝, 但是把 USB 網卡拔來拔去之後, 常常會抓不到. 不過一旦抓到了, 倒是也滿穩定的.<br>
+但是有個問題是, 他會有一堆錯誤訊息的 log, 而且多到幾分鐘被 purge 掉, 因此用起來會很不方便.</li>
+<li>DD-WRT
+這個因為要外掛, 還在測試.</li>
+</ul>
+<p><strong>Next Step:</strong></p>
+<ul>
+<li>把 USB storage 掛上去, 裝一些軟體來玩玩看. 基本的如 MRTG, Samba, FTP 是一定要的, 再來就是 <a href="http://httpd.apache.org/" title="Apache" target="_blank" rel="noopener noreffer">Apache</a>, <a href="http://www.mysql.com/" target="_blank" rel="noopener noreffer">MySQL</a>, <a href="http://www.php.net/" target="_blank" rel="noopener noreffer">PHP</a> 了. 目前本站是住在一個 Linux 的 VMWare 裡面 (Host OS 是 Windows), 之前請教過數位天堂的站長, 我的流量遠小於數位天堂, 這樣應該撐得住才是. 如果成功的話, 就可以不用整天開電腦了. 比較擔心的是, 一般似乎是比較推薦使用 <a href="http://www.lighttpd.net/" target="_blank" rel="noopener noreffer">lighttpd</a> 在這種平台上, 不過我沒用過</li>
+</ul>
+]]></description>
+</item>
+<item>
+    <title>Tomato DualWan 之 3G 上網</title>
+    <link>https://dennys.github.io/201001/tomato-dualwan-3g/</link>
+    <pubDate>Sun, 03 Jan 2010 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/201001/tomato-dualwan-3g/</guid>
+    <description><![CDATA[<p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg" target="_blank" rel="noopener noreffer"></a></p>
+<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong></p>
+<p><strong>前言:</strong><br>
+無意中發現 Tomato DualWAN 自 <a href="http://bbs.dualwan.cn/thread-9022-1-1.html" target="_blank" rel="noopener noreffer">1.23.0410</a> (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.</p>
+<p><strong>軟硬體:</strong></p>
+<ul>
+<li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2" target="_blank" rel="noopener noreffer">Asus WL-500gP V1</a></li>
+<li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181" target="_blank" rel="noopener noreffer">Huawei E169</a></li>
+<li>Firmware: <a href="http://www.dualwan.cn/" target="_blank" rel="noopener noreffer">Tomato DualWan</a> (1.23.0410 和 1.23.0441)</li>
+</ul>
+<p><strong>前置準備:</strong></p>
+<ul>
+<li>將 firmware 刷為 Tomato DualWan, 請參考<a href="http://www.dualwan.cn/index.php/manual-overview" target="_blank" rel="noopener noreffer">官方教程</a></li>
+<li>把 SIM 卡的 pin code 給 disable</li>
+</ul>
+<p><strong>設定步驟:</strong></p>
+<p>1. 設定比 CDMA@wifi 簡單許多, 如下圖, 先把 USB 給 enable 起來 (紅框部份). 把這幾個都打開, 要確定 USB 網卡有抓到(如藍框部份). 然後設定的部份, 可能不見得需要把這些全部 enable, 有興趣的朋友或許可以測試一下哪些是可以 disable 的.</p>
+<p><a href="http://www.flickr.com/photos/dennys_blog/4394875396" title="Tomato DualWan 3G" target="_blank" rel="noopener noreffer"><figure><a class="lightgallery" href="http://farm3.static.flickr.com/2680/4394875396_f4933b89fd.jpg" title="Tomato DualWan 3G" data-thumbnail="http://farm3.static.flickr.com/2680/4394875396_f4933b89fd.jpg" data-sub-html="<h2>Tomato DualWan 3G</h2><p>Tomato DualWan 3G</p>">
+        
+    </a><figcaption class="image-caption">Tomato DualWan 3G</figcaption>
+    </figure></a></p>
+<p>2. 再來就只要一個設定就可以了. 請參考下圖, 將連線類型選為&quot;GPRS/EDGE/UMTS/EVDO&quot; 並設定撥號號碼為 *99# 就可以了, APN 不用設定 (也沒找到地方可以設定?) 要注意的是, 斷線重連時間, 官方是建議 60 秒以上.</p>
+<p><a href="http://www.flickr.com/photos/dennys_blog/4394117833" title="Tomato DualWan 3G" target="_blank" rel="noopener noreffer"><figure><a class="lightgallery" href="http://farm5.static.flickr.com/4019/4394117833_7aa516fd42.jpg" title="Tomato DualWan 3G" data-thumbnail="http://farm5.static.flickr.com/4019/4394117833_7aa516fd42.jpg" data-sub-html="<h2>Tomato DualWan 3G</h2><p>Tomato DualWan 3G</p>">
+        
+    </a><figcaption class="image-caption">Tomato DualWan 3G</figcaption>
+    </figure></a></p>
+<p>3. 接下來就會開始自動撥號了(官方文件是說要手動去按連線, 不過我發現是不需要).<br>
+觀察 /tmp/var/log/message, 首先會看到下列這一段</p>
+<p>Jan  1 08:00:13 user.info kernel: usbserial.c: Option GSM modem converter now attached to ttyUSB2 (or usb/tts/2 for devfs)<br>
+Jan  1 08:00:14 user.warn kernel: Vendor: HUAWEI Model: Mass Storage Rev: 2.31<br>
+Jan  1 08:00:14 user.warn kernel: Type:   CD-ROM ANSI SCSI revision: 02<br>
+Jan  1 08:00:17 user.info hotplug[293]: device 12d1/1001/0 switch to modem mode</p>
+<p>以上代表偵測到 USB 網卡了<br>
+因為是設定 60 秒重新連線, 因此在上面 log 出來後, 會停下來, 60 秒之後會再看到下列這一段, 這樣就代表成功了.</p>
+<p>Jan  1 08:01:17 user.info redial[92]: ALL WAN down. Reconnecting&hellip;<br>
+Jan  1 08:01:17 user.info redial[312]: Started. Time: 60<br>
+Jan  1 08:01:19 daemon.info pppd[311]: Serial connection established.<br>
+Jan  1 08:01:19 daemon.info pppd[311]: Using interface ppp0<br>
+Jan  1 08:01:19 daemon.notice pppd[311]: Connect: ppp0 &lt;&ndash;&gt; /dev/usb/tts/0<br>
+Jan  1 08:01:23 daemon.warn pppd[311]: Could not determine remote IP address: defaulting to 10.64.64.64<br>
+Jan  1 08:01:23 daemon.notice pppd[311]: local  IP address 114.136.***.***<br>
+Jan  1 08:01:23 daemon.notice pppd[311]: remote IP address 10.64.64.64<br>
+Jan  1 08:01:23 daemon.notice pppd[311]: primary   DNS address 168.95.1.1<br>
+Jan  1 08:01:23 daemon.notice pppd[311]: secondary DNS address 168.95.192.</p>
+<p><strong>測試心得:</strong><br>
+有試著連續開好幾天, 基本上連線是 ok 的, 但是有幾個地方很困擾.</p>
+<p>1. keventd 的 loading 很高, 開個 ftp (100KB/ 左右) 就可以接近 100%. 原因不知, 已向官網<a href="http://bbs.dualwan.cn/thread-15752-1-1.html" target="_blank" rel="noopener noreffer">反應</a>, 但似乎沒有別人碰到類似的問題&hellip; 我覺得應該是 3G 的問題, 因為有在內部網路傳檔 (1.5MB/s), 那時候的 loading 都滿低的&hellip; 下面是用 <a href="http://www.mozilla.com/firefox/" target="_blank" rel="noopener noreffer">Firefox</a> 開 <a href="http://gmail.com/" title="Google Mail" target="_blank" rel="noopener noreffer">GMail</a> 時的 top 結果.</p>
+<p>Mem: 52020K used, 10944K free, 0K shrd, 2216K buff, 34944K cached<br>
+CPU:  15% usr  84% sys   0% nic   0% idle   0% io   0% irq   0% sirq<br>
+Load average: 1.34 0.46 0.17 5/35 671<br>
+  PID  PPID USER     STAT   VSZ %MEM %CPU COMMAND<br>
+    2     1 root     RW       0   0%  67% [keventd]<br>
+  238     1 root     R     1224   2%  21% klogd<br>
+  230     1 root     R     1228   2%  10% syslogd -L -s 50<br>
+  657   633 root     R     1236   2%   0% top</p>
+<p>2. 在 3G 連線成功後, /tmp/var/log/message 會一直固定有同樣的重複錯誤訊息 log 如下, 量多到非常驚人, 基本上其他的訊息都被蓋掉了, 所以會很不方便. 其實是這個問題造成前面的問題也說不定, 也向官網<a href="http://bbs.dualwan.cn/viewthread.php?tid=12742" target="_blank" rel="noopener noreffer">反應</a>了.</p>
+<p>Jan 17 23:01:31 unknown user.err kernel: usb-uhci.c: ENXIO c0010400, flags 0, urb 877ad920, burb 877ad620<br>
+Jan 17 23:01:31 unknown user.err kernel: usb-uhci.c: ENXIO c0010400, flags 0, urb 877ad820, burb 877ad620<br>
+Jan 17 23:01:31 unknown user.err kernel: usb-uhci.c: ENXIO c0010400, flags 0, urb 877ad8a0, burb 877ad620<br>
+Jan 17 23:01:31 unknown user.err kernel: usb-uhci.c: ENXIO c0010400, flags 0, urb 877ad920, burb 877ad620</p>
+<p>3. 連線是穩定的, 但是重新插拔網卡之後, 重新連線時不夠穩定, 常常會連不上線, 得插插拔拔重開好幾次&hellip; 這部份 CDMA@wifi 就很棒了, 隨便怎麼弄, 大概都是 10 幾秒就重新連線成功.<br>
+官方說法是 &ldquo;需要手動點擊網頁上的連接按鈕才能撥號&rdquo;, 不過我實測時發現他幾乎都會自動連線, 只是問題在於, 常常連線失敗.<br>
+官方說法是 &ldquo;已知問題：重啟路由器後有些上網卡需要重新插拔才能被認到，有些上網卡斷開連接後需要重新插拔才可以再次撥號。另外，由於上網卡撥號過程相對較長，所以請將斷線重撥的時間由30秒改為60秒或者更高，以免撥號時間過長系統誤判為撥號沒成功&rdquo;</p>
+<p><strong>結論:</strong><br>
+在 CPU, log 以及重新連線問題解決之前, 看來還需要再觀望一段時間&hellip; 可是我總覺得, 好像只有我碰到這個問題啊 &hellip;</p>
+]]></description>
+</item>
+</channel>
+</rss>

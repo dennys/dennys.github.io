@@ -105,40 +105,145 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><div class="home-subtitle"><div id="id-3" class="typeit"></div></div><div class="links"><a href="https://github.com/dennys" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw" aria-hidden="true"></i></a><a href="https://twitter.com/dennys" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/202203/gitlab-dotnet4-ci-cd/">Use GitLab to do .NET 4.X CI/CD</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-25">2022-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DevOps</a></span></div><div class="content">Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/&hellip;, you can use docker to run GitLab Runner.
-Step 1 - Install Git client Download and install Git for Windows. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.
-Step 2 - prepare .NET build environment Download and install Visual Studio.</div><div class="post-footer">
-        <a href="/202203/gitlab-dotnet4-ci-cd/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/gitlab/">GitLab</a>,&nbsp;<a href="/tags/.net/">.NET</a>,&nbsp;<a href="/tags/ci/cd/">CI/CD</a></div></div>
+        <a href="/202206/update-unlocked-pixel5/">更新 Unlock 過的 Pixel 5</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-02">2022-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">前言 Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.
+事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新步驟 執行以下指令重新開機進入sideload mode
+adb reboot sideload
+刷入安全性更新檔案, 這個步驟會比較久
+adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
+完成上傳後勿重新開機，&ldquo;在手機上&rdquo; 選擇Reboot to bootloader
+刷入被 Magisk 修補後的 boot.img
+fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img
+執行以下指令重新開機
+fastboot reboot
+進入 設定-&gt;關於-&gt;Android 版本, 確定有更新成功.
+參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&t=6487485 </div><div class="post-footer">
+        <a href="/202206/update-unlocked-pixel5/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%94%B9%E6%A9%9F/">改機</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/">Use IFTTT to send currency exchange rate mail daily</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-24">2022-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a></span></div><div class="content">Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&rsquo; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
-Create a new Applet on IFTTT Add a new &ldquo;If This&rdquo; Choose &ldquo;finance&rdquo; service Choose &ldquo;Today&rsquo;s exchange rate report&rdquo; Choose the input/output currency and trigger time. Add a new &ldquo;Then That&rdquo; Choose a &ldquo;gmail&rdquo; service If you just want to send yourself an email, you can click the right button.</div><div class="post-footer">
-        <a href="/202203/use-ifttt-to-send-currency-exchange-rate-mail-daily/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ifttt/">IFTTT</a></div></div>
+        <a href="/202206/download-youtube-private-video/">如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-02">2022-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div><div class="content">需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
+工具準備 需要以下幾樣工具 youtube-dl 或是 ytl-dp cookie 工具, 我是用 Get cookies.txt 這個 Chrome extension FFmpeg, 轉檔用 1. 準備 cookie既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.
+2. 使用 youtube-dl 下載使用如下指令就可以下載檔案了
+youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</div><div class="post-footer">
+        <a href="/202206/download-youtube-private-video/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/youtube/">YouTube</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/202203/use-wise-to-send-currency-exchange-rate-mail-daily/">Use WISE to send currency exchange rate mail daily</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-24">2022-03-24</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a></span></div><div class="content">Requirement I want to have a daily mail including currency exchange rate information.
-Solution use https://wise.com (no need to register an account)
-Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.</div><div class="post-footer">
-        <a href="/202203/use-wise-to-send-currency-exchange-rate-mail-daily/">Read More</a></div>
+        <a href="/202206/realvnc/">無聲遠端桌面連線 - VNC</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-02">2022-06-02</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div><div class="content">需求 要做一個遠端登入的功能, 而且需要做到以下幾項
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &ldquo;看&rdquo; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 步驟 (Server 端) 先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋
+步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</div><div class="post-footer">
+        <a href="/202206/realvnc/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vnc/">VNC</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/202201/gitlab-checkmarx-integration/">GitLab Checkmarx integration</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-15">2022-01-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DevOps</a></span></div><div class="content">Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
-Procedure You can reference official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration
-Edit .gitlab-ci.yml 1 2 3 4 include: &#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39; variables: CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx Edit GitLab CI/CD variables Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.</div><div class="post-footer">
-        <a href="/202201/gitlab-checkmarx-integration/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/gitlab/">GitLab</a>,&nbsp;<a href="/tags/checkmarx/">Checkmarx</a></div></div>
+        <a href="/202206/asuswrt-merlin-openvpn-server/">在 Asuswrt-Merlin 使用 OpenVPN server</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-01">2022-06-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/software/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>software</a></span></div><div class="content">Asuswrt-Merlin 的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
+註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 https://www.asus.com/tw/support/FAQ/1044190/, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
+測試平台 Asus RC-AC66U B1 Asuswrt-Merlin 386.5 (這個版本的 OpenVPN 是 2.5.5) OpenVPN server 設定 (在 Asuswrt-Merlin) 1. OpenVPN server 一般設定 首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &ldquo;LAN only&rdquo;.</div><div class="post-footer">
+        <a href="/202206/asuswrt-merlin-openvpn-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vpn/">VPN</a>,&nbsp;<a href="/tags/openvpn/">OpenVPN</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/202201/gitlab-checkmarx-sonarqube-integration/">GitLab Checkmarx SonarQube integration</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-15">2022-01-15</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/devops/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DevOps</a></span></div><div class="content">Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&rsquo;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
-Download the plugin from here, it only supports SonarQube LTS version (for now, it&rsquo;s 8.x) Configurea Quality Gate/Profiles of SonarQube for Checkmarx&rsquo;s rules. Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.</div><div class="post-footer">
-        <a href="/202201/gitlab-checkmarx-sonarqube-integration/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/gitlab/">GitLab</a>,&nbsp;<a href="/tags/checkmarx/">Checkmarx</a>,&nbsp;<a href="/tags/sonarqube/">SonarQube</a></div></div>
-</article></div></div>
+        <a href="/202205/android-do-not-disturb/">如何設定 Android 零打擾的時間長度</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-05-23">2022-05-23</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">需求 Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.
+作法 如果要調整零打擾的長度, 可從這裡修改: 設定 -&gt; 通知 -&gt; 零打擾 -&gt; 從快速設定開啟時的持續時間長度
+預設值是&quot;直到你關閉為止&quot;, 因此他就只能開和關. 我是把它改成&quot;每次都詢問&quot;
+改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項
+結果 這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.</div><div class="post-footer">
+        <a href="/202205/android-do-not-disturb/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/">Tags</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202204/google-maps-bluetooth-voice-music/">Google Maps 音樂接藍牙, 語音不接</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-20">2022-04-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">需求 不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.
+作法 後來找到的解法是, 設定不要&quot;透過藍牙撥放語音&quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.</div><div class="post-footer">
+        <a href="/202204/google-maps-bluetooth-voice-music/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/">Tags</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202204/gmail-notify-delete-archive/">將 Gmail 的通知改成可以直接刪除</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-20">2022-04-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">需求 Gmail 的通知, 預設是可以在通知的地方選&quot;封存&quot;或&quot;回覆&quot;, 但其實可以修改.
+作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&quot;封存&quot;, 把它改成刪除.
+修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.
+後記 如果可以讓封存和刪除都出來就更好了.</div><div class="post-footer">
+        <a href="/202204/gmail-notify-delete-archive/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/">Tags</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202204/android-12-lock-screen-double-line-clock/">把 Android 12 鎖定畫面的時鐘改單行</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-10">2022-04-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">前言 自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.
+看起來評價不是很好, 我也覺得很不直覺&hellip;
+不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
+成果 結果就會變成如下
+參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&msgid=154180966 </div><div class="post-footer">
+        <a href="/202204/android-12-lock-screen-double-line-clock/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pixel-5/">Pixel 5</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/">Android 11 如何不要驗證 Wi-Fi CA 憑證</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-25">2022-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &ldquo;不要驗證&rdquo;, 如下:
+自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &ldquo;不要驗證&rdquo;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個&hellip;)
+爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.</div><div class="post-footer">
+        <a href="/202203/add-do-not-validate-android-11-peap-mschapv2-wifi/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/root/">Root</a>,&nbsp;<a href="/tags/magisk/">Magisk</a>,&nbsp;<a href="/tags/%E6%94%B9%E6%A9%9F/">改機</a>,&nbsp;<a href="/tags/pixel-5/">Pixel 5</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202203/android-remove-root-magisk/">Android 移除 Root 和 Magisk</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-25">2022-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+1. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
+2. 用 fastboot 刷回原始的 boot.img
+fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
+2.2 但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷
+3. 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除.</div><div class="post-footer">
+        <a href="/202203/android-remove-root-magisk/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pixel-5/">Pixel 5</a>,&nbsp;<a href="/tags/magisk/">Magisk</a>,&nbsp;<a href="/tags/%E6%94%B9%E6%A9%9F/">改機</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202203/line-robot-send-currency-exchange-rate-ifttt/">IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-25">2022-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a></span></div><div class="content">需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊.
+匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務, 他的名字是 if this then that 的縮寫. 以這個應用來講, 我們要的是, IF 拿到一個匯率, THEN 發一個 LINE 訊息, 作法如下:
+1. 在 IFTTT 建立一個新的 Applet
+2. 新增一個 "If This"
+3. 選擇 "Finance" service, 這個服務目前是由 Yahoo 提供的
+4. 選擇"Today's exchange rate report"
+5. 在這裡輸入你需要的幣別和通知 (發 LINE) 的時間
+6. 新增一個 "Then That"
+7. 選擇 "LINE" service
+8. 目前他只有一個功能就是 Send message, 就選這個</div><div class="post-footer">
+        <a href="/202203/line-robot-send-currency-exchange-rate-ifttt/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ifttt/">IFTTT</a>,&nbsp;<a href="/tags/line/">LINE</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/202203/samsung-galaxy-s7-edge-lineageos/">Samsung Galaxy S7 Edge 刷 LineageOS</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dennys</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-25">2022-03-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>IT</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Android</a></span></div><div class="content">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
+*最有名的 LineageOS 15~19 (Android 8~12) *FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能
+作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.</div><div class="post-footer">
+        <a href="/202203/samsung-galaxy-s7-edge-lineageos/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/root/">Root</a>,&nbsp;<a href="/tags/magisk/">Magisk</a>,&nbsp;<a href="/tags/%E6%94%B9%E6%A9%9F/">改機</a>,&nbsp;<a href="/tags/galaxy-s7/">Galaxy S7</a></div></div>
+</article><ul class="pagination"><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/2/">2</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/3/">3</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/4/">4</a>
+                    </span>
+                </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.100.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2010 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Dennys</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>

@@ -1,0 +1,231 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Asuswrt-Merlin - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/tags/asuswrt-merlin/</link>
+        <description>Asuswrt-Merlin - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Jun 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/asuswrt-merlin/" rel="self" type="application/rss+xml" /><item>
+    <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
+    <link>https://dennys.github.io/202006/asuswrt-merlin-diversion-youtube/</link>
+    <pubDate>Wed, 10 Jun 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202006/asuswrt-merlin-diversion-youtube/</guid>
+    <description><![CDATA[<h2 id="請先安裝-diversion">請先安裝 Diversion</h2>
+<p>Diversion 安裝可參考: <a href="https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin-diversion/" target="_blank" rel="noopener noreffer">https://dennys.github.io/zh-tw/2020/01/asuswrt-merlin-diversion/</a></p>
+<h2 id="diversion-for-youtube">Diversion for YouTube</h2>
+<p>自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的實驗性功能 (參考: <a href="https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html" target="_blank" rel="noopener noreffer">https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html</a>)</p>
+<h2 id="安裝方法">安裝方法</h2>
+<ol>
+<li>
+<p>執行 b (blocking list)</p>
+</li>
+<li>
+<p>執行 8 (YouTube video ads blocking) =&gt; 還是 experimental feature
+</p>
+</li>
+<li>
+<p>選擇 8 以後, 他會要你再確認一次</p>
+ 
+</li>
+<li>
+<p>然後他就會開始安裝了, 如下</p>
+ 
+</li>
+<li>
+<p>安裝好後一開始還是會有廣告, 之後就會愈來愈少了.</p>
+</li>
+</ol>
+]]></description>
+</item>
+<item>
+    <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
+    <link>https://dennys.github.io/202001/asuswrt-merlin-freshjr-adaptive-qos/</link>
+    <pubDate>Mon, 27 Jan 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202001/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+    <description><![CDATA[<h2 id="freshjr-adaptive-qos">FreshJR Adaptive QOS</h2>
+<p><a href="https://www.snbforums.com/threads/36836/" target="_blank" rel="noopener noreffer">FreshJR Adaptive QoS</a> 是個可安裝在 Asus Merlin 上的流量管理軟體</p>
+<h2 id="安裝步驟">安裝步驟</h2>
+<ol>
+<li>
+<p>用 <a href="https://diversion.ch/amtm.html" target="_blank" rel="noopener noreffer">amtm</a> (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明</p>
+<ul>
+<li>原文: <a href="https://www.snbforums.com/threads/36836/" target="_blank" rel="noopener noreffer">https://www.snbforums.com/threads/36836/</a></li>
+<li>中文摘要翻譯: <a href="https://www.ptt.cc/bbs/Broad" target="_blank" rel="noopener noreffer">https://www.ptt.cc/bbs/Broad</a>_Band/M.1546556091.A.F79.html</li>
+</ul>
+</li>
+<li>
+<p>如何確定安裝成功</p>
+<ol>
+<li>執行 <code>/jffs/script/FreshJR\_QOS -debug</code></li>
+<li>Undf FlowID 的值如果不是 17, 那就安裝成功了
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="安裝前">安裝前</h2>
+<p>設定如下:</p>
+<p></p>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58928634" target="_blank" rel="noopener noreffer">http://www.dslreports.com/speedtest/58928634</a></p>
+<p></p>
+<p></p>
+<h2 id="安裝後">安裝後</h2>
+<p>設定如下:</p>
+<p></p>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58929066" target="_blank" rel="noopener noreffer">http://www.dslreports.com/speedtest/58929066</a></p>
+<p></p>
+<p></p>
+]]></description>
+</item>
+<item>
+    <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
+    <link>https://dennys.github.io/202001/asuswrt-merlin-diversion/</link>
+    <pubDate>Fri, 24 Jan 2020 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202001/asuswrt-merlin-diversion/</guid>
+    <description><![CDATA[<h2 id="asuswrt-merlin">Asuswrt-Merlin</h2>
+<p><a href="https://www.asuswrt-merlin.net/" target="_blank" rel="noopener noreffer">Asuswrt-Merlin</a> 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: <a href="https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation" target="_blank" rel="noopener noreffer">https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation</a> (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)</p>
+<h2 id="diversion">Diversion</h2>
+<p><a href="https://diversion.ch/" target="_blank" rel="noopener noreffer">Diversion</a> 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.</p>
+<h2 id="安裝步驟">安裝步驟</h2>
+<p>然後他為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 <a href="https://diversion.ch/faq-reader/what-does-pixelserv-tls-do.html" target="_blank" rel="noopener noreffer">FAQ</a> 看一下這是甚麼東西他能做的事情</p>
+<h3 id="asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</h3>
+<p>Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.</p>
+<p></p>
+<h3 id="diversion-安裝">Diversion 安裝</h3>
+<ol>
+<li>
+<p>在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sda1, 而且格式是 NTFS (可用 fdisk 看)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1532    126304   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2868     61388   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             60058960     11712  60047248   0% /tmp/mnt/sda1
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安裝 <a href="https://diversion.ch/amtm.html" target="_blank" rel="noopener noreffer">amtm</a>, 指令如下 (Asuswrt-Merlin 384.15 已內建 amtm, 不須另外安裝):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -Os https://diversion.ch/amtm/amtm sh amtm
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>把 USB 格式化成 ext, 步驟如下</p>
+<ol>
+<li>執行 <code>/jffs/scripts/amtm</code></li>
+<li>執行 <code>fd</code></li>
+<li>然後照著說明格式化, 格式化完後會重開機</li>
+<li>完成後 df 如下</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+</span></span><span class="line"><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
+</span></span><span class="line"><span class="cl">/dev/root                33408     33408         0 100% /
+</span></span><span class="line"><span class="cl">devtmpfs                127732         0    127732   0% /dev
+</span></span><span class="line"><span class="cl">tmpfs                   127836      1528    126308   1% /tmp
+</span></span><span class="line"><span class="cl">/dev/mtdblock4           64256      2860     61396   4% /jffs
+</span></span><span class="line"><span class="cl">/dev/sda1             59144340    184232  55955696   0% /tmp/mnt/usb
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下</p>
+<p></p>
+</li>
+<li>
+<p>安裝 Diversion, 在 amtm 裡面執行 &lsquo;1&rsquo; (可先用 &lsquo;i&rsquo; 指令確認一下是用 1 來安裝 Diversion). 注意, 這裡本來應該先安裝 Entware, 但如果你嘗試安裝, amtm 會建議你直接裝 Diversion, 然後他在安裝過程中會自動安裝 Entware</p>
+<p></p>
+</li>
+<li>
+<p>Diversion 安裝結果如下, 注意, 他移除了 LAN 的 DNS 8.8.8.8/8.8.4.4. 不過他沒有動到 WAN 的 DNS.</p>
+<p></p>
+</li>
+<li>
+<p>安裝 Diversion Standard</p>
+<p></p>
+</li>
+<li>
+<p>這邊注意, 要回到 Asuswrt-Merlin Web 設定</p>
+<p></p>
+</li>
+<li>
+<p>上面是寫要跳過 192.168.1.2, 但因為 pixelserv-tls 也需要 IP, 所以 192.168.1.3 也要跳過. 我後來是把 192.168.1.1~10 當成特殊用途, 所以我把 DHCP 設成從 192.168.1.11 開始分配.</p>
+<p></p>
+</li>
+<li>
+<p>接下來要輸入 pixelserv-tls 的 IP, 這裡就避開 DHCP 網段就好
+</p>
+</li>
+<li>
+<p>選擇 log 方式, 如果你要把 log 寫下來, 就選 1</p>
+</li>
+</ol>
+<p></p>
+<ol start="12">
+<li>他會安裝到這個目錄 /tmp/mnt/usb/entware</li>
+</ol>
+<h3 id="特別注意">特別注意</h3>
+<p>因為 Diversion 是使用 DNS 來 block AD, 因此 WAN 的地方可以指定 DNS</p>
+<p></p>
+<p>但 LAN 的地方必須清空, client 的 DNS 必須是 192.168.1.1. 因為所有連到這台 router 的電腦或手機, 他們的 DNS server 都必須是 192.168.1.1, 這樣 Diversion 才會有作用.</p>
+<p></p>
+<p>在 Windows 可用 ipconfig /all 檢查 DNS 是否有設定正確</p>
+<p></p>
+<h2 id="diversion-使用">Diversion 使用</h2>
+<ol>
+<li>使用 putty 連進去後, 執行 diversion, 看到如下畫面就是安裝成功了</li>
+</ol>
+<p></p>
+<ol start="2">
+<li>選擇 f (follow dnsmasq.log) 可以看 log, 有以下幾種模式可以選 (實際 log 在 <code>/tmp/mnt/sda1/entware/var/log/dnsmasq.log</code>, 紅色的部分要看一開始設定的名字)</li>
+</ol>
+<p></p>
+<ol start="3">
+<li>選擇 1, 可看到如下就是有成功了</li>
+</ol>
+<p></p>
+<ol start="4">
+<li>瀏覽器會看到如下</li>
+</ol>
+<p></p>
+<h2 id="ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</h2>
+<ol>
+<li>要先打開安全性: 設定 -&gt; 捷徑 -&gt; 允許不受信任的捷徑</li>
+<li>打開 https://diversion.ch/ios-shortcut.html, 選擇最新的版本</li>
+</ol>
+<h2 id="參考">參考</h2>
+<ol>
+<li><a href="https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/" target="_blank" rel="noopener noreffer">https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/</a></li>
+</ol>
+]]></description>
+</item>
+</channel>
+</rss>

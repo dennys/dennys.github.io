@@ -1,0 +1,99 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Galaxy S7 - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/tags/galaxy-s7/</link>
+        <description>Galaxy S7 - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/galaxy-s7/" rel="self" type="application/rss+xml" /><item>
+    <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
+    <link>https://dennys.github.io/202203/samsung-galaxy-s7-edge-lineageos/</link>
+    <pubDate>Fri, 25 Mar 2022 00:00:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202203/samsung-galaxy-s7-edge-lineageos/</guid>
+    <description><![CDATA[<p><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-vivid-red-color"><strong>注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</strong></mark></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-amber-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</mark></strong></p>
+<p>======================================================</p>
+<h2 id="需求">需求</h2>
+<p>Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.</p>
+<p>可以刷的 ROM 看來有很多 (可參考 <a href="https://forum.xda-developers.com/f/5186/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/f/5186/</a>)</p>
+<p>*最有名的 LineageOS 15~19 (Android 8~12)
+*FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能</p>
+<h2 id="作法">作法</h2>
+<h3 id="請先在電腦安裝以下兩個程式">請先在電腦安裝以下兩個程式</h3>
+<ol>
+<li>Samsung USB driver: <a href="http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows" target="_blank" rel="noopener noreffer">http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows</a></li>
+<li>ODIN: <a href="https://odindownloader.com/" target="_blank" rel="noopener noreffer">https://odindownloader.com/</a></li>
+</ol>
+<h3 id="下載-lineageos-和-open-gapps">下載 LineageOS 和 Open GApps</h3>
+<ol>
+<li>LineageOS 19: <a href="https://forum.xda-developers.com/t/4369001/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/4369001/</a></li>
+<li>LineageOS 18: <a href="https://forum.xda-developers.com/t/4172727/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/4172727/</a></li>
+<li>Open Gapps: <a href="https://sourceforge.net/projects/opengapps/files/arm64/" target="_blank" rel="noopener noreffer">https://sourceforge.net/projects/opengapps/files/arm64/</a> =&gt; 注意, 這有綁 OS 版本, 在 2022/2/15 的版本還沒有支援 Android 12.</li>
+</ol>
+<h3 id="下載-twrp">下載 TWRP</h3>
+<p><a href="https://dl.twrp.me/hero2lte/twrp-3.6.0_9-0-hero2lte.img.tar.html" target="_blank" rel="noopener noreffer">https://dl.twrp.me/hero2lte/twrp-3.6.0_9-0-hero2lte.img.tar.html</a>, 注意, 一開始使用 3.1.1 版, 結果都讀不到 SD card, 升到最新版後就好了.</p>
+<h3 id="安裝-twrp">安裝 TWRP</h3>
+<ol>
+<li>開啟工程模式
+<ol>
+<li>設定→關於裝置→軟體資訊→版本號碼處連點8下</li>
+<li>進入開發人員選項後，USB偵錯以及OEM解鎖選項要打勾。</li>
+</ol>
+</li>
+<li>重開機進入 download mode
+<ol>
+<li>執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了</li>
+</ol>
+</li>
+</ol>
+<h3 id="刷-lineageos-和-open-gapps">刷 LineageOS 和 Open Gapps</h3>
+<p>執行 adb reboot recovery 或是先關機, 然後按音量上+Home+Power 鍵進入 TWRP Recovery. 選 INSTALL, 把LineageOS 和 Open Gapps 的 zip 檔案裝上去, 重開機就可以了.</p>
+<p>如果要用 ADB, 指令如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">adb sideload open_gapps-arm64-11.0-nano-20220202.zip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="twrp-被-lineageos-recovery-蓋掉的問題">TWRP 被 LineageOS Recovery 蓋掉的問題</h2>
+<p>自 LineageOS 17 開始, 他自己有帶一個 Recovery, 嘗試刷回 TWRP 又常常失敗.</p>
+<p>可試試看 <a href="https://forum.xda-developers.com/t/3334084/" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/t/3334084/</a> 的 step 6~8</p>
+<p>=================================================</p>
+<h2 id="nikgapps-測試-失敗">NikGapps 測試 (失敗)</h2>
+<p>一開始用 LineageOS 自己的 Recovery, 刷 NikGapps 一直失敗</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">adb sideload NikGapps-basic-arm64-12-20211224-signed.zip
+</span></span><span class="line"><span class="cl">adb: sideload connection failed: closed
+</span></span><span class="line"><span class="cl">adb: trying pre-KitKat sideload method…
+</span></span><span class="line"><span class="cl">adb: pre-KitKat sideload connection failed: closed
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用以下指令可解決</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\platform-tools\fastboot devices
+</span></span><span class="line"><span class="cl">C:\platform-tools\adb usb
+</span></span><span class="line"><span class="cl">C:\platform-tools\adb sideload NikGapps-basic-arm64-12-20211224-signed.zip
+</span></span><span class="line"><span class="cl">serving: &#39;NikGapps-basic-arm64-12-20211224-signed.zip&#39; (~32%)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>但最後又一直卡在空間不足, 就放棄了.</p>
+]]></description>
+</item>
+</channel>
+</rss>

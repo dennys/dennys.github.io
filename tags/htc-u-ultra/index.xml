@@ -1,0 +1,60 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>HTC U Ultra - Tag - Dennys Diary</title>
+        <link>https://dennys.github.io/tags/htc-u-ultra/</link>
+        <description>HTC U Ultra - Tag - Dennys Diary</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 30 Jan 2020 08:04:00 &#43;0800</lastBuildDate><atom:link href="https://dennys.github.io/tags/htc-u-ultra/" rel="self" type="application/rss+xml" /><item>
+    <title>HTC U Ultra 刷機</title>
+    <link>https://dennys.github.io/202001/htc-u-ultra-root/</link>
+    <pubDate>Thu, 30 Jan 2020 08:04:00 &#43;0800</pubDate>
+    <author>Dennys</author>
+    <guid>https://dennys.github.io/202001/htc-u-ultra-root/</guid>
+    <description><![CDATA[<h2 id="htc-u-ultra">HTC U Ultra</h2>
+<p><a href="https://zh.m.wikipedia.org/zh-tw/HTC_U_Ultra" target="_blank" rel="noopener noreffer">HTC U Ultra</a> 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)</p>
+<h2 id="root-方法">Root 方法</h2>
+<ol>
+<li>
+<p>htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-download/" target="_blank" rel="noopener noreffer">http://www.rayzen-dev.com/htc-unlocked-download/</a></p>
+</li>
+<li>
+<p>安裝 htc driver <a href="https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z" target="_blank" rel="noopener noreffer">https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z</a></p>
+</li>
+<li>
+<p>TWRP 可參考以下兩篇</p>
+<ol>
+<li><a href="https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html" target="_blank" rel="noopener noreffer">https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html</a></li>
+<li><a href="http://www.rayzen-dev.com/root-htc-ultra/" target="_blank" rel="noopener noreffer">http://www.rayzen-dev.com/root-htc-ultra/</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="magisk-安裝">Magisk 安裝</h2>
+<p>參考: <a href="https://izaka.tw/android-magisk-installation-guide/" target="_blank" rel="noopener noreffer">https://izaka.tw/android-magisk-installation-guide/</a></p>
+<ol>
+<li>用手機從這裡下載 Magisk-v20.3.zip <a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445</a></li>
+<li>重開進入 TWRP (指令: adb wait-for-device reboot recovery)</li>
+<li>選擇 INSTALL, 路徑選擇 /sdcard/Download</li>
+<li>選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash</li>
+<li>重開系統</li>
+</ol>
+<h3 id="magisk-module">Magisk Module</h3>
+<ul>
+<li>YouTube Vanced</li>
+</ul>
+<ol>
+<li>如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced</li>
+<li>要把 Google Play 的自動更新關閉</li>
+</ol>
+<h2 id="lineageos">LineageOS</h2>
+<p>官網</p>
+<ul>
+<li>
+<p>LineageOS 16: <a href="https://forum.xda-developers.com/u-ultra/development/rom-lineageos-16-0-t3856221" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/u-ultra/development/rom-lineageos-16-0-t3856221</a></p>
+</li>
+<li>
+<p>LineageOS 17: <a href="https://forum.xda-developers.com/u-ultra/development/rom-lineageos-17-0-t3970921" target="_blank" rel="noopener noreffer">https://forum.xda-developers.com/u-ultra/development/rom-lineageos-17-0-t3970921</a></p>
+</li>
+</ul>
+]]></description>
+</item>
+</channel>
+</rss>
