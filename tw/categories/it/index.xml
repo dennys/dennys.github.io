@@ -8,7 +8,7 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Google TV 如何擷圖</title>
+      <title>Google TV 如何擷圖 (screenshot)</title>
       <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
@@ -16,7 +16,10 @@
       <description>
         
           
-            要對 Google TV 截圖還滿麻煩的
+            前言 要對 Google TV 截圖還滿麻煩的, 因為他沒幾個按鍵可用, 預設也沒有哪個按鍵是抓 screenshot 的.
+方法 先在 Google TV 上安裝 Button Mapper: Remap your keys
+執行 Button Mapper, 選擇 Add Buttons 進去後按下藍色的 + Add Buttons, 下面那個 VOLUME_MUTE 164 這時候應該還沒出現, 我是做完後才來擷圖的. 選擇一個按鈕, 我選的是 靜音, 然後選 Double tap, 就是要連按兩下才啟動, 這樣就不影響原來的功能. 再來要選擇要執行的動作, 這裡選 Actions 這邊有很多個 Actions 可選, 繼續選擇 Actions 最後這個地方選擇 Screenshot 實際操作時, 在 Google TV 的任何畫面, 連按 靜音鍵兩次, 他就會把 screenshot 存到目錄下
+把檔案傳出來 我是用 X-plore File Manager, 本來是想用他開一個 web server, 這樣最簡單, 結果這功能要錢.
           
           
         
@@ -32,7 +35,8 @@
       <description>
         
           
-             
+            前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
+走紅外線, 這個 Infocus 電視行不通, mobile01 上面很多人也都測過了, 不支援. 走 HDMI-CEC, 看起來也是不支援. 我既然無法改變電視的音量, 但我總可以改變 Google TV 對外的音量吧. 做法 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇音量控制 音量控制的部分選擇 &amp;quot;Chrome&amp;quot;, 其實從這裡就可以看到 Google TV 支援的 3 種方法了 實際操作時, 可以看到 Google TV 的音量調整和電視機本身的是不一樣的兩組
           
           
         
@@ -48,7 +52,8 @@
       <description>
         
           
-             
+            前言 Chromecast With Google TV 要控制電視機的 開關 有 2 種方法
+做法 走紅外線, 這個 Infocus 電視行不通, mobile01 上面很多人也都測過了, 不支援. 走 HDMI-CEC, 不過在 Infocus 電視預設是關閉的, 設定方式也很簡單: 進入設定畫面 選 HDMI 模式 將&amp;quot;智慧連接&amp;quot;打開 將&amp;quot;自動開機&amp;quot;打開 這樣就完成了, 之後把 Google TV 打開時, 大概 1 秒就會把電視也打開, 還是會有一點時間差, 而且是有感的, 但已經方便太多了. 注意, 下面的貼圖是抓官方說明書, 裡面寫的是&amp;quot;關閉&amp;quot;, 請勿照著設定, 要記得打開
           
           
         
