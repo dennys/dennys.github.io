@@ -47,6 +47,19 @@
     <loc>https://dennys.github.io/en/categories/devops/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/en/doc/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/en/tags/gitlab/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
@@ -63,19 +76,6 @@
                 href="https://dennys.github.io/en/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/posts/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/posts/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
@@ -89,21 +89,8 @@
                 href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/202203/gitlab-dotnet4-ci-cd/</loc>
+    <loc>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2022-03-24T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/ifttt/</loc>
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
@@ -121,16 +108,16 @@
     <loc>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</loc>
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/202203/use-wise-to-send-currency-exchange-rate-mail-daily/</loc>
+    <loc>https://dennys.github.io/en/doc/software/use-wise-to-send-currency-exchange-rate-mail-daily/</loc>
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/checkmarx/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/202201/gitlab-checkmarx-integration/</loc>
+    <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/202201/gitlab-checkmarx-sonarqube-integration/</loc>
+    <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/sonarqube/</loc>

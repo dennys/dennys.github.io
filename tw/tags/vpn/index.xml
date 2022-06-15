@@ -7,23 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Wed, 01 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>https://dennys.github.io/tw/202206/asuswrt-merlin-openvpn-server/</link>
-      <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/202206/asuswrt-merlin-openvpn-server/</guid>
-      <description>
-        
-          
-            Asuswrt-Merlin 的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
-註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 https://www.asus.com/tw/support/FAQ/1044190/, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
-測試平台 Asus RC-AC66U B1 Asuswrt-Merlin 386.5 (這個版本的 OpenVPN 是 2.5.5) OpenVPN server 設定 (在 Asuswrt-Merlin) 1. OpenVPN server 一般設定 首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &amp;quot;LAN only&amp;quot;.
-          
-          
-        
-      </description>
-    </item>
-    
   </channel>
 </rss>
