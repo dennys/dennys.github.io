@@ -903,5 +903,21 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
       </description>
     </item>
     
+    <item>
+      <title>Blog 開張 (Movable Type 2.64)</title>
+      <link>https://dennys.github.io/tw/posts/200308/blog-initial/</link>
+      <pubDate>Sat, 16 Aug 2003 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/tw/posts/200308/blog-initial/</guid>
+      <description>
+        
+          
+            開張大吉, 使用 Movable Type 2.64
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
