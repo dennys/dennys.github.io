@@ -61,7 +61,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -375,25 +375,25 @@
 <li>執行 <code>adb devices</code>, 確定手機有連線成功
 <ul>
 <li>如果 List of devices attached 後面沒東西代表沒找到手機 (那兩行 daemon... 只有第一次執行會出現)
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;adb devices
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">* daemon not running; starting now at tcp:5037
 </span></span><span class="line"><span class="ln">3</span><span class="cl">* daemon started successfully
 </span></span><span class="line"><span class="ln">4</span><span class="cl">List of devices attached
 </span></span></code></pre></div></li>
 <li>如果看到 unauthorized 代表沒有權限 (可能是 USB debug mode 沒開)
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;adb devices
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
 </span></span><span class="line"><span class="ln">3</span><span class="cl">*************** unauthorized
 </span></span></code></pre></div></li>
 <li>要看到這個畫面才代表連線成功
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;adb devices
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
 </span></span><span class="line"><span class="ln">3</span><span class="cl">*************** device
 </span></span></code></pre></div></li>
 </ul>
 </li>
 <li>連線成功後, 請執行以下指令 (請用 cmd, 用 PowerShell 比較麻煩), 他就會把 Wi-Fi 和行動網路的快速設定分開來了
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">adb shell settings put global settings_provider_model false  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb shell settings put global settings_provider_model false  
 </span></span><span class="line"><span class="ln">2</span><span class="cl">adb shell settings put secure sysui_qs_tiles &#39;wifi,cell,$(settings get secure sysui_qs_tiles)&#39;  
 </span></span></code></pre></div></li>
 </ol>

@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -224,7 +224,7 @@
 </a></p>
 <h2 id="解決方法">解決方法</h2>
 <p>WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">java.sql.SQLException: Internal error: Cannot obtain XAConnection  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">java.sql.SQLException: Internal error: Cannot obtain XAConnection  
 </span></span><span class="line"><span class="ln">2</span><span class="cl">weblogic.common.resourcepool.ResourceDeadException  
 </span></span></code></pre></div><p>因為在上圖中的 WebLogic 的 console 看到的 &quot;leaked connection count&quot; 一直都是 0, 所以我也沒有往這個方向思考過. 不過後來才發現需要做一些設定才能偵測 leaked connection, 如下</p>
 <ol>
@@ -328,58 +328,58 @@
 <p>之後 WebLogic 的 log (放在 user_projects/domains/%domainname%/%servername%/logs, 而不是自己 AP 的 log) 如下, 整個 stack trace 滿大的, 重點在第 28 行, 問題發生在 &quot;com.test.dao.getStatus&quot; 這個 method, 意思就是說, 有某個 JDBC connection 在這個程式被拿走之後, 一直沒有還給系統, 於是就找到兇手了.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">1.  ####&lt;Mar 11, 2009 11:14:36 PM CST&gt; &lt;Warning&gt; &lt;JDBC&gt; &lt;testserver1&gt; &lt;Server1&gt; &lt;\[ACTIVE\] ExecuteThread: &#39;4&#39; for queue: &#39;weblogic.kernel.Default (self-tuning)&#39;&gt; &lt;&lt;WLS Kernel&gt;&gt; &lt;&gt; &lt;&gt; &lt;1236748476017&gt; &lt;BEA-001153&gt; &lt;Forcibly releasing inactive connection &#34;\[weblogic.jdbc.wrapper.JTAConnection\_weblogic\_jdbc\_wrapper\_XAConnection\_oracle\_jdbc\_driver\_LogicalConnection-TEST\_DS-311, oracle.jdbc.driver.LogicalConnection@42a794\]&#34; back into the connection pool &#34;TEST\_DS&#34;, currently reserved by: java.lang.Exception
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">2.          at weblogic.jdbc.common.internal.ConnectionEnv.setup(ConnectionEnv.java:291)
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">3.          at weblogic.common.resourcepool.ResourcePoolImpl.reserveResource(ResourcePoolImpl.java:314)
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">4.          at weblogic.common.resourcepool.ResourcePoolImpl.reserveResource(ResourcePoolImpl.java:292)
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">5.          at weblogic.jdbc.common.internal.ConnectionPool.reserve(ConnectionPool.java:425)
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">6.          at weblogic.jdbc.common.internal.ConnectionPool.reserve(ConnectionPool.java:316)
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">7.          at weblogic.jdbc.common.internal.ConnectionPoolManager.reserve(ConnectionPoolManager.java:93)
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">8.          at weblogic.jdbc.common.internal.ConnectionPoolManager.reserve(ConnectionPoolManager.java:61)
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">9.          at weblogic.jdbc.jta.DataSource.getXAConnectionFromPool(DataSource.java:1474)
-</span></span><span class="line"><span class="ln">10</span><span class="cl">10.          at weblogic.jdbc.jta.DataSource.refreshXAConnAndEnlist(DataSource.java:1303)
-</span></span><span class="line"><span class="ln">11</span><span class="cl">11.          at weblogic.jdbc.jta.DataSource.getConnection(DataSource.java:426)
-</span></span><span class="line"><span class="ln">12</span><span class="cl">12.          at weblogic.jdbc.jta.DataSource.connect(DataSource.java:383)
-</span></span><span class="line"><span class="ln">13</span><span class="cl">13.          at weblogic.jdbc.common.internal.RmiDataSource.getConnection(RmiDataSource.java:339)
-</span></span><span class="line"><span class="ln">14</span><span class="cl">14.          at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
-</span></span><span class="line"><span class="ln">15</span><span class="cl">15.          at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:423)
-</span></span><span class="line"><span class="ln">16</span><span class="cl">16.          at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:144)
-</span></span><span class="line"><span class="ln">17</span><span class="cl">17.          at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
-</span></span><span class="line"><span class="ln">18</span><span class="cl">18.          at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
-</span></span><span class="line"><span class="ln">19</span><span class="cl">19.          at org.hibernate.loader.Loader.doQuery(Loader.java:673)
-</span></span><span class="line"><span class="ln">20</span><span class="cl">20.          at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
-</span></span><span class="line"><span class="ln">21</span><span class="cl">21.          at org.hibernate.loader.Loader.doList(Loader.java:2220)
-</span></span><span class="line"><span class="ln">22</span><span class="cl">22.          at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
-</span></span><span class="line"><span class="ln">23</span><span class="cl">23.          at org.hibernate.loader.Loader.list(Loader.java:2099)
-</span></span><span class="line"><span class="ln">24</span><span class="cl">24.          at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:289)
-</span></span><span class="line"><span class="ln">25</span><span class="cl">25.          at org.hibernate.impl.SessionImpl.listCustomQuery(SessionImpl.java:1695)
-</span></span><span class="line"><span class="ln">26</span><span class="cl">26.          at org.hibernate.impl.AbstractSessionImpl.list(AbstractSessionImpl.java:142)
-</span></span><span class="line"><span class="ln">27</span><span class="cl">27.          at org.hibernate.impl.SQLQueryImpl.list(SQLQueryImpl.java:152)
-</span></span><span class="line"><span class="ln">28</span><span class="cl">28.          at com.test.dao.getStatus(dao.java:194)
-</span></span><span class="line"><span class="ln">29</span><span class="cl">29.          at sun.reflect.GeneratedMethodAccessor755.invoke(Unknown Source)
-</span></span><span class="line"><span class="ln">30</span><span class="cl">30.          at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-</span></span><span class="line"><span class="ln">31</span><span class="cl">31.          at java.lang.reflect.Method.invoke(Method.java:585)
-</span></span><span class="line"><span class="ln">32</span><span class="cl">32.          at org.apache.axis2.rpc.receivers.RPCUtil.invokeServiceClass(RPCUtil.java:194)
-</span></span><span class="line"><span class="ln">33</span><span class="cl">33.          at org.apache.axis2.rpc.receivers.RPCMessageReceiver.invokeBusinessLogic(RPCMessageReceiver.java:102)
-</span></span><span class="line"><span class="ln">34</span><span class="cl">34.          at org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic(AbstractInOutMessageReceiver.java:40)
-</span></span><span class="line"><span class="ln">35</span><span class="cl">35.          at org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:100)
-</span></span><span class="line"><span class="ln">36</span><span class="cl">36.          at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:176)
-</span></span><span class="line"><span class="ln">37</span><span class="cl">37.          at org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:275)
-</span></span><span class="line"><span class="ln">38</span><span class="cl">38.          at org.apache.axis2.transport.http.AxisServlet.doPost(AxisServlet.java:133)
-</span></span><span class="line"><span class="ln">39</span><span class="cl">39.          at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
-</span></span><span class="line"><span class="ln">40</span><span class="cl">40.          at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
-</span></span><span class="line"><span class="ln">41</span><span class="cl">41.          at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:226)
-</span></span><span class="line"><span class="ln">42</span><span class="cl">42.          at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:124)
-</span></span><span class="line"><span class="ln">43</span><span class="cl">43.          at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:283)
-</span></span><span class="line"><span class="ln">44</span><span class="cl">44.          at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:175)
-</span></span><span class="line"><span class="ln">45</span><span class="cl">45.          at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3395)
-</span></span><span class="line"><span class="ln">46</span><span class="cl">46.          at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
-</span></span><span class="line"><span class="ln">47</span><span class="cl">47.          at weblogic.security.service.SecurityManager.runAs(Unknown Source)
-</span></span><span class="line"><span class="ln">48</span><span class="cl">48.          at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2140)
-</span></span><span class="line"><span class="ln">49</span><span class="cl">49.          at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2046)
-</span></span><span class="line"><span class="ln">50</span><span class="cl">50.          at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1366)
-</span></span><span class="line"><span class="ln">51</span><span class="cl">51.          at weblogic.work.ExecuteThread.execute(ExecuteThread.java:200)
-</span></span><span class="line"><span class="ln">52</span><span class="cl">52.          at weblogic.work.ExecuteThread.run(ExecuteThread.java:172)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">1.  <span class="c1">####&lt;Mar 11, 2009 11:14:36 PM CST&gt; &lt;Warning&gt; &lt;JDBC&gt; &lt;testserver1&gt; &lt;Server1&gt; &lt;\[ACTIVE\] ExecuteThread: &#39;4&#39; for queue: &#39;weblogic.kernel.Default (self-tuning)&#39;&gt; &lt;&lt;WLS Kernel&gt;&gt; &lt;&gt; &lt;&gt; &lt;1236748476017&gt; &lt;BEA-001153&gt; &lt;Forcibly releasing inactive connection &#34;\[weblogic.jdbc.wrapper.JTAConnection\_weblogic\_jdbc\_wrapper\_XAConnection\_oracle\_jdbc\_driver\_LogicalConnection-TEST\_DS-311, oracle.jdbc.driver.LogicalConnection@42a794\]&#34; back into the connection pool &#34;TEST\_DS&#34;, currently reserved by: java.lang.Exception</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">2.          at weblogic.jdbc.common.internal.ConnectionEnv.setup<span class="o">(</span>ConnectionEnv.java:291<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">3.          at weblogic.common.resourcepool.ResourcePoolImpl.reserveResource<span class="o">(</span>ResourcePoolImpl.java:314<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">4.          at weblogic.common.resourcepool.ResourcePoolImpl.reserveResource<span class="o">(</span>ResourcePoolImpl.java:292<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">5.          at weblogic.jdbc.common.internal.ConnectionPool.reserve<span class="o">(</span>ConnectionPool.java:425<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">6.          at weblogic.jdbc.common.internal.ConnectionPool.reserve<span class="o">(</span>ConnectionPool.java:316<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">7.          at weblogic.jdbc.common.internal.ConnectionPoolManager.reserve<span class="o">(</span>ConnectionPoolManager.java:93<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">8.          at weblogic.jdbc.common.internal.ConnectionPoolManager.reserve<span class="o">(</span>ConnectionPoolManager.java:61<span class="o">)</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">9.          at weblogic.jdbc.jta.DataSource.getXAConnectionFromPool<span class="o">(</span>DataSource.java:1474<span class="o">)</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">10.          at weblogic.jdbc.jta.DataSource.refreshXAConnAndEnlist<span class="o">(</span>DataSource.java:1303<span class="o">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">11.          at weblogic.jdbc.jta.DataSource.getConnection<span class="o">(</span>DataSource.java:426<span class="o">)</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">12.          at weblogic.jdbc.jta.DataSource.connect<span class="o">(</span>DataSource.java:383<span class="o">)</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">13.          at weblogic.jdbc.common.internal.RmiDataSource.getConnection<span class="o">(</span>RmiDataSource.java:339<span class="o">)</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">14.          at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection<span class="o">(</span>LocalDataSourceConnectionProvider.java:81<span class="o">)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">15.          at org.hibernate.jdbc.ConnectionManager.openConnection<span class="o">(</span>ConnectionManager.java:423<span class="o">)</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">16.          at org.hibernate.jdbc.ConnectionManager.getConnection<span class="o">(</span>ConnectionManager.java:144<span class="o">)</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">17.          at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement<span class="o">(</span>AbstractBatcher.java:139<span class="o">)</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">18.          at org.hibernate.loader.Loader.prepareQueryStatement<span class="o">(</span>Loader.java:1547<span class="o">)</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">19.          at org.hibernate.loader.Loader.doQuery<span class="o">(</span>Loader.java:673<span class="o">)</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">20.          at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections<span class="o">(</span>Loader.java:236<span class="o">)</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">21.          at org.hibernate.loader.Loader.doList<span class="o">(</span>Loader.java:2220<span class="o">)</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">22.          at org.hibernate.loader.Loader.listIgnoreQueryCache<span class="o">(</span>Loader.java:2104<span class="o">)</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">23.          at org.hibernate.loader.Loader.list<span class="o">(</span>Loader.java:2099<span class="o">)</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">24.          at org.hibernate.loader.custom.CustomLoader.list<span class="o">(</span>CustomLoader.java:289<span class="o">)</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">25.          at org.hibernate.impl.SessionImpl.listCustomQuery<span class="o">(</span>SessionImpl.java:1695<span class="o">)</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">26.          at org.hibernate.impl.AbstractSessionImpl.list<span class="o">(</span>AbstractSessionImpl.java:142<span class="o">)</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">27.          at org.hibernate.impl.SQLQueryImpl.list<span class="o">(</span>SQLQueryImpl.java:152<span class="o">)</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">28.          at com.test.dao.getStatus<span class="o">(</span>dao.java:194<span class="o">)</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">29.          at sun.reflect.GeneratedMethodAccessor755.invoke<span class="o">(</span>Unknown Source<span class="o">)</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">30.          at sun.reflect.DelegatingMethodAccessorImpl.invoke<span class="o">(</span>DelegatingMethodAccessorImpl.java:25<span class="o">)</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">31.          at java.lang.reflect.Method.invoke<span class="o">(</span>Method.java:585<span class="o">)</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">32.          at org.apache.axis2.rpc.receivers.RPCUtil.invokeServiceClass<span class="o">(</span>RPCUtil.java:194<span class="o">)</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">33.          at org.apache.axis2.rpc.receivers.RPCMessageReceiver.invokeBusinessLogic<span class="o">(</span>RPCMessageReceiver.java:102<span class="o">)</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">34.          at org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic<span class="o">(</span>AbstractInOutMessageReceiver.java:40<span class="o">)</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">35.          at org.apache.axis2.receivers.AbstractMessageReceiver.receive<span class="o">(</span>AbstractMessageReceiver.java:100<span class="o">)</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">36.          at org.apache.axis2.engine.AxisEngine.receive<span class="o">(</span>AxisEngine.java:176<span class="o">)</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl">37.          at org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest<span class="o">(</span>HTTPTransportUtils.java:275<span class="o">)</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">38.          at org.apache.axis2.transport.http.AxisServlet.doPost<span class="o">(</span>AxisServlet.java:133<span class="o">)</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">39.          at javax.servlet.http.HttpServlet.service<span class="o">(</span>HttpServlet.java:727<span class="o">)</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl">40.          at javax.servlet.http.HttpServlet.service<span class="o">(</span>HttpServlet.java:820<span class="o">)</span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl">41.          at weblogic.servlet.internal.StubSecurityHelper<span class="nv">$ServletServiceAction</span>.run<span class="o">(</span>StubSecurityHelper.java:226<span class="o">)</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">42.          at weblogic.servlet.internal.StubSecurityHelper.invokeServlet<span class="o">(</span>StubSecurityHelper.java:124<span class="o">)</span>
+</span></span><span class="line"><span class="ln">43</span><span class="cl">43.          at weblogic.servlet.internal.ServletStubImpl.execute<span class="o">(</span>ServletStubImpl.java:283<span class="o">)</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl">44.          at weblogic.servlet.internal.ServletStubImpl.execute<span class="o">(</span>ServletStubImpl.java:175<span class="o">)</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">45.          at weblogic.servlet.internal.WebAppServletContext<span class="nv">$ServletInvocationAction</span>.run<span class="o">(</span>WebAppServletContext.java:3395<span class="o">)</span>
+</span></span><span class="line"><span class="ln">46</span><span class="cl">46.          at weblogic.security.acl.internal.AuthenticatedSubject.doAs<span class="o">(</span>AuthenticatedSubject.java:321<span class="o">)</span>
+</span></span><span class="line"><span class="ln">47</span><span class="cl">47.          at weblogic.security.service.SecurityManager.runAs<span class="o">(</span>Unknown Source<span class="o">)</span>
+</span></span><span class="line"><span class="ln">48</span><span class="cl">48.          at weblogic.servlet.internal.WebAppServletContext.securedExecute<span class="o">(</span>WebAppServletContext.java:2140<span class="o">)</span>
+</span></span><span class="line"><span class="ln">49</span><span class="cl">49.          at weblogic.servlet.internal.WebAppServletContext.execute<span class="o">(</span>WebAppServletContext.java:2046<span class="o">)</span>
+</span></span><span class="line"><span class="ln">50</span><span class="cl">50.          at weblogic.servlet.internal.ServletRequestImpl.run<span class="o">(</span>ServletRequestImpl.java:1366<span class="o">)</span>
+</span></span><span class="line"><span class="ln">51</span><span class="cl">51.          at weblogic.work.ExecuteThread.execute<span class="o">(</span>ExecuteThread.java:200<span class="o">)</span>
+</span></span><span class="line"><span class="ln">52</span><span class="cl">52.          at weblogic.work.ExecuteThread.run<span class="o">(</span>ExecuteThread.java:172<span class="o">)</span>
 </span></span></code></pre></div><h2 id="測試環境">測試環境</h2>
 <p>WebLogic 10.0 MP1, JDBC driver 使用的是內建的 Oracle thin driver. 另外也發現一件事情, 如果改用 <a href="http://download.oracle.com/docs/cd/E12840_01/wls/docs103/jdbc_drivers/usedriver.html">Bea 的 Oracle driver</a>, 則 connection 成長的速度會放慢, 但最後還是一樣會爆掉的啦</p>
 

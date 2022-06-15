@@ -59,7 +59,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -195,24 +195,24 @@
 
     <div class="post_body"><h2 id="drupals-cron">Drupal's cron</h2>
 <p><a href="http://drupal.org/">Drupal</a> 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">Attempting to re-run cron while it is already running.  
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Cron run exceeded the time limit and was aborted.  
-</span></span><span class="line"><span class="ln">3</span><span class="cl">Cron has been running for more than an hour and is most likely stuck.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Attempting to re-run cron <span class="k">while</span> it is already running.  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Cron run exceeded the <span class="nb">time</span> limit and was aborted.  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Cron has been running <span class="k">for</span> more than an hour and is most likely stuck.
 </span></span></code></pre></div><h2 id="debug-方法">Debug 方法</h2>
 <p>在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">DELETE FROM variable WHERE name=&#34;cron_semaphore&#34;;  
-</span></span></code></pre></div><p>另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.inc</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">   foreach (module\_implements($hook) as $module) {  
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    $function = $module .&#39;\_&#39;. $hook;  
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    if ($hook == &#39;cron&#39;) watchdog(&#39;cron&#39;, &#34;hit $module cron&#34;);   // add this line  
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    $result = call\_user\_func\_array($function, $args);  
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    if (isset($result) &amp;&amp; is\_array($result)) {  
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">      $return = array\_merge($return, $result);  
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    }  
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    else if (isset($result)) {  
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">      $return\[\] = $result;  
-</span></span><span class="line"><span class="ln">10</span><span class="cl">    }  
-</span></span><span class="line"><span class="ln">11</span><span class="cl">  }
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">variable</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;cron_semaphore&#34;</span><span class="p">;</span><span class="w">  
+</span></span></span></code></pre></div><p>另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.inc</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="ln"> 1</span><span class="cl">   <span class="k">foreach</span> <span class="p">(</span><span class="nx">module\_implements</span><span class="p">(</span><span class="nv">$hook</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$module</span><span class="p">)</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nv">$function</span> <span class="o">=</span> <span class="nv">$module</span> <span class="o">.</span><span class="s1">&#39;\_&#39;</span><span class="o">.</span> <span class="nv">$hook</span><span class="p">;</span>  
+</span></span><span class="line hl"><span class="ln"> 3</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$hook</span> <span class="o">==</span> <span class="s1">&#39;cron&#39;</span><span class="p">)</span> <span class="nx">watchdog</span><span class="p">(</span><span class="s1">&#39;cron&#39;</span><span class="p">,</span> <span class="s2">&#34;hit </span><span class="si">$module</span><span class="s2"> cron&#34;</span><span class="p">);</span>   <span class="c1">// add this line  
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="c1"></span>    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">call\_user\_func\_array</span><span class="p">(</span><span class="nv">$function</span><span class="p">,</span> <span class="nv">$args</span><span class="p">);</span>  
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">is\_array</span><span class="p">(</span><span class="nv">$result</span><span class="p">))</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">      <span class="nv">$return</span> <span class="o">=</span> <span class="k">array</span><span class="nx">\_merge</span><span class="p">(</span><span class="nv">$return</span><span class="p">,</span> <span class="nv">$result</span><span class="p">);</span>  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="p">}</span>  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">))</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">      <span class="nv">$return\</span><span class="p">[</span><span class="nx">\</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">;</span>  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="p">}</span>  
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  <span class="p">}</span>
 </span></span></code></pre></div><h2 id="執行結果">執行結果</h2>
 <p>如下, 可以看出 cron 執行到哪裡了.</p>
 <p><a href="http://www.flickr.com/photos/dennys_blog/2365667427/" title="Flickr 上 Dennys Blog 的 Drupal cron"><figure>

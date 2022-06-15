@@ -17,7 +17,7 @@
         
           
             前言 Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.
-事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新步驟 執行以下指令重新開機進入sideload mode
+事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 1C:\platform-tools&amp;gt;adb devices 2List of devices attached 3*************** device 更新步驟 執行以下指令重新開機進入sideload mode
 adb reboot sideload
 刷入安全性更新檔案, 這個步驟會比較久
 adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
@@ -27,7 +27,6 @@ fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img
 執行以下指令重新開機
 fastboot reboot
 進入 設定-&amp;gt;關於-&amp;gt;Android 版本, 確定有更新成功.
-參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6487485 
           
           
         
@@ -70,11 +69,11 @@ fastboot reboot
 注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 ======================================================
 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
-1. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
-2. 用 fastboot 刷回原始的 boot.img
-fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
+將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
+用 fastboot 刷回原始的 boot.img
+1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 2.1 其實 Magisk 有這個功能刷回原始的 boot.img
 2.2 但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷
-3. 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除.
+刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.
           
           
         
@@ -96,8 +95,7 @@ fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
 ======================================================
 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
-*最有名的 LineageOS 15~19 (Android 8~12) *FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能
-作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
+最有名的 LineageOS 15~19 (Android 8~12) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
           
           
         
@@ -264,13 +262,11 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
       <description>
         
           
-            **注意: 這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失...
-**
-前言:
-DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
-參考文章:
-數位天堂: DD-WRT 3G 測試 數位天堂: Lly 韌體 (Oleg 韌體分支) 軟硬體:
-Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: DD-WRT 前置準備:
+            注意: 這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失...
+**前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
+**參考文章
+數位天堂: DD-WRT 3G 測試 數位天堂: Lly 韌體 (Oleg 韌體分支) **軟硬體
+Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: DD-WRT **前置準備
 DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡插入 (這地方還需要多測試, 目前開機後再插入常常會抓不到) 要打開DD-WRT的PPPoE (這裡不懂為何一定要開, 因為後面反正還是要 kill 掉.
           
           
@@ -288,13 +284,13 @@ DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡�
         
           
             注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-前言:
+**前言
 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
-參考文章:
-數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 軟硬體:
-Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB-1.71 前置準備:
-將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟) 把 SIM 卡的 pin code 給 disable 步驟:
-1. 設定 3G 上網
+**參考文章
+數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 **軟硬體
+Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB-1.71 **前置準備
+將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟) 把 SIM 卡的 pin code 給 disable **步驟
+設定 3G 上網
 將 IP Config -&amp;gt; WAN Connection Type 設定成 USB Connection 模式 將 System Setup -&amp;gt; Operation Mode 設定成 Home Gateway 模式 將 USB Connection -&amp;gt; Connection Mode設定成 GPRS/EDGE/UMTS 模式 [重要] 這時請按下 F5 將整個畫面 refresh, 左邊功能表才會出現下面會用到的項目 將 USB Connection -&amp;gt; GPRS/EDGE/UMTS Config 設定如下: GPRS
           
           
@@ -312,11 +308,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB
         
           
             注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-前言:
-一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
+**前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
 因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, 原來已經有人做出這種產品了, 譬如 EDIMAX 3G-6200n 或是 ZALiP CDW530AM, 價錢也還好. 不過呢, 一來都是沒聽過的廠牌, 二來則是, 這樣就不好玩了啊, 所以最後還是決定找一個可以自行改機的方案來實現透過分享器的 3G 上網來玩玩.
 ps: Vigor 的 hub 也有支援 3G, 不過目前還沒有研究.
-硬體:
+**硬體
 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1) 他有 8MB firmware, 可以玩的花樣比較多 (2) 有人已經改機改到 128MB RAM 了
           
           
@@ -334,12 +329,8 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
         
           
             注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-前言:
-無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
-軟硬體:
-Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: Tomato DualWan (1.23.0410 和 1.23.0441) 前置準備:
-將 firmware 刷為 Tomato DualWan, 請參考官方教程 把 SIM 卡的 pin code 給 disable 設定步驟:
-1. 設定比 CDMA@wifi 簡單許多, 如下圖, 先把 USB 給 enable 起來 (紅框部份).
+前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
+軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: Tomato DualWan (1.23.0410 和 1.23.0441) 前置準備 將 firmware 刷為 Tomato DualWan, 請參考官方教程 把 SIM 卡的 pin code 給 disable 設定步驟 設定比 CDMA@wifi 簡單許多, 如下圖, 先把 USB 給 enable 起來 (紅框部份).
           
           
         

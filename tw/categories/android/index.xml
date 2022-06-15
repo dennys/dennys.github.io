@@ -17,7 +17,7 @@
         
           
             前言 Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.
-事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 更新步驟 執行以下指令重新開機進入sideload mode
+事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 1C:\platform-tools&amp;gt;adb devices 2List of devices attached 3*************** device 更新步驟 執行以下指令重新開機進入sideload mode
 adb reboot sideload
 刷入安全性更新檔案, 這個步驟會比較久
 adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
@@ -27,7 +27,6 @@ fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img
 執行以下指令重新開機
 fastboot reboot
 進入 設定-&amp;gt;關於-&amp;gt;Android 版本, 確定有更新成功.
-參考 https://forum.xda-developers.com/t/4356219/ https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6487485 
           
           
         
@@ -146,11 +145,11 @@ fastboot reboot
 注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 ======================================================
 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
-1. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
-2. 用 fastboot 刷回原始的 boot.img
-fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
+將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
+用 fastboot 刷回原始的 boot.img
+1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 2.1 其實 Magisk 有這個功能刷回原始的 boot.img
 2.2 但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷
-3. 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除.
+刷回原來的 boot.img 之後, 絕大多數 App 都可以用了, 不過實測發現沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.
           
           
         
@@ -172,8 +171,7 @@ fastboot boot boot.img2.1 其實 Magisk 有這個功能刷回原始的 boot.img
 ======================================================
 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
-*最有名的 LineageOS 15~19 (Android 8~12) *FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能
-作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
+最有名的 LineageOS 15~19 (Android 8~12) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
           
           
         

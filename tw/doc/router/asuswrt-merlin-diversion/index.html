@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -232,17 +232,17 @@
 <ol>
 <li>
 <p>在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sda1, 而且格式是 NTFS (可用 fdisk 看)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">admin@RT-AC66U<span class="se">\_</span>B1-B898:/tmp/home/root# df
 </span></span><span class="line"><span class="ln">2</span><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
-</span></span><span class="line"><span class="ln">3</span><span class="cl">/dev/root                33408     33408         0 100% /
-</span></span><span class="line"><span class="ln">4</span><span class="cl">devtmpfs                127732         0    127732   0% /dev
-</span></span><span class="line"><span class="ln">5</span><span class="cl">tmpfs                   127836      1532    126304   1% /tmp
-</span></span><span class="line"><span class="ln">6</span><span class="cl">/dev/mtdblock4           64256      2868     61388   4% /jffs
-</span></span><span class="line"><span class="ln">7</span><span class="cl">/dev/sda1             60058960     11712  60047248   0% /tmp/mnt/sda1
+</span></span><span class="line"><span class="ln">3</span><span class="cl">/dev/root                <span class="m">33408</span>     <span class="m">33408</span>         <span class="m">0</span> 100% /
+</span></span><span class="line"><span class="ln">4</span><span class="cl">devtmpfs                <span class="m">127732</span>         <span class="m">0</span>    <span class="m">127732</span>   0% /dev
+</span></span><span class="line"><span class="ln">5</span><span class="cl">tmpfs                   <span class="m">127836</span>      <span class="m">1532</span>    <span class="m">126304</span>   1% /tmp
+</span></span><span class="line"><span class="ln">6</span><span class="cl">/dev/mtdblock4           <span class="m">64256</span>      <span class="m">2868</span>     <span class="m">61388</span>   4% /jffs
+</span></span><span class="line"><span class="ln">7</span><span class="cl">/dev/sda1             <span class="m">60058960</span>     <span class="m">11712</span>  <span class="m">60047248</span>   0% /tmp/mnt/sda1
 </span></span></code></pre></div></li>
 <li>
 <p>安裝 <a href="https://diversion.ch/amtm.html">amtm</a>, 指令如下 (Asuswrt-Merlin 384.15 已內建 amtm, 不須另外安裝):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">curl -Os https://diversion.ch/amtm/amtm sh amtm
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">curl -Os https://diversion.ch/amtm/amtm sh amtm
 </span></span></code></pre></div></li>
 <li>
 <p>把 USB 格式化成 ext, 步驟如下</p>
@@ -252,13 +252,13 @@
 <li>然後照著說明格式化, 格式化完後會重開機</li>
 <li>完成後 df 如下</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">admin@RT-AC66U\_B1-B898:/tmp/home/root# df
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">admin@RT-AC66U<span class="se">\_</span>B1-B898:/tmp/home/root# df
 </span></span><span class="line"><span class="ln">2</span><span class="cl">Filesystem           1K-blocks      Used Available Use% Mounted on
-</span></span><span class="line"><span class="ln">3</span><span class="cl">/dev/root                33408     33408         0 100% /
-</span></span><span class="line"><span class="ln">4</span><span class="cl">devtmpfs                127732         0    127732   0% /dev
-</span></span><span class="line"><span class="ln">5</span><span class="cl">tmpfs                   127836      1528    126308   1% /tmp
-</span></span><span class="line"><span class="ln">6</span><span class="cl">/dev/mtdblock4           64256      2860     61396   4% /jffs
-</span></span><span class="line"><span class="ln">7</span><span class="cl">/dev/sda1             59144340    184232  55955696   0% /tmp/mnt/usb
+</span></span><span class="line"><span class="ln">3</span><span class="cl">/dev/root                <span class="m">33408</span>     <span class="m">33408</span>         <span class="m">0</span> 100% /
+</span></span><span class="line"><span class="ln">4</span><span class="cl">devtmpfs                <span class="m">127732</span>         <span class="m">0</span>    <span class="m">127732</span>   0% /dev
+</span></span><span class="line"><span class="ln">5</span><span class="cl">tmpfs                   <span class="m">127836</span>      <span class="m">1528</span>    <span class="m">126308</span>   1% /tmp
+</span></span><span class="line"><span class="ln">6</span><span class="cl">/dev/mtdblock4           <span class="m">64256</span>      <span class="m">2860</span>     <span class="m">61396</span>   4% /jffs
+</span></span><span class="line"><span class="ln">7</span><span class="cl">/dev/sda1             <span class="m">59144340</span>    <span class="m">184232</span>  <span class="m">55955696</span>   0% /tmp/mnt/usb
 </span></span></code></pre></div></li>
 <li>
 <p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下</p>

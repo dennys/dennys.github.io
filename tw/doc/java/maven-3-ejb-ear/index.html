@@ -59,7 +59,7 @@ EJB Client …" />
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -202,78 +202,78 @@ EJB Client …" />
 <li><a href="http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html">http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html</a></li>
 <li><a href="http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html">http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html</a></li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl"> &lt;build&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    &lt;plugins&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;artifactid&gt;maven-compiler-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;version&gt;2.3.2&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">          &lt;source&gt;&lt;/source&gt;1.6
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          &lt;target&gt;1.6&lt;/target&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">        &lt;artifactid&gt;maven-ejb-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">        &lt;version&gt;2.3&lt;/version&gt;
-</span></span><span class="line"><span class="ln">16</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">          &lt;ejbversion&gt;2.1&lt;/ejbversion&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"> <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3.2<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">          <span class="nt">&lt;source&gt;&lt;/source&gt;</span>1.6
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          <span class="nt">&lt;target&gt;</span>1.6<span class="nt">&lt;/target&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-ejb-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">          <span class="nt">&lt;ejbversion&gt;</span>2.1<span class="nt">&lt;/ejbversion&gt;</span>
 </span></span><span class="line"><span class="ln">18</span><span class="cl">          
-</span></span><span class="line"><span class="ln">19</span><span class="cl">          &lt;generateclient&gt;true&lt;/generateclient&gt;
-</span></span><span class="line"><span class="ln">20</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">21</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">22</span><span class="cl">    &lt;/plugins&gt;
-</span></span><span class="line"><span class="ln">23</span><span class="cl">    &lt;finalname&gt;app-ejb1&lt;/finalname&gt;
-</span></span><span class="line"><span class="ln">24</span><span class="cl">  &lt;/build&gt;
+</span></span><span class="line"><span class="ln">19</span><span class="cl">          <span class="nt">&lt;generateclient&gt;</span>true<span class="nt">&lt;/generateclient&gt;</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">    <span class="nt">&lt;finalname&gt;</span>app-ejb1<span class="nt">&lt;/finalname&gt;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
 </span></span></code></pre></div><p>打包 ear 檔的部分則要注意一下. 首先是要設定好 dependency 如下, 注意雖然上面打包的 ejb 其副檔名是 .jar, 但這裡的 type 必須設定成 ejb</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">  &lt;dependencies&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    &lt;dependency&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        &lt;groupid&gt;com.yourcompany&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;artifactid&gt;app-ejb1&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;version&gt;1.0&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;type&gt;ejb&lt;/type&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    &lt;/dependency&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    &lt;dependency&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">        &lt;groupid&gt;com.yourcompany&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">        &lt;artifactid&gt;app-ejb2&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        &lt;version&gt;1.0&lt;/version&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        &lt;type&gt;ejb&lt;/type&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    &lt;/dependency&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">  &lt;/dependencies&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">  <span class="nt">&lt;dependencies&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>com.yourcompany<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>app-ejb1<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;version&gt;</span>1.0<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;type&gt;</span>ejb<span class="nt">&lt;/type&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>com.yourcompany<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>app-ejb2<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nt">&lt;version&gt;</span>1.0<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="nt">&lt;type&gt;</span>ejb<span class="nt">&lt;/type&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">  <span class="nt">&lt;/dependencies&gt;</span>
 </span></span></code></pre></div><p>打包 ear 的設定要注意幾個地方:`</p>
 <ol>
 <li>雖然 dependency 已經有指定了, 但是 ejb 還是要在 ejbModule 的地方再指定一次, 不同的是, 這裡不用指定 version 和 type, 不過要指定 bundleFileName, 這個是 ejb 最後會使用的檔案名字.</li>
 <li>請記得設定 defaultLibBundleDir, 這樣會把用到的 library 放到 APP-INF/lib (預設是通通放在跟目錄, 和 ejb 混在一起, 那就沒用了)</li>
 <li>如果有特別的檔案要直接放進來, 可以用 jarModule`</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">  &lt;build&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    &lt;finalname&gt;app-ear&lt;/finalname&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    &lt;plugins&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;artifactid&gt;maven-ear-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        &lt;version&gt;2.5&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          &lt;generateapplicationxml&gt;true&lt;/generateapplicationxml&gt;  
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          &lt;defaultlibbundledir&gt;APP-INF/lib&lt;/defaultlibbundledir&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">          &lt;modules&gt; 
-</span></span><span class="line"><span class="ln">12</span><span class="cl">            &lt;ejbmodule&gt; 
-</span></span><span class="line"><span class="ln">13</span><span class="cl">              &lt;groupid&gt;com.yourcompany&lt;/groupid&gt; 
-</span></span><span class="line"><span class="ln">14</span><span class="cl">              &lt;artifactid&gt;app-ejb1&lt;/artifactid&gt; 
-</span></span><span class="line"><span class="ln">15</span><span class="cl">              &lt;bundlefilename&gt;app-ejb1.jar&lt;/bundlefilename&gt; 
-</span></span><span class="line"><span class="ln">16</span><span class="cl">            &lt;/ejbmodule&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">            &lt;ejbmodule&gt; 
-</span></span><span class="line"><span class="ln">18</span><span class="cl">              &lt;groupid&gt;com.yourcompany&lt;/groupid&gt; 
-</span></span><span class="line"><span class="ln">19</span><span class="cl">              &lt;artifactid&gt;app-ejb2&lt;/artifactid&gt; 
-</span></span><span class="line"><span class="ln">20</span><span class="cl">              &lt;bundlefilename&gt;app-ejb2.jar&lt;/bundlefilename&gt; 
-</span></span><span class="line"><span class="ln">21</span><span class="cl">            &lt;/ejbmodule&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">  <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nt">&lt;finalname&gt;</span>app-ear<span class="nt">&lt;/finalname&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-ear-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.5<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          <span class="nt">&lt;generateapplicationxml&gt;</span>true<span class="nt">&lt;/generateapplicationxml&gt;</span>  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&lt;defaultlibbundledir&gt;</span>APP-INF/lib<span class="nt">&lt;/defaultlibbundledir&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">          <span class="nt">&lt;modules&gt;</span> 
+</span></span><span class="line"><span class="ln">12</span><span class="cl">            <span class="nt">&lt;ejbmodule&gt;</span> 
+</span></span><span class="line"><span class="ln">13</span><span class="cl">              <span class="nt">&lt;groupid&gt;</span>com.yourcompany<span class="nt">&lt;/groupid&gt;</span> 
+</span></span><span class="line"><span class="ln">14</span><span class="cl">              <span class="nt">&lt;artifactid&gt;</span>app-ejb1<span class="nt">&lt;/artifactid&gt;</span> 
+</span></span><span class="line"><span class="ln">15</span><span class="cl">              <span class="nt">&lt;bundlefilename&gt;</span>app-ejb1.jar<span class="nt">&lt;/bundlefilename&gt;</span> 
+</span></span><span class="line"><span class="ln">16</span><span class="cl">            <span class="nt">&lt;/ejbmodule&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">            <span class="nt">&lt;ejbmodule&gt;</span> 
+</span></span><span class="line"><span class="ln">18</span><span class="cl">              <span class="nt">&lt;groupid&gt;</span>com.yourcompany<span class="nt">&lt;/groupid&gt;</span> 
+</span></span><span class="line"><span class="ln">19</span><span class="cl">              <span class="nt">&lt;artifactid&gt;</span>app-ejb2<span class="nt">&lt;/artifactid&gt;</span> 
+</span></span><span class="line"><span class="ln">20</span><span class="cl">              <span class="nt">&lt;bundlefilename&gt;</span>app-ejb2.jar<span class="nt">&lt;/bundlefilename&gt;</span> 
+</span></span><span class="line"><span class="ln">21</span><span class="cl">            <span class="nt">&lt;/ejbmodule&gt;</span>
 </span></span><span class="line"><span class="ln">22</span><span class="cl">            
-</span></span><span class="line"><span class="ln">23</span><span class="cl">          &lt;/modules&gt; 
-</span></span><span class="line"><span class="ln">24</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">25</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">26</span><span class="cl">    &lt;/plugins&gt;
-</span></span><span class="line"><span class="ln">27</span><span class="cl">  &lt;/build&gt;
+</span></span><span class="line"><span class="ln">23</span><span class="cl">          <span class="nt">&lt;/modules&gt;</span> 
+</span></span><span class="line"><span class="ln">24</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
 </span></span></code></pre></div><h3 id="最後-app-ear-的結構如下">最後 app-ear 的結構如下</h3>
 <p>├── app-ejb1.jar<br>
 ├── app-ejb2.jar<br>
@@ -283,13 +283,13 @@ EJB Client …" />
 ├── axis-xxxxjar<br>
 └── jdbc-xxxx.jar</p>
 <p>如果要把 war 也放進來, 使用 webModule 即可, 如下. 要注意的是, 原來的 war 裡面的 contextRoot 會失去作用, 如果要指定, 請在 webModule 裡面新增一個</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">  &lt;modules&gt;
-</span></span><span class="line"><span class="ln">2</span><span class="cl">    &lt;webmodule&gt;
-</span></span><span class="line"><span class="ln">3</span><span class="cl">      &lt;groupid&gt;artifactGroupId&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln">4</span><span class="cl">      &lt;artifactid&gt;artifactId&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln">5</span><span class="cl">      &lt;contextroot&gt;/custom-context-root&lt;/contextroot&gt;
-</span></span><span class="line"><span class="ln">6</span><span class="cl">    &lt;/webmodule&gt;
-</span></span><span class="line"><span class="ln">7</span><span class="cl">  &lt;/modules&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln">1</span><span class="cl">  <span class="nt">&lt;modules&gt;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nt">&lt;webmodule&gt;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">      <span class="nt">&lt;groupid&gt;</span>artifactGroupId<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">      <span class="nt">&lt;artifactid&gt;</span>artifactId<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">      <span class="nt">&lt;contextroot&gt;</span>/custom-context-root<span class="nt">&lt;/contextroot&gt;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nt">&lt;/webmodule&gt;</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">  <span class="nt">&lt;/modules&gt;</span>
 </span></span></code></pre></div><p>目前的 ear 並沒有把 war 打包進去, 如果要打包也很簡單, 在 ear 的 pom 加上一段 warModule 就可以了. 基本上沒有什麼問題, 可以改進的地方只有, 如果 ear 和 war 有共用的 .jar 檔, 那就會重複打包. 可參考 <a href="http://www.blogger.com/%5C%22http://maven.apache.org/plugins/maven-war-plugin/examples/skinny-wars.html%5C%22">Creating Skinny WARs</a></p>
 <h2 id="注意">注意</h2>
 <ol>

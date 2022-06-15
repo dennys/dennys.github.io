@@ -59,7 +59,7 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -209,7 +209,7 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
     <img
       loading="lazy"
       decoding="async"
-      alt="GitLab"
+      alt=" "
       
         class="image_figure image_internal image_unprocessed"
         src="/images/software/logo/GitLab_logo.webp"
@@ -234,7 +234,7 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
     <img
       loading="lazy"
       decoding="async"
-      alt="Checkmarx"
+      alt=" "
       
         class="image_figure image_internal image_unprocessed"
         src="/images/software/logo/Checkmarx_logo.png"
@@ -259,7 +259,7 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
     <img
       loading="lazy"
       decoding="async"
-      alt="SonarQube"
+      alt=" "
       
         class="image_figure image_internal image_unprocessed"
         src="/images/software/logo/SonarQube_logo.webp"
@@ -286,8 +286,8 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
 <li>Configure Checkmarx data in SonarQube, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up">here</a>.</li>
 <li>Trigger GitLab CI again, you will see the following log in your SonarQube job</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">INFO: Sensor Import Checkmarx scan results to SonarQube [checkmarx]
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">INFO: Retrieving Checkmarx scan results for current module [Checkmarx plugin version: 2021.2.1]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">INFO: Sensor Import Checkmarx scan results to SonarQube <span class="o">[</span>checkmarx<span class="o">]</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">INFO: Retrieving Checkmarx scan results <span class="k">for</span> current module <span class="o">[</span>Checkmarx plugin version: 2021.2.1<span class="o">]</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">INFO: Getting Checkmarx configuration data from sonar Database.
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
 </span></span><span class="line"><span class="ln"> 5</span><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
@@ -296,23 +296,23 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">INFO: Sonar server token is provided
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
 </span></span><span class="line"><span class="ln">10</span><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
-</span></span><span class="line"><span class="ln">11</span><span class="cl">INFO: Checkmarx server version [9.2.0.41015]. Hotfix [24].
+</span></span><span class="line"><span class="ln">11</span><span class="cl">INFO: Checkmarx server version <span class="o">[</span>9.2.0.41015<span class="o">]</span>. Hotfix <span class="o">[</span>24<span class="o">]</span>.
 </span></span><span class="line"><span class="ln">12</span><span class="cl">INFO: Logging into the Checkmarx service.
 </span></span><span class="line"><span class="ln">13</span><span class="cl">INFO: Connecting to https://your.checkmarx.server/
-</span></span><span class="line"><span class="ln">14</span><span class="cl">INFO: Initializing Cx client [2020.2.4.NO.SCA]
-</span></span><span class="line"><span class="ln">15</span><span class="cl">INFO: Checkmarx server version [9.2.0.41015]. Hotfix [24].
+</span></span><span class="line"><span class="ln">14</span><span class="cl">INFO: Initializing Cx client <span class="o">[</span>2020.2.4.NO.SCA<span class="o">]</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">INFO: Checkmarx server version <span class="o">[</span>9.2.0.41015<span class="o">]</span>. Hotfix <span class="o">[</span>24<span class="o">]</span>.
 </span></span><span class="line"><span class="ln">16</span><span class="cl">INFO: Logging into the Checkmarx service.
-</span></span><span class="line"><span class="ln">17</span><span class="cl">INFO: full team path: \CxServer\\Team1
+</span></span><span class="line"><span class="ln">17</span><span class="cl">INFO: full team path: <span class="se">\C</span>xServer<span class="se">\\</span>Team1
 </span></span><span class="line"><span class="ln">18</span><span class="cl">INFO: preset name: All
 </span></span><span class="line"><span class="ln">19</span><span class="cl">INFO: ---------------------------------Get Last CxSAST Results:--------------------------------
-</span></span><span class="line"><span class="ln">20</span><span class="cl">INFO: Waiting for server to generate xml report. 4990 seconds left to timeout
-</span></span><span class="line"><span class="ln">21</span><span class="cl">INFO: Checkmarx High vulnerabilities: 3
-</span></span><span class="line"><span class="ln">22</span><span class="cl">INFO: Checkmarx New-High vulnerabilities: 0
-</span></span><span class="line"><span class="ln">23</span><span class="cl">INFO: Checkmarx Medium vulnerabilities: 23
-</span></span><span class="line"><span class="ln">24</span><span class="cl">INFO: Checkmarx New-Medium vulnerabilities: 1
-</span></span><span class="line"><span class="ln">25</span><span class="cl">INFO: Checkmarx Low vulnerabilities: 142
-</span></span><span class="line"><span class="ln">26</span><span class="cl">INFO: Checkmarx New-Low vulnerabilities: 7
-</span></span><span class="line"><span class="ln">27</span><span class="cl">INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId=1000157&amp;ProjectID=67
+</span></span><span class="line"><span class="ln">20</span><span class="cl">INFO: Waiting <span class="k">for</span> server to generate xml report. <span class="m">4990</span> seconds left to timeout
+</span></span><span class="line"><span class="ln">21</span><span class="cl">INFO: Checkmarx High vulnerabilities: <span class="m">3</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">INFO: Checkmarx New-High vulnerabilities: <span class="m">0</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">INFO: Checkmarx Medium vulnerabilities: <span class="m">23</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">INFO: Checkmarx New-Medium vulnerabilities: <span class="m">1</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">INFO: Checkmarx Low vulnerabilities: <span class="m">142</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">INFO: Checkmarx New-Low vulnerabilities: <span class="m">7</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId<span class="o">=</span>1000157<span class="p">&amp;</span><span class="nv">ProjectID</span><span class="o">=</span><span class="m">67</span>
 </span></span></code></pre></div><ol start="6">
 <li>You can see the Checkmarx issues in SonarQube now.</li>
 </ol>

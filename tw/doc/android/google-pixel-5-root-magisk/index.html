@@ -61,7 +61,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -210,8 +210,8 @@
 </ol>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-11.png"><img src="https://dennys.files.wordpress.com/2022/02/image-11.png?w=485" alt="" class="wp-image-383"/></a></p>
 <p>ps: 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;fastboot boot magisk_patched.img
-</span></span><span class="line"><span class="ln">2</span><span class="cl">&lt; waiting for any device &gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot boot magisk_patched.img</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="p">&lt;</span> waiting <span class="k">for</span> any device &gt;
 </span></span></code></pre></div><p>===================================================</p>
 <h3 id="安裝-android-sdk-platform-tools">安裝 Android SDK Platform Tools</h3>
 <p>從這裡下載, 一直 next next 就好.</p>
@@ -224,7 +224,7 @@
 <ol>
 <li>手機進入開發者模式並確定 adb devices 可以連上手機</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;adb devices
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
 </span></span><span class="line"><span class="ln">3</span><span class="cl">*************** device
 </span></span></code></pre></div><ol start="2">
@@ -256,10 +256,10 @@
 </figure>
 </p>
 <ol start="3">
-<li>執行下列指令, 手機會出現要你確認是否要 unlock, 按下去, 手機就解鎖了. <mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-vivid-red-color"><strong><span style="text-decoration:underline;">注意: 這裡會把手機資料清空</span></strong></mark>&lt;</li>
+<li>執行下列指令, 手機會出現要你確認是否要 unlock, 按下去, 手機就解鎖了. <em>注意: 這裡會把手機資料清空</em></li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;adb reboot bootloader
-</span></span><span class="line"><span class="ln">2</span><span class="cl">C:\platform-tools&gt;fastboot flashing unlock
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb reboot bootloader</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot flashing unlock</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">OKAY [  0.068s]
 </span></span><span class="line"><span class="ln">4</span><span class="cl">Finished. Total time: 0.071s
 </span></span></code></pre></div><p>=============== 以上完成 Unlock, 以下為 Root 的步驟 ===============</p>

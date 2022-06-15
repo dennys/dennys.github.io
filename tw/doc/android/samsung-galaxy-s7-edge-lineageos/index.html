@@ -61,7 +61,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -205,8 +205,10 @@
 <h2 id="需求">需求</h2>
 <p>Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.</p>
 <p>可以刷的 ROM 看來有很多 (可參考 <a href="https://forum.xda-developers.com/f/5186/">https://forum.xda-developers.com/f/5186/</a>)</p>
-<p>*最有名的 LineageOS 15~19 (Android 8~12)
-*FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能</p>
+<ul>
+<li>最有名的 LineageOS 15~19 (Android 8~12)</li>
+<li>FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能</li>
+</ul>
 <h2 id="作法">作法</h2>
 <h3 id="請先在電腦安裝以下兩個程式">請先在電腦安裝以下兩個程式</h3>
 <ol>
@@ -238,21 +240,20 @@
 <h3 id="刷-lineageos-和-open-gapps">刷 LineageOS 和 Open Gapps</h3>
 <p>執行 adb reboot recovery 或是先關機, 然後按音量上+Home+Power 鍵進入 TWRP Recovery. 選 INSTALL, 把LineageOS 和 Open Gapps 的 zip 檔案裝上去, 重開機就可以了.</p>
 <p>如果要用 ADB, 指令如下:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">adb sideload open_gapps-arm64-11.0-nano-20220202.zip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb sideload open_gapps-arm64-11.0-nano-20220202.zip
 </span></span></code></pre></div><h2 id="twrp-被-lineageos-recovery-蓋掉的問題">TWRP 被 LineageOS Recovery 蓋掉的問題</h2>
 <p>自 LineageOS 17 開始, 他自己有帶一個 Recovery, 嘗試刷回 TWRP 又常常失敗.</p>
 <p>可試試看 <a href="https://forum.xda-developers.com/t/3334084/">https://forum.xda-developers.com/t/3334084/</a> 的 step 6~8</p>
-<p>=================================================</p>
-<h2 id="nikgapps-測試-失敗">NikGapps 測試 (失敗)</h2>
+<h2 id="nikgapps-測試-失敗">NikGapps 測試 (<strong>失敗</strong>)</h2>
 <p>一開始用 LineageOS 自己的 Recovery, 刷 NikGapps 一直失敗</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">adb sideload NikGapps-basic-arm64-12-20211224-signed.zip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb sideload NikGapps-basic-arm64-12-20211224-signed.zip
 </span></span><span class="line"><span class="ln">2</span><span class="cl">adb: sideload connection failed: closed
 </span></span><span class="line"><span class="ln">3</span><span class="cl">adb: trying pre-KitKat sideload method…
 </span></span><span class="line"><span class="ln">4</span><span class="cl">adb: pre-KitKat sideload connection failed: closed
 </span></span></code></pre></div><p>用以下指令可解決</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools\fastboot devices
-</span></span><span class="line"><span class="ln">2</span><span class="cl">C:\platform-tools\adb usb
-</span></span><span class="line"><span class="ln">3</span><span class="cl">C:\platform-tools\adb sideload NikGapps-basic-arm64-12-20211224-signed.zip
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools\fastboot</span><span class="c1"> devices</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools\adb</span><span class="c1"> usb</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools\adb</span><span class="c1"> sideload NikGapps-basic-arm64-12-20211224-signed.zip</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">serving: &#39;NikGapps-basic-arm64-12-20211224-signed.zip&#39; (~32%)
 </span></span></code></pre></div><p>但最後又一直卡在空間不足, 就放棄了.</p>
 

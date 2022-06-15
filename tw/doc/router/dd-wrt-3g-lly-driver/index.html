@@ -26,20 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="**注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...
-**
-前言:
-DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 …" />
+<meta name="description" content="注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...
+**前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" />
 <meta property="og:title" content="DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)" />
-<meta property="og:description" content="**注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...
-**
-前言:
-DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 …" />
+<meta property="og:description" content="注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...
+**前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -63,7 +59,7 @@ DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -224,37 +220,42 @@ DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 
     </picture>
 </figure>
 </a></p>
-<p>**注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...<br>
-**<br>
-<strong>前言:</strong><br>
+<p><strong>注意: 這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...</strong></p>
+<p>**前言
 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 <a href="http://digiland.tw/viewtopic.php?id=914" title="http://digiland.tw/viewtopic.php?id=914">http://digiland.tw/viewtopic.php?id=914</a> 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.</p>
-<p><strong>參考文章:</strong></p>
+<p>**參考文章</p>
 <ul>
 <li><a href="http://digiland.tw/viewtopic.php?id=914">數位天堂: DD-WRT 3G 測試</a></li>
 <li><a href="http://digiland.tw/viewtopic.php?pid=4215#p4215">數位天堂: Lly 韌體 (Oleg 韌體分支)</a></li>
 </ul>
-<p><strong>軟硬體:</strong></p>
+<p>**軟硬體</p>
 <ul>
 <li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2">Asus WL-500gP V1</a></li>
 <li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181">Huawei E169</a></li>
 <li>Firmware: <a href="http://dd-wrt.com/">DD-WRT</a></li>
 </ul>
-<p><strong>前置準備:</strong></p>
+<p>**前置準備</p>
 <ul>
 <li>DD-WRT firmware 已經刷好 (我是用<a href="http://dd-wrt.com/routerdb/de/download/Asus/WL500G%20Premium/v1/dd-wrt.v24_mega_generic.bin/1958">這個</a>)</li>
 <li>在 Hub 開機前把 USB 網卡插入 (這地方還需要多測試, 目前開機後再插入常常會抓不到)</li>
 <li>要打開DD-WRT的PPPoE (這裡不懂為何一定要開, 因為後面反正還是要 kill 掉. 或許是有某些設定檔案會產生?)</li>
 <li>把 SIM 卡的 pin code 給 disable</li>
 </ul>
-<p><strong>步驟:</strong></p>
-<p>1. 建立暫時的ipkg/jffs環境</p>
+<p>**步驟</p>
+<ol>
+<li>建立暫時的ipkg/jffs環境</li>
+</ol>
 <p>執行下列指令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ mkdir /tmp/jffs  
-</span></span><span class="line"><span class="ln">2</span><span class="cl">$ mount -o bind /tmp/jffs /jffs
-</span></span></code></pre></div><p>2. 準備 kernel library (從 lly 取得)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ mkdir /tmp/jffs  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ mount -o <span class="nb">bind</span> /tmp/jffs /jffs
+</span></span></code></pre></div><ol start="2">
+<li>準備 kernel library (從 lly 取得)</li>
+</ol>
 <p>因為我使用的 DD-WRT 是 2.4.37, 因此要抓一樣版本的 lly, 路徑如下:<br>
 <a href="http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz" title="http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz">http://wl500g.googlecode.com/files/modules-1.9.2.7-d-r240.tgz</a></p>
-<p>3. 準備 package (從 openwrt 取得)</p>
+<ol start="3">
+<li>準備 package (從 openwrt 取得)</li>
+</ol>
 <p>需要以下這些軟體:</p>
 <ul>
 <li>chat: 使用 AT command 撥號</li>
@@ -269,115 +270,130 @@ DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 
 <a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modeswitch_1.1.0-1_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modeswitch_1.1.0-1_brcm-2.4.ipk">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usb-modes...</a><br>
 <a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_0.86-1_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_0.86-1_brcm-2.4.ipk">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/usbutils_...</a><br>
 <a href="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2.3-5_brcm-2.4.ipk" title="http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2.3-5_brcm-2.4.ipk">http://downloads.openwrt.org/snapshots/trunk/brcm-2.4/packages/zlib_1.2....</a></p>
-<p>4. 載入 kernel driver</p>
+<ol start="4">
+<li>載入 kernel driver</li>
+</ol>
 <p>把前面下載的 modules-1.9.2.7-d-r240.tgz 解開, 然後切換目錄到解開之後的 lib/modules/2.4.37/kernel/drivers/usb/serial. 載入時要注意順序, 使用 insmod 的話, 要先載入usbserial, 再載入option. </p>
 <p>首先載入 usbserial, 執行下列指令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ insmod usbserial.o
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ insmod usbserial.o
 </span></span></code></pre></div><p>這時候用dmesg應該會看到下列訊息</p>
-<p>usb.c: registered new driver serial<br>
-usbserial.c: USB Serial support registered for Generic<br>
-usbserial.c: USB Serial Driver core v1.4</p>
-<p>再來載入 option, 執行下列指令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ insmod option.o
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">usb.c: registered new driver serial  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">usbserial.c: USB Serial support registered <span class="k">for</span> Generic  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">usbserial.c: USB Serial Driver core v1.4
+</span></span></code></pre></div><p>再來載入 option, 執行下列指令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ insmod option.o
 </span></span></code></pre></div><p>這時候用dmesg應該會看到下列訊息</p>
-<p>usbserial.c: USB Serial support registered for Option GSM modem<br>
-option.c: USB Driver for GSM modems: v0.7.2a</p>
-<p>執行lsusb看driver是否有抓到usb裝置, 最後一行(12d1代表Huawei, 1001代表E169) 表示抓到了. (前面第一行的錯誤訊息應該可以忽略吧?)</p>
-<p>$ lsusb<br>
-lsusb: cannot open &quot;/usr/share/usb.ids&quot;, No such file or directory<br>
-Bus 004 Device 001: ID 0000:0000<br>
-Bus 003 Device 001: ID 0000:0000<br>
-Bus 002 Device 001: ID 0000:0000<br>
-Bus 001 Device 001: ID 0000:0000<br>
-Bus 001 Device 002: ID 12d1:1001</p>
-<p>最後確定/dev/usb/tts/0, /dev/usb/tts/1 有被建立起來</p>
-<p>$ ls -l /dev/usb/tts/<br>
-crw------- 1 root root 188, 0 Jan 1 00:01 0<br>
-crw------- 1 root root 188, 1 Jan 1 00:00 1</p>
-<p>5. 使用usb_modeswitch將網卡模式從 ZeroCD 切換到 modem</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">usbserial.c: USB Serial support registered <span class="k">for</span> Option GSM modem  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">option.c: USB Driver <span class="k">for</span> GSM modems: v0.7.2a
+</span></span></code></pre></div><p>執行lsusb看driver是否有抓到usb裝置, 最後一行(12d1代表Huawei, 1001代表E169) 表示抓到了. (前面第一行的錯誤訊息應該可以忽略吧?)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ lsusb  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">lsusb: cannot open <span class="s2">&#34;/usr/share/usb.ids&#34;</span>, No such file or directory  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Bus <span class="m">004</span> Device 001: ID 0000:0000  
+</span></span><span class="line"><span class="ln">4</span><span class="cl">Bus <span class="m">003</span> Device 001: ID 0000:0000  
+</span></span><span class="line"><span class="ln">5</span><span class="cl">Bus <span class="m">002</span> Device 001: ID 0000:0000  
+</span></span><span class="line"><span class="ln">6</span><span class="cl">Bus <span class="m">001</span> Device 001: ID 0000:0000  
+</span></span><span class="line"><span class="ln">7</span><span class="cl">Bus <span class="m">001</span> Device 002: ID 12d1:1001
+</span></span></code></pre></div><p>最後確定/dev/usb/tts/0, /dev/usb/tts/1 有被建立起來</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ ls -l /dev/usb/tts/  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">crw------- <span class="m">1</span> root root 188, <span class="m">0</span> Jan <span class="m">1</span> 00:01 <span class="m">0</span>  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">crw------- <span class="m">1</span> root root 188, <span class="m">1</span> Jan <span class="m">1</span> 00:00 <span class="m">1</span>
+</span></span></code></pre></div><ol start="5">
+<li>使用usb_modeswitch將網卡模式從 ZeroCD 切換到 modem</li>
+</ol>
 <p>編寫 /tmp/usb-modeswitch.conf, 內容如下 (可參考 <a href="http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf" title="http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf">http://www.draisberghof.de/usb_modeswitch/usb_modeswitch.conf</a>, 將 DefaultVendor 和 DefaultProduct 修改成合適的值)</p>
-<p>$ more /tmp/usb-modeswitch.conf<br>
-# Huawei E169<br>
-DefaultVendor=0x12d1;<br>
-DefaultProduct=0x1001<br>
-;TargetClass=0xff</p>
-<p># choose one of these:<br>
-;DetachStorageOnly=1<br>
-HuaweiMode=1</p>
-<p>執行下列指令, 使用usb_modeswitch將網卡切換到modem模式</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ usb\_modeswitch -c /tmp/usb-modeswitch.conf  
-</span></span></code></pre></div><p>Looking for default devices ...<br>
-Found default devices (1)<br>
-Accessing device 002 on bus 001 ...<br>
-Using endpoints 0x02 (out) and 0x82 (in)<br>
-Not a storage device, skipping SCSI inquiry</p>
-<p>USB description data (for identification)<br>
--------------------------<br>
-Manufacturer: <br>
-Product: HUAWEI Mobile<br>
-Serial No.: <br>
--------------------------<br>
-Sending Huawei control message ...<br>
-OK, Huawei control message sent<br>
--&gt; Run lsusb to note any changes. Bye.</p>
-<p>如果執行 usb_modeswitch之後的訊息和上面不同, 而是像下面這段一樣, 則代表沒有抓到裝置</p>
-<p>$ usb_modeswitch -c /tmp/usb_modeswitch.conf<br>
-Looking for default devices ...<br>
-No default device found. Is it connected? Bye.</p>
-<p><strong>到這個步驟如果沒有抓到 USB 網卡, 那後續的恐怕就不用測了...</strong></p>
-<p>6. 使用pppd, chat撥號</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ more /tmp/usb-modeswitch.conf  
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se">\#</span> Huawei E169  
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nv">DefaultVendor</span><span class="o">=</span>0x12d1<span class="p">;</span>  
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nv">DefaultProduct</span><span class="o">=</span>0x1001  
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="p">;</span><span class="nv">TargetClass</span><span class="o">=</span>0xff  
+</span></span><span class="line"><span class="ln">6</span><span class="cl">  
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="se">\#</span> choose one of these:  
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="p">;</span><span class="nv">DetachStorageOnly</span><span class="o">=</span><span class="m">1</span>  
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="nv">HuaweiMode</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><p>執行下列指令, 使用usb_modeswitch將網卡切換到modem模式</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">$ usb<span class="se">\_</span>modeswitch -c /tmp/usb-modeswitch.conf  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Looking <span class="k">for</span> default devices ...  
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Found default devices <span class="o">(</span>1<span class="o">)</span>  
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Accessing device <span class="m">002</span> on bus <span class="m">001</span> ...  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Using endpoints 0x02 <span class="o">(</span>out<span class="o">)</span> and 0x82 <span class="o">(</span>in<span class="o">)</span>  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Not a storage device, skipping SCSI inquiry  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">USB description data <span class="o">(</span><span class="k">for</span> identification<span class="o">)</span>  
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="se">\-</span>------------------------  
+</span></span><span class="line"><span class="ln">11</span><span class="cl">Manufacturer:   
+</span></span><span class="line"><span class="ln">12</span><span class="cl">Product: HUAWEI Mobile  
+</span></span><span class="line"><span class="ln">13</span><span class="cl">Serial No.:   
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="se">\-</span>------------------------  
+</span></span><span class="line"><span class="ln">15</span><span class="cl">Sending Huawei control message ...  
+</span></span><span class="line"><span class="ln">16</span><span class="cl">OK, Huawei control message sent  
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="se">\-</span>&gt; Run lsusb to note any changes. Bye.
+</span></span></code></pre></div><p>如果執行 usb_modeswitch之後的訊息和上面不同, 而是像下面這段一樣, 則代表沒有抓到裝置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ usb<span class="se">\_</span>modeswitch -c /tmp/usb<span class="se">\_</span>modeswitch.conf  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Looking <span class="k">for</span> default devices ...  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">No default device found. Is it connected? Bye.
+</span></span></code></pre></div><p><strong>到這個步驟如果沒有抓到 USB 網卡, 那後續的恐怕就不用測了...</strong></p>
+<ol start="6">
+<li>使用pppd, chat撥號</li>
+</ol>
 <p>編寫 /tmp/e169.chat. 這邊是中華電信, 所以用的是 internet 和 *99#</p>
-<p>$ more /tmp/e169.chat<br>
-'' ''<br>
-'' 'ATZ'<br>
-'OK' 'ATI'<br>
-'OK' 'AT+COPS?'<br>
-'OK' 'AT+CGDCONT=1,&quot;IP&quot;,&quot;internet&quot;'<br>
-'OK' 'ATD*99#'<br>
-'CONNECT' ''</p>
-<p>編寫 /tmp/ppp/options.pppoe</p>
-<p>$more /tmp/ppp/options.pppoe<br>
-/dev/usb/tts/0<br>
-460800<br>
-debug<br>
-crtscts<br>
-noipdefault<br>
-ipcp-accept-local<br>
-lcp-echo-interval 60<br>
-lcp-echo-failure 5<br>
-usepeerdns<br>
-noauth<br>
-nodetach<br>
-user &quot;&quot;<br>
-connect &quot;/jffs/usr/sbin/chat -s -S -V -t 30 -f /tmp/e169.chat 2&gt;/tmp/chat.log&quot;</p>
-<p>先停掉redial, pppd. 這裡要注意的是, 我用 killall pppd 沒有作用, 得用 kill -9 *** 才行.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ killall redial  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ more /tmp/e169.chat  
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="s1">&#39;&#39;</span> <span class="s1">&#39;&#39;</span>  
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="s1">&#39;&#39;</span> <span class="s1">&#39;ATZ&#39;</span>  
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="s1">&#39;OK&#39;</span> <span class="s1">&#39;ATI&#39;</span>  
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="s1">&#39;OK&#39;</span> <span class="s1">&#39;AT+COPS?&#39;</span>  
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="s1">&#39;OK&#39;</span> <span class="s1">&#39;AT+CGDCONT=1,&#34;IP&#34;,&#34;internet&#34;&#39;</span>  
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="s1">&#39;OK&#39;</span> <span class="s1">&#39;ATD\*99#&#39;</span>  
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="s1">&#39;CONNECT&#39;</span> <span class="s1">&#39;&#39;</span>
+</span></span></code></pre></div><p>編寫 /tmp/ppp/options.pppoe</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nv">$more</span> /tmp/ppp/options.pppoe  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">/dev/usb/tts/0  
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="m">460800</span>  
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">debug  
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">crtscts  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">noipdefault  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">ipcp-accept-local  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">lcp-echo-interval <span class="m">60</span>  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">lcp-echo-failure <span class="m">5</span>  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">usepeerdns  
+</span></span><span class="line"><span class="ln">11</span><span class="cl">noauth  
+</span></span><span class="line"><span class="ln">12</span><span class="cl">nodetach  
+</span></span><span class="line"><span class="ln">13</span><span class="cl">user <span class="s2">&#34;&#34;</span>  
+</span></span><span class="line"><span class="ln">14</span><span class="cl">connect <span class="s2">&#34;/jffs/usr/sbin/chat -s -S -V -t 30 -f /tmp/e169.chat 2&gt;/tmp/chat.log&#34;</span>
+</span></span></code></pre></div><p>先停掉 redial, pppd. 這裡要注意的是, 我用 killall pppd 沒有作用, 得用 kill -9 *** 才行.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ killall redial  
 </span></span><span class="line"><span class="ln">2</span><span class="cl">$ killall pppd
 </span></span></code></pre></div><p>使用pppd撥號</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ pppd file /tmp/ppp/options.pppoe
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ pppd file /tmp/ppp/options.pppoe
 </span></span></code></pre></div><p>檢查 /tmp/chat.log</p>
-<p>$ more /tmp/chat.log<br>
-ATZ</p>
-<p>OK<br>
-ATI<br>
-Manufacturer: huawei<br>
-Model: E169<br>
-Revision: 11.314.13.00.00<br>
-IMEI: ***************<br>
-+GCAP: +CGSM,+DS,+ES</p>
-<p>OK<br>
-AT+COPS?<br>
-+COPS: 0,2,&quot;46692&quot;,2</p>
-<p>OK<br>
-AT+CGDCONT=1,&quot;IP&quot;,&quot;internet&quot;<br>
-OK<br>
-ATD*99#CONNECT</p>
-<p>看到最後面的 ATD 代表撥號, 後面出現 CONNECT 就代表成功了, YA! </p>
-<p><strong>故障排除</strong></p>
-<p>1. dmesg 是最基本的<br>
-2. 把 syslog 打開 (從 Web UI), 然後看 /tmp/message 也是個方法.<br>
-3. minicom 我抓下來的版本似乎已經 hard code 要把設定檔放在 /etc, 但是 /etc 又是唯讀的, 所以搞不定.</p>
-<p><strong>Next Step:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">$ more /tmp/chat.log  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">ATZ
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">OK  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">ATI  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Manufacturer: huawei  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Model: E169  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Revision: 11.314.13.00.00  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">IMEI: <span class="se">\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</span>  
+</span></span><span class="line"><span class="ln">11</span><span class="cl">+GCAP: +CGSM,+DS,+ES  
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  
+</span></span><span class="line"><span class="ln">13</span><span class="cl">OK  
+</span></span><span class="line"><span class="ln">14</span><span class="cl">AT+COPS?  
+</span></span><span class="line"><span class="ln">15</span><span class="cl">+COPS: 0,2,<span class="s2">&#34;46692&#34;</span>,2  
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  
+</span></span><span class="line"><span class="ln">17</span><span class="cl">OK  
+</span></span><span class="line"><span class="ln">18</span><span class="cl">AT+CGDCONT<span class="o">=</span>1,<span class="s2">&#34;IP&#34;</span>,<span class="s2">&#34;internet&#34;</span>  
+</span></span><span class="line"><span class="ln">19</span><span class="cl">OK  
+</span></span><span class="line"><span class="ln">20</span><span class="cl">ATD<span class="se">\*</span>99#CONNECT
+</span></span></code></pre></div><p>看到最後面的 ATD 代表撥號, 後面出現 CONNECT 就代表成功了, YA! </p>
+<p>**故障排除</p>
+<ol>
+<li>dmesg 是最基本的</li>
+<li>把 syslog 打開 (從 Web UI), 然後看 /tmp/message 也是個方法.</li>
+<li>minicom 我抓下來的版本似乎已經 hard code 要把設定檔放在 /etc, 但是 /etc 又是唯讀的, 所以搞不定.</li>
+</ol>
+<p>**Next Step</p>
 <p>因為用的是 DD-WRT 的 mega 版本, 基本上已經沒有什麼空的 flash 了. 下一步是嘗試一下 size 比較小的 DD-WRT, 然後把這些 3G 相關程式放到 flash 裡面. 最終目的是把 DD-WRT 弄成一個開機即可上 3G 網路的環境, 而且不需要外接任何 storage.</p>
 
     </div>

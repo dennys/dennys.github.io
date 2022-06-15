@@ -63,7 +63,7 @@ java.lang.OutOfMemoryError: PermGen space
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -203,34 +203,31 @@ java.lang.OutOfMemoryError: PermGen space
 <p>如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...</p>
 <p>建議的作法是修改 USER_MEM_ARGS, 可參考 Modifying JVM Parameters in Server Start Scripts</p>
 <p>最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">if [ &#34;${JAVA_VENDOR}&#34; = &#34;Sun&#34; ] ; then
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">       if [ &#34;${PRODUCTION_MODE}&#34; = &#34;&#34; ] ; then
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">               MEM_DEV_ARGS=&#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &#34;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">               export MEM_DEV_ARGS
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">       fi
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">fi
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl"># Had to have a separate test here BECAUSE of immediate variable expansion
-</span></span><span class="line"><span class="ln">10</span><span class="cl">on windows
-</span></span><span class="line"><span class="ln">11</span><span class="cl">
-</span></span><span class="line"><span class="ln">12</span><span class="cl">if [ &#34;${JAVA_VENDOR}&#34; = &#34;Sun&#34; ] ; then
-</span></span><span class="line"><span class="ln">13</span><span class="cl">       MEM_ARGS=&#34;${MEM_ARGS} ${MEM_DEV_ARGS} -XX:MaxPermSize=128m&#34;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">       export MEM_ARGS
-</span></span><span class="line"><span class="ln">15</span><span class="cl">fi
-</span></span><span class="line"><span class="ln">16</span><span class="cl">
-</span></span><span class="line"><span class="ln">17</span><span class="cl">if [ &#34;${JAVA_VENDOR}&#34; = &#34;HP&#34; ] ; then
-</span></span><span class="line"><span class="ln">18</span><span class="cl">       MEM_ARGS=&#34;${MEM_ARGS} -XX:MaxPermSize=128m&#34;
-</span></span><span class="line"><span class="ln">19</span><span class="cl">       export MEM_ARGS
-</span></span><span class="line"><span class="ln">20</span><span class="cl">fi
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">JAVA_VENDOR</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;Sun&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">       <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">PRODUCTION_MODE</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">               <span class="nv">MEM_DEV_ARGS</span><span class="o">=</span><span class="s2">&#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &#34;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">               <span class="nb">export</span> MEM_DEV_ARGS
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">       <span class="k">fi</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c1"># Had to have a separate test here BECAUSE of immediate variable expansion on windows</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">JAVA_VENDOR</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;Sun&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">       <span class="nv">MEM_ARGS</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">MEM_ARGS</span><span class="si">}</span><span class="s2"> </span><span class="si">${</span><span class="nv">MEM_DEV_ARGS</span><span class="si">}</span><span class="s2"> -XX:MaxPermSize=128m&#34;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">       <span class="nb">export</span> MEM_ARGS
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">JAVA_VENDOR</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;HP&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">       <span class="nv">MEM_ARGS</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">MEM_ARGS</span><span class="si">}</span><span class="s2"> -XX:MaxPermSize=128m&#34;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">       <span class="nb">export</span> MEM_ARGS
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="c1"># IF USER_MEM_ARGS the environment variable is set, use it to override ALL MEM_ARGS values</span>
 </span></span><span class="line"><span class="ln">21</span><span class="cl">
-</span></span><span class="line"><span class="ln">22</span><span class="cl"># IF USER_MEM_ARGS the environment variable is set, use it to override ALL
-</span></span><span class="line"><span class="ln">23</span><span class="cl">MEM_ARGS values
-</span></span><span class="line"><span class="ln">24</span><span class="cl">
-</span></span><span class="line"><span class="ln">25</span><span class="cl">if [ &#34;${USER_MEM_ARGS}&#34; != &#34;&#34; ] ; then
-</span></span><span class="line"><span class="ln">26</span><span class="cl">       MEM_ARGS=&#34;${USER_MEM_ARGS}&#34;
-</span></span><span class="line"><span class="ln">27</span><span class="cl">       export MEM_ARGS
-</span></span><span class="line"><span class="ln">28</span><span class="cl">fi
+</span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">USER_MEM_ARGS</span><span class="si">}</span><span class="s2">&#34;</span> !<span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">       <span class="nv">MEM_ARGS</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">USER_MEM_ARGS</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">       <span class="nb">export</span> MEM_ARGS
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="k">fi</span>
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">

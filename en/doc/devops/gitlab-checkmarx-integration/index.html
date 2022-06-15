@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -206,7 +206,7 @@
     <img
       loading="lazy"
       decoding="async"
-      alt="GitLab"
+      alt=" "
       
         class="image_figure image_internal image_unprocessed"
         src="/images/software/logo/GitLab_logo.webp"
@@ -231,7 +231,7 @@
     <img
       loading="lazy"
       decoding="async"
-      alt="Checkmarx"
+      alt=" "
       
         class="image_figure image_internal image_unprocessed"
         src="/images/software/logo/Checkmarx_logo.png"
@@ -249,11 +249,11 @@
 <ol>
 <li>Edit .gitlab-ci.yml</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">include: &#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;
-</span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl">variables:
-</span></span><span class="line"><span class="ln">4</span><span class="cl">    CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="nt">CX_PROJECT</span><span class="p">:</span><span class="w"> </span><span class="l">ProjectXXX</span><span class="w"> </span><span class="c">#The project name you want to show in Checkmarx</span><span class="w">
+</span></span></span></code></pre></div><ol start="2">
 <li>Edit GitLab CI/CD variables</li>
 </ol>
 <p>Please remember to set <em><strong>GITLAB_URL</strong></em> and <em><strong>GITLAB_TOKEN</strong></em>, then Checkmarx will create GitLab issue for Checkmarx issues.</p>

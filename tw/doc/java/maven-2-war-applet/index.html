@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -198,36 +198,36 @@
 <li>先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local repository 裡面去.</li>
 <li>使用 maven-dependency-plugin 的 copy, 將 applet 放到指定的目錄. 這裡因為要放到 root, 所以指定的是 ${project.build.directory}/app-war-1.0. 後面的 &quot;app-war-1.0&quot; 請依照實際的專案修改.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">  &lt;build&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    &lt;plugins&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;artifactid&gt;maven-dependency-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;version&gt;2.2&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;executions&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">          &lt;execution&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            &lt;id&gt;copy&lt;/id&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            &lt;phase&gt;prepare-package&lt;/phase&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">            &lt;goals&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">              &lt;goal&gt;copy&lt;/goal&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">            &lt;/goals&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">            &lt;configuration&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">              &lt;artifactitems&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">                &lt;artifactitem&gt;
-</span></span><span class="line"><span class="ln">16</span><span class="cl">                  &lt;groupid&gt;com.yourcompany&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">                  &lt;artifactid&gt;app-client&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln">18</span><span class="cl">                  &lt;version&gt;1.0&lt;/version&gt;
-</span></span><span class="line"><span class="ln">19</span><span class="cl">                  &lt;type&gt;jar&lt;/type&gt;
-</span></span><span class="line"><span class="ln">20</span><span class="cl">                  &lt;overwrite&gt;true&lt;/overwrite&gt;
-</span></span><span class="line"><span class="ln">21</span><span class="cl">                  &lt;destfilename&gt;app-client.jar&lt;/destfilename&gt;
-</span></span><span class="line"><span class="ln">22</span><span class="cl">                &lt;/artifactitem&gt;
-</span></span><span class="line"><span class="ln">23</span><span class="cl">              &lt;/artifactitems&gt;
-</span></span><span class="line"><span class="ln">24</span><span class="cl">              &lt;outputdirectory&gt;${project.build.directory}/app-war-1.0&lt;/outputdirectory&gt;
-</span></span><span class="line"><span class="ln">25</span><span class="cl">            &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">26</span><span class="cl">          &lt;/execution&gt;
-</span></span><span class="line"><span class="ln">27</span><span class="cl">        &lt;/executions&gt;
-</span></span><span class="line"><span class="ln">28</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">29</span><span class="cl">    &lt;/plugins&gt;
-</span></span><span class="line"><span class="ln">30</span><span class="cl">  &lt;/build&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">  <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-dependency-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.2<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            <span class="nt">&lt;id&gt;</span>copy<span class="nt">&lt;/id&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            <span class="nt">&lt;phase&gt;</span>prepare-package<span class="nt">&lt;/phase&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>copy<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">            <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">              <span class="nt">&lt;artifactitems&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">                <span class="nt">&lt;artifactitem&gt;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">                  <span class="nt">&lt;groupid&gt;</span>com.yourcompany<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">                  <span class="nt">&lt;artifactid&gt;</span>app-client<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">                  <span class="nt">&lt;version&gt;</span>1.0<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">                  <span class="nt">&lt;type&gt;</span>jar<span class="nt">&lt;/type&gt;</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">                  <span class="nt">&lt;overwrite&gt;</span>true<span class="nt">&lt;/overwrite&gt;</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">                  <span class="nt">&lt;destfilename&gt;</span>app-client.jar<span class="nt">&lt;/destfilename&gt;</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">                <span class="nt">&lt;/artifactitem&gt;</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">              <span class="nt">&lt;/artifactitems&gt;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">              <span class="nt">&lt;outputdirectory&gt;</span>${project.build.directory}/app-war-1.0<span class="nt">&lt;/outputdirectory&gt;</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">            <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
 </span></span></code></pre></div><h2 id="reference">Reference</h2>
 <p><a href="http://maven.apache.org/plugins/maven-dependency-plugin/">http://maven.apache.org/plugins/maven-dependency-plugin/</a></p>
 

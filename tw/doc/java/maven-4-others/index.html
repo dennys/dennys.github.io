@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -194,23 +194,23 @@
 
     <div class="post_body"><h2 id="package-source-code">Package source code</h2>
 <p>在 multi module 的架構裡面, 因為都只有打包 .class 到 local repository 的 .jar 檔裡面. 因此在 Eclipse 裡面按 F3 是無法連結到 source code 的, 要使用 maven-source-plugin 把 source code 也打包到 local repository 才可以. 如果原始的檔名是 app-1.0.jar, 則 source 會被打包到 app-1.0-sources.jar goal 請使用 source:jar</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">  &lt;build&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    &lt;plugins&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      &lt;!-- Attach sources to repository --&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;artifactId&gt;maven-source-plugin&lt;/artifactId&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;executions&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">          &lt;execution&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            &lt;id&gt;attach-sources&lt;/id&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            &lt;phase&gt;verify&lt;/phase&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">            &lt;goals&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">              &lt;goal&gt;jar&lt;/goal&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">            &lt;/goals&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">          &lt;/execution&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">        &lt;/executions&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">16</span><span class="cl">    &lt;/plugins&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">  &lt;/build&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">  <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">      <span class="c">&lt;!-- Attach sources to repository --&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>maven-source-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            <span class="nt">&lt;id&gt;</span>attach-sources<span class="nt">&lt;/id&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            <span class="nt">&lt;phase&gt;</span>verify<span class="nt">&lt;/phase&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>jar<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
 </span></span></code></pre></div><h2 id="參考">參考</h2>
 <ol>
 <li><a href="http://maven.apache.org/plugins/maven-source-plugin/jar-mojo.html">http://maven.apache.org/plugins/maven-source-plugin/jar-mojo.html</a></li>

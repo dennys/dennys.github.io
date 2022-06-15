@@ -59,7 +59,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -203,16 +203,16 @@
 <h2 id="command-line-deploy-的方法">Command line deploy 的方法</h2>
 <p>因此呢, 需要研究如何在 NetWeaver 上使用 command line deploy. 研讀了一下使用手冊 (裝好 SDM 就有了, 放在 /program/doc/SDMCommandLineDoc***_en_final.pdf), 指令如下</p>
 <p>步驟1: 把 SDM 停下來 (*** 代表你 instance 的名字, 通常是三個大寫字元)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">/usr/sap/\*\*\*/JC00/SDM/program/StopServer.sh  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">/usr/sap/<span class="se">\*\*\*</span>/JC00/SDM/program/StopServer.sh  
 </span></span></code></pre></div><p>步驟2: 把模式改成 standalone, 這樣才能做 command line deploy.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">sdm jstartup sdmhome=/usr/sap/\*\*\*/JC00/SDM/program mode=standalone
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">sdm jstartup <span class="nv">sdmhome</span><span class="o">=</span>/usr/sap/<span class="se">\*\*\*</span>/JC00/SDM/program <span class="nv">mode</span><span class="o">=</span>standalone
 </span></span></code></pre></div><p>步驟3: 執行這個指令, 就可以 deploy 了. updateversions 這個參數的目的在於, 如果版本一樣, 還是可以 re-deploy.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">cd /usr/sap/\*\*\*/JC00/SDM/program java -jar bin/SDM.jar deploy file=/tmp/AP.ear updateversions=all
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd</span> /usr/sap/<span class="se">\*\*\*</span>/JC00/SDM/program java -jar bin/SDM.jar deploy <span class="nv">file</span><span class="o">=</span>/tmp/AP.ear <span class="nv">updateversions</span><span class="o">=</span>all
 </span></span></code></pre></div><p>要注意的是, 上面步驟執行之後, Remote GUI 就不能使用了, 得使用下列指令把模式切回來才能使用 GUI.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">sdm jstartup sdmhome=/usr/sap/\*\*\*/JC00/SDM/program mode=standalone  
-</span></span><span class="line"><span class="ln">2</span><span class="cl">/usr/sap/\*\*\*/JC00/SDM/program/StartServer.sh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">sdm jstartup <span class="nv">sdmhome</span><span class="o">=</span>/usr/sap/<span class="se">\*\*\*</span>/JC00/SDM/program <span class="nv">mode</span><span class="o">=</span>standalone  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">/usr/sap/<span class="se">\*\*\*</span>/JC00/SDM/program/StartServer.sh
 </span></span></code></pre></div><p>至於 undeploy, 執行下列指令即可, compname/compvendor 請參考 ear 檔裡面的 SAP_MANIFEST.MF</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">java -jar bin/SDM.jar undeploy compname=Application\_Name compvendor=test.com
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">java -jar bin/SDM.jar undeploy <span class="nv">compname</span><span class="o">=</span>Application<span class="se">\_</span>Name <span class="nv">compvendor</span><span class="o">=</span>test.com
 </span></span></code></pre></div><p>以上是 NetWeaver 7.0 的作法, 7.1 不知道會不會有什麼不同.<br>
 參考:<br>
 <a href="http://help.sap.com/saphelp_nw70/helpdata/EN/22/a7663bb3808c1fe10000000a114084/frameset.htm">NetWeaver Software Deployment Manager</a></p>

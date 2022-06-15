@@ -57,7 +57,7 @@
 
   </head>
   <body
-    data-code="7"
+    data-code="40"
     data-lines="true"
     id="documentTop"
   >
@@ -201,86 +201,86 @@
 <li>goal 請使用 assembly:single (不指定也可以, 有 package 也會執行到這裡)</li>
 <li>注意, maven-assembly-plugin 一定要用 2.2-beta-5, 用 2.2 或 2.2.1 都會有問題 (這感覺不太合理, 不過測試結果目前就是這樣, 或許是我哪裡弄錯了)</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">&lt;pre class=&#34;brush: xml&#34; title=&#34;Client 的 pom.xml (打包用)&#34;&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  &lt;build&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    &lt;plugins&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        &lt;artifactid&gt;maven-compiler-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        &lt;version&gt;2.3.2&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          &lt;source&gt;&lt;/source&gt;1.6
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          &lt;target&gt;1.6&lt;/target&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">        &lt;artifactid&gt;maven-assembly-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">        &lt;version&gt;2.2-beta-5&lt;/version&gt;
-</span></span><span class="line"><span class="ln">16</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">          &lt;descriptorrefs&gt;
-</span></span><span class="line"><span class="ln">18</span><span class="cl">            &lt;descriptorref&gt;jar-with-dependencies&lt;/descriptorref&gt;
-</span></span><span class="line"><span class="ln">19</span><span class="cl">          &lt;/descriptorrefs&gt;
-</span></span><span class="line"><span class="ln">20</span><span class="cl">          &lt;finalname&gt;${project.build.finalName}&lt;/finalname&gt;
-</span></span><span class="line"><span class="ln">21</span><span class="cl">          &lt;appendassemblyid&gt;false&lt;/appendassemblyid&gt;
-</span></span><span class="line"><span class="ln">22</span><span class="cl">          &lt;archive&gt;
-</span></span><span class="line"><span class="ln">23</span><span class="cl">            &lt;index&gt;true&lt;/index&gt;
-</span></span><span class="line"><span class="ln">24</span><span class="cl">            &lt;manifest&gt;
-</span></span><span class="line"><span class="ln">25</span><span class="cl">              &lt;adddefaultimplementationentries&gt;true&lt;/adddefaultimplementationentries&gt;
-</span></span><span class="line"><span class="ln">26</span><span class="cl">            &lt;/manifest&gt;
-</span></span><span class="line"><span class="ln">27</span><span class="cl">          &lt;/archive&gt;
-</span></span><span class="line"><span class="ln">28</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">29</span><span class="cl">        &lt;executions&gt;
-</span></span><span class="line"><span class="ln">30</span><span class="cl">          &lt;execution&gt;
-</span></span><span class="line"><span class="ln">31</span><span class="cl">            &lt;phase&gt;package&lt;/phase&gt;
-</span></span><span class="line"><span class="ln">32</span><span class="cl">            &lt;goals&gt;
-</span></span><span class="line"><span class="ln">33</span><span class="cl">              &lt;goal&gt;single&lt;/goal&gt;
-</span></span><span class="line"><span class="ln">34</span><span class="cl">            &lt;/goals&gt;
-</span></span><span class="line"><span class="ln">35</span><span class="cl">          &lt;/execution&gt;
-</span></span><span class="line"><span class="ln">36</span><span class="cl">        &lt;/executions&gt;
-</span></span><span class="line"><span class="ln">37</span><span class="cl">      &lt;/plugin&gt;
-</span></span><span class="line"><span class="ln">38</span><span class="cl">    &lt;/plugins&gt;
-</span></span><span class="line"><span class="ln">39</span><span class="cl">  &lt;/build&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&#34;brush: xml&#34;</span> <span class="na">title=</span><span class="s">&#34;Client 的 pom.xml (打包用)&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  <span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3.2<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          <span class="nt">&lt;source&gt;&lt;/source&gt;</span>1.6
+</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&lt;target&gt;</span>1.6<span class="nt">&lt;/target&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-assembly-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.2-beta-5<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">          <span class="nt">&lt;descriptorrefs&gt;</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">            <span class="nt">&lt;descriptorref&gt;</span>jar-with-dependencies<span class="nt">&lt;/descriptorref&gt;</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">          <span class="nt">&lt;/descriptorrefs&gt;</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">          <span class="nt">&lt;finalname&gt;</span>${project.build.finalName}<span class="nt">&lt;/finalname&gt;</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">          <span class="nt">&lt;appendassemblyid&gt;</span>false<span class="nt">&lt;/appendassemblyid&gt;</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">          <span class="nt">&lt;archive&gt;</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">            <span class="nt">&lt;index&gt;</span>true<span class="nt">&lt;/index&gt;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">            <span class="nt">&lt;manifest&gt;</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">              <span class="nt">&lt;adddefaultimplementationentries&gt;</span>true<span class="nt">&lt;/adddefaultimplementationentries&gt;</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">            <span class="nt">&lt;/manifest&gt;</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">          <span class="nt">&lt;/archive&gt;</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">            <span class="nt">&lt;phase&gt;</span>package<span class="nt">&lt;/phase&gt;</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>single<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
 </span></span></code></pre></div><p>簽名的部分, 使用 maven-jarsigner-plugin 來做簽名即可.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        &lt;artifactid&gt;maven-jarsigner-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;version&gt;1.2&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;executions&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          &lt;execution&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            &lt;id&gt;sign&lt;/id&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            &lt;goals&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">              &lt;goal&gt;sign&lt;/goal&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">            &lt;/goals&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">          &lt;/execution&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        &lt;/executions&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">          &lt;keystore&gt;${basedir}\\key\\xxxx.store&lt;/keystore&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">          &lt;alias&gt;xxxxkey&lt;/alias&gt;
-</span></span><span class="line"><span class="ln">16</span><span class="cl">          &lt;storepass&gt;yourpassword&lt;/storepass&gt;
-</span></span><span class="line"><span class="ln">17</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">18</span><span class="cl">      &lt;/plugin&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-jarsigner-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;version&gt;</span>1.2<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            <span class="nt">&lt;id&gt;</span>sign<span class="nt">&lt;/id&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>sign<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">          <span class="nt">&lt;keystore&gt;</span>${basedir}\\key\\xxxx.store<span class="nt">&lt;/keystore&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">          <span class="nt">&lt;alias&gt;</span>xxxxkey<span class="nt">&lt;/alias&gt;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">          <span class="nt">&lt;storepass&gt;</span>yourpassword<span class="nt">&lt;/storepass&gt;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
 </span></span></code></pre></div><p>實際上他會呼叫 jarsigner.exe 來做簽名的動作, 可以在 console 看到 log如下 (因為是 debug level, 所以要把 Maven 開到 debug mode 才看得到)```</p>
 <p><code>[debug] Executing: cmd.exe /X /C \&quot;...\\jarsigner.exe -verify ...\\app-client-1.0.jar\&quot;</code></p>
 <p>另外, 也可以使用 maven-jar-plugin, 效果和 maven-jarsigner-plugin 是一樣的. 但是在 jar-plugin 2.3 以後, <a href="http://maven.apache.org/plugins/maven-jar-plugin/sign-mojo.html/">jar:sign 已經不被建議使用</a>, 請改用 jarsigner-plugin. 比較特別的是, jar-plugin 可以指定 signedjar 把簽名過的檔案放到其他目錄, 而 jarsigner-plugin 似乎沒有這個功能.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">      &lt;plugin&gt;
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        &lt;groupid&gt;org.apache.maven.plugins&lt;/groupid&gt;
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        &lt;artifactid&gt;maven-jar-plugin&lt;/artifactid&gt;
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;version&gt;2.3.1&lt;/version&gt;
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;executions&gt;
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          &lt;execution&gt;
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            &lt;goals&gt;
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">              &lt;goal&gt;sign&lt;/goal&gt;
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            &lt;/goals&gt;
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          &lt;/execution&gt;
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        &lt;/executions&gt;
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        &lt;configuration&gt;
-</span></span><span class="line"><span class="ln">13</span><span class="cl">          &lt;keystore&gt;${basedir}\\key\\xxxx.store&lt;/keystore&gt;
-</span></span><span class="line"><span class="ln">14</span><span class="cl">          &lt;alias&gt;xxxxkey&lt;/alias&gt;
-</span></span><span class="line"><span class="ln">15</span><span class="cl">          &lt;storepass&gt;yourpassword&lt;/storepass&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-jar-plugin<span class="nt">&lt;/artifactid&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3.1<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>sign<span class="nt">&lt;/goal&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">          <span class="nt">&lt;keystore&gt;</span>${basedir}\\key\\xxxx.store<span class="nt">&lt;/keystore&gt;</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">          <span class="nt">&lt;alias&gt;</span>xxxxkey<span class="nt">&lt;/alias&gt;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">          <span class="nt">&lt;storepass&gt;</span>yourpassword<span class="nt">&lt;/storepass&gt;</span>
 </span></span><span class="line"><span class="ln">16</span><span class="cl">          
-</span></span><span class="line"><span class="ln">17</span><span class="cl">          &lt;verify&gt;true&lt;/verify&gt;
-</span></span><span class="line"><span class="ln">18</span><span class="cl">        &lt;/configuration&gt;
-</span></span><span class="line"><span class="ln">19</span><span class="cl">      &lt;/plugin&gt;
+</span></span><span class="line"><span class="ln">17</span><span class="cl">          <span class="nt">&lt;verify&gt;</span>true<span class="nt">&lt;/verify&gt;</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
 </span></span></code></pre></div><p>喔, 講了那麼多, 都沒有提到 Jar... 其實 Applet 就是一個 Jar, 所以用上面 Applet 的方式就可以了. 差別在於 Jar 一般來說不需要簽名就是了.</p>
 <h2 id="參考">參考</h2>
 <ul>
