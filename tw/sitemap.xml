@@ -44,6 +44,9 @@
     <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/series/google-tv/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
@@ -64,6 +67,19 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/categories/software/</loc>
@@ -302,17 +318,5 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</loc>
     <lastmod>2009-03-21T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
   </url>
 </urlset>
