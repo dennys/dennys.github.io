@@ -26,14 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie). …" />
+<meta name="description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
+方法 準備工具 youtube-dl  …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/software/download-youtube-private-video/" />
 <meta property="og:title" content="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)" />
-<meta property="og:description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie). …" />
+<meta property="og:description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
+方法 準備工具 youtube-dl  …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -48,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
-"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.1cb1d826a055110555bdcb1fc462e6b076de062e6e5cedb27a15475a494078824330401e4aa4af1ff1ddf7b081014795c951006606bc7063ff627aba0feb4fce.js" as="script" integrity=
+"sha512-HLHYJqBVEQVVvcsfxGLmsHbeBi5uXO2yehVHWklAeIJDMEAeSqSvH/Hd97CBAUeVyVEAZga8cGP/Ynq6D&#43;tPzg==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -153,27 +155,27 @@
 </span>
     <span class="post_date">
       Jun 2, 2022</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
+    <span class="post_time"> · </span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e4%b8%8b%e8%bc%89%20YouTube%20%e7%a7%81%e4%ba%ba%e5%bd%b1%e7%89%87%20%28%e4%bd%bf%e7%94%a8%20youtube-dl%20%e6%88%96%20ytl-dp%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fdownload-youtube-private-video%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    :
+    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e4%b8%8b%e8%bc%89%20YouTube%20%e7%a7%81%e4%ba%ba%e5%bd%b1%e7%89%87%20%28%e4%bd%bf%e7%94%a8%20youtube-dl%20%e6%88%96%20ytl-dp%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fdownload-youtube-private-video%2f&tw_p=tweetbutton" class="twitter" title=" Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fdownload-youtube-private-video%2f&t=%e5%a6%82%e4%bd%95%e4%b8%8b%e8%bc%89%20YouTube%20%e7%a7%81%e4%ba%ba%e5%bd%b1%e7%89%87%20%28%e4%bd%bf%e7%94%a8%20youtube-dl%20%e6%88%96%20ytl-dp%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fdownload-youtube-private-video%2f&t=%e5%a6%82%e4%bd%95%e4%b8%8b%e8%bc%89%20YouTube%20%e7%a7%81%e4%ba%ba%e5%bd%b1%e7%89%87%20%28%e4%bd%bf%e7%94%a8%20youtube-dl%20%e6%88%96%20ytl-dp%29" class="facebook" title=" Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
 </svg>
 
     </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title=" LinkedIn" rel="nofollow">
       <svg class="icon">
   <title>linkedin</title>
   <use xlink:href="#linkedin"></use>
@@ -193,26 +195,26 @@
 
     <div class="post_body"><h2 id="需求">需求</h2>
 <p>YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).</p>
-<h2 id="工具準備">工具準備</h2>
-<h3 id="需要以下幾樣工具">需要以下幾樣工具</h3>
+<h2 id="方法">方法</h2>
+<h3 id="準備工具">準備工具</h3>
 <ol>
 <li><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> 或是 <a href="https://github.com/yt-dlp/yt-dlp">ytl-dp</a></li>
 <li>cookie 工具, 我是用 <a href="https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid">Get cookies.txt</a> 這個 Chrome extension</li>
 <li><a href="https://www.ffmpeg.org/download.html">FFmpeg</a>, 轉檔用</li>
 </ol>
-<h2>1. 準備 cookie</h2>
+<h3 id="準備-cookie">準備 cookie</h3>
 <p>既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/05/image-14.png"><img src="https://dennys.files.wordpress.com/2022/05/image-14.png?w=616" alt="" class="wp-image-634"/></a></p>
-<h2>2. 使用 youtube-dl 下載</h2>
+<h3 id="使用-youtube-dl-下載">使用 youtube-dl 下載</h3>
 <p>使用如下指令就可以下載檔案了</p>
-<pre class="wp-block-code"><code>youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</code></pre>
-<p>要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/
+</span></span></code></pre></div><p>要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/05/image-12.png"><img src="https://dennys.files.wordpress.com/2022/05/image-12.png?w=1024"/></a></p>
 <p>因此, 直接在下載參數指定 FFmpeg 的目錄位置, 這樣在下載完後, 他就會去呼叫 FFmpeg 執行合併檔案的動作.</p>
-<pre class="wp-block-code"><code>youtube-dl.exe <mark style="background-color:rgba(0, 0, 0, 0);" class="has-inline-color has-vivid-red-color">--ffmpeg-location C:\bin\ffmpeg\bin</mark> --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</code></pre>
-<p>如下, 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">youtube-dl.exe --ffmpeg-location C:\bin\ffmpeg\bin<span class="p">&lt;</span>/mark<span class="p">&gt;</span> --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/
+</span></span></code></pre></div><p>如下, 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/05/image-11.png"><img src="https://dennys.files.wordpress.com/2022/05/image-11.png?w=1024"/></a></p>
-<h2>3. 使用 youtube-dl 下載</h2>
+<h3 id="使用-youtube-dl-下載-1">使用 youtube-dl 下載</h3>
 <p><a href="https://github.com/yt-dlp/yt-dlp">YT-DLP</a> 是 youtube-dl 的一個 fork, 他自己的官方說明是 &quot;A youtube-dl fork with additional features and fixes&quot;, 兩者的指令也都差不多, 試用了一下也沒甚麼問題, 只是下載完是 .mkv</p>
 <p><a href="https://dennys.files.wordpress.com/2022/05/image-13.png"><img src="https://dennys.files.wordpress.com/2022/05/image-13.png?w=960"/></a></p>
 
@@ -248,7 +250,7 @@
     
       
     
-    <h2 class="mt-4">Recent Posts</h2>
+    <h2 class="mt-4"></h2>
     <ul class="flex-column">
       <li>
         <a href="https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/" class="nav-link" title="Google TV 如何擷圖 (screenshot)">Google TV 如何擷圖 (screenshot)</a>
@@ -263,7 +265,7 @@
         <a href="https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/" class="nav-link" title="更新 Unlock 過的 Pixel 5">更新 Unlock 過的 Pixel 5</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/software/realvnc/" class="nav-link" title="無聲遠端桌面連線 - VNC">無聲遠端桌面連線 - VNC</a>
+        <a href="https://dennys.github.io/tw/doc/software/realvnc/" class="nav-link" title="無聲無影遠端桌面連線 - VNC">無聲無影遠端桌面連線 - VNC</a>
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/" class="nav-link" title="在 Asuswrt-Merlin 使用 OpenVPN server">在 Asuswrt-Merlin 使用 OpenVPN server</a>
@@ -276,7 +278,7 @@
       </li>
     </ul>
     <div>
-      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <h2 class="mt-4 taxonomy" id="categories-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
@@ -317,7 +319,7 @@
       </nav>
     </div>
     <div>
-      <h2 class="mt-4 taxonomy" id="series-section">Series</h2>
+      <h2 class="mt-4 taxonomy" id="series-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/series/google-tv/' class="post_tag button button_translucent" title="google-tv">
           GOOGLE-TV
@@ -328,7 +330,7 @@
       </nav>
     </div>
     <div>
-      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <h2 class="mt-4 taxonomy" id="tags-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="改機">
           改機
@@ -402,7 +404,7 @@
         
         
         <br>
-        <div class="post_tags_toggle button">All Tags</div>
+        <div class="post_tags_toggle button"></div>
         <div class="post_tags">
           <div class="tags_list">
             
@@ -568,7 +570,7 @@
 <footer class="footer">
   <div class="footer_inner wrap pale">
     <img src='https://dennys.github.io/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="Dennys Diary">
-    <p>Copyright&nbsp;<span class="year"></span>&nbsp;DENNYS DIARY. All Rights Reserved</p><a class="to_top" href="#documentTop">
+    <p>&nbsp;<span class="year"></span>&nbsp;DENNYS DIARY. </p><a class="to_top" href="#documentTop">
   <svg class="icon">
   <title>to-top</title>
   <use xlink:href="#to-top"></use>
@@ -579,7 +581,7 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.1cb1d826a055110555bdcb1fc462e6b076de062e6e5cedb27a15475a494078824330401e4aa4af1ff1ddf7b081014795c951006606bc7063ff627aba0feb4fce.js" integrity="sha512-HLHYJqBVEQVVvcsfxGLmsHbeBi5uXO2yehVHWklAeIJDMEAeSqSvH/Hd97CBAUeVyVEAZga8cGP/Ynq6D&#43;tPzg==" crossorigin="anonymous"></script>
 
   <script src="https://dennys.github.io/js/search.min.6407967fed69d8afe6c071fdbfdff88202e8394f391edcf34ed5d05c97dd721d3b5104762d0ec6b2525fded7cc4dca75dee48d328913e4dded0f72ab9b3c0e8b.js"></script>
 

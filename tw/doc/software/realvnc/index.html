@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>無聲遠端桌面連線 - VNC | Dennys Diary</title>
+<title>無聲無影遠端桌面連線 - VNC | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,16 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 要做一個遠端登入的功能, 而且需要做到以下幾項
-進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &quot;看&quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 步驟 (Server 端) 先把 show …" />
+<meta name="description" content="需求 需要一個遠端登入的功能, 要做到以下幾項功能
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &quot;看&quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 方法 (Server 端) 測試了一下, …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="無聲遠端桌面連線 - VNC" />
+<meta name="twitter:title" content="無聲無影遠端桌面連線 - VNC" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/software/realvnc/" />
-<meta property="og:title" content="無聲遠端桌面連線 - VNC" />
-<meta property="og:description" content="需求 要做一個遠端登入的功能, 而且需要做到以下幾項
-進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &quot;看&quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 步驟 (Server 端) 先把 show …" />
+<meta property="og:title" content="無聲無影遠端桌面連線 - VNC" />
+<meta property="og:description" content="需求 需要一個遠端登入的功能, 要做到以下幾項功能
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &quot;看&quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 方法 (Server 端) 測試了一下, …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -50,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
-"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.1cb1d826a055110555bdcb1fc462e6b076de062e6e5cedb27a15475a494078824330401e4aa4af1ff1ddf7b081014795c951006606bc7063ff627aba0feb4fce.js" as="script" integrity=
+"sha512-HLHYJqBVEQVVvcsfxGLmsHbeBi5uXO2yehVHWklAeIJDMEAeSqSvH/Hd97CBAUeVyVEAZga8cGP/Ynq6D&#43;tPzg==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -146,7 +146,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">無聲遠端桌面連線 - VNC</h1>
+    <h1 class="post_title">無聲無影遠端桌面連線 - VNC</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -155,27 +155,27 @@
 </span>
     <span class="post_date">
       Jun 2, 2022</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vnc/' title="VNC" class="post_tag button button_translucent">VNC
+    <span class="post_time"> · </span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vnc/' title="VNC" class="post_tag button button_translucent">VNC
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=%e7%84%a1%e8%81%b2%e9%81%a0%e7%ab%af%e6%a1%8c%e9%9d%a2%e9%80%a3%e7%b7%9a%20-%20VNC&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2frealvnc%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    :
+    <a href="https://twitter.com/intent/tweet?text=%e7%84%a1%e8%81%b2%e7%84%a1%e5%bd%b1%e9%81%a0%e7%ab%af%e6%a1%8c%e9%9d%a2%e9%80%a3%e7%b7%9a%20-%20VNC&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2frealvnc%2f&tw_p=tweetbutton" class="twitter" title=" Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2frealvnc%2f&t=%e7%84%a1%e8%81%b2%e9%81%a0%e7%ab%af%e6%a1%8c%e9%9d%a2%e9%80%a3%e7%b7%9a%20-%20VNC" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2frealvnc%2f&t=%e7%84%a1%e8%81%b2%e7%84%a1%e5%bd%b1%e9%81%a0%e7%ab%af%e6%a1%8c%e9%9d%a2%e9%80%a3%e7%b7%9a%20-%20VNC" class="facebook" title=" Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
 </svg>
 
     </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title=" LinkedIn" rel="nofollow">
       <svg class="icon">
   <title>linkedin</title>
   <use xlink:href="#linkedin"></use>
@@ -194,24 +194,37 @@
   </div>
 
     <div class="post_body"><h2 id="需求">需求</h2>
-<p>要做一個遠端登入的功能, 而且需要做到以下幾項</p>
+<p>需要一個遠端登入的功能, 要做到以下幾項功能</p>
 <ol>
 <li>進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思</li>
 <li>進去的時候, 預設是只有 &quot;看&quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺</li>
 <li>有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了</li>
 </ol>
-<h2 id="步驟-server-端">步驟 (Server 端)</h2>
-<p>先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</p>
+<h2 id="方法-server-端">方法 (Server 端)</h2>
+<p>測試了一下, <a href="https://www.teamviewer.com/">TeamViewer</a> 和 <a href="https://anydesk.com/">AnyDesk</a> 都做不出來這種功能, 目前是只有看到 <a href="https://www.realvnc.com/">RealVNC</a>可以做到, 就先用這個測試.</p>
+<ol>
+<li>先下載 RealVNC server (從這裡下載: <a href="https://www.realvnc.com/en/connect/download/vnc/">https://www.realvnc.com/en/connect/download/vnc/</a>)</li>
+<li>打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/06/image-3.png"><img src="https://dennys.files.wordpress.com/2022/06/image-3.png?w=608" alt="" class="wp-image-749"/></a>
 <br></p>
-<p>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)</p>
+<ol start="3">
+<li>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/06/image-4.png"><img src="https://dennys.files.wordpress.com/2022/06/image-4.png?w=608" alt="" class="wp-image-751"/></a>
 <br></p>
 <p>如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :yum:</p>
 <p><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a>
 <br></p>
-<h2 id="步驟-client-端">步驟 (Client 端)</h2>
+<h2 id="方法-client-端">方法 (Client 端)</h2>
+<ol>
+<li>
+<p>先下載 RealVNC viewer (從這裡下載: <a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>)</p>
+</li>
+<li>
 <p>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</p>
+</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a>
 <br></p>
 <h2 id="成果">成果</h2>
@@ -254,7 +267,7 @@
     
       
     
-    <h2 class="mt-4">Recent Posts</h2>
+    <h2 class="mt-4"></h2>
     <ul class="flex-column">
       <li>
         <a href="https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/" class="nav-link" title="Google TV 如何擷圖 (screenshot)">Google TV 如何擷圖 (screenshot)</a>
@@ -282,7 +295,7 @@
       </li>
     </ul>
     <div>
-      <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
+      <h2 class="mt-4 taxonomy" id="categories-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
@@ -323,7 +336,7 @@
       </nav>
     </div>
     <div>
-      <h2 class="mt-4 taxonomy" id="series-section">Series</h2>
+      <h2 class="mt-4 taxonomy" id="series-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/series/google-tv/' class="post_tag button button_translucent" title="google-tv">
           GOOGLE-TV
@@ -334,7 +347,7 @@
       </nav>
     </div>
     <div>
-      <h2 class="mt-4 taxonomy" id="tags-section">Tags</h2>
+      <h2 class="mt-4 taxonomy" id="tags-section"></h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="改機">
           改機
@@ -408,7 +421,7 @@
         
         
         <br>
-        <div class="post_tags_toggle button">All Tags</div>
+        <div class="post_tags_toggle button"></div>
         <div class="post_tags">
           <div class="tags_list">
             
@@ -574,7 +587,7 @@
 <footer class="footer">
   <div class="footer_inner wrap pale">
     <img src='https://dennys.github.io/icons/apple-touch-icon.png' class="icon icon_2 transparent" alt="Dennys Diary">
-    <p>Copyright&nbsp;<span class="year"></span>&nbsp;DENNYS DIARY. All Rights Reserved</p><a class="to_top" href="#documentTop">
+    <p>&nbsp;<span class="year"></span>&nbsp;DENNYS DIARY. </p><a class="to_top" href="#documentTop">
   <svg class="icon">
   <title>to-top</title>
   <use xlink:href="#to-top"></use>
@@ -585,7 +598,7 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.1cb1d826a055110555bdcb1fc462e6b076de062e6e5cedb27a15475a494078824330401e4aa4af1ff1ddf7b081014795c951006606bc7063ff627aba0feb4fce.js" integrity="sha512-HLHYJqBVEQVVvcsfxGLmsHbeBi5uXO2yehVHWklAeIJDMEAeSqSvH/Hd97CBAUeVyVEAZga8cGP/Ynq6D&#43;tPzg==" crossorigin="anonymous"></script>
 
   <script src="https://dennys.github.io/js/search.min.6407967fed69d8afe6c071fdbfdff88202e8394f391edcf34ed5d05c97dd721d3b5104762d0ec6b2525fded7cc4dca75dee48d328913e4dded0f72ab9b3c0e8b.js"></script>
 
