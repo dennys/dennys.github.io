@@ -7,5 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Thu, 02 Jun 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/vnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>無聲遠端桌面連線 - VNC</title>
+      <link>https://dennys.github.io/tw/doc/software/realvnc/</link>
+      <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/realvnc/</guid>
+      <description>
+        
+          
+            需求 要做一個遠端登入的功能, 而且需要做到以下幾項
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &amp;quot;看&amp;quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 步驟 (Server 端) 先把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. :yum:
+步驟 (Client 端) 在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
