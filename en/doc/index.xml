@@ -6,7 +6,7 @@
     <description>Recent content in Docs on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use GitLab to do .NET 4.X CI/CD</title>
@@ -14,16 +14,9 @@
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
-      <description>
-        
-          
-            Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+      <description>Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/&amp;hellip;, you can use docker to run GitLab Runner.
 Step 1 - Install Git client Download and install Git for Windows. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.
-Step 2 - prepare .NET build environment Download and install Visual Studio.
-          
-          
-        
-      </description>
+Step 2 - prepare .NET build environment Download and install Visual Studio.</description>
     </item>
     
     <item>
@@ -32,16 +25,9 @@ Step 2 - prepare .NET build environment Download and install Visual Studio.
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
-      <description>
-        
-          
-            Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
-Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;quot;finance&amp;quot; service Choose &amp;quot;Today&#39;s exchange rate report&amp;quot; Choose the input/output currency and trigger time. Add a new &amp;quot;Then That&amp;quot; Choose a &amp;quot;gmail&amp;quot; service If you just want to send yourself an email, you can click the right button.
-          
-          
-        
-      </description>
+      <description>Requirement I want to have a daily mail including currency exchange rate information.
+Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&amp;rsquo; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
+Create a new Applet on IFTTT Add a new &amp;ldquo;If This&amp;rdquo; Choose &amp;ldquo;finance&amp;rdquo; service Choose &amp;ldquo;Today&amp;rsquo;s exchange rate report&amp;rdquo; Choose the input/output currency and trigger time. Add a new &amp;ldquo;Then That&amp;rdquo; Choose a &amp;ldquo;gmail&amp;rdquo; service If you just want to send yourself an email, you can click the right button.</description>
     </item>
     
     <item>
@@ -50,16 +36,9 @@ Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;q
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/software/use-wise-to-send-currency-exchange-rate-mail-daily/</guid>
-      <description>
-        
-          
-            Requirement I want to have a daily mail including currency exchange rate information.
+      <description>Requirement I want to have a daily mail including currency exchange rate information.
 Solution use https://wise.com (no need to register an account)
-Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
-          
-          
-        
-      </description>
+Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.</description>
     </item>
     
     <item>
@@ -68,16 +47,9 @@ Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency excha
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
-      <description>
-        
-          
-            Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
+      <description>Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
 Procedure You can reference official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration
-Edit .gitlab-ci.yml 1include: &amp;#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&amp;#39; 2 3variables: 4 CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx Edit GitLab CI/CD variables Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.
-          
-          
-        
-      </description>
+Edit .gitlab-ci.yml 1 2 3 4 include: &amp;#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&amp;#39; variables: CX_PROJECT: ProjectXXX #The project name you want to show in Checkmarx Edit GitLab CI/CD variables Please remember to set GITLAB_URL and GITLAB_TOKEN, then Checkmarx will create GitLab issue for Checkmarx issues.</description>
     </item>
     
     <item>
@@ -86,16 +58,9 @@ Edit .gitlab-ci.yml 1include: &amp;#39;https://raw.githubusercontent.com/checkma
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
-      <description>
-        
-          
-            Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
-Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.x) Configurea Quality Gate/Profiles of SonarQube for Checkmarx&#39;s rules. Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.
-          
-          
-        
-      </description>
+      <description>Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&amp;rsquo;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+Download the plugin from here, it only supports SonarQube LTS version (for now, it&amp;rsquo;s 8.x) Configurea Quality Gate/Profiles of SonarQube for Checkmarx&amp;rsquo;s rules. Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.</description>
     </item>
     
   </channel>
