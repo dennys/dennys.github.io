@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drupal on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/drupal/</link>
+    <link>https://dennys.github.io/tw/tags/drupal/</link>
     <description>Recent content in Drupal on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 26 Mar 2009 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2009 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何對 Drupal 的 cron 做 Debug</title>
-      <link>https://dennys.github.io/zh-tw/doc/drupal/drupal-cron-debug/</link>
+      <link>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</link>
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/drupal/drupal-cron-debug/</guid>
+      <guid>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</guid>
       <description>
         
           

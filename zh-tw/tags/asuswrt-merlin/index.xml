@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asuswrt-Merlin on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/asuswrt-merlin/</link>
+    <link>https://dennys.github.io/tw/tags/asuswrt-merlin/</link>
     <description>Recent content in Asuswrt-Merlin on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/asuswrt-merlin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/asuswrt-merlin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -31,10 +31,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -53,10 +53,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           

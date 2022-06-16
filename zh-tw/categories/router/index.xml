@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Router on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/categories/router/</link>
+    <link>https://dennys.github.io/tw/categories/router/</link>
     <description>Recent content in Router on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/categories/router/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/router/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -31,10 +31,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -53,10 +53,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -73,10 +73,10 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
     
     <item>
       <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</link>
+      <link>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</link>
       <pubDate>Thu, 04 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
       <description>
         
           
@@ -94,10 +94,10 @@ DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡�
     
     <item>
       <title>CDMA@wifi (Oleg) 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</guid>
       <description>
         
           
@@ -118,10 +118,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB
     
     <item>
       <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</link>
+      <link>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</link>
       <pubDate>Sat, 09 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
       <description>
         
           
@@ -139,10 +139,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
     
     <item>
       <title>Tomato DualWan 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</guid>
       <description>
         
           

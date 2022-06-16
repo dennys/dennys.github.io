@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Magisk on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/magisk/</link>
+    <link>https://dennys.github.io/tw/tags/magisk/</link>
     <description>Recent content in Magisk on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/magisk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/magisk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -32,10 +32,10 @@
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -57,10 +57,10 @@
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -79,10 +79,10 @@
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -104,10 +104,10 @@ https://developer.android.com/studio/releases/platform-tools#downloads
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           

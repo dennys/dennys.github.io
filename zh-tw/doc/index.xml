@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/doc/</link>
+    <link>https://dennys.github.io/tw/doc/</link>
     <description>Recent content in Docs on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google TV 如何擷圖 (screenshot)</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</guid>
       <description>
         
           
@@ -29,10 +29,10 @@
     
     <item>
       <title>Google TV 開關 Infocus 電視</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</guid>
       <description>
         
           
@@ -46,10 +46,10 @@
     
     <item>
       <title>Google TV 調整 Infocus 電視音量的妥協做法</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</guid>
       <description>
         
           
@@ -63,10 +63,10 @@
     
     <item>
       <title>更新 Unlock 過的 Pixel 5</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/update-unlocked-pixel5/</link>
+      <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
       <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/update-unlocked-pixel5/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</guid>
       <description>
         
           
@@ -89,10 +89,10 @@ fastboot reboot
     
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/download-youtube-private-video/</link>
+      <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/download-youtube-private-video/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</guid>
       <description>
         
           
@@ -108,10 +108,10 @@ fastboot reboot
     
     <item>
       <title>無聲無影遠端桌面連線 - VNC</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/realvnc/</link>
+      <link>https://dennys.github.io/tw/doc/software/realvnc/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/realvnc/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/realvnc/</guid>
       <description>
         
           
@@ -126,10 +126,10 @@ fastboot reboot
     
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
       <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
       <description>
         
           
@@ -144,10 +144,10 @@ fastboot reboot
     
     <item>
       <title>如何設定 Android 零打擾的時間長度</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-do-not-disturb/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
       <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-do-not-disturb/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
       <description>
         
           
@@ -164,10 +164,10 @@ fastboot reboot
     
     <item>
       <title>Google Maps 音樂接藍牙, 語音不接</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
       <description>
         
           
@@ -181,10 +181,10 @@ fastboot reboot
     
     <item>
       <title>將 Gmail 的通知改成可以直接刪除</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/gmail-notify-delete-archive/</link>
+      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
@@ -200,10 +200,10 @@ fastboot reboot
     
     <item>
       <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-12-lock-screen-double-line-clock/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
       <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
       <description>
         
           
@@ -220,10 +220,10 @@ fastboot reboot
     
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -242,10 +242,10 @@ fastboot reboot
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -267,10 +267,10 @@ fastboot reboot
     
     <item>
       <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
-      <link>https://dennys.github.io/zh-tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>
+      <link>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</guid>
+      <guid>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</guid>
       <description>
         
           
@@ -292,10 +292,10 @@ fastboot reboot
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -314,10 +314,10 @@ fastboot reboot
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -339,10 +339,10 @@ https://developer.android.com/studio/releases/platform-tools#downloads
     
     <item>
       <title>如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
       <pubDate>Fri, 28 Jan 2022 18:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
       <description>
         
           
@@ -362,10 +362,10 @@ https://developer.android.com/studio/releases/platform-tools#downloads
     
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -383,10 +383,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           
@@ -404,10 +404,10 @@ https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -426,10 +426,10 @@ https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -446,10 +446,10 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
     
     <item>
       <title>Thinkpad T530</title>
-      <link>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-t530/</link>
+      <link>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</link>
       <pubDate>Sat, 23 Feb 2013 08:07:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-t530/</guid>
+      <guid>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</guid>
       <description>
         
           
@@ -466,10 +466,10 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
     
     <item>
       <title>PTool 修改 Panasonic G2</title>
-      <link>https://dennys.github.io/zh-tw/doc/camera/ptool-panasonic-g2/</link>
+      <link>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</link>
       <pubDate>Sat, 08 Dec 2012 18:17:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/camera/ptool-panasonic-g2/</guid>
+      <guid>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</guid>
       <description>
         
           
@@ -485,10 +485,10 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
     
     <item>
       <title>Thinkpad W530</title>
-      <link>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-w530/</link>
+      <link>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</link>
       <pubDate>Sat, 08 Sep 2012 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-w530/</guid>
+      <guid>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</guid>
       <description>
         
           
@@ -510,10 +510,10 @@ Power Adapter:
     
     <item>
       <title>2012 電腦升級</title>
-      <link>https://dennys.github.io/zh-tw/doc/hardware/2012-computer-upgrade/</link>
+      <link>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</link>
       <pubDate>Sun, 15 Jul 2012 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/hardware/2012-computer-upgrade/</guid>
+      <guid>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</guid>
       <description>
         
           
@@ -528,10 +528,10 @@ CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 
     
     <item>
       <title>Maven 4 - Others</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-4-others/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-4-others/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
       <description>
         
           
@@ -545,10 +545,10 @@ CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 
     
     <item>
       <title>Maven 3 - 打包 EJB, EAR</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-3-ejb-ear/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
       <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-3-ejb-ear/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
       <description>
         
           
@@ -563,10 +563,10 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 2 - 打包 war (含 applet)</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-2-war-applet/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
       <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-2-war-applet/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
       <description>
         
           
@@ -581,10 +581,10 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-1-jar-applet-sign/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
       <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
       <description>
         
           
@@ -599,10 +599,10 @@ descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打�
     
     <item>
       <title>XBMC (XBox, Windows 7) &#43; iPhone</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
       <pubDate>Wed, 03 Aug 2011 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
       <description>
         
           
@@ -618,10 +618,10 @@ XBMC Constellation: 我其實最剛開始是看到這個, 可以看一下這裡�
     
     <item>
       <title>設定 WebLogic 的 memory 參數</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/weblogic-memory-parameter/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</link>
       <pubDate>Fri, 02 Apr 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/weblogic-memory-parameter/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</guid>
       <description>
         
           
@@ -640,10 +640,10 @@ java.lang.OutOfMemoryError: PermGen space
     
     <item>
       <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</link>
+      <link>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</link>
       <pubDate>Thu, 04 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
       <description>
         
           
@@ -661,10 +661,10 @@ DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡�
     
     <item>
       <title>CDMA@wifi (Oleg) 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</guid>
       <description>
         
           
@@ -685,10 +685,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB
     
     <item>
       <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</link>
+      <link>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</link>
       <pubDate>Sat, 09 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
       <description>
         
           
@@ -706,10 +706,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
     
     <item>
       <title>Tomato DualWan 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</guid>
       <description>
         
           
@@ -724,10 +724,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
     
     <item>
       <title>XBMC Babylon 9.04 安裝筆記</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/xbmc-babylon-904/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</link>
       <pubDate>Thu, 24 Dec 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/xbmc-babylon-904/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</guid>
       <description>
         
           
@@ -744,10 +744,10 @@ XBMC Babylon Alpha 1 中文影片資料庫模式 XBMC Babylon Beta 1 and ESPN Vi
     
     <item>
       <title>WebLogic 和 NetWeaver 的 License</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/weblogic-netweaver-license/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</link>
       <pubDate>Sat, 08 Aug 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/weblogic-netweaver-license/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</guid>
       <description>
         
           
@@ -770,10 +770,10 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
     
     <item>
       <title>JDBC Leaked Connection in WebLogic</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
       <pubDate>Mon, 06 Jul 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
       <description>
         
           
@@ -788,10 +788,10 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
     
     <item>
       <title>如何對 Drupal 的 cron 做 Debug</title>
-      <link>https://dennys.github.io/zh-tw/doc/drupal/drupal-cron-debug/</link>
+      <link>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</link>
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/drupal/drupal-cron-debug/</guid>
+      <guid>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</guid>
       <description>
         
           
@@ -806,10 +806,10 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
     
     <item>
       <title>Command Line Deploy on NetWeaver</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-netweaver/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</link>
       <pubDate>Sun, 22 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-netweaver/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</guid>
       <description>
         
           
@@ -824,10 +824,10 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
     
     <item>
       <title>Command Line Deploy on WebLogic</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</link>
       <pubDate>Sat, 21 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</guid>
       <description>
         
           

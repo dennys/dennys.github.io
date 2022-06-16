@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google TV on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/google-tv/</link>
+    <link>https://dennys.github.io/tw/tags/google-tv/</link>
     <description>Recent content in Google TV on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/google-tv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/google-tv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google TV 如何擷圖 (screenshot)</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</guid>
       <description>
         
           
@@ -29,10 +29,10 @@
     
     <item>
       <title>Google TV 開關 Infocus 電視</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</guid>
       <description>
         
           
@@ -46,10 +46,10 @@
     
     <item>
       <title>Google TV 調整 Infocus 電視音量的妥協做法</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</guid>
       <description>
         
           
