@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/maven/</link>
+    <description>Recent content in Maven on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven 4 - Others</title>
+      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
+      <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
+      <description>
+        
+          
+            Package source code 在 multi module 的架構裡面, 因為都只有打包 .class 到 local repository 的 .jar 檔裡面. 因此在 Eclipse 裡面按 F3 是無法連結到 source code 的, 要使用 maven-source-plugin 把 source code 也打包到 local repository 才可以. 如果原始的檔名是 app-1.0.jar, 則 source 會被打包到 app-1.0-sources.jar goal 請使用 source:jar
+1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;!-- Attach sources to repository --&amp;gt; 4 &amp;lt;plugin&amp;gt; 5 &amp;lt;artifactId&amp;gt;maven-source-plugin&amp;lt;/artifactId&amp;gt; 6 &amp;lt;executions&amp;gt; 7 &amp;lt;execution&amp;gt; 8 &amp;lt;id&amp;gt;attach-sources&amp;lt;/id&amp;gt; 9 &amp;lt;phase&amp;gt;verify&amp;lt;/phase&amp;gt; 10 &amp;lt;goals&amp;gt; 11 &amp;lt;goal&amp;gt;jar&amp;lt;/goal&amp;gt; 12 &amp;lt;/goals&amp;gt; 13 &amp;lt;/execution&amp;gt; 14 &amp;lt;/executions&amp;gt; 15 &amp;lt;/plugin&amp;gt; 16 &amp;lt;/plugins&amp;gt; 17 &amp;lt;/build&amp;gt; 參考 http://maven.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Maven 3 - 打包 EJB, EAR</title>
+      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
+      <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
+      <description>
+        
+          
+            Ear 的打包 Ear 的打包分成兩階段, 第一個打包各個 ejb, 第二是把各個 ejb 加上 library 打包成 ear. 打包 ejb 的部分相對簡單, 如下. 最後會打包出 app-ejb1.jar (依據 finalName 的設定) 這個 ejb 檔案.
+EJB Client generateClient 是指定要產生一個 app-ejb1-client.jar 的檔案, 不過如果只加 generateClient 而沒有任何其他參數, 預設是只會過濾某幾個 pattern 而已, 請再加上 clientIncludes, clientExcludes 來過濾. 詳情可參考
+http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html 1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;plugin&amp;gt; 4 &amp;lt;groupid&amp;gt;org.apache.maven.plugins&amp;lt;/groupid&amp;gt; 5 &amp;lt;artifactid&amp;gt;maven-compiler-plugin&amp;lt;/artifactid&amp;gt; 6 &amp;lt;version&amp;gt;2.3.2&amp;lt;/version&amp;gt; 7 &amp;lt;configuration&amp;gt; 8 &amp;lt;source&amp;gt;&amp;lt;/source&amp;gt;1.6 9 &amp;lt;target&amp;gt;1.6&amp;lt;/target&amp;gt; 10 &amp;lt;/configuration&amp;gt; 11 &amp;lt;/plugin&amp;gt; 12 &amp;lt;plugin&amp;gt; 13 &amp;lt;groupid&amp;gt;org.apache.maven.plugins&amp;lt;/groupid&amp;gt; 14 &amp;lt;artifactid&amp;gt;maven-ejb-plugin&amp;lt;/artifactid&amp;gt; 15 &amp;lt;version&amp;gt;2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Maven 2 - 打包 war (含 applet)</title>
+      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
+      <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
+      <description>
+        
+          
+            在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的目錄結構放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).
+另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:
+先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local repository 裡面去. 使用 maven-dependency-plugin 的 copy, 將 applet 放到指定的目錄. 這裡因為要放到 root, 所以指定的是 ${project.build.directory}/app-war-1.0. 後面的 &amp;quot;app-war-1.0&amp;quot; 請依照實際的專案修改. 1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;plugin&amp;gt; 4 &amp;lt;artifactid&amp;gt;maven-dependency-plugin&amp;lt;/artifactid&amp;gt; 5 &amp;lt;version&amp;gt;2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
+      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
+      <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <description>
+        
+          
+            Maven 1 - 打包 Jar, Applet 並簽名 Sign&#39;,&#39;Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.
+以下是要把 Applet 程式打包的寫法, 幾個重點:
+descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, 則會打包成 app-client-1.0-jar-with-dependencies.jar appendAssemblyId 設成 false, 這樣產生出來的 jar 檔案名稱才不會有 -with-dependencies 的字 phase 請指定 package, 這樣才會把需要的 class 都打包進去 goal 請使用 assembly:single (不指定也可以, 有 package 也會執行到這裡) 注意, maven-assembly-plugin 一定要用 2.2-beta-5, 用 2.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

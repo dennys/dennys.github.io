@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galaxy S7 on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/galaxy-s7/</link>
+    <description>Recent content in Galaxy S7 on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/galaxy-s7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <description>
+        
+          
+            注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+注意: 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+======================================================
+需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
+最有名的 LineageOS 15~19 (Android 8~12) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 請先在電腦安裝以下兩個程式 Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19: https://forum.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
