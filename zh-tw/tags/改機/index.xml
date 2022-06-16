@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>改機 on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/%E6%94%B9%E6%A9%9F/</link>
+    <link>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</link>
     <description>Recent content in 改機 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>更新 Unlock 過的 Pixel 5</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/update-unlocked-pixel5/</link>
+      <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
       <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/update-unlocked-pixel5/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</guid>
       <description>
         
           
@@ -36,10 +36,10 @@ fastboot reboot
     
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -58,10 +58,10 @@ fastboot reboot
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -83,10 +83,10 @@ fastboot reboot
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -105,10 +105,10 @@ fastboot reboot
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -130,10 +130,10 @@ https://developer.android.com/studio/releases/platform-tools#downloads
     
     <item>
       <title>如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
       <pubDate>Fri, 28 Jan 2022 18:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
       <description>
         
           
@@ -153,10 +153,10 @@ https://developer.android.com/studio/releases/platform-tools#downloads
     
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -174,10 +174,10 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           
@@ -195,10 +195,10 @@ https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -217,10 +217,10 @@ https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -237,10 +237,10 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
     
     <item>
       <title>PTool 修改 Panasonic G2</title>
-      <link>https://dennys.github.io/zh-tw/doc/camera/ptool-panasonic-g2/</link>
+      <link>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</link>
       <pubDate>Sat, 08 Dec 2012 18:17:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/camera/ptool-panasonic-g2/</guid>
+      <guid>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</guid>
       <description>
         
           
@@ -256,10 +256,10 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
     
     <item>
       <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</link>
+      <link>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</link>
       <pubDate>Thu, 04 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
       <description>
         
           
@@ -277,10 +277,10 @@ DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡�
     
     <item>
       <title>CDMA@wifi (Oleg) 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</guid>
       <description>
         
           
@@ -301,10 +301,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB
     
     <item>
       <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</link>
+      <link>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</link>
       <pubDate>Sat, 09 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
       <description>
         
           
@@ -322,10 +322,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
     
     <item>
       <title>Tomato DualWan 之 3G 上網</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</guid>
       <description>
         
           

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennys.github.io/zh-tw/categories/</loc>
+    <loc>https://dennys.github.io/tw/categories/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -12,10 +12,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/categories/"
+                href="https://dennys.github.io/tw/categories/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/</loc>
+    <loc>https://dennys.github.io/tw/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -25,10 +25,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/"
+                href="https://dennys.github.io/tw/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/</loc>
+    <loc>https://dennys.github.io/tw/doc/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -38,22 +38,22 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/doc/"
+                href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/google-tv/</loc>
+    <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</loc>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</loc>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</loc>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/it/</loc>
+    <loc>https://dennys.github.io/tw/categories/it/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -63,13 +63,13 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/categories/it/"
+                href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/software/</loc>
+    <loc>https://dennys.github.io/tw/categories/software/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/</loc>
+    <loc>https://dennys.github.io/tw/tags/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -79,10 +79,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/tags/"
+                href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/about/</loc>
+    <loc>https://dennys.github.io/tw/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -92,64 +92,64 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/about/"
+                href="https://dennys.github.io/tw/about/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/android/</loc>
+    <loc>https://dennys.github.io/tw/categories/android/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/%E6%94%B9%E6%A9%9F/</loc>
+    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/update-unlocked-pixel5/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/vnc/</loc>
+    <loc>https://dennys.github.io/tw/tags/vnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/youtube/</loc>
+    <loc>https://dennys.github.io/tw/tags/youtube/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/software/download-youtube-private-video/</loc>
+    <loc>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/software/realvnc/</loc>
+    <loc>https://dennys.github.io/tw/doc/software/realvnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/openvpn/</loc>
+    <loc>https://dennys.github.io/tw/tags/openvpn/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/vpn/</loc>
+    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-openvpn-server/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/android-do-not-disturb/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</loc>
     <lastmod>2022-05-23T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/google-maps-bluetooth-voice-music/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</loc>
     <lastmod>2022-04-20T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/gmail-notify-delete-archive/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</loc>
     <lastmod>2022-04-20T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/pixel-5/</loc>
+    <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
     <lastmod>2022-04-10T00:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/android-12-lock-screen-double-line-clock/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</loc>
     <lastmod>2022-04-10T00:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/android-remove-root-magisk/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/galaxy-s7/</loc>
+    <loc>https://dennys.github.io/tw/tags/galaxy-s7/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/ifttt/</loc>
+    <loc>https://dennys.github.io/tw/tags/ifttt/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -159,160 +159,160 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/tags/ifttt/"
+                href="https://dennys.github.io/tw/tags/ifttt/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</loc>
+    <loc>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/line/</loc>
+    <loc>https://dennys.github.io/tw/tags/line/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/magisk/</loc>
+    <loc>https://dennys.github.io/tw/tags/magisk/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/root/</loc>
+    <loc>https://dennys.github.io/tw/tags/root/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/samsung-galaxy-s7-edge-lineageos/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/google-pixel-5-root-magisk/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</loc>
     <lastmod>2022-03-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/android-12-wifi-mobile-data-toggles/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</loc>
     <lastmod>2022-01-28T18:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion-youtube/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</loc>
     <lastmod>2020-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/asuswrt-merlin/</loc>
+    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
     <lastmod>2020-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/router/</loc>
+    <loc>https://dennys.github.io/tw/categories/router/</loc>
     <lastmod>2020-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/htc-u-ultra/</loc>
+    <loc>https://dennys.github.io/tw/tags/htc-u-ultra/</loc>
     <lastmod>2020-01-30T08:04:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/android/htc-u-ultra-root/</loc>
+    <loc>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</loc>
     <lastmod>2020-01-30T08:04:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</loc>
     <lastmod>2020-01-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/rt-ac66u/</loc>
+    <loc>https://dennys.github.io/tw/tags/rt-ac66u/</loc>
     <lastmod>2020-01-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-diversion/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</loc>
     <lastmod>2020-01-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/posts/201310/suv-7/</loc>
+    <loc>https://dennys.github.io/tw/posts/201310/suv-7/</loc>
     <lastmod>2013-10-14T00:09:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/posts/</loc>
+    <loc>https://dennys.github.io/tw/posts/</loc>
     <lastmod>2013-10-14T00:09:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/thinkpad/</loc>
+    <loc>https://dennys.github.io/tw/tags/thinkpad/</loc>
     <lastmod>2013-02-23T08:07:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-t530/</loc>
+    <loc>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</loc>
     <lastmod>2013-02-23T08:07:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/camera/</loc>
+    <loc>https://dennys.github.io/tw/categories/camera/</loc>
     <lastmod>2012-12-08T18:17:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/camera/ptool-panasonic-g2/</loc>
+    <loc>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</loc>
     <lastmod>2012-12-08T18:17:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/hardware/thinkpad-w530/</loc>
+    <loc>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</loc>
     <lastmod>2012-09-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/hardware/2012-computer-upgrade/</loc>
+    <loc>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</loc>
     <lastmod>2012-07-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/java/</loc>
+    <loc>https://dennys.github.io/tw/tags/java/</loc>
     <lastmod>2011-09-30T22:40:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/java/</loc>
+    <loc>https://dennys.github.io/tw/categories/java/</loc>
     <lastmod>2011-09-30T22:40:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/maven/</loc>
+    <loc>https://dennys.github.io/tw/tags/maven/</loc>
     <lastmod>2011-09-30T22:40:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/maven-4-others/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/maven-4-others/</loc>
     <lastmod>2011-09-30T22:40:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/maven-3-ejb-ear/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</loc>
     <lastmod>2011-09-29T10:37:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/maven-2-war-applet/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</loc>
     <lastmod>2011-09-28T22:37:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/maven-1-jar-applet-sign/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</loc>
     <lastmod>2011-09-27T20:49:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/xbmc/</loc>
+    <loc>https://dennys.github.io/tw/tags/xbmc/</loc>
     <lastmod>2011-08-03T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/software/xbmc-xbox-windows-7-iphone/</loc>
+    <loc>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</loc>
     <lastmod>2011-08-03T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/posts/201008/2010-car-accident/</loc>
+    <loc>https://dennys.github.io/tw/posts/201008/2010-car-accident/</loc>
     <lastmod>2010-08-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/</loc>
+    <loc>https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/</loc>
     <lastmod>2010-08-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/weblogic-memory-parameter/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</loc>
     <lastmod>2010-04-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/dd-wrt-3g-lly-driver/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</loc>
     <lastmod>2010-03-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/cdma-wifi-oleg-3g/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</loc>
     <lastmod>2010-03-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/asus-wl-500gp-v1-35g/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</loc>
     <lastmod>2010-01-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/router/tomato-dualwan-3g/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</loc>
     <lastmod>2010-01-03T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/posts/201001/2010-elevator/</loc>
+    <loc>https://dennys.github.io/tw/posts/201001/2010-elevator/</loc>
     <lastmod>2010-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/software/xbmc-babylon-904/</loc>
+    <loc>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</loc>
     <lastmod>2009-12-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/weblogic-netweaver-license/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</loc>
     <lastmod>2009-08-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/jdbc-leaked-connection-in-weblogic/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</loc>
     <lastmod>2009-07-06T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/tags/drupal/</loc>
+    <loc>https://dennys.github.io/tw/tags/drupal/</loc>
     <lastmod>2009-03-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/drupal/drupal-cron-debug/</loc>
+    <loc>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</loc>
     <lastmod>2009-03-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-netweaver/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</loc>
     <lastmod>2009-03-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/java/command-line-deploy-on-weblogic/</loc>
+    <loc>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</loc>
     <lastmod>2009-03-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/doc/database/sql-command/</loc>
+    <loc>https://dennys.github.io/tw/doc/database/sql-command/</loc>
     <lastmod>2005-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/blog/2005/05/05/how-to-analyze-size-of-table-index/</loc>
+    <loc>https://dennys.github.io/tw/blog/2005/05/05/how-to-analyze-size-of-table-index/</loc>
     <lastmod>2005-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/posts/200308/blog-initial/</loc>
+    <loc>https://dennys.github.io/tw/posts/200308/blog-initial/</loc>
     <lastmod>2003-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/zh-tw/series/</loc>
+    <loc>https://dennys.github.io/tw/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -321,7 +321,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/zh-tw/series/"
+                href="https://dennys.github.io/tw/series/"
                 />
   </url>
 </urlset>

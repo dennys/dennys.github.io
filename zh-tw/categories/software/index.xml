@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/categories/software/</link>
+    <link>https://dennys.github.io/tw/categories/software/</link>
     <description>Recent content in software on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google TV 如何擷圖 (screenshot)</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-screenshot/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</guid>
       <description>
         
           
@@ -29,10 +29,10 @@
     
     <item>
       <title>Google TV 開關 Infocus 電視</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-power-on-off/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</guid>
       <description>
         
           
@@ -46,10 +46,10 @@
     
     <item>
       <title>Google TV 調整 Infocus 電視音量的妥協做法</title>
-      <link>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/google_tv/googletv-volume-up-down/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</guid>
       <description>
         
           
@@ -63,10 +63,10 @@
     
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/download-youtube-private-video/</link>
+      <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/download-youtube-private-video/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</guid>
       <description>
         
           
@@ -82,10 +82,10 @@
     
     <item>
       <title>無聲無影遠端桌面連線 - VNC</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/realvnc/</link>
+      <link>https://dennys.github.io/tw/doc/software/realvnc/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/realvnc/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/realvnc/</guid>
       <description>
         
           
@@ -100,10 +100,10 @@
     
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
       <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
       <description>
         
           
@@ -118,10 +118,10 @@
     
     <item>
       <title>XBMC (XBox, Windows 7) &#43; iPhone</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
       <pubDate>Wed, 03 Aug 2011 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
       <description>
         
           
@@ -137,10 +137,10 @@ XBMC Constellation: 我其實最剛開始是看到這個, 可以看一下這裡�
     
     <item>
       <title>XBMC Babylon 9.04 安裝筆記</title>
-      <link>https://dennys.github.io/zh-tw/doc/software/xbmc-babylon-904/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</link>
       <pubDate>Thu, 24 Dec 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/software/xbmc-babylon-904/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</guid>
       <description>
         
           

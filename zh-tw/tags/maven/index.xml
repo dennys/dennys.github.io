@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maven on Dennys Diary</title>
-    <link>https://dennys.github.io/zh-tw/tags/maven/</link>
+    <link>https://dennys.github.io/tw/tags/maven/</link>
     <description>Recent content in Maven on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/zh-tw/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/maven/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maven 4 - Others</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-4-others/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-4-others/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
       <description>
         
           
@@ -27,10 +27,10 @@
     
     <item>
       <title>Maven 3 - 打包 EJB, EAR</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-3-ejb-ear/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
       <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-3-ejb-ear/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
       <description>
         
           
@@ -45,10 +45,10 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 2 - 打包 war (含 applet)</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-2-war-applet/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
       <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-2-war-applet/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
       <description>
         
           
@@ -63,10 +63,10 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
-      <link>https://dennys.github.io/zh-tw/doc/java/maven-1-jar-applet-sign/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
       <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/zh-tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
       <description>
         
           
