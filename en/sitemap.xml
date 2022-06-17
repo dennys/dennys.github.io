@@ -4,16 +4,6 @@
   <url>
     <loc>https://dennys.github.io/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/about/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/.net/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
@@ -22,7 +12,7 @@
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/categories/"
                 />
     <xhtml:link
@@ -35,7 +25,7 @@
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
     <xhtml:link
@@ -51,7 +41,7 @@
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/doc/"
                 />
     <xhtml:link
@@ -67,7 +57,7 @@
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
     <xhtml:link
@@ -80,7 +70,7 @@
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/"
                 />
     <xhtml:link
@@ -96,7 +86,7 @@
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/ifttt/"
                 />
     <xhtml:link
@@ -128,7 +118,7 @@
     <loc>https://dennys.github.io/en/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/"
                 />
     <xhtml:link
