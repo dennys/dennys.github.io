@@ -464,6 +464,25 @@ Diversion 安裝 在上面的 JFFS 安裝好後, JFFS 一開始會掛在 /dev/sd
     </item>
     
     <item>
+      <title>PTool 修改 Panasonic G2</title>
+      <link>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</link>
+      <pubDate>Sat, 08 Dec 2012 18:17:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</guid>
+      <description>
+        
+          
+            PTool PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
+功能 Basic Version incremental (打勾) Prevent version compare (打勾) FPS change G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps
+720p59,94fps-&amp;gt;29.97 PAL &amp;lt;-&amp;gt; NTSC Manual movie mode Manual Movie Modes (打勾) 手動錄影的操作方式如下 (不需要轉到錄影模式)
+開機 選 PASM 任一種 按下 Menu/Set 再按一下 Menu/Set 這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了. 流量 這個研究中, 雖然改了 potplayer 可以看到 Overall Bitrate 變了, 但檔案大小和實際流量似乎還是一樣?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Maven 4 - Others</title>
       <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
