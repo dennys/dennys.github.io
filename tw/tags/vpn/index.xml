@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jun 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVPN server</title>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
+      <pubDate>Fri, 17 Jun 2022 00:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
+      <description>
+        
+          
+            需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
+方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
+1apt update &amp;amp;&amp;amp; apt -y install ca-certificates wget net-tools gnupg 2wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add - 3echo &amp;#34;deb http://as-repository.openvpn.net/as/debian focal main&amp;#34;&amp;gt;/etc/apt/sources.list.d/openvpn-as-repo.list 4apt update &amp;amp;&amp;amp; apt -y install openvpn-as 最後一個指令的最後面請注意, 他會產生一個 admin 的密碼
+1To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool. 2 3+++++++++++++++++++++++++++++++++++++++++++++++ 4Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as 5Configuration log file has been written to /usr/local/openvpn_as/init.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
       <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>

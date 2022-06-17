@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,20 +41,8 @@
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -66,11 +54,17 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/categories/software/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/openvpn/</loc>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/openvpn-server/</loc>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -82,10 +76,41 @@
                 href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
+    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/google-tv/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/categories/android/</loc>
+    <loc>https://dennys.github.io/tw/tags/android/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
@@ -93,6 +118,19 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/software/</loc>
+    <lastmod>2022-06-02T10:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/software/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/vnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
@@ -103,14 +141,8 @@
     <loc>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/doc/software/realvnc/</loc>
+    <loc>https://dennys.github.io/tw/doc/network/realvnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/openvpn/</loc>
-    <lastmod>2022-06-01T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
-    <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
@@ -123,9 +155,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</loc>
     <lastmod>2022-04-20T10:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
-    <lastmod>2022-04-10T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</loc>
     <lastmod>2022-04-10T00:18:32+08:00</lastmod>
@@ -161,6 +190,9 @@
     <loc>https://dennys.github.io/tw/tags/magisk/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
+    <lastmod>2022-03-25T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/root/</loc>
     <lastmod>2022-03-25T00:00:00+08:00</lastmod>
   </url><url>
@@ -179,7 +211,7 @@
     <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
     <lastmod>2020-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/categories/router/</loc>
+    <loc>https://dennys.github.io/tw/tags/router/</loc>
     <lastmod>2020-06-10T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/htc-u-ultra/</loc>
@@ -189,9 +221,6 @@
     <lastmod>2020-01-30T08:04:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</loc>
-    <lastmod>2020-01-27T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/rt-ac66u/</loc>
     <lastmod>2020-01-27T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</loc>
@@ -222,9 +251,6 @@
     <lastmod>2012-07-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/java/</loc>
-    <lastmod>2011-09-30T22:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/categories/java/</loc>
     <lastmod>2011-09-30T22:40:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/maven/</loc>
@@ -301,17 +327,5 @@
   </url><url>
     <loc>https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/</loc>
     <lastmod>2003-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
   </url>
 </urlset>

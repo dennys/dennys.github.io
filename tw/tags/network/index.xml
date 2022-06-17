@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/network/</link>
+    <description>Recent content in Network on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 17 Jun 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVPN server</title>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
+      <pubDate>Fri, 17 Jun 2022 00:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
+      <description>
+        
+          
+            需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
+方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
+1apt update &amp;amp;&amp;amp; apt -y install ca-certificates wget net-tools gnupg 2wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add - 3echo &amp;#34;deb http://as-repository.openvpn.net/as/debian focal main&amp;#34;&amp;gt;/etc/apt/sources.list.d/openvpn-as-repo.list 4apt update &amp;amp;&amp;amp; apt -y install openvpn-as 最後一個指令的最後面請注意, 他會產生一個 admin 的密碼
+1To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool. 2 3+++++++++++++++++++++++++++++++++++++++++++++++ 4Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as 5Configuration log file has been written to /usr/local/openvpn_as/init.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>無聲無影遠端桌面連線 - VNC</title>
+      <link>https://dennys.github.io/tw/doc/network/realvnc/</link>
+      <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/realvnc/</guid>
+      <description>
+        
+          
+            需求 需要一個遠端登入的功能, 要做到以下幾項功能
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &amp;quot;看&amp;quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 方法 (Server 端) 測試了一下, TeamViewer 和 AnyDesk 都做不出來這種功能, 目前是只有看到 RealVNC可以做到, 就先用這個測試.
+先下載 RealVNC server (從這裡下載: https://www.realvnc.com/en/connect/download/vnc/) 打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
