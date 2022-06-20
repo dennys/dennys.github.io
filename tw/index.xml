@@ -9,7 +9,7 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>如何貼有 syntax highlighting 的 code 到 Word</title>
+      <title>如何讓 Word 裡面的 code 有 syntax highlighting (語法突顯)</title>
       <link>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0800</pubDate>
       
@@ -17,7 +17,7 @@
       <description>
         
           
-            在 Word 要貼 code 上去, 常常格式會跑掉, 一個一個去設定不但麻煩也不漂亮. 找到一個簡單的方法可以有 syntax highlighting, 先把 code 放在 Notepad++, 然後依照下圖執行功能表上的 Plugins -&amp;gt; NppExport -&amp;gt; Copy all formats to clipboard. 再來就到 Word 直接貼上即可, 在 Word 看到的結果如下, 有需要的話, 可再調整一下列的高度 實務上還有很多做法, 可參考 https://stackoverflow.com/questions/387453/
+            在 Word 貼 code 上去之後, 格式幾乎都會跑掉, 一個一個去設定不但麻煩也不漂亮. 找到一個簡單的方法可以讓 Word 裡面的 code 也有 syntax highlighting. 方法很簡單, 先把 code 放在 Notepad++, 然後依照下圖執行功能表上的 Plugins -&amp;gt; NppExport -&amp;gt; Copy all formats to clipboard. NppExport 是 Notepad++ 內建的 plugin, 他就會把加上 syntax highlighting 的 code 複製到 clipboard. 再來就到 Word 直接貼上即可, 在 Word 看到的結果如下, 有需要的話, 可再調整一下列的高度 實務上還有很多做法, 可參考 https://stackoverflow.com/questions/387453/
           
           
         
