@@ -31,6 +31,19 @@
                 href="https://dennys.github.io/tw/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/doc/</loc>
+    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -43,9 +56,6 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
-  </url><url>
-    <loc>https://dennys.github.io/tw/posts/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
@@ -63,21 +73,8 @@
     <loc>https://dennys.github.io/tw/tags/word/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/posts/draft/word-with-syntax-highlighting-code/</loc>
+    <loc>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2022-06-17T00:18:32+08:00</lastmod>
@@ -239,6 +236,9 @@
     <lastmod>2020-01-24T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/posts/201310/suv-7/</loc>
+    <lastmod>2013-10-14T00:09:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/posts/</loc>
     <lastmod>2013-10-14T00:09:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/thinkpad/</loc>
