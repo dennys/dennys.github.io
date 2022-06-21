@@ -57,6 +57,19 @@
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2022-06-21T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/software/</loc>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/software/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
     <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -69,6 +82,9 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</loc>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</loc>
     <lastmod>2022-06-21T00:00:00+08:00</lastmod>
@@ -130,19 +146,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/software/</loc>
-    <lastmod>2022-06-02T10:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/software/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/vnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>

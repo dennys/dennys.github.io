@@ -9,7 +9,28 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>點對點網路測速軟體 iPerf3 </title>
+      <title>使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</title>
+      <link>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</guid>
+      <description>
+        
+          
+            需求 需要產生自訂大小的測試檔案, 看情境可以壓縮或不可以壓縮
+使用 fsutil 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
+1C:\&amp;gt; rfsutil file createnew test 100000000 2檔案 C:\Hugo\site\blog\test 已經建立 3 4C:\&amp;gt; dir test 5 6 C:\&amp;gt; 的目錄 7 82022/06/21 上午 10:29 100,000,000 test 9 1 個檔案 100,000,000 位元組 10 0 個目錄 623,477,620,736 位元組可用 優點: Windows 內建指令
+缺點
+只能產生一個檔案 這個檔案是可以壓縮的 (用 Notepad++ 打開就會看到一堆 NUL) 檔案 size 不太直覺, 如果要產生 100M, 1G, 10G 的檔案, 得在那邊算很多位數 使用 NonCompressibleFiles, 好處很多
+Portable, 免安裝, 下載即可 可產生自訂大小, 自訂個數的檔案 可選擇這個檔案是可壓縮或不可壓縮 檔案大小的部分從 10KB, 100KB, 1MB, .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>點對點網路測速軟體 iPerf3</title>
       <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       

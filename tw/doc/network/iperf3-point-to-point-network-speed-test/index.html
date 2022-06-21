@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>點對點網路測速軟體 iPerf3  | Dennys Diary</title>
+<title>點對點網路測速軟體 iPerf3 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +31,10 @@
 安裝方法 (Server 和 Client 是同一個程式) …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="點對點網路測速軟體 iPerf3 " />
+<meta name="twitter:title" content="點對點網路測速軟體 iPerf3" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" />
-<meta property="og:title" content="點對點網路測速軟體 iPerf3 " />
+<meta property="og:title" content="點對點網路測速軟體 iPerf3" />
 <meta property="og:description" content="需求 需要一個測試點對點網路速度的軟體, 要有以下幾項功能
 免費 支援 Windows 和 Linux 只測網路, 不測 I/O 有簡易報表 找了一下, iPerf3 算是符合需求
 安裝方法 (Server 和 Client 是同一個程式) …" />
@@ -169,14 +169,14 @@
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3%20&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&t=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3%20" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&t=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -272,6 +272,7 @@
 </ol>
 <h2 id="後記">後記</h2>
 <ol>
+<li>iPerf3 預設是測試 <em><strong>upload</strong></em> 的速度, 若要測試 <em><strong>download</strong></em>, 請記得加上 <em><strong>-R</strong></em> 參數</li>
 <li>有個不錯的地方是, 他的 server 端也會有 log, 如下, 這樣很方便.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">-----------------------------------------------------------
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">Server listening on 5201
@@ -303,7 +304,7 @@
 </span></span><span class="line"><span class="ln">28</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
 </span></span><span class="line"><span class="ln">29</span><span class="cl">[ ID] Interval           Transfer     Bitrate
 </span></span><span class="line"><span class="ln">30</span><span class="cl">[  5]   0.00-20.02  sec   971 MBytes   407 Mbits/sec                  receiver
-</span></span></code></pre></div>``</li>
+</span></span></code></pre></div></li>
 </ol>
 
     </div>
@@ -351,6 +352,9 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/tw/doc/software/noncompressiblefiles/" class="nav-link" title="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案">使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" class="nav-link" title="如何讓 Word 裡面的 code 有 syntax highlighting (語法突顯)">如何讓 Word 裡面的 code 有 syntax highlighting (語法突顯)</a>
       </li>
       <li>
@@ -371,16 +375,13 @@
       <li>
         <a href="https://dennys.github.io/tw/doc/software/download-youtube-private-video/" class="nav-link" title="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)">如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/network/realvnc/" class="nav-link" title="無聲無影遠端桌面連線 - VNC">無聲無影遠端桌面連線 - VNC</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">分類</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">41</span>
+          <span class="button_tally">42</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -440,6 +441,11 @@
           <span class="button_tally">4</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">4</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
           ASUSWRT-MERLIN
           <span class="button_tally">3</span>
@@ -457,11 +463,6 @@
         
         <a href='https://dennys.github.io/tw/tags/root/' class="post_tag button button_translucent" title="root">
           ROOT
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">3</span>
         </a>
         
@@ -545,7 +546,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=3 title="software">SOFTWARE<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
             </a>
             
             
