@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennys.github.io/tw/comments/</loc>
-    <lastmod>2022-06-20T00:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,7 +42,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,8 +54,11 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-06-20T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -70,14 +70,17 @@
                 href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</loc>
+    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/comments/</loc>
+    <lastmod>2022-06-20T00:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/word/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</loc>
     <lastmod>2022-06-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/network/</loc>
-    <lastmod>2022-06-17T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/openvpn/</loc>
     <lastmod>2022-06-17T00:18:32+08:00</lastmod>

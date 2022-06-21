@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Maven 1 - 打包 Jar, Applet 並簽名 Sign | Dennys Diary</title>
+<title>點對點網路測速軟體 iPerf3  | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,25 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Maven 1 - 打包 Jar, Applet 並簽名 Sign&#39;,&#39;Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則 …" />
+<meta name="description" content="需求 需要一個測試點對點網路速度的軟體, 要有以下幾項功能
+免費 支援 Windows 和 Linux 只測網路, 不測 I/O 有簡易報表 找了一下, iPerf3 算是符合需求
+安裝方法 (Server 和 Client 是同一個程式) …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="Maven 1 - 打包 Jar, Applet 並簽名 Sign" />
+<meta name="twitter:title" content="點對點網路測速軟體 iPerf3 " />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" />
-<meta property="og:title" content="Maven 1 - 打包 Jar, Applet 並簽名 Sign" />
-<meta property="og:description" content="Maven 1 - 打包 Jar, Applet 並簽名 Sign&#39;,&#39;Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則 …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" />
+<meta property="og:title" content="點對點網路測速軟體 iPerf3 " />
+<meta property="og:description" content="需求 需要一個測試點對點網路速度的軟體, 要有以下幾項功能
+免費 支援 Windows 和 Linux 只測網路, 不測 I/O 有簡易報表 找了一下, iPerf3 算是符合需求
+安裝方法 (Server 和 Client 是同一個程式) …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/">
 
 
 
@@ -150,7 +154,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Maven 1 - 打包 Jar, Applet 並簽名 Sign</h1>
+    <h1 class="post_title">點對點網路測速軟體 iPerf3</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -158,22 +162,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Sep 27, 2011</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
-        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
+      Jun 21, 2022</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3%20&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&t=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fiperf3-point-to-point-network-speed-test%2f&t=%e9%bb%9e%e5%b0%8d%e9%bb%9e%e7%b6%b2%e8%b7%af%e6%b8%ac%e9%80%9f%e8%bb%9f%e9%ab%94%20iPerf3%20" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -187,7 +190,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -198,108 +201,110 @@
   </span>
   </div>
 
-    <div class="post_body"><p>Maven 1 - 打包 Jar, Applet 並簽名 Sign','Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.</p>
-<p>以下是要把 Applet 程式打包的寫法, 幾個重點:</p>
-<ul>
-<li>descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, 則會打包成 app-client-1.0-jar-with-dependencies.jar</li>
-<li>appendAssemblyId 設成 false, 這樣產生出來的 jar 檔案名稱才不會有 <em><strong>-with-dependencies</strong></em> 的字</li>
-<li>phase 請指定 package, 這樣才會把需要的 class 都打包進去</li>
-<li>goal 請使用 assembly:single (不指定也可以, 有 package 也會執行到這裡)</li>
-<li>注意, maven-assembly-plugin 一定要用 2.2-beta-5, 用 2.2 或 2.2.1 都會有問題 (這感覺不太合理, 不過測試結果目前就是這樣, 或許是我哪裡弄錯了)</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">&lt;pre</span> <span class="na">class=</span><span class="s">&#34;brush: xml&#34;</span> <span class="na">title=</span><span class="s">&#34;Client 的 pom.xml (打包用)&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  <span class="nt">&lt;build&gt;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="nt">&lt;plugins&gt;</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-compiler-plugin<span class="nt">&lt;/artifactid&gt;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3.2<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">          <span class="nt">&lt;source&gt;&lt;/source&gt;</span>1.6
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&lt;target&gt;</span>1.6<span class="nt">&lt;/target&gt;</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-assembly-plugin<span class="nt">&lt;/artifactid&gt;</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.2-beta-5<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl">          <span class="nt">&lt;descriptorrefs&gt;</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">            <span class="nt">&lt;descriptorref&gt;</span>jar-with-dependencies<span class="nt">&lt;/descriptorref&gt;</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl">          <span class="nt">&lt;/descriptorrefs&gt;</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl">          <span class="nt">&lt;finalname&gt;</span>${project.build.finalName}<span class="nt">&lt;/finalname&gt;</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl">          <span class="nt">&lt;appendassemblyid&gt;</span>false<span class="nt">&lt;/appendassemblyid&gt;</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl">          <span class="nt">&lt;archive&gt;</span>
-</span></span><span class="line"><span class="ln">23</span><span class="cl">            <span class="nt">&lt;index&gt;</span>true<span class="nt">&lt;/index&gt;</span>
-</span></span><span class="line"><span class="ln">24</span><span class="cl">            <span class="nt">&lt;manifest&gt;</span>
-</span></span><span class="line"><span class="ln">25</span><span class="cl">              <span class="nt">&lt;adddefaultimplementationentries&gt;</span>true<span class="nt">&lt;/adddefaultimplementationentries&gt;</span>
-</span></span><span class="line"><span class="ln">26</span><span class="cl">            <span class="nt">&lt;/manifest&gt;</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl">          <span class="nt">&lt;/archive&gt;</span>
-</span></span><span class="line"><span class="ln">28</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
-</span></span><span class="line"><span class="ln">29</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
-</span></span><span class="line"><span class="ln">30</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
-</span></span><span class="line"><span class="ln">31</span><span class="cl">            <span class="nt">&lt;phase&gt;</span>package<span class="nt">&lt;/phase&gt;</span>
-</span></span><span class="line"><span class="ln">32</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
-</span></span><span class="line"><span class="ln">33</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>single<span class="nt">&lt;/goal&gt;</span>
-</span></span><span class="line"><span class="ln">34</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
-</span></span><span class="line"><span class="ln">35</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
-</span></span><span class="line"><span class="ln">36</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
-</span></span><span class="line"><span class="ln">37</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
-</span></span><span class="line"><span class="ln">38</span><span class="cl">    <span class="nt">&lt;/plugins&gt;</span>
-</span></span><span class="line"><span class="ln">39</span><span class="cl">  <span class="nt">&lt;/build&gt;</span>
-</span></span></code></pre></div><p>簽名的部分, 使用 maven-jarsigner-plugin 來做簽名即可.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-jarsigner-plugin<span class="nt">&lt;/artifactid&gt;</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;version&gt;</span>1.2<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            <span class="nt">&lt;id&gt;</span>sign<span class="nt">&lt;/id&gt;</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>sign<span class="nt">&lt;/goal&gt;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl">          <span class="nt">&lt;keystore&gt;</span>${basedir}\\key\\xxxx.store<span class="nt">&lt;/keystore&gt;</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">          <span class="nt">&lt;alias&gt;</span>xxxxkey<span class="nt">&lt;/alias&gt;</span>
-</span></span><span class="line"><span class="ln">16</span><span class="cl">          <span class="nt">&lt;storepass&gt;</span>yourpassword<span class="nt">&lt;/storepass&gt;</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
-</span></span></code></pre></div><p>實際上他會呼叫 jarsigner.exe 來做簽名的動作, 可以在 console 看到 log如下 (因為是 debug level, 所以要把 Maven 開到 debug mode 才看得到)```</p>
-<p><code>[debug] Executing: cmd.exe /X /C \&quot;...\\jarsigner.exe -verify ...\\app-client-1.0.jar\&quot;</code></p>
-<p>另外, 也可以使用 maven-jar-plugin, 效果和 maven-jarsigner-plugin 是一樣的. 但是在 jar-plugin 2.3 以後, <a href="http://maven.apache.org/plugins/maven-jar-plugin/sign-mojo.html/">jar:sign 已經不被建議使用</a>, 請改用 jarsigner-plugin. 比較特別的是, jar-plugin 可以指定 signedjar 把簽名過的檔案放到其他目錄, 而 jarsigner-plugin 似乎沒有這個功能.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-jar-plugin<span class="nt">&lt;/artifactid&gt;</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="nt">&lt;version&gt;</span>2.3.1<span class="nt">&lt;/version&gt;</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="nt">&lt;executions&gt;</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">          <span class="nt">&lt;execution&gt;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">            <span class="nt">&lt;goals&gt;</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">              <span class="nt">&lt;goal&gt;</span>sign<span class="nt">&lt;/goal&gt;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">            <span class="nt">&lt;/goals&gt;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">          <span class="nt">&lt;/execution&gt;</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="nt">&lt;/executions&gt;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="nt">&lt;configuration&gt;</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">          <span class="nt">&lt;keystore&gt;</span>${basedir}\\key\\xxxx.store<span class="nt">&lt;/keystore&gt;</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl">          <span class="nt">&lt;alias&gt;</span>xxxxkey<span class="nt">&lt;/alias&gt;</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">          <span class="nt">&lt;storepass&gt;</span>yourpassword<span class="nt">&lt;/storepass&gt;</span>
-</span></span><span class="line"><span class="ln">16</span><span class="cl">          
-</span></span><span class="line"><span class="ln">17</span><span class="cl">          <span class="nt">&lt;verify&gt;</span>true<span class="nt">&lt;/verify&gt;</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">        <span class="nt">&lt;/configuration&gt;</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
-</span></span></code></pre></div><p>喔, 講了那麼多, 都沒有提到 Jar... 其實 Applet 就是一個 Jar, 所以用上面 Applet 的方式就可以了. 差別在於 Jar 一般來說不需要簽名就是了.</p>
-<h2 id="參考">參考</h2>
-<ul>
-<li><a href="http://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html">http://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html</a></li>
-<li><a href="http://maven.apache.org/plugins/maven-jar-plugin/">http://maven.apache.org/plugins/maven-jar-plugin/</a></li>
-<li><a href="http://maven.apache.org/plugins/maven-jarsigner-plugin/">http://maven.apache.org/plugins/maven-jarsigner-plugin/</a></li>
-<li><a href="http://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it">http://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it</a></li>
-</ul>
-<h2 id="reference-for-assembly-for-standalone-jar">Reference for assembly for standalone jar</h2>
-<ul>
-<li><a href="http://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro">http://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro</a></li>
-<li><a href="http://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp">http://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp</a></li>
-</ul>
+    <div class="post_body"><h2 id="需求">需求</h2>
+<p>需要一個測試點對點網路速度的軟體, 要有以下幾項功能</p>
+<ol>
+<li>免費</li>
+<li>支援 Windows 和 Linux</li>
+<li>只測網路, 不測 I/O</li>
+<li>有簡易報表</li>
+</ol>
+<p>找了一下, <a href="https://iperf.fr/">iPerf3</a> 算是符合需求</p>
+<h2 id="安裝方法-server-和-client-是同一個程式">安裝方法 (Server 和 Client 是同一個程式)</h2>
+<ol>
+<li>連線到 <a href="https://iperf.fr/iperf-download.php">https://iperf.fr/iperf-download.php</a>, 選擇需要的作業系統</li>
+<li>如果是 Windows, 直接下載 iperf-3.<em>.</em>-win64.zip 即可, 免安裝, server/client 是同一個執行檔</li>
+<li>以 Ubuntu 為例, 理論上是執行這個指令就可以了
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">sudo apt-get install iperf3
+</span></span></code></pre></div></li>
+<li>若是無法安裝, 可能是缺了某些 library, 可參考官網指示, 如下 (這是我執行時候的範本, 請參考官網看最新的指令)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">sudo apt remove iperf3 libiperf0
+</span></span><span class="line"><span class="ln">2</span><span class="cl">sudo apt install libsctp1
+</span></span><span class="line"><span class="ln">3</span><span class="cl">wget https://iperf.fr/download/ubuntu/libiperf0_3.9-1_amd64.deb
+</span></span><span class="line"><span class="ln">4</span><span class="cl">wget https://iperf.fr/download/ubuntu/iperf3_3.9-1_amd64.deb
+</span></span><span class="line"><span class="ln">5</span><span class="cl">sudo dpkg -i libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb
+</span></span><span class="line"><span class="ln">6</span><span class="cl">rm libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="測試-server-端">測試 (Server 端)</h2>
+<ol>
+<li>不論 Windows 或是 Ubuntu, 指令都是一樣的簡單, 加上 -s 就可以了. 有需要的話, 可以加上 -p 指定 port
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ iperf3 -s -p 5201
+</span></span><span class="line"><span class="ln">2</span><span class="cl">-----------------------------------------------------------
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Server listening on 5201
+</span></span><span class="line"><span class="ln">4</span><span class="cl">-----------------------------------------------------------
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="測試-client-端">測試 (Client 端)</h2>
+<ol>
+<li>執行時指定 server 的 IP, port, 還有測試的時間長度就好, 他會顯示每秒的測速結果還有最後的平均值
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">$iperf3.exe -c 192.168.1.3 -t 20
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Connecting to host 192.168.1.3, port 5201
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[  4] local 192.168.1.4 port 56034 connected to 192.168.1.3 port 5201
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  4]   0.00-1.00   sec  46.0 MBytes   385 Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  4]   1.00-2.00   sec  48.1 MBytes   403 Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  4]   2.00-3.00   sec  48.8 MBytes   410 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  4]   3.00-4.00   sec  48.2 MBytes   404 Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  4]   4.00-5.00   sec  48.2 MBytes   404 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[  4]   5.00-6.00   sec  48.8 MBytes   410 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[  4]   6.00-7.00   sec  49.1 MBytes   411 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[  4]   7.00-8.00   sec  49.1 MBytes   413 Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[  4]   8.00-9.00   sec  48.4 MBytes   406 Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl">[  4]   9.00-10.00  sec  48.4 MBytes   406 Mbits/sec
+</span></span><span class="line"><span class="ln">15</span><span class="cl">[  4]  10.00-11.00  sec  49.4 MBytes   413 Mbits/sec
+</span></span><span class="line"><span class="ln">16</span><span class="cl">[  4]  11.00-12.00  sec  45.1 MBytes   379 Mbits/sec
+</span></span><span class="line"><span class="ln">17</span><span class="cl">[  4]  12.00-13.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">18</span><span class="cl">[  4]  13.00-14.00  sec  49.1 MBytes   411 Mbits/sec
+</span></span><span class="line"><span class="ln">19</span><span class="cl">[  4]  14.00-15.00  sec  50.0 MBytes   419 Mbits/sec
+</span></span><span class="line"><span class="ln">20</span><span class="cl">[  4]  15.00-16.00  sec  50.0 MBytes   420 Mbits/sec
+</span></span><span class="line"><span class="ln">21</span><span class="cl">[  4]  16.00-17.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">22</span><span class="cl">[  4]  17.00-18.00  sec  46.9 MBytes   393 Mbits/sec
+</span></span><span class="line"><span class="ln">23</span><span class="cl">[  4]  18.00-19.00  sec  49.1 MBytes   413 Mbits/sec
+</span></span><span class="line"><span class="ln">24</span><span class="cl">[  4]  19.00-20.00  sec  49.4 MBytes   414 Mbits/sec
+</span></span><span class="line"><span class="ln">25</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
+</span></span><span class="line"><span class="ln">26</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
+</span></span><span class="line hl"><span class="ln">27</span><span class="cl">[  4]   0.00-20.00  sec   971 MBytes   407 Mbits/sec                  sender
+</span></span><span class="line hl"><span class="ln">28</span><span class="cl">[  4]   0.00-20.00  sec   971 MBytes   407 Mbits/sec                  receiver
+</span></span><span class="line"><span class="ln">29</span><span class="cl">
+</span></span><span class="line"><span class="ln">30</span><span class="cl">iperf Done. 
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="後記">後記</h2>
+<ol>
+<li>有個不錯的地方是, 他的 server 端也會有 log, 如下, 這樣很方便.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">-----------------------------------------------------------
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Server listening on 5201
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">-----------------------------------------------------------
+</span></span><span class="line hl"><span class="ln"> 4</span><span class="cl">Accepted connection from 192.168.1.4, port 56033
+</span></span><span class="line hl"><span class="ln"> 5</span><span class="cl">[  5] local 192.168.1.3 port 5201 connected to 192.168.1.4 port 56034
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  5]   0.00-1.00   sec  44.9 MBytes   377 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  5]   1.00-2.00   sec  48.2 MBytes   404 Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  5]   2.00-3.00   sec  48.7 MBytes   408 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[  5]   3.00-4.00   sec  48.2 MBytes   404 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[  5]   4.00-5.00   sec  48.2 MBytes   404 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[  5]   5.00-6.00   sec  48.8 MBytes   409 Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[  5]   6.00-7.00   sec  49.1 MBytes   412 Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl">[  5]   7.00-8.00   sec  49.1 MBytes   412 Mbits/sec
+</span></span><span class="line"><span class="ln">15</span><span class="cl">[  5]   8.00-9.00   sec  48.5 MBytes   407 Mbits/sec
+</span></span><span class="line"><span class="ln">16</span><span class="cl">[  5]   9.00-10.00  sec  48.2 MBytes   405 Mbits/sec
+</span></span><span class="line"><span class="ln">17</span><span class="cl">[  5]  10.00-11.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">18</span><span class="cl">[  5]  11.00-12.00  sec  45.2 MBytes   380 Mbits/sec
+</span></span><span class="line"><span class="ln">19</span><span class="cl">[  5]  12.00-13.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">20</span><span class="cl">[  5]  13.00-14.00  sec  49.0 MBytes   411 Mbits/sec
+</span></span><span class="line"><span class="ln">21</span><span class="cl">[  5]  14.00-15.00  sec  49.8 MBytes   418 Mbits/sec
+</span></span><span class="line"><span class="ln">22</span><span class="cl">[  5]  15.00-16.00  sec  50.1 MBytes   420 Mbits/sec
+</span></span><span class="line"><span class="ln">23</span><span class="cl">[  5]  16.00-17.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">24</span><span class="cl">[  5]  17.00-18.00  sec  46.9 MBytes   393 Mbits/sec
+</span></span><span class="line"><span class="ln">25</span><span class="cl">[  5]  18.00-19.00  sec  49.1 MBytes   412 Mbits/sec
+</span></span><span class="line"><span class="ln">26</span><span class="cl">[  5]  19.00-20.00  sec  49.5 MBytes   415 Mbits/sec
+</span></span><span class="line"><span class="ln">27</span><span class="cl">[  5]  20.00-20.02  sec  1.12 MBytes   420 Mbits/sec
+</span></span><span class="line"><span class="ln">28</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
+</span></span><span class="line"><span class="ln">29</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln">30</span><span class="cl">[  5]   0.00-20.02  sec   971 MBytes   407 Mbits/sec                  receiver
+</span></span></code></pre></div>``</li>
+</ol>
 
     </div>
 <div class="post_comments">
@@ -346,9 +351,6 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" class="nav-link" title="點對點網路測速軟體 iPerf3 ">點對點網路測速軟體 iPerf3</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" class="nav-link" title="如何讓 Word 裡面的 code 有 syntax highlighting (語法突顯)">如何讓 Word 裡面的 code 有 syntax highlighting (語法突顯)</a>
       </li>
       <li>
@@ -368,6 +370,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/software/download-youtube-private-video/" class="nav-link" title="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)">如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/network/realvnc/" class="nav-link" title="無聲無影遠端桌面連線 - VNC">無聲無影遠端桌面連線 - VNC</a>
       </li>
     </ul>
     <div>

@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>點對點網路測速軟體 iPerf3 </title>
+      <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
+      <description>
+        
+          
+            需求 需要一個測試點對點網路速度的軟體, 要有以下幾項功能
+免費 支援 Windows 和 Linux 只測網路, 不測 I/O 有簡易報表 找了一下, iPerf3 算是符合需求
+安裝方法 (Server 和 Client 是同一個程式) 連線到 https://iperf.fr/iperf-download.php, 選擇需要的作業系統 如果是 Windows, 直接下載 iperf-3..-win64.zip 即可, 免安裝, server/client 是同一個執行檔 以 Ubuntu 為例, 理論上是執行這個指令就可以了 1sudo apt-get install iperf3 若是無法安裝, 可能是缺了某些 library, 可參考官網指示, 如下 (這是我執行時候的範本, 請參考官網看最新的指令) 1sudo apt remove iperf3 libiperf0 2sudo apt install libsctp1 3wget https://iperf.fr/download/ubuntu/libiperf0_3.9-1_amd64.deb 4wget https://iperf.fr/download/ubuntu/iperf3_3.9-1_amd64.deb 5sudo dpkg -i libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb 6rm libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb 測試 (Server 端) 不論 Windows 或是 Ubuntu, 指令都是一樣的簡單, 加上 -s 就可以了.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>OpenVPN server</title>
       <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
