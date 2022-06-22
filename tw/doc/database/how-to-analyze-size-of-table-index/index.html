@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>抓某個區間的第一筆資料 | Dennys Diary</title>
+<title>How to analyze size of table, index in Oracle | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,33 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; …" />
+<meta name="description" content="看 table 大小:
+
+SELECT * FROM all_tables WHERE table_name LIKE &#39;AB%&#39; (記得檢查last_analyzed_date)
+
+重新分析 table 大小:
+
+ANALYZE table TABLE_NAME estimate statisitics …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="抓某個區間的第一筆資料" />
+<meta name="twitter:title" content="How to analyze size of table, index in Oracle" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/" />
-<meta property="og:title" content="抓某個區間的第一筆資料" />
-<meta property="og:description" content="1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" />
+<meta property="og:title" content="How to analyze size of table, index in Oracle" />
+<meta property="og:description" content="看 table 大小:
+
+SELECT * FROM all_tables WHERE table_name LIKE &#39;AB%&#39; (記得檢查last_analyzed_date)
+
+重新分析 table 大小:
+
+ANALYZE table TABLE_NAME estimate statisitics …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/">
 
 
 
@@ -150,7 +162,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">抓某個區間的第一筆資料</h1>
+    <h1 class="post_title">How to analyze size of table, index in Oracle</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -158,19 +170,19 @@
 </svg>
 </span>
     <span class="post_date">
-      May 6, 2005</span>
+      May 5, 2005</span>
     <span class="post_time"> · 1 分鐘閱讀</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fsql-command.zh-tw%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fsql-command.zh-tw%2f&t=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&t=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -184,7 +196,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -195,14 +207,30 @@
   </span>
   </div>
 
-    <div class="post_body"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">rank</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">username</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="n">rn</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">   </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="n">a</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="o">&gt;</span><span class="w">  </span><span class="n">p_cur_timestamp</span><span class="w">
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">p_cur_timestamp</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">C_PERIOD</span><span class="w">
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w"> </span><span class="p">)</span><span class="w"> 
-</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">rn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w">
-</span></span></span></code></pre></div>
+    <div class="post_body"><p>看 table 大小:
+<code language="sql">
+SELECT * FROM all_tables WHERE table_name LIKE 'AB%' (記得檢查last_analyzed_date)
+</code></p>
+<p>重新分析 table 大小:
+<code language="sql">
+ANALYZE table TABLE_NAME estimate statisitics
+</code></p>
+<p>看 index 相關資訊:(這裡不會有 block 資訊)
+<code language="sql">
+SELECT * FROM all_indexes WHERE table_name LIKE'AB%'
+</code></p>
+<p>重新分析 index:
+<code language="sql">
+ANALYZE index INDEX_NAME validate structure;
+</code></p>
+<p>看 index 大小: (這個一次只能看最近一次 analyze 過的 index)
+<code language="sql">
+SELECT * FROM index_stats =&gt;
+</code></p>
+<ol>
+<li>Index要rebuild後才準, delete/update record 通常不會free index block</li>
+<li>Block 的定義要請 DBA 查</li>
+</ol>
     </div>
 <div class="post_comments">
   

@@ -548,10 +548,10 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
       <description>
         
           
-            PTool PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! PTool PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
 功能 Basic Version incremental (打勾) Prevent version compare (打勾) FPS change G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps
 720p59,94fps-&amp;gt;29.97 PAL &amp;lt;-&amp;gt; NTSC Manual movie mode Manual Movie Modes (打勾) 手動錄影的操作方式如下 (不需要轉到錄影模式)
-開機 選 PASM 任一種 按下 Menu/Set 再按一下 Menu/Set 這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了. 流量 這個研究中, 雖然改了 potplayer 可以看到 Overall Bitrate 變了, 但檔案大小和實際流量似乎還是一樣?
+開機 選 PASM 任一種 按下 Menu/Set 再按一下 Menu/Set 這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了.
           
           
         
@@ -700,10 +700,10 @@ XBMC Constellation: 我其實最剛開始是看到這個, 可以看一下這裡�
       <description>
         
           
-            這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
-如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
+解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
 建議的作法是修改 USER_MEM_ARGS, 可參考 Modifying JVM Parameters in Server Start Scripts
 最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.
 1if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 2 if [ &amp;#34;${PRODUCTION_MODE}&amp;#34; = &amp;#34;&amp;#34; ] ; then 3 MEM_DEV_ARGS=&amp;#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &amp;#34; 4 export MEM_DEV_ARGS 5 fi 6fi 7 8# Had to have a separate test here BECAUSE of immediate variable expansion on windows 9 10if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 11 MEM_ARGS=&amp;#34;${MEM_ARGS} ${MEM_DEV_ARGS} -XX:MaxPermSize=128m&amp;#34; 12 export MEM_ARGS 13fi 14 15if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;HP&amp;#34; ] ; then 16 MEM_ARGS=&amp;#34;${MEM_ARGS} -XX:MaxPermSize=128m&amp;#34; 17 export MEM_ARGS 18fi 19 20# IF USER_MEM_ARGS the environment variable is set, use it to override ALL MEM_ARGS values 21 22if [ &amp;#34;${USER_MEM_ARGS}&amp;#34; !
@@ -806,11 +806,10 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1
       <description>
         
           
-            這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+            注意 這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了 這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
 XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
 把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin), 把字型放大, 因為懶得研究哪個設定是對應到那個項目的, 所以我把所有小於 24 的全部都改成 24. 不過說實在的, 覺得還是有點小. 如果是全新安裝, 到這裡就可以了. 如果是升級, 把之前的 UserData 目錄拿來用, 就所有的設定和資料都回來 幾個比較重要的設定檔如下:
-UserData\guisettings.xmd: 所有的 GUI 設定都在這裡, 萬一設定搞爛掉了 (設定錯誤的字型或 skin, 會讓整個畫面的字都亂掉), 可以備份這個檔案回來即可 UserData\sources.xml: 這檔案放的是外部資源的設定, 譬如設定把家裏其他電腦用網路芳鄰分享出來的目錄, 就會存在這個檔案裡面 最後, 關於 XBMC 9.04 Babylon 的新功能可參考下列文章.
-XBMC Babylon Alpha 1 中文影片資料庫模式 XBMC Babylon Beta 1 and ESPN Video Plugin 
+UserData\guisettings.xmd: 所有的 GUI 設定都在這裡, 萬一設定搞爛掉了 (設定錯誤的字型或 skin, 會讓整個畫面的字都亂掉), 可以備份這個檔案回來即可 UserData\sources.xml: 這檔案放的是外部資源的設定, 譬如設定把家裏其他電腦用網路芳鄰分享出來的目錄, 就會存在這個檔案裡面 最後, 關於 XBMC 9.
           
           
         
@@ -852,9 +851,9 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
       <description>
         
           
-            前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
 jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
-1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過. 不過後來才發現需要做一些設定才能偵測 leaked connection, 如下
+1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過.
           
           
         
@@ -870,9 +869,8 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:
-1DELETE FROM variable WHERE name=&amp;#34;cron_semaphore&amp;#34;; 另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.
+            注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了.
           
           
         
@@ -906,10 +904,9 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
 1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
-1java -cp D:\\bea\\wlserver\_10.
           
           
         

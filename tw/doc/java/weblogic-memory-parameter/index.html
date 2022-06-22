@@ -26,20 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
-問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
-java.lang.OutOfMemoryError: PermGen space
-如果是簡單的 Java 程式, …" />
+<meta name="description" content="注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題. …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="設定 WebLogic 的 memory 參數" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" />
 <meta property="og:title" content="設定 WebLogic 的 memory 參數" />
-<meta property="og:description" content="這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
-問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
-java.lang.OutOfMemoryError: PermGen space
-如果是簡單的 Java 程式, …" />
+<meta property="og:description" content="注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題. …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -203,11 +199,19 @@ java.lang.OutOfMemoryError: PermGen space
   </span>
   </div>
 
-    <div class="post_body"><p>這是第二次吃虧了, 把他記下來, 免得下次又忘記了...</p>
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">注意</div>
+    這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.
+  </div>
+
+<h2 id="問題">問題</h2>
+<p>這是第二次吃虧了, 把他記下來, 免得下次又忘記了...</p>
 <p>問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.</p>
 <p><code>java.lang.OutOfMemoryError: PermGen space</code></p>
+<h2 id="解法">解法</h2>
 <p>如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...</p>
-<p>建議的作法是修改 USER_MEM_ARGS, 可參考 Modifying JVM Parameters in Server Start Scripts</p>
+<p>建議的作法是修改 <code>USER_MEM_ARGS</code>, 可參考 Modifying JVM Parameters in Server Start Scripts</p>
 <p>最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">JAVA_VENDOR</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;Sun&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">       <span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">PRODUCTION_MODE</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>

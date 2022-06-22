@@ -88,10 +88,10 @@ descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打�
       <description>
         
           
-            這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
-如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
+解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
 建議的作法是修改 USER_MEM_ARGS, 可參考 Modifying JVM Parameters in Server Start Scripts
 最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.
 1if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 2 if [ &amp;#34;${PRODUCTION_MODE}&amp;#34; = &amp;#34;&amp;#34; ] ; then 3 MEM_DEV_ARGS=&amp;#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &amp;#34; 4 export MEM_DEV_ARGS 5 fi 6fi 7 8# Had to have a separate test here BECAUSE of immediate variable expansion on windows 9 10if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 11 MEM_ARGS=&amp;#34;${MEM_ARGS} ${MEM_DEV_ARGS} -XX:MaxPermSize=128m&amp;#34; 12 export MEM_ARGS 13fi 14 15if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;HP&amp;#34; ] ; then 16 MEM_ARGS=&amp;#34;${MEM_ARGS} -XX:MaxPermSize=128m&amp;#34; 17 export MEM_ARGS 18fi 19 20# IF USER_MEM_ARGS the environment variable is set, use it to override ALL MEM_ARGS values 21 22if [ &amp;#34;${USER_MEM_ARGS}&amp;#34; !
@@ -136,9 +136,9 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
       <description>
         
           
-            前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
 jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
-1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過. 不過後來才發現需要做一些設定才能偵測 leaked connection, 如下
+1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過.
           
           
         
@@ -172,10 +172,9 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
 1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
-1java -cp D:\\bea\\wlserver\_10.
           
           
         

@@ -210,9 +210,9 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+            <p>注意 這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了 這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
 XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
-把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin), 把字型放大, 因為懶得研究哪個設定是對應到那個項目的, 所以我把所有小於 24  …</p>
+把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin),  …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/software/xbmc-babylon-904/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -349,8 +349,8 @@ WebLogic
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無 …</p>
+            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -416,8 +416,8 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>Drupal's cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, …</p>
+            <p>注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal's cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -550,8 +550,8 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
-Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很 …</p>
+            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -564,7 +564,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/" title="抓某個區間的第一筆資料">抓某個區間的第一筆資料</a>
+        <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="抓某個區間的第一筆資料">抓某個區間的第一筆資料</a>
       </h3>
       
   <div class="post_meta">
@@ -579,14 +579,14 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fsql-command.zh-tw%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fsql-command.zh-tw%2f&t=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&t=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -600,7 +600,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -618,7 +618,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
             <p>1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; p_cur_timestamp 5 AND a.update_dt &lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/database/sql-command.zh-tw/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -628,7 +628,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index.zh-tw/" title="How to analyze size of table, index in Oracle">How to analyze size of table, index in Oracle</a>
+        <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="How to analyze size of table, index in Oracle">How to analyze size of table, index in Oracle</a>
       </h3>
       
   <div class="post_meta">
@@ -643,14 +643,14 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index.zh-tw%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index.zh-tw%2f&t=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&t=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -664,7 +664,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假�
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index.zh-tw/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -698,7 +698,7 @@ ANALYZE index INDEX_NAME validate structure;
 <p>看 index 大小: (這個一次只能看最 …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index.zh-tw/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>

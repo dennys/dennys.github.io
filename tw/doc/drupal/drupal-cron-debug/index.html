@@ -26,16 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it is already running. 2Cron run exceeded …" />
+<meta name="description" content="注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+1Attempting to re-run cron while it …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="如何對 Drupal 的 cron 做 Debug" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/" />
 <meta property="og:title" content="如何對 Drupal 的 cron 做 Debug" />
-<meta property="og:description" content="Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it is already running. 2Cron run exceeded …" />
+<meta property="og:description" content="注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+1Attempting to re-run cron while it …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -199,7 +199,13 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="drupals-cron">Drupal's cron</h2>
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">注意</div>
+    這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.
+  </div>
+
+<h2 id="drupals-cron">Drupal's cron</h2>
 <p><a href="http://drupal.org/">Drupal</a> 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Attempting to re-run cron <span class="k">while</span> it is already running.  
 </span></span><span class="line"><span class="ln">2</span><span class="cl">Cron run exceeded the <span class="nb">time</span> limit and was aborted.  

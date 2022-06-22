@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待,  …" />
+<meta name="description" content="注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Command Line Deploy on WebLogic" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/" />
 <meta property="og:title" content="Command Line Deploy on WebLogic" />
-<meta property="og:description" content="前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待,  …" />
+<meta property="og:description" content="注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -197,7 +197,13 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="前言">前言</h2>
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">注意</div>
+    這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.
+  </div>
+
+<h2 id="前言">前言</h2>
 <p>在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 <a href="http://ant.apache.org/">Ant</a> 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 <a href="http://www.bea.com/framework.jsp?CNT=index.htm&amp;FP=/content/products/weblogic">WebLogic</a> 的文件, 看來不難做到, 而且還滿方便的.</p>
 <h2 id="command-line-deploy-的方法">Command line deploy 的方法</h2>
 <p>如果 WebLogic 就裝在<strong>自己的電腦</strong>上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.</p>

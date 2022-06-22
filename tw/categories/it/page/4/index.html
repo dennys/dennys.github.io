@@ -346,10 +346,10 @@ descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
-如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用... …</p>
+解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被 …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -694,9 +694,9 @@ Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+            <p>注意 這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了 這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
 XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
-把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin), 把字型放大, 因為懶得研究哪個設定是對應到那個項目的, 所以我把所有小於 24  …</p>
+把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin),  …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/software/xbmc-babylon-904/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -833,8 +833,8 @@ WebLogic
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無 …</p>
+            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
