@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Asuswrt-Merlin Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Asuswrt Merlin Diversion (分享器擋廣告)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/" />
 <meta property="og:title" content="Asuswrt Merlin Diversion (分享器擋廣告)" />
-<meta property="og:description" content="Asuswrt-Merlin Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -199,15 +199,42 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="asuswrt-merlin">Asuswrt-Merlin</h2>
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#asuswrt-merlin-是甚麼">Asuswrt-Merlin 是甚麼</a></li>
+    <li><a href="#diversion-是甚麼">Diversion 是甚麼</a></li>
+    <li><a href="#安裝步驟">安裝步驟</a>
+      <ol>
+        <li><a href="#asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</a></li>
+        <li><a href="#diversion-安裝">Diversion 安裝</a></li>
+        <li><a href="#特別注意">特別注意</a></li>
+      </ol>
+    </li>
+    <li><a href="#diversion-使用方法">Diversion 使用方法</a></li>
+    <li><a href="#ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</a></li>
+    <li><a href="#參考">參考</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">注意</div>
+    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+  </div>
+
+<h2 id="asuswrt-merlin-是甚麼">Asuswrt-Merlin 是甚麼</h2>
 <p><a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a> 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: <a href="https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation">https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation</a> (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)</p>
-<h2 id="diversion">Diversion</h2>
-<p><a href="https://diversion.ch/">Diversion</a> 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.</p>
+<h2 id="diversion-是甚麼">Diversion 是甚麼</h2>
+<p><a href="https://diversion.ch/">Diversion</a> 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.<br>
+要注意的是, Diversion 為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 <a href="https://diversion.ch/faq-reader/what-does-pixelserv-tls-do.html">FAQ</a> 看一下這是甚麼東西還有他能做的事情.</p>
 <h2 id="安裝步驟">安裝步驟</h2>
-<p>然後他為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 <a href="https://diversion.ch/faq-reader/what-does-pixelserv-tls-do.html">FAQ</a> 看一下這是甚麼東西他能做的事情</p>
 <h3 id="asuswrt-merlin-web-gui-設定">Asuswrt Merlin Web GUI 設定</h3>
-<p>Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.</p>
-<p><figure>
+<ol>
+<li>Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.
+<figure>
   <picture>
 
     
@@ -233,7 +260,8 @@
 
     </picture>
 </figure>
-</p>
+</li>
+</ol>
 <h3 id="diversion-安裝">Diversion 安裝</h3>
 <ol>
 <li>
@@ -267,8 +295,8 @@
 </span></span><span class="line"><span class="ln">7</span><span class="cl">/dev/sda1             <span class="m">59144340</span>    <span class="m">184232</span>  <span class="m">55955696</span>   0% /tmp/mnt/usb
 </span></span></code></pre></div></li>
 <li>
-<p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下</p>
-<p><figure>
+<p>一樣在 amtm 裡面執行 dc, 進行 disk check, 結果如下
+<figure>
   <picture>
 
     
@@ -297,8 +325,8 @@
 </p>
 </li>
 <li>
-<p>安裝 Diversion, 在 amtm 裡面執行 '1' (可先用 'i' 指令確認一下是用 1 來安裝 Diversion). 注意, 這裡本來應該先安裝 Entware, 但如果你嘗試安裝, amtm 會建議你直接裝 Diversion, 然後他在安裝過程中會自動安裝 Entware</p>
-<p><figure>
+<p>安裝 Diversion, 在 amtm 裡面執行 '1' (可先用 'i' 指令確認一下是用 1 來安裝 Diversion). 注意, 這裡本來應該先安裝 Entware, 但如果你嘗試安裝, amtm 會建議你直接裝 Diversion, 然後他在安裝過程中會自動安裝 Entware
+<figure>
   <picture>
 
     
@@ -327,8 +355,8 @@
 </p>
 </li>
 <li>
-<p>Diversion 安裝結果如下, 注意, 他移除了 LAN 的 DNS 8.8.8.8/8.8.4.4. 不過他沒有動到 WAN 的 DNS.</p>
-<p><figure>
+<p>Diversion 安裝結果如下, 注意, 他移除了 LAN 的 DNS 8.8.8.8/8.8.4.4. 不過他沒有動到 WAN 的 DNS.
+<figure>
   <picture>
 
     
@@ -357,8 +385,8 @@
 </p>
 </li>
 <li>
-<p>安裝 Diversion Standard</p>
-<p><figure>
+<p>安裝 Diversion Standard
+<figure>
   <picture>
 
     
@@ -387,8 +415,8 @@
 </p>
 </li>
 <li>
-<p>這邊注意, 要回到 Asuswrt-Merlin Web 設定</p>
-<p><figure>
+<p>這邊注意, 要回到 Asuswrt-Merlin Web 設定
+<figure>
   <picture>
 
     
@@ -417,8 +445,8 @@
 </p>
 </li>
 <li>
-<p>上面是寫要跳過 192.168.1.2, 但因為 pixelserv-tls 也需要 IP, 所以 192.168.1.3 也要跳過. 我後來是把 192.168.1.1~10 當成特殊用途, 所以我把 DHCP 設成從 192.168.1.11 開始分配.</p>
-<p><figure>
+<p>上面是寫要跳過 192.168.1.2, 但因為 pixelserv-tls 也需要 IP, 所以 192.168.1.3 也要跳過. 我後來是把 192.168.1.1~10 當成特殊用途, 所以我把 DHCP 設成從 192.168.1.11 開始分配.
+<figure>
   <picture>
 
     
@@ -477,10 +505,8 @@
 </p>
 </li>
 <li>
-<p>選擇 log 方式, 如果你要把 log 寫下來, 就選 1</p>
-</li>
-</ol>
-<p><figure>
+<p>選擇 log 方式, 如果你要把 log 寫下來, 就選 1
+<figure>
   <picture>
 
     
@@ -507,12 +533,16 @@
     </picture>
 </figure>
 </p>
-<ol start="12">
-<li>他會安裝到這個目錄 /tmp/mnt/usb/entware</li>
+</li>
+<li>
+<p>最後他會安裝到這個目錄 /tmp/mnt/usb/entware</p>
+</li>
 </ol>
 <h3 id="特別注意">特別注意</h3>
-<p>因為 Diversion 是使用 DNS 來 block AD, 因此 WAN 的地方可以指定 DNS</p>
-<p><figure>
+<ol>
+<li>
+<p>因為 Diversion 是使用 DNS 來 block AD, 因此 WAN 的地方可以指定 DNS
+<figure>
   <picture>
 
     
@@ -539,8 +569,10 @@
     </picture>
 </figure>
 </p>
-<p>但 LAN 的地方必須清空, client 的 DNS 必須是 192.168.1.1. 因為所有連到這台 router 的電腦或手機, 他們的 DNS server 都必須是 192.168.1.1, 這樣 Diversion 才會有作用.</p>
-<p><figure>
+</li>
+<li>
+<p>但 LAN 的地方必須清空, client 的 DNS 必須是 192.168.1.1. 因為所有連到這台 router 的電腦或手機, 他們的 DNS server 都必須是 192.168.1.1, 這樣 Diversion 才會有作用.
+<figure>
   <picture>
 
     
@@ -567,8 +599,10 @@
     </picture>
 </figure>
 </p>
-<p>在 Windows 可用 ipconfig /all 檢查 DNS 是否有設定正確</p>
-<p><figure>
+</li>
+<li>
+<p>在 Windows 可用 ipconfig /all 檢查 DNS 是否有設定正確
+<figure>
   <picture>
 
     
@@ -595,11 +629,13 @@
     </picture>
 </figure>
 </p>
-<h2 id="diversion-使用">Diversion 使用</h2>
-<ol>
-<li>使用 putty 連進去後, 執行 diversion, 看到如下畫面就是安裝成功了</li>
+</li>
 </ol>
-<p><figure>
+<h2 id="diversion-使用方法">Diversion 使用方法</h2>
+<ol>
+<li>
+<p>使用 putty 連進去後, 執行 diversion, 看到如下畫面就是安裝成功了
+<figure>
   <picture>
 
     
@@ -626,10 +662,10 @@
     </picture>
 </figure>
 </p>
-<ol start="2">
-<li>選擇 f (follow dnsmasq.log) 可以看 log, 有以下幾種模式可以選 (實際 log 在 <code>/tmp/mnt/sda1/entware/var/log/dnsmasq.log</code>, 紅色的部分要看一開始設定的名字)</li>
-</ol>
-<p><figure>
+</li>
+<li>
+<p>選擇 f (follow dnsmasq.log) 可以看 log, 有以下幾種模式可以選 (實際 log 在 <code>/tmp/mnt/sda1/entware/var/log/dnsmasq.log</code>, 紅色的部分要看一開始設定的名字)
+<figure>
   <picture>
 
     
@@ -656,10 +692,10 @@
     </picture>
 </figure>
 </p>
-<ol start="3">
-<li>選擇 1, 可看到如下就是有成功了</li>
-</ol>
-<p><figure>
+</li>
+<li>
+<p>選擇 1, 可看到如下就是有成功了
+<figure>
   <picture>
 
     
@@ -686,10 +722,10 @@
     </picture>
 </figure>
 </p>
-<ol start="4">
-<li>瀏覽器會看到如下</li>
-</ol>
-<p><figure>
+</li>
+<li>
+<p>瀏覽器會看到如下
+<figure>
   <picture>
 
     
@@ -716,6 +752,8 @@
     </picture>
 </figure>
 </p>
+</li>
+</ol>
 <h2 id="ios-shortcut-安裝使用">iOS Shortcut 安裝/使用</h2>
 <ol>
 <li>要先打開安全性: 設定 -&gt; 捷徑 -&gt; 允許不受信任的捷徑</li>
@@ -723,7 +761,7 @@
 </ol>
 <h2 id="參考">參考</h2>
 <ol>
-<li><a href="https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/">https://www.snbforums.com/threads/amtm-step-by-step-install-guide-l-ld.56237/</a></li>
+<li><a href="https://www.snbforums.com/threads/diversion-the-router-ad-blocker-v4-2-x.74941/">https://www.snbforums.com/threads/diversion-the-router-ad-blocker-v4-2-x.74941/</a></li>
 </ol>
 
     </div>
@@ -855,6 +893,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -862,11 +905,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -957,7 +995,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

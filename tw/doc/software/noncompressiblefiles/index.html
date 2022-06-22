@@ -26,18 +26,18 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 需要產生自訂大小的測試檔案, 看情境可以壓縮或不可以壓縮
-使用 fsutil 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
-1C:\&gt; rfsutil file createnew test 100000000 2檔案 C:\Hugo\site\blog\test …" />
+<meta name="description" content="需求 需要產生自訂大小的測試檔案, 是情擴可選擇檔案是可以被壓縮或不可以被壓縮.
+使用 fsutil (Windows 內建) 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
+1C:\&gt; rfsutil file createnew test 100000000 2 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/software/noncompressiblefiles/" />
 <meta property="og:title" content="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案" />
-<meta property="og:description" content="需求 需要產生自訂大小的測試檔案, 看情境可以壓縮或不可以壓縮
-使用 fsutil 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
-1C:\&gt; rfsutil file createnew test 100000000 2檔案 C:\Hugo\site\blog\test …" />
+<meta property="og:description" content="需求 需要產生自訂大小的測試檔案, 是情擴可選擇檔案是可以被壓縮或不可以被壓縮.
+使用 fsutil (Windows 內建) 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
+1C:\&gt; rfsutil file createnew test 100000000 2 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -201,9 +201,20 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#使用-fsutil-windows-內建">使用 fsutil (Windows 內建)</a></li>
+    <li><a href="#使用-noncompressiblefiles">使用 NonCompressibleFiles</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><h2 id="需求">需求</h2>
-<p>需要產生自訂大小的測試檔案, 看情境可以壓縮或不可以壓縮</p>
-<h2 id="使用-fsutil">使用 fsutil</h2>
+<p>需要產生自訂大小的測試檔案, 是情擴可選擇檔案是可以被壓縮或不可以被壓縮.</p>
+<h2 id="使用-fsutil-windows-內建">使用 fsutil (Windows 內建)</h2>
 <p>使用 Windows 內建的 <a href="https://docs.microsoft.com/zh-tw/windows-server/administration/windows-commands/fsutil">fsutil</a> 可以產生自訂大小的測試檔案, 如下</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\</span><span class="c1">&gt; rfsutil file createnew test 100000000</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">檔案 C:\Hugo\site\blog\test 已經建立
@@ -222,7 +233,7 @@
 <li>這個檔案是可以壓縮的 (用 Notepad++ 打開就會看到一堆 NUL)</li>
 <li>檔案 size 不太直覺, 如果要產生 100M, 1G, 10G 的檔案, 得在那邊算很多位數</li>
 </ol>
-<h2 id="heading"></h2>
+<h2 id="使用-noncompressiblefiles">使用 NonCompressibleFiles</h2>
 <p>使用 <a href="http://www.softwareok.com/?seite=Microsoft/NonCompressibleFiles">NonCompressibleFiles</a>, 好處很多</p>
 <ol>
 <li>Portable, 免安裝, 下載即可</li>
@@ -360,6 +371,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -367,11 +383,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -462,7 +473,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

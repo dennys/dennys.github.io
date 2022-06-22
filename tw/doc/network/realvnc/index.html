@@ -200,6 +200,19 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#方法-server-端">方法 (Server 端)</a></li>
+    <li><a href="#方法-client-端">方法 (Client 端)</a></li>
+    <li><a href="#成果">成果</a></li>
+    <li><a href="#如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><h2 id="需求">需求</h2>
 <p>需要一個遠端登入的功能, 要做到以下幾項功能</p>
 <ol>
@@ -210,37 +223,43 @@
 <h2 id="方法-server-端">方法 (Server 端)</h2>
 <p>測試了一下, <a href="https://www.teamviewer.com/">TeamViewer</a> 和 <a href="https://anydesk.com/">AnyDesk</a> 都做不出來這種功能, 目前是只有看到 <a href="https://www.realvnc.com/">RealVNC</a>可以做到, 就先用這個測試.</p>
 <ol>
-<li>先下載 RealVNC server (從這裡下載: <a href="https://www.realvnc.com/en/connect/download/vnc/">https://www.realvnc.com/en/connect/download/vnc/</a>)</li>
-<li>打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.</li>
+<li>
+<p>先下載 RealVNC server (從這裡下載: <a href="https://www.realvnc.com/en/connect/download/vnc/">https://www.realvnc.com/en/connect/download/vnc/</a>)</p>
+</li>
+<li>
+<p>打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+<a href="https://dennys.files.wordpress.com/2022/06/image-3.png"><img src="https://dennys.files.wordpress.com/2022/06/image-3.png?w=608" alt="" class="wp-image-749"/></a></p>
+</li>
+<li>
+<p>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+<a href="https://dennys.files.wordpress.com/2022/06/image-4.png"><img src="https://dennys.files.wordpress.com/2022/06/image-4.png?w=608" alt="" class="wp-image-751"/></a></p>
+</li>
+<li>
+<p>如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了, 如下 😋</p>
+<p><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a></p>
+</li>
 </ol>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-3.png"><img src="https://dennys.files.wordpress.com/2022/06/image-3.png?w=608" alt="" class="wp-image-749"/></a>
-<br></p>
-<ol start="3">
-<li>再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)</li>
-</ol>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-4.png"><img src="https://dennys.files.wordpress.com/2022/06/image-4.png?w=608" alt="" class="wp-image-751"/></a>
-<br></p>
-<p>如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了. 😋</p>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-5.png"><img src="https://dennys.files.wordpress.com/2022/06/image-5.png?w=335" alt="" class="wp-image-754"/></a>
-<br></p>
 <h2 id="方法-client-端">方法 (Client 端)</h2>
 <ol>
 <li>
 <p>先下載 RealVNC viewer (從這裡下載: <a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>)</p>
 </li>
 <li>
-<p>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.</p>
+<p>在連線以前, 把 Option 裡面的 View-only 打開, 這樣你連上去的時候, 就不會去動到對方的滑鼠.
+<a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a></p>
 </li>
 </ol>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-7.png"><img src="https://dennys.files.wordpress.com/2022/06/image-7.png?w=516" alt="" class="wp-image-758"/></a>
-<br></p>
 <h2 id="成果">成果</h2>
-<p>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 當然, 對方如果進去 VNC 看, 還是可以看到有誰連進來, 這個就沒招了.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a>
-<br></p>
+<ol>
+<li>依照以上設定好, 就可以神不知鬼不覺得連到對方電腦了. 不會有任何的聲音和跳出畫面.</li>
+<li>當然, 對方如果進去 VNC Server 看, 還是可以看到有誰連進來, 這個就沒招了.
+<a href="https://dennys.files.wordpress.com/2022/06/image-8.png"><img src="https://dennys.files.wordpress.com/2022/06/image-8.png?w=618" alt="" class="wp-image-760"/></a></li>
+</ol>
 <h2 id="如果臨時想去移動對方的鍵盤滑鼠怎麼辦">如果臨時想去移動對方的鍵盤滑鼠怎麼辦?</h2>
-<p>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-9.png"><img src="https://dennys.files.wordpress.com/2022/06/image-9.png?w=469" alt="" class="wp-image-762"/></a></p>
+<ol>
+<li>很簡單, VNC 的工具列可以改設定, 直接把 View-only 拿掉就可以了.
+<a href="https://dennys.files.wordpress.com/2022/06/image-9.png"><img src="https://dennys.files.wordpress.com/2022/06/image-9.png?w=469" alt="" class="wp-image-762"/></a></li>
+</ol>
 
     </div>
 <div class="post_comments">
@@ -371,6 +390,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -378,11 +402,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -473,7 +492,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

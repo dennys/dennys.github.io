@@ -26,18 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定.
-但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖.
-所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
+<meta name="description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/" />
 <meta property="og:title" content="如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)" />
-<meta property="og:description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定.
-但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖.
-所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
+<meta property="og:description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -203,6 +199,18 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#解法-免-root">解法 (免 root)</a></li>
+    <li><a href="#成果">成果</a></li>
+    <li><a href="#補充">補充</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body">
 <div class="notices info">
     <div class="label">提醒</div>
@@ -210,8 +218,8 @@
   </div>
 
 <h2 id="需求">需求</h2>
-<p>在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/old.png"><figure>
+<p>在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定.
+<a href="https://dennys.files.wordpress.com/2022/01/old.png"><figure>
   <picture>
 
     
@@ -238,8 +246,8 @@
     </picture>
 </figure>
 </a></p>
-<p>但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/internet.png"><figure>
+<p>但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖.
+<a href="https://dennys.files.wordpress.com/2022/01/internet.png"><figure>
   <picture>
 
     
@@ -266,8 +274,8 @@
     </picture>
 </figure>
 </a></p>
-<p>所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢...</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/internet2.png"><figure>
+<p>所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢...
+<a href="https://dennys.files.wordpress.com/2022/01/internet2.png"><figure>
   <picture>
 
     
@@ -294,8 +302,8 @@
     </picture>
 </figure>
 </a></p>
-<p>而且這個改變看來 Google 是有做過研究的, 可參考 <a href="https://support.google.com/pixelphone/thread/132446941/">https://support.google.com/pixelphone/thread/132446941/</a>. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情)</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/internet3.jpg"><figure>
+<p>而且這個改變看來 Google 是有做過研究的, 可參考 <a href="https://support.google.com/pixelphone/thread/132446941/">https://support.google.com/pixelphone/thread/132446941/</a>. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情)
+<a href="https://dennys.files.wordpress.com/2022/01/internet3.jpg"><figure>
   <picture>
 
     
@@ -322,8 +330,8 @@
     </picture>
 </figure>
 </a></p>
-<p>再往下看, 負評的人不少, 所以我也給他按負評了 :p</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-10.png"><figure>
+<p>再往下看, 負評的人不少, 所以我也給他按負評了 😛
+<a href="https://dennys.files.wordpress.com/2022/01/image-10.png"><figure>
   <picture>
 
     
@@ -350,8 +358,8 @@
     </picture>
 </figure>
 </a></p>
-<p>不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You're welcome... (參考論壇: <a href="https://support.google.com/pixelphone/thread/133649087/)">https://support.google.com/pixelphone/thread/133649087/)</a>.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-11.png"><figure>
+<p>不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You're welcome... (參考論壇: <a href="https://support.google.com/pixelphone/thread/133649087/)">https://support.google.com/pixelphone/thread/133649087/)</a>.
+<a href="https://dennys.files.wordpress.com/2022/01/image-11.png"><figure>
   <picture>
 
     
@@ -387,21 +395,24 @@
 <li>打開手機的 USB debug mode (參考 <a href="https://blog.pulipuli.info/2019/01/adbfastbootandroid-sdk-platform-tools.html">https://blog.pulipuli.info/2019/01/adbfastbootandroid-sdk-platform-tools.html</a>)</li>
 <li>執行 <code>adb devices</code>, 確定手機有連線成功
 <ul>
-<li>如果 List of devices attached 後面沒東西代表沒找到手機 (那兩行 daemon... 只有第一次執行會出現)
+<li>
+<p>要看到下面 ***** device 的訊息才代表連線成功(那兩行 daemon... 只有第一次執行會出現)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">* daemon not running; starting now at tcp:5037
 </span></span><span class="line"><span class="ln">3</span><span class="cl">* daemon started successfully
 </span></span><span class="line"><span class="ln">4</span><span class="cl">List of devices attached
+</span></span><span class="line"><span class="ln">5</span><span class="cl">*************** device
 </span></span></code></pre></div></li>
-<li>如果看到 unauthorized 代表沒有權限 (可能是 USB debug mode 沒開)
+<li>
+<p>如果 List of devices attached 後面沒東西代表沒找到手機</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
+</span></span></code></pre></div></li>
+<li>
+<p>如果看到 unauthorized 代表沒有權限 (可能是 USB debug mode 沒開)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
 </span></span><span class="line"><span class="ln">3</span><span class="cl">*************** unauthorized
-</span></span></code></pre></div></li>
-<li>要看到這個畫面才代表連線成功
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
-</span></span><span class="line"><span class="ln">3</span><span class="cl">*************** device
 </span></span></code></pre></div></li>
 </ul>
 </li>
@@ -412,8 +423,8 @@
 </ol>
 <br>
 <h2 id="成果">成果</h2>
-<p>如下, 可以快速開關 Wi-Fi 或是行動網路</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/new.png"><figure>
+<p>如下, 可以快速開關 Wi-Fi 或是行動網路
+<a href="https://dennys.files.wordpress.com/2022/01/new.png"><figure>
   <picture>
 
     
@@ -440,8 +451,8 @@
     </picture>
 </figure>
 </a></p>
-<p>最後請記得把 USB debug mode 關掉, 不然一些 App 會無法使用, 如下圖.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/usb-1.png"><figure>
+<p>最後請記得把 USB debug mode 關掉, 不然一些 App 會無法使用, 如下圖.
+<a href="https://dennys.files.wordpress.com/2022/01/usb-1.png"><figure>
   <picture>
 
     
@@ -603,6 +614,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -610,11 +626,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -705,7 +716,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

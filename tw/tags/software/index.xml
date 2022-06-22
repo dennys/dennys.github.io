@@ -17,12 +17,11 @@
       <description>
         
           
-            需求 需要產生自訂大小的測試檔案, 看情境可以壓縮或不可以壓縮
-使用 fsutil 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
+            需求 需要產生自訂大小的測試檔案, 是情擴可選擇檔案是可以被壓縮或不可以被壓縮.
+使用 fsutil (Windows 內建) 使用 Windows 內建的 fsutil 可以產生自訂大小的測試檔案, 如下
 1C:\&amp;gt; rfsutil file createnew test 100000000 2檔案 C:\Hugo\site\blog\test 已經建立 3 4C:\&amp;gt; dir test 5 6 C:\&amp;gt; 的目錄 7 82022/06/21 上午 10:29 100,000,000 test 9 1 個檔案 100,000,000 位元組 10 0 個目錄 623,477,620,736 位元組可用 優點: Windows 內建指令
 缺點
-只能產生一個檔案 這個檔案是可以壓縮的 (用 Notepad++ 打開就會看到一堆 NUL) 檔案 size 不太直覺, 如果要產生 100M, 1G, 10G 的檔案, 得在那邊算很多位數 使用 NonCompressibleFiles, 好處很多
-Portable, 免安裝, 下載即可 可產生自訂大小, 自訂個數的檔案 可選擇這個檔案是可壓縮或不可壓縮 檔案大小的部分從 10KB, 100KB, 1MB, .
+只能產生一個檔案 這個檔案是可以壓縮的 (用 Notepad++ 打開就會看到一堆 NUL) 檔案 size 不太直覺, 如果要產生 100M, 1G, 10G 的檔案, 得在那邊算很多位數 使用 NonCompressibleFiles 使用 NonCompressibleFiles, 好處很多
           
           
         
@@ -42,6 +41,32 @@ Portable, 免安裝, 下載即可 可產生自訂大小, 自訂個數的檔案 �
 方法 準備工具 youtube-dl 或是 ytl-dp cookie 工具, 我是用 Get cookies.txt 這個 Chrome extension FFmpeg, 轉檔用 準備 cookie 既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.
 使用 youtube-dl 下載 使用如下指令就可以下載檔案了
 1youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/ 要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
+      <link>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</guid>
+      <description>
+        
+          
+            需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊.
+匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務, 他的名字是 if this then that 的縮寫. 以這個應用來講, 我們要的是, IF 拿到一個匯率, THEN 發一個 LINE 訊息, 作法如下:
+在 IFTTT 建立一個新的 Applet
+新增一個 &amp;quot;If This&amp;quot;
+選擇 &amp;quot;Finance&amp;quot; service, 這個服務目前是由 Yahoo 提供的
+選擇&amp;quot;Today&#39;s exchange rate report&amp;quot;
+在這裡輸入你需要的幣別和通知 (發 LINE) 的時間
+新增一個 &amp;quot;Then That&amp;quot;
+選擇 &amp;quot;LINE&amp;quot; service
+目前他只有一個功能就是 Send message, 就選這個
+這時 IFTTT 會需要取得和 LINE 做整合的權限, 請選 Connect
           
           
         

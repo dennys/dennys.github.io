@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Google Pixel 5 Root &amp; Magisk" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/" />
 <meta property="og:title" content="Google Pixel 5 Root &amp; Magisk" />
-<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -201,24 +201,29 @@
   </span>
   </div>
 
-    <div class="post_body"><p>
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#環境準備">環境準備</a>
+      <ol>
+        <li><a href="#安裝-google-usb-driver">安裝 Google USB driver</a></li>
+        <li><a href="#安裝-android-sdk-platform-tools">安裝 Android SDK Platform Tools</a></li>
+      </ol>
+    </li>
+    <li><a href="#手機解鎖-unlock-步驟">手機解鎖 Unlock 步驟</a></li>
+    <li><a href="#手機-root-步驟">手機 Root 步驟</a></li>
+    <li><a href="#參考">參考:</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body">
 <div class="notices warning">
     <div class="label">注意</div>
     系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
   </div>
 
-
-<div class="notices warning">
-    <div class="label">注意</div>
-    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-  </div>
-
-
-<div class="notices warning">
-    <div class="label">注意</div>
-    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-  </div>
-</p>
 <h2 id="環境準備">環境準備</h2>
 <h3 id="安裝-google-usb-driver">安裝 Google USB driver</h3>
 <ol>
@@ -226,28 +231,33 @@
 <li>解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了</li>
 </ol>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-11.png"><img src="https://dennys.files.wordpress.com/2022/02/image-11.png?w=485" alt="" class="wp-image-383"/></a></p>
-<p>ps: 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下</p>
+<ul>
+<li>沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot boot magisk_patched.img</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="p">&lt;</span> waiting <span class="k">for</span> any device &gt;
-</span></span></code></pre></div><p>===================================================</p>
+</span></span></code></pre></div></li>
+</ul>
+<p>===================================================</p>
 <h3 id="安裝-android-sdk-platform-tools">安裝 Android SDK Platform Tools</h3>
-<p>從這裡下載, 一直 next next 就好.</p>
+<ol>
+<li>從這裡下載, 一直 next next 就好.</li>
+</ol>
 <p><a href="https://developer.android.com/studio/releases/platform-tools#downloads">https://developer.android.com/studio/releases/platform-tools#downloads</a></p>
 <p>===================================================</p>
-<h2 id="手機解鎖-unlock">手機解鎖 Unlock</h2>
+<h2 id="手機解鎖-unlock-步驟">手機解鎖 Unlock 步驟</h2>
 <p><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-vivid-red-color"><strong>請記得先備份資料, 因為解鎖會清空資料</strong></mark></p>
 <p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">請記得先備份資料, 因為解鎖會清空資料</mark></strong></p>
 <p><strong><mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">請記得先備份資料, 因為解鎖會清空資料</mark></strong></p>
 <ol>
-<li>手機進入開發者模式並確定 adb devices 可以連上手機</li>
-</ol>
+<li>
+<p>手機進入開發者模式並確定 adb devices 可以連上手機</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb devices</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">List of devices attached
 </span></span><span class="line"><span class="ln">3</span><span class="cl">*************** device
-</span></span></code></pre></div><ol start="2">
-<li>Enable OEM 解鎖</li>
-</ol>
-<p><figure>
+</span></span></code></pre></div></li>
+<li>
+<p>Enable OEM 解鎖
+<figure>
   <picture>
 
     
@@ -264,7 +274,7 @@
       alt=""
       
         class="image_figure image_internal image_unprocessed"
-        src="/zh-tw/images/software/android/android_oem_unlock.webp"
+        src="/images/software/android/android_oem_unlock.webp"
       
       
     />
@@ -272,41 +282,79 @@
     </picture>
 </figure>
 </p>
-<ol start="3">
-<li>執行下列指令, 手機會出現要你確認是否要 unlock, 按下去, 手機就解鎖了. <em>注意: 這裡會把手機資料清空</em></li>
-</ol>
+</li>
+<li>
+<p>執行下列指令, 手機會出現要你確認是否要 unlock, 按下去, 手機就解鎖了. <em><strong>注意: 這個動作會把手機資料清空</strong></em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;adb reboot bootloader</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot flashing unlock</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">OKAY [  0.068s]
 </span></span><span class="line"><span class="ln">4</span><span class="cl">Finished. Total time: 0.071s
-</span></span></code></pre></div><p>=============== 以上完成 Unlock, 以下為 Root 的步驟 ===============</p>
-<h2 id="手機-root">手機 Root</h2>
-<p>1. 用手機下載並安裝 Magisk <s>(https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk)</s> (更新: 請改從這裡抓 https://magiskmanager.com/</p>
-<p>2.1 檢查手機版本 (設定 -&gt; 關於, 然後拉到最下面), 譬如我這支是 SQ1A.220105.002</p>
+</span></span></code></pre></div></li>
+</ol>
+<p>=============== 以上完成 Unlock, 以下為 Root 的步驟 ===============</p>
+<h2 id="手機-root-步驟">手機 Root 步驟</h2>
+<ol>
+<li>
+<p>用手機下載並安裝 Magisk <s>(<a href="https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk">https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk</a>)</s> (更新: 請改從這裡抓 <a href="https://magiskmanager.com/">https://magiskmanager.com/</a>)</p>
+</li>
+<li>
+<p>檢查手機版本 (設定 -&gt; 關於, 然後拉到最下面), 譬如我這支是 SQ1A.220105.002</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-2.png"><img src="https://dennys.files.wordpress.com/2022/02/image-2.png?w=235" alt="" class="wp-image-325"/></a></p>
-<p>2.2 用電腦連到 https://developers.google.com/android/images, 下載對應的 boot image (按 Link) </p>
+</li>
+<li>
+<p>用電腦連到 <a href="https://developers.google.com/android/images">https://developers.google.com/android/images</a>, 下載對應的 boot image (按 Link)</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-17.png"><img src="https://dennys.files.wordpress.com/2022/01/image-17.png?w=848" alt="" class="wp-image-298"/></a></p>
-<p>2.3 解開裡面的 vbmega.img 和 boot.img. </p>
+</li>
+<li>
+<p>解開裡面的 vbmega.img 和 boot.img.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-16.png"><img src="https://dennys.files.wordpress.com/2022/01/image-16.png?w=497" alt="" class="wp-image-295" width="360" height="216"/></a></p>
-<p>3. 將前一步驟解出來的 boot.img 放到手機上, 然後使用 Magisk 對 boot.img 做 patch, 並把 patch 完後的檔案傳回電腦</p>
+</li>
+<li>
+<p>將前一步驟解出來的 boot.img 放到手機上, 然後使用 Magisk 對 boot.img 做 patch, 並把 patch 完後的檔案傳回電腦</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image.png"><img src="https://dennys.files.wordpress.com/2022/02/image.png?w=295" alt="" class="wp-image-319"/></a></p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-1.png"><img src="https://dennys.files.wordpress.com/2022/02/image-1.png?w=291" alt="" class="wp-image-321"/></a></p>
-<p>4. 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式</p>
-<p>5.1 用 fastboot 刷 vbmega.img, 不然刷完後重開機, 手機會出現 failed to load/verify boot images (應該是 Pixel 4A 5G 以後的都需要這個)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">C:\platform-tools&gt;fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img
-</span></span></code></pre></div><p><a href="https://dennys.files.wordpress.com/2022/01/image-15.png"><img src="https://dennys.files.wordpress.com/2022/01/image-15.png?w=760" alt="" class="wp-image-293"/></a></p>
-<p>5.2 用 fastboot 刷剛剛用 Magisk 給 patch 過的 image. 注意, <mark style="background-color:rgba(0,0,0,0);" class="has-inline-color has-luminous-vivid-orange-color">這裡用的是 fastboot boot, 不是 fastboot flash</mark>. 刷完以後會自動重開機.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">fastboot boot magisk_patched.img
-</span></span></code></pre></div><p><a href="https://dennys.files.wordpress.com/2022/01/image-14.png"><img src="https://dennys.files.wordpress.com/2022/01/image-14.png?w=824" alt="" class="wp-image-291"/></a></p>
-<p>6. 使用 Magisk 檢查是否 Root</p>
+</li>
+<li>
+<p>將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式</p>
+</li>
+<li>
+<p>用 fastboot 刷 vbmega.img, 不然刷完後重開機, 手機會出現 failed to load/verify boot images (應該是 Pixel 4A 5G 以後的都需要這個)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Rewriting vbmeta struct at offset: 0
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Sending &#39;vbmeta_a&#39; (8 KB)                         OKAY [  0.135s]
+</span></span><span class="line"><span class="ln">4</span><span class="cl">Sending &#39;vbmeta_a&#39;                                OKAY [  0.144s]
+</span></span><span class="line"><span class="ln">5</span><span class="cl">Finished. Total time: 0.545s
+</span></span></code></pre></div></li>
+<li>
+<p>用 fastboot 刷剛剛用 Magisk 給 patch 過的 image. 注意, 這裡用的是 <em><strong>fastboot boot</strong></em>, 不是 <em><strong>fastboot flash</strong></em>. 刷完以後會自動重開機.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\platform-tools</span><span class="c1">&gt;fastboot boot magisk_patched.img</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Sending &#39;boot.img&#39; (98304 KB)                     OKAY [  2.274s]
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Booting                                           (bootloader) boot.img missing cmdline or OS version
+</span></span><span class="line"><span class="ln">4</span><span class="cl">OKAY [  1.471s]
+</span></span><span class="line"><span class="ln">5</span><span class="cl">Finished. Total time: 3.870s
+</span></span></code></pre></div></li>
+<li>
+<p>使用 Magisk 檢查是否 Root</p>
+<ol>
+<li>
 <p>若你的 Masgisk 長這樣</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-6.png"><img src="https://dennys.files.wordpress.com/2022/02/image-6.png?w=59" alt="" class="wp-image-353"/></a></p>
+</li>
+<li>
 <p>然後執行時出現這個畫面, 這時候按確定, 他應該會去嘗試下載, 然後最後說剖析套件時發生問題.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-7.png"><img src="https://dennys.files.wordpress.com/2022/02/image-7.png?w=242" alt="" class="wp-image-354" width="214" height="101"/></a></p>
-<p>還是得裝前面講的版本 (https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk), 執行後看到下面畫面, 就是 Root 成功了.</p>
+</li>
+<li>
+<p>所以還是得裝前面講的版本 (<a href="https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk)">https://github.com/topjohnwu/magisk_files/blob/canary/app-debug.apk)</a>, 執行後看到下面畫面, 就是 Root 成功了.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-3.png"><img src="https://dennys.files.wordpress.com/2022/02/image-3.png?w=289" alt="" class="wp-image-327"/></a></p>
-<p>7. Root 之後可再刷第三方 ROM, Pixel5 有一堆可刷, 可參考 https://forum.xda-developers.com/f/11343/. 比較意外的是, 本來以為最多人用的是 <a rel="noreferrer noopener" href="https://www.google.com/search?q=LineageOS" target="_blank">LineageOS</a>, 不過看來 <a rel="noreferrer noopener" href="https://www.google.com/search?q=ProtonASOP" target="_blank">ProtonASOP</a> 受到的關注更多 (以 XDA 上面的 views/replies 數量來看). 還有 <a rel="noreferrer noopener" href="https://forum.xda-developers.com/t/4192641/" target="_blank">CleanSlate</a> 在沒有 Root 的情況下也可以使用, 這個值得研究一下.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Root 之後可再刷第三方 ROM, Pixel5 有一堆可刷, 可參考 <a href="https://forum.xda-developers.com/f/11343/">https://forum.xda-developers.com/f/11343/</a>. 比較意外的是, 本來以為最多人用的是 <a href="https://www.google.com/search?q=LineageOS">LineageOS</a>, 不過看來 <a href="https://www.google.com/search?q=ProtonASOP">ProtonASOP</a> 受到的關注更多 (以 XDA 上面的 views/replies 數量來看). 還有 <a href="https://forum.xda-developers.com/t/4192641/">CleanSlate</a> 在沒有 Root 的情況下也可以使用, 這個值得研究一下.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/02/image-9.png"><img src="https://dennys.files.wordpress.com/2022/02/image-9.png?w=600" alt="" class="wp-image-361"/></a></p>
+</li>
+</ol>
 <h2 id="參考">參考:</h2>
 <ol>
 <li><a href="https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6233575">https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6233575</a> (這篇是 Pixel 4XL, 所以不需要 vbmega.img)</li>
@@ -443,6 +491,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -450,11 +503,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -545,7 +593,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

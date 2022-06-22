@@ -200,18 +200,40 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#asuswrt-merlin-的-vpn-方案">Asuswrt-Merlin 的 VPN 方案</a></li>
+    <li><a href="#測試環境">測試環境</a></li>
+    <li><a href="#openvpn-server-設定-在-asuswrt-merlin">OpenVPN server 設定 (在 Asuswrt-Merlin)</a>
+      <ol>
+        <li><a href="#1-openvpn-server-一般設定">1. OpenVPN server 一般設定</a></li>
+        <li><a href="#2-openvpn-server-進階設定">2. OpenVPN server 進階設定</a></li>
+      </ol>
+    </li>
+    <li><a href="#openvpn-client-for-windows">OpenVPN Client for Windows</a></li>
+    <li><a href="#openvpn-client-for-android">OpenVPN Client for Android</a></li>
+    <li><a href="#openvpn-client-for-ios-macos-linux">OpenVPN Client for iOS, MacOS, Linux</a></li>
+    <li><a href="#openvpn-server-上的連線狀況">OpenVPN Server 上的連線狀況</a></li>
+    <li><a href="#softether-vpn">SoftEther VPN</a></li>
+    <li><a href="#asuswrt-openvpn-還不足的地方">Asuswrt OpenVPN 還不足的地方</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><h2 id="asuswrt-merlin-的-vpn-方案">Asuswrt-Merlin 的 VPN 方案</h2>
 <p><a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.</p>
-<h2 id="測試平台">測試平台</h2>
+<h2 id="測試環境">測試環境</h2>
 <ul>
 <li>Asus RC-AC66U B1</li>
 <li>Asuswrt-Merlin 386.5 (這個版本的 OpenVPN 是 2.5.5)</li>
 </ul>
 <h2 id="openvpn-server-設定-在-asuswrt-merlin">OpenVPN server 設定 (在 Asuswrt-Merlin)</h2>
 <h3 id="1-openvpn-server-一般設定">1. OpenVPN server 一般設定</h3>
-<p>首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &quot;LAN only&quot;. 另外, 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/06/image-10.png"><img src="https://dennys.files.wordpress.com/2022/06/image-10.png?w=758" alt="" class="wp-image-768" width="654" height="731"/></a>
+<p>首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &quot;LAN only&quot;. 另外, 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.
+<a href="https://dennys.files.wordpress.com/2022/06/image-10.png"><img src="https://dennys.files.wordpress.com/2022/06/image-10.png?w=758" alt="" class="wp-image-768" width="654" height="731"/></a>
 <br></p>
 <h3 id="2-openvpn-server-進階設定">2. OpenVPN server 進階設定</h3>
 <p>再來是設定其他的細節, 先在下拉式選單這裡選 &quot;進階設定&quot;</p>
@@ -398,6 +420,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -405,11 +432,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -500,7 +522,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

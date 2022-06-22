@@ -28,16 +28,21 @@ Step 2 - prepare .NET build environment Download and install Visual Studio.
     
     <item>
       <title>Use IFTTT to send currency exchange rate mail daily</title>
-      <link>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</link>
+      <link>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/ifttt/use-ifttt-to-send-currency-exchange-rate-mail-daily/</guid>
+      <guid>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</guid>
       <description>
         
           
             Requirement I want to have a daily mail including currency exchange rate information.
 Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
-Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;quot;finance&amp;quot; service Choose &amp;quot;Today&#39;s exchange rate report&amp;quot; Choose the input/output currency and trigger time. Add a new &amp;quot;Then That&amp;quot; Choose a &amp;quot;gmail&amp;quot; service If you just want to send yourself an email, you can click the right button.
+Create a new Applet on IFTTT
+Add a new &amp;quot;If This&amp;quot;
+Choose &amp;quot;finance&amp;quot; service
+Choose &amp;quot;Today&#39;s exchange rate report&amp;quot;
+Choose the input/output currency and trigger time.
+Add a new &amp;quot;Then That&amp;quot;
           
           
         
@@ -46,10 +51,10 @@ Create a new Applet on IFTTT Add a new &amp;quot;If This&amp;quot; Choose &amp;q
     
     <item>
       <title>Use WISE to send currency exchange rate mail daily</title>
-      <link>https://dennys.github.io/en/doc/software/use-wise-to-send-currency-exchange-rate-mail-daily/</link>
+      <link>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/use-wise-to-send-currency-exchange-rate-mail-daily/</guid>
+      <guid>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
       <description>
         
           

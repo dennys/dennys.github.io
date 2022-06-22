@@ -26,16 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以 …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Tomato DualWan 之 3G 上網" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" />
 <meta property="og:title" content="Tomato DualWan 之 3G 上網" />
-<meta property="og:description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以 …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -200,6 +198,20 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#軟硬體">軟硬體</a></li>
+    <li><a href="#前置準備">前置準備</a></li>
+    <li><a href="#設定步驟">設定步驟</a></li>
+    <li><a href="#測試結果">測試結果</a></li>
+    <li><a href="#結論">結論</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg"><figure>
   <picture>
 
@@ -227,7 +239,12 @@
     </picture>
 </figure>
 </a></p>
-<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong></p>
+
+<div class="notices warning">
+    <div class="label">注意</div>
+    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+  </div>
+
 <h2 id="前言">前言</h2>
 <p>無意中發現 Tomato DualWAN 自 <a href="http://bbs.dualwan.cn/thread-9022-1-1.html">1.23.0410</a> (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.</p>
 <h2 id="軟硬體">軟硬體</h2>
@@ -326,7 +343,7 @@
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: remote IP address 10.64.64.64  
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: primary   DNS address 168.95.1.1  
 </span></span><span class="line"><span class="ln">10</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: secondary DNS address 168.95.192.
-</span></span></code></pre></div><h2 id="測試心得">測試心得</h2>
+</span></span></code></pre></div><h2 id="測試結果">測試結果</h2>
 <p>有試著連續開好幾天, 基本上連線是 ok 的, 但是有幾個地方很困擾.</p>
 <ol>
 <li>keventd 的 loading 很高, 開個 ftp (100KB/ 左右) 就可以接近 100%. 原因不知, 已向官網<a href="http://bbs.dualwan.cn/thread-15752-1-1.html">反應</a>, 但似乎沒有別人碰到類似的問題... 我覺得應該是 3G 的問題, 因為有在內部網路傳檔 (1.5MB/s), 那時候的 loading 都滿低的... 下面是用 <a href="http://www.mozilla.com/firefox/">Firefox</a> 開 <a href="http://gmail.com/" title="Google Mail">GMail</a> 時的 top 結果.</li>
@@ -483,6 +500,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -490,11 +512,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -585,7 +602,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

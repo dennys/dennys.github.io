@@ -212,7 +212,7 @@
           
             <p>Asuswrt-Merlin 的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
 註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.
-測試平台 Asus RC-AC66U B1 Asuswrt-Merlin …</p>
+測試環境 Asus RC-AC66U B1 Asuswrt-Merlin …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -558,8 +558,8 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &quot;不要驗證&quot;, 如下:
-自 Android …</p>
+            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &quot;不要驗證&quot;, 如下:
+自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &quot;不要驗證&quot;, …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -629,9 +629,11 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
-將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
-用 fastboot 刷回原始的 boot.img …</p>
+            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+方法 1 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
+用 fastboot 刷回原始的 boot.img
+1fastboot boot boot.img&lt;/code&gt;&lt;/pre&gt; 方法 2 其實 Magisk 有這個功能刷回原始的 boot.img
+但我實測按下還原原始映像檔是沒作用的, 所以只 …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/android/android-remove-root-magisk/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -657,6 +659,7 @@
       Mar 25, 2022</span>
     <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/ifttt/' title="IFTTT" class="post_tag button button_translucent">IFTTT
         </a><a href='https://dennys.github.io/tw/tags/line/' title="LINE" class="post_tag button button_translucent">LINE
+        </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -698,16 +701,12 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p><p>需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊.
-匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務, 他的名字是 if this then that 的縮寫. 以這個應用來講, 我們要的是, IF 拿到一個匯率, THEN 發一個 LINE 訊息, 作法如下:</p>
-<ol>
-<li>在 IFTTT 建立一個新的 Applet</li>
-<li>新增一個 &quot;If This&quot;</li>
-<li>選擇 &quot;Finance&quot; service, 這個服務目前是由 Yahoo 提供的</li>
-<li>選擇&quot;Today's exchange rate report&quot;</li>
-<li>在這裡輸入你 …</li>
-</ol>
-</p>
+            <p>需求 用 LINE Bot 機器人每天自動發一個 LINE 訊息到群組, 要包含以下資訊.
+匯率 一些連結到各銀行的匯率網站 一些匯率的歷史圖表 做法: 使用 IFTTT + LINE IFTTT 是個免費的服務, 他的名字是 if this then that 的縮寫. 以這個應用來講, 我們要的是, IF 拿到一個匯率, THEN 發一個 LINE 訊息, 作法如下:
+在 IFTTT 建立一個新的 Applet
+新增一個 &quot;If This&quot;
+選擇 &quot;Finance&quot; service, 這個服務目前是由 Yahoo 提供的
+選擇&quot;Today's exchange rate …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -776,9 +775,9 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 <a href="https://forum.xda-developers.com/f/5186/">https://forum.xda-developers.com/f/5186/</a>)
-最有名的 LineageOS 15~19 …</p>
+最有名的 LineageOS 15~19.1 (Android 8~12L) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -848,7 +847,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 ps: 沒有裝 driver 的話, …</p>
+            <p>注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&gt;fastboot boot magisk_patched.img 2&lt; …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -998,6 +997,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -1005,11 +1009,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -1100,7 +1099,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

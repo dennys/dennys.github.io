@@ -26,18 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-**前言
-Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="CDMA@wifi (Oleg) 之 3G 上網" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" />
 <meta property="og:title" content="CDMA@wifi (Oleg) 之 3G 上網" />
-<meta property="og:description" content="注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!
-**前言
-Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -202,6 +198,21 @@ Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#參考文章">參考文章</a></li>
+    <li><a href="#軟硬體">軟硬體</a></li>
+    <li><a href="#前置準備">前置準備</a></li>
+    <li><a href="#步驟">步驟</a></li>
+    <li><a href="#故障排除">故障排除</a></li>
+    <li><a href="#測試心得">測試心得</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><p><a href="http://4.bp.blogspot.com/-rCd8h7VM0WI/ToJhcAfqcxI/AAAAAAAABkc/dog5uxnIWxs/s1600/Asus_500gp_1.jpg"><figure>
   <picture>
 
@@ -229,26 +240,31 @@ Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新
     </picture>
 </figure>
 </a></p>
-<p><strong>注意：所有改機流程皆有其風險，請各位朋友在開始動作以前自行評估!!</strong></p>
-<p>**前言</p>
+
+<div class="notices warning">
+    <div class="label">注意</div>
+    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+  </div>
+
+<h2 id="前言">前言</h2>
 <p><a href="http://oleg.wl500g.info/">Oleg</a>官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. <a href="http://koppel.cz/cdmawifi/english/">CDMA@wifi</a> 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.</p>
-<p>**參考文章</p>
+<h2 id="參考文章">參考文章</h2>
 <ul>
 <li><a href="http://digiland.tw/viewtopic.php?id=455">數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網)</a></li>
 <li><a href="http://digiland.tw/viewtopic.php?id=158">數位天堂: WL-500g 系列改機基本步驟</a></li>
 </ul>
-<p>**軟硬體</p>
+<h2 id="軟硬體">軟硬體</h2>
 <ul>
 <li>Hub: <a href="http://tw.asus.com/product.aspx?P_ID=8el2DcrRjLoHNdQ8&amp;templete=2">Asus WL-500gP V1</a></li>
 <li>USB 網卡: <a href="http://www.huawei.com/mobileweb/en/products/view.do?id=1181">Huawei E169</a></li>
 <li>Firmware: <a href="http://koppel.cz/cdmawifi/english/">CDMA@wifi</a> <a href="http://koppel.cz/cdmawifi/download/171/WL500gp-1.9.2.7-10-USB-1.71.trx">1.9.2.7-10-USB-1.71</a></li>
 </ul>
-<p>**前置準備</p>
+<h2 id="前置準備">前置準備</h2>
 <ul>
 <li>將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟)</li>
 <li>把 SIM 卡的 pin code 給 disable</li>
 </ul>
-<p>**步驟</p>
+<h2 id="步驟">步驟</h2>
 <ol>
 <li>
 <p>設定 3G 上網</p>
@@ -348,13 +364,17 @@ Modem type: Huawei E169
 </span></span><span class="line"><span class="ln">28</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.192.1#53  
 </span></span><span class="line"><span class="ln">29</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.1.1#53  
 </span></span><span class="line"><span class="ln">30</span><span class="cl">Jan  <span class="m">1</span> 01:19:06 USB Connection: connected to ISP
-</span></span></code></pre></div><p>4. 無意中發現的好處<br>
-測試了幾天, 發現透過 hub 的 3G 上網, 似乎比直接用 Mobile Partner 還快滿多的, 不知道是不是 USB device packet size 的功勞?</p>
-<p><strong>故障排除</strong><br>
-1. dmesg 是最基本的<br>
-2. /tmp/syslog.log</p>
-<p><strong>測試心得:</strong><br>
-用了快兩個月, 基本上就是很好, 很穩, 很不錯!!</p>
+</span></span></code></pre></div><ol start="4">
+<li>無意中發現的好處
+測試了幾天, 發現透過 hub 的 3G 上網, 似乎比直接用 Mobile Partner 還快滿多的, 不知道是不是 USB device packet size 的功勞?</li>
+</ol>
+<h2 id="故障排除">故障排除</h2>
+<ol>
+<li>dmesg 是最基本的</li>
+<li>/tmp/syslog.log</li>
+</ol>
+<h2 id="測試心得">測試心得</h2>
+<p>用了快兩個月, 基本上就是很好, 很穩, 很不錯!!</p>
 
     </div>
 <div class="post_comments">
@@ -485,6 +505,11 @@ Modem type: Huawei E169
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -492,11 +517,6 @@ Modem type: Huawei E169
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -587,7 +607,7 @@ Modem type: Huawei E169
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

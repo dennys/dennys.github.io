@@ -26,18 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asus Merlin 上的流量管理軟體
-安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
-原文: …" />
+<meta name="description" content="注意 FreshJR_Qos已停止維護, 請改用 FlexQoS FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
+安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Asuswrt Merlin FreshJR Adaptive QoS (流量管理)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/" />
 <meta property="og:title" content="Asuswrt Merlin FreshJR Adaptive QoS (流量管理)" />
-<meta property="og:description" content="FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asus Merlin 上的流量管理軟體
-安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
-原文: …" />
+<meta property="og:description" content="注意 FreshJR_Qos已停止維護, 請改用 FlexQoS FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
+安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -203,15 +201,34 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="freshjr-adaptive-qos">FreshJR Adaptive QOS</h2>
-<p><a href="https://www.snbforums.com/threads/36836/">FreshJR Adaptive QoS</a> 是個可安裝在 Asus Merlin 上的流量管理軟體</p>
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#freshjr-adaptive-qos">FreshJR Adaptive QOS</a></li>
+    <li><a href="#安裝步驟">安裝步驟</a></li>
+    <li><a href="#安裝前--測試結果">安裝前 &amp; 測試結果</a></li>
+    <li><a href="#安裝後--測試結果">安裝後 &amp; 測試結果</a></li>
+    <li><a href="#後記">後記</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">注意</div>
+    FreshJR_Qos已停止維護, 請改用 FlexQoS
+  </div>
+
+<h2 id="freshjr-adaptive-qos">FreshJR Adaptive QOS</h2>
+<p><a href="https://www.snbforums.com/threads/36836/">FreshJR Adaptive QoS</a> 是個可安裝在 Asuswrt Merlin 上的流量管理軟體</p>
 <h2 id="安裝步驟">安裝步驟</h2>
 <ol>
 <li>
 <p>用 <a href="https://diversion.ch/amtm.html">amtm</a> (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明</p>
 <ul>
 <li>原文: <a href="https://www.snbforums.com/threads/36836/">https://www.snbforums.com/threads/36836/</a></li>
-<li>中文摘要翻譯: <a href="https://www.ptt.cc/bbs/Broad">https://www.ptt.cc/bbs/Broad</a>_Band/M.1546556091.A.F79.html</li>
+<li>中文摘要翻譯: <a href="https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html">https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html</a></li>
 </ul>
 </li>
 <li>
@@ -249,9 +266,11 @@
 </ol>
 </li>
 </ol>
-<h2 id="安裝前">安裝前</h2>
-<p>設定如下:</p>
-<p><figure>
+<h2 id="安裝前--測試結果">安裝前 &amp; 測試結果</h2>
+<ol>
+<li>
+<p>設定如下:
+<figure>
   <picture>
 
     
@@ -278,8 +297,10 @@
     </picture>
 </figure>
 </p>
-<p>測試結果: <a href="http://www.dslreports.com/speedtest/58928634">http://www.dslreports.com/speedtest/58928634</a></p>
-<p><figure>
+</li>
+<li>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58928634">http://www.dslreports.com/speedtest/58928634</a>
+<figure>
   <picture>
 
     
@@ -333,9 +354,13 @@
     </picture>
 </figure>
 </p>
-<h2 id="安裝後">安裝後</h2>
-<p>設定如下:</p>
-<p><figure>
+</li>
+</ol>
+<h2 id="安裝後--測試結果">安裝後 &amp; 測試結果</h2>
+<ol>
+<li>
+<p>設定如下:
+<figure>
   <picture>
 
     
@@ -362,8 +387,10 @@
     </picture>
 </figure>
 </p>
-<p>測試結果: <a href="http://www.dslreports.com/speedtest/58929066">http://www.dslreports.com/speedtest/58929066</a></p>
-<p><figure>
+</li>
+<li>
+<p>測試結果: <a href="http://www.dslreports.com/speedtest/58929066">http://www.dslreports.com/speedtest/58929066</a>
+<figure>
   <picture>
 
     
@@ -417,6 +444,10 @@
     </picture>
 </figure>
 </p>
+</li>
+</ol>
+<h2 id="後記">後記</h2>
+<p>FreshJR_Qos已停止維護, 請改用 <a href="https://www.snbforums.com/threads/75620/">FlexQoS</a></p>
 
     </div>
 <div class="post_comments">
@@ -547,6 +578,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -554,11 +590,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -649,7 +680,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             

@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Android 11 如何不要驗證 Wi-Fi CA 憑證" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/" />
 <meta property="og:title" content="Android 11 如何不要驗證 Wi-Fi CA 憑證" />
-<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -201,25 +201,27 @@
   </span>
   </div>
 
-    <div class="post_body"><p>
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#本文更新紀錄">本文更新紀錄</a></li>
+    <li><a href="#wi-fi-ca-憑證驗證在-android-11-的改變">Wi-Fi CA 憑證驗證在 Android 11 的改變</a></li>
+    <li><a href="#修改步驟">修改步驟</a></li>
+    <li><a href="#系統更新後如何處理">系統更新後如何處理?</a></li>
+    <li><a href="#wi-fi-密碼更新後如何處理">Wi-Fi 密碼更新後如何處理?</a></li>
+    <li><a href="#後記">後記</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body">
 <div class="notices warning">
     <div class="label">注意</div>
     系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
   </div>
 
-
-<div class="notices warning">
-    <div class="label">注意</div>
-    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-  </div>
-
-
-<div class="notices warning">
-    <div class="label">注意</div>
-    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-  </div>
-</p>
-<h2 id="更新紀錄">更新紀錄</h2>
+<h2 id="本文更新紀錄">本文更新紀錄</h2>
 <ol>
 <li>2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式</li>
 </ol>
@@ -231,23 +233,26 @@
 <h2 id="修改步驟">修改步驟</h2>
 <ol>
 <li>
-<p>首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://dennys.github.io/zh-tw/2022/03/google-pixel-5-root-magisk">https://dennys.github.io/zh-tw/2022/03/google-pixel-5-root-magisk</a>. (要做到把 boot.img 換掉)</p>
+<p>首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/">https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</a>. (要做到把 boot.img 換掉, Magisk 不需要裝)</p>
 </li>
 <li>
-<p>試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<em><strong>當然是不會成功</strong></em>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.</p>
+<p>試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<em><strong>當然是不會成功</strong></em>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.
+<a href="https://dennys.files.wordpress.com/2022/02/1-1.png"><img src="https://dennys.files.wordpress.com/2022/02/1-1.png?w=373" alt="" class="wp-image-316" width="261" height="369"/></a></p>
 </li>
-</ol>
-<p><a href="https://dennys.files.wordpress.com/2022/02/1-1.png"><img src="https://dennys.files.wordpress.com/2022/02/1-1.png?w=373" alt="" class="wp-image-316" width="261" height="369"/></a></p>
-<ol start="3">
-<li>先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p></li>
-</ol>
+<li>
+<p>先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb shell
 </span></span><span class="line"><span class="ln">2</span><span class="cl">su
 </span></span><span class="line"><span class="ln">3</span><span class="cl">cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
-</span></span></code></pre></div><p>若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.</p>
+</span></span></code></pre></div><ul>
+<li>若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">127<span class="p">|</span>redfin:/system/bin $ su
 </span></span><span class="line"><span class="ln">2</span><span class="cl">/system/bin/sh: su: inaccessible or not found
-</span></span></code></pre></div><p>讀出來的 WifiConfigStore.xml 內容如下, 可找 WifiEnterpriseConfiguration 這個關鍵字, 目的是要把紅色的設定值拿掉</p>
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>讀出來的 WifiConfigStore.xml 內容如下, 可找 WifiEnterpriseConfiguration 這個關鍵字, 目的是要把 12,13 行的設定值清掉</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">&lt;WifiEnterpriseConfiguration&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;Identity&#34;</span><span class="nt">&gt;</span>這裡是帳號名字<span class="nt">&lt;/string&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;AnonIdentity&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
@@ -259,8 +264,8 @@
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;EngineId&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;PrivateKeyId&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
 </span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;AltSubjectMatch&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;DomSuffixMatch&#34;</span><span class="nt">&gt;</span>這裡是上面隨便輸入的網域<span class="nt">&lt;/string&gt;</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;CaPath&#34;</span><span class="nt">&gt;</span>/system/etc/security/cacerts<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line hl"><span class="ln">12</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;DomSuffixMatch&#34;</span><span class="nt">&gt;</span>這裡是上面隨便輸入的網域<span class="nt">&lt;/string&gt;</span>
+</span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;CaPath&#34;</span><span class="nt">&gt;</span>/system/etc/security/cacerts<span class="nt">&lt;/string&gt;</span>
 </span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="nt">&lt;int</span> <span class="na">name=</span><span class="s">&#34;EapMethod&#34;</span> <span class="na">value=</span><span class="s">&#34;0&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="nt">&lt;int</span> <span class="na">name=</span><span class="s">&#34;Phase2Method&#34;</span> <span class="na">value=</span><span class="s">&#34;4&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;PLMN&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
@@ -272,17 +277,17 @@
 </span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="nt">&lt;null</span> <span class="na">name=</span><span class="s">&#34;KeyChainAlias&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="nt">&lt;null</span> <span class="na">name=</span><span class="s">&#34;DecoratedIdentityPrefix&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="nt">&lt;/WifiEnterpriseConfiguration&gt;</span>
-</span></span></code></pre></div><ol start="4">
-<li>執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <code>CaPath</code> 和 <code>DomSuffixMatch</code> 的內容改成空白. 最後一個步驟會重開, <em><strong>要重開才會生效</strong></em>.</li>
-</ol>
+</span></span></code></pre></div></li>
+<li>
+<p>執行以下指令 (這指令是直接從上面那篇 stackexchange 抄過來的), 他就會把 <code>CaPath</code> 和 <code>DomSuffixMatch</code> 的內容改成空白. 最後一個步驟會重開, <em><strong>要重開才會生效</strong></em>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb shell
 </span></span><span class="line"><span class="ln">2</span><span class="cl">su
 </span></span><span class="line"><span class="ln">3</span><span class="cl">sed -i &#39;s<span class="nv">%&lt;string name=&#34;CaPath&#34;&gt;.*&lt;/string&gt;%</span><span class="p">&lt;</span>string name=<span class="s2">&#34;CaPath&#34;</span><span class="p">&gt;</span>&lt;/string<span class="p">&gt;</span>%&#39; /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
 </span></span><span class="line"><span class="ln">4</span><span class="cl">sed -i &#39;s<span class="nv">%&lt;string name=&#34;DomSuffixMatch&#34;&gt;.*&lt;/string&gt;%</span><span class="p">&lt;</span>string name=<span class="s2">&#34;DomSuffixMatch&#34;</span><span class="p">&gt;</span>&lt;/string<span class="p">&gt;</span>%&#39; /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
 </span></span><span class="line"><span class="ln">5</span><span class="cl">reboot
-</span></span></code></pre></div><ol start="5">
-<li>重開完後, 檢查 <code>/data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code> 的內容, 確認下面 12~13 列的設定被清空了</li>
-</ol>
+</span></span></code></pre></div></li>
+<li>
+<p>重開完後, 檢查 <code>/data/misc/apexdata/com.android.wifi/WifiConfigStore.xml</code> 的內容, 確認下面 12~13 列的設定被清空了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">&lt;WifiEnterpriseConfiguration&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;Identity&#34;</span><span class="nt">&gt;</span>這裡是帳號名字<span class="nt">&lt;/string&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nt">&lt;string</span> <span class="na">name=</span><span class="s">&#34;AnonIdentity&#34;</span><span class="nt">&gt;&lt;/string&gt;</span>
@@ -307,12 +312,12 @@
 </span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="nt">&lt;null</span> <span class="na">name=</span><span class="s">&#34;KeyChainAlias&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="nt">&lt;null</span> <span class="na">name=</span><span class="s">&#34;DecoratedIdentityPrefix&#34;</span> <span class="nt">/&gt;</span>
 </span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="nt">&lt;/WifiEnterpriseConfiguration&gt;</span>
-</span></span></code></pre></div><ol start="6">
+</span></span></code></pre></div></li>
 <li>
-<p>這時候應該就可以連線了</p>
+<p>這時候就可以測試連線了</p>
 </li>
 <li>
-<p>因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 <a href="https://dennys.github.io/zh-tw/202203/android-remove-root-magisk/">https://dennys.github.io/zh-tw/202203/android-remove-root-magisk/</a></p>
+<p>因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 <a href="https://dennys.github.io/tw/doc/android/android-remove-root-magisk/">https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</a></p>
 </li>
 </ol>
 <h2 id="系統更新後如何處理">系統更新後如何處理?</h2>
@@ -455,6 +460,11 @@
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -462,11 +472,6 @@
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">4</span>
         </a>
         
@@ -557,7 +562,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             
