@@ -198,7 +198,7 @@
   </span>
   </div>
 
-    <div class="post_body"><p>在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的<a href="http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html/">目錄結構</a>放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).</p>
+    <div class="post_body"><p>在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的<a href="https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html">目錄結構</a>放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).</p>
 <p>另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:</p>
 <ol>
 <li>先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local repository 裡面去.</li>
@@ -366,11 +366,6 @@
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
-          <span class="button_tally">5</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -381,8 +376,18 @@
           <span class="button_tally">4</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">4</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
           ASUSWRT-MERLIN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
+          DATABASE
           <span class="button_tally">3</span>
         </a>
         
@@ -394,11 +399,6 @@
         <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
           NETWORK
           <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
-          DATABASE
-          <span class="button_tally">2</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/openvpn/' class="post_tag button button_translucent" title="openvpn">
@@ -420,7 +420,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=2 title="database">DATABASE<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=3 title="database">DATABASE<span class="button_tally">3</span>
             </a>
             
             
@@ -429,6 +429,10 @@
             
             
             <a href='https://dennys.github.io/tw/tags/google-tv/' class=" post_tag button button_translucent" data-position=3 title="google-tv">GOOGLE-TV<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/hardware/' class=" post_tag button button_translucent" data-position=1 title="hardware">HARDWARE<span class="button_tally">1</span>
             </a>
             
             
@@ -472,7 +476,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
             </a>
             
             

@@ -267,7 +267,7 @@
 </span></span><span class="line"><span class="ln">18</span><span class="cl">      <span class="nt">&lt;/plugin&gt;</span>
 </span></span></code></pre></div><p>實際上他會呼叫 jarsigner.exe 來做簽名的動作, 可以在 console 看到 log如下 (因為是 debug level, 所以要把 Maven 開到 debug mode 才看得到)```</p>
 <p><code>[debug] Executing: cmd.exe /X /C \&quot;...\\jarsigner.exe -verify ...\\app-client-1.0.jar\&quot;</code></p>
-<p>另外, 也可以使用 maven-jar-plugin, 效果和 maven-jarsigner-plugin 是一樣的. 但是在 jar-plugin 2.3 以後, <a href="http://maven.apache.org/plugins/maven-jar-plugin/sign-mojo.html/">jar:sign 已經不被建議使用</a>, 請改用 jarsigner-plugin. 比較特別的是, jar-plugin 可以指定 signedjar 把簽名過的檔案放到其他目錄, 而 jarsigner-plugin 似乎沒有這個功能.</p>
+<p>另外, 也可以使用 maven-jar-plugin, 效果和 maven-jarsigner-plugin 是一樣的. 但是在 jar-plugin 2.3 以後, <a href="https://maven.apache.org/plugins-archives/maven-jar-plugin-2.3.2/sign-mojo.html">jar:sign 已經不被建議使用</a>, 請改用 jarsigner-plugin. 比較特別的是, jar-plugin 可以指定 signedjar 把簽名過的檔案放到其他目錄, 而 jarsigner-plugin 似乎沒有這個功能.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln"> 1</span><span class="cl">      <span class="nt">&lt;plugin&gt;</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">        <span class="nt">&lt;groupid&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupid&gt;</span>
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="nt">&lt;artifactid&gt;</span>maven-jar-plugin<span class="nt">&lt;/artifactid&gt;</span>
@@ -290,15 +290,15 @@
 </span></span></code></pre></div><p>喔, 講了那麼多, 都沒有提到 Jar... 其實 Applet 就是一個 Jar, 所以用上面 Applet 的方式就可以了. 差別在於 Jar 一般來說不需要簽名就是了.</p>
 <h2 id="參考">參考</h2>
 <ul>
-<li><a href="http://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html">http://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html</a></li>
-<li><a href="http://maven.apache.org/plugins/maven-jar-plugin/">http://maven.apache.org/plugins/maven-jar-plugin/</a></li>
-<li><a href="http://maven.apache.org/plugins/maven-jarsigner-plugin/">http://maven.apache.org/plugins/maven-jarsigner-plugin/</a></li>
-<li><a href="http://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it">http://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it</a></li>
+<li><a href="https://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html">https://maven.apache.org/plugins/maven-assembly-plugin/single-mojo.html</a></li>
+<li><a href="https://maven.apache.org/plugins/maven-jar-plugin/">https://maven.apache.org/plugins/maven-jar-plugin/</a></li>
+<li><a href="https://maven.apache.org/plugins/maven-jarsigner-plugin/">https://maven.apache.org/plugins/maven-jarsigner-plugin/</a></li>
+<li><a href="https://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it">https://stackoverflow.com/questions/2027753/how-to-deploy-applet-with-dependencies-jar-using-maven-and-sign-it</a></li>
 </ul>
 <h2 id="reference-for-assembly-for-standalone-jar">Reference for assembly for standalone jar</h2>
 <ul>
-<li><a href="http://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro">http://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro</a></li>
-<li><a href="http://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp">http://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp</a></li>
+<li><a href="https://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro">https://stackoverflow.com/questions/1832853/is-it-possible-to-create-an-uber-jar-containing-the-project-classes-and-the-pro</a></li>
+<li><a href="https://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp">https://blog.csdn.net/mozhenghua/archive/2010/06/14/5671133.asp</a></li>
 </ul>
 
     </div>
@@ -430,11 +430,6 @@
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
-          <span class="button_tally">5</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/maven/' class="post_tag button button_translucent" title="maven">
           MAVEN
           <span class="button_tally">4</span>
@@ -445,8 +440,18 @@
           <span class="button_tally">4</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">4</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
           ASUSWRT-MERLIN
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
+          DATABASE
           <span class="button_tally">3</span>
         </a>
         
@@ -458,11 +463,6 @@
         <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
           NETWORK
           <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
-          DATABASE
-          <span class="button_tally">2</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/openvpn/' class="post_tag button button_translucent" title="openvpn">
@@ -484,7 +484,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=2 title="database">DATABASE<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=3 title="database">DATABASE<span class="button_tally">3</span>
             </a>
             
             
@@ -493,6 +493,10 @@
             
             
             <a href='https://dennys.github.io/tw/tags/google-tv/' class=" post_tag button button_translucent" data-position=3 title="google-tv">GOOGLE-TV<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/hardware/' class=" post_tag button button_translucent" data-position=1 title="hardware">HARDWARE<span class="button_tally">1</span>
             </a>
             
             
@@ -536,7 +540,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=4 title="software">SOFTWARE<span class="button_tally">4</span>
             </a>
             
             

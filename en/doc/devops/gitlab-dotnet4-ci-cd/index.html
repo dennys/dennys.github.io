@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Use GitLab to do .NET 4.X CI/CD | Dennys Diary</title>
+<title>Use GitLab to do .NET 4.8 CI/CD | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., …" />
+<meta name="description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="Use GitLab to do .NET 4.X CI/CD" />
+<meta name="twitter:title" content="Use GitLab to do .NET 4.8 CI/CD" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" />
-<meta property="og:title" content="Use GitLab to do .NET 4.X CI/CD" />
-<meta property="og:description" content="Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., …" />
+<meta property="og:title" content="Use GitLab to do .NET 4.8 CI/CD" />
+<meta property="og:description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -150,7 +150,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Use GitLab to do .NET 4.X CI/CD</h1>
+    <h1 class="post_title">Use GitLab to do .NET 4.8 CI/CD</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -167,14 +167,14 @@
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Use%20GitLab%20to%20do%20.NET%204.X%20CI%2fCD&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-dotnet4-ci-cd%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Use%20GitLab%20to%20do%20.NET%204.8%20CI%2fCD&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-dotnet4-ci-cd%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-dotnet4-ci-cd%2f&t=Use%20GitLab%20to%20do%20.NET%204.X%20CI%2fCD" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-dotnet4-ci-cd%2f&t=Use%20GitLab%20to%20do%20.NET%204.8%20CI%2fCD" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -199,36 +199,85 @@
   </span>
   </div>
 
-    <div class="post_body"><h2 id="precondition">Precondition</h2>
+      <div class="post_toc">
+        <h2>Overview</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#precondition">Precondition</a>
+      <ol>
+        <li><a href="#procedure">Procedure</a></li>
+        <li><a href="#step-1---prepare-net-build-environment">Step 1 - Prepare .NET build environment</a></li>
+        <li><a href="#step-2---install-git-client">Step 2 - Install Git client</a></li>
+        <li><a href="#step-3---install-gitlab-runner">Step 3 - Install GitLab Runner</a></li>
+        <li><a href="#step-4---write-gitlab-ciyml">Step 4 - Write .gitlab-ci.yml</a></li>
+        <li><a href="#step-5---start-to-buildtestdeploy-code-on-local-machine">Step 5 - Start to build/test/deploy code (on local machine)</a></li>
+        <li><a href="#step-6---start-to-test-cicd-on-gitlab">Step 6 - Start to test CI/CD (on GitLab)</a></li>
+      </ol>
+    </li>
+    <li><a href="#sast-static-application-security-testing">SAST (Static Application Security Testing)</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body">
+<div class="notices warning">
+    <div class="label">Remind</div>
+    This is for .NET 4.8 or below only!!
+  </div>
+
+<h2 id="precondition">Precondition</h2>
 <p>You already have a GitLab (<a href="http://gitlab.com/">GitLab Saas</a> or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.</p>
-<h3 id="step-1---install-git-client">Step 1 - Install Git client</h3>
+<h3 id="procedure">Procedure</h3>
+<h3 id="step-1---prepare-net-build-environment">Step 1 - Prepare .NET build environment</h3>
+<ol>
+<li>First, you need to prepare an environment to build .NET application. The easiest solution is to install <a href="https://visualstudio.microsoft.com/">Visual Studio</a>. (Please let me know if I can build a .NET build environment without Visual Studio, thanks.)</li>
+<li>But it's strange, MSBuild.exe is not included in PATH after the installatioin. Please put <code>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin</code> into your PATH.</li>
+</ol>
+<h3 id="step-2---install-git-client">Step 2 - Install Git client</h3>
 <p>Download and install <a href="https://git-scm.com/download/win">Git for Windows</a>. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.</p>
-<h3 id="step-2---prepare-net-build-environment">Step 2 - prepare .NET build environment</h3>
-<p>Download and install <a href="https://visualstudio.microsoft.com/">Visual Studio</a>. (Please let me know if I can build a .NET build environment without Visual Studio, thanks.)</p>
 <h3 id="step-3---install-gitlab-runner">Step 3 - Install GitLab Runner</h3>
 <ol>
 <li>
-<p>Download <a href="https://docs.gitlab.com/runner/install/windows.html">GitLab Runner</a></p>
+<p>Download <a href="https://docs.gitlab.com/runner/install/windows.html">GitLab Runner for Windows</a>.</p>
 </li>
 <li>
-<p>Rename <code>gitlab-runner-windows-amd64.exe</code> to <code>gitlab-runner.exe</code></p>
+<p>Rename <code>gitlab-runner-windows-amd64.exe</code> to <code>gitlab-runner.exe</code>.</p>
 </li>
 <li>
-<p>Get the token to run GitLab Runner</p>
+<p>Get the token to run GitLab Runner.</p>
  <img class="wp-image-135" style="width:500px;" src="https://dennys.files.wordpress.com/2021/12/1-1.png" alt="">
 </li>
 <li>
-<p>Generate GitLab Runner configuration file (config.toml) and run the command</p>
+<p>Generate GitLab Runner configuration file (config.toml) and run the command to register.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">gitlab-runner.exe register --url https://gitlab.com/ --registration-token <span class="nv">$REGISTRATION_TOKEN</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Modify config.toml</p>
 <ol>
-<li>Because Gitlab Runner doesn't suppoer Windows shell after version 13, you need to use PowerShell. If you use Power Shell, please open config.toml and rename 'pwsh' to 'powershell'. (If you use <a href="https://github.com/PowerShell/PowerShell">Power Shell Core</a>, you don't need to do anything)</li>
-<li>If you use a portable Git, you need to modify <code>$env:Path</code> of PowerShell.</li>
-<li>If you find your log is garbled (ex: your Windows server is not English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
+<li>Because Gitlab Runner doesn't suppoer Windows shell after version 13, you need to use <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a>, you have 2 options:
+<ol>
+<li>If you use Power Shell, please open config.toml and rename 'pwsh' to 'powershell'.</li>
+<li>If you use <a href="https://github.com/PowerShell/PowerShell">Power Shell Core</a>, you don't need to do anything.</li>
 </ol>
 </li>
+<li>If you find your log is garbled (ex: your Windows server is not English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
+<li>If you use a portable Git, you need to modify <code>$env:Path</code> in config.toml. (comment line 7 and uncomment line 8)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Windows Runner 01 (not docker)&#34;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://gitlab.com/&#34;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;******************&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;shell&#34;</span>
+</span></span><span class="line hl"><span class="ln"> 6</span><span class="cl"><span class="nx">shell</span> <span class="p">=</span> <span class="s2">&#34;powershell&#34;</span>
+</span></span><span class="line hl"><span class="ln"> 7</span><span class="cl"><span class="nx">pre_clone_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n       $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
+</span></span><span class="line hl"><span class="ln"> 8</span><span class="cl"><span class="c">#  pre_clone_script = &#34;      chcp 65001\n      $env:Path = \&#34;C:\\Gitlab\\PortableGit\\cmd;$env:Path\&#34;\n\t  $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nx">pre_build_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n  &#34;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">s3</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">gcs</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">azure</span><span class="p">]</span>
+</span></span></code></pre></div></li>
 <li>
 <p>Register GitLab Runner as a Windows service and start it.</p>
 <ol>
@@ -237,71 +286,55 @@
 </ol>
 </li>
 <li>
-<p>config.toml sample =&gt; <em>remember, if you modify the file, please execute <code>gitlab-runner.exe restart</code> to restart GitLab runner.</em></p>
+<p><strong>remember, if you modify the file, please execute <code>gitlab-runner.exe restart</code> to restart GitLab runner.</strong></p>
+</li>
+<li>
+<p>If you always see the Credential Helper Selector, please choose &quot;no helper&quot; and &quot;Always use this from now on&quot;.</p>
+<p><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"><img src="https://dennys.files.wordpress.com/2021/12/image-4.png?w=386" alt="" class="wp-image-146" width="322" height="208"/></a></p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nx">concurrent</span> <span class="p">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nx">check_interval</span> <span class="p">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="p">[</span><span class="nx">session_server</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="nx">session_timeout</span> <span class="p">=</span> <span class="mi">1800</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;GitLab Runner 007&#34;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://gitlab.com/&#34;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">  <span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;******************&#34;</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">  <span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;shell&#34;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">  <span class="nx">shell</span> <span class="p">=</span> <span class="s2">&#34;powershell&#34;</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">  <span class="nx">pre_clone_script</span> <span class="p">=</span> <span class="s2">&#34;&#34;&#34;
-</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="s2">      chcp 65001
-</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="s2">      $env:Path += &#34;</span><span class="err">;</span><span class="nx">C</span><span class="err">:\\</span><span class="nx">Gitlab</span><span class="err">\\</span><span class="nx">PortableGit</span><span class="err">\\</span><span class="nx">cmd</span><span class="s2">&#34;
-</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="s2">  &#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">s3</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">gcs</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">azure</span><span class="p">]</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Windows Runner)&#34;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://gitlab.com/&#34;</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  <span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;******************&#34;</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;shell&#34;</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  <span class="nx">pre_clone_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n       $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">  <span class="nx">pre_build_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n  &#34;</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="nx">shell</span> <span class="p">=</span> <span class="s2">&#34;powershell&#34;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">s3</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">gcs</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">azure</span><span class="p">]</span>
-</span></span></code></pre></div><p>If you always see the Credential Helper Selector, please choose &quot;no helper&quot; and &quot;Always use this from now on&quot;.</p>
-<p><a href="https://dennys.files.wordpress.com/2021/12/image-4.png"><img src="https://dennys.files.wordpress.com/2021/12/image-4.png?w=386" alt="" class="wp-image-146" width="322" height="208"/></a></p>
 <h3 id="step-4---write-gitlab-ciyml">Step 4 - Write .gitlab-ci.yml</h3>
 <ol>
-<li>Edit .gitlab-ci.yml, the following is a sample:</li>
-</ol>
+<li>Edit .gitlab-ci.yml, the following is a sample:
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">stages</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">    </span>- <span class="l">build</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span>- <span class="l">test</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w"></span><span class="nt">build</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">        </span>- <span class="s2">&#34;dotnet build&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">      </span><span class="nt">paths</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">        </span>- <span class="l">.\test</span><span class="w">
-</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w"></span><span class="nt">test</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">test</span><span class="w">
-</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> 
-</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span>- <span class="s2">&#34;dotnet test&#34;</span><span class="w">
-</span></span></span></code></pre></div><h3 id="step-5---start-to-buildtestdeploy-code-local-machine">Step 5 - Start to build/test/deploy code (local machine)</h3>
-<p>Change directory to the location of .gitlab-ci.yml and execute this command</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">gitlab-runner.exe <span class="nb">exec</span> shell build
-</span></span></code></pre></div><h3 id="step-6---start-to-test-cicd-local-machine">Step 6 - Start to test CI/CD (local machine)</h3>
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w"></span><span class="nt">build</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">        </span>- <span class="s2">&#34;dotnet build&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span><span class="nt">artifacts</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">paths</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">        </span>- <span class="l">.\test</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w"></span><span class="nt">test</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l">test</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="nt">script</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">        </span>- <span class="s2">&#34;dotnet test&#34;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<h3 id="step-5---start-to-buildtestdeploy-code-on-local-machine">Step 5 - Start to build/test/deploy code (on local machine)</h3>
+<ol>
+<li>Before you start to run CI/CD on your GitLab, you can try it in your local machine. It's easier to debug in local environment. Please change directory to the location of .gitlab-ci.yml and execute this command.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\Gitlab\builds\j5AFD9Qz\0\gis\commission_moi_dtm</span><span class="c1">&gt; gitlab-runner.exe exec shell build</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Runtime platform                                    arch=amd64 os=windows pid=13728 revision=e91107dd version=14.5.2
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Running with gitlab-runner 14.5.2 (e91107dd)
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Preparing the <span class="s2">&#34;shell&#34;</span> executor
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Using Shell executor...
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">executor not supported                              job=1 project=0 referee=metrics
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Preparing environment
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Running on GITRUNNER01...
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">DEPRECATION: CMD shell is deprecated and will no longer be supported
+</span></span><span class="line"><span class="ln">10</span><span class="cl">Getting source from Git repository
+</span></span><span class="line"><span class="ln">11</span><span class="cl">Fetching changes...
+</span></span><span class="line"><span class="ln">12</span><span class="cl">Initialized empty Git repository in C:/Gitlab/builds/j5AFD9Qz/0/gis/**********/builds/0/project-0/.git/
+</span></span><span class="line"><span class="ln">13</span><span class="cl">Created fresh repository.
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Checking out 1ff057d4 as HEAD...
+</span></span><span class="line"><span class="ln">15</span><span class="cl">...
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="step-6---start-to-test-cicd-on-gitlab">Step 6 - Start to test CI/CD (on GitLab)</h3>
 <p>If everything is ok, you can commit .gitlab-ci.yml and GitLab should run it automatically.</p>
-<h3 id="sast-static-application-security-testing">SAST (Static Application Security Testing)</h3>
+<h2 id="sast-static-application-security-testing">SAST (Static Application Security Testing)</h2>
 <p>GitLab can check your source code for known vulnerabilities, unfortunately, it only support Linux container, Windows containers are not yet supported. (reference: <a href="https://docs.gitlab.com/ee/user/application_security/sast/">https://docs.gitlab.com/ee/user/application_security/sast/</a>)</p>
 
     </div>
@@ -355,10 +388,10 @@
         <a href="https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/" class="nav-link" title="Use WISE to send currency exchange rate mail daily">Use WISE to send currency exchange rate mail daily</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" class="nav-link" title="GitLab Checkmarx integration">GitLab Checkmarx integration</a>
+        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" class="nav-link" title="GitLab Checkmarx CI/CD Integration">GitLab Checkmarx CI/CD Integration</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube integration">GitLab Checkmarx SonarQube integration</a>
+        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube Integration">GitLab Checkmarx SonarQube Integration</a>
       </li>
     </ul>
     <div>
@@ -372,6 +405,11 @@
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
           DEVOPS
           <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/categories/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
+          CI/CD
+          <span class="button_tally">1</span>
         </a>
         
         

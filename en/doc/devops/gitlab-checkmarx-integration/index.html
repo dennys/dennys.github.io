@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>GitLab Checkmarx integration | Dennys Diary</title>
+<title>GitLab Checkmarx CI/CD Integration | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube) …" />
+<meta name="description" content="Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="GitLab Checkmarx integration" />
+<meta name="twitter:title" content="GitLab Checkmarx CI/CD Integration" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" />
-<meta property="og:title" content="GitLab Checkmarx integration" />
-<meta property="og:description" content="Purpose When we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube) …" />
+<meta property="og:title" content="GitLab Checkmarx CI/CD Integration" />
+<meta property="og:description" content="Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -150,7 +150,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">GitLab Checkmarx integration</h1>
+    <h1 class="post_title">GitLab Checkmarx CI/CD Integration</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -166,14 +166,14 @@
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=GitLab%20Checkmarx%20integration&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-integration%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=GitLab%20Checkmarx%20CI%2fCD%20Integration&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-integration%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-integration%2f&t=GitLab%20Checkmarx%20integration" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-integration%2f&t=GitLab%20Checkmarx%20CI%2fCD%20Integration" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -198,6 +198,17 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>Overview</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#procedure">Procedure</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body"><p><figure>
   <picture>
 
@@ -222,8 +233,7 @@
 
     </picture>
 </figure>
-
-<figure>
+ <figure>
   <picture>
 
     
@@ -249,35 +259,59 @@
 </figure>
 </p>
 <h2 id="purpose">Purpose</h2>
-<p>When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan. (the next step is to integrate the scan result to SonarQube)</p>
+<p>Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to Checkmarx, it will take lots of time. What we want is, when we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan. (the next step is to integrate the scan result to <a href="https://www.sonarqube.org/">SonarQube</a>)</p>
 <h2 id="procedure">Procedure</h2>
 <p>You can reference official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a></p></p>
 <ol>
-<li>Edit .gitlab-ci.yml</li>
-</ol>
+<li>
+<p>Edit .gitlab-ci.yml, to include Checkmarx's yml into yours.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="nt">CX_PROJECT</span><span class="p">:</span><span class="w"> </span><span class="l">ProjectXXX</span><span class="w"> </span><span class="c">#The project name you want to show in Checkmarx</span><span class="w">
-</span></span></span></code></pre></div><ol start="2">
-<li>Edit GitLab CI/CD variables</li>
-</ol>
-<p>Please remember to set <em><strong>GITLAB_URL</strong></em> and <em><strong>GITLAB_TOKEN</strong></em>, then Checkmarx will create GitLab issue for Checkmarx issues.</p>
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="nt">CX_PROJECT</span><span class="p">:</span><span class="w"> </span><span class="l">ProjectXXX  </span><span class="w"> </span><span class="c">#The project name you want to show in Checkmarx</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>Edit GitLab CI/CD variables, to set <em><strong>GITLAB_URL</strong></em> and <em><strong>GITLAB_TOKEN</strong></em>, then Checkmarx will create GitLab issue for Checkmarx issues.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-4.png"><img src="https://dennys.files.wordpress.com/2022/01/image-4.png?w=1024" alt="" class="wp-image-181"/></a></p>
-<ol start="3">
-<li>Trigger build - Checkmarx analysis will be triggered when you create a merge request or you commit to master stream directly.</li>
+</li>
+<li>
+<p>Trigger build - Checkmarx analysis will be triggered in 2 conditions</p>
+<ol>
+<li>You create a merge request.</li>
+<li>You commit code to master stream directly.</li>
 </ol>
+</li>
+<li>
 <p>Suggest to use pure English for CX_TEAM, if you use non English (ex: Chinese), you can check the log and find it cannot find the team.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO 11 --- [main] c.c.s.s.CxService [x4DNMhOL] : Found team /CxServer/Team1 with ID 16
-</span></span></code></pre></div><p>During the analysis, you can check the status from Checkmarx, it takes long time to analyze.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO <span class="m">11</span> --- <span class="o">[</span>main<span class="o">]</span> c.c.s.s.CxService <span class="o">[</span>x4DNMhOL<span class="o">]</span> : Found team /CxServer/Team1 with ID <span class="m">16</span>
+</span></span></code></pre></div></li>
+<li>
+<p>During the analysis, you can check the status from Checkmarx, it takes long time to analyze.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-6.png"><img src="https://dennys.files.wordpress.com/2022/01/image-6.png?w=1024" alt="" class="wp-image-193"/></a></p>
-<p>After the analysis, you can check the result in Checkmarx.</p>
-<p>You can also check it from GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of merge request.</p>
+</li>
+<li>
+<p>After the analysis, you can check the result</p>
+<ol>
+<li>
+<p>Check the result in Checkmarx.</p>
+</li>
+<li>
+<p>Check the result in GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of merge request.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-7.png"><img src="https://dennys.files.wordpress.com/2022/01/image-7.png?w=939" alt="" class="wp-image-197"/></a></p>
-<p>In the above report, there are 5 issues, it will creates 5 issues by file/by category.</p>
+<ol>
+<li>In the above report, there are 5 issues, it will creates 5 issues by file/by category.</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-8.png"><img src="https://dennys.files.wordpress.com/2022/01/image-8.png?w=1010" alt="" class="wp-image-199"/></a></p>
-<p>In the issue, it shows the detail vulnerability information.</p>
+<ol>
+<li>In the issue, it shows the detail vulnerability information.</li>
+</ol>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-9.png"><img src="https://dennys.files.wordpress.com/2022/01/image-9.png?w=1024" alt="" class="wp-image-201"/></a></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>After this integration, you just need to commit the code and wait the result.</p>
 
     </div>
 <div class="post_comments">
@@ -324,7 +358,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" class="nav-link" title="Use GitLab to do .NET 4.X CI/CD">Use GitLab to do .NET 4.X CI/CD</a>
+        <a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" class="nav-link" title="Use GitLab to do .NET 4.8 CI/CD">Use GitLab to do .NET 4.8 CI/CD</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/" class="nav-link" title="Use IFTTT to send currency exchange rate mail daily">Use IFTTT to send currency exchange rate mail daily</a>
@@ -333,7 +367,7 @@
         <a href="https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/" class="nav-link" title="Use WISE to send currency exchange rate mail daily">Use WISE to send currency exchange rate mail daily</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube integration">GitLab Checkmarx SonarQube integration</a>
+        <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube Integration">GitLab Checkmarx SonarQube Integration</a>
       </li>
     </ul>
     <div>
@@ -347,6 +381,11 @@
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
           DEVOPS
           <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/categories/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
+          CI/CD
+          <span class="button_tally">1</span>
         </a>
         
         
