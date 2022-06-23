@@ -558,16 +558,11 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
       <description>
         
           
-            螢幕解析度:
-現在用的 T41 (14&amp;quot;) 是 1024x768, 15&amp;quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉. 另外, Browser 的字型似乎不會跟著系統放大?
-HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤,
-巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起
-HDD:
-很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.
-Wifi:
-雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)
-Power Adapter:
-這個 170W 的 adapter 實在是好大.
+            螢幕解析度 現在用的 T41 (14&amp;quot;) 是 1024x768, 15&amp;quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉. 另外, Browser 的字型似乎不會跟著系統放大?
+HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤 巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起
+HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.
+Wifi 雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)
+Power Adapter 這個 170W 的 adapter 實在是好大.
           
           
         
@@ -884,6 +879,57 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
             注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
 1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>抓某個區間的第一筆資料</title>
+      <link>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</link>
+      <pubDate>Fri, 06 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</guid>
+      <description>
+        
+          
+            1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to analyze size of table, index in Oracle</title>
+      <link>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</link>
+      <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <description>
+        
+          
+            &lt;p&gt;看 table 大小:
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM all_tables WHERE table_name LIKE &#39;AB%&#39; (記得檢查last_analyzed_date)
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重新分析 table 大小:
+&lt;code language=&#34;sql&#34;&gt;
+ANALYZE table TABLE_NAME estimate statisitics
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看 index 相關資訊:(這裡不會有 block 資訊)
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM all_indexes WHERE table_name LIKE&#39;AB%&#39;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重新分析 index:
+&lt;code language=&#34;sql&#34;&gt;
+ANALYZE index INDEX_NAME validate structure;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看 index 大小: (這個一次只能看最近一次 analyze 過的 index)
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM index_stats =&amp;gt;
+&lt;/code&gt;&lt;/p&gt;
           
           
         

@@ -8,9 +8,6 @@
     <loc>https://dennys.github.io/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/.net/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/en/categories/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
@@ -52,6 +49,9 @@
                 hreflang="en"
                 href="https://dennys.github.io/en/doc/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/dotnet/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/gitlab/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>

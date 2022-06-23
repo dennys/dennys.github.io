@@ -296,7 +296,7 @@ EJB Client …" />
 </span></span><span class="line"><span class="ln">5</span><span class="cl">      <span class="nt">&lt;contextroot&gt;</span>/custom-context-root<span class="nt">&lt;/contextroot&gt;</span>
 </span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="nt">&lt;/webmodule&gt;</span>
 </span></span><span class="line"><span class="ln">7</span><span class="cl">  <span class="nt">&lt;/modules&gt;</span>
-</span></span></code></pre></div><p>目前的 ear 並沒有把 war 打包進去, 如果要打包也很簡單, 在 ear 的 pom 加上一段 warModule 就可以了. 基本上沒有什麼問題, 可以改進的地方只有, 如果 ear 和 war 有共用的 .jar 檔, 那就會重複打包. 可參考 <a href="http://www.blogger.com/%5C%22http://maven.apache.org/plugins/maven-war-plugin/examples/skinny-wars.html%5C%22">Creating Skinny WARs</a></p>
+</span></span></code></pre></div><p>目前的 ear 並沒有把 war 打包進去, 如果要打包也很簡單, 在 ear 的 pom 加上一段 warModule 就可以了. 基本上沒有什麼問題, 可以改進的地方只有, 如果 ear 和 war 有共用的 .jar 檔, 那就會重複打包. 可參考 <a href="https://maven.apache.org/plugins/maven-war-plugin/examples/skinny-wars.html">Creating Skinny WARs</a></p>
 <h2 id="注意">注意</h2>
 <ol>
 <li>如果有使用 JPA, 而這個 JPA 是放在 EJB 或某個共用的 jar, 納在包成 EAR 的時候就要注意, 如果這個 jar 會同時出現在 war 的 WEB-INF/lib 以及 ear 的 APP-INF/lib, 那就會出現 duplicate persistence units with name 的錯誤. 解法:</li>
@@ -382,7 +382,7 @@ EJB Client …" />
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">43</span>
+          <span class="button_tally">45</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -467,13 +467,13 @@ EJB Client …" />
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/openvpn/' class="post_tag button button_translucent" title="openvpn">
-          OPENVPN
+        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
+          DATABASE
           <span class="button_tally">2</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/vpn/' class="post_tag button button_translucent" title="vpn">
-          VPN
+        <a href='https://dennys.github.io/tw/tags/openvpn/' class="post_tag button button_translucent" title="openvpn">
+          OPENVPN
           <span class="button_tally">2</span>
         </a>
         
@@ -488,6 +488,10 @@ EJB Client …" />
             
             
             <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=3 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=2 title="database">DATABASE<span class="button_tally">2</span>
             </a>
             
             
@@ -543,7 +547,7 @@ EJB Client …" />
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/thinkpad/' class=" post_tag button button_translucent" data-position=1 title="thinkpad">THINKPAD<span class="button_tally">1</span>
+            <a href='https://dennys.github.io/tw/tags/thinkpad/' class=" post_tag button button_translucent" data-position=2 title="thinkpad">THINKPAD<span class="button_tally">2</span>
             </a>
             
             

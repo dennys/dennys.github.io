@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/database/</link>
+    <description>Recent content in Database on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 06 May 2005 00:00:00 +0000</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>抓某個區間的第一筆資料</title>
+      <link>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</link>
+      <pubDate>Fri, 06 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</guid>
+      <description>
+        
+          
+            1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to analyze size of table, index in Oracle</title>
+      <link>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</link>
+      <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <description>
+        
+          
+            &lt;p&gt;看 table 大小:
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM all_tables WHERE table_name LIKE &#39;AB%&#39; (記得檢查last_analyzed_date)
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重新分析 table 大小:
+&lt;code language=&#34;sql&#34;&gt;
+ANALYZE table TABLE_NAME estimate statisitics
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看 index 相關資訊:(這裡不會有 block 資訊)
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM all_indexes WHERE table_name LIKE&#39;AB%&#39;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重新分析 index:
+&lt;code language=&#34;sql&#34;&gt;
+ANALYZE index INDEX_NAME validate structure;
+&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;看 index 大小: (這個一次只能看最近一次 analyze 過的 index)
+&lt;code language=&#34;sql&#34;&gt;
+SELECT * FROM index_stats =&amp;gt;
+&lt;/code&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

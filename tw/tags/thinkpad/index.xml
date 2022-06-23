@@ -28,5 +28,25 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
       </description>
     </item>
     
+    <item>
+      <title>Thinkpad W530</title>
+      <link>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</link>
+      <pubDate>Sat, 08 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</guid>
+      <description>
+        
+          
+            螢幕解析度 現在用的 T41 (14&amp;quot;) 是 1024x768, 15&amp;quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉. 另外, Browser 的字型似乎不會跟著系統放大?
+HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤 巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起
+HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.
+Wifi 雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)
+Power Adapter 這個 170W 的 adapter 實在是好大.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
