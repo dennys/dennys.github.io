@@ -26,16 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
+<meta name="description" content="Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="GitLab Checkmarx SonarQube Integration" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" />
 <meta property="og:title" content="GitLab Checkmarx SonarQube Integration" />
-<meta property="og:description" content="Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
+<meta property="og:description" content="Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -218,57 +216,7 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/GitLab_logo.webp"
-      
-      
-    />
-
-    </picture>
-</figure>
-
-<figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/Checkmarx_logo.webp"
-      
-      
-    />
-
-    </picture>
-</figure>
-
-<figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/SonarQube_logo.webp"
+        src="/images/software/logo/GitLab_Checkmarx_SonarQube.webp"
       
       
     />
@@ -277,7 +225,8 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
 </figure>
 </p>
 <h2 id="purpose">Purpose</h2>
-<p>When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
+<p>In <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/">previous article</a>, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too.
+When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
 <ol>
 <li><a href="https://gitlab.com/">GitLab</a> sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan.</li>
 <li><a href="https://gitlab.com/">GitLab</a> triggers <a href="https://www.sonarqube.org/">SonarQube</a> to sacn.</li>
@@ -322,6 +271,8 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers …" />
 </span></span></code></pre></div><ol start="6">
 <li>You can see the Checkmarx issues in SonarQube now.</li>
 </ol>
+<h2 id="problem">Problem</h2>
+<p>I find some issues are not created in SonarQube and it seems due to the rule is not defined in Checkmarx's SonarQube plugin. I'm still checking it.</p>
 
     </div>
 <div class="post_comments">

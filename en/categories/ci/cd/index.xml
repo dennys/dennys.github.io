@@ -16,7 +16,8 @@
       <description>
         
           
-            Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to Checkmarx, it will take lots of time. What we want is, when we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate the scan result to SonarQube)
+            Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resource to scan the code.) Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
           
           
         

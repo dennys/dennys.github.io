@@ -277,7 +277,8 @@ Procedure Step 1 - Prepare .NET build environment First, you need to prepare …
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to Checkmarx, it will take lots of time. What we want is, when we commit code to GitLab, we want GitLab sends the code to Checkmarx to scan. (the next step is to integrate …</p>
+            <p>Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don't commit code, I don't want to waste resource to scan the code.) …</p>
           
           <br>
           <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" title="Read More" class="excerpt_more button">Read More</a>
@@ -345,8 +346,8 @@ Procedure Step 1 - Prepare .NET build environment First, you need to prepare …
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>Purpose When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx's report. Procedure You can reference the official document: …</p>
+            <p>Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate …</p>
           
           <br>
           <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" title="Read More" class="excerpt_more button">Read More</a>

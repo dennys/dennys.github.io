@@ -26,14 +26,16 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to …" />
+<meta name="description" content="Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="GitLab Checkmarx CI/CD Integration" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" />
 <meta property="og:title" content="GitLab Checkmarx CI/CD Integration" />
-<meta property="og:description" content="Purpose Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to …" />
+<meta property="og:description" content="Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -205,6 +207,7 @@
     <li><a href="#purpose">Purpose</a></li>
     <li><a href="#procedure">Procedure</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#whats-next">What's next</a></li>
   </ol>
 </nav>
       </div>
@@ -226,14 +229,38 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/GitLab_logo.webp"
+        src="/images/software/logo/GitLab_Checkmarx.webp"
       
       
     />
 
     </picture>
 </figure>
- <figure>
+</p>
+<h2 id="purpose">Purpose</h2>
+<p><a href="https://checkmarx.com/">Checkmarx</a> is a good tool to do code analysis, but there are 2 pain points during the flow.</p>
+<ol>
+<li>Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot <strong>be triggered by</strong> by a code commit, it can only schedule the job to run the scan. (If I don't commit code, I don't want to waste resource to scan the code.)</li>
+<li>Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or <a href="https://www.atlassian.com/software/jira">JIRA</a> or ...</li>
+</ol>
+<p>What we want is to integrate Checkmarx scan into GitLab's CI/CD flow including</p>
+<ol>
+<li>When we commit code to GitLab, it will trigger Checkmarx to scan automatically.</li>
+<li>After the scan, Checkmarx will create issues in GitLab.</li>
+</ol>
+<h2 id="procedure">Procedure</h2>
+<p>You can reference official document to do the integration: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a></p></p>
+<ol>
+<li>
+<p>Edit your .gitlab-ci.yml, to include Checkmarx's yml into yours.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="nt">CX_PROJECT</span><span class="p">:</span><span class="w"> </span><span class="l">ProjectXXX  </span><span class="w"> </span><span class="c">#The project name you want to show in Checkmarx</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>Set GitLab CI/CD variables (Menu-&gt;Admin-&gt;Settings-&gt;CI/CD-&gt;Variables). You need to set <strong>CHECKMARX_XXX</strong> and <strong>CX_TEAM</strong> variables. And if you want Checkmarx to create GitLab issue, please also set <strong>GITLAB_URL</strong> and <strong>GITLAB_TOKEN</strong>.
+<figure>
   <picture>
 
     
@@ -250,7 +277,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/Checkmarx_logo.webp"
+        src="/images/software/gitlab/gitlab_admin_setting_cicd_variables.webp"
       
       
     />
@@ -258,31 +285,16 @@
     </picture>
 </figure>
 </p>
-<h2 id="purpose">Purpose</h2>
-<p>Checkmarx is a good tool to do code analysis, but it takes lots of time to do scan. If you need to download the code from Git and upload it to Checkmarx, it will take lots of time. What we want is, when we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan. (the next step is to integrate the scan result to <a href="https://www.sonarqube.org/">SonarQube</a>)</p>
-<h2 id="procedure">Procedure</h2>
-<p>You can reference official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a></p></p>
-<ol>
-<li>
-<p>Edit .gitlab-ci.yml, to include Checkmarx's yml into yours.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">    </span><span class="nt">CX_PROJECT</span><span class="p">:</span><span class="w"> </span><span class="l">ProjectXXX  </span><span class="w"> </span><span class="c">#The project name you want to show in Checkmarx</span><span class="w">
-</span></span></span></code></pre></div></li>
-<li>
-<p>Edit GitLab CI/CD variables, to set <em><strong>GITLAB_URL</strong></em> and <em><strong>GITLAB_TOKEN</strong></em>, then Checkmarx will create GitLab issue for Checkmarx issues.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/01/image-4.png"><img src="https://dennys.files.wordpress.com/2022/01/image-4.png?w=1024" alt="" class="wp-image-181"/></a></p>
 </li>
 <li>
-<p>Trigger build - Checkmarx analysis will be triggered in 2 conditions</p>
+<p>Try to trigger a build (by code commit) - Checkmarx analysis will be triggered in 2 conditions:</p>
 <ol>
-<li>You create a merge request.</li>
+<li>You create a <a href="https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html">merge request</a> in GitLab.</li>
 <li>You commit code to master stream directly.</li>
 </ol>
 </li>
 <li>
-<p>Suggest to use pure English for CX_TEAM, if you use non English (ex: Chinese), you can check the log and find it cannot find the team.</p>
+<p>Suggest to use pure English in CX_TEAM, if you use non English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO <span class="m">11</span> --- <span class="o">[</span>main<span class="o">]</span> c.c.s.s.CxService <span class="o">[</span>x4DNMhOL<span class="o">]</span> : Found team /CxServer/Team1 with ID <span class="m">16</span>
 </span></span></code></pre></div></li>
 <li>
@@ -290,20 +302,20 @@
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-6.png"><img src="https://dennys.files.wordpress.com/2022/01/image-6.png?w=1024" alt="" class="wp-image-193"/></a></p>
 </li>
 <li>
-<p>After the analysis, you can check the result</p>
+<p>After the analysis, you can check the result in Checkmarx or GitLab.</p>
 <ol>
 <li>
 <p>Check the result in Checkmarx.</p>
 </li>
 <li>
-<p>Check the result in GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of merge request.</p>
+<p>Check the result in GitLab, it generates 1 report in merge request and it will create issues by category. The following is the reqport of a merge request. In this report, there are 5 issues.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-7.png"><img src="https://dennys.files.wordpress.com/2022/01/image-7.png?w=939" alt="" class="wp-image-197"/></a></p>
 <ol>
-<li>In the above report, there are 5 issues, it will creates 5 issues by file/by category.</li>
+<li>It creates 5 issues by file/by category.</li>
 </ol>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-8.png"><img src="https://dennys.files.wordpress.com/2022/01/image-8.png?w=1010" alt="" class="wp-image-199"/></a></p>
 <ol>
-<li>In the issue, it shows the detail vulnerability information.</li>
+<li>You can click above issue, it shows the detail vulnerability information.</li>
 </ol>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-9.png"><img src="https://dennys.files.wordpress.com/2022/01/image-9.png?w=1024" alt="" class="wp-image-201"/></a></p>
 </li>
@@ -311,7 +323,11 @@
 </li>
 </ol>
 <h2 id="conclusion">Conclusion</h2>
-<p>After this integration, you just need to commit the code and wait the result.</p>
+<p>After this integration, you just need to commit the code and see the result in GitLab. Checkmarx provide lots of integration, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations</a>.</p>
+<h2 id="whats-next">What's next</h2>
+<ol>
+<li>Try to integrate the scan result to <a href="https://www.sonarqube.org/">SonarQube</a>), you can reference <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/">https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</a>.</li>
+</ol>
 
     </div>
 <div class="post_comments">
