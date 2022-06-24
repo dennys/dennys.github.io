@@ -161,7 +161,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 </span>
     <span class="post_date">
       Jan 15, 2022</span>
-    <span class="post_time"> · 10 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/gitlab/' title="GitLab" class="post_tag button button_translucent">GitLab
+    <span class="post_time"> · 9 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/gitlab/' title="GitLab" class="post_tag button button_translucent">GitLab
         </a><a href='https://dennys.github.io/en/tags/checkmarx/' title="Checkmarx" class="post_tag button button_translucent">Checkmarx
         </a>
     </span>
@@ -211,6 +211,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
         <li><a href="#gitlab-project-configuration">GitLab project configuration</a></li>
       </ol>
     </li>
+    <li><a href="#trouble-shooting">Trouble shooting</a></li>
     <li><a href="#reference">Reference</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#whats-next">What's next</a></li>
@@ -257,8 +258,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 <h2 id="procedure">Procedure</h2>
 <h3 id="gitlab-admin-configuration">GitLab admin configuration</h3>
 <ol>
-<li>
-<p>You need to set some global variables in GitLab CI/CD admin (Menu-&gt;Admin-&gt;Settings-&gt;CI/CD-&gt;Variables). You need to set <strong>CHECKMARX_XXX</strong> and <strong>CX_TEAM</strong> variables to integrate Checkmarx. And if you want Checkmarx to create GitLab issue, please also set <strong>GITLAB_URL</strong> and <strong>GITLAB_TOKEN</strong>. (You can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration#CI/CD-Variables">here</a> for the detail)
+<li>You need to set some global variables in GitLab CI/CD admin (Menu-&gt;Admin-&gt;Settings-&gt;CI/CD-&gt;Variables). You need to set <strong>CHECKMARX_XXX</strong> and <strong>CX_TEAM</strong> variables to integrate Checkmarx. And if you want Checkmarx to create GitLab issue, please also set <strong>GITLAB_URL</strong> and <strong>GITLAB_TOKEN</strong>. (You can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration#CI/CD-Variables">here</a> for the detail)
 <figure>
   <picture>
 
@@ -283,21 +283,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 
     </picture>
 </figure>
-</p>
-
-<div class="notices info">
-    <div class="label">Remind</div>
-    <p>Please be noticed, you should use <strong>English only</strong> in CX_TEAM, if you use non English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.</p>
-<pre><code>2022-01-12 02:51:22.748  INFO 11 --- [main] c.c.s.s.CxService [x4DNMhOL] : Found team /CxServer/Team1 with ID 16
-</code></pre>
-
-  </div>
-
 </li>
-<li>
-<p>Please beSuggest to use pure English in CX_TEAM, if you use non English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO <span class="m">11</span> --- <span class="o">[</span>main<span class="o">]</span> c.c.s.s.CxService <span class="o">[</span>x4DNMhOL<span class="o">]</span> : Found team /CxServer/Team1 with ID <span class="m">16</span>
-</span></span></code></pre></div></li>
 </ol>
 <h3 id="gitlab-project-configuration">GitLab project configuration</h3>
 <ol>
@@ -450,6 +436,12 @@ And you also need to assign the Checkmarx's project name in this yml file (line 
 </li>
 </ol>
 </li>
+</ol>
+<h2 id="trouble-shooting">Trouble shooting</h2>
+<ol>
+<li>If you find Checkmarx cannot find your team, please make sure to use <strong>English only</strong> in CX_TEAM, if you use non English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO <span class="m">11</span> --- <span class="o">[</span>main<span class="o">]</span> c.c.s.s.CxService <span class="o">[</span>x4DNMhOL<span class="o">]</span> : Found team /CxServer/Team1 with ID <span class="m">16</span>
+</span></span></code></pre></div></li>
 </ol>
 <h2 id="reference">Reference</h2>
 <ol>

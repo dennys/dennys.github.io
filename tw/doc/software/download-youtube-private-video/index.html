@@ -161,7 +161,7 @@
 </span>
     <span class="post_date">
       Jun 2, 2022</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
         </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
@@ -210,7 +210,7 @@
         <li><a href="#準備工具">準備工具</a></li>
         <li><a href="#準備-cookie">準備 cookie</a></li>
         <li><a href="#使用-youtube-dl-下載">使用 youtube-dl 下載</a></li>
-        <li><a href="#使用-youtube-dl-下載-1">使用 youtube-dl 下載</a></li>
+        <li><a href="#使用-yt-dlp-下載">使用 YT-DLP 下載</a></li>
       </ol>
     </li>
   </ol>
@@ -230,18 +230,54 @@
 <p>既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/05/image-14.png"><img src="https://dennys.files.wordpress.com/2022/05/image-14.png?w=616" alt="" class="wp-image-634"/></a></p>
 <h3 id="使用-youtube-dl-下載">使用 youtube-dl 下載</h3>
-<p>使用如下指令就可以下載檔案了</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/
-</span></span></code></pre></div><p>要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/05/image-12.png"><img src="https://dennys.files.wordpress.com/2022/05/image-12.png?w=1024"/></a></p>
-<p>因此, 直接在下載參數指定 FFmpeg 的目錄位置, 這樣在下載完後, 他就會去呼叫 FFmpeg 執行合併檔案的動作.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">youtube-dl.exe --ffmpeg-location C:\bin\ffmpeg\bin<span class="p">&lt;</span>/mark<span class="p">&gt;</span> --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/
-</span></span></code></pre></div><p>如下, 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/05/image-11.png"><img src="https://dennys.files.wordpress.com/2022/05/image-11.png?w=1024"/></a></p>
-<h3 id="使用-youtube-dl-下載-1">使用 youtube-dl 下載</h3>
+<p>使用如下指令就可以下載檔案了, 要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] 7zTujXuka2c: Downloading MPD manifest
+</span></span><span class="line hl"><span class="ln"> 5</span><span class="cl">WARNING: You have requested multiple formats but ffmpeg or avconv are not installed. The formats won&#39;t be merged.
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[download] Destination *****.f136.mp4
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[download] 100% of 208.99MiB in 02:59
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[download] Destination *****.f140.mp4
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[download] 100% of 81.84MiB in 01:48
+</span></span></code></pre></div><p>因此, 直接在下載參數指定 FFmpeg 的目錄位置, 這樣在下載完後, 他就會去呼叫 FFmpeg 執行合併檔案的動作. 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;youtube-dl.exe --ffmpeg-location C:\bin\ffmpeg\bin --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] 7zTujXuka2c: Downloading MPD manifest
+</span></span><span class="line hl"><span class="ln"> 5</span><span class="cl">WARNING: You have requested multiple formats but ffmpeg or avconv are not installed. The formats won&#39;t be merged.
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[download] Destination *****.f136.mp4
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[download] 100% of 208.99MiB in 05:17
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[download] Destination *****.f140.mp4
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[download] 100% of 81.84MiB in 02:16
+</span></span><span class="line hl"><span class="ln">12</span><span class="cl">[ffmpeg] Merging formats into <span class="s2">&#34;******.mp4&#34;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">Delete original file *****.f136.mp4 (pass -k to keep)
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Delete original file *****.f140.mp4 (pass -k to keep)
+</span></span></code></pre></div><h3 id="使用-yt-dlp-下載">使用 YT-DLP 下載</h3>
 <p><a href="https://github.com/yt-dlp/yt-dlp">YT-DLP</a> 是 youtube-dl 的一個 fork, 他自己的官方說明是 &quot;A youtube-dl fork with additional features and fixes&quot;, 兩者的指令也都差不多, 試用了一下也沒甚麼問題, 只是下載完是 .mkv</p>
-<p><a href="https://dennys.files.wordpress.com/2022/05/image-13.png"><img src="https://dennys.files.wordpress.com/2022/05/image-13.png?w=960"/></a></p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;yl-dlp.exe --ffmpeg-location C:\bin\ffmpeg\bin --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading android player API JSON
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[youtube] 7zTujXuka2c: Downloading MPD manifest
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[youtube] 7zTujXuka2c: Downloading MPD manifest
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[info] 7zTujXuka2c: Downloading 1 format(s): 247+140
+</span></span><span class="line hl"><span class="ln"> 9</span><span class="cl">WARNING: Requested formats are incompatible for merge and will be merged into mkv
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[download] Destination *****.ff247.webm
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[download] 100% of 208.99MiB in 05:17
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[dashsegments] Total fragments: 1047
+</span></span><span class="line"><span class="ln">14</span><span class="cl">[download] Destination *****.f140.mp4
+</span></span><span class="line"><span class="ln">15</span><span class="cl">[download] 100% of 81.84MiB in 02:16
+</span></span><span class="line"><span class="ln">16</span><span class="cl">[Merger] Merging formats into <span class="s2">&#34;******.mkv&#34;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">Delete original file *****.f247.webm (pass -k to keep)
+</span></span><span class="line"><span class="ln">18</span><span class="cl">Delete original file *****.f140.mp4 (pass -k to keep)
+</span></span></code></pre></div>
     </div>
 <div class="post_comments">
   
