@@ -127,7 +127,7 @@
       <description>
         
           
-            注意這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!!前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
+            注意 這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!! 前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
 走紅外線, 這個 Infocus 電視行不通, mobile01 上面很多人也都測過了, 不支援. 走 HDMI-CEC, 這個測試起來也是不支援. 但奇怪的是, Google TV 卻可以走 HDMI-CEC 控制電視? 改變 Google TV 的對外輸出音量 (既然無法改變電視的音量, 但總可以改變 Google TV 對外的音量吧). 做法 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇音量控制 音量控制的部分選擇 &amp;quot;Chrome&amp;quot;, 其實從這裡就可以看到 Google TV 支援的 3 種方法了 實際操作時, 可以看到 Google TV 的音量調整和電視機本身的是不一樣的兩組. 本來想截圖, 但發現 Google TV 的音量調整不會被截到, 就算了.
           
           
@@ -372,7 +372,7 @@ fastboot reboot
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
 自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個...)
 爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
 修改步驟 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 https://dennys.
@@ -391,7 +391,7 @@ fastboot reboot
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
 方法 1 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
 用 fastboot 刷回原始的 boot.img
 1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 方法 2 其實 Magisk 有這個功能刷回原始的 boot.img
@@ -438,7 +438,7 @@ fastboot reboot
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
 最有名的 LineageOS 15~19.1 (Android 8~12L) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 安裝 Samsung USB drivar 和 ODIN Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN 是用來刷 firmware 的工具, 請在這裡下載並安裝: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19.1: https://forum.xda-developers.com/t/4369001/ LineageOS 18: https://forum.
           
@@ -456,7 +456,7 @@ fastboot reboot
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
 安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好. https://developer.android.com/studio/releases/platform-tools#downloads
 ===================================================
 手機解鎖 Unlock 步驟 請記得先備份資料, 因為解鎖會清空資料
@@ -478,7 +478,7 @@ fastboot reboot
       <description>
         
           
-            提醒這個方法不用 Root, 但需要從電腦上執行.需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
+            提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
 要注意的是, 他會清除所有 toggle (就是說, 設完以後, 你的快速設定就只剩下 Wi-Fi 和行動數據兩個), 不過這再加回來就好了.
           
           
@@ -517,7 +517,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
 官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0 ODIN: https://odindownloader.com/ 下載 TWRP 以及 Magisk TWRP: https://androidfilehost.com/?fid=818070582850510050 Magisk: https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 安裝 TWRP 步驟 打開 Samsung Galaxy View 的工程模式 (參考 這裡) 重開機進入 download mode 執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了 安裝 Magisk 把 Magisk-v20.
           
           
@@ -534,7 +534,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
 Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ 安裝 htc driver https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z TWRP 可參考以下兩篇 https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.com/root-htc-ultra/ Magisk 安裝 參考: https://izaka.tw/android-magisk-installation-guide/
 用手機從這裡下載 Magisk-v20.3.zip https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 重開進入 TWRP (指令: adb wait-for-device reboot recovery) 選擇 INSTALL, 路徑選擇 /sdcard/Download 選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash 重開系統 Magisk Module YouTube Vanced 如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced 要把 Google Play 的自動更新關閉 LineageOS 官網
           
@@ -552,7 +552,7 @@ Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ �
       <description>
         
           
-            注意FreshJR_Qos已停止維護, 請改用 FlexQoSFreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
+            注意 FreshJR_Qos已停止維護, 請改用 FlexQoS FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
 安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
 原文: https://www.snbforums.com/threads/36836/ 中文摘要翻譯: https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html 如何確定安裝成功
 執行 /jffs/script/FreshJR\_QOS -debug Undf FlowID 的值如果不是 17, 那就安裝成功了 安裝前 &amp;amp; 測試結果 設定如下: 測試結果: http://www.dslreports.com/speedtest/58928634 安裝後 &amp;amp; 測試結果 設定如下: 測試結果: http://www.dslreports.com/speedtest/58929066 後記 FreshJR_Qos已停止維護, 請改用 FlexQoS
@@ -571,7 +571,7 @@ Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ �
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
 Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
 要注意的是, Diversion 為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 FAQ 看一下這是甚麼東西還有他能做的事情.
 安裝步驟 Asuswrt Merlin Web GUI 設定 Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.
@@ -627,7 +627,7 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!PTool 是甚麼 PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! PTool 是甚麼 PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
 功能 Basic Version incremental (打勾) Prevent version compare (打勾) FPS change G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps
 720p59,94fps-&amp;gt;29.97 PAL &amp;lt;-&amp;gt; NTSC Manual movie mode Manual Movie Modes (打勾) 手動錄影的操作方式如下 (不需要轉到錄影模式)
 開機 選 PASM 任一種 按下 Menu/Set 再按一下 Menu/Set 這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了.
@@ -797,7 +797,7 @@ XBMC Constellation: 我其實最剛開始是看到這個, 可以看一下這裡�
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
 解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
@@ -819,7 +819,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失...前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
+            注意 這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失... 前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
 參考文章 數位天堂: DD-WRT 3G 測試 數位天堂: Lly 韌體 (Oleg 韌體分支) 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: DD-WRT 前置準備 DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡插入 (這地方還需要多測試, 目前開機後再插入常常會抓不到) 要打開DD-WRT的PPPoE (這裡不懂為何一定要開, 因為後面反正還是要 kill 掉.
           
           
@@ -836,7 +836,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
 參考文章 數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB-1.71 前置準備 將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟) 把 SIM 卡的 pin code 給 disable 步驟 設定 3G 上網
           
           
@@ -853,7 +853,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
 因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, 原來已經有人做出這種產品了, 譬如 EDIMAX 3G-6200n 或是 ZALiP CDW530AM, 價錢也還好. 不過呢, 一來都是沒聽過的廠牌, 二來則是, 這樣就不好玩了啊, 所以最後還是決定找一個可以自行改機的方案來實現透過分享器的 3G 上網來玩玩.
 ps: Vigor 的 hub 也有支援 3G, 不過目前還沒有研究.
 硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1) 他有 8MB firmware, 可以玩的花樣比較多 (2) 有人已經改機改到 128MB RAM 了
@@ -872,7 +872,7 @@ ps: Vigor 的 hub 也有支援 3G, 不過目前還沒有研究.
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
+            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: Tomato DualWan (1.23.0410 和 1.23.0441) 前置準備 將 firmware 刷為 Tomato DualWan, 請參考官方教程 把 SIM 卡的 pin code 給 disable 設定步驟 設定比 CDMA@wifi 簡單許多, 如下圖, 先把 USB 給 enable 起來 (紅框部份).
           
           
@@ -912,7 +912,7 @@ X 的 進了電梯之後, 看著數字從 B 變成 1. 突然間, 電梯震了一
       <description>
         
           
-            注意這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+            注意 這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了 這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
 XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
 把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin), 把字型放大, 因為懶得研究哪個設定是對應到那個項目的, 所以我把所有小於 24 的全部都改成 24. 不過說實在的, 覺得還是有點小. 如果是全新安裝, 到這裡就可以了. 如果是升級, 把之前的 UserData 目錄拿來用, 就所有的設定和資料都回來 幾個比較重要的設定檔如下:
 UserData\guisettings.xmd: 所有的 GUI 設定都在這裡, 萬一設定搞爛掉了 (設定錯誤的字型或 skin, 會讓整個畫面的字都亂掉), 可以備份這個檔案回來即可 UserData\sources.xml: 這檔案放的是外部資源的設定, 譬如設定把家裏其他電腦用網路芳鄰分享出來的目錄, 就會存在這個檔案裡面 最後, 關於 XBMC 9.
@@ -957,8 +957,8 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
 1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過.
           
           
@@ -975,7 +975,7 @@ jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            注意這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+            注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
 1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了.
           
           
@@ -1010,7 +1010,7 @@ jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
 1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
           
