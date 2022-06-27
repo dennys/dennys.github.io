@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,8 +41,14 @@
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/google-tv/</loc>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,6 +59,35 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/</loc>
+    <lastmod>2022-06-26T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2022-06-21T00:00:00+08:00</lastmod>
@@ -68,19 +103,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/software/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</loc>
@@ -107,12 +129,6 @@
     <loc>https://dennys.github.io/tw/tags/vpn/</loc>
     <lastmod>2022-06-17T00:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/google-tv/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/google-tv/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
@@ -120,22 +136,6 @@
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2022-06-11T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/</loc>
     <lastmod>2022-06-11T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/about/</loc>
