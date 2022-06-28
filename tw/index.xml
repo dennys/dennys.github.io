@@ -325,7 +325,7 @@ fastboot reboot
     </item>
     
     <item>
-      <title>Google Maps 音樂接藍牙, 語音不接</title>
+      <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
       <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
