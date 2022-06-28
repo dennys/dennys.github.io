@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android 使用小技巧 on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+    <description>Recent content in Android 使用小技巧 on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 May 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何設定 Android 零打擾的時間長度</title>
+      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
+      <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
+      <description>
+        
+          
+            需求 Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.
+作法 如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度
+預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;
+改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項
+結果 這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Google Maps 音樂接藍牙, 語音不接</title>
+      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <description>
+        
+          
+            需求 不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.
+作法 後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>將 Gmail 的通知改成可以直接刪除</title>
+      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
+      <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
+      <description>
+        
+          
+            需求 Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.
+作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.
+修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.
+後記 如果可以讓封存和刪除都出來就更好了.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

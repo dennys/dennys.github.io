@@ -56,6 +56,9 @@
     <loc>https://dennys.github.io/en/tags/gitlab/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
     <xhtml:link
@@ -67,6 +70,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dennys.github.io/en/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/series/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
                 />
   </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
@@ -132,17 +148,5 @@
     <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
   </url><url>
     <loc>https://dennys.github.io/en/categories/ci/cd/</loc>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
   </url>
 </urlset>
