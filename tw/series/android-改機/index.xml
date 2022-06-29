@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/android/</link>
-    <description>Recent content in Android on Dennys Diary</description>
+    <title>Android 改機 on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/</link>
+    <description>Recent content in Android 改機 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何更新 Unlock 過的 Pixel 5</title>
       <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
@@ -28,82 +28,6 @@ fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img
 執行以下指令重新開機
 fastboot reboot
 進入 設定-&amp;gt;關於-&amp;gt;Android 版本, 確定有更新成功.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>如何設定 Android 零打擾的時間長度</title>
-      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
-      <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
-      <description>
-        
-          
-            需求 Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.
-作法 如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度
-預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;
-改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項
-結果 這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
-      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
-      <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
-      <description>
-        
-          
-            需求 不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.
-作法 後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>將 Gmail 的通知改成可以直接刪除</title>
-      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
-      <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
-      <description>
-        
-          
-            需求 Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.
-作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.
-修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.
-後記 如果可以讓封存和刪除都出來就更好了.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
-      <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
-      <description>
-        
-          
-            前言 自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.
-看起來評價不是很好, 我也覺得很不直覺...
-不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
-成果 結果就會變成如下
-參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;amp;msgid=154180966 
           
           
         
@@ -201,23 +125,6 @@ fastboot reboot
           
             提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
 要注意的是, 他會清除所有 toggle (就是說, 設完以後, 你的快速設定就只剩下 Wi-Fi 和行動數據兩個), 不過這再加回來就好了.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Samsung Galaxy View Root</title>
-      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</guid>
-      <description>
-        
-          
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
-官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0 ODIN: https://odindownloader.com/ 下載 TWRP 以及 Magisk TWRP: https://androidfilehost.com/?fid=818070582850510050 Magisk: https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 安裝 TWRP 步驟 打開 Samsung Galaxy View 的工程模式 (參考 這裡) 重開機進入 download mode 執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了 安裝 Magisk 把 Magisk-v20.
           
           
         
