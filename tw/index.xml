@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source VPN 之不嚴謹比較</title>
+      <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</guid>
+      <description>
+        
+          
+            Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
+OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan VPN: https://libreswan.org/ OpenSwan VPN: https://openswan.org/ strongSwan VPN: https://www.strongswan.org/ FreeLan VPN: https://www.freelan.org/ Open Connect VPN: https://www.infradead.org/openconnect/ 先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN
+OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 7.2K 9K 662 770 1.4K 1.2K N/A Last release 2022/5/24 2021/6/24 2022/5/25 2021/1/22 2022/4/29 2019/5/7 2022/4/29 再用 Google Trend 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
       <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
@@ -18,7 +36,7 @@
         
           
             提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行. 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
-2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01: https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6482657 =&amp;gt; 看來三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
+2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01 上的討論, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
           
           
         

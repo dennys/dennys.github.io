@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source VPN 之不嚴謹比較</title>
+      <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</guid>
+      <description>
+        
+          
+            Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
+OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan VPN: https://libreswan.org/ OpenSwan VPN: https://openswan.org/ strongSwan VPN: https://www.strongswan.org/ FreeLan VPN: https://www.freelan.org/ Open Connect VPN: https://www.infradead.org/openconnect/ 先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN
+OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 7.2K 9K 662 770 1.4K 1.2K N/A Last release 2022/5/24 2021/6/24 2022/5/25 2021/1/22 2022/4/29 2019/5/7 2022/4/29 再用 Google Trend 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>點對點網路測速軟體 iPerf3</title>
       <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>

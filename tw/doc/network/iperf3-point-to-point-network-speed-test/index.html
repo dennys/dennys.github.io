@@ -228,7 +228,7 @@
 <li>連線到 <a href="https://iperf.fr/iperf-download.php">https://iperf.fr/iperf-download.php</a>, 選擇需要的作業系統</li>
 <li>如果是 Windows, 直接下載 iperf-3.<em>.</em>-win64.zip 即可, 免安裝, server/client 是同一個執行檔</li>
 <li>以 Ubuntu 為例, 理論上是執行這個指令就可以了
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">sudo apt-get install iperf3
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">sudo apt-get install iperf3
 </span></span></code></pre></div></li>
 <li>若是無法安裝, 可能是缺了某些 library, 可參考官網指示, 如下 (這是我執行時候的範本, 請參考官網看最新的指令)
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">sudo apt remove iperf3 libiperf0
@@ -242,9 +242,9 @@
 <h2 id="測試-server-端">測試 (Server 端)</h2>
 <ol>
 <li>不論 Windows 或是 Ubuntu, 指令都是一樣的簡單, 加上 -s 就可以了. 有需要的話, 可以加上 -p 指定 port
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ iperf3 -s -p 5201
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ iperf3 -s -p <span class="m">5201</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">-----------------------------------------------------------
-</span></span><span class="line"><span class="ln">3</span><span class="cl">Server listening on 5201
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Server listening on <span class="m">5201</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">-----------------------------------------------------------
 </span></span></code></pre></div></li>
 </ol>
@@ -353,6 +353,9 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a>
       </li>
       <li>
@@ -373,16 +376,13 @@
       <li>
         <a href="https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/" class="nav-link" title="Google TV 遙控器調整 Infocus 電視音量 (妥協做法)">Google TV 遙控器調整 Infocus 電視音量 (妥協做法)</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/" class="nav-link" title="Google TV 遙控器開關 Infocus 電視 (使用 HDMI-CEC)">Google TV 遙控器開關 Infocus 電視 (使用 HDMI-CEC)</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">分類</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">47</span>
+          <span class="button_tally">48</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -424,7 +424,7 @@
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="改機">
           改機
-          <span class="button_tally">16</span>
+          <span class="button_tally">17</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
@@ -439,7 +439,7 @@
         
         <a href='https://dennys.github.io/tw/tags/router/' class="post_tag button button_translucent" title="router">
           ROUTER
-          <span class="button_tally">7</span>
+          <span class="button_tally">8</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/magisk/' class="post_tag button button_translucent" title="magisk">
@@ -457,6 +457,11 @@
           <span class="button_tally">5</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
+          ASUSWRT-MERLIN
+          <span class="button_tally">4</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/google-tv/' class="post_tag button button_translucent" title="google-tv">
           GOOGLE-TV
           <span class="button_tally">4</span>
@@ -467,14 +472,14 @@
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
+        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
+          NETWORK
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
-          ASUSWRT-MERLIN
-          <span class="button_tally">3</span>
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
@@ -482,14 +487,9 @@
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
-          NETWORK
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/openvpn/' class="post_tag button button_translucent" title="openvpn">
           OPENVPN
-          <span class="button_tally">2</span>
+          <span class="button_tally">3</span>
         </a>
         
         
@@ -502,7 +502,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=3 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=4 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">4</span>
             </a>
             
             
@@ -542,11 +542,11 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=3 title="network">NETWORK<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=4 title="network">NETWORK<span class="button_tally">4</span>
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/openvpn/' class=" post_tag button button_translucent" data-position=2 title="openvpn">OPENVPN<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/tw/tags/openvpn/' class=" post_tag button button_translucent" data-position=3 title="openvpn">OPENVPN<span class="button_tally">3</span>
             </a>
             
             
@@ -558,7 +558,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=7 title="router">ROUTER<span class="button_tally">7</span>
+            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=8 title="router">ROUTER<span class="button_tally">8</span>
             </a>
             
             
@@ -574,10 +574,6 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/vpn/' class=" post_tag button button_translucent" data-position=2 title="vpn">VPN<span class="button_tally">2</span>
-            </a>
-            
-            
             <a href='https://dennys.github.io/tw/tags/word/' class=" post_tag button button_translucent" data-position=1 title="word">WORD<span class="button_tally">1</span>
             </a>
             
@@ -590,7 +586,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class=" post_tag button button_translucent" data-position=16 title="改機">改機<span class="button_tally">16</span>
+            <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class=" post_tag button button_translucent" data-position=17 title="改機">改機<span class="button_tally">17</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>

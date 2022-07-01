@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Open Source VPN 方案比較 | Dennys Diary</title>
+<title>Open Source VPN 之不嚴謹比較 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,23 +26,23 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 建立一個 VPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-要加密 (不可用 PPTP) 要測速 Google Trend 還滿明顯的, 第一名就是 OpenVPN, 第二名是 SoftEther VPN 測速 " />
+<meta name="description" content="Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
+OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="Open Source VPN 方案比較" />
+<meta name="twitter:title" content="Open Source VPN 之不嚴謹比較" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/network/openvpn-softether/" />
-<meta property="og:title" content="Open Source VPN 方案比較" />
-<meta property="og:description" content="需求 建立一個 VPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-要加密 (不可用 PPTP) 要測速 Google Trend 還滿明顯的, 第一名就是 OpenVPN, 第二名是 SoftEther VPN 測速 " />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" />
+<meta property="og:title" content="Open Source VPN 之不嚴謹比較" />
+<meta property="og:description" content="Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
+OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/network/openvpn-softether/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/">
 
 
 
@@ -152,7 +152,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Open Source VPN 方案比較</h1>
+    <h1 class="post_title">Open Source VPN 之不嚴謹比較</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -160,23 +160,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Jun 27, 2022</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/openvpn/' title="OpenVPN" class="post_tag button button_translucent">OpenVPN
-        </a><a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
+      Jul 1, 2022</span>
+    <span class="post_time"> · 4 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/openvpn/' title="OpenVPN" class="post_tag button button_translucent">OpenVPN
         </a><a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Open%20Source%20VPN%20%e6%96%b9%e6%a1%88%e6%af%94%e8%bc%83&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-softether%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Open%20Source%20VPN%20%e4%b9%8b%e4%b8%8d%e5%9a%b4%e8%ac%b9%e6%af%94%e8%bc%83&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopen-source-vpn-comparison%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-softether%2f&t=Open%20Source%20VPN%20%e6%96%b9%e6%a1%88%e6%af%94%e8%bc%83" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopen-source-vpn-comparison%2f&t=Open%20Source%20VPN%20%e4%b9%8b%e4%b8%8d%e5%9a%b4%e8%ac%b9%e6%af%94%e8%bc%83" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -190,7 +189,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/network/openvpn-softether/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -205,21 +204,71 @@
         <h2>文章目錄</h2>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#需求">需求</a></li>
-    <li><a href="#google-trend">Google Trend</a></li>
-    <li><a href="#測速">測速</a></li>
+    <li><a href="#open-source-vpn">Open Source VPN</a></li>
+    <li><a href="#測速比較">測速比較</a></li>
+    <li><a href="#cpu-使用比較">CPU 使用比較</a></li>
+    <li><a href="#結論">結論</a></li>
+    <li><a href="#參考">參考</a></li>
   </ol>
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="需求">需求</h2>
-<p>建立一個 VPN, 讓遠端機器可以連到內網的機器, 而且只能連到<em><strong>某一台特定機器</strong></em>.</p>
+    <div class="post_body"><h2 id="open-source-vpn">Open Source VPN</h2>
 <ol>
-<li>要加密 (不可用 PPTP)</li>
-<li>要測速</li>
+<li>
+<p>目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...</p>
+<ol>
+<li>OpenVPN: <a href="https://openvpn.net/">https://openvpn.net/</a></li>
+<li>SoftEther VPN: <a href="https://softether.org/">https://softether.org/</a></li>
+<li>Libreswan VPN: <a href="https://libreswan.org/">https://libreswan.org/</a></li>
+<li>OpenSwan VPN: <a href="https://openswan.org/">https://openswan.org/</a></li>
+<li>strongSwan VPN: <a href="https://www.strongswan.org/">https://www.strongswan.org/</a></li>
+<li>FreeLan VPN: <a href="https://www.freelan.org/">https://www.freelan.org/</a></li>
+<li>Open Connect VPN: <a href="https://www.infradead.org/openconnect/">https://www.infradead.org/openconnect/</a></li>
 </ol>
-<h2 id="google-trend">Google Trend</h2>
-<p>還滿明顯的, 第一名就是 OpenVPN, 第二名是 SoftEther VPN
+</li>
+<li>
+<p>先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>OpenVPN</th>
+<th>SoftEther</th>
+<th>LibreSwan</th>
+<th>OpenSwan</th>
+<th>StrongSwan</th>
+<th>FreeLan</th>
+<th>OpenConnect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub star</td>
+<td>7.2K</td>
+<td>9K</td>
+<td>662</td>
+<td>770</td>
+<td>1.4K</td>
+<td>1.2K</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Last release</td>
+<td>2022/5/24</td>
+<td>2021/6/24</td>
+<td>2022/5/25</td>
+<td>2021/1/22</td>
+<td>2022/4/29</td>
+<td>2019/5/7</td>
+<td>2022/4/29</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>再用 <a href="https://trends.google.com.tw/trends/?geo=TW">Google Trend</a> 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
+(因為 Google Trend 只能比 5 個, 另外兩個沒放上來的基本上也是躺平)
 <figure>
   <picture>
 
@@ -245,7 +294,178 @@
     </picture>
 </figure>
 </p>
-<h2 id="測速">測速</h2>
+</li>
+</ol>
+<h2 id="測速比較">測速比較</h2>
+<ol>
+<li>
+<p>測速情境如下
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/network/vpn-test.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+<li>
+<p>不透過 VPN 直接連線, 每秒約 556Mbits</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Connecting to host 211.73.81.92, port 5201
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  4] local 10.100.201.3 port 49787 connected to 211.73.81.92 port 5201
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  4]   0.00-1.00   sec  43.4 MBytes   363 Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  4]   1.00-2.00   sec  20.5 MBytes   172 Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  4]   2.00-3.00   sec  35.1 MBytes   295 Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  4]   3.00-4.00   sec  67.0 MBytes   562 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  4]   4.00-5.00   sec  86.4 MBytes   725 Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  4]   5.00-6.00   sec  81.1 MBytes   679 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[  4]   6.00-7.00   sec  81.5 MBytes   686 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[  4]   7.00-8.00   sec  82.8 MBytes   693 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[  4]   8.00-9.00   sec  81.8 MBytes   687 Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[  4]   9.00-10.00  sec  83.0 MBytes   695 Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
+</span></span><span class="line"><span class="ln">15</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
+</span></span><span class="line hl"><span class="ln">16</span><span class="cl">[  4]   0.00-10.00  sec   662 MBytes   556 Mbits/sec             sender
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  4]   0.00-10.00  sec   662 MBytes   556 Mbits/sec             receiver
+</span></span></code></pre></div></li>
+<li>
+<p>透過 OpenVPN 連線, 每秒約 193Mbits</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port 49750
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  5] local 192.168.211.3 port 5201 connected to 192.168.211.4 port 49751
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  5]   0.00-1.00   sec  28.5 MBytes   239 Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  5]   1.00-2.00   sec  21.3 MBytes   179 Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  5]   2.00-3.00   sec  21.1 MBytes   177 Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  5]   3.00-4.00   sec  20.6 MBytes   173 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  5]   4.00-5.00   sec  18.7 MBytes   157 Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  5]   5.00-6.00   sec  21.6 MBytes   181 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[  5]   6.00-7.00   sec  25.4 MBytes   213 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[  5]   7.00-8.00   sec  23.6 MBytes   198 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[  5]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[  5]   9.00-10.00  sec  25.3 MBytes   212 Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl">[  5]  10.00-10.03  sec   660 KBytes   175 Mbits/sec
+</span></span><span class="line"><span class="ln">15</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
+</span></span><span class="line"><span class="ln">16</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  5]   0.00-10.03  sec   230 MBytes   193 Mbits/sec                  receiver
+</span></span></code></pre></div></li>
+<li>
+<p>透過 SoftEther VPN 連線, 每秒約 98.8Mbits</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port 37244
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  5] local 192.168.211.3 port 5201 connected to 192.168.211.4 port 37246
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  5]   0.00-1.00   sec  11.5 MBytes  96.1 Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  5]   1.00-2.00   sec  15.1 MBytes   127 Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  5]   2.00-3.00   sec  10.7 MBytes  89.9 Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  5]   3.00-4.00   sec  9.61 MBytes  80.6 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  5]   4.00-5.00   sec  12.1 MBytes   101 Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  5]   5.00-6.00   sec  9.89 MBytes  83.0 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl">[  5]   6.00-7.00   sec  6.34 MBytes  53.2 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl">[  5]   7.00-8.00   sec  11.1 MBytes  92.7 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl">[  5]   8.00-9.00   sec  15.7 MBytes   131 Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl">[  5]   9.00-10.00  sec  15.8 MBytes   132 Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl">[  5]  10.00-10.01  sec   235 KBytes   148 Mbits/sec
+</span></span><span class="line"><span class="ln">15</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
+</span></span><span class="line"><span class="ln">16</span><span class="cl">[ ID] Interval           Transfer     Bitrate
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  5]   0.00-10.01  sec   118 MBytes  98.8 Mbits/sec                  receiver
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="cpu-使用比較">CPU 使用比較</h2>
+<ol>
+<li>
+<p>透過 OpenVPN 連線, CPU 約使用 30.7%</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">top - 15:01:40 up 2 days,  3:22,  4 users,  load average: 0.00, 0.00, 0.00
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: 119 total,   1 running, 118 sleeping,   0 stopped,   0 zombie
+</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu(s):  5.4 us,  9.9 sy,  0.0 ni, 82.8 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st
+</span></span><span class="line"><span class="ln">4</span><span class="cl">MiB Mem :  16009.7 total,  13538.6 free,    417.3 used,   2053.8 buff/cache
+</span></span><span class="line"><span class="ln">5</span><span class="cl">MiB Swap:      0.0 total,      0.0 free,      0.0 used.  15288.2 avail Mem
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+</span></span><span class="line hl"><span class="ln">8</span><span class="cl">    934 openvpn+  20   0    8012   6748   5544 S  32.3   0.0   0:14.82 openvpn-openssl
+</span></span></code></pre></div></li>
+<li>
+<p>透過 SoftEther VPN 連線, CPU 約使用 22.3%</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">top - 15:05:47 up 2 days,  3:26,  4 users,  load average: 0.00, 0.01, 0.00
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: 120 total,   1 running, 119 sleeping,   0 stopped,   0 zombie
+</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu(s):  0.3 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+</span></span><span class="line"><span class="ln">4</span><span class="cl">MiB Mem :  16009.7 total,  13512.0 free,    436.3 used,   2061.4 buff/cache
+</span></span><span class="line"><span class="ln">5</span><span class="cl">MiB Swap:      0.0 total,      0.0 free,      0.0 used.  15269.1 avail Mem
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+</span></span><span class="line hl"><span class="ln">8</span><span class="cl">13540 ubuntu    20   0 1016272  20404   5576 S   22.7   0.1   0:03.93 vpnserver
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="結論">結論</h2>
+<ol>
+<li>
+<p>測速</p>
+<table>
+<thead>
+<tr>
+<th>連線方式</th>
+<th>速度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接連線</td>
+<td>556 Mbits</td>
+</tr>
+<tr>
+<td>OpenVPN</td>
+<td>193 Mbits</td>
+</tr>
+<tr>
+<td>SoftEther</td>
+<td>98.8 Mbits</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>CPU 使用率</p>
+<table>
+<thead>
+<tr>
+<th>連線方式</th>
+<th>CPU 使用率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenVPN</td>
+<td>32.3%</td>
+</tr>
+<tr>
+<td>SoftEther</td>
+<td>22.7%</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="參考">參考</h2>
+<ol>
+<li>有興趣在 Linux 上裝 OpenVPN 的可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server/">https://dennys.github.io/tw/doc/network/openvpn-server/</a></li>
+<li>想嘗試在 Asuswrt-Merlin 使用 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</a></li>
+</ol>
 
     </div>
 <div class="post_comments">
@@ -343,11 +563,6 @@
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/series/java-maven/' class="post_tag button button_translucent" title="java-maven">
-          JAVA-MAVEN
-          <span class="button_tally">4</span>
-        </a>
-        
         
       </nav>
     </div>
@@ -356,7 +571,7 @@
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="改機">
           改機
-          <span class="button_tally">16</span>
+          <span class="button_tally">17</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
@@ -371,7 +586,7 @@
         
         <a href='https://dennys.github.io/tw/tags/router/' class="post_tag button button_translucent" title="router">
           ROUTER
-          <span class="button_tally">7</span>
+          <span class="button_tally">8</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/magisk/' class="post_tag button button_translucent" title="magisk">
@@ -387,6 +602,11 @@
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
           <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
+          ASUSWRT-MERLIN
+          <span class="button_tally">4</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/google-tv/' class="post_tag button button_translucent" title="google-tv">
@@ -409,11 +629,6 @@
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class="post_tag button button_translucent" title="asuswrt-merlin">
-          ASUSWRT-MERLIN
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
           DATABASE
           <span class="button_tally">3</span>
@@ -434,7 +649,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=3 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=4 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">4</span>
             </a>
             
             
@@ -490,7 +705,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=7 title="router">ROUTER<span class="button_tally">7</span>
+            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=8 title="router">ROUTER<span class="button_tally">8</span>
             </a>
             
             
@@ -506,10 +721,6 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/vpn/' class=" post_tag button button_translucent" data-position=3 title="vpn">VPN<span class="button_tally">3</span>
-            </a>
-            
-            
             <a href='https://dennys.github.io/tw/tags/word/' class=" post_tag button button_translucent" data-position=1 title="word">WORD<span class="button_tally">1</span>
             </a>
             
@@ -522,7 +733,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class=" post_tag button button_translucent" data-position=16 title="改機">改機<span class="button_tally">16</span>
+            <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' class=" post_tag button button_translucent" data-position=17 title="改機">改機<span class="button_tally">17</span>
             </a>
             
             <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>
