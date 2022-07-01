@@ -7,24 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 27 Jun 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Open Source VPN 方案比較</title>
-      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
-      <pubDate>Mon, 27 Jun 2022 00:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
-      <description>
-        
-          
-            需求 建立一個 VPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-要加密 (不可用 PPTP) 要測速 Google Trend 還滿明顯的, 第一名就是 OpenVPN, 第二名是 SoftEther VPN 測速 
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>點對點網路測速軟體 iPerf3</title>
       <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
