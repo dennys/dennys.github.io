@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何修改 Android 預設的 YouTube App</title>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</guid>
+      <description>
+        
+          
+            需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.
+作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
+這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe為例, 進去後選擇&amp;quot;+ 新增連結&amp;quot;. 拉到最下面, 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App. 結果 可以試著用 Chrome 找一些影片, 然後試著打開她, 選 YouTube, 他就會啟動 NewPipe 了. 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
       <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
@@ -17,7 +35,7 @@
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行. 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
+            提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
 2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01 上的討論, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
           
           

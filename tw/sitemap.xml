@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennys.github.io/tw/tags/android/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +22,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +35,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +48,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,17 +60,21 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/network/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/openvpn/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -76,27 +86,39 @@
                 href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/android/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/tags/youtube/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/tags/software/</loc>
+    <lastmod>2022-07-01T10:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/"
+                href="https://dennys.github.io/en/tags/software/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
+                href="https://dennys.github.io/tw/tags/software/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/software/youtube-private-video/</loc>
+    <lastmod>2022-07-01T10:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</loc>
+    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
+    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
+    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</loc>
     <lastmod>2022-06-29T00:00:00+08:00</lastmod>
@@ -109,19 +131,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/</loc>
     <lastmod>2022-06-26T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/software/</loc>
-    <lastmod>2022-06-21T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/software/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</loc>
     <lastmod>2022-06-21T00:00:00+08:00</lastmod>
@@ -163,9 +172,6 @@
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/vnc/</loc>
-    <lastmod>2022-06-02T10:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/youtube/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</loc>

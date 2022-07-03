@@ -7,7 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何修改 Android 預設的 YouTube App</title>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</guid>
+      <description>
+        
+          
+            需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.
+作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
+這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe為例, 進去後選擇&amp;quot;+ 新增連結&amp;quot;. 拉到最下面, 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App. 結果 可以試著用 Chrome 找一些影片, 然後試著打開她, 選 YouTube, 他就會啟動 NewPipe 了. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>YouTube 各種加強工具</title>
+      <link>https://dennys.github.io/tw/doc/software/youtube-private-video/</link>
+      <pubDate>Fri, 01 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/youtube-private-video/</guid>
+      <description>
+        
+          
+            注意這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!!整理一下 YouTube 在各平台上的各種加強工具.
+PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的是, 他首頁強調的 當游標在播放器上時，使用滑鼠滾輪控制音量, 預設卻是關閉的, 要自己進去打開才會生效.
+Magic Actions for YouTube 上次更新是 2021/5/2, 而且他有可能會拿走你的所有瀏覽紀錄 (參考: https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/)
+PC 下載 (Linux, macOS, Windows) youtube-dl 或是 ytl-dp 參考: https://dennys.github.io/tw/doc/software/download-youtube-private-video/ Android Vanced: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於NewPipe Extractor, 試玩了幾個. 其實對我來講最有感的是
+官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大 手勢, 尤其前後快傳真的好用 Chromecast, 這個雖然不常用, 但用到的時候就很方便 NewPipe SkyTube LibreTube VueTube GitHub star 19.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
       <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
