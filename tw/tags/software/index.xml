@@ -7,27 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 01 Jul 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>YouTube 各種加強工具</title>
-      <link>https://dennys.github.io/tw/doc/software/youtube-private-video/</link>
-      <pubDate>Fri, 01 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/youtube-private-video/</guid>
-      <description>
-        
-          
-            注意這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!!整理一下 YouTube 在各平台上的各種加強工具.
-PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的是, 他首頁強調的 當游標在播放器上時，使用滑鼠滾輪控制音量, 預設卻是關閉的, 要自己進去打開才會生效.
-Magic Actions for YouTube 上次更新是 2021/5/2, 而且他有可能會拿走你的所有瀏覽紀錄 (參考: https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/)
-PC 下載 (Linux, macOS, Windows) youtube-dl 或是 ytl-dp 參考: https://dennys.github.io/tw/doc/software/download-youtube-private-video/ Android Vanced: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於NewPipe Extractor, 試玩了幾個. 其實對我來講最有感的是
-官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大 手勢, 尤其前後快傳真的好用 Chromecast, 這個雖然不常用, 但用到的時候就很方便 NewPipe SkyTube LibreTube VueTube GitHub star 19.
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</title>
       <link>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</link>
