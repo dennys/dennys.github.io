@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/hardware/</link>
+    <description>Recent content in Hardware on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 15 Jul 2012 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2012 電腦升級</title>
+      <link>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</link>
+      <pubDate>Sun, 15 Jul 2012 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</guid>
+      <description>
+        
+          
+            最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
+用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU ：$6190 I5-3470/HD2500 主機板：$3690 華碩 P8H77-M PRO 記憶體：$1688 金士頓DDR3-1333 4G*2 其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價. 主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus 出的幾款 H77 板子感覺都滿接近的. 然後想玩 3 螢幕, P8H77-M PRO 這塊板子有支援 DVI、HDMI、Display Port 及 VGA,. 還有網路和音效都是螃蟹. P8H77-M PRO的音效輸出有 6 個, 沒用過這麼多孔的, 看了一下官方使用手冊, 在p43-44 有詳細說明如下:
+CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 基本上就剩下 i5, i7 還有 K/非K 系列排列組合共 4 種.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

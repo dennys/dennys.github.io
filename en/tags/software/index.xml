@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/software/</link>
+    <description>Recent content in Software on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use WISE to send currency exchange rate mail daily</title>
+      <link>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
+      <description>
+        
+          
+            Requirement I want to have a daily mail including currency exchange rate information.
+Solution use https://wise.com (no need to register an account)
+Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

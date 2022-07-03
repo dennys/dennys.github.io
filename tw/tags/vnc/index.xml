@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VNC on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/vnc/</link>
+    <description>Recent content in VNC on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 02 Jun 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/vnc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>無聲無影遠端桌面連線 - VNC</title>
+      <link>https://dennys.github.io/tw/doc/network/realvnc/</link>
+      <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/realvnc/</guid>
+      <description>
+        
+          
+            需求 需要一個遠端登入的功能, 要做到以下幾項功能
+進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &amp;quot;看&amp;quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 方法 (Server 端) 測試了一下, TeamViewer 和 AnyDesk 都做不出來這種功能, 目前是只有看到 RealVNC可以做到, 就先用這個測試.
+先下載 RealVNC server (從這裡下載: https://www.realvnc.com/en/connect/download/vnc/)
+打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了, 如下 😋
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
