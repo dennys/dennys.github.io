@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>抓某個區間的第一筆資料 | Dennys Diary</title>
+<title>如何修改 Android 預設的 YouTube App | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,23 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; …" />
+<meta name="description" content="需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.
+作法 進入 Android 的設定-&gt;應用程式-&gt;預設應用程式-&gt;開啟連結(在最下面). …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="抓某個區間的第一筆資料" />
+<meta name="twitter:title" content="如何修改 Android 預設的 YouTube App" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" />
-<meta property="og:title" content="抓某個區間的第一筆資料" />
-<meta property="og:description" content="1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" />
+<meta property="og:title" content="如何修改 Android 預設的 YouTube App" />
+<meta property="og:description" content="需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.
+作法 進入 Android 的設定-&gt;應用程式-&gt;預設應用程式-&gt;開啟連結(在最下面). …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/">
 
 
 
@@ -152,7 +154,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">抓某個區間的第一筆資料</h1>
+    <h1 class="post_title">如何修改 Android 預設的 YouTube App</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -160,21 +162,22 @@
 </svg>
 </span>
     <span class="post_date">
-      May 6, 2005</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/database/' title="Database" class="post_tag button button_translucent">Database
+      Jul 2, 2022</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/android/' title="Android" class="post_tag button button_translucent">Android
+        </a><a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e4%bf%ae%e6%94%b9%20Android%20%e9%a0%90%e8%a8%ad%e7%9a%84%20YouTube%20App&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fandroid-modify-default-youtube-app%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&t=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fandroid-modify-default-youtube-app%2f&t=%e5%a6%82%e4%bd%95%e4%bf%ae%e6%94%b9%20Android%20%e9%a0%90%e8%a8%ad%e7%9a%84%20YouTube%20App" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -188,7 +191,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -199,15 +202,207 @@
   </span>
   </div>
 
-    <div class="post_body"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">rank</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">username</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="n">rn</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">   </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="n">a</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="o">&gt;</span><span class="w">  </span><span class="n">p_cur_timestamp</span><span class="w">
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">p_cur_timestamp</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">C_PERIOD</span><span class="w">
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w"> </span><span class="p">)</span><span class="w"> 
-</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> </span><span class="n">rn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w">
-</span></span></span></code></pre></div>
+    <div class="post_body"><h2 id="需求">需求</h2>
+<p>Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.</p>
+<h2 id="作法">作法</h2>
+<ol>
+<li>
+<p>進入 Android 的設定-&gt;應用程式-&gt;預設應用程式-&gt;開啟連結(在最下面).</p>
+</li>
+<li>
+<p>這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/youtube_link.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+<li>
+<p>把 &quot;開啟支援的連結&quot; 關掉.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/youtube_link_disable.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+<li>
+<p>回到上一層, 選擇你要使用的 YouTube App, 這裡以 <a href="https://github.com/TeamNewPipe/NewPipe">NewPipe</a>為例, 進去後選擇&quot;+ 新增連結&quot;.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/newpipe_set_default1.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+<li>
+<p>拉到最下面, 把 YouTube 相關的 4 個連結打勾.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/newpipe_set_default2.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+<li>
+<p>回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/newpipe_set_default3.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+</ol>
+<h2 id="常見問題">常見問題</h2>
+<ol>
+<li>若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/android/default_youtube/newpipe_error.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</li>
+</ol>
+<h2 id="結果">結果</h2>
+<ol>
+<li>可以試著用 Chrome 找一些影片, 然後試著打開她, 選 YouTube, 他就會啟動 NewPipe 了.</li>
+</ol>
+
     </div>
+
+	<h2 class="post_related">Posts in this Series</h2>
+	<ul>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/android-do-not-disturb/" class="nav-link" title="如何設定 Android 零打擾的時間長度">如何設定 Android 零打擾的時間長度</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/" class="nav-link" title="Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機">Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/" class="nav-link" title="將 Gmail 的通知改成可以直接刪除">將 Gmail 的通知改成可以直接刪除</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/" class="nav-link" title="把 Android 12 鎖定畫面的時鐘改單行">把 Android 12 鎖定畫面的時鐘改單行</a></li>
+	  
+	</ul>
+
 <div class="post_comments">
   
   
@@ -240,9 +435,6 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
       </li>
       <li>
@@ -262,6 +454,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server/" class="nav-link" title="OpenVPN server 簡易安裝使用 (Ubuntu)">OpenVPN server 簡易安裝使用 (Ubuntu)</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/" class="nav-link" title="Google TV 遙控器如何擷圖 (screenshot)">Google TV 遙控器如何擷圖 (screenshot)</a>
       </li>
     </ul>
     <div>
