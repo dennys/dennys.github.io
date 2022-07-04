@@ -26,7 +26,7 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Asuswrt-Merlin 的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
+<meta name="description" content="Asuswrt-Merlin 提供的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
 註1: Asuswrt …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
@@ -34,7 +34,7 @@
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/" />
 <meta property="og:title" content="在 Asuswrt-Merlin 使用 OpenVPN server" />
-<meta property="og:description" content="Asuswrt-Merlin 的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
+<meta property="og:description" content="Asuswrt-Merlin 提供的 VPN 方案 Asuswrt-Merlin 提供兩種 VPN server 工具, PPTP 和 OpenVPN. PPTP 看起來已經被淘汰, 連 iOS 10 以上都不支援 PPTP 了. 因此目前看來是只能用 OpenVPN.
 註1: Asuswrt …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
@@ -50,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
-"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
+"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -208,9 +208,10 @@
         <h2>文章目錄</h2>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#asuswrt-merlin-的-vpn-方案">Asuswrt-Merlin 的 VPN 方案</a></li>
+    <li><a href="#asuswrt-merlin-提供的-vpn-方案">Asuswrt-Merlin 提供的 VPN 方案</a></li>
     <li><a href="#測試環境">測試環境</a></li>
-    <li><a href="#openvpn-server-設定-在-asuswrt-merlin">OpenVPN server 設定 (在 Asuswrt-Merlin)</a>
+    <li><a href="#openvpn-server-安裝">OpenVPN server 安裝</a></li>
+    <li><a href="#openvpn-server-設定">OpenVPN server 設定</a>
       <ol>
         <li><a href="#1-openvpn-server-一般設定">1. OpenVPN server 一般設定</a></li>
         <li><a href="#2-openvpn-server-進階設定">2. OpenVPN server 進階設定</a></li>
@@ -219,14 +220,15 @@
     <li><a href="#openvpn-client-for-windows">OpenVPN Client for Windows</a></li>
     <li><a href="#openvpn-client-for-android">OpenVPN Client for Android</a></li>
     <li><a href="#openvpn-client-for-ios-macos-linux">OpenVPN Client for iOS, MacOS, Linux</a></li>
-    <li><a href="#openvpn-server-上的連線狀況">OpenVPN Server 上的連線狀況</a></li>
-    <li><a href="#softether-vpn">SoftEther VPN</a></li>
-    <li><a href="#asuswrt-openvpn-還不足的地方">Asuswrt OpenVPN 還不足的地方</a></li>
+    <li><a href="#asuswrt-merlin-openvpn-server-上的連線狀況">Asuswrt-Merlin OpenVPN Server 上的連線狀況</a></li>
+    <li><a href="#asuswrt-merlin-openvpn-還不足的地方">Asuswrt-Merlin OpenVPN 還不足的地方</a></li>
+    <li><a href="#asuswrt-merlin-openvpn-的好處">Asuswrt-Merlin OpenVPN 的好處</a></li>
+    <li><a href="#延伸閱讀-for-openvpn">延伸閱讀 (for OpenVPN)</a></li>
   </ol>
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="asuswrt-merlin-的-vpn-方案">Asuswrt-Merlin 的 VPN 方案</h2>
+    <div class="post_body"><h2 id="asuswrt-merlin-提供的-vpn-方案">Asuswrt-Merlin 提供的 VPN 方案</h2>
 <p><a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a> 提供兩種 VPN server 工具, <a href="https://zh.m.wikipedia.org/zh-tw/%E9%BB%9E%E5%B0%8D%E9%BB%9E%E9%9A%A7%E9%81%93%E5%8D%94%E8%AD%B0">PPTP</a> 和 <a href="https://zh.wikipedia.org/zh-tw/OpenVPN">OpenVPN</a>. PPTP 看起來已經被淘汰, 連 <a href="https://support.apple.com/zh-tw/HT206844">iOS 10 以上都不支援 PPTP</a> 了.  因此目前看來是只能用 OpenVPN.</p>
 <p>註1: Asuswrt 官方原版似乎有提供 PPTP, OpenVPN, IPSec VPN 這三種 VPN server, 可參考 <a href="https://www.asus.com/tw/support/FAQ/1044190/">https://www.asus.com/tw/support/FAQ/1044190/</a>, 不過我已經刷 Asuswrt-Merlin 了, 就不測試了.</p>
 <h2 id="測試環境">測試環境</h2>
@@ -234,7 +236,18 @@
 <li>Asus RC-AC66U B1</li>
 <li>Asuswrt-Merlin 386.5 (這個版本的 OpenVPN 是 2.5.5)</li>
 </ul>
-<h2 id="openvpn-server-設定-在-asuswrt-merlin">OpenVPN server 設定 (在 Asuswrt-Merlin)</h2>
+<h2 id="openvpn-server-安裝">OpenVPN server 安裝</h2>
+<ol>
+<li>Asuswrt-Merlin 已經內建就裝好了 OpenVPN (server 和 client 都有), 不用另外安裝. 如果你要查詢 OpenVPN 版本, 可參考這裡 <a href="https://www.asuswrt-merlin.net/changelog">https://www.asuswrt-merlin.net/changelog</a>. 以我測試的 Asuswrt-Merlin 386.5_2 版本來看, 他用的 OpenVPN 版本是 2.5.6 (第 3 列)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="ln">1</span><span class="cl"><span class="mf">386.5</span><span class="nv">_2</span> <span class="p">(</span><span class="mi">25</span><span class="o">-</span><span class="nc">March</span><span class="o">-</span><span class="mi">2022</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="o">-</span> <span class="nc">UPDATED</span><span class="p">:</span> <span class="nv">openssl</span> <span class="nv">to</span> <span class="mf">1.1.1</span><span class="nv">n</span><span class="p">.</span>
+</span></span><span class="line hl"><span class="ln">3</span><span class="cl"><span class="o">-</span> <span class="nc">UPDATED</span><span class="p">:</span> <span class="nv">openvpn</span> <span class="nv">to</span> <span class="mf">2.5.6</span><span class="p">.</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="o">-</span> <span class="nc">CHANGED</span><span class="p">:</span> <span class="nc">Added</span> <span class="nc">Wireguard</span> <span class="kn">module</span> <span class="o">+</span> <span class="nv">userspace</span> <span class="nv">tool</span> <span class="nv">to</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">            <span class="nc">GT</span><span class="o">-</span><span class="nc">AXE11000</span><span class="p">.</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="o">......</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="openvpn-server-設定">OpenVPN server 設定</h2>
 <h3 id="1-openvpn-server-一般設定">1. OpenVPN server 一般設定</h3>
 <ol>
 <li>首先進入 VPN 伺服器, 他可以建立兩個 OpenVPN server, 預設是 Server 1, 把它開啟. 我的需求是只有要透過 VPN 來連內網的電腦, 沒有要再連出去 Internet, 所以設定 &quot;LAN only&quot;. 另外, 如果需要使用者輸入帳號密碼, 請在最後面新增一個 username.
@@ -277,8 +290,12 @@
 </ol>
 <h2 id="openvpn-client-for-windows">OpenVPN Client for Windows</h2>
 <ol>
-<li>從這裡下載: <a href="https://openvpn.net/community-downloads/">https://openvpn.net/community-downloads/</a>, 裝好後選 import -&gt; 匯入設定檔, 把上面的檔案輸入進去, 就可以使用了.
-<br><br></li>
+<li>下載 OpenVPN client, 裝好後選 import 匯入設定檔, 把上面的檔案輸入進去, 就可以使用了. OpenVPN client for Windows, 目前有兩個版本, 兩個用起來差不多.
+<ol>
+<li>OpenVPN Connect for Windows, 可在 <a href="https://openvpn.net/client-connect-vpn-for-windows/">這裡</a> 下載</li>
+<li>OpenVPN GUI, 可在 <a href="https://openvpn.net/community-downloads/">這裡</a> 下載</li>
+</ol>
+</li>
 </ol>
 <h2 id="openvpn-client-for-android">OpenVPN Client for Android</h2>
 <ol>
@@ -299,20 +316,27 @@
 <li>可在<a href="https://openvpn.net/download-open-vpn/">這裡</a>下載其他平台的 client.
 <br><br></li>
 </ol>
-<h2 id="openvpn-server-上的連線狀況">OpenVPN Server 上的連線狀況</h2>
+<h2 id="asuswrt-merlin-openvpn-server-上的連線狀況">Asuswrt-Merlin OpenVPN Server 上的連線狀況</h2>
 <ol>
 <li>從這裡可以看出他有幾個 client, 實際和VPN的IP, 從甚麼時候連的, 使用的資料量等等.<br>
 <a href="https://dennys.files.wordpress.com/2022/06/image-17.png"><img src="https://dennys.files.wordpress.com/2022/06/image-17.png?w=757" alt="" class="wp-image-784"/></a></li>
 </ol>
-<h2 id="softether-vpn">SoftEther VPN</h2>
-<p><a href="https://www.softether.org/">SoftEther VPN</a> 的官方文件說明他是 <em>An Open-Source Free ​Cross-platform Multi-protocol VPN Program</em>, 是看到有些人說他的 GUI 比 OpenVPN 好用, 但我用 OpenVPN 一切順利, 就懶得試了.
-<br><br></p>
-<h2 id="asuswrt-openvpn-還不足的地方">Asuswrt OpenVPN 還不足的地方</h2>
+<h2 id="asuswrt-merlin-openvpn-還不足的地方">Asuswrt-Merlin OpenVPN 還不足的地方</h2>
 <p>感覺這還是比較陽春的 VPN server, 想到幾個不足的地方, 不過個人使用綽綽有餘了.</p>
 <ol>
 <li>沒有 timeout 機制, 連上來了就不會斷線.</li>
-<li>沒法限制 client 個數 (可能可以用 DHCP IP 數量來卡), Synology 的 OpenVPN 可以卡.</li>
+<li>沒法限制 client 個數, 可能可以用 DHCP IP 數量來卡. (Synology 的 OpenVPN 可以卡 client 個數)</li>
 <li>管理介面沒法把人踢掉</li>
+</ol>
+<h2 id="asuswrt-merlin-openvpn-的好處">Asuswrt-Merlin OpenVPN 的好處</h2>
+<ol>
+<li>個人簡易使用還滿方便的, 不用為了做一個 VPN 還找找一台機器.</li>
+<li>他沒有 OpenVPN 2 個連線的限制 (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
+</ol>
+<h2 id="延伸閱讀-for-openvpn">延伸閱讀 (for OpenVPN)</h2>
+<ol>
+<li>如果你要自己在 Linux(Ubuntu) 上安裝 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server/">OpenVPN server 簡易安裝使用 (Ubuntu)</a></li>
+<li>這是一篇 Open Source VPN 方案的簡單比較和測速: <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/">Open Source VPN 之不嚴謹比較</a></li>
 </ol>
 
     </div>
@@ -362,7 +386,7 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
@@ -692,6 +716,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
   </body>
 </html>

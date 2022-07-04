@@ -50,8 +50,8 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
-"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
+"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -163,7 +163,7 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 </span>
     <span class="post_date">
       Jul 1, 2022</span>
-    <span class="post_time"> · 4 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
+    <span class="post_time"> · 5 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
         </a><a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
         </a>
     </span>
@@ -210,7 +210,8 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
     <li><a href="#測速比較">測速比較</a></li>
     <li><a href="#cpu-使用比較">CPU 使用比較</a></li>
     <li><a href="#結論">結論</a></li>
-    <li><a href="#參考">參考</a></li>
+    <li><a href="#注意">注意</a></li>
+    <li><a href="#延伸閱讀">延伸閱讀</a></li>
   </ol>
 </nav>
       </div>
@@ -299,10 +300,10 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 </li>
 </ol>
 <h2 id="測速比較">測速比較</h2>
+<ul>
+<li>測速情境如下
 <ol>
-<li>
-<p>測速情境如下</p>
-<ol>
+<li>使用 <a href="https://iperf.fr/iperf-download.php">iPerf3</a> 來測速</li>
 <li>OpenVPN 使用預設的環境 (預設沒有開啟壓縮, 因為設定畫面上有提到開啟壓所可能會影響 security)</li>
 <li>SoftEther VPN 選擇的是他自己的 protocol (走 5555 那個)
 <figure>
@@ -332,6 +333,8 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 </li>
 </ol>
 </li>
+</ul>
+<ol>
 <li>
 <p>不透過 VPN 直接連線, 每秒約 556Mbits</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Connecting to host 211.73.81.92, port 5201
@@ -395,6 +398,9 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 </ol>
 <p>比較意外的是, <a href="https://www.softether.org/1-features/4._Fast_Throughput_and_High_Ability">SoftEhter VPN 官方網站有提到他比 OpenVPN 快 13 倍</a>, 但測起來卻不是這樣. 不過一來這是 2006 年的測速, 二來 SoftEther VPN 的設定很多, 也 <strong>很有可能是我沒有調整好</strong>, 所以這個測試僅供參考.</p>
 <h2 id="cpu-使用比較">CPU 使用比較</h2>
+<ul>
+<li>這是測試在使用 iPerf3 測速時, 同時觀察 CPU 的使用率. <strong>注意, 這是測 OpenVPN/SoftEther VPN 在用 iPerf3 測速時的 CPU, 並不是平常無流量或低流量的 CPU 使用</strong>. 沒有連線時, 兩者消耗的 CPU 都非常非常低.</li>
+</ul>
 <ol>
 <li>
 <p>透過 OpenVPN 連線, CPU 約使用 30.7%</p>
@@ -422,7 +428,7 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 <h2 id="結論">結論</h2>
 <ol>
 <li>
-<p>測速</p>
+<p>速度</p>
 <table>
 <thead>
 <tr>
@@ -467,14 +473,15 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 </tbody>
 </table>
 </li>
-<li>
-<p>另外有一點要注意的是, OpenVPN 雖然 Open Source, 但他的免費版本只能有兩個連線 (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</p>
-</li>
 </ol>
-<h2 id="參考">參考</h2>
+<h2 id="注意">注意</h2>
 <ol>
-<li>有興趣在 Linux 上裝 OpenVPN 的可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server/">https://dennys.github.io/tw/doc/network/openvpn-server/</a></li>
-<li>想嘗試在 Asuswrt-Merlin 使用 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</a></li>
+<li>有一點要注意的是, OpenVPN 雖然 Open Source, 但他的 <strong>免費版本只能有兩個連線</strong> (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
+</ol>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<ol>
+<li>如果你要自己在 Linux(Ubuntu) 上安裝 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server/">OpenVPN server 簡易安裝使用 (Ubuntu)</a></li>
+<li>如果你使用的是 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a>, 他有內建 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">在 Asuswrt-Merlin 使用 OpenVPN server</a></li>
 </ol>
 
     </div>
@@ -510,7 +517,7 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a>
@@ -840,6 +847,6 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
   </body>
 </html>

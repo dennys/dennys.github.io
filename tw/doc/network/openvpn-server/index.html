@@ -52,8 +52,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
-"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
+"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -165,7 +165,7 @@
 </span>
     <span class="post_date">
       Jun 17, 2022</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
         </a><a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
         </a>
     </span>
@@ -213,6 +213,7 @@
     <li><a href="#openvpn-client-for-windows">OpenVPN client for Windows</a></li>
     <li><a href="#openvpn-server-管理">OpenVPN server 管理</a></li>
     <li><a href="#注意">注意</a></li>
+    <li><a href="#相關文章">相關文章</a></li>
   </ol>
 </nav>
       </div>
@@ -227,8 +228,10 @@
 </span></span><span class="line"><span class="ln">2</span><span class="cl">wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg <span class="p">|</span> apt-key add -
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb http://as-repository.openvpn.net/as/debian focal main&#34;</span>&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
 </span></span><span class="line"><span class="ln">4</span><span class="cl">apt update <span class="o">&amp;&amp;</span> apt -y install openvpn-as
-</span></span></code></pre></div><p>最後一個指令的最後面請注意, 他會產生一個 admin 的密碼</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
+</span></span></code></pre></div></li>
+<li>
+<p>最後一個指令的最後面請注意, 他會產生一個 admin 的密碼</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as
@@ -238,12 +241,40 @@
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">Access Server Web UIs are available here:
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">Admin  UI: https://192.168.1.2:943/admin
 </span></span><span class="line"><span class="ln">10</span><span class="cl">Client UI: https://192.168.1.2:943/
-</span></span><span class="line"><span class="ln">11</span><span class="cl">Login as <span class="s2">&#34;openvpn&#34;</span> with <span class="s2">&#34;fRxnu6bf3fC1&#34;</span> to <span class="k">continue</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="o">(</span>password can be changed on Admin UI<span class="o">)</span>
+</span></span><span class="line hl"><span class="ln">11</span><span class="cl">Login as &#34;openvpn&#34; with &#34;fRxnu6bf3fC1&#34; to continue
+</span></span><span class="line"><span class="ln">12</span><span class="cl">(password can be changed on Admin UI)
 </span></span><span class="line"><span class="ln">13</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
 </span></span></code></pre></div></li>
 <li>
 <p>裝好後, 就可以直接連到 https://localhost:943/admin 用上面的帳號密碼進去</p>
+</li>
+<li>
+<p>因為這台 OpenVPN 是裝在內網, 必須在 Network setting 設定他 NAT 的外部 IP, 否則產生出來的 .opvn 檔案會連到 192.168.1.2 (當然這樣會永遠連不到)
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/openvpn/openvpn_server_network_setting.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
 </li>
 <li>
 <p>預設他會開放讓 client 連到整個 private network, 因為我們要卡只能連到某一台, 因此要關掉這個
@@ -311,7 +342,7 @@
 <li>安裝 OpenVPN client for Windows, 目前有兩個版本, 兩個用起來差不多.
 <ol>
 <li>OpenVPN Connect for Windows, 可在 <a href="https://openvpn.net/client-connect-vpn-for-windows/">這裡</a> 下載</li>
-<li>OpenVPN GUI, 可在 [這裡] (<a href="https://openvpn.net/community-downloads/">https://openvpn.net/community-downloads/</a>) 下載</li>
+<li>OpenVPN GUI, 可在[這裡] (<a href="https://openvpn.net/community-downloads/">https://openvpn.net/community-downloads/</a>) 下載</li>
 </ol>
 </li>
 <li>執行下載的檔案, 將 OpenVPN client 安裝起來</li>
@@ -375,7 +406,12 @@
 </ol>
 <h2 id="注意">注意</h2>
 <ol>
-<li>OpenVPN 雖然 Open Source, 但他的免費版本只能有兩個連線 (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
+<li>有一點要注意的是, OpenVPN 雖然 Open Source, 但他的 <strong>免費版本只能有兩個連線</strong> (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
+</ol>
+<h2 id="相關文章">相關文章</h2>
+<ol>
+<li>如果你使用的是 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a>, 他有內建 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">在 Asuswrt-Merlin 使用 OpenVPN server</a></li>
+<li>這是一篇 Open Source VPN 方案的簡單比較和測速: <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/">Open Source VPN 之不嚴謹比較</a></li>
 </ol>
 
     </div>
@@ -411,7 +447,7 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
@@ -741,6 +777,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
   </body>
 </html>
