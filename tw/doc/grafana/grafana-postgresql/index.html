@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>2012 電腦升級 | Dennys Diary</title>
+<title>使用 PostgreSQL 當作 Grafana 的資料庫 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,23 +26,21 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
-用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU …" />
+<meta name="description" content="Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. ( …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="2012 電腦升級" />
+<meta name="twitter:title" content="使用 PostgreSQL 當作 Grafana 的資料庫" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/" />
-<meta property="og:title" content="2012 電腦升級" />
-<meta property="og:description" content="最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
-用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" />
+<meta property="og:title" content="使用 PostgreSQL 當作 Grafana 的資料庫" />
+<meta property="og:description" content="Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. ( …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/">
 
 
 
@@ -154,7 +152,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">2012 電腦升級</h1>
+    <h1 class="post_title">使用 PostgreSQL 當作 Grafana 的資料庫</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -162,21 +160,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 15, 2012</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/hardware/' title="Hardware" class="post_tag button button_translucent">Hardware
+      Jul 6, 2022</span>
+    <span class="post_time"> · 4 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' title="Grafana-Prometheus" class="post_tag button button_translucent">Grafana-Prometheus
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=2012%20%e9%9b%bb%e8%85%a6%e5%8d%87%e7%b4%9a&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2f2012-computer-upgrade%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20PostgreSQL%20%e7%95%b6%e4%bd%9c%20Grafana%20%e7%9a%84%e8%b3%87%e6%96%99%e5%ba%ab&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fgrafana-postgresql%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2f2012-computer-upgrade%2f&t=2012%20%e9%9b%bb%e8%85%a6%e5%8d%87%e7%b4%9a" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fgrafana-postgresql%2f&t=%e4%bd%bf%e7%94%a8%20PostgreSQL%20%e7%95%b6%e4%bd%9c%20Grafana%20%e7%9a%84%e8%b3%87%e6%96%99%e5%ba%ab" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -190,7 +188,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,115 +199,145 @@
   </span>
   </div>
 
-    <div class="post_body"><p>最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一</p>
-<h2 id="用途">用途:</h2>
-<ul>
-<li>文書上網 , 不玩遊戲,  常看 YouTube</li>
-<li>會處理很多照片</li>
-<li>一點影片處理(剪接小朋友的 h264 影片)</li>
-</ul>
-<h2 id="規格需求">規格需求</h2>
-<ul>
-<li>多螢幕輸出(整理照片超好用)</li>
-<li>USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM)</li>
-</ul>
-<h2 id="項目">項目:</h2>
-<ul>
-<li>CPU    ：$6190 I5-3470/HD2500</li>
-<li>主機板：$3690 華碩 P8H77-M PRO</li>
-<li>記憶體：$1688 金士頓DDR3-1333 4G*2</li>
-<li>其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價.</li>
-</ul>
-<p>主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus 出的幾款 H77 板子感覺都滿接近的. 然後想玩 3 螢幕, P8H77-M PRO 這塊板子有支援  DVI、HDMI、Display Port 及 VGA,. 還有網路和音效都是螃蟹. </p>
-<p><a href="http://3.bp.blogspot.com/-ylIFmDU3IsI/UAQUR21eJPI/AAAAAAAAB-0/rX32HIs0BQM/s1600/16559.jpg"><figure>
-  <picture>
-
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents"></nav>
+      </div>
     
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=""
-      
-        class="image_figure image_external image_processed"
-        width="472"
-        height="141"
-        src="/16559_7716936730353795211.jpg"
-      
-      
-    />
-
-    </picture>
-</figure>
-</a></p>
-<p>P8H77-M PRO的音效輸出有 6 個, 沒用過這麼多孔的, 看了一下<a href="http://tw.asus.com/Motherboards/Intel_Socket_1155/P8H77M_PRO/#download">官方使用手冊</a>, 在p43-44 有詳細說明如下:</p>
-<p><a href="http://1.bp.blogspot.com/-K9LHxsg_Z78/UAQaATIH6NI/AAAAAAAAB_M/OODVcZBxBI4/s1600/s.jpg"><figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=""
-      
-        class="image_figure image_external image_processed"
-        width="618"
-        height="283"
-        src="/s_14652392788237530275.jpg"
-      
-      
-    />
-
-    </picture>
-</figure>
-</a></p>
-<p>CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 基本上就剩下 i5, i7 還有 K/非K 系列排列組合共 4 種. 至於內顯, 不玩遊戲, 所以內顯是 2550,3000,4000 應該差不多, 且都支援 3 螢幕.</p>
-<p>但是不確定不同等級的 CPU 跑影像處理差多少? 時脈 3.1~3.4GHz 應該不會差很多吧? L3 cache 6M/8B 就不知道有沒有差別了. 本來是想買最便宜的 i5, 不過後來光縮個圖都把兩 core 的 CPU 吃爆, 讓我想直上 i7-3770</p>
-<p><a href="http://1.bp.blogspot.com/-yzwkQfPI7TU/UAQq3KBV9gI/AAAAAAAAB_c/G0p2vVqfjzA/s1600/ivb-desktop-processors.jpg"><figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=""
-      
-        class="image_figure image_external image_processed"
-        width="550"
-        height="545"
-        src="/ivb-desktop-processors_2036627291274444728.jpg"
-      
-      
-    />
-
-    </picture>
-</figure>
-</a></p>
-<p>PCI-e -&gt; IDE 介面卡<br>
-<a href="http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT">http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT</a>_NO=DGBD1A-A41527069</p>
-<p>讀卡機:<br>
-<a href="http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT">http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT</a>_NO=DRAE43-A59443106&amp;SR_NO=DRAE43&amp;ROWNO=9<br>
-<a href="http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT">http://shopping.pchome.com.tw/?mod=item&amp;func=exhibit&amp;IT</a>_NO=DGAO0Q-A35006006&amp;SR_NO=DRAE43&amp;ROWNO=10</p>
+    <div class="post_body"><p><a href="https://grafana.com/">Grafana</a>, 支援 <a href="https://www.sqlite.org/index.html">SQLite</a>, <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://zh.wikipedia.org/wiki/MySQL">MySQL</a>.
+如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 <a href="https://github.com/wbh1/grafana-sqlite-to-postgres)">https://github.com/wbh1/grafana-sqlite-to-postgres)</a>.
+如果一開始就要用 PostgreSQL, 有些前置動作要準備好.</p>
+<ol>
+<li>
+<p>目錄設定如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">/opt/grafana/postgresql <span class="o">=</span>&gt; 放 PostgreSQL data
+</span></span><span class="line"><span class="ln">2</span><span class="cl">/opt/grafana/grafana    <span class="o">=</span>&gt; 放 Grafana data
+</span></span></code></pre></div></li>
+<li>
+<p>先把 PostgreSQL 用 docker-compose 跑起來, 並確認資料和連線正常</p>
+<ol>
+<li>
+<p>PostgreSQL 的 docker-compose.yml 如下:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">postgres</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">postgres:14</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w"></span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">  </span>- <span class="l">grafananet</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w"></span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">  </span>- <span class="m">5432</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w"></span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">  </span>- <span class="m">5432</span><span class="p">:</span><span class="m">5432</span><span class="w">                 </span><span class="c"># Postgres port</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w"></span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">  </span>- <span class="l">/opt/grafana/postgresql/:/var/lib/postgresql</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">  </span>- <span class="l">/opt/grafana/postgresql/data/:/var/lib/postgresql/data</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w"></span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">  </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="cp">********</span><span class="w">     </span><span class="c"># define credentials</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">  </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="cp">********</span><span class="w"> </span><span class="c"># define credentials</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">  </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"> </span><span class="cp">********</span><span class="w">       </span><span class="c"># define database</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">  </span><span class="nt">TZ</span><span class="p">:</span><span class="w"> </span><span class="l">Asia/Singapore      </span><span class="w"> </span><span class="c"># This is for PostgreSQL&#39;s time zone</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">  </span><span class="nt">PGTZ</span><span class="p">:</span><span class="w"> </span><span class="l">Asia/Singapore    </span><span class="w"> </span><span class="c"># This is for PostgreSQL&#39;s time zone</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>執行下列指令啟動 PostgreSQL</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker-compose up postgres
+</span></span></code></pre></div></li>
+<li>
+<p>檢查 /opt/grafana/postgresql/data 目錄下有檔案, 確定資料不是放在 container 裡面, 免得最後還要想辦法把資料從 docker image 裡面搬出來.</p>
+</li>
+<li>
+<p>確認 database 連線正常, 執行以下指令, 應該會看到 3 個資料庫.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ docker <span class="nb">exec</span> postgres psql -d postgres -U postgres -h localhost  -c <span class="s1">&#39;select * from pg_database&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  oid <span class="p">|</span>  datname  <span class="p">|</span> datdba <span class="p">|</span> encoding <span class="p">|</span> datcollate <span class="p">|</span>  datctype  <span class="p">|</span> datistemplate <span class="p">|</span> datallowconn <span class="p">|</span> datconnlimit <span class="p">|</span> datlastsysoid <span class="p">|</span> datfrozenxid <span class="p">|</span> datminmxid <span class="p">|</span> dattablespace <span class="p">|</span>                          datacl
+</span></span><span class="line"><span class="ln">3</span><span class="cl">------+-----------+--------+----------+------------+------------+---------------+--------------+--------------+---------------+--------------+------------+---------------+-----------------------------------------------------------
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="m">13757</span> <span class="p">|</span> postgres  <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> f             <span class="p">|</span> t            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="m">1</span> <span class="p">|</span> template1 <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> t             <span class="p">|</span> t            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span> <span class="o">{=</span>c/postgres,postgres<span class="o">=</span>CTc/postgres<span class="o">}</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="m">13756</span> <span class="p">|</span> template0 <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> t             <span class="p">|</span> f            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span> <span class="o">{=</span>c/postgres,postgres<span class="o">=</span>CTc/postgres<span class="o">}</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="o">(</span><span class="m">3</span> rows<span class="o">)</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>再來建立 Grafana 使用的資料庫和帳號</p>
+<ol>
+<li>
+<p>執行以下三個指令, 會依序建立 Grafana 資料庫, 建立 grafana 使用著, 然後把 grafana 資料庫權限開給 grafana 使用著.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ docker <span class="nb">exec</span> postgres psql -d postgres -U postgres -c <span class="s2">&#34;create database grafana&#34;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ docker <span class="nb">exec</span> postgres psql -d postgres -U postgres -c <span class="s2">&#34;create user grafana with encrypted password &#39;****&#39; &#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">$ docker <span class="nb">exec</span> postgres psql -d postgres -U postgres -c <span class="s2">&#34;grant all privileges on database grafana to grafana &#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>若不小心輸錯密碼, 可用下列指令修改</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker <span class="nb">exec</span> postgres psql -d postgres -U postgres -c <span class="s2">&#34;ALTER USER grafana WITH PASSWORD &#39;new_password&#39;&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>再執行一次類似步驟一的指令, 確認 grafana 這個資料庫還有帳號建立出來了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line hl"><span class="ln">1</span><span class="cl">$ docker <span class="nb">exec</span> postgres psql -d grafana -U grafana -h localhost -W -c <span class="s1">&#39;select * from pg_database&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">oid <span class="p">|</span>  datname  <span class="p">|</span> datdba <span class="p">|</span> encoding <span class="p">|</span> datcollate <span class="p">|</span>  datctype  <span class="p">|</span> datistemplate <span class="p">|</span> datallowconn <span class="p">|</span> datconnlimit <span class="p">|</span> datlastsysoid <span class="p">|</span> datfrozenxid <span class="p">|</span> datminmxid <span class="p">|</span> dattablespace <span class="p">|</span>                          datacl
+</span></span><span class="line"><span class="ln">3</span><span class="cl">------+-----------+--------+----------+------------+------------+---------------+--------------+--------------+---------------+--------------+------------+---------------+-----------------------------------------------------------
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="m">13757</span> <span class="p">|</span> postgres  <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> f             <span class="p">|</span> t            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="m">1</span> <span class="p">|</span> template1 <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> t             <span class="p">|</span> t            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span> <span class="o">{=</span>c/postgres,postgres<span class="o">=</span>CTc/postgres<span class="o">}</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="m">13756</span> <span class="p">|</span> template0 <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> t             <span class="p">|</span> f            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span> <span class="o">{=</span>c/postgres,postgres<span class="o">=</span>CTc/postgres<span class="o">}</span>
+</span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="m">16384</span> <span class="p">|</span> grafana   <span class="p">|</span>     <span class="m">10</span> <span class="p">|</span>        <span class="m">6</span> <span class="p">|</span> en_US.utf8 <span class="p">|</span> en_US.utf8 <span class="p">|</span> f             <span class="p">|</span> t            <span class="p">|</span>           -1 <span class="p">|</span>         <span class="m">13756</span> <span class="p">|</span>          <span class="m">727</span> <span class="p">|</span>          <span class="m">1</span> <span class="p">|</span>          <span class="m">1663</span> <span class="p">|</span> <span class="o">{=</span>Tc/postgres,postgres<span class="o">=</span>CTc/postgres,grafana<span class="o">=</span>CTc/postgres<span class="o">}</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="o">(</span><span class="m">4</span> rows<span class="o">)</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>啟動 Grafana</p>
+<ol>
+<li>
+<p>修改 grafana.ini, 加上這段, 讓 Grafana 去使用 PostgreSQL (不寫的話, 預設會使用 SQLite)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="ln">1</span><span class="cl"><span class="na">type</span> <span class="o">=</span> <span class="s">postgres</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="na">host</span> <span class="o">=</span> <span class="s">postgres:5432</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="na">name</span> <span class="o">=</span> <span class="s">grafana</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="na">user</span> <span class="o">=</span> <span class="s">grafana</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="na">password</span> <span class="o">=</span> <span class="s">******</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="na">database</span> <span class="o">=</span> <span class="s">grafana</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="na">ssl_mode</span> <span class="o">=</span> <span class="s">disable</span>
+</span></span></code></pre></div></li>
+<li>
+<p>啟動 Grafana, 會看到他在做 data initial, 建了一堆 table</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ docker-compose up -d grafana
+</span></span></code></pre></div></li>
+<li>
+<p>確認這個檔案不存在, 或者沒有再繼續更新 (如果你之前有先用 SQLite, 他會產生這個檔案)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ ls -l /opt/grafana/grafana/grafana.db
+</span></span></code></pre></div></li>
+<li>
+<p>執行以下指令確認 table 都建出來了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line hl"><span class="ln"> 1</span><span class="cl">$ docker exec postgres psql -d grafana -U grafana -h localhost -W -c &#39;select * from information_schema.tables&#39;
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Password:
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"> table_catalog |    table_schema    |              table_name               | table_type | self_referencing_column_name | reference_generation | user_defined_type_catalog | user_defined_type_schema | user_defined_type_name | is_insertable_into | is_typed | commit_action
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">---------------+--------------------+---------------------------------------+------------+------------------------------+----------------------+---------------------------+--------------------------+------------------------+--------------------+----------+---------------
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">grafana       | public             | migration_log                         | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">grafana       | public             | user                                  | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">grafana       | pg_catalog         | pg_type                               | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">grafana       | public             | temp_user                             | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">...
+</span></span><span class="line"><span class="ln">10</span><span class="cl">grafana       | public             | file_meta                             | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln">11</span><span class="cl">grafana       | public             | playlist                              | BASE TABLE |                              |                      |                           |                          |                        | YES                | NO       |
+</span></span><span class="line"><span class="ln">12</span><span class="cl">(244 rows)
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>到此就可以進去 Grafana 了.</p>
+</li>
+<li>
+<p>另外, 既然跑起來 PostgreSQL 了, 也記得補上 <a href="https://github.com/prometheus-community/postgres_exporter">PostgreSQL Server Exporter</a>, docker-compose.yml 如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">postgres_exporter</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prometheuscommunity/postgres-exporter</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">  </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">postgres_exporter</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">  </span><span class="nt">networks</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span>- <span class="l">grafananet</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">  </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span>- <span class="m">9187</span><span class="p">:</span><span class="m">9187</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">  </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span>- <span class="m">9187</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">  </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">DATA_SOURCE_NAME</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;postgresql://postgres:postgres@********:5432/postgres?sslmode=disable&#34;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
 
     </div>
 <div class="post_comments">
@@ -347,9 +375,6 @@
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
       </li>
       <li>
@@ -366,6 +391,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" class="nav-link" title="點對點網路測速軟體 iPerf3">點對點網路測速軟體 iPerf3</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" class="nav-link" title="如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)">如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)</a>
       </li>
     </ul>
     <div>

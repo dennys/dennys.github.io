@@ -31,6 +31,26 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
     </item>
     
     <item>
+      <title>使用 PostgreSQL 當作 Grafana 的資料庫</title>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</guid>
+      <description>
+        
+          
+            Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 https://github.com/wbh1/grafana-sqlite-to-postgres). 如果一開始就要用 PostgreSQL, 有些前置動作要準備好.
+目錄設定如下
+1/opt/grafana/postgresql =&amp;gt; 放 PostgreSQL data 2/opt/grafana/grafana =&amp;gt; 放 Grafana data 先把 PostgreSQL 用 docker-compose 跑起來, 並確認資料和連線正常
+PostgreSQL 的 docker-compose.yml 如下:
+1postgres: 2image: postgres:14 3container_name: postgres 4networks: 5 - grafananet 6expose: 7 - 5432 8ports: 9 - 5432:5432 # Postgres port 10volumes: 11 - /opt/grafana/postgresql/:/var/lib/postgresql 12 - /opt/grafana/postgresql/data/:/var/lib/postgresql/data 13environment: 14 POSTGRES_USER: ******** # define credentials 15 POSTGRES_PASSWORD: ******** # define credentials 16 POSTGRES_DB: ******** # define database 17 TZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 18 PGTZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 執行下列指令啟動 PostgreSQL
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>如何修改 Android 預設的 YouTube App</title>
       <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
