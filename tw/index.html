@@ -288,9 +288,9 @@ OpenVPN 的 Prometheus 方案 Google 一下有幾個, 不過因為我們用的�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 <a href="https://github.com/wbh1/grafana-sqlite-to-postgres)">https://github.com/wbh1/grafana-sqlite-to-postgres)</a>. 如果一開始就要用 PostgreSQL, 有些前置動作要準備好.
-目錄設定如下
-1/opt/grafana/postgresql =&gt; 放 PostgreSQL data 2/opt/grafana/grafana =&gt; 放 Grafana data 先把 PostgreSQL …</p>
+            <p>Grafana, 支援三種資料庫, SQLite, PostgreSQL, MySQL. 如果你甚麼都沒設定, Grafana 預設會使用 SQLite. 量小還好, 但量變大時, 維護起來就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 <a href="https://github.com/wbh1/grafana-sqlite-to-postgres)">https://github.com/wbh1/grafana-sqlite-to-postgres)</a>. 如果一開始就要用 PostgreSQL, 有些前置動作要準備好.
+目錄設定 一開始的目錄設定如下, 請自行修改成你的環境
+/opt/grafana/postgresql =&gt; 放 PostgreSQL data /opt/grafana/grafana …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>

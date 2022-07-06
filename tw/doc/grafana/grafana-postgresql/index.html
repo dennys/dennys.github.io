@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. ( …" />
+<meta name="description" content="Grafana, 支援三種資料庫, SQLite, PostgreSQL, MySQL. 如果你甚麼都沒設定, Grafana 預設會使用 SQLite. 量小還好, 但量變大時, 維護起來就麻煩, 而且資料也沒法直接 migration. ( …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="使用 PostgreSQL 當作 Grafana 的資料庫" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" />
 <meta property="og:title" content="使用 PostgreSQL 當作 Grafana 的資料庫" />
-<meta property="og:description" content="Grafana, 支援 SQLite, PostgreSQL, MySQL. 如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. ( …" />
+<meta property="og:description" content="Grafana, 支援三種資料庫, SQLite, PostgreSQL, MySQL. 如果你甚麼都沒設定, Grafana 預設會使用 SQLite. 量小還好, 但量變大時, 維護起來就麻煩, 而且資料也沒法直接 migration. ( …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -201,18 +201,25 @@
 
       <div class="post_toc">
         <h2>文章目錄</h2>
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#目錄設定">目錄設定</a></li>
+    <li><a href="#設定方法">設定方法</a></li>
+  </ol>
+</nav>
       </div>
     
-    <div class="post_body"><p><a href="https://grafana.com/">Grafana</a>, 支援 <a href="https://www.sqlite.org/index.html">SQLite</a>, <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://zh.wikipedia.org/wiki/MySQL">MySQL</a>.
-如果你甚麼都沒選, Grafana 預設會使用 SQLite, 量小還好, 但量變大就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 <a href="https://github.com/wbh1/grafana-sqlite-to-postgres)">https://github.com/wbh1/grafana-sqlite-to-postgres)</a>.
+    <div class="post_body"><p><a href="https://grafana.com/">Grafana</a>, 支援三種資料庫, <a href="https://www.sqlite.org/index.html">SQLite</a>, <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://zh.wikipedia.org/wiki/MySQL">MySQL</a>.
+如果你甚麼都沒設定, Grafana 預設會使用 SQLite. 量小還好, 但量變大時, 維護起來就麻煩, 而且資料也沒法直接 migration. (是有個非官方的工具在這 <a href="https://github.com/wbh1/grafana-sqlite-to-postgres)">https://github.com/wbh1/grafana-sqlite-to-postgres)</a>.
 如果一開始就要用 PostgreSQL, 有些前置動作要準備好.</p>
+<h2 id="目錄設定">目錄設定</h2>
+<p>一開始的目錄設定如下, 請自行修改成你的環境</p>
+<ul>
+<li>/opt/grafana/postgresql =&gt; 放 PostgreSQL data</li>
+<li>/opt/grafana/grafana    =&gt; 放 Grafana data</li>
+</ul>
+<h2 id="設定方法">設定方法</h2>
 <ol>
-<li>
-<p>目錄設定如下</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">/opt/grafana/postgresql <span class="o">=</span>&gt; 放 PostgreSQL data
-</span></span><span class="line"><span class="ln">2</span><span class="cl">/opt/grafana/grafana    <span class="o">=</span>&gt; 放 Grafana data
-</span></span></code></pre></div></li>
 <li>
 <p>先把 PostgreSQL 用 docker-compose 跑起來, 並確認資料和連線正常</p>
 <ol>
@@ -286,7 +293,7 @@
 <p>啟動 Grafana</p>
 <ol>
 <li>
-<p>修改 grafana.ini, 加上這段, 讓 Grafana 去使用 PostgreSQL (不寫的話, 預設會使用 SQLite)</p>
+<p>修改 grafana.ini, 加上這段設定, 讓 Grafana 去使用 PostgreSQL (不設定的話, 預設會使用 SQLite)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="ln">1</span><span class="cl"><span class="na">type</span> <span class="o">=</span> <span class="s">postgres</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="na">host</span> <span class="o">=</span> <span class="s">postgres:5432</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="na">name</span> <span class="o">=</span> <span class="s">grafana</span>
@@ -304,7 +311,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ ls -l /opt/grafana/grafana/grafana.db
 </span></span></code></pre></div></li>
 <li>
-<p>執行以下指令確認 table 都建出來了</p>
+<p>執行以下指令確認 grafana 的 table 都建出來了</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line hl"><span class="ln"> 1</span><span class="cl">$ docker exec postgres psql -d grafana -U grafana -h localhost -W -c &#39;select * from information_schema.tables&#39;
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">Password:
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl"> table_catalog |    table_schema    |              table_name               | table_type | self_referencing_column_name | reference_generation | user_defined_type_catalog | user_defined_type_schema | user_defined_type_name | is_insertable_into | is_typed | commit_action
