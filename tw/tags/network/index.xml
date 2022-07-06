@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 Prometheus 來監控 OpenVPN server</title>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
+      <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</guid>
+      <description>
+        
+          
+            需求 如果你已經有了一個自己管理的 OpenVPN access server, 他本身是有一個簡單的管理介面, 但在這個時代, 用 Grafana + Prometheus 應該是比較好的選擇.
+OpenVPN 的 Prometheus 方案 Google 一下有幾個, 不過因為我們用的是自建的 OpenVPN Access Server, 只能用這個.
+https://github.com/lfdominguez/openvpn-access-exporter 這個是不能用的, 不過很可惜, 這個的功能看來比較多.
+https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的程式 (https://github.com/lfdominguez/openvpn-access-exporter/releases)
+執行下列指令啟動 exporter
+1$ openvpn-access-exporter --file /usr/local/openvpn_as/etc/db/log.db 2[2022-07-05T23:10:41Z INFO openvpn_access_exporter] Using file: /usr/local/openvpn_as/etc/db/log.db 連線到 http://localhost:9185, 就會看到類似下面的 metrics
+1# HELP access_counter Requests counter 2# TYPE access_counter counter 3access_counter 61 4# HELP openvpn_user_bytes_in Bytes in 5# TYPE openvpn_user_bytes_in gauge 6openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.x.x.x&amp;#34;,session_id=&amp;#34;hYTtny0ozcppC3tS&amp;#34;,username=&amp;#34;user1&amp;#34;,vpn_ip=&amp;#34;172.27.224.2&amp;#34;} 3623 1656473784000 7openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Open Source VPN 之不嚴謹比較</title>
       <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
