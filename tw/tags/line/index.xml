@@ -9,11 +9,11 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/line/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>用 LINE 發 Grafana Alert</title>
-      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</link>
+      <title>把 Grafana 的 Alert 訊息發到 LINE 群組</title>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</guid>
       <description>
         
           
