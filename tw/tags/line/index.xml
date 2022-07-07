@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/line/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 LINE 發 Grafana Alert</title>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</guid>
+      <description>
+        
+          
+            Grafana Alerting Notifiers 要使用 Grafana發 alert 的方法有很多, 參考這裡, 目前有 20 種, 常見的 Email, LINE, Teams, Discord, Telegram 都有支援. 比較意外的是, LINE 在 Grafana 是官方直接支援, 反而在 Prometheus 並沒有.
+前提 這裡假設你已經會用 Grafana 發 Email 通知了, 只是要再多加個 LINE 通知.
+LINE Notify 設定 開一個新的聊天室, 並邀請 LINE Notify 這個帳號進入聊天室
+連線到 這裡, 使用 LINE 的帳號登入
+選擇 發行權杖 選擇 你要接受訊息的聊天室 把權杖 token 存下來 Grafana 設定 建立一個新的 Contact point, 從 Grafana 的 Alert 選單選擇 contact points, 設定好下列欄位:
+Name: 這裡取名 LINE test 1 Contact point type: 這裡選擇 LINE Token: 把前面 LINE 提供的 token 貼上去.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
       <link>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>

@@ -7,7 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 06 Jul 2022 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</title>
+      <link>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</link>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</guid>
+      <description>
+        
+          
+            需求 Prometheus 的 Alertmanager 會在系統異常時發通知, 這很好用. 但有時候 alert 發太多也會是個問題, 譬如一些已知的停線狀況 (如工廠年度維修等等), 通常都會引發大量 alert, 而系統發太多 alert 的問題是, 一方面可能被忽略(因為太多), 另一方面是可能把真正有用的資訊洗板洗掉了, 反而造成其他更嚴重的問題.
+把這些 alert 先暫時關掉當然是個方法, 但之後萬一忘記開回來, 反而又會是另一個問題. 因此 Alertmanager 有提供一個 Silence 功能, 能夠把某些 alert 暫時關掉一段時間, 時間過了, 就會繼續發 alert.
+設定方法 進入 Prometheus Alert Manager, 選擇 Alerts, 系統會把目前所有的 alert 列出 選擇你要 silence 的 alert 進去後, 其實他並沒有綁定上一層選的那個 alert, 而只是把她的 filter 設好, 所以在這裡還要再 double check 一次. 先設定要 silence 的時間, 負責人, comment, 還有在最下面用 Preview Alerts 確認範圍正確. 沒問題的話就按下 Create 建立一個新的 silense.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>用 LINE 發 Grafana Alert</title>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line/</guid>
+      <description>
+        
+          
+            Grafana Alerting Notifiers 要使用 Grafana發 alert 的方法有很多, 參考這裡, 目前有 20 種, 常見的 Email, LINE, Teams, Discord, Telegram 都有支援. 比較意外的是, LINE 在 Grafana 是官方直接支援, 反而在 Prometheus 並沒有.
+前提 這裡假設你已經會用 Grafana 發 Email 通知了, 只是要再多加個 LINE 通知.
+LINE Notify 設定 開一個新的聊天室, 並邀請 LINE Notify 這個帳號進入聊天室
+連線到 這裡, 使用 LINE 的帳號登入
+選擇 發行權杖 選擇 你要接受訊息的聊天室 把權杖 token 存下來 Grafana 設定 建立一個新的 Contact point, 從 Grafana 的 Alert 選單選擇 contact points, 設定好下列欄位:
+Name: 這裡取名 LINE test 1 Contact point type: 這裡選擇 LINE Token: 把前面 LINE 提供的 token 貼上去.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
       <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>

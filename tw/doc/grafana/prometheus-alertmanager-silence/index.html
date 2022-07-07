@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>OpenVPN server 簡易安裝使用 (Ubuntu) | Dennys Diary</title>
+<title>使用 Prometheus Alertmanager Silence 暫時停止通知一段時間 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,25 +26,21 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
-1apt update &amp;&amp; apt -y …" />
+<meta name="description" content="需求 Prometheus 的 Alertmanager 會在系統異常時發通知, 這很好用. 但有時候 alert 發太多也會是個問題, 譬如一些已知的停線狀況 (如工廠年度維修等等), 通常都會引發大量 alert, 而系統發太多 alert 的問題是, 一方面可能被忽略(因為太多), 另一方面是可能把真正有用的資訊 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="OpenVPN server 簡易安裝使用 (Ubuntu)" />
+<meta name="twitter:title" content="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/network/openvpn-server/" />
-<meta property="og:title" content="OpenVPN server 簡易安裝使用 (Ubuntu)" />
-<meta property="og:description" content="需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
-1apt update &amp;&amp; apt -y …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" />
+<meta property="og:title" content="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間" />
+<meta property="og:description" content="需求 Prometheus 的 Alertmanager 會在系統異常時發通知, 這很好用. 但有時候 alert 發太多也會是個問題, 譬如一些已知的停線狀況 (如工廠年度維修等等), 通常都會引發大量 alert, 而系統發太多 alert 的問題是, 一方面可能被忽略(因為太多), 另一方面是可能把真正有用的資訊 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/network/openvpn-server/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/">
 
 
 
@@ -156,7 +152,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">OpenVPN server 簡易安裝使用 (Ubuntu)</h1>
+    <h1 class="post_title">使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -164,22 +160,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jun 17, 2022</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
-        </a><a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
+      Jul 8, 2022</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' title="Grafana-Prometheus" class="post_tag button button_translucent">Grafana-Prometheus
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=OpenVPN%20server%20%e7%b0%a1%e6%98%93%e5%ae%89%e8%a3%9d%e4%bd%bf%e7%94%a8%20%28Ubuntu%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-server%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20Prometheus%20Alertmanager%20Silence%20%e6%9a%ab%e6%99%82%e5%81%9c%e6%ad%a2%e9%80%9a%e7%9f%a5%e4%b8%80%e6%ae%b5%e6%99%82%e9%96%93&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fprometheus-alertmanager-silence%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-server%2f&t=OpenVPN%20server%20%e7%b0%a1%e6%98%93%e5%ae%89%e8%a3%9d%e4%bd%bf%e7%94%a8%20%28Ubuntu%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fprometheus-alertmanager-silence%2f&t=%e4%bd%bf%e7%94%a8%20Prometheus%20Alertmanager%20Silence%20%e6%9a%ab%e6%99%82%e5%81%9c%e6%ad%a2%e9%80%9a%e7%9f%a5%e4%b8%80%e6%ae%b5%e6%99%82%e9%96%93" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -193,7 +188,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/network/openvpn-server/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -209,47 +204,21 @@
         <nav id="TableOfContents">
   <ol>
     <li><a href="#需求">需求</a></li>
-    <li><a href="#方法-server-端">方法 (Server 端)</a></li>
-    <li><a href="#openvpn-client-for-windows">OpenVPN client for Windows</a></li>
-    <li><a href="#如何管理-openvpn-server">如何管理 OpenVPN server</a></li>
-    <li><a href="#注意">注意</a></li>
-    <li><a href="#相關文章">相關文章</a></li>
+    <li><a href="#設定方法">設定方法</a></li>
   </ol>
 </nav>
       </div>
     
     <div class="post_body"><h2 id="需求">需求</h2>
-<p>建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到<em><strong>某一台特定機器</strong></em>.</p>
-<h2 id="方法-server-端">方法 (Server 端)</h2>
+<p><a href="https://prometheus.io/">Prometheus</a> 的 <a href="https://prometheus.io/docs/alerting/latest/alertmanager/">Alertmanager</a> 會在系統異常時發通知, 這很好用.
+但有時候 alert 發太多也會是個問題, 譬如一些已知的停線狀況 (如工廠年度維修等等), 通常都會引發大量 alert, 而系統發太多 alert 的問題是,
+一方面可能被忽略(因為太多), 另一方面是可能把真正有用的資訊洗板洗掉了, 反而造成其他更嚴重的問題.</p>
+<p>把這些 alert 先暫時關掉當然是個方法, 但之後萬一忘記開回來, 反而又會是另一個問題.
+因此 Alertmanager 有提供一個 Silence 功能, 能夠把某些 alert <strong>暫時</strong>關掉一段時間, 時間過了, 就會繼續發 alert.</p>
+<h2 id="設定方法">設定方法</h2>
 <ol>
 <li>
-<p>從<a href="https://openvpn.net/vpn-software-packages/">這裡</a>下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">apt update <span class="o">&amp;&amp;</span> apt -y install ca-certificates wget net-tools gnupg
-</span></span><span class="line"><span class="ln">2</span><span class="cl">wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg <span class="p">|</span> apt-key add -
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb http://as-repository.openvpn.net/as/debian focal main&#34;</span>&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
-</span></span><span class="line"><span class="ln">4</span><span class="cl">apt update <span class="o">&amp;&amp;</span> apt -y install openvpn-as
-</span></span></code></pre></div></li>
-<li>
-<p>最後一個指令的最後面請注意, 他會產生一個 admin 的密碼</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Configuration log file has been written to /usr/local/openvpn_as/init.log
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Access Server Web UIs are available here:
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Admin  UI: https://192.168.1.2:943/admin
-</span></span><span class="line"><span class="ln">10</span><span class="cl">Client UI: https://192.168.1.2:943/
-</span></span><span class="line hl"><span class="ln">11</span><span class="cl">Login as &#34;openvpn&#34; with &#34;fRxnu6bf3fC1&#34; to continue
-</span></span><span class="line"><span class="ln">12</span><span class="cl">(password can be changed on Admin UI)
-</span></span><span class="line"><span class="ln">13</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
-</span></span></code></pre></div></li>
-<li>
-<p>裝好後, 就可以直接連到 https://localhost:943/admin 用上面的帳號密碼進去</p>
-</li>
-<li>
-<p>因為這台 OpenVPN 是裝在內網, 必須在 Network setting 設定他 NAT 的外部 IP, 否則產生出來的 .opvn 檔案會連到 192.168.1.2 (當然這樣會永遠連不到)
+<p>進入 Prometheus Alert Manager, 選擇 Alerts, 系統會把目前所有的 alert 列出
 <figure>
   <picture>
 
@@ -267,7 +236,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_network_setting.webp"
+        src="/images/software/grafana/alertmanager_alerts.webp"
       
       
     />
@@ -277,7 +246,7 @@
 </p>
 </li>
 <li>
-<p>預設他會開放讓 client 連到整個 private network, 因為我們要卡只能連到某一台, 因此要關掉這個
+<p>選擇你要 silence 的 alert
 <figure>
   <picture>
 
@@ -295,7 +264,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_vpn_setting.webp"
+        src="/images/software/grafana/alertmanager_alerts_silence1.webp"
       
       
     />
@@ -305,7 +274,8 @@
 </p>
 </li>
 <li>
-<p>再來就是建立一個新帳號, 如下, 然後要在 access control 的地方卡住他只能連到哪個網段或IP
+<p>進去後, 其實他並沒有綁定上一層選的那個 alert, 而只是把她的 filter 設好, 所以在這裡還要再 double check 一次.
+先設定要 silence 的時間, 負責人, comment, 還有在最下面用 Preview Alerts 確認範圍正確. 沒問題的話就按下 Create 建立一個新的 silense.
 <figure>
   <picture>
 
@@ -323,7 +293,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_user_access_control.webp"
+        src="/images/software/grafana/alertmanager_alerts_silence2.webp"
       
       
     />
@@ -333,22 +303,11 @@
 </p>
 </li>
 <li>
-<p>以上就完成 OpenVPN server 的安裝了</p>
-</li>
-</ol>
-<h2 id="openvpn-client-for-windows">OpenVPN client for Windows</h2>
+<p>完成後選 Silences, 就可以看到被 silence 的所有 alerts 了, 這裡有三個動作可以選</p>
 <ol>
-<li>先連到 <a href="http://example.com/">http://example.com/</a> (注意, 這裡 url 沒有 admin), 然後選 Yourself (user-locked profile), 他會下載一個 profile***.ovpn</li>
-<li>安裝 OpenVPN client for Windows, 目前有兩個版本, 兩個用起來差不多.
-<ol>
-<li>OpenVPN Connect for Windows, 可在 <a href="https://openvpn.net/client-connect-vpn-for-windows/">這裡</a> 下載</li>
-<li>OpenVPN GUI, 可在[這裡] (<a href="https://openvpn.net/community-downloads/">https://openvpn.net/community-downloads/</a>) 下載</li>
-</ol>
-</li>
-<li>執行下載的檔案, 將 OpenVPN client 安裝起來</li>
-<li>Double click 步驟一產生的 .ovpn, 把這個檔案匯入</li>
-<li>就可以試著連線了</li>
-<li>如果需要自動連線, 可以在設定裡面修改
+<li>View: 檢視這個 silence 的內容</li>
+<li>Edit: 修改這個 silence 的內容</li>
+<li>Expire: 這個按下去, 就會直接取消 silence
 <figure>
   <picture>
 
@@ -366,7 +325,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_client_settings.webp"
+        src="/images/software/grafana/alertmanager_alerts_silence3.webp"
       
       
     />
@@ -375,45 +334,7 @@
 </figure>
 </li>
 </ol>
-<h2 id="如何管理-openvpn-server">如何管理 OpenVPN server</h2>
-<ol>
-<li>可從Status overview看到整個server狀況, 目前連線人數還有log等等
-<figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_status.webp"
-      
-      
-    />
-
-    </picture>
-</figure>
 </li>
-<li>有人有提供 Prometheus exporter, 但這是非官方的, 而且最後一次更新是 2019/9/7, 不過只少在 2022 年用起來還是可以. (可參考後面相關文章)</li>
-</ol>
-<h2 id="注意">注意</h2>
-<ol>
-<li>有一點要注意的是, OpenVPN 雖然 Open Source, 但他的 <strong>免費版本只能有兩個連線</strong> (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
-</ol>
-<h2 id="相關文章">相關文章</h2>
-<ol>
-<li>用果有興趣使用 Prometheus 來監控 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/">用 Prometheus 來監控 OpenVPN server</a></li>
-<li>如果你使用的是 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a>, 他有內建 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">在 Asuswrt-Merlin 使用 OpenVPN server</a></li>
-<li>這是一篇 Open Source VPN 方案的簡單比較和測速: <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/">Open Source VPN 之不嚴謹比較</a></li>
 </ol>
 
     </div>
@@ -449,9 +370,6 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" class="nav-link" title="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間">使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line/" class="nav-link" title="用 LINE 發 Grafana Alert">用 LINE 發 Grafana Alert</a>
       </li>
       <li>
@@ -471,6 +389,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/" class="nav-link" title="如何把檔案傳出 Google TV">如何把檔案傳出 Google TV</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/software/noncompressiblefiles/" class="nav-link" title="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案">使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</a>
       </li>
     </ul>
     <div>

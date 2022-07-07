@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>OpenVPN server 簡易安裝使用 (Ubuntu) | Dennys Diary</title>
+<title>用 LINE 發 Grafana Alert | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,25 +26,21 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
-1apt update &amp;&amp; apt -y …" />
+<meta name="description" content="Grafana Alerting Notifiers 要使用 Grafana發 alert 的方法有很多, 參考這裡, 目前有 20 種, 常見的 Email, LINE, Teams, Discord, Telegram 都有支援. 比較意外的是, LINE 在 Grafana 是官方直接支援, …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="OpenVPN server 簡易安裝使用 (Ubuntu)" />
+<meta name="twitter:title" content="用 LINE 發 Grafana Alert" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/network/openvpn-server/" />
-<meta property="og:title" content="OpenVPN server 簡易安裝使用 (Ubuntu)" />
-<meta property="og:description" content="需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
-1apt update &amp;&amp; apt -y …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/grafana/grafana-alert-line/" />
+<meta property="og:title" content="用 LINE 發 Grafana Alert" />
+<meta property="og:description" content="Grafana Alerting Notifiers 要使用 Grafana發 alert 的方法有很多, 參考這裡, 目前有 20 種, 常見的 Email, LINE, Teams, Discord, Telegram 都有支援. 比較意外的是, LINE 在 Grafana 是官方直接支援, …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/network/openvpn-server/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line/">
 
 
 
@@ -156,7 +152,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">OpenVPN server 簡易安裝使用 (Ubuntu)</h1>
+    <h1 class="post_title">用 LINE 發 Grafana Alert</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -164,22 +160,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Jun 17, 2022</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/vpn/' title="VPN" class="post_tag button button_translucent">VPN
-        </a><a href='https://dennys.github.io/tw/tags/network/' title="Network" class="post_tag button button_translucent">Network
+      Jul 7, 2022</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' title="Grafana-Prometheus" class="post_tag button button_translucent">Grafana-Prometheus
+        </a><a href='https://dennys.github.io/tw/tags/line/' title="LINE" class="post_tag button button_translucent">LINE
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=OpenVPN%20server%20%e7%b0%a1%e6%98%93%e5%ae%89%e8%a3%9d%e4%bd%bf%e7%94%a8%20%28Ubuntu%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-server%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e7%94%a8%20LINE%20%e7%99%bc%20Grafana%20Alert&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fgrafana-alert-line%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fnetwork%2fopenvpn-server%2f&t=OpenVPN%20server%20%e7%b0%a1%e6%98%93%e5%ae%89%e8%a3%9d%e4%bd%bf%e7%94%a8%20%28Ubuntu%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fgrafana%2fgrafana-alert-line%2f&t=%e7%94%a8%20LINE%20%e7%99%bc%20Grafana%20Alert" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -193,7 +189,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/network/openvpn-server/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -208,48 +204,30 @@
         <h2>文章目錄</h2>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#需求">需求</a></li>
-    <li><a href="#方法-server-端">方法 (Server 端)</a></li>
-    <li><a href="#openvpn-client-for-windows">OpenVPN client for Windows</a></li>
-    <li><a href="#如何管理-openvpn-server">如何管理 OpenVPN server</a></li>
-    <li><a href="#注意">注意</a></li>
-    <li><a href="#相關文章">相關文章</a></li>
+    <li><a href="#grafana-alerting-notifiers">Grafana Alerting Notifiers</a></li>
+    <li><a href="#前提">前提</a></li>
+    <li><a href="#line-notify-設定">LINE Notify 設定</a></li>
+    <li><a href="#grafana-設定">Grafana 設定</a></li>
   </ol>
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="需求">需求</h2>
-<p>建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到<em><strong>某一台特定機器</strong></em>.</p>
-<h2 id="方法-server-端">方法 (Server 端)</h2>
+    <div class="post_body"><h2 id="grafana-alerting-notifiers">Grafana Alerting Notifiers</h2>
+<p>要使用 <a href="https://grafana.com/">Grafana</a>發 alert 的方法有很多, 參考<a href="https://grafana.com/docs/grafana/next/alerting/contact-points/notifiers/">這裡</a>,
+目前有 20 種, 常見的 Email, LINE, Teams, Discord, Telegram 都有支援.
+比較意外的是, LINE 在 Grafana 是官方直接支援, 反而在 <a href="https://prometheus.io/">Prometheus</a> 並沒有.</p>
+<h2 id="前提">前提</h2>
+<p>這裡假設你已經會用 Grafana 發 Email 通知了, 只是要再多加個 LINE 通知.</p>
+<h2 id="line-notify-設定">LINE Notify 設定</h2>
 <ol>
 <li>
-<p>從<a href="https://openvpn.net/vpn-software-packages/">這裡</a>下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">apt update <span class="o">&amp;&amp;</span> apt -y install ca-certificates wget net-tools gnupg
-</span></span><span class="line"><span class="ln">2</span><span class="cl">wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg <span class="p">|</span> apt-key add -
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb http://as-repository.openvpn.net/as/debian focal main&#34;</span>&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
-</span></span><span class="line"><span class="ln">4</span><span class="cl">apt update <span class="o">&amp;&amp;</span> apt -y install openvpn-as
-</span></span></code></pre></div></li>
-<li>
-<p>最後一個指令的最後面請注意, 他會產生一個 admin 的密碼</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Configuration log file has been written to /usr/local/openvpn_as/init.log
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Access Server Web UIs are available here:
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Admin  UI: https://192.168.1.2:943/admin
-</span></span><span class="line"><span class="ln">10</span><span class="cl">Client UI: https://192.168.1.2:943/
-</span></span><span class="line hl"><span class="ln">11</span><span class="cl">Login as &#34;openvpn&#34; with &#34;fRxnu6bf3fC1&#34; to continue
-</span></span><span class="line"><span class="ln">12</span><span class="cl">(password can be changed on Admin UI)
-</span></span><span class="line"><span class="ln">13</span><span class="cl">+++++++++++++++++++++++++++++++++++++++++++++++
-</span></span></code></pre></div></li>
-<li>
-<p>裝好後, 就可以直接連到 https://localhost:943/admin 用上面的帳號密碼進去</p>
+<p>開一個新的聊天室, 並邀請 <strong>LINE Notify</strong> 這個帳號進入聊天室</p>
 </li>
 <li>
-<p>因為這台 OpenVPN 是裝在內網, 必須在 Network setting 設定他 NAT 的外部 IP, 否則產生出來的 .opvn 檔案會連到 192.168.1.2 (當然這樣會永遠連不到)
+<p>連線到 <a href="https://notify-bot.line.me/my/">這裡</a>, 使用 LINE 的帳號登入</p>
+</li>
+<li>
+<p>選擇 <strong>發行權杖</strong>
 <figure>
   <picture>
 
@@ -267,7 +245,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_network_setting.webp"
+        src="/images/software/grafana/line_token1.webp"
       
       
     />
@@ -277,7 +255,7 @@
 </p>
 </li>
 <li>
-<p>預設他會開放讓 client 連到整個 private network, 因為我們要卡只能連到某一台, 因此要關掉這個
+<p>選擇 你要接受訊息的聊天室
 <figure>
   <picture>
 
@@ -295,7 +273,7 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_vpn_setting.webp"
+        src="/images/software/grafana/line_token2.webp"
       
       
     />
@@ -305,7 +283,7 @@
 </p>
 </li>
 <li>
-<p>再來就是建立一個新帳號, 如下, 然後要在 access control 的地方卡住他只能連到哪個網段或IP
+<p>把權杖 token 存下來
 <figure>
   <picture>
 
@@ -323,7 +301,72 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_user_access_control.webp"
+        src="/images/software/grafana/line_token3.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+</li>
+</ol>
+<h2 id="grafana-設定">Grafana 設定</h2>
+<ol>
+<li>
+<p>建立一個新的 <a href="https://grafana.com/docs/grafana/next/alerting/contact-points/">Contact point</a>, 從 Grafana 的 Alert 選單選擇 contact points, 設定好下列欄位:</p>
+<ul>
+<li>Name: 這裡取名 LINE test 1</li>
+<li>Contact point type: 這裡選擇 LINE</li>
+<li>Token: 把前面 LINE 提供的 token 貼上去. <strong>注意, 存檔之後就再也看不到了, 有需要的話請記得備份</strong></li>
+<li>Disable resolved message: 這個欄位的意思是, 當觸發 alert 的情況消失時, Grafana 預設是會發一個 [OK] 的訊息通知使用者已經恢復正常了, 如果你不需要, 就把他打勾.
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/grafana/grafana_line_config.webp"
+      
+      
+    />
+
+    </picture>
+</figure>
+</li>
+</ul>
+</li>
+<li>
+<p>按下 Test, 應該就會收到一個測試訊息, 如下
+<figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=" "
+      
+        class="image_figure image_internal image_unprocessed"
+        src="/images/software/grafana/grafana_line_msg_test.webp"
       
       
     />
@@ -333,22 +376,10 @@
 </p>
 </li>
 <li>
-<p>以上就完成 OpenVPN server 的安裝了</p>
+<p>測試成功的話, 按下 Save contact point, 就會存檔了.</p>
 </li>
-</ol>
-<h2 id="openvpn-client-for-windows">OpenVPN client for Windows</h2>
-<ol>
-<li>先連到 <a href="http://example.com/">http://example.com/</a> (注意, 這裡 url 沒有 admin), 然後選 Yourself (user-locked profile), 他會下載一個 profile***.ovpn</li>
-<li>安裝 OpenVPN client for Windows, 目前有兩個版本, 兩個用起來差不多.
-<ol>
-<li>OpenVPN Connect for Windows, 可在 <a href="https://openvpn.net/client-connect-vpn-for-windows/">這裡</a> 下載</li>
-<li>OpenVPN GUI, 可在[這裡] (<a href="https://openvpn.net/community-downloads/">https://openvpn.net/community-downloads/</a>) 下載</li>
-</ol>
-</li>
-<li>執行下載的檔案, 將 OpenVPN client 安裝起來</li>
-<li>Double click 步驟一產生的 .ovpn, 把這個檔案匯入</li>
-<li>就可以試著連線了</li>
-<li>如果需要自動連線, 可以在設定裡面修改
+<li>
+<p>當發生 alert 時, 會收到一個 [FIRING:*] LINE 訊息(後面的數字代表 alert 的個數), 如下
 <figure>
   <picture>
 
@@ -366,18 +397,17 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_client_settings.webp"
+        src="/images/software/grafana/grafana_line_msg_alert.webp"
       
       
     />
 
     </picture>
 </figure>
+</p>
 </li>
-</ol>
-<h2 id="如何管理-openvpn-server">如何管理 OpenVPN server</h2>
-<ol>
-<li>可從Status overview看到整個server狀況, 目前連線人數還有log等等
+<li>
+<p>當狀況消失時, 也會收到一個 [RESOLVED] 的 LINE 訊息, 如下
 <figure>
   <picture>
 
@@ -395,25 +425,15 @@
       alt=" "
       
         class="image_figure image_internal image_unprocessed"
-        src="/images/software/openvpn/openvpn_server_status.webp"
+        src="/images/software/grafana/grafana_line_msg_resolved.webp"
       
       
     />
 
     </picture>
 </figure>
+</p>
 </li>
-<li>有人有提供 Prometheus exporter, 但這是非官方的, 而且最後一次更新是 2019/9/7, 不過只少在 2022 年用起來還是可以. (可參考後面相關文章)</li>
-</ol>
-<h2 id="注意">注意</h2>
-<ol>
-<li>有一點要注意的是, OpenVPN 雖然 Open Source, 但他的 <strong>免費版本只能有兩個連線</strong> (參考<a href="https://openvpn.net/access-server/pricing/">這裡</a>)</li>
-</ol>
-<h2 id="相關文章">相關文章</h2>
-<ol>
-<li>用果有興趣使用 Prometheus 來監控 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/">用 Prometheus 來監控 OpenVPN server</a></li>
-<li>如果你使用的是 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a>, 他有內建 OpenVPN server, 可參考 <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">在 Asuswrt-Merlin 使用 OpenVPN server</a></li>
-<li>這是一篇 Open Source VPN 方案的簡單比較和測速: <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/">Open Source VPN 之不嚴謹比較</a></li>
 </ol>
 
     </div>
@@ -452,9 +472,6 @@
         <a href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" class="nav-link" title="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間">使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line/" class="nav-link" title="用 LINE 發 Grafana Alert">用 LINE 發 Grafana Alert</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
       <li>
@@ -471,6 +488,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/" class="nav-link" title="如何把檔案傳出 Google TV">如何把檔案傳出 Google TV</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/software/noncompressiblefiles/" class="nav-link" title="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案">使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</a>
       </li>
     </ul>
     <div>
