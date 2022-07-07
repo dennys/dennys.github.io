@@ -354,6 +354,16 @@
   </url><url>
     <loc>https://dennys.github.io/tw/tags/database/</loc>
     <lastmod>2009-07-06T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/database/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/database/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</loc>
     <lastmod>2009-07-06T00:00:00+08:00</lastmod>

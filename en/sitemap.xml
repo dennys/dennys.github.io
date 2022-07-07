@@ -145,6 +145,25 @@
     <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/en/tags/database/</loc>
+    <lastmod>2005-05-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/database/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/database/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</loc>
+    <lastmod>2005-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</loc>
+    <lastmod>2005-05-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
   </url><url>
     <loc>https://dennys.github.io/en/categories/ci/cd/</loc>

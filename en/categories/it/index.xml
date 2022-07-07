@@ -17,7 +17,7 @@
       <description>
         
           
-            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           
@@ -95,6 +95,38 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
             Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
 GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
 Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SQL to get 1st record of a range (Oracle only)</title>
+      <link>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</link>
+      <pubDate>Fri, 06 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</guid>
+      <description>
+        
+          
+            1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to analyze size of table, index in Oracle</title>
+      <link>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</link>
+      <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <description>
+        
+          
+            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others Index need to be rebuild, delete/update record will NOT free index block Need DBA to check block&#39;s definition.
           
           
         
