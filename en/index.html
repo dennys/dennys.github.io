@@ -53,8 +53,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/en/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
-"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/en/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
+"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -164,6 +164,73 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
+        <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="SQL to get 1st record of a range">SQL to get 1st record of a range</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jul 7, 2022</span>
+    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/database/' title="Database" class="post_tag button button_translucent">Database
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=SQL%20to%20get%201st%20record%20of%20a%20range&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&t=SQL%20to%20get%201st%20record%20of%20a%20range" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>If you want to get the 1st record of a range records, you can use this SQL command.
+1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; p_cur_timestamp 5 AND a.update_dt &lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1</p>
+          
+          <br>
+          <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="Read More" class="excerpt_more button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
         <a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" title="Use GitLab to do .NET 4.8 CI/CD">Use GitLab to do .NET 4.8 CI/CD</a>
       </h3>
       
@@ -219,7 +286,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            <p>Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare …</p>
           
           <br>
@@ -507,72 +574,6 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. S
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="SQL to get 1st record of a range (Oracle only)">SQL to get 1st record of a range (Oracle only)</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      May 6, 2005</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/database/' title="Database" class="post_tag button button_translucent">Database
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=SQL%20to%20get%201st%20record%20of%20a%20range%20%28Oracle%20only%29&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&t=SQL%20to%20get%201st%20record%20of%20a%20range%20%28Oracle%20only%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; p_cur_timestamp 5 AND a.update_dt &lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1</p>
-          
-          <br>
-          <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
         <a href="https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/" title="How to analyze size of table, index in Oracle">How to analyze size of table, index in Oracle</a>
       </h3>
       
@@ -651,6 +652,9 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. S
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" class="nav-link" title="SQL to get 1st record of a range">SQL to get 1st record of a range</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" class="nav-link" title="Use GitLab to do .NET 4.8 CI/CD">Use GitLab to do .NET 4.8 CI/CD</a>
       </li>
       <li>
@@ -664,9 +668,6 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. S
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube Integration">GitLab Checkmarx SonarQube Integration</a>
-      </li>
-      <li>
-        <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" class="nav-link" title="SQL to get 1st record of a range (Oracle only)">SQL to get 1st record of a range (Oracle only)</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/" class="nav-link" title="How to analyze size of table, index in Oracle">How to analyze size of table, index in Oracle</a>
@@ -836,6 +837,6 @@ GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. S
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/en/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/en/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
   </body>
 </html>

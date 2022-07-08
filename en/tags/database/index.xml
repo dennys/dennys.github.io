@@ -7,17 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 06 May 2005 00:00:00 +0000</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>SQL to get 1st record of a range (Oracle only)</title>
+      <title>SQL to get 1st record of a range</title>
       <link>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</link>
-      <pubDate>Fri, 06 May 2005 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</guid>
       <description>
         
           
-            1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
+            If you want to get the 1st record of a range records, you can use this SQL command.
+1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
           
           
         
