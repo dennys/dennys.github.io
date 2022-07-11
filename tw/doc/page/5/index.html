@@ -158,7 +158,7 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/" title="如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)">如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</a>
+        <a href="https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/" title="Maven 3 - 打包 EJB, EAR">Maven 3 - 打包 EJB, EAR</a>
       </h3>
       
   <div class="post_meta">
@@ -168,23 +168,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Jan 28, 2022</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/android/' title="Android" class="post_tag button button_translucent">Android
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
-        </a><a href='https://dennys.github.io/tw/tags/pixel-5/' title="Pixel 5" class="post_tag button button_translucent">Pixel 5
+      Sep 29, 2011</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e9%82%84%e5%8e%9f%20Android%2012%20%e7%9a%84%20Wi-Fi%20%2f%20%e8%a1%8c%e5%8b%95%e6%95%b8%e6%93%9a%20%e5%bf%ab%e9%80%9f%e9%96%8b%e9%97%9c%20%28%e5%85%8d%20Root%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fandroid-12-wifi-mobile-data-toggles%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Maven%203%20-%20%e6%89%93%e5%8c%85%20EJB%2c%20EAR&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-3-ejb-ear%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fandroid-12-wifi-mobile-data-toggles%2f&t=%e5%a6%82%e4%bd%95%e9%82%84%e5%8e%9f%20Android%2012%20%e7%9a%84%20Wi-Fi%20%2f%20%e8%a1%8c%e5%8b%95%e6%95%b8%e6%93%9a%20%e5%bf%ab%e9%80%9f%e9%96%8b%e9%97%9c%20%28%e5%85%8d%20Root%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-3-ejb-ear%2f&t=Maven%203%20-%20%e6%89%93%e5%8c%85%20EJB%2c%20EAR" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -198,7 +197,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -213,10 +212,11 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>提醒這個方法不用 Root, 但需要從電腦上執行.需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 <a href="https://support.google.com/pixelphone/thread/132446941/">https://support.google.com/pixelphone/thread/132446941/</a>. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, …</p>
+            <p>Ear 的打包 Ear 的打包分成兩階段, 第一個打包各個 ejb, 第二是把各個 ejb 加上 library 打包成 ear. 打包 ejb 的部分相對簡單, 如下. 最後會打包出 app-ejb1.jar (依據 finalName 的設定) 這個 ejb 檔案.
+EJB Client generateClient 是指定要產生一個 app-ejb1-client.jar 的檔案, 不過如果只加 generateClient 而沒有任何其他參數, 預設是只會過濾某幾個 pattern 而已, 請再加上 clientIncludes, clientExcludes 來過濾. …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -226,7 +226,7 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/" title="Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)">Asuswrt Merlin Diversion + YouTube (分享器擋 YouTube 廣告)</a>
+        <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="Maven 2 - 打包 war (含 applet)">Maven 2 - 打包 war (含 applet)</a>
       </h3>
       
   <div class="post_meta">
@@ -236,23 +236,297 @@
 </svg>
 </span>
     <span class="post_date">
-      Jun 10, 2020</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' title="Asuswrt-Merlin" class="post_tag button button_translucent">Asuswrt-Merlin
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+      Sep 28, 2011</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=Maven%202%20-%20%e6%89%93%e5%8c%85%20war%20%28%e5%90%ab%20applet%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-2-war-applet%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-2-war-applet%2f&t=Maven%202%20-%20%e6%89%93%e5%8c%85%20war%20%28%e5%90%ab%20applet%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的目錄結構放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).
+另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:
+先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="Maven 1 - 打包 Jar, Applet 並簽名 Sign">Maven 1 - 打包 Jar, Applet 並簽名 Sign</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Sep 27, 2011</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&t=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Maven 1 - 打包 Jar, Applet 並簽名 Sign','Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.
+以下是要把 Applet 程式打包的寫法, 幾個重點:
+descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="XBMC (XBox, Windows 7) &#43; iPhone">XBMC (XBox, Windows 7) + iPhone</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Aug 3, 2011</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/xbmc/' title="XBMC" class="post_tag button button_translucent">XBMC
+        </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=XBMC%20%28XBox%2c%20Windows%207%29%20%2b%20iPhone&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-xbox-windows-7-iphone%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-xbox-windows-7-iphone%2f&t=XBMC%20%28XBox%2c%20Windows%207%29%20%2b%20iPhone" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>XBMC 真是個好東西, 但是一方面 XBox (一代, 不是 XBox 360) 已經很老舊了, 再加上 XBMC 決定不再維護 XBox 版本之後, 就一直在尋找替代產品. Apple TV 是個不錯的東西, 而且也有 XBMC for iOS, 只是一來得花錢買, 二來還是得 JB. 另外 XBMC 也有 Windows 的版本, 不過幾年前用過是覺得不太穩定, 效能也沒有很好, 另外就是, 用 PC 的話, 就沒有遙控器了, 用滑鼠來操作 PC 然後接電視, 總是覺得怪怪的.
+前兩天剛好發現, 有 XBMC remote for iPhone 的軟體, 也有好幾個, 於是就想到了, 或許用 iPhone 來遙控 XBMC 也 …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="設定 WebLogic 的 memory 參數">設定 WebLogic 的 memory 參數</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Apr 2, 2010</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=%e8%a8%ad%e5%ae%9a%20WebLogic%20%e7%9a%84%20memory%20%e5%8f%83%e6%95%b8&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fweblogic-memory-parameter%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fweblogic-memory-parameter%2f&t=%e8%a8%ad%e5%ae%9a%20WebLogic%20%e7%9a%84%20memory%20%e5%8f%83%e6%95%b8" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
+java.lang.OutOfMemoryError: PermGen space
+解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被 …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)">DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Mar 4, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
         </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Asuswrt%20Merlin%20Diversion%20%2b%20YouTube%20%28%e5%88%86%e4%ba%ab%e5%99%a8%e6%93%8b%20YouTube%20%e5%bb%a3%e5%91%8a%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-diversion-youtube%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=DD-WRT%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2%e5%98%97%e9%ae%ae%20%28%e4%bd%bf%e7%94%a8%20lly%20driver%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fdd-wrt-3g-lly-driver%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-diversion-youtube%2f&t=Asuswrt%20Merlin%20Diversion%20%2b%20YouTube%20%28%e5%88%86%e4%ba%ab%e5%99%a8%e6%93%8b%20YouTube%20%e5%bb%a3%e5%91%8a%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fdd-wrt-3g-lly-driver%2f&t=DD-WRT%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2%e5%98%97%e9%ae%ae%20%28%e4%bd%bf%e7%94%a8%20lly%20driver%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -266,7 +540,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -281,13 +555,10 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>請先安裝 Diversion Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 相關說明和安裝可參考: <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/">https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</a>
-Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的實驗性功能 (參考: <a href="https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html">https://diversion.ch/faq-reader/can-diversion-block-youtube-ads.html</a>)
-安裝方法 用 ssh 進入 Asuswrt 並執行 diversion
-執 …</p>
+            <p>注意這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 <a href="http://digiland.tw/viewtopic.php?id=914">http://digiland.tw/viewtopic.php?id=914</a> 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所 …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -297,7 +568,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/" title="Samsung Galaxy View Root">Samsung Galaxy View Root</a>
+        <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="CDMA@wifi (Oleg) 之 3G 上網">CDMA@wifi (Oleg) 之 3G 上網</a>
       </h3>
       
   <div class="post_meta">
@@ -307,163 +578,22 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
 </svg>
 </span>
     <span class="post_date">
-      Feb 1, 2020</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/android/' title="Android" class="post_tag button button_translucent">Android
-        </a><a href='https://dennys.github.io/tw/tags/root/' title="Root" class="post_tag button button_translucent">Root
-        </a><a href='https://dennys.github.io/tw/tags/magisk/' title="Magisk" class="post_tag button button_translucent">Magisk
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Samsung%20Galaxy%20View%20Root&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fsamsung-galaxy-view-root%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fsamsung-galaxy-view-root%2f&t=Samsung%20Galaxy%20View%20Root" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
-官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: …</p>
-          
-          <br>
-          <a href="https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/android/htc-u-ultra-root/" title="HTC U Ultra 刷機">HTC U Ultra 刷機</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Jan 30, 2020</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/android/' title="Android" class="post_tag button button_translucent">Android
-        </a><a href='https://dennys.github.io/tw/tags/root/' title="Root" class="post_tag button button_translucent">Root
-        </a><a href='https://dennys.github.io/tw/tags/magisk/' title="Magisk" class="post_tag button button_translucent">Magisk
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=HTC%20U%20Ultra%20%e5%88%b7%e6%a9%9f&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fhtc-u-ultra-root%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fandroid%2fhtc-u-ultra-root%2f&t=HTC%20U%20Ultra%20%e5%88%b7%e6%a9%9f" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dennys.github.io/tw/doc/android/htc-u-ultra-root/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
-Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-download/">http://www.rayzen-dev.com/htc-unlocked-download/</a> 安裝 htc driver <a href="https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z">https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z</a> TWRP …</p>
-          
-          <br>
-          <a href="https://dennys.github.io/tw/doc/android/htc-u-ultra-root/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/" title="Asuswrt Merlin FreshJR Adaptive QoS (流量管理)">Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Jan 27, 2020</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' title="Asuswrt-Merlin" class="post_tag button button_translucent">Asuswrt-Merlin
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+      Mar 1, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
         </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Asuswrt%20Merlin%20FreshJR%20Adaptive%20QoS%20%28%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-freshjr-adaptive-qos%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=CDMA%40wifi%20%28Oleg%29%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fcdma-wifi-oleg-3g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-freshjr-adaptive-qos%2f&t=Asuswrt%20Merlin%20FreshJR%20Adaptive%20QoS%20%28%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fcdma-wifi-oleg-3g%2f&t=CDMA%40wifi%20%28Oleg%29%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -477,7 +607,7 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -492,13 +622,11 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意FreshJR_Qos已停止維護, 請改用 FlexQoSFreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
-安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
-原文: <a href="https://www.snbforums.com/threads/36836/">https://www.snbforums.com/threads/36836/</a> 中文摘要翻譯: <a href="https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html">https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html</a> 如何確定安裝成功
-執行 /jffs/script/FreshJR_QOS …</p>
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
+參考文章 數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -508,7 +636,7 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/" title="Asuswrt Merlin Diversion (分享器擋廣告)">Asuswrt Merlin Diversion (分享器擋廣告)</a>
+        <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="使用 Asus WL-500gP v1 的 3.5G 無線上網">使用 Asus WL-500gP v1 的 3.5G 無線上網</a>
       </h3>
       
   <div class="post_meta">
@@ -518,23 +646,22 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
 </svg>
 </span>
     <span class="post_date">
-      Jan 24, 2020</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' title="Asuswrt-Merlin" class="post_tag button button_translucent">Asuswrt-Merlin
-        </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+      Jan 9, 2010</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
         </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Asuswrt%20Merlin%20Diversion%20%28%e5%88%86%e4%ba%ab%e5%99%a8%e6%93%8b%e5%bb%a3%e5%91%8a%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-diversion%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20Asus%20WL-500gP%20v1%20%e7%9a%84%203.5G%20%e7%84%a1%e7%b7%9a%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasus-wl-500gp-v1-35g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasuswrt-merlin-diversion%2f&t=Asuswrt%20Merlin%20Diversion%20%28%e5%88%86%e4%ba%ab%e5%99%a8%e6%93%8b%e5%bb%a3%e5%91%8a%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasus-wl-500gp-v1-35g%2f&t=%e4%bd%bf%e7%94%a8%20Asus%20WL-500gP%20v1%20%e7%9a%84%203.5G%20%e7%84%a1%e7%b7%9a%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -548,7 +675,7 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -563,11 +690,11 @@ Root 方法 htc 官方解鎖 <a href="http://www.rayzen-dev.com/htc-unlocked-dow
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: <a href="https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation">https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation</a> (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
-Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟 …</p>
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
+因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -577,7 +704,7 @@ Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-t530/" title="Thinkpad T530">Thinkpad T530</a>
+        <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="Tomato DualWan 之 3G 上網">Tomato DualWan 之 3G 上網</a>
       </h3>
       
   <div class="post_meta">
@@ -587,21 +714,22 @@ Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 
 </svg>
 </span>
     <span class="post_date">
-      Feb 23, 2013</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/thinkpad/' title="ThinkPad" class="post_tag button button_translucent">ThinkPad
+      Jan 3, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+        </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Thinkpad%20T530&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2fthinkpad-t530%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Tomato%20DualWan%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2ftomato-dualwan-3g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2fthinkpad-t530%2f&t=Thinkpad%20T530" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2ftomato-dualwan-3g%2f&t=Tomato%20DualWan%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -615,7 +743,7 @@ Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-t530/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -630,14 +758,11 @@ Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>購買 Lenovo Coupon: <a href="http://www.dealigg.com/story-Lenovo-Coupons-Promotions">http://www.dealigg.com/story-Lenovo-Coupons-Promotions</a>
-使用手冊 <a href="http://support.lenovo.com/en_US/downloads/detail.page?DocID=UM014841">http://support.lenovo.com/en_US/downloads/detail.page?DocID=UM014841</a>
-硬體 硬碟 SATA3, 7mm規格 (注意不是 9mm)
-mSATA 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 似乎是因為 Ivy Bridge 只支援兩個 SATA3, 而 HDD, DVD 就用掉 2 個了.
-WiFi …</p>
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
+軟硬體 Hub: Asus WL-500gP V1 USB 網卡: …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-t530/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -647,7 +772,7 @@ WiFi …</p>
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/" title="PTool 修改 Panasonic G2">PTool 修改 Panasonic G2</a>
+        <a href="https://dennys.github.io/tw/doc/software/xbmc-babylon-904/" title="XBMC Babylon 9.04 安裝筆記">XBMC Babylon 9.04 安裝筆記</a>
       </h3>
       
   <div class="post_meta">
@@ -657,21 +782,22 @@ WiFi …</p>
 </svg>
 </span>
     <span class="post_date">
-      Dec 8, 2012</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+      Dec 24, 2009</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/xbmc/' title="XBMC" class="post_tag button button_translucent">XBMC
+        </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=PTool%20%e4%bf%ae%e6%94%b9%20Panasonic%20G2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fcamera%2fptool-panasonic-g2%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=XBMC%20Babylon%209.04%20%e5%ae%89%e8%a3%9d%e7%ad%86%e8%a8%98&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-babylon-904%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fcamera%2fptool-panasonic-g2%2f&t=PTool%20%e4%bf%ae%e6%94%b9%20Panasonic%20G2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-babylon-904%2f&t=XBMC%20Babylon%209.04%20%e5%ae%89%e8%a3%9d%e7%ad%86%e8%a8%98" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -685,7 +811,7 @@ WiFi …</p>
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/software/xbmc-babylon-904/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -700,146 +826,12 @@ WiFi …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!PTool 是甚麼 PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
-功能 Basic Version incremental (打勾) Prevent version compare (打勾) FPS change G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps …</p>
+            <p>注意這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
+把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin),  …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-w530/" title="Thinkpad W530">Thinkpad W530</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Sep 8, 2012</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/thinkpad/' title="ThinkPad" class="post_tag button button_translucent">ThinkPad
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=Thinkpad%20W530&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2fthinkpad-w530%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2fthinkpad-w530%2f&t=Thinkpad%20W530" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-w530/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>螢幕解析度 現在用的 T41 (14&quot;) 是 1024x768, 15&quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉. 另外, Browser 的字型似乎不會跟著系統放大?
-HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤 巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起
-HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. …</p>
-          
-          <br>
-          <a href="https://dennys.github.io/tw/doc/hardware/thinkpad-w530/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
-        </div>
-      </div>
-    </div>
-  </li>
-
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/" title="2012 電腦升級">2012 電腦升級</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Jul 15, 2012</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/hardware/' title="Hardware" class="post_tag button button_translucent">Hardware
-        </a>
-    </span>
-    <span class="page_only">&nbsp;·
-  <div class="post_share">
-    分享到:
-    <a href="https://twitter.com/intent/tweet?text=2012%20%e9%9b%bb%e8%85%a6%e5%8d%87%e7%b4%9a&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2f2012-computer-upgrade%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>twitter</title>
-  <use xlink:href="#twitter"></use>
-</svg>
-
-    </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fhardware%2f2012-computer-upgrade%2f&t=2012%20%e9%9b%bb%e8%85%a6%e5%8d%87%e7%b4%9a" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
-      <svg class="icon">
-  <title>facebook</title>
-  <use xlink:href="#facebook"></use>
-</svg>
-
-    </a>
-    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
-      <svg class="icon">
-  <title>linkedin</title>
-  <use xlink:href="#linkedin"></use>
-</svg>
-
-    </a>
-    <a href="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/" title="Copy Link" class="link link_yank">
-      <svg class="icon">
-  <title>copy</title>
-  <use xlink:href="#copy"></use>
-</svg>
-
-    </a>
-  </div>
-  </span>
-  </div>
-
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <p>最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
-用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU ：$6190 I5-3470/HD2500 主機板：$3690 華碩 P8H77-M PRO 記憶體：$1688 金士頓DDR3-1333 4G*2 其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價. 主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus  …</p>
-          
-          <br>
-          <a href="https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/software/xbmc-babylon-904/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -854,6 +846,9 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         <a href="/tw/doc/page/4/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item">
+        <a href="/tw/doc/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
         <a href="/tw/doc/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
       <li class="page-item">
@@ -866,13 +861,10 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         <a href="/tw/doc/page/6/" aria-label="Page 6" class="page-link" role="button">6</a>
       </li>
       <li class="page-item">
-        <a href="/tw/doc/page/7/" aria-label="Page 7" class="page-link" role="button">7</a>
-      </li>
-      <li class="page-item">
         <a href="/tw/doc/page/6/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/tw/doc/page/7/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/tw/doc/page/6/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </li>
@@ -890,9 +882,6 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-email-notification/" class="nav-link" title="Android 各種 Email 的通知動作">Android 各種 Email 的通知動作</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/" class="nav-link" title="跳過 Podcast 的片頭片尾">跳過 Podcast 的片頭片尾</a>
       </li>
       <li>
@@ -902,16 +891,19 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/" class="nav-link" title="把 Grafana 的 Alert 訊息發到 LINE 群組">把 Grafana 的 Alert 訊息發到 LINE 群組</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/" class="nav-link" title="檔案搜尋替代工具">檔案搜尋替代工具</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/prometheus-mail/" class="nav-link" title="Prometheus Mail">Prometheus Mail</a>
+        <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a>
       </li>
     </ul>
     <div>
@@ -919,17 +911,12 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">64</span>
+          <span class="button_tally">54</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
           生活大小事
           <span class="button_tally">6</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/categories/documentation/' class="post_tag button button_translucent" title="documentation">
-          DOCUMENTATION
-          <span class="button_tally">1</span>
         </a>
         
         
@@ -938,14 +925,14 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
     <div>
       <h2 class="mt-4 taxonomy" id="series-section">專欄</h2>
       <nav class="tags_nav">
-        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
-          ANDROID-使用小技巧
-          <span class="button_tally">7</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
           ANDROID-改機
           <span class="button_tally">7</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
+          ANDROID-使用小技巧
+          <span class="button_tally">6</span>
         </a>
         
         <a href='https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="asuswrt-merlin-改機">
@@ -971,12 +958,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
-          <span class="button_tally">16</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
-          <span class="button_tally">12</span>
+          <span class="button_tally">14</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/java/' class="post_tag button button_translucent" title="java">
@@ -994,23 +976,23 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
-          NETWORK
-          <span class="button_tally">6</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/root/' class="post_tag button button_translucent" title="root">
           ROOT
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class="post_tag button button_translucent" title="grafana-prometheus">
-          GRAFANA-PROMETHEUS
+        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
+          NETWORK
           <span class="button_tally">5</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
+          <span class="button_tally">5</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
           <span class="button_tally">5</span>
         </a>
         
@@ -1021,6 +1003,11 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         
         <a href='https://dennys.github.io/tw/tags/google-tv/' class="post_tag button button_translucent" title="google-tv">
           GOOGLE-TV
+          <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class="post_tag button button_translucent" title="grafana-prometheus">
+          GRAFANA-PROMETHEUS
           <span class="button_tally">4</span>
         </a>
         
@@ -1040,15 +1027,11 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=16 title="android">ANDROID<span class="button_tally">16</span>
+            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=14 title="android">ANDROID<span class="button_tally">14</span>
             </a>
             
             
             <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=4 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">4</span>
-            </a>
-            
-            
-            <a href='https://dennys.github.io/tw/tags/camera/' class=" post_tag button button_translucent" data-position=2 title="camera">CAMERA<span class="button_tally">2</span>
             </a>
             
             
@@ -1064,7 +1047,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class=" post_tag button button_translucent" data-position=5 title="grafana-prometheus">GRAFANA-PROMETHEUS<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class=" post_tag button button_translucent" data-position=4 title="grafana-prometheus">GRAFANA-PROMETHEUS<span class="button_tally">4</span>
             </a>
             
             
@@ -1080,7 +1063,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=3 title="line">LINE<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=2 title="line">LINE<span class="button_tally">2</span>
             </a>
             
             
@@ -1092,11 +1075,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=6 title="network">NETWORK<span class="button_tally">6</span>
-            </a>
-            
-            
-            <a href='https://dennys.github.io/tw/tags/pixel/' class=" post_tag button button_translucent" data-position=1 title="pixel">PIXEL<span class="button_tally">1</span>
+            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=5 title="network">NETWORK<span class="button_tally">5</span>
             </a>
             
             
@@ -1116,11 +1095,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=12 title="software">SOFTWARE<span class="button_tally">12</span>
-            </a>
-            
-            
-            <a href='https://dennys.github.io/tw/tags/sony-rx100/' class=" post_tag button button_translucent" data-position=1 title="sony-rx100">SONY-RX100<span class="button_tally">1</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
             </a>
             
             
@@ -1144,7 +1119,7 @@ HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 c
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/youtube/' class=" post_tag button button_translucent" data-position=3 title="youtube">YOUTUBE<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/youtube/' class=" post_tag button button_translucent" data-position=2 title="youtube">YOUTUBE<span class="button_tally">2</span>
             </a>
             
             

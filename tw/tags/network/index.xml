@@ -49,23 +49,6 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
     </item>
     
     <item>
-      <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
-      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
-      <pubDate>Thu, 30 Jun 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
-      <description>
-        
-          
-            需求 因為要使用 ActivityWatch 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 Remote server 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: https://github.com/ActivityWatch/aw-watcher-web/issues/44), 因此放棄 Remote server 這招, 改用 SSH Tunnel (SSH port forwarding) 來實現需求.
-簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 只收 localhost 的連線, 不對外開放, 然後我在 client 的 AP 要連上那個 service. 方法 啟動 server, 他要去聽 http://localhost:5600 在 client 上面執行 ssh 1ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>點對點網路測速軟體 iPerf3</title>
       <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>

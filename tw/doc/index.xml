@@ -7,25 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Android 各種 Email 的通知動作</title>
-      <link>https://dennys.github.io/tw/doc/android/android-email-notification/</link>
-      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/android-email-notification/</guid>
-      <description>
-        
-          
-            需求 在上次的文章中, 我們知道預設 Android 的通知是 封存, 然後可以把封存改為刪除, 但沒法兩者同時出現.
-不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 Gmail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 FairEmail 
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>跳過 Podcast 的片頭片尾</title>
       <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
@@ -84,23 +66,6 @@ LINE Notify 設定 開一個新的聊天室, 並邀請 LINE Notify 這個帳號�
     </item>
     
     <item>
-      <title>檔案搜尋替代工具</title>
-      <link>https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/</link>
-      <pubDate>Wed, 06 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/</guid>
-      <description>
-        
-          
-            需求 免費軟體 支援 UTF-8 可在搜尋結果直接顯示部分內容 (不然沒有前後文的情況下, 一個一個點進去其實很花時間) Double click 搜尋結果就可以打開檔案編輯 最好是能 replace 愈快愈好 (廢話) 軟體比較 找了三個免費軟體來試試看
-grepWin SearchMyFiles Find and Replace (FNR) grepWin SearchMyFiles Find and Replace (FNR) GitHub star 1.2K N/A N/A UTF-8 有 有些地方怪怪的 有 顯示部分內容 有 (放在欄位) 有 (放在欄位) 有 (下方獨立 panel) Double click 開檔 有 有 (可調整) 有 Replace 有 有 有 速度 快 快 稍慢 結論 還滿意外的,
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
       <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
@@ -116,23 +81,6 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
 執行下列指令啟動 exporter
 1$ openvpn-access-exporter --file /usr/local/openvpn_as/etc/db/log.db 2[2022-07-05T23:10:41Z INFO openvpn_access_exporter] Using file: /usr/local/openvpn_as/etc/db/log.db 連線到 http://localhost:9185, 就會看到類似下面的 metrics
 1# HELP access_counter Requests counter 2# TYPE access_counter counter 3access_counter 61 4# HELP openvpn_user_bytes_in Bytes in 5# TYPE openvpn_user_bytes_in gauge 6openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.x.x.x&amp;#34;,session_id=&amp;#34;hYTtny0ozcppC3tS&amp;#34;,username=&amp;#34;user1&amp;#34;,vpn_ip=&amp;#34;172.27.224.2&amp;#34;} 3623 1656473784000 7openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Prometheus Mail</title>
-      <link>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</guid>
-      <description>
-        
-          
-            如何修改 Prometheus mail template: https://velenux.wordpress.com/2021/04/23/how-to-change-prometheus-alertmanager-e-mail-template/
-https://ithelp.ithome.com.tw/m/articles/10271492
           
           
         
@@ -160,89 +108,6 @@ PostgreSQL 的 docker-compose.yml 如下:
     </item>
     
     <item>
-      <title>ActivityWatch</title>
-      <link>https://dennys.github.io/tw/doc/software/activity-watch/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/activity-watch/</guid>
-      <description>
-        
-          
-            需求 他有一堆 Watcher https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers
-Chrome Plugin 如果要看他開的是哪個 tab, 可裝這個 https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi
-方法 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>HandBrake</title>
-      <link>https://dennys.github.io/tw/doc/software/handbrake/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/handbrake/</guid>
-      <description>
-        
-          
-            需求 HandBrake
-參考 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>NeoVIM</title>
-      <link>https://dennys.github.io/tw/doc/software/neovim/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/neovim/</guid>
-      <description>
-        
-          
-            需求 參考 https://ddadaal.me/articles/from-vscode-to-vim-to-both
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Windows Terminal Power Shell</title>
-      <link>https://dennys.github.io/tw/doc/software/windows-terminal-power-shell/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/windows-terminal-power-shell/</guid>
-      <description>
-        
-          
-            需求 參考 如何打造一個華麗又實用的 PowerShell 命令輸入環境 安裝新版 Oh My Posh 與插件來美化 PowerShell Windows Terminal 完美配置PowerShell 7.1 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>看圖軟體</title>
-      <link>https://dennys.github.io/tw/doc/software/image-viewer/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/image-viewer/</guid>
-      <description>
-        
-          
-            需求 IrfanView, 唯一缺點: free for non-commercial use, 不是 open source Imagine, freeware, no restriction. JPEGView: GPL, 缺了一些基本編輯功能 (ex: 裁切和改變大小), 而且他的 portable mode 得去裝 https://portableapps.com/apps/graphics_pictures/jpegview_portable XnView: 他的 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>如何修改 Android 預設的 YouTube App</title>
       <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
@@ -261,25 +126,6 @@ Chrome Plugin 如果要看他開的是哪個 tab, 可裝這個 https://chrome.go
     </item>
     
     <item>
-      <title>YouTube 各種加強工具</title>
-      <link>https://dennys.github.io/tw/doc/software/youtube-private-video/</link>
-      <pubDate>Fri, 01 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/software/youtube-private-video/</guid>
-      <description>
-        
-          
-            注意這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!!整理一下 YouTube 在各平台上的各種加強工具.
-PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的是, 他首頁強調的 當游標在播放器上時，使用滑鼠滾輪控制音量, 預設卻是關閉的, 要自己進去打開才會生效.
-Magic Actions for YouTube 上次更新是 2021/5/2, 而且他有可能會拿走你的所有瀏覽紀錄 (參考: https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/)
-PC 下載 (Linux, macOS, Windows) youtube-dl 或是 ytl-dp 參考: https://dennys.github.io/tw/doc/software/download-youtube-private-video/ Android Vanced: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於NewPipe Extractor. 試玩了幾個, 每個人的需求不同, 對我來講比較有感的是這幾個功能 官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大. 手勢, 尤其前後快傳真的好用. 下載的時候把影音合併, 這還滿重要的, 不然還得另外合併, 會很麻煩. Chromecast, 這個雖然不常用, 但要投影到電視的時候就很方便.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Open Source VPN 之不嚴謹比較</title>
       <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
@@ -291,23 +137,6 @@ PC 下載 (Linux, macOS, Windows) youtube-dl 或是 ytl-dp 參考: https://denny
             Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
 OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan VPN: https://libreswan.org/ OpenSwan VPN: https://openswan.org/ strongSwan VPN: https://www.strongswan.org/ FreeLan VPN: https://www.freelan.org/ Open Connect VPN: https://www.infradead.org/openconnect/ 先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN
 OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 7.2K 9K 662 770 1.4K 1.2K N/A Last release 2022/5/24 2021/6/24 2022/5/25 2021/1/22 2022/4/29 2019/5/7 2022/4/29 再用 Google Trend 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
-      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
-      <pubDate>Thu, 30 Jun 2022 10:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
-      <description>
-        
-          
-            需求 因為要使用 ActivityWatch 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 Remote server 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: https://github.com/ActivityWatch/aw-watcher-web/issues/44), 因此放棄 Remote server 這招, 改用 SSH Tunnel (SSH port forwarding) 來實現需求.
-簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 只收 localhost 的連線, 不對外開放, 然後我在 client 的 AP 要連上那個 service. 方法 啟動 server, 他要去聽 http://localhost:5600 在 client 上面執行 ssh 1ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.
           
           
         
@@ -474,23 +303,6 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
 打開電視機的 HDMI-CEC 功能 進入設定畫面 選 HDMI 模式 將&amp;quot;智慧連接&amp;quot;打開 將&amp;quot;自動開機&amp;quot;打開 奇怪的是, Google TV 卻沒辦法用 HDMI-CEC 控制 Infocus 電視的音量 注意, 下面的貼圖是抓官方說明書, 裡面寫的是&amp;quot;關閉&amp;quot;, 請勿照著設定, 要記得打開 Google TV 的設定
 進入 Google TV 的設定, 選擇顯示和音效 選擇 HDMI-CEC 選擇啟用 HDMI-CEC 遙控器的設定
 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇 CEC 選擇 CEC 成果 這樣就完成了, 之後把 Google TV 打開時, 大概 1 秒就會把電視也打開, 關機也是一樣, 還是會有一點時間差, 而且是有感的, 但已經方便太多了.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Doc (test)</title>
-      <link>https://dennys.github.io/tw/doc/hugo/gitlab-checkmarx-integration/</link>
-      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/hugo/gitlab-checkmarx-integration/</guid>
-      <description>
-        
-          
-            this is a test document
-themes\LoveIt\assets\css\_variables.scss$global-font-size: 20px !default; =&amp;gt; change font size from 16 to 20
           
           
         

@@ -83,48 +83,6 @@
                 href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/android/</loc>
-    <lastmod>2022-07-10T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/android/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/android/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/android/android-email-notification/</loc>
-    <lastmod>2022-07-10T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-07-10T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2022-07-10T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</loc>
     <lastmod>2022-07-09T00:00:00+08:00</lastmod>
   </url><url>
@@ -163,28 +121,6 @@
     <loc>https://dennys.github.io/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/java/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/java/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/java/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/java/java-restful-service/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/java-service-management/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/service/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/en/categories/devops/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
@@ -197,11 +133,18 @@
     <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
+    <loc>https://dennys.github.io/en/series/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
@@ -232,6 +175,9 @@
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</loc>
+    <lastmod>2022-01-15T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</loc>

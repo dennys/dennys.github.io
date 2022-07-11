@@ -26,25 +26,6 @@ Batch change filenames to P[photo capture date]-[camera model].jpg. For example,
     </item>
     
     <item>
-      <title>Android Email Notification Actions</title>
-      <link>https://dennys.github.io/en/doc/android/android-email-notification/</link>
-      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/doc/android/android-email-notification/</guid>
-      <description>
-        
-          
-            需求 In previous artiche, we know we can change archive to delete in the Email(Gmail) notification of Android
-(參考: http://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/)
-不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 GMail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 FairEmail 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
       <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
@@ -72,40 +53,6 @@ And I find Pocket Casts has a interested feature, it can skip the first or last 
           
             If you want to get the 1st record of a range records, you can use this SQL command.
 1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Java RESTful service</title>
-      <link>https://dennys.github.io/en/doc/java/java-restful-service/</link>
-      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/doc/java/java-restful-service/</guid>
-      <description>
-        
-          
-             Service Document (Swagger) Validation Authentication Authorizatio Log Test Stress test Auto test, mock, … Management – supervisor – Python vs Golang Monitor – Grafana Monitor – OpenTelemetry, Jaeger, 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>GitLab SonarQube Integration with dotNET</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
-      <description>
-        
-          
-            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please check the following procedures.
-GitLab + SonarQube (docker) GitLab + SonarQube (non-docker) If you choose non-docer, I think you are still in .NET 4.8 or below. You can reference http://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/ to build .NET 4 applications in GitLab CI/CD flow. And you can following the following procedures to integrate SonarQube.
-Reference this document to integrate GitLab and SonarQube.
           
           
         

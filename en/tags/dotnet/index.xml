@@ -9,24 +9,6 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitLab SonarQube Integration with dotNET</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
-      <description>
-        
-          
-            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please check the following procedures.
-GitLab + SonarQube (docker) GitLab + SonarQube (non-docker) If you choose non-docer, I think you are still in .NET 4.8 or below. You can reference http://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/ to build .NET 4 applications in GitLab CI/CD flow. And you can following the following procedures to integrate SonarQube.
-Reference this document to integrate GitLab and SonarQube.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
       <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>

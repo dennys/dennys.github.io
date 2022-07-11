@@ -70,23 +70,6 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
     </item>
     
     <item>
-      <title>Prometheus Mail</title>
-      <link>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</guid>
-      <description>
-        
-          
-            如何修改 Prometheus mail template: https://velenux.wordpress.com/2021/04/23/how-to-change-prometheus-alertmanager-e-mail-template/
-https://ithelp.ithome.com.tw/m/articles/10271492
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>使用 PostgreSQL 當作 Grafana 的資料庫</title>
       <link>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</link>
       <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
