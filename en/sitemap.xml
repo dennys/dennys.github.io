@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -13,6 +13,87 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dennys.github.io/en/categories/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/categories/it/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/podcast/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/podcast/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/podcast/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/software/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/software/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/</loc>
+    <lastmod>2022-07-11T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/en/tags/database/</loc>
@@ -28,60 +109,8 @@
                 href="https://dennys.github.io/en/tags/database/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/comments/</loc>
     <lastmod>2022-06-20T00:18:32+08:00</lastmod>
@@ -128,19 +157,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dennys.github.io/en/tags/ifttt/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/software/</loc>
-    <lastmod>2022-03-24T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/software/"
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</loc>

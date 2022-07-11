@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/podcast/</link>
+    <description>Recent content in Podcast on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Skip Podcast&#39;s Introduction</title>
+      <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
+      <description>
+        
+          
+            Many Podcast have an introduction, if you want to skip it, you can use Pocket Casts (This feature is provided in free version.)
+Steps:
+Choose your podcast. Click the gear icon. Input the length you want to skip in the first or last. 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

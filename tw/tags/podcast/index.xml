@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/podcast/</link>
+    <description>Recent content in Podcast on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>跳過 Podcast 固定的片頭片尾</title>
+      <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
+      <description>
+        
+          
+            很多 Podcast 都會有固定的片頭和片尾, 有時候實在很想要跳過他, 找到這個軟體有這功能. Pocket Casts
+步驟如下:
+選擇要調整的 Podcast. 進去設定. 選擇你要跳過的時間. 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
