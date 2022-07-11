@@ -7,17 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>跳過 Podcast 固定的片頭片尾</title>
+      <title>跳過 Podcast 的片頭片尾</title>
       <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            很多 Podcast 都會有固定的片頭和片尾, 有時候實在很想要跳過他, 找到這個軟體有這功能. Pocket Casts
+            我通常都用 Spotify 來聽 Podcast, 後來也會和家人共用, 但這樣有時候就會混在一起, 想說找別的 App 分開使用. 無意中看到 Pocket Casts 這個 App 滿有意思的, 她有個功能是可以跳過固定的片頭和片尾 (依據秒數), 免費版就有這功能了.
 步驟如下:
 選擇要調整的 Podcast. 進去設定. 選擇你要跳過的時間. 
           

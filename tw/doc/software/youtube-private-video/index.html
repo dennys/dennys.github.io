@@ -242,13 +242,15 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
 </ol>
 <h2 id="android">Android</h2>
 <ol>
-<li><a href="https://vancedapp.com/">Vanced</a>: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於<a href="https://github.com/TeamNewPipe/NewPipeExtractor">NewPipe Extractor</a>, 試玩了幾個.</li>
-</ol>
-<p>其實對我來講最有感的是</p>
+<li><a href="https://vancedapp.com/">Vanced</a>: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於<a href="https://github.com/TeamNewPipe/NewPipeExtractor">NewPipe Extractor</a>.
+試玩了幾個, 每個人的需求不同, 對我來講比較有感的是這幾個功能
 <ol>
-<li>官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大</li>
-<li>手勢, 尤其前後快傳真的好用</li>
-<li>Chromecast, 這個雖然不常用, 但用到的時候就很方便</li>
+<li>官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大.</li>
+<li>手勢, 尤其前後快傳真的好用.</li>
+<li>下載的時候把影音合併, 這還滿重要的, 不然還得另外合併, 會很麻煩.</li>
+<li><a href="https://store.google.com/tw/product/chromecast">Chromecast</a>, 這個雖然不常用, 但要投影到電視的時候就很方便... 不過現在應該也都直接用 Google TV 了, 好像想不太出應用場合.</li>
+</ol>
+</li>
 </ol>
 <table>
 <thead>
@@ -269,23 +271,44 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
 <td>2k</td>
 </tr>
 <tr>
+<td>Extractor</td>
+<td>NewPipe Extractor</td>
+<td>NewPipe Extractor</td>
+<td>NewPipe Extractor</td>
+<td>VueTube-Extractor</td>
+</tr>
+<tr>
+<td>外部撥放器</td>
+<td>支援</td>
+<td>支援</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>訂閱清單匯入</td>
+<td>有 (支援 zip)</td>
+<td>只收 json, 得轉檔</td>
+<td>有(未測試)</td>
+<td>好像沒有?</td>
+</tr>
+<tr>
 <td>帳號登入</td>
-<td>無</td>
-<td>無</td>
+<td>無 (設計理念)</td>
+<td>無 (設計理念)</td>
 <td>LibraTube 帳號</td>
-<td>未來可能會提供</td>
+<td>Google (計畫中)</td>
 </tr>
 <tr>
 <td>下載影片</td>
-<td>有(影音分開)</td>
-<td>有(影音合併)</td>
-<td>有(影音分開)</td>
+<td>有 (影音分開)</td>
+<td>有(影音<strong>合併</strong>)</td>
+<td>有(影音<strong>合併</strong>)</td>
 <td>無</td>
 </tr>
 <tr>
 <td>手勢</td>
 <td>音量/亮度</td>
-<td>音量/亮度/前進後退</td>
+<td>音量/亮度/<strong>前進後退</strong></td>
 <td>無</td>
 <td>無</td>
 </tr>
@@ -296,27 +319,25 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
 <td>無</td>
 <td>無</td>
 </tr>
-<tr>
-<td>訂閱清單匯入</td>
-<td>有</td>
-<td><strong>只</strong> 收 json 格式</td>
-<td>有(未測試)</td>
-<td></td>
-</tr>
 </tbody>
 </table>
+<p><strong>注意</strong>
+這些 App 除了 NewPipe 以外, 大多都還在 active development, 尤其是 VueTube, 所以功能會一直在調整和加強</p>
 <ol>
 <li>
-<p><a href="https://github.com/TeamNewPipe/NewPipe">NewPipe (GitHub 19.6k)</a>:</p>
+<p><a href="https://github.com/TeamNewPipe/NewPipe">NewPipe</a>:</p>
 <ol>
 <li>不能 login (這是他的設計理念)</li>
-<li>gesture: 可直接調整音量和亮度, 很方便, 但 <strong>沒有</strong> 快轉倒退</li>
+<li>Gesture: 可直接調整音量和亮度, 很方便, 但 <strong>沒有</strong> 快轉倒退</li>
 <li>訂閱清單可直接 import Google takeout 的 zip 檔</li>
 <li>下載 video/audio 是分開的, 得再合併</li>
 </ol>
 </li>
 <li>
-<p><a href="https://github.com/polymorphicshade/NewPipe">NewPipe NewPipe x SponsorBlock (GitHub 2.2k)</a>: 同上, 多了 <a href="https://sponsor.ajay.app/">SponsorBlock</a> 和 <a href="https://returnyoutubedislike.com/">Return YouTube Dislike</a> 這兩個功能.</p>
+<p><a href="https://github.com/polymorphicshade/NewPipe">NewPipe NewPipe x SponsorBlock (GitHub 2.2k)</a></p>
+<ol>
+<li>同上, 多了 <a href="https://sponsor.ajay.app/">SponsorBlock</a> 和 <a href="https://returnyoutubedislike.com/">Return YouTube Dislike</a> 這兩個功能.</li>
+</ol>
 </li>
 <li>
 <p><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube (GitHub 1.6k)</a></p>
@@ -345,10 +366,15 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
 <p><a href="https://github.com/libre-tube/LibreTube">LibreTube (GitHub 2.3k)</a></p>
 <ol>
 <li>下載 video/audio 是分開的, 得再合併</li>
+<li>下載 video/audio 是合併的 (但下載的過程中只能從通知看到進度)</li>
+<li>Gesture: 看來是不會支援 (參考: <a href="https://github.com/libre-tube/LibreTube/issues/381">https://github.com/libre-tube/LibreTube/issues/381</a>)</li>
 </ol>
 </li>
 <li>
-<p><a href="https://github.com/VueTubeApp/VueTube">VueTube (GitHub 2k)</a>: 這個還真的是在 early beta (2022/7/1), 很多功能都還沒做出來, 再觀察. 他是有計畫未來提供登入 Google 帳號的功能.</p>
+<p><a href="https://github.com/VueTubeApp/VueTube">VueTube (GitHub 2k)</a></p>
+<ol>
+<li>這個還真的是在 early beta (2022/7/1), 很多功能都還沒做出來, 再觀察. 他是有計畫未來提供登入 Google 帳號的功能.</li>
+</ol>
 </li>
 <li>
 <p><a href="https://www.puretuber.com/">PureTuber</a>: 這個大家都不推了</p>
@@ -366,6 +392,7 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
 <ol>
 <li><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus</a></li>
 <li><a href="https://github.com/yattee/yattee">Yattee</a></li>
+<li><a href="https://github.com/VueTubeApp">VueTube</a>: 他同時提供 Android 和 iOS</li>
 </ol>
 <h2 id="參考">參考</h2>
 <ol>
@@ -412,28 +439,28 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-email-notification/" class="nav-link" title="Android 各種 Email 的通知動作">Android 各種 Email 的通知動作</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
+        <a href="https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/" class="nav-link" title="跳過 Podcast 的片頭片尾">跳過 Podcast 的片頭片尾</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a>
+        <a href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" class="nav-link" title="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間">使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/" class="nav-link" title="如何把檔案傳出 Google TV">如何把檔案傳出 Google TV</a>
+        <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/" class="nav-link" title="把 Grafana 的 Alert 訊息發到 LINE 群組">把 Grafana 的 Alert 訊息發到 LINE 群組</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/software/noncompressiblefiles/" class="nav-link" title="使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案">使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</a>
+        <a href="https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/" class="nav-link" title="檔案搜尋替代工具">檔案搜尋替代工具</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/" class="nav-link" title="點對點網路測速軟體 iPerf3">點對點網路測速軟體 iPerf3</a>
+        <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" class="nav-link" title="如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)">如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)</a>
+        <a href="https://dennys.github.io/tw/doc/grafana/prometheus-mail/" class="nav-link" title="Prometheus Mail">Prometheus Mail</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/tw/doc/network/openvpn-server/" class="nav-link" title="OpenVPN server 簡易安裝使用 (Ubuntu)">OpenVPN server 簡易安裝使用 (Ubuntu)</a>
+        <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
       </li>
     </ul>
     <div>
@@ -441,12 +468,17 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">50</span>
+          <span class="button_tally">64</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
           生活大小事
           <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/categories/documentation/' class="post_tag button button_translucent" title="documentation">
+          DOCUMENTATION
+          <span class="button_tally">1</span>
         </a>
         
         
@@ -455,14 +487,14 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
     <div>
       <h2 class="mt-4 taxonomy" id="series-section">專欄</h2>
       <nav class="tags_nav">
-        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
-          ANDROID-改機
+        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
+          ANDROID-使用小技巧
           <span class="button_tally">7</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
-          ANDROID-使用小技巧
-          <span class="button_tally">6</span>
+        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
+          ANDROID-改機
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="asuswrt-merlin-改機">
@@ -488,7 +520,12 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
-          <span class="button_tally">14</span>
+          <span class="button_tally">16</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/java/' class="post_tag button button_translucent" title="java">
@@ -506,18 +543,23 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
+          NETWORK
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/root/' class="post_tag button button_translucent" title="root">
           ROOT
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
-          PIXEL-5
+        <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class="post_tag button button_translucent" title="grafana-prometheus">
+          GRAFANA-PROMETHEUS
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
+        <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
+          PIXEL-5
           <span class="button_tally">5</span>
         </a>
         
@@ -536,19 +578,9 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
           <span class="button_tally">4</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
-          NETWORK
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/database/' class="post_tag button button_translucent" title="database">
-          DATABASE
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://dennys.github.io/tw/tags/vpn/' class="post_tag button button_translucent" title="vpn">
           VPN
-          <span class="button_tally">3</span>
+          <span class="button_tally">4</span>
         </a>
         
         
@@ -557,11 +589,15 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=14 title="android">ANDROID<span class="button_tally">14</span>
+            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=16 title="android">ANDROID<span class="button_tally">16</span>
             </a>
             
             
             <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=4 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">4</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/camera/' class=" post_tag button button_translucent" data-position=2 title="camera">CAMERA<span class="button_tally">2</span>
             </a>
             
             
@@ -577,6 +613,10 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
             </a>
             
             
+            <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class=" post_tag button button_translucent" data-position=5 title="grafana-prometheus">GRAFANA-PROMETHEUS<span class="button_tally">5</span>
+            </a>
+            
+            
             <a href='https://dennys.github.io/tw/tags/hardware/' class=" post_tag button button_translucent" data-position=1 title="hardware">HARDWARE<span class="button_tally">1</span>
             </a>
             
@@ -589,7 +629,7 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=1 title="line">LINE<span class="button_tally">1</span>
+            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=3 title="line">LINE<span class="button_tally">3</span>
             </a>
             
             
@@ -601,11 +641,19 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=4 title="network">NETWORK<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=6 title="network">NETWORK<span class="button_tally">6</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/pixel/' class=" post_tag button button_translucent" data-position=1 title="pixel">PIXEL<span class="button_tally">1</span>
             </a>
             
             
             <a href='https://dennys.github.io/tw/tags/pixel-5/' class=" post_tag button button_translucent" data-position=5 title="pixel-5">PIXEL-5<span class="button_tally">5</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/podcast/' class=" post_tag button button_translucent" data-position=1 title="podcast">PODCAST<span class="button_tally">1</span>
             </a>
             
             
@@ -617,7 +665,11 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=12 title="software">SOFTWARE<span class="button_tally">12</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/sony-rx100/' class=" post_tag button button_translucent" data-position=1 title="sony-rx100">SONY-RX100<span class="button_tally">1</span>
             </a>
             
             
@@ -629,7 +681,7 @@ PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的�
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/vpn/' class=" post_tag button button_translucent" data-position=3 title="vpn">VPN<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/tw/tags/vpn/' class=" post_tag button button_translucent" data-position=4 title="vpn">VPN<span class="button_tally">4</span>
             </a>
             
             

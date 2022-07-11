@@ -7,19 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Photo Files Rename Tools (by EXIF).</title>
+      <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>
+      <pubDate>Sun, 10 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</guid>
+      <description>
+        
+          
+            Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
+Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Softwware There are lots of rename tools.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Android Email Notification Actions</title>
+      <link>https://dennys.github.io/en/doc/android/android-email-notification/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/android/android-email-notification/</guid>
+      <description>
+        
+          
+            需求 In previous artiche, we know we can change archive to delete in the Email(Gmail) notification of Android
+(參考: http://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/)
+不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
+K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 GMail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 FairEmail 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
       <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            Many Podcast have an introduction, if you want to skip it, you can use Pocket Casts (This feature is provided in free version.)
-Steps:
-Choose your podcast. Click the gear icon. Input the length you want to skip in the first or last. 
+            I usually use Spotify to listen Podcast, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
+And I find Pocket Casts has a interested feature, it can skip the first or last *** seconds. It means some Podcasts have an introduction in the beginning, if you want to skip it, you can do it in this app. (This feature is provided in free version.
           
           
         
@@ -44,6 +79,40 @@ Choose your podcast. Click the gear icon. Input the length you want to skip in t
     </item>
     
     <item>
+      <title>Java RESTful service</title>
+      <link>https://dennys.github.io/en/doc/java/java-restful-service/</link>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/java/java-restful-service/</guid>
+      <description>
+        
+          
+             Service Document (Swagger) Validation Authentication Authorizatio Log Test Stress test Auto test, mock, … Management – supervisor – Python vs Golang Monitor – Grafana Monitor – OpenTelemetry, Jaeger, 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab SonarQube Integration with dotNET</title>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
+      <description>
+        
+          
+            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please check the following procedures.
+GitLab + SonarQube (docker) GitLab + SonarQube (non-docker) If you choose non-docer, I think you are still in .NET 4.8 or below. You can reference http://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/ to build .NET 4 applications in GitLab CI/CD flow. And you can following the following procedures to integrate SonarQube.
+Reference this document to integrate GitLab and SonarQube.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
       <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
@@ -52,7 +121,7 @@ Choose your podcast. Click the gear icon. Input the length you want to skip in t
       <description>
         
           
-            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           

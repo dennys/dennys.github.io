@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>跳過 Podcast 固定的片頭片尾</title>
+      <title>Android 各種 Email 的通知動作</title>
+      <link>https://dennys.github.io/tw/doc/android/android-email-notification/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-email-notification/</guid>
+      <description>
+        
+          
+            需求 在上次的文章中, 我們知道預設 Android 的通知是 封存, 然後可以把封存改為刪除, 但沒法兩者同時出現.
+不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
+K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 Gmail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 FairEmail 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>跳過 Podcast 的片頭片尾</title>
       <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            很多 Podcast 都會有固定的片頭和片尾, 有時候實在很想要跳過他, 找到這個軟體有這功能. Pocket Casts
+            我通常都用 Spotify 來聽 Podcast, 後來也會和家人共用, 但這樣有時候就會混在一起, 想說找別的 App 分開使用. 無意中看到 Pocket Casts 這個 App 滿有意思的, 她有個功能是可以跳過固定的片頭和片尾 (依據秒數), 免費版就有這功能了.
 步驟如下:
 選擇要調整的 Podcast. 進去設定. 選擇你要跳過的時間. 
           
@@ -66,6 +84,23 @@ LINE Notify 設定 開一個新的聊天室, 並邀請 LINE Notify 這個帳號�
     </item>
     
     <item>
+      <title>檔案搜尋替代工具</title>
+      <link>https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/</link>
+      <pubDate>Wed, 06 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/</guid>
+      <description>
+        
+          
+            需求 免費軟體 支援 UTF-8 可在搜尋結果直接顯示部分內容 (不然沒有前後文的情況下, 一個一個點進去其實很花時間) Double click 搜尋結果就可以打開檔案編輯 最好是能 replace 愈快愈好 (廢話) 軟體比較 找了三個免費軟體來試試看
+grepWin SearchMyFiles Find and Replace (FNR) grepWin SearchMyFiles Find and Replace (FNR) GitHub star 1.2K N/A N/A UTF-8 有 有些地方怪怪的 有 顯示部分內容 有 (放在欄位) 有 (放在欄位) 有 (下方獨立 panel) Double click 開檔 有 有 (可調整) 有 Replace 有 有 有 速度 快 快 稍慢 結論 還滿意外的,
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
       <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
@@ -81,6 +116,23 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
 執行下列指令啟動 exporter
 1$ openvpn-access-exporter --file /usr/local/openvpn_as/etc/db/log.db 2[2022-07-05T23:10:41Z INFO openvpn_access_exporter] Using file: /usr/local/openvpn_as/etc/db/log.db 連線到 http://localhost:9185, 就會看到類似下面的 metrics
 1# HELP access_counter Requests counter 2# TYPE access_counter counter 3access_counter 61 4# HELP openvpn_user_bytes_in Bytes in 5# TYPE openvpn_user_bytes_in gauge 6openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.x.x.x&amp;#34;,session_id=&amp;#34;hYTtny0ozcppC3tS&amp;#34;,username=&amp;#34;user1&amp;#34;,vpn_ip=&amp;#34;172.27.224.2&amp;#34;} 3623 1656473784000 7openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Prometheus Mail</title>
+      <link>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-mail/</guid>
+      <description>
+        
+          
+            如何修改 Prometheus mail template: https://velenux.wordpress.com/2021/04/23/how-to-change-prometheus-alertmanager-e-mail-template/
+https://ithelp.ithome.com.tw/m/articles/10271492
           
           
         
@@ -108,6 +160,89 @@ PostgreSQL 的 docker-compose.yml 如下:
     </item>
     
     <item>
+      <title>ActivityWatch</title>
+      <link>https://dennys.github.io/tw/doc/software/activity-watch/</link>
+      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/activity-watch/</guid>
+      <description>
+        
+          
+            需求 他有一堆 Watcher https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers
+Chrome Plugin 如果要看他開的是哪個 tab, 可裝這個 https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi
+方法 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>HandBrake</title>
+      <link>https://dennys.github.io/tw/doc/software/handbrake/</link>
+      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/handbrake/</guid>
+      <description>
+        
+          
+            需求 HandBrake
+參考 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NeoVIM</title>
+      <link>https://dennys.github.io/tw/doc/software/neovim/</link>
+      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/neovim/</guid>
+      <description>
+        
+          
+            需求 參考 https://ddadaal.me/articles/from-vscode-to-vim-to-both
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Windows Terminal Power Shell</title>
+      <link>https://dennys.github.io/tw/doc/software/windows-terminal-power-shell/</link>
+      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/windows-terminal-power-shell/</guid>
+      <description>
+        
+          
+            需求 參考 如何打造一個華麗又實用的 PowerShell 命令輸入環境 安裝新版 Oh My Posh 與插件來美化 PowerShell Windows Terminal 完美配置PowerShell 7.1 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>看圖軟體</title>
+      <link>https://dennys.github.io/tw/doc/software/image-viewer/</link>
+      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/image-viewer/</guid>
+      <description>
+        
+          
+            需求 IrfanView, 唯一缺點: free for non-commercial use, 不是 open source Imagine, freeware, no restriction. JPEGView: GPL, 缺了一些基本編輯功能 (ex: 裁切和改變大小), 而且他的 portable mode 得去裝 https://portableapps.com/apps/graphics_pictures/jpegview_portable XnView: 他的 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>如何修改 Android 預設的 YouTube App</title>
       <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
@@ -119,6 +254,25 @@ PostgreSQL 的 docker-compose.yml 如下:
             需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品, 但預設開啟 YouTube 的 App 如果沒有一起改掉, 用起來就沒那麼方便.
 作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
 這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe為例, 進去後選擇&amp;quot;+ 新增連結&amp;quot;. 拉到最下面, 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App. 結果 可以試著用 Chrome 找一些影片, 然後試著打開她, 選 YouTube, 他就會啟動 NewPipe 了. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>YouTube 各種加強工具</title>
+      <link>https://dennys.github.io/tw/doc/software/youtube-private-video/</link>
+      <pubDate>Fri, 01 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/youtube-private-video/</guid>
+      <description>
+        
+          
+            注意這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!!整理一下 YouTube 在各平台上的各種加強工具.
+PC Browser (Chrome, Edge, Firefox, Opera) Enhancer for YouTube 比較奇怪的是, 他首頁強調的 當游標在播放器上時，使用滑鼠滾輪控制音量, 預設卻是關閉的, 要自己進去打開才會生效.
+Magic Actions for YouTube 上次更新是 2021/5/2, 而且他有可能會拿走你的所有瀏覽紀錄 (參考: https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/)
+PC 下載 (Linux, macOS, Windows) youtube-dl 或是 ytl-dp 參考: https://dennys.github.io/tw/doc/software/download-youtube-private-video/ Android Vanced: 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於NewPipe Extractor. 試玩了幾個, 每個人的需求不同, 對我來講比較有感的是這幾個功能 官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大. 手勢, 尤其前後快傳真的好用. 下載的時候把影音合併, 這還滿重要的, 不然還得另外合併, 會很麻煩. Chromecast, 這個雖然不常用, 但要投影到電視的時候就很方便.
           
           
         
@@ -144,6 +298,23 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
     </item>
     
     <item>
+      <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
+      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
+      <pubDate>Thu, 30 Jun 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
+      <description>
+        
+          
+            需求 因為要使用 ActivityWatch 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 Remote server 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: https://github.com/ActivityWatch/aw-watcher-web/issues/44), 因此放棄 Remote server 這招, 改用 SSH Tunnel (SSH port forwarding) 來實現需求.
+簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 只收 localhost 的連線, 不對外開放, 然後我在 client 的 AP 要連上那個 service. 方法 啟動 server, 他要去聽 http://localhost:5600 在 client 上面執行 ssh 1ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
       <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0800</pubDate>
@@ -152,7 +323,7 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行. 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
+            提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
 2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01 上的討論, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
           
           
@@ -279,7 +450,7 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
       <description>
         
           
-            注意 這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!! 前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
+            注意這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!!前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
 走紅外線, 這個 Infocus 電視行不通, mobile01 上面很多人也都測過了, 不支援. 走 HDMI-CEC, 這個測試起來也是不支援. 但奇怪的是, Google TV 卻可以走 HDMI-CEC 控制電視? 改變 Google TV 的對外輸出音量 (既然無法改變電視的音量, 但總可以改變 Google TV 對外的音量吧). 做法 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇音量控制 音量控制的部分選擇 &amp;quot;Chrome&amp;quot;, 其實從這裡就可以看到 Google TV 支援的 3 種方法了 實際操作時, 可以看到 Google TV 的音量調整和電視機本身的是不一樣的兩組. 本來想截圖, 但發現 Google TV 的音量調整不會被截到, 就算了.
           
           
@@ -303,6 +474,23 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
 打開電視機的 HDMI-CEC 功能 進入設定畫面 選 HDMI 模式 將&amp;quot;智慧連接&amp;quot;打開 將&amp;quot;自動開機&amp;quot;打開 奇怪的是, Google TV 卻沒辦法用 HDMI-CEC 控制 Infocus 電視的音量 注意, 下面的貼圖是抓官方說明書, 裡面寫的是&amp;quot;關閉&amp;quot;, 請勿照著設定, 要記得打開 Google TV 的設定
 進入 Google TV 的設定, 選擇顯示和音效 選擇 HDMI-CEC 選擇啟用 HDMI-CEC 遙控器的設定
 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇 CEC 選擇 CEC 成果 這樣就完成了, 之後把 Google TV 打開時, 大概 1 秒就會把電視也打開, 關機也是一樣, 還是會有一點時間差, 而且是有感的, 但已經方便太多了.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Doc (test)</title>
+      <link>https://dennys.github.io/tw/doc/hugo/gitlab-checkmarx-integration/</link>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/hugo/gitlab-checkmarx-integration/</guid>
+      <description>
+        
+          
+            this is a test document
+themes\LoveIt\assets\css\_variables.scss$global-font-size: 20px !default; =&amp;gt; change font size from 16 to 20
           
           
         
@@ -524,7 +712,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
 自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個...)
 爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
 修改步驟 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 https://dennys.
@@ -543,7 +731,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
 方法 1 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
 用 fastboot 刷回原始的 boot.img
 1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 方法 2 其實 Magisk 有這個功能刷回原始的 boot.img
@@ -590,7 +778,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
 最有名的 LineageOS 15~19.1 (Android 8~12L) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 安裝 Samsung USB drivar 和 ODIN Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN 是用來刷 firmware 的工具, 請在這裡下載並安裝: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19.1: https://forum.xda-developers.com/t/4369001/ LineageOS 18: https://forum.
           
@@ -608,7 +796,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
 安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好. https://developer.android.com/studio/releases/platform-tools#downloads
 ===================================================
 手機解鎖 Unlock 步驟 請記得先備份資料, 因為解鎖會清空資料
@@ -630,8 +818,59 @@ fastboot reboot
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
+            提醒這個方法不用 Root, 但需要從電腦上執行.需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
 要注意的是, 他會清除所有 toggle (就是說, 設完以後, 你的快速設定就只剩下 Wi-Fi 和行動數據兩個), 不過這再加回來就好了.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>大尺寸 Pixel 3/4/5 &amp; Galaxy S8/S9/10</title>
+      <link>https://dennys.github.io/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</link>
+      <pubDate>Thu, 16 Dec 2021 07:17:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</guid>
+      <description>
+        
+          
+            需求如下, 看來是 Pixel 3 XL 最符合, 不過 4GB 不知道會不會 lag…
+大螢幕 (&amp;gt;6″) 無線充電 指紋辨識 Google 相簿 (optional) 插卡 (optional, 好像也用不太到) 不玩遊戲, 不看影片 Pixel 3 XL
+Pixel 3a XL
+Pixel 4 XL
+Pixel 4a 5G
+Pixel 5
+Pixel 5a
+Galaxy S8+
+Galaxy S9+
+Galaxy S10+
+上市時間
+2018/10
+2019/5
+2019/10
+2020/9
+2020/10
+2021/8
+2017/4
+2018/2
+2019/2
+上市價格
+31100
+34100
+17100
+29550
+32550
+15990
+18990
+未上市
+(US$499)
+27900
+28900
+29900
+31900
+32900
+39900
           
           
         
@@ -669,7 +908,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
 官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0 ODIN: https://odindownloader.com/ 下載 TWRP 以及 Magisk TWRP: https://androidfilehost.com/?fid=818070582850510050 Magisk: https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 安裝 TWRP 步驟 打開 Samsung Galaxy View 的工程模式 (參考 這裡) 重開機進入 download mode 執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了 安裝 Magisk 把 Magisk-v20.
           
           
@@ -686,7 +925,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
 Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ 安裝 htc driver https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z TWRP 可參考以下兩篇 https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.com/root-htc-ultra/ Magisk 安裝 參考: https://izaka.tw/android-magisk-installation-guide/
 用手機從這裡下載 Magisk-v20.3.zip https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 重開進入 TWRP (指令: adb wait-for-device reboot recovery) 選擇 INSTALL, 路徑選擇 /sdcard/Download 選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash 重開系統 Magisk Module YouTube Vanced 如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced 要把 Google Play 的自動更新關閉 LineageOS 官網
           
@@ -704,7 +943,7 @@ Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ �
       <description>
         
           
-            注意 FreshJR_Qos已停止維護, 請改用 FlexQoS FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
+            注意FreshJR_Qos已停止維護, 請改用 FlexQoSFreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
 安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
 原文: https://www.snbforums.com/threads/36836/ 中文摘要翻譯: https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html 如何確定安裝成功
 執行 /jffs/script/FreshJR\_QOS -debug Undf FlowID 的值如果不是 17, 那就安裝成功了 安裝前 &amp;amp; 測試結果 設定如下: 測試結果: http://www.dslreports.com/speedtest/58928634 安裝後 &amp;amp; 測試結果 設定如下: 測試結果: http://www.dslreports.com/speedtest/58929066 後記 FreshJR_Qos已停止維護, 請改用 FlexQoS
@@ -723,7 +962,7 @@ Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ �
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
 Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
 要注意的是, Diversion 為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 FAQ 看一下這是甚麼東西還有他能做的事情.
 安裝步驟 Asuswrt Merlin Web GUI 設定 Asuswrt Merlin 的 Web GUI 只要把 JFFS 打開就好, 其他都得使用 command line.
@@ -779,10 +1018,173 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! PTool 是甚麼 PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!PTool 是甚麼 PTool 是個可以修改 Panasonic Lumix 系列相機的工具程式. 使用這個程式的主要原因是, 我的相機是買香港的水貨, 問題在於香港是使用 PAL (25fps), 但台灣是 NTSC (30fps), 因此在日光燈下錄影出來就會有水波紋...
 功能 Basic Version incremental (打勾) Prevent version compare (打勾) FPS change G2 預設錄影是 25fps, 而 NTSC 是 29.97fps, 打勾這兩個可以改成 30fps
 720p59,94fps-&amp;gt;29.97 PAL &amp;lt;-&amp;gt; NTSC Manual movie mode Manual Movie Modes (打勾) 手動錄影的操作方式如下 (不需要轉到錄影模式)
 開機 選 PASM 任一種 按下 Menu/Set 再按一下 Menu/Set 這時候左下角的 icon 就會變成錄影 M, 就可以調整 ISO, 光圈, 快門了.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GF5, LX7, RX100</title>
+      <link>https://dennys.github.io/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/gf5-lx7-rx100/</link>
+      <pubDate>Sat, 06 Oct 2012 20:22:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/gf5-lx7-rx100/</guid>
+      <description>
+        
+          
+            Panasonic GF5 + 20mm F1.7
+Panasonic LX7
+Sony RX100
+焦段
+20mm
+24-90mm
+28-100mm 光圈
+F1.7
+F1.4-2.3
+F1.8-4.9
+體積 (mm)
+107.7 x 66.6 x 36.8mm
+鏡頭: 63x25.5mm
+111 x 67 x 46 mm
+102 x 59 x 36 mm
+重量 (g)
+225g (不含鏡頭)
+269g
+213g
+重量 (含電池,SD)
+267g (不含鏡頭)
+367g (含20mm鏡頭)
+298g
+240g
+像素
+1210 萬
+1270 萬
+2020 萬
+CCD
+4/3&amp;quot;
+1/1.7&amp;quot;
+1&amp;quot;
+連拍
+4fps
+5fps
+10fps
+錄影
+1920x1080@60i (17Mbps)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Panasonic m43 相機, 鏡頭規格</title>
+      <link>https://dennys.github.io/2012/09/panasonic-m43.html</link>
+      <pubDate>Sat, 22 Sep 2012 00:23:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/2012/09/panasonic-m43.html</guid>
+      <description>
+        
+          
+            G2
+GH2
+G5
+GH3
+發佈日期
+2010年4月
+2010年9月
+2012年10月 2012年12月 體積 (mm)
+124 x 84 x 74
+124 x 90 x 76
+112 x 83 x 71
+133 x 93 x 82.0
+重量 (g)
+371g
+392g
+346g
+470g
+重量 (含電池,SD)
+428g
+434g
+396g
+550g
+像素
+1210 萬
+1605 萬
+1605 萬
+1605 萬
+連拍
+3.2 fps
+5 fps
+6 fps
+6 fps
+錄影
+AVCHD Lite:
+720, 60p (30 fps)
+720, 50p (25 fps)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>m43 用閃光燈</title>
+      <link>https://dennys.github.io/2012/09/flash.html</link>
+      <pubDate>Sat, 08 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/2012/09/flash.html</guid>
+      <description>
+        
+          
+            For Panasonic m43
+型號
+GN
+重量
+(無電池)
+體積
+優點
+缺點
+價位
+備註
+Nissin Di466
+33
+240g
+67x105x95mm
+不能擺頭
+&amp;lt;4,000
+Panasonic DMW-FL360
+36
+270g
+67x108x95mm
+支援FP
+回電速度慢
+8,000~9,000
+Panasonic DMW-FL500
+50
+375g
+79x141x107mm
+支援FP
+貴
+16,000~17,000
+很少二手貨
+Metz 50 AF-1
+50
+340g
+71x137x99mm
+10,000~11,000
+Metz 58 AF-2
+58 (ISO 100/105mm)
+42 (ISO 100/50mm)
+355g
+71×148×99mm
+12,000~15,000
+Cactus AF50
+不常見?
           
           
         
@@ -949,7 +1351,7 @@ XBMC Constellation: 我其實最剛開始是看到這個, 可以看一下這裡�
       <description>
         
           
-            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
 解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
@@ -971,7 +1373,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意 這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失... 前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
+            注意這是給想要用 DD-WRT 3G 上網&amp;quot;嘗鮮&amp;quot;所用, 所有的設定在重開機後都會消失...前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 http://digiland.tw/viewtopic.php?id=914 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所以就這樣子測試了. 如果您也只是想嘗鮮一下, 可以試試看我的方法.
 參考文章 數位天堂: DD-WRT 3G 測試 數位天堂: Lly 韌體 (Oleg 韌體分支) 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: DD-WRT 前置準備 DD-WRT firmware 已經刷好 (我是用這個) 在 Hub 開機前把 USB 網卡插入 (這地方還需要多測試, 目前開機後再插入常常會抓不到) 要打開DD-WRT的PPPoE (這裡不懂為何一定要開, 因為後面反正還是要 kill 掉.
           
           
@@ -988,7 +1390,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
 參考文章 數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: CDMA@wifi 1.9.2.7-10-USB-1.71 前置準備 將 firmware 改刷成 CDMA@wifi (方法請參考上面的 WL-500g 系列改機基本步驟) 把 SIM 卡的 pin code 給 disable 步驟 設定 3G 上網
           
           
@@ -1005,7 +1407,7 @@ java.lang.OutOfMemoryError: PermGen space
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
 因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, 原來已經有人做出這種產品了, 譬如 EDIMAX 3G-6200n 或是 ZALiP CDW530AM, 價錢也還好. 不過呢, 一來都是沒聽過的廠牌, 二來則是, 這樣就不好玩了啊, 所以最後還是決定找一個可以自行改機的方案來實現透過分享器的 3G 上網來玩玩.
 ps: Vigor 的 hub 也有支援 3G, 不過目前還沒有研究.
 硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 選用 500gP V1 的原因在於 (1) 他有 8MB firmware, 可以玩的花樣比較多 (2) 有人已經改機改到 128MB RAM 了
@@ -1024,7 +1426,7 @@ ps: Vigor 的 hub 也有支援 3G, 不過目前還沒有研究.
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: Tomato DualWan (1.23.0410 和 1.23.0441) 前置準備 將 firmware 刷為 Tomato DualWan, 請參考官方教程 把 SIM 卡的 pin code 給 disable 設定步驟 設定比 CDMA@wifi 簡單許多, 如下圖, 先把 USB 給 enable 起來 (紅框部份).
           
           
@@ -1064,7 +1466,7 @@ X 的 進了電梯之後, 看著數字從 B 變成 1. 突然間, 電梯震了一
       <description>
         
           
-            注意 這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了 這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
+            注意這篇文章是基於 第一代的 XBox, 這機器都已停產超過 10 年以上了這篇是寫給自己看的, 這樣以後才知道 upgrade 時要作些什麼...
 XBMC 現在的安袝比以前簡單多了, download, 解開, 就可以執行了, 鄀要設定的地方很少了, 只做了幾個動作.
 把喜歡的字型放到 media\Fonts, 戁是直接把 arial.ttf 蓋掉. 把 language 目錄下用不到的語言檔刪除. 把 skin\PM3.HD\language 目錄裡面用不到的語言檔都刪除. 修改 skhn\Project Mayhem III\NTSC\Font.pml 或是 skin\PM3.HD\720p (看你用哪個 skin), 把字型放大, 因為懶得研究哪個設定是對應到那個項目的, 所以我把所有小於 24 的全部都改成 24. 不過說實在的, 覺得還是有點小. 如果是全新安裝, 到這裡就可以了. 如果是升級, 把之前的 UserData 目錄拿來用, 就所有的設定和資料都回來 幾個比較重要的設定檔如下:
 UserData\guisettings.xmd: 所有的 GUI 設定都在這裡, 萬一設定搞爛掉了 (設定錯誤的字型或 skin, 會讓整個畫面的字都亂掉), 可以備份這個檔案回來即可 UserData\sources.xml: 這檔案放的是外部資源的設定, 譬如設定把家裏其他電腦用網路芳鄰分享出來的目錄, 就會存在這個檔案裡面 最後, 關於 XBMC 9.
@@ -1109,8 +1511,8 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
       <description>
         
           
-            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
+            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
 1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過.
           
           
@@ -1127,7 +1529,7 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
+            注意這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
 1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了.
           
           
@@ -1162,7 +1564,7 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <description>
         
           
-            注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
 1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
           

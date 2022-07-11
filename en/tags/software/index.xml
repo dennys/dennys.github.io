@@ -7,19 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jul 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Photo Files Rename Tools (by EXIF).</title>
+      <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>
+      <pubDate>Sun, 10 Jul 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</guid>
+      <description>
+        
+          
+            Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
+Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Softwware There are lots of rename tools.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
       <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
       <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            Many Podcast have an introduction, if you want to skip it, you can use Pocket Casts (This feature is provided in free version.)
-Steps:
-Choose your podcast. Click the gear icon. Input the length you want to skip in the first or last. 
+            I usually use Spotify to listen Podcast, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
+And I find Pocket Casts has a interested feature, it can skip the first or last *** seconds. It means some Podcasts have an introduction in the beginning, if you want to skip it, you can do it in this app. (This feature is provided in free version.
           
           
         

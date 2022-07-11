@@ -53,8 +53,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
-"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
+"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -164,7 +164,7 @@
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/" title="Command Line Deploy on WebLogic">Command Line Deploy on WebLogic</a>
+        <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="Maven 2 - 打包 war (含 applet)">Maven 2 - 打包 war (含 applet)</a>
       </h3>
       
   <div class="post_meta">
@@ -174,21 +174,293 @@
 </svg>
 </span>
     <span class="post_date">
-      Mar 21, 2009</span>
+      Sep 28, 2011</span>
+    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=Maven%202%20-%20%e6%89%93%e5%8c%85%20war%20%28%e5%90%ab%20applet%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-2-war-applet%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-2-war-applet%2f&t=Maven%202%20-%20%e6%89%93%e5%8c%85%20war%20%28%e5%90%ab%20applet%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的目錄結構放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).
+另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:
+先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/java/maven-2-war-applet/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="Maven 1 - 打包 Jar, Applet 並簽名 Sign">Maven 1 - 打包 Jar, Applet 並簽名 Sign</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Sep 27, 2011</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
+        </a><a href='https://dennys.github.io/tw/tags/maven/' title="Maven" class="post_tag button button_translucent">Maven
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fmaven-1-jar-applet-sign%2f&t=Maven%201%20-%20%e6%89%93%e5%8c%85%20Jar%2c%20Applet%20%e4%b8%a6%e7%b0%bd%e5%90%8d%20Sign" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>Maven 1 - 打包 Jar, Applet 並簽名 Sign','Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.
+以下是要把 Applet 程式打包的寫法, 幾個重點:
+descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="XBMC (XBox, Windows 7) &#43; iPhone">XBMC (XBox, Windows 7) + iPhone</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Aug 3, 2011</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/xbmc/' title="XBMC" class="post_tag button button_translucent">XBMC
+        </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=XBMC%20%28XBox%2c%20Windows%207%29%20%2b%20iPhone&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-xbox-windows-7-iphone%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fxbmc-xbox-windows-7-iphone%2f&t=XBMC%20%28XBox%2c%20Windows%207%29%20%2b%20iPhone" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>XBMC 真是個好東西, 但是一方面 XBox (一代, 不是 XBox 360) 已經很老舊了, 再加上 XBMC 決定不再維護 XBox 版本之後, 就一直在尋找替代產品. Apple TV 是個不錯的東西, 而且也有 XBMC for iOS, 只是一來得花錢買, 二來還是得 JB. 另外 XBMC 也有 Windows 的版本, 不過幾年前用過是覺得不太穩定, 效能也沒有很好, 另外就是, 用 PC 的話, 就沒有遙控器了, 用滑鼠來操作 PC 然後接電視, 總是覺得怪怪的.
+前兩天剛好發現, 有 XBMC remote for iPhone 的軟體, 也有好幾個, 於是就想到了, 或許用 iPhone 來遙控 XBMC 也 …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/posts/201008/2010-car-accident/" title="小紅歷險記">小紅歷險記</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Aug 28, 2010</span>
+    <span class="post_time"> · 1 分鐘閱讀</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=%e5%b0%8f%e7%b4%85%e6%ad%b7%e9%9a%aa%e8%a8%98&url=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f201008%2f2010-car-accident%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f201008%2f2010-car-accident%2f&t=%e5%b0%8f%e7%b4%85%e6%ad%b7%e9%9a%aa%e8%a8%98" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/posts/201008/2010-car-accident/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>前幾天才稱讚過小紅, 還特別貼文說, 即使坐了百萬名車, 還是對她不離不棄, 沒想到就馬上給我出狀況, 差點就要把她送去回收了...
+雖然現在還在夏天, 不過下班時已經有點晚了, 太陽公公早就回家休息去了, 看來今天是無法踩著夕陽的餘暉回家了... 上了車, 插入鑰匙, 發動 ... 不但沒發動, 而且聲音怪怪的, 試了幾次覺得可能是沒電了, 可是大燈還會亮, 不過看起來是比較暗, 所以猜測可能是電池電壓不夠之類的問題... 只是月黑風高又三更半夜了, 去哪生電啊...
+經長輩提示, 大企業的福利真不少, 提供汽車用充電電池也是其中一項. 於是呢, 就去借了電池來試試看了, 第一次拿汽車充電電池, 感想是, 還真重啊, 怎麼和以前小 …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/posts/201008/2010-car-accident/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="設定 WebLogic 的 memory 參數">設定 WebLogic 的 memory 參數</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Apr 2, 2010</span>
     <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/java/' title="Java" class="post_tag button button_translucent">Java
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Command%20Line%20Deploy%20on%20WebLogic&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fcommand-line-deploy-on-weblogic%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e8%a8%ad%e5%ae%9a%20WebLogic%20%e7%9a%84%20memory%20%e5%8f%83%e6%95%b8&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fweblogic-memory-parameter%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fcommand-line-deploy-on-weblogic%2f&t=Command%20Line%20Deploy%20on%20WebLogic" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fjava%2fweblogic-memory-parameter%2f&t=%e8%a8%ad%e5%ae%9a%20WebLogic%20%e7%9a%84%20memory%20%e5%8f%83%e6%95%b8" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -202,7 +474,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -217,11 +489,13 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
-Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
+            <p>注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
+java.lang.OutOfMemoryError: PermGen space
+解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被 …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -231,7 +505,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="抓某個區間的第一筆資料">抓某個區間的第一筆資料</a>
+        <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)">DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</a>
       </h3>
       
   <div class="post_meta">
@@ -241,21 +515,22 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
 </svg>
 </span>
     <span class="post_date">
-      May 6, 2005</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/database/' title="Database" class="post_tag button button_translucent">Database
+      Mar 4, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+        </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=DD-WRT%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2%e5%98%97%e9%ae%ae%20%28%e4%bd%bf%e7%94%a8%20lly%20driver%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fdd-wrt-3g-lly-driver%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fget-first-record-of-a-range-sql%2f&t=%e6%8a%93%e6%9f%90%e5%80%8b%e5%8d%80%e9%96%93%e7%9a%84%e7%ac%ac%e4%b8%80%e7%ad%86%e8%b3%87%e6%96%99" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fdd-wrt-3g-lly-driver%2f&t=DD-WRT%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2%e5%98%97%e9%ae%ae%20%28%e4%bd%bf%e7%94%a8%20lly%20driver%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -269,7 +544,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -284,10 +559,10 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; p_cur_timestamp 5 AND a.update_dt &lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1</p>
+            <p>注意這是給想要用 DD-WRT 3G 上網&quot;嘗鮮&quot;所用, 所有的設定在重開機後都會消失...前言 DD-WRT 官方版本目前並沒有支援 3G, 不過已經有高手弄出來了. 這幾天照著 <a href="http://digiland.tw/viewtopic.php?id=914">http://digiland.tw/viewtopic.php?id=914</a> 的作法把 DD-WRT 的 3G 環境也弄起來了, 在這裡重新整理一下. 和原來的方法基本上是一樣的, 只是我在測試過程中全部都用放在 RAM 的 /tmp, 沒有動到 flash, 也沒有外接任何 storage. 當然, 意思就是說, 重開機就什麼都沒了. 至於為什麼要這樣呢? 其實只是因為不確定這條路通不通, 又不想把現在的 HDD 給動到, 所 …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -297,7 +572,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="How to analyze size of table, index in Oracle">How to analyze size of table, index in Oracle</a>
+        <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="CDMA@wifi (Oleg) 之 3G 上網">CDMA@wifi (Oleg) 之 3G 上網</a>
       </h3>
       
   <div class="post_meta">
@@ -307,21 +582,22 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
 </svg>
 </span>
     <span class="post_date">
-      May 5, 2005</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/database/' title="Database" class="post_tag button button_translucent">Database
+      Mar 1, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+        </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=CDMA%40wifi%20%28Oleg%29%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fcdma-wifi-oleg-3g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdatabase%2fhow-to-analyze-size-of-table-index%2f&t=How%20to%20analyze%20size%20of%20table%2c%20index%20in%20Oracle" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fcdma-wifi-oleg-3g%2f&t=CDMA%40wifi%20%28Oleg%29%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -335,7 +611,7 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -350,26 +626,11 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>看 table 大小:
-<code language="sql">
-SELECT * FROM all_tables WHERE table_name LIKE 'AB%' (記得檢查last_analyzed_date)
-</code></p>
-<p>重新分析 table 大小:
-<code language="sql">
-ANALYZE table TABLE_NAME estimate statisitics
-</code></p>
-<p>看 index 相關資訊:(這裡不會有 block 資訊)
-<code language="sql">
-SELECT * FROM all_indexes WHERE table_name LIKE'AB%'
-</code></p>
-<p>重新分析 index:
-<code language="sql">
-ANALYZE index INDEX_NAME validate structure;
-</code></p>
-<p>看 index 大小: (這個一次只能看最 …</p>
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這是目前 Oleg 系列 firmware 中, 唯一內建支援 3G 的了.
+參考文章 數位天堂: CDMA@wifi 韌體 (支援 3.5G 網卡上網) 數位天堂: WL-500g 系列改機基本步驟 軟硬體 Hub: Asus WL-500gP V1 USB 網卡: Huawei E169 Firmware: …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -379,7 +640,7 @@ ANALYZE index INDEX_NAME validate structure;
   <div class="excerpt">
     <div class="excerpt_header">
       <h3 class="post_link">
-        <a href="https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/" title="Blog 開張 (Movable Type 2.64)">Blog 開張 (Movable Type 2.64)</a>
+        <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="使用 Asus WL-500gP v1 的 3.5G 無線上網">使用 Asus WL-500gP v1 的 3.5G 無線上網</a>
       </h3>
       
   <div class="post_meta">
@@ -389,19 +650,155 @@ ANALYZE index INDEX_NAME validate structure;
 </svg>
 </span>
     <span class="post_date">
-      Aug 16, 2003</span>
+      Jan 9, 2010</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+        </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=%e4%bd%bf%e7%94%a8%20Asus%20WL-500gP%20v1%20%e7%9a%84%203.5G%20%e7%84%a1%e7%b7%9a%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasus-wl-500gp-v1-35g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fasus-wl-500gp-v1-35g%2f&t=%e4%bd%bf%e7%94%a8%20Asus%20WL-500gP%20v1%20%e7%9a%84%203.5G%20%e7%84%a1%e7%b7%9a%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 一般來說, 3G 上網, 是只能用手機, 或是直接透過 USB 接到電腦上, 所以只能給一個裝置上網. 當然, 一台電腦上網之後, 還是有許多花樣可以玩. 一般最簡單的就是 NAT 了, 不過那台電腦就得有兩張網路卡才能這樣玩. 如果是無線網路, 就還可以用 ad-hoc mode. 其實在以前分享器還比較貴的時候, 我也用過 NAT 一段時間, 不過說實在的, 並不是很方便, 而且那台電腦得開機才能使用, 重開機時大家就都斷線了.
+因此呢, 想找一個可以讓 3G 上網也可以透過分享器給家裡其他電腦也使用的方法. 查了一下, …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="Tomato DualWan 之 3G 上網">Tomato DualWan 之 3G 上網</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jan 3, 2010</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
+        </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
+        </a>
+    </span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    分享到:
+    <a href="https://twitter.com/intent/tweet?text=Tomato%20DualWan%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2ftomato-dualwan-3g%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>twitter</title>
+  <use xlink:href="#twitter"></use>
+</svg>
+
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2ftomato-dualwan-3g%2f&t=Tomato%20DualWan%20%e4%b9%8b%203G%20%e4%b8%8a%e7%b6%b2" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <title>facebook</title>
+  <use xlink:href="#facebook"></use>
+</svg>
+
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="分享到 LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <title>linkedin</title>
+  <use xlink:href="#linkedin"></use>
+</svg>
+
+    </a>
+    <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <title>copy</title>
+  <use xlink:href="#copy"></use>
+</svg>
+
+    </a>
+  </div>
+  </span>
+  </div>
+
+    </div>
+      <div class="excerpt_footer">
+        <div class="pale">
+          
+            <p>注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware 強調的是 Dual Wan, 不過目前只可以同時接一個 3G網卡（或手機）, 沒辦法接兩個. 也就是說, 無法同時使用譬如中華電信+威寶3G兩個來loading balance. 但是可以同時使用 ADSL (PPPoE) + 3G, 我有測試過.
+軟硬體 Hub: Asus WL-500gP V1 USB 網卡: …</p>
+          
+          <br>
+          <a href="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        <li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="https://dennys.github.io/tw/posts/201001/2010-elevator/" title="在電梯裡跨年">在電梯裡跨年</a>
+      </h3>
+      
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jan 1, 2010</span>
     <span class="post_time"> · 1 分鐘閱讀</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=Blog%20%e9%96%8b%e5%bc%b5%20%28Movable%20Type%202.64%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f200308%2fblog-initial.zh-tw%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e5%9c%a8%e9%9b%bb%e6%a2%af%e8%a3%a1%e8%b7%a8%e5%b9%b4&url=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f201001%2f2010-elevator%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f200308%2fblog-initial.zh-tw%2f&t=Blog%20%e9%96%8b%e5%bc%b5%20%28Movable%20Type%202.64%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fposts%2f201001%2f2010-elevator%2f&t=%e5%9c%a8%e9%9b%bb%e6%a2%af%e8%a3%a1%e8%b7%a8%e5%b9%b4" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -415,7 +812,7 @@ ANALYZE index INDEX_NAME validate structure;
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/posts/201001/2010-elevator/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -430,10 +827,14 @@ ANALYZE index INDEX_NAME validate structure;
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>開張大吉, 使用 Movable Type 2.64</p>
+            <p>今天是 2009 年的最後一天.
+中午十二點 看著一些同事下午都請假準備回家或去玩了, 想到下午還有會議, 時間竟然還排到六點半 (而且想也知道不會準時結束), 實在是...
+晚上六點 外面天色漸沉, 台上講者口沫橫飛, 台下聽眾的心早已跑到九霄雲...... 內, 現在這麼流行雲, 當然是要在雲端裡面專心聆聽, 熱烈討論啦...
+晚上七點 下班了, 依照往例, 從介壽路警察局旁邊的小路超捷徑... 一般來說, 走這條路, 即使星期五, 最多也只是從家扶中心那邊才開始塞車. 沒想到, 今天才走一半路程, 就卡住了, 看著旁邊的墓仔埔, 真的是 ...
+終於, 到家把車停好了. 本來預計上樓拿個東西就可以出門了, 預計 10 分鐘後回 …</p>
           
           <br>
-          <a href="https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
+          <a href="https://dennys.github.io/tw/posts/201001/2010-elevator/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
         </div>
       </div>
     </div>
@@ -448,9 +849,6 @@ ANALYZE index INDEX_NAME validate structure;
         <a href="/tw/page/6/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/tw/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
         <a href="/tw/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
       </li>
       <li class="page-item">
@@ -462,11 +860,14 @@ ANALYZE index INDEX_NAME validate structure;
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 7" class="page-link" role="button">7</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/tw/page/8/" aria-label="Page 8" class="page-link" role="button">8</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/tw/page/8/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tw/page/8/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </li>
@@ -484,7 +885,10 @@ ANALYZE index INDEX_NAME validate structure;
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/" class="nav-link" title="跳過 Podcast 固定的片頭片尾">跳過 Podcast 固定的片頭片尾</a>
+        <a href="https://dennys.github.io/tw/doc/android/android-email-notification/" class="nav-link" title="Android 各種 Email 的通知動作">Android 各種 Email 的通知動作</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/" class="nav-link" title="跳過 Podcast 的片頭片尾">跳過 Podcast 的片頭片尾</a>
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/" class="nav-link" title="使用 Prometheus Alertmanager Silence 暫時停止通知一段時間">使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</a>
@@ -493,19 +897,16 @@ ANALYZE index INDEX_NAME validate structure;
         <a href="https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/" class="nav-link" title="把 Grafana 的 Alert 訊息發到 LINE 群組">把 Grafana 的 Alert 訊息發到 LINE 群組</a>
       </li>
       <li>
+        <a href="https://dennys.github.io/tw/doc/software/file-find-and-replace-tool/" class="nav-link" title="檔案搜尋替代工具">檔案搜尋替代工具</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
       <li>
+        <a href="https://dennys.github.io/tw/doc/grafana/prometheus-mail/" class="nav-link" title="Prometheus Mail">Prometheus Mail</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
-      </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app.zh-tw/" class="nav-link" title="如何修改 Android 預設的 YouTube App">如何修改 Android 預設的 YouTube App</a>
-      </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
-      </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/" class="nav-link" title="如何分開調整 Android 鈴聲和通知的音量大小">如何分開調整 Android 鈴聲和通知的音量大小</a>
       </li>
     </ul>
     <div>
@@ -513,12 +914,17 @@ ANALYZE index INDEX_NAME validate structure;
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">54</span>
+          <span class="button_tally">64</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
           生活大小事
           <span class="button_tally">6</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/categories/documentation/' class="post_tag button button_translucent" title="documentation">
+          DOCUMENTATION
+          <span class="button_tally">1</span>
         </a>
         
         
@@ -527,14 +933,14 @@ ANALYZE index INDEX_NAME validate structure;
     <div>
       <h2 class="mt-4 taxonomy" id="series-section">專欄</h2>
       <nav class="tags_nav">
-        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
-          ANDROID-改機
+        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
+          ANDROID-使用小技巧
           <span class="button_tally">7</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
-          ANDROID-使用小技巧
-          <span class="button_tally">6</span>
+        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
+          ANDROID-改機
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="asuswrt-merlin-改機">
@@ -560,7 +966,12 @@ ANALYZE index INDEX_NAME validate structure;
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
-          <span class="button_tally">14</span>
+          <span class="button_tally">16</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
+          SOFTWARE
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/java/' class="post_tag button button_translucent" title="java">
@@ -578,23 +989,23 @@ ANALYZE index INDEX_NAME validate structure;
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
+          NETWORK
+          <span class="button_tally">6</span>
+        </a>
+        
         <a href='https://dennys.github.io/tw/tags/root/' class="post_tag button button_translucent" title="root">
           ROOT
           <span class="button_tally">6</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/tags/network/' class="post_tag button button_translucent" title="network">
-          NETWORK
+        <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class="post_tag button button_translucent" title="grafana-prometheus">
+          GRAFANA-PROMETHEUS
           <span class="button_tally">5</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/pixel-5/' class="post_tag button button_translucent" title="pixel-5">
           PIXEL-5
-          <span class="button_tally">5</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/software/' class="post_tag button button_translucent" title="software">
-          SOFTWARE
           <span class="button_tally">5</span>
         </a>
         
@@ -605,11 +1016,6 @@ ANALYZE index INDEX_NAME validate structure;
         
         <a href='https://dennys.github.io/tw/tags/google-tv/' class="post_tag button button_translucent" title="google-tv">
           GOOGLE-TV
-          <span class="button_tally">4</span>
-        </a>
-        
-        <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class="post_tag button button_translucent" title="grafana-prometheus">
-          GRAFANA-PROMETHEUS
           <span class="button_tally">4</span>
         </a>
         
@@ -629,11 +1035,15 @@ ANALYZE index INDEX_NAME validate structure;
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=14 title="android">ANDROID<span class="button_tally">14</span>
+            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=16 title="android">ANDROID<span class="button_tally">16</span>
             </a>
             
             
             <a href='https://dennys.github.io/tw/tags/asuswrt-merlin/' class=" post_tag button button_translucent" data-position=4 title="asuswrt-merlin">ASUSWRT-MERLIN<span class="button_tally">4</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/camera/' class=" post_tag button button_translucent" data-position=2 title="camera">CAMERA<span class="button_tally">2</span>
             </a>
             
             
@@ -649,7 +1059,7 @@ ANALYZE index INDEX_NAME validate structure;
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class=" post_tag button button_translucent" data-position=4 title="grafana-prometheus">GRAFANA-PROMETHEUS<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/tw/tags/grafana-prometheus/' class=" post_tag button button_translucent" data-position=5 title="grafana-prometheus">GRAFANA-PROMETHEUS<span class="button_tally">5</span>
             </a>
             
             
@@ -665,7 +1075,7 @@ ANALYZE index INDEX_NAME validate structure;
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=2 title="line">LINE<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/tw/tags/line/' class=" post_tag button button_translucent" data-position=3 title="line">LINE<span class="button_tally">3</span>
             </a>
             
             
@@ -677,7 +1087,11 @@ ANALYZE index INDEX_NAME validate structure;
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=5 title="network">NETWORK<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/network/' class=" post_tag button button_translucent" data-position=6 title="network">NETWORK<span class="button_tally">6</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/pixel/' class=" post_tag button button_translucent" data-position=1 title="pixel">PIXEL<span class="button_tally">1</span>
             </a>
             
             
@@ -697,7 +1111,11 @@ ANALYZE index INDEX_NAME validate structure;
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=5 title="software">SOFTWARE<span class="button_tally">5</span>
+            <a href='https://dennys.github.io/tw/tags/software/' class=" post_tag button button_translucent" data-position=12 title="software">SOFTWARE<span class="button_tally">12</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/sony-rx100/' class=" post_tag button button_translucent" data-position=1 title="sony-rx100">SONY-RX100<span class="button_tally">1</span>
             </a>
             
             
@@ -721,7 +1139,7 @@ ANALYZE index INDEX_NAME validate structure;
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/youtube/' class=" post_tag button button_translucent" data-position=2 title="youtube">YOUTUBE<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/tw/tags/youtube/' class=" post_tag button button_translucent" data-position=3 title="youtube">YOUTUBE<span class="button_tally">3</span>
             </a>
             
             
@@ -823,6 +1241,6 @@ ANALYZE index INDEX_NAME validate structure;
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
   </body>
 </html>
