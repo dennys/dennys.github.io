@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Jul 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
+      <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
+      <description>
+        
+          
+            K-9 Mail 6.200 is released on 2022/07/08, it add the support to OAuth 2.0. Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail, you need to use App Passwords. It&#39;s not convenient, you can reference https://ekiwi-blog.de/en/16841/ to check the detail with a step-by-step video.
+In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, AOL, and personal Microsoft accounts (Office365 accounts are not supported yet).
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Batch Photo Files Rename Tools (by EXIF).</title>
       <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>

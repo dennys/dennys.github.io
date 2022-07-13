@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenWrt on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/openwrt/</link>
+    <description>Recent content in OpenWrt on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt Router 選購</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
+      <description>
+        
+          
+            需求 最近在 PTT 上面問了一下要刷 OpenWrt 的建議機種.
+最近也在找 OpenWrt 的機器, 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 + Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
+家裡用量除了小孩線上課要開視訊, 平常其實不大 (沒人打電動, 也只有偶爾 半夜看點影片.) 目前 Merlin 有裝 Diversion (擋廣告), QoS, OpenVPN (非常少用)
+我的需求
+AC 就可以了. 要有 USB 16MB/128MB: 這個其實沒甚麼概念, 但官方都這麼建議了. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB. 想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家) 有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份. 結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

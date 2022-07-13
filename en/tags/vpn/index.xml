@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPN on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/vpn/</link>
+    <description>Recent content in VPN on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenVPN on OpenWrt</title>
+      <link>https://dennys.github.io/en/doc/router/openwrt-openvpn/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/router/openwrt-openvpn/</guid>
+      <description>
+        
+          
+            Install package You need to install the 3 packages
+openvpn-easy-rsa openvpn-mbedtls luci-app-openvpn: GUI of LuCI to manage OpenVPN Execute the command 1# opkg update 2# opkg install openvpn-easy-rsa openvpn-mbedtls luci-app-openvpn 3Installing openvpn-easy-rsa (3.0.8-3) to root... 4Downloading https://downloads.openwrt.org/releases/21.02.3/packages/mips_24kc/packages/openvpn-easy-rsa_3.0.8-3_all.ipk 5Installing libopenssl1.1 (1.1.1o-1) to root... 6Downloading https://downloads.openwrt.org/releases/21.02.3/packages/mips_24kc/base/libopenssl1.1_1.1.1o-1_mips_24kc.ipk 7Installing libopenssl-conf (1.1.1o-1) to root... 8Downloading https://downloads.openwrt.org/releases/21.02.3/packages/mips_24kc/base/libopenssl-conf_1.1.1o-1_mips_24kc.ipk 9Installing openssl-util (1.1.1o-1) to root... 10Downloading https://downloads.openwrt.org/releases/21.02.3/packages/mips_24kc/base/openssl-util_1.1.1o-1_mips_24kc.ipk 11Installing openvpn-mbedtls (2.5.3-3) to root... 12Downloading https://downloads.openwrt.org/releases/21.02.3/packages/mips_24kc/packages/openvpn-mbedtls_2.5.3-3_mips_24kc.ipk 13Installing kmod-tun (5.4.188-1) to root... 14Downloading https://downloads.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt ADGuard Home</title>
+      <link>https://dennys.github.io/en/doc/router/openwrt-adguard/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/router/openwrt-adguard/</guid>
+      <description>
+        
+          
+            Reference AdGuard for OpenWrt: https://openwrt.org/docs/guide-user/services/dns/adguard-home AdGuard GitHub: https://github.com/AdguardTeam/AdGuardHome IThome (Traditional Chinese): https://ithelp.ithome.com.tw/articles/10280241 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
