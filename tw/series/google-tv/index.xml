@@ -54,7 +54,7 @@
       <description>
         
           
-            注意 這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!! 前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
+            注意這方法不是真的能控制電視音量, 只是控制 Google TV 的輸出音量!!!前言 Chromecast With Google TV 要控制電視機的 音量 有 3 種方法
 走紅外線, 這個 Infocus 電視行不通, mobile01 上面很多人也都測過了, 不支援. 走 HDMI-CEC, 這個測試起來也是不支援. 但奇怪的是, Google TV 卻可以走 HDMI-CEC 控制電視? 改變 Google TV 的對外輸出音量 (既然無法改變電視的音量, 但總可以改變 Google TV 對外的音量吧). 做法 進入 Google TV 的設定, 選擇遙控器與配件 選擇設定遙控器按鈕 選擇音量控制 音量控制的部分選擇 &amp;quot;Chrome&amp;quot;, 其實從這裡就可以看到 Google TV 支援的 3 種方法了 實際操作時, 可以看到 Google TV 的音量調整和電視機本身的是不一樣的兩組. 本來想截圖, 但發現 Google TV 的音量調整不會被截到, 就算了.
           
           

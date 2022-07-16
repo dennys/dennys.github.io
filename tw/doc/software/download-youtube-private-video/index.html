@@ -26,16 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
-方法 準備工具 youtube-dl  …" />
+<meta name="description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie 即可).
+工具 需要 1.下載工具 2.  …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/software/download-youtube-private-video/" />
 <meta property="og:title" content="如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)" />
-<meta property="og:description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).
-方法 準備工具 youtube-dl  …" />
+<meta property="og:description" content="需求 YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie 即可).
+工具 需要 1.下載工具 2.  …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -50,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" as="script" integrity=
-"sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" as="script" integrity=
+"sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.b79e0a165e2610cbacc3d064c45da3fd19ff4c6c8bcd8fb398525e823635b41b4f8b6249f35964b0612a29726d7c6e27bed8d03df345ec9a14b993d2fa17b4fb.css" integrity="sha512-t54KFl4mEMusw9BkxF2j/Rn/TGyLzY&#43;zmFJegjY1tBtPi2JJ81lksGEqKXJtfG4nvtjQPfNF7JoUuZPS&#43;he0&#43;w==" crossorigin="anonymous">
@@ -163,7 +163,7 @@
 </span>
     <span class="post_date">
       Jun 2, 2022</span>
-    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
+    <span class="post_time"> · 7 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
         </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
@@ -207,44 +207,60 @@
         <nav id="TableOfContents">
   <ol>
     <li><a href="#需求">需求</a></li>
-    <li><a href="#方法">方法</a>
-      <ol>
-        <li><a href="#準備工具">準備工具</a></li>
-        <li><a href="#準備-cookie">準備 cookie</a></li>
-        <li><a href="#使用-youtube-dl-下載">使用 youtube-dl 下載</a></li>
-        <li><a href="#使用-yt-dlp-下載">使用 YT-DLP 下載</a></li>
-      </ol>
-    </li>
+    <li><a href="#工具">工具</a></li>
+    <li><a href="#方法">方法</a></li>
+    <li><a href="#下載直播中的影片-2022715-更新">下載直播中的影片 (2022/7/15 更新)</a></li>
   </ol>
 </nav>
       </div>
     
     <div class="post_body"><h2 id="需求">需求</h2>
-<p>YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie).</p>
-<h2 id="方法">方法</h2>
-<h3 id="準備工具">準備工具</h3>
+<p>YouTube 預設是不能讓人下載影片的, 即使是你自己上傳的影片也是一樣. 然後我的影片大多都設成私人, 就更沒辦法用一堆線上工具下載了. 研究了一下兩年前曾被 GitHub 下架的 youtube-dl, 看來他支援下載私人影片 (不需要帳號密碼, 用 cookie 即可).</p>
+<h2 id="工具">工具</h2>
+<p>需要 1.下載工具 2. 轉檔工具(合併檔案用) 3. 抓 cookie 的工具, 如下:</p>
 <ol>
-<li><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> 或是 <a href="https://github.com/yt-dlp/yt-dlp">ytl-dp</a></li>
-<li>cookie 工具, 我是用 <a href="https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid">Get cookies.txt</a> 這個 Chrome extension</li>
-<li><a href="https://www.ffmpeg.org/download.html">FFmpeg</a>, 轉檔用</li>
+<li>
+<p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> 或是 <a href="https://github.com/yt-dlp/yt-dlp">ytl-dp</a></p>
+</li>
+<li>
+<p><a href="https://www.ffmpeg.org/download.html">FFmpeg</a>, 轉檔用</p>
+</li>
+<li>
+<p>cookie 工具, 我是用 <em>Get cookies.txt</em> 這個 extension, 各 browser 的下載位置如下:</p>
+<ul>
+<li>Chrome (2022年7月被 Google 下架): <a href="https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid">https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid</a></li>
+<li>Edge: <a href="https://microsoftedge.microsoft.com/addons/detail/get-cookiestxt/helleheikohejgehaknifdkcfcmceeip?hl=en">https://microsoftedge.microsoft.com/addons/detail/get-cookiestxt/helleheikohejgehaknifdkcfcmceeip?hl=en</a></li>
+<li>Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/">https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/</a></li>
+</ul>
+<p>(這個 extension 下架的相關討論可參考 <a href="https://www.reddit.com/r/youtubedl/comments/vuatbt">https://www.reddit.com/r/youtubedl/comments/vuatbt</a>)</p>
+</li>
 </ol>
-<h3 id="準備-cookie">準備 cookie</h3>
-<p>既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/05/image-14.png"><img src="https://dennys.files.wordpress.com/2022/05/image-14.png?w=616" alt="" class="wp-image-634"/></a></p>
-<h3 id="使用-youtube-dl-下載">使用 youtube-dl 下載</h3>
-<p>使用如下指令就可以下載檔案了, 要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有一個影片(mp4), 一個聲音 (m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
+<h2 id="方法">方法</h2>
+<ol>
+<li>
+<p>準備 cookie</p>
+<p>既然這是私人影片, 就會卡權限, 因此要準備 cookie. (注意: 這個套件不會去抓無痕模式的 cookie). 安裝好後, 連上 youtube.com, 然後 export 檔案出來就好. 預設他取的名字會是 youtube.com_cookies.txt, 這邊就不修改檔案名稱.
+<a href="https://dennys.files.wordpress.com/2022/05/image-14.png"><img src="https://dennys.files.wordpress.com/2022/05/image-14.png?w=616" alt="" class="wp-image-634"/></a></p>
+</li>
+<li>
+<p>下載檔案</p>
+<ol>
+<li>
+<p>使用 youtube-dl 指令如下, 執行後就可以下載檔案了, 要注意的是, 如果沒有 FFmpeg, youtube-dl 就不會合併檔案, 最後就會有<strong>兩個檔案</strong>, 一個影片(mp4), 一個聲音(m4a), 得要再另外 merge, 很麻煩, 如下圖.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;youtube-dl.exe --format bestvideo+bestaudio --limit-rate 2M cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] 7zTujXuka2c: Downloading MPD manifest
 </span></span><span class="line hl"><span class="ln"> 5</span><span class="cl">WARNING: You have requested multiple formats but ffmpeg or avconv are not installed. The formats won&#39;t be merged.
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl">[dashsegments] Total fragments: 1047
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[download] Destination *****.f136.mp4
+</span></span><span class="line hl"><span class="ln"> 7</span><span class="cl">[download] Destination *****.f136.mp4
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">[download] 100% of 208.99MiB in 02:59
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">[dashsegments] Total fragments: 1047
-</span></span><span class="line"><span class="ln">10</span><span class="cl">[download] Destination *****.f140.mp4
+</span></span><span class="line hl"><span class="ln">10</span><span class="cl">[download] Destination *****.f140.mp4
 </span></span><span class="line"><span class="ln">11</span><span class="cl">[download] 100% of 81.84MiB in 01:48
-</span></span></code></pre></div><p>因此, 直接在下載參數指定 FFmpeg 的目錄位置, 這樣在下載完後, 他就會去呼叫 FFmpeg 執行合併檔案的動作. 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
+</span></span></code></pre></div></li>
+<li>
+<p>因此, 直接在下載參數指定 FFmpeg 的目錄位置, 這樣在下載完後, 他就會去呼叫 FFmpeg 執行合併檔案的動作. 他會把 mp4/m4a 合併成一個 mp4 檔案, 然後把原來的檔案刪除.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;youtube-dl.exe --ffmpeg-location C:\bin\ffmpeg\bin --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
@@ -259,9 +275,11 @@
 </span></span><span class="line hl"><span class="ln">12</span><span class="cl">[ffmpeg] Merging formats into <span class="s2">&#34;******.mp4&#34;</span>
 </span></span><span class="line"><span class="ln">13</span><span class="cl">Delete original file *****.f136.mp4 (pass -k to keep)
 </span></span><span class="line"><span class="ln">14</span><span class="cl">Delete original file *****.f140.mp4 (pass -k to keep)
-</span></span></code></pre></div><h3 id="使用-yt-dlp-下載">使用 YT-DLP 下載</h3>
-<p><a href="https://github.com/yt-dlp/yt-dlp">YT-DLP</a> 是 youtube-dl 的一個 fork, 他自己的官方說明是 &quot;A youtube-dl fork with additional features and fixes&quot;, 兩者的指令也都差不多, 試用了一下也沒甚麼問題, 只是下載完是 .mkv</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;yl-dlp.exe --ffmpeg-location C:\bin\ffmpeg\bin --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
+</span></span></code></pre></div></li>
+<li>
+<p>另外也可以使用 <a href="https://github.com/yt-dlp/yt-dlp">YT-DLP</a> 下載, YT-DLP 是 youtube-dl 的一個 fork, 他自己的官方說明是 &quot;A youtube-dl fork with additional features and fixes&quot;, 
+兩者的指令也都差不多, 試用了一下也沒甚麼問題, 只是下載完是 .mkv</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\youtube</span><span class="c1">&gt;yl-dlp.exe --ffmpeg-location C:\ffmpeg\bin --format bestvideo+bestaudio --limit-rate 2M --cookies=youtube.com_cookies.txt https://www.youtube.com/watch?v=********/</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] 7zTujXuka2c: Downloading webpage
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] 7zTujXuka2c: Downloading android player API JSON
 </span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] 7zTujXuka2c: Downloading m3u8 information
@@ -276,10 +294,121 @@
 </span></span><span class="line"><span class="ln">13</span><span class="cl">[dashsegments] Total fragments: 1047
 </span></span><span class="line"><span class="ln">14</span><span class="cl">[download] Destination *****.f140.mp4
 </span></span><span class="line"><span class="ln">15</span><span class="cl">[download] 100% of 81.84MiB in 02:16
-</span></span><span class="line"><span class="ln">16</span><span class="cl">[Merger] Merging formats into <span class="s2">&#34;******.mkv&#34;</span>
+</span></span><span class="line hl"><span class="ln">16</span><span class="cl">[Merger] Merging formats into <span class="s2">&#34;******.mkv&#34;</span>
 </span></span><span class="line"><span class="ln">17</span><span class="cl">Delete original file *****.f247.webm (pass -k to keep)
 </span></span><span class="line"><span class="ln">18</span><span class="cl">Delete original file *****.f140.mp4 (pass -k to keep)
-</span></span></code></pre></div>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+</ol>
+<h2 id="下載直播中的影片-2022715-更新">下載直播中的影片 (2022/7/15 更新)</h2>
+<ol>
+<li>
+<p>嘗試下載直播中的影片, 失敗. 錯誤訊息是說影片格式不支援.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">PS D:\youtube<span class="p">&gt;</span> .\yt-dlp.exe --format bestvideo+bestaudio --limit-rate 2M https://www.youtube.com/********
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl">[youtube] wYyS4yx07mc: Downloading webpage
+</span></span><span class="line"><span class="ln">4</span><span class="cl">[youtube] wYyS4yx07mc: Downloading android player API JSON
+</span></span><span class="line"><span class="ln">5</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line"><span class="ln">6</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line hl"><span class="ln">7</span><span class="cl">ERROR: [youtube] wYyS4yx07mc: Requested format is not available. Use --list-formats for a list of available formats
+</span></span></code></pre></div></li>
+<li>
+<p>在直播過程中看一下影片格式</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">PS D:\youtube<span class="p">&gt;</span> .\yt-dlp.exe --list-formats https://www.youtube.com/watch?v=**********
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] wYyS4yx07mc: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] wYyS4yx07mc: Downloading android player API JSON
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[info] Available formats for wYyS4yx07mc:
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">ID  EXT RESOLUTION FPS │   TBR PROTO │ VCODEC        VBR ACODEC    ABR
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">──────────────────────────────────────────────────────────────────────
+</span></span><span class="line hl"><span class="ln"> 9</span><span class="cl">91  mp4 256x144     30 │  269k m3u8  │ avc1.4d400c  269k mp4a.40.5  0k
+</span></span><span class="line hl"><span class="ln">10</span><span class="cl">92  mp4 426x240     30 │  507k m3u8  │ avc1.4d4015  507k mp4a.40.5  0k
+</span></span><span class="line hl"><span class="ln">11</span><span class="cl">93  mp4 640x360     30 │  962k m3u8  │ avc1.4d401e  962k mp4a.40.2  0k
+</span></span><span class="line hl"><span class="ln">12</span><span class="cl">94  mp4 854x480     30 │ 1282k m3u8  │ avc1.4d401f 1282k mp4a.40.2  0k
+</span></span><span class="line hl"><span class="ln">13</span><span class="cl">300 mp4 1280x720    60 │ 2922k m3u8  │ avc1.4d4020 2922k mp4a.40.2  0k
+</span></span></code></pre></div></li>
+<li>
+<p>直播結束後, 再看一次下影片格式 =&gt; 這是後來直播結束後再補的</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">PS D:\bin\youtube<span class="p">&gt;</span>  .\youtube-dl.exe --list-formats https://www.youtube.com/watch?v=wYyS4yx07mc
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] wYyS4yx07mc: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] wYyS4yx07mc: Downloading MPD manifest
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[info] Available formats for wYyS4yx07mc:
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">format code  extension  resolution note
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">139          m4a        audio only DASH audio   59k , m4a_dash container, mp4a.40.5 (22050Hz), 58.95MiB
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">251          webm       audio only tiny  106k , webm_dash container, opus @106k (48000Hz), 128.35MiB
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">140          m4a        audio only tiny  129k , m4a_dash container, mp4a.40.2@129k (44100Hz), 156.44MiB
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">278          webm       256x144    DASH video   95k , webm_dash container, vp9, 30fps, video only
+</span></span><span class="line"><span class="ln">10</span><span class="cl">160          mp4        256x144    DASH video  108k , mp4_dash container, avc1.4d400b, 30fps, video only
+</span></span><span class="line"><span class="ln">11</span><span class="cl">242          webm       426x240    DASH video  220k , webm_dash container, vp9, 30fps, video only
+</span></span><span class="line"><span class="ln">12</span><span class="cl">133          mp4        426x240    DASH video  242k , mp4_dash container, avc1.4d400c, 30fps, video only
+</span></span><span class="line"><span class="ln">13</span><span class="cl">134          mp4        640x360    360p  284k , mp4_dash container, avc1.4d401e@ 284k, 30fps, video only, 343.35MiB
+</span></span><span class="line"><span class="ln">14</span><span class="cl">243          webm       640x360    DASH video  405k , webm_dash container, vp9, 30fps, video only
+</span></span><span class="line"><span class="ln">15</span><span class="cl">244          webm       854x480    DASH video  752k , webm_dash container, vp9, 30fps, video only
+</span></span><span class="line"><span class="ln">16</span><span class="cl">135          mp4        854x480    DASH video 1155k , mp4_dash container, avc1.4d400c, 30fps, video only
+</span></span><span class="line"><span class="ln">17</span><span class="cl">136          mp4        1280x720   720p 1110k , mp4_dash container, avc1.64001f@1110k, 30fps, video only, 1.31GiB
+</span></span><span class="line"><span class="ln">18</span><span class="cl">298          mp4        1280x720   720p60 1476k , mp4_dash container, avc1.640020@1476k, 60fps, video only, 1.74GiB
+</span></span><span class="line"><span class="ln">19</span><span class="cl">247          webm       1280x720   DASH video 1505k , webm_dash container, vp9, 30fps, video only
+</span></span><span class="line"><span class="ln">20</span><span class="cl">302          webm       1280x720   DASH video 2646k , webm_dash container, vp9, 60fps, video only
+</span></span><span class="line"><span class="ln">21</span><span class="cl">18           mp4        640x360    360p  380k , avc1.42001E, 30fps, mp4a.40.2 (44100Hz), 459.69MiB
+</span></span><span class="line"><span class="ln">22</span><span class="cl">22           mp4        1280x720   720p 1238k , avc1.64001F, 30fps, mp4a.40.2 (44100Hz) (best)
+</span></span></code></pre></div></li>
+<li>
+<p>隨便找一個影片看一下格式 (非直播中的影片)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">PS D:\youtube&gt; .\yt-dlp.exe --list-formats https://www.youtube.com/watch?v=******
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] Vbz4zPwsavc: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] Vbz4zPwsavc: Downloading android player API JSON
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] Vbz4zPwsavc: Downloading MPD manifest
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[youtube] Vbz4zPwsavc: Downloading MPD manifest
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[info] Available formats for Vbz4zPwsavc:
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">ID       EXT   RESOLUTION FPS │   FILESIZE   TBR PROTO │ VCODEC        VBR ACODEC      ABR ASR MORE INFO
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">sb2      mhtml 48x27          │                  mhtml │ images                                storyboard
+</span></span><span class="line"><span class="ln">10</span><span class="cl">sb1      mhtml 80x45          │                  mhtml │ images                                storyboard
+</span></span><span class="line"><span class="ln">11</span><span class="cl">sb0      mhtml 160x90         │                  mhtml │ images                                storyboard
+</span></span><span class="line"><span class="ln">12</span><span class="cl">139-dash m4a   audio only     │  734.38KiB   50k dash  │ audio only        mp4a.40.5   50k 22k DASH audio, m4a_dash
+</span></span><span class="line"><span class="ln">13</span><span class="cl">139      m4a   audio only     │  734.38KiB   47k https │ audio only        mp4a.40.5   47k 22k low, m4a_dash
+</span></span><span class="line"><span class="ln">14</span><span class="cl">140-dash m4a   audio only     │    1.91MiB  129k dash  │ audio only        mp4a.40.2  129k 44k DASH audio, m4a_dash
+</span></span><span class="line"><span class="ln">15</span><span class="cl">140      m4a   audio only     │    1.91MiB  127k https │ audio only        mp4a.40.2  127k 44k medium, m4a_dash
+</span></span><span class="line"><span class="ln">16</span><span class="cl">251-dash webm  audio only     │    1.98MiB  142k dash  │ audio only        opus       142k 48k DASH audio, webm_dash
+</span></span><span class="line"><span class="ln">17</span><span class="cl">251      webm  audio only     │    1.98MiB  132k https │ audio only        opus       132k 48k medium, webm_dash
+</span></span><span class="line"><span class="ln">18</span><span class="cl">17       3gp   176x144      8 │    1.04MiB   69k https │ mp4v.20.3     69k mp4a.40.2    0k 22k 144p
+</span></span><span class="line"><span class="ln">19</span><span class="cl">160      mp4   256x144     30 │ ~  1.66MiB  108k dash  │ avc1.4d400b  108k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">20</span><span class="cl">278      webm  256x144     30 │ ~  1.46MiB   95k dash  │ vp9           95k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">21</span><span class="cl">133      mp4   426x240     30 │ ~  3.72MiB  242k dash  │ avc1.4d400c  242k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">22</span><span class="cl">242      webm  426x240     30 │ ~  3.39MiB  220k dash  │ vp9          220k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">23</span><span class="cl">134-dash mp4   640x360     30 │    5.31MiB  635k dash  │ avc1.4d401e  635k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">24</span><span class="cl">134      mp4   640x360     30 │    5.31MiB  353k https │ avc1.4d401e  353k video only          360p, mp4_dash
+</span></span><span class="line"><span class="ln">25</span><span class="cl">18       mp4   640x360     30 │ ~  7.38MiB  479k https │ avc1.42001E  479k mp4a.40.2    0k 44k 360p
+</span></span><span class="line"><span class="ln">26</span><span class="cl">243      webm  640x360     30 │ ~  6.24MiB  405k dash  │ vp9          405k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">27</span><span class="cl">135      mp4   854x480     30 │ ~ 17.76MiB 1155k dash  │ avc1.4d4014 1155k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">28</span><span class="cl">244      webm  854x480     30 │ ~ 11.58MiB  752k dash  │ vp9          752k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">29</span><span class="cl">22       mp4   1280x720    30 │ ~ 27.88MiB 1812k https │ avc1.64001F 1812k mp4a.40.2    0k 44k 720p
+</span></span><span class="line"><span class="ln">30</span><span class="cl">136      mp4   1280x720    30 │ ~ 35.53MiB 2310k dash  │ avc1.4d4016 2310k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">31</span><span class="cl">247      webm  1280x720    30 │ ~ 23.15MiB 1505k dash  │ vp9         1505k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">32</span><span class="cl">298      mp4   1280x720    60 │ ~ 53.29MiB 3465k dash  │ avc1.4d4016 3465k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">33</span><span class="cl">302      webm  1280x720    60 │ ~ 40.70MiB 2646k dash  │ vp9         2646k video only          DASH video, webm_dash
+</span></span><span class="line"><span class="ln">34</span><span class="cl">299-dash mp4   1920x1080   60 │   47.01MiB 5817k dash  │ avc1.64002a 5817k video only          DASH video, mp4_dash
+</span></span><span class="line"><span class="ln">35</span><span class="cl">299      mp4   1920x1080   60 │   47.01MiB 3130k https │ avc1.64002a 3130k video only          1080p60, mp4_dash
+</span></span><span class="line"><span class="ln">36</span><span class="cl">303      webm  1920x1080   60 │ ~ 67.83MiB 4410k dash  │ vp9         4410k video only          DASH video, webm_dash
+</span></span></code></pre></div></li>
+<li>
+<p>拿掉 --format bestvideo+bestaudio 硬是要下載, 還是失敗</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">PS D:\youtube<span class="p">&gt;</span> .\yt-dlp.exe --limit-rate 2M --ffmpeg-location d:\bin\ffmpeg\bin https://www.youtube.com/watch?v=**********
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[youtube] wYyS4yx07mc: Downloading webpage
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[youtube] wYyS4yx07mc: Downloading android player API JSON
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[youtube] wYyS4yx07mc: Downloading m3u8 information
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[info] wYyS4yx07mc: Downloading 1 format(s): 300
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[download] Destination: American Eagle Kindergarten Graduation 2022 2022-07-15 20_29 [wYyS4yx07mc].mp4
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[hls @ 00000268ad39c7c0] Skip (&#39;#EXT-X-VERSION:3&#39;)
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[hls @ 00000268ad39c7c0] Skip (&#39;#EXT-X-PROGRAM-DATE-TIME:2022-07-15T12:29:26.014+00:00&#39;)
+</span></span><span class="line"><span class="ln">10</span><span class="cl">......
+</span></span></code></pre></div></li>
+</ol>
+<p>結論: 乖乖等直播完再下載</p>
+
     </div>
 <div class="post_comments">
   
@@ -651,6 +780,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.2a1205f98d39c913aa7ec281b441dd6d64766c23fe64e0bad711d0bd754492214d460f027d4f68657ed554225c8b6f01e926321feea80e2a62e9ee038ac5bfa3.js" integrity="sha512-KhIF&#43;Y05yROqfsKBtEHdbWR2bCP&#43;ZOC61xHQvXVEkiFNRg8CfU9oZX7VVCJci28B6SYyH&#43;6oDipi6e4DisW/ow==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6874554c25c59201323272a8f4bc498ce2b46abb35ad5d81f001d23a95c99f3088a59c7394992ad9f0ad7ee73b4af5ce3147a8ecf10601b27942e38170447489.js" integrity="sha512-aHRVTCXFkgEyMnKo9LxJjOK0ars1rV2B8AHSOpXJnzCIpZxzlJkq2fCtfuc7SvXOMUeo7PEGAbJ5QuOBcER0iQ==" crossorigin="anonymous"></script>
   </body>
 </html>

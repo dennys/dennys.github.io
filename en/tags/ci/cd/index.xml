@@ -16,7 +16,7 @@
       <description>
         
           
-            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           
