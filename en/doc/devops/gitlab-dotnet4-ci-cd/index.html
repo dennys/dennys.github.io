@@ -263,22 +263,28 @@
 </ol>
 </li>
 <li>If you find your log is garbled (ex: your Windows server is not English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
-<li>If you use a portable Git, you need to modify <code>$env:Path</code> in config.toml. (comment line 7 and uncomment line 8)</li>
+<li>If you use a portable Git, you need to modify <code>$env:Path</code> in config.toml. (comment line 13 and uncomment line 14)</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Windows Runner 01 (not docker)&#34;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://gitlab.com/&#34;</span>
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;******************&#34;</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;shell&#34;</span>
-</span></span><span class="line hl"><span class="ln"> 6</span><span class="cl"><span class="nx">shell</span> <span class="p">=</span> <span class="s2">&#34;powershell&#34;</span>
-</span></span><span class="line hl"><span class="ln"> 7</span><span class="cl"><span class="nx">pre_clone_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n       $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
-</span></span><span class="line hl"><span class="ln"> 8</span><span class="cl"><span class="c">#  pre_clone_script = &#34;      chcp 65001\n      $env:Path = \&#34;C:\\Gitlab\\PortableGit\\cmd;$env:Path\&#34;\n\t  $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nx">pre_build_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n  &#34;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">s3</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">gcs</span><span class="p">]</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">azure</span><span class="p">]</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nx">listen_address</span> <span class="p">=</span> <span class="s2">&#34;[::]:9252&#34;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="nx">concurrent</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="nx">check_interval</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="p">[</span><span class="nx">session_server</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">  <span class="nx">session_timeout</span> <span class="p">=</span> <span class="mi">1800</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">[[</span><span class="nx">runners</span><span class="p">]]</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Windows Runner 01 (not docker)&#34;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;https://gitlab.com/&#34;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">  <span class="nx">token</span> <span class="p">=</span> <span class="s2">&#34;******************&#34;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">  <span class="nx">executor</span> <span class="p">=</span> <span class="s2">&#34;shell&#34;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">  <span class="nx">shell</span> <span class="p">=</span> <span class="s2">&#34;powershell&#34;</span>
+</span></span><span class="line hl"><span class="ln">13</span><span class="cl">  <span class="nx">pre_clone_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n       $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
+</span></span><span class="line hl"><span class="ln">14</span><span class="cl">  <span class="c">#  pre_clone_script = &#34;      chcp 65001\n      $env:Path = \&#34;C:\\Gitlab\\PortableGit\\cmd;$env:Path\&#34;\n\t  $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding\n  &#34;</span>
+</span></span><span class="line hl"><span class="ln">15</span><span class="cl">  <span class="nx">pre_build_script</span> <span class="p">=</span> <span class="s2">&#34;      chcp 65001\n  &#34;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">custom_build_dir</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">s3</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">gcs</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="p">[</span><span class="nx">runners</span><span class="p">.</span><span class="nx">cache</span><span class="p">.</span><span class="nx">azure</span><span class="p">]</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Register GitLab Runner as a Windows service and start it.</p>
