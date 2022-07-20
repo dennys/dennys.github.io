@@ -20,6 +20,7 @@
             我通常都用 Spotify 來聽 Podcast, 後來也會和家人共用, 但這樣有時候就會混在一起, 想說找別的 App 分開使用. 無意中看到 Pocket Casts 這個 App 滿有意思的, 她有個功能是可以跳過固定的片頭和片尾 (依據秒數), 免費版就有這功能了.
 步驟如下:
 選擇要調整的 Podcast. 進去設定. 選擇你要跳過的時間. 2022/9/14 更新: 結果發現 AntennaPod (一個 OpenSource 的 Android Podcast App), 在 2020 年就有這功能了, 這裡有示範影片: https://github.com/AntennaPod/AntennaPod/pull/3975
+而且 AntennaPod 還支援 Podcast 2.0, 可直接跳到你想聽的段落
           
           
         
