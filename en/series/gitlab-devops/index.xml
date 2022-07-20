@@ -7,7 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/gitlab-devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/gitlab-devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Grafana to Manager SonarQube KPI</title>
+      <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <description>
+        
+          
+            Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.
+Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It suports SonarQube 7, not sure it supports 8 or 9, I don&#39;t plan to try it.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use Grafana to Manage GitLab CI/CD Pipelines</title>
+      <link>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</guid>
+      <description>
+        
+          
+            Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
+Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard need this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] Solution 2: Use gitlab-ci-pipelines-exporter Exporter: https://github.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
       <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>

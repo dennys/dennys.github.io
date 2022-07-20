@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/ci/cd/</link>
+    <description>Recent content in CI/CD on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><atom:link href="https://dennys.github.io/tw/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Grafana 管理 SonarQube KPI</title>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</guid>
+      <description>
+        
+          
+            需求 一般來講, 我們會直接在 SonarQube 上面看各 project 的各項 KPI 如下 Project 的 build history 的部分也可以直接看到 在 Grafana 上面顯示 SonarQube KPI 不過也有人做出來一些 SonarQube exporter, 可以把 SonarQube 的 KPI 轉放到 Grafana.
+方案1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: 他是做成 SonarQube plugin, 但他只支援 5 個 KPI, 而且最後一次更新是 2018/11/9. 他有支援 SonarQube 7, 不太確定有沒有支援 8 或 9, 就算了. 方案2 Exporter: https://github.com/nthienan/sonarqube-exporter Grafana dashboard: 同上, 請在首頁找 dashboard overview.json 和 dashboard details.json 請產生一個 SonarQube token, 可參考 https://docs.sonarqube.org/latest/user-guide/user-token/ 啟動方式 直接跑的指令如下 1docker run --expose 9102 -p 9102:9102 nthienan/sonarqube-exporter sqe -p 9102 --url http://sonar.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>使用 Grafana 管理 GitLab CI/CD Pipelines</title>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</guid>
+      <description>
+        
+          
+            需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
+在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建的 metrics Exporter: GitLab 內建 (參考 https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 這個 dashboard 需要安裝這個 plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] 方案2: 使用 gitlab-ci-pipelines-exporter Exporter: https://github.com/mvisonneau/gitlab-ci-pipelines-exporter 這個 exporter 提供好幾個面向的 metrics (搭配不同 dashboard) Grafana dashboard: 和方案1是同一個 (也需要裝 Ploystat plugin)
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/sonarqube/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/sonarqube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use Grafana to Manager SonarQube KPI</title>
+      <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <description>
+        
+          
+            Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.
+Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It suports SonarQube 7, not sure it supports 8 or 9, I don&#39;t plan to try it.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>GitLab Checkmarx SonarQube Integration</title>
       <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>

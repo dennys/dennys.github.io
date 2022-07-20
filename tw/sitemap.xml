@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-07-09T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-07-09T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-07-09T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,8 +41,34 @@
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/series/gitlab-devops/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/gitlab-devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/gitlab-devops/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/grafana/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/grafana/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/grafana/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-07-09T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -53,6 +79,64 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/sonarqube/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/sonarqube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/sonarqube/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</loc>
+    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/gitlab/</loc>
+    <lastmod>2022-07-16T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/gitlab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/gitlab/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</loc>
+    <lastmod>2022-07-16T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/podcast/</loc>
     <lastmod>2022-07-09T00:00:00+08:00</lastmod>
@@ -78,19 +162,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/software/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-07-09T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</loc>
@@ -125,19 +196,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-07-02T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/youtube/</loc>
     <lastmod>2022-07-02T00:00:00+08:00</lastmod>
@@ -420,5 +478,17 @@
   </url><url>
     <loc>https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/</loc>
     <lastmod>2003-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/ci/cd/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/ci/cd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/ci/cd/"
+                />
   </url>
 </urlset>
