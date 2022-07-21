@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenWrt on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/openwrt/</link>
+    <description>Recent content in OpenWrt on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt 頻寬報表 Bandwidthd</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
+      <description>
+        
+          
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
+官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
+安裝 請依照官方網站指示即可
+使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細, 要再找其他工具. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt 頻寬報表 Bandwidthd</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
+      <description>
+        
+          
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
+官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
+安裝 請依照官方網站指示即可
+使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

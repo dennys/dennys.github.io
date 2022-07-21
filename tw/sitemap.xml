@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -40,6 +40,60 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/doc/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/categories/it/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/openwrt/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/router/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/series/gitlab-devops/</loc>
     <lastmod>2022-07-17T00:00:00+08:00</lastmod>
@@ -67,31 +121,8 @@
                 href="https://dennys.github.io/tw/tags/grafana/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/categories/it/</loc>
+    <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</loc>
     <lastmod>2022-07-17T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/sonarqube/</loc>
     <lastmod>2022-07-17T00:00:00+08:00</lastmod>
@@ -104,19 +135,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/sonarqube/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</loc>
@@ -277,9 +295,6 @@
     <loc>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-06-02T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/tags/vnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
@@ -293,9 +308,6 @@
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-06-01T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/router/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</loc>
