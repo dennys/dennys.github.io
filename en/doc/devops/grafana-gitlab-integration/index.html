@@ -13,6 +13,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-440571-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-440571-1');
+</script>
 
 
 
@@ -124,6 +131,23 @@ Use Grafana to Manage GitLab …" />
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6250958860254678"
      crossorigin="anonymous"></script>
 	 
+  
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89223144, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89223144" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6250958860254678"
+     crossorigin="anonymous"></script>
+
 </header>
 
     <main>
@@ -190,7 +214,7 @@ Use Grafana to Manage GitLab …" />
         <li><a href="#solution-2-use-gitlab-ci-pipelines-exporter">Solution 2: Use gitlab-ci-pipelines-exporter</a></li>
       </ol>
     </li>
-    <li><a href="#ci-pipelines-jobs-status">CI Pipelines; Jobs status</a></li>
+    <li><a href="#job-status-of-ci-pipelines">Job status of CI Pipelines</a></li>
     <li><a href="#environments--deployments-status">Environments / Deployments status</a></li>
   </ol>
 </nav>
@@ -271,21 +295,25 @@ This exporter provides several spectives metrics (with different Grafana dashboa
 <li>
 <p>Result</p>
 <ol>
-<li>Solution 1 and 2 use the same dashboard, like the following:
+<li>
+<p>Solution 1 and 2 use the same dashboard, like the following:
 <figure><img src="/images/software/grafana/grafana_gitlab_ci_pipelines.webp" width="800"/>
     </figure>
+</p>
 </li>
-</ol>
-<p>1.And you can click the ID, it will forward to GitLab's CI/CD Pipelines, you can see every jobs' execution status.
+<li>
+<p>And you can click the ID, it will forward to GitLab's CI/CD Pipelines, you can see every jobs' execution status.
 <figure><img src="/images/software/gitlab/gitlab_ci_pipelines.webp" width="800"/>
     </figure>
 </p>
 </li>
 </ol>
-<h2 id="ci-pipelines-jobs-status">CI Pipelines; Jobs status</h2>
+</li>
+</ol>
+<h2 id="job-status-of-ci-pipelines">Job status of CI Pipelines</h2>
 <ol>
 <li>
-<p>The above solution is to check CI pipelines, if you want to see job status in Grafan, you can modify gitlab-ci-pipelines-exporter.yml to add line 5~6.
+<p>The above solution is to check entire CI pipelines result, if you want to see individual job status in Grafana, you can modify gitlab-ci-pipelines-exporter.yml to add line 5~6.
 And you can install this Grafana dashboard <a href="https://grafana.com/grafana/dashboards/13328">https://grafana.com/grafana/dashboards/13328</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl"># Pull jobs related metrics on all projects
 </span></span><span class="line"><span class="ln">2</span><span class="cl">project_defaults:
@@ -356,9 +384,6 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/grafana-ping-speedtest/" class="nav-link" title="Use Grafana to Manage Ping &amp; Speedtest Result">Use Grafana to Manage Ping &amp; Speedtest Result</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>
       </li>
       <li>
@@ -379,13 +404,16 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
       <li>
         <a href="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/" class="nav-link" title="Use IFTTT to send currency exchange rate mail daily">Use IFTTT to send currency exchange rate mail daily</a>
       </li>
+      <li>
+        <a href="https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/" class="nav-link" title="Use WISE to send currency exchange rate mail daily">Use WISE to send currency exchange rate mail daily</a>
+      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">13</span>
+          <span class="button_tally">12</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
@@ -430,11 +458,6 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
           <span class="button_tally">3</span>
         </a>
         
-        <a href='https://dennys.github.io/en/tags/grafana/' class="post_tag button button_translucent" title="grafana">
-          GRAFANA
-          <span class="button_tally">3</span>
-        </a>
-        
         <a href='https://dennys.github.io/en/tags/checkmarx/' class="post_tag button button_translucent" title="checkmarx">
           CHECKMARX
           <span class="button_tally">2</span>
@@ -442,6 +465,11 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
         
         <a href='https://dennys.github.io/en/tags/database/' class="post_tag button button_translucent" title="database">
           DATABASE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/tags/grafana/' class="post_tag button button_translucent" title="grafana">
+          GRAFANA
           <span class="button_tally">2</span>
         </a>
         
