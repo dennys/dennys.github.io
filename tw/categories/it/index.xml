@@ -7,45 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>OpenWrt 頻寬報表 Bandwidthd</title>
-      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
-      <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
-      <description>
-        
-          
-            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
-官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
-安裝 請依照官方網站指示即可
-使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細, 要再找其他工具. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>OpenWrt 頻寬報表 Bandwidthd</title>
-      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
-      <description>
-        
-          
-            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
-官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
-安裝 請依照官方網站指示即可
-使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Grafana 管理 SonarQube KPI</title>
       <link>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</link>
@@ -174,24 +136,6 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
 /opt/grafana/postgresql =&amp;gt; 放 PostgreSQL data /opt/grafana/grafana =&amp;gt; 放 Grafana data 設定方法 先把 PostgreSQL 用 docker-compose 跑起來, 並確認資料和連線正常
 PostgreSQL 的 docker-compose.yml 如下:
 1postgres: 2image: postgres:14 3container_name: postgres 4networks: 5 - grafananet 6expose: 7 - 5432 8ports: 9 - 5432:5432 # Postgres port 10volumes: 11 - /opt/grafana/postgresql/:/var/lib/postgresql 12 - /opt/grafana/postgresql/data/:/var/lib/postgresql/data 13environment: 14 POSTGRES_USER: ******** # define credentials 15 POSTGRES_PASSWORD: ******** # define credentials 16 POSTGRES_DB: ******** # define database 17 TZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 18 PGTZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 執行下列指令啟動 PostgreSQL
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>如何修改 Android 預設的 YouTube App (YouTube Vanced, New Pipe, ...)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
-      <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
-      <description>
-        
-          
-            需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
-作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
-這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App. 結果 可以試著用 Chrome 找一些影片, 然後試著打開她, 選 YouTube, 他就會啟動 NewPipe 了.
           
           
         
