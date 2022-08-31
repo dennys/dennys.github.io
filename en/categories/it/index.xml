@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus Pull/Push from/to Another Prometheus</title>
+      <link>https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/</guid>
+      <description>
+        
+          
+            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only permit a special firewall rule from this zone to other zones.
+Prometheus A pulls metrics from Prometheus B In this scenario, we use Fedaration feature to pull metrics from another Prometheus. You don&#39;t need to do any change in Promethes B, just add a new job in prometheus.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Use Grafana to Manager SonarQube KPI</title>
       <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>

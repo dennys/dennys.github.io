@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Use IFTTT to send currency exchange rate mail daily | Dennys Diary</title>
+<title>Prometheus Pull/Push from/to Another Prometheus | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,23 +26,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: …" />
+<meta name="description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="Use IFTTT to send currency exchange rate mail daily" />
+<meta name="twitter:title" content="Prometheus Pull/Push from/to Another Prometheus" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/" />
-<meta property="og:title" content="Use IFTTT to send currency exchange rate mail daily" />
-<meta property="og:description" content="Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: …" />
+<meta property="og:url" content="https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/" />
+<meta property="og:title" content="Prometheus Pull/Push from/to Another Prometheus" />
+<meta property="og:description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/">
+<link rel="canonical" href="https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/">
 
 
 
@@ -154,7 +152,7 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Use IFTTT to send currency exchange rate mail daily</h1>
+    <h1 class="post_title">Prometheus Pull/Push from/to Another Prometheus</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -162,21 +160,21 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
 </svg>
 </span>
     <span class="post_date">
-      Mar 24, 2022</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/ifttt/' title="IFTTT" class="post_tag button button_translucent">IFTTT
+      Aug 31, 2022</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/prometheus/' title="Prometheus" class="post_tag button button_translucent">Prometheus
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Use%20IFTTT%20to%20send%20currency%20exchange%20rate%20mail%20daily&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fifttt%2fifttt-send-currency-exchange-rate-mail%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Prometheus%20Pull%2fPush%20from%2fto%20Another%20Prometheus&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pull-forward-prometheu%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fifttt%2fifttt-send-currency-exchange-rate-mail%2f&t=Use%20IFTTT%20to%20send%20currency%20exchange%20rate%20mail%20daily" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pull-forward-prometheu%2f&t=Prometheus%20Pull%2fPush%20from%2fto%20Another%20Prometheus" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -190,7 +188,7 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -206,110 +204,114 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
         <nav id="TableOfContents">
   <ol>
     <li><a href="#requirement">Requirement</a></li>
-    <li><a href="#solution">Solution</a></li>
-    <li><a href="#mail-sample">Mail sample</a></li>
-    <li><a href="#ifttt-applet-location">IFTTT applet location</a></li>
-    <li><a href="#about-the-exchange-rate-history-chart">About the exchange rate history chart</a></li>
+    <li><a href="#prometheus-a-pulls-metrics-from-prometheus-b">Prometheus A pulls metrics from Prometheus B</a></li>
+    <li><a href="#prometheus-c-forwards-metrics-to-prometheus-a">Prometheus C forwards metrics to Prometheus A</a></li>
+    <li><a href="#note">Note</a></li>
+    <li><a href="#port-forward">Port forward</a></li>
   </ol>
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="requirement">Requirement</h2>
-<p>I want to have a daily mail including currency exchange rate information.</p>
-<ol>
-<li>Mail subject: include the exchange rate in the mail subject.</li>
-<li>Mail content:
-<ol>
-<li>Has some links to banks' exchange rate page.</li>
-<li>Include some exchange rate history chart.</li>
-</ol>
-</li>
-</ol>
-<h2 id="solution">Solution</h2>
-<p>Use <a href="https://ifttt.com/">ifttt.com</a></p>
-<ol>
-<li>
-<p>Create a new Applet on IFTTT</p>
-</li>
-<li>
-<p>Add a new &quot;If This&quot;</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-8.png"><img src="https://dennys.files.wordpress.com/2022/03/image-8.png?w=605" alt="" class="wp-image-432" width="382" height="180"/></a></p>
-</li>
-<li>
-<p>Choose &quot;finance&quot; service</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image.png"><img src="https://dennys.files.wordpress.com/2022/03/image.png?w=811" alt="" class="wp-image-416" width="446" height="274"/></a></p>
-</li>
-<li>
-<p>Choose &quot;Today's exchange rate report&quot;</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-1.png"><img src="https://dennys.files.wordpress.com/2022/03/image-1.png?w=1024" alt="" class="wp-image-418" width="568" height="280"/></a></p>
-</li>
-<li>
-<p>Choose the input/output currency and trigger time.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-2.png"><img src="https://dennys.files.wordpress.com/2022/03/image-2.png?w=702" alt="" class="wp-image-420" width="385" height="373"/></a></p>
-</li>
-<li>
-<p>Add a new &quot;Then That&quot;</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-9.png"><img src="https://dennys.files.wordpress.com/2022/03/image-9.png?w=597" alt="" class="wp-image-434" width="288" height="148"/></a></p>
-</li>
-<li>
-<p>Choose a &quot;gmail&quot; service</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-3.png"><img src="https://dennys.files.wordpress.com/2022/03/image-3.png?w=666" alt="" class="wp-image-422" width="329" height="207"/></a></p>
-</li>
-<li>
-<p>If you just want to send yourself an email, you can click the right button. If you want to send to several recipients, you can click left button.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-4.png"><img src="https://dennys.files.wordpress.com/2022/03/image-4.png?w=609" alt="" class="wp-image-424" width="484" height="226"/></a></p>
-</li>
-<li>
-<p>This is an example to send your self an email.</p>
-<p><a href="https://dennys.files.wordpress.com/2022/03/image-5.png"><img src="https://dennys.files.wordpress.com/2022/03/image-5.png?w=548" alt="" class="wp-image-426" width="339" height="489"/></a></p>
-</li>
-<li>
-<p>This is my email body</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl">As of {{CheckTime}}, 1 {{InputCurrency}} equals {{ExchangeRate}} {{OutputCurrency}}.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">via {{InfoUrl}}
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>美元匯率:<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt?Lang=zh-TW&#34;</span><span class="p">&gt;</span>即時<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt/quote/day/USD&#34;</span><span class="p">&gt;</span>當日<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1W&#34;</span><span class="p">&gt;</span>1周<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(XE)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1M&#34;</span><span class="p">&gt;</span>1個月<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(XE)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt/quote/ltm/USD&#34;</span><span class="p">&gt;</span>3個月<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt/quote/l6m/USD&#34;</span><span class="p">&gt;</span>6個月<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)
-</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt/quote/l1y/USD&#34;</span><span class="p">&gt;</span>1年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.esunbank.com.tw/bank/personal/deposit/rate/forex/exchange-rate-chart?Currency=USD/TWD&#34;</span><span class="p">&gt;</span>1年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(玉山)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=1Y&#34;</span><span class="p">&gt;</span>1年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(XE)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://rate.bot.com.tw/xrt/quote/l3y/USD&#34;</span><span class="p">&gt;</span>3年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(台銀)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=5Y&#34;</span><span class="p">&gt;</span>5年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(XE)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://www.xe.com/currencycharts/?from=USD&amp;to=TWD&amp;view=10Y&#34;</span><span class="p">&gt;</span>10年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(XE)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fxtop.com/en/historical-exchange-rates.php?A=1&amp;C1=USD&amp;C2=TWD&amp;DD1=&amp;MM1=&amp;YYYY1=&amp;B=1&amp;P=&amp;I=1&amp;DD2=03&amp;MM2=03&amp;YYYY2=2099&amp;btnOK=Go%21&#34;</span><span class="p">&gt;</span>1983~現在<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(FXTOP)<span class="ni">&amp;nbsp;</span>
-</span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://historical.findrate.tw/USD/&#34;</span><span class="p">&gt;</span>1個月+1年+10年<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>(FindRate)
-</span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">24</span><span class="cl">
-</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>2022/1/1~2022/12/31:<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2022&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>2021/1/1~2022/12/31:<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2021&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>2020/1/1~2022/12/31:<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2020&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>2000/1/1~2022/12/31:<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
-</span></span><span class="line"><span class="ln">32</span><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://fxtop.com/php/imggraph.php?C1=USD&amp;C2=TWD&amp;A=1&amp;DD1=&amp;MM1=01&amp;YYYY1=2000&amp;DD2=&amp;MM2=12&amp;YYYY2=2022&amp;LANG=en&amp;CJ=0&amp;MM1Y=1&amp;LARGE=&amp;TR=OFF&#34;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="err">/</span>
-</span></span></code></pre></div></li>
-</ol>
-<h2 id="mail-sample">Mail sample</h2>
-<figure class="wp-block-image size-large"><a href="https://dennys.files.wordpress.com/2022/03/image-7.png"><img src="https://dennys.files.wordpress.com/2022/03/image-7.png?w=668" alt="" class="wp-image-430"/></a>
-<h2 id="ifttt-applet-location">IFTTT applet location</h2>
-<p>This is my IFTTT applet: <a href="https://ifttt.com/applets/SxPJ2fpv-">https://ifttt.com/applets/SxPJ2fpv-</a></p>
-<h2 id="about-the-exchange-rate-history-chart">About the exchange rate history chart</h2>
-<p>I only find 2 websites provides exchange rate chart to embed in the mail content.</p>
-<ol>
-<li><a href="https://fxtop.com/">https://fxtop.com/</a>, it provides PNG format chart, I already include it in my IFTTT applet.</li>
-<li><a href="https://www.currencyconverterrate.com/">https://www.currencyconverterrate.com/</a>, it provides SVG format chart (ex: <a href="https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg)">https://www.currencyconverterrate.com/currencycharts/usd/usd-twd-exchange-rates-history-chart-7-day.svg)</a>, but I cannot find a solution to show SVG in gmail. If you find a solution, please let me know, thanks.</li>
-</ol>
+    <div class="post_body"><pre><code><figure><img src="/images/software/grafana/prometheus.webp"/>
+    </figure>
 
+</code></pre>
+<h2 id="requirement">Requirement</h2>
+<p>I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
+And one VM (Server C) is in a restricited zone and this zone only permit a special firewall rule
+from this zone to other zones.</p>
+<h2 id="prometheus-a-pulls-metrics-from-prometheus-b">Prometheus A pulls metrics from Prometheus B</h2>
+<p>In this scenario, we use <a href="https://prometheus.io/docs/prometheus/latest/federation/">Fedaration</a> feature to pull metrics from another Prometheus.
+You don't need to do any change in Promethes B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
+<p>Please check line 13~15, you can only pull some metrics you need.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span>- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">honor_labels</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">metric_relabel_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">      </span>- <span class="nt">source_labels</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">id]</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">        </span><span class="nt">regex</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;^static-agent$&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">        </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l">drop </span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;/federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">      </span><span class="nt">&#39;match[]&#39;</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;prometheus&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{__name__=~&#34;job:.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;node_.*|container_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">15</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;windows_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;probe_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job!=&#34;&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;node&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_http_2xx&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_icmp&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">        </span><span class="c">#match[]={__name__=~&#34;..*&#34;}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">        </span><span class="c">#match[]=&#34;{__name__=~&#34;.+&#34;}&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">      </span>- <span class="nt">targets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;x.x.x.x:9090&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity Check: You can connect to <a href="http://x.x.x.x:9090/targets">http://x.x.x.x:9090/targets</a> and find the federation job status.
+<figure><img src="/images/software/grafana/prometheus_federate.webp"/>
+</figure>
+</p>
+<h2 id="prometheus-c-forwards-metrics-to-prometheus-a">Prometheus C forwards metrics to Prometheus A</h2>
+<p>In this scenario, first, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
+You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/web.yml:/etc/prometheus/web.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.config.file=/etc/prometheus/web.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.enable-remote-write-receiver&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Then, you need to modify <em>docker-compose.yml</em> and *prometheus.yml of Prometheus C.
+First, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#prometheus-agent">Prometheus agent</a> mode,
+just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># docker-compose.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/grafana/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--enable-feature=agent&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--log.level=debug&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section and input Prometheus A's url in it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># prometheus.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">global</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">
+</span></span></span><span class="line hl"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="nt">remote_write</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;http://(Domain of PrometheusA):9090/api/v1/write&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">9</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity check: you can enable the log to debug level and check it sends the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">prometheus           | ts=2022-08-31T06:58:46.065Z caller=dedupe.go:112 component=remote level=debug remote_name=3c577a url=http://x.x.x.x:3128/api/v1/write msg=QueueManager.calculateDesiredShards dataInRate=95.10224000000001 dataOutRate=273.83119999999997 dataKeptRatio=1 dataPendingRate=-178.72895999999997 dataPending=285.30672000000004 dataOutDuration=0.026267519444000003 timePerSample=9.592595527463637e-05 desiredShards=0.010491189203871395 highestSent=1.66192912e+09 highestRecv=1.661929123e+09
+</span></span></code></pre></div><h2 id="note">Note</h2>
+<p>You should enable authentication in Prometheus, you can reference this page to hash your password <a href="https://prometheus.io/docs/guides/basic-auth/">https://prometheus.io/docs/guides/basic-auth/</a>,
+and save it into your <em>web.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">basic_auth_users</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="cp">******************************************</span><span class="w">
+</span></span></span></code></pre></div><h2 id="port-forward">Port forward</h2>
+<p>If you have a restricted firewall, you can use socat to forward the request to another host.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">socat -v TCP-LISTEN:3128,fork,reuseaddr TCP:x.x.x.x:9090
+</span></span></code></pre></div>
     </div>
 <div class="post_comments">
   
@@ -343,9 +345,6 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-forward-prometheu/" class="nav-link" title="Prometheus Pull/Push from/to Another Prometheus">Prometheus Pull/Push from/to Another Prometheus</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>
       </li>
       <li>
@@ -365,6 +364,9 @@ Mail subject: include the exchange rate in the mail subject. Mail content: …" 
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" class="nav-link" title="Use GitLab to do .NET 4.8 CI/CD">Use GitLab to do .NET 4.8 CI/CD</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/" class="nav-link" title="Use IFTTT to send currency exchange rate mail daily">Use IFTTT to send currency exchange rate mail daily</a>
       </li>
     </ul>
     <div>
