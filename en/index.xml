@@ -9,7 +9,7 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prometheus Pulls/Pushs Metrics from/to Another Prometheus</title>
+      <title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus</title>
       <link>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
       
