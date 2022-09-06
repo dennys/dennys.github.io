@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>如何對 Drupal 的 cron 做 Debug | Dennys Diary</title>
+<title>YouTube 各種加強工具 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,23 +26,23 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it …" />
+<meta name="description" content="注意 這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!! 整理一下 YouTube 在各平台上的各種加強工具.
+Browser extension (Chrome, Edge, ...) Enhancer for YouTube 這東西很好用, 但有個奇怪的點是, 他首頁強調的 當游標在播 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="如何對 Drupal 的 cron 做 Debug" />
+<meta name="twitter:title" content="YouTube 各種加強工具" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/" />
-<meta property="og:title" content="如何對 Drupal 的 cron 做 Debug" />
-<meta property="og:description" content="注意 這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過. Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/software/youtube-enhancer/" />
+<meta property="og:title" content="YouTube 各種加強工具" />
+<meta property="og:description" content="注意 這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!! 整理一下 YouTube 在各平台上的各種加強工具.
+Browser extension (Chrome, Edge, ...) Enhancer for YouTube 這東西很好用, 但有個奇怪的點是, 他首頁強調的 當游標在播 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/software/youtube-enhancer/">
 
 
 
@@ -154,7 +154,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">如何對 Drupal 的 cron 做 Debug</h1>
+    <h1 class="post_title">YouTube 各種加強工具</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -162,21 +162,22 @@
 </svg>
 </span>
     <span class="post_date">
-      Mar 26, 2009</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/drupal/' title="Drupal" class="post_tag button button_translucent">Drupal
+      Aug 31, 2022</span>
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/youtube/' title="YouTube" class="post_tag button button_translucent">YouTube
+        </a><a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e5%b0%8d%20Drupal%20%e7%9a%84%20cron%20%e5%81%9a%20Debug&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdrupal%2fdrupal-cron-debug%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=YouTube%20%e5%90%84%e7%a8%ae%e5%8a%a0%e5%bc%b7%e5%b7%a5%e5%85%b7&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fyoutube-enhancer%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdrupal%2fdrupal-cron-debug%2f&t=%e5%a6%82%e4%bd%95%e5%b0%8d%20Drupal%20%e7%9a%84%20cron%20%e5%81%9a%20Debug" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fsoftware%2fyoutube-enhancer%2f&t=YouTube%20%e5%90%84%e7%a8%ae%e5%8a%a0%e5%bc%b7%e5%b7%a5%e5%85%b7" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -190,7 +191,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/software/youtube-enhancer/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,61 +202,187 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#browser-extension-chrome-edge-">Browser extension (Chrome, Edge, ...)</a></li>
+    <li><a href="#用電腦下載-linux-macos-windows">用電腦下載 (Linux, macOS, Windows)</a></li>
+    <li><a href="#android">Android</a></li>
+    <li><a href="#google-tv-android-tv">Google TV (Android TV)</a></li>
+    <li><a href="#ios">iOS</a></li>
+    <li><a href="#參考">參考</a></li>
+    <li><a href="#whats-next">What's next</a></li>
+  </ol>
+</nav>
+      </div>
+    
     <div class="post_body">
 <div class="notices warning">
     <div class="label">注意</div>
-    這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.
+    這些工具都不是 Google 官方提供, 有些我也沒用過, 執行前請先三思!!!
   </div>
 
-<h2 id="drupals-cron">Drupal's cron</h2>
-<p><a href="http://drupal.org/">Drupal</a> 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Attempting to re-run cron <span class="k">while</span> it is already running.  
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Cron run exceeded the <span class="nb">time</span> limit and was aborted.  
-</span></span><span class="line"><span class="ln">3</span><span class="cl">Cron has been running <span class="k">for</span> more than an hour and is most likely stuck.
-</span></span></code></pre></div><h2 id="debug-方法">Debug 方法</h2>
-<p>在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">variable</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;cron_semaphore&#34;</span><span class="p">;</span><span class="w">  
-</span></span></span></code></pre></div><p>另外如果要看 cron 是執行到哪裡出問題了, 可修改 includes/module.inc</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="ln"> 1</span><span class="cl">   <span class="k">foreach</span> <span class="p">(</span><span class="nx">module\_implements</span><span class="p">(</span><span class="nv">$hook</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$module</span><span class="p">)</span> <span class="p">{</span>  
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="nv">$function</span> <span class="o">=</span> <span class="nv">$module</span> <span class="o">.</span><span class="s1">&#39;\_&#39;</span><span class="o">.</span> <span class="nv">$hook</span><span class="p">;</span>  
-</span></span><span class="line hl"><span class="ln"> 3</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$hook</span> <span class="o">==</span> <span class="s1">&#39;cron&#39;</span><span class="p">)</span> <span class="nx">watchdog</span><span class="p">(</span><span class="s1">&#39;cron&#39;</span><span class="p">,</span> <span class="s2">&#34;hit </span><span class="si">$module</span><span class="s2"> cron&#34;</span><span class="p">);</span>   <span class="c1">// add this line  
-</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="c1"></span>    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">call\_user\_func\_array</span><span class="p">(</span><span class="nv">$function</span><span class="p">,</span> <span class="nv">$args</span><span class="p">);</span>  
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">is\_array</span><span class="p">(</span><span class="nv">$result</span><span class="p">))</span> <span class="p">{</span>  
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">      <span class="nv">$return</span> <span class="o">=</span> <span class="k">array</span><span class="nx">\_merge</span><span class="p">(</span><span class="nv">$return</span><span class="p">,</span> <span class="nv">$result</span><span class="p">);</span>  
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="p">}</span>  
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">))</span> <span class="p">{</span>  
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">      <span class="nv">$return\</span><span class="p">[</span><span class="nx">\</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">;</span>  
-</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="p">}</span>  
-</span></span><span class="line"><span class="ln">11</span><span class="cl">  <span class="p">}</span>
-</span></span></code></pre></div><h2 id="執行結果">執行結果</h2>
-<p>如下, 可以看出 cron 執行到哪裡了.</p>
-<p><a href="http://www.flickr.com/photos/dennys_blog/2365667427/" title="Flickr 上 Dennys Blog 的 Drupal cron"><figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt="Drupal cron"
-      
-        class="image_figure image_external image_processed"
-        width="500"
-        height="397"
-        src="/2365667427_6dc881c1b9_16201964463142699639.jpg"
-      
-      
-    />
-
-    </picture>
-</figure>
-</a></p>
+<p>整理一下 YouTube 在各平台上的各種加強工具.</p>
+<h2 id="browser-extension-chrome-edge-">Browser extension (Chrome, Edge, ...)</h2>
+<ol>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/enhancer-for-youtube/ponfpcnoihfmfllpaingbgckeeldkhle">Enhancer for YouTube</a>
+這東西很好用, 但有個奇怪的點是, 他首頁強調的 <strong>當游標在播放器上時，使用滑鼠滾輪控制音量</strong> (這功能真的很方便), 預設卻是關閉的, 要自己進去打開才會生效.</p>
+</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/magic-actions-for-youtube/abjcfabbhafbcdfjoecdgepllmpfceif">Magic Actions for YouTube</a>
+上次更新是 2021/5/2, 而且他有可能會拿走你的所有瀏覽紀錄 (參考: <a href="https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/">https://robertheaton.com/2020/02/18/dont-let-magic-enhancer-for-youtube-slurp-up-your-browsing-history/</a>)</p>
+</li>
+</ol>
+<h2 id="用電腦下載-linux-macos-windows">用電腦下載 (Linux, macOS, Windows)</h2>
+<p>YouTube 預設是不能讓人下載影片的 (即使是你自己上傳的影片也是一樣), 最有名的就是曾被 GitHub 下架的 <a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> 或是 <a href="https://github.com/yt-dlp/yt-dlp">ytl-dp</a>. 使用起來很簡單, 可參考: <a href="https://dennys.github.io/tw/doc/software/download-youtube-private-video/">https://dennys.github.io/tw/doc/software/download-youtube-private-video/</a></p>
+<h2 id="android">Android</h2>
+<p>最有名的 <a href="https://vancedapp.com/">Vanced</a> 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於<a href="https://github.com/TeamNewPipe/NewPipeExtractor">NewPipe Extractor</a>.
+試玩了幾個, 每個人的需求不同, 對我來講比較有感的是這幾個功能:</p>
+<ol>
+<li>官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大.</li>
+<li>手勢, 尤其前後快轉真的好用.</li>
+<li>下載的時候能自動合併影音, 這還滿方便的, 不然還得另外合併, 而且是在手機上, 會很麻煩.</li>
+<li><a href="https://store.google.com/tw/product/chromecast">Chromecast</a>, 這個雖然不常用, 但要投影到電視的時候就很方便... 不過現在應該也都直接用 Google TV 了, 好像想不太出應用場合.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>NewPipe</th>
+<th>SkyTube</th>
+<th>LibreTube</th>
+<th>VueTube</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub star</td>
+<td>20.7K</td>
+<td>1.7K</td>
+<td>2.8k</td>
+<td>2.2k</td>
+</tr>
+<tr>
+<td>Extractor</td>
+<td>NewPipe Extractor</td>
+<td>NewPipe Extractor</td>
+<td>NewPipe Extractor</td>
+<td>VueTube-Extractor</td>
+</tr>
+<tr>
+<td>外部撥放器</td>
+<td>支援</td>
+<td>支援</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>帳號登入</td>
+<td>無 (設計理念)</td>
+<td>無</td>
+<td>LibraTube 帳號</td>
+<td>Google (計畫中)</td>
+</tr>
+<tr>
+<td>訂閱清單匯入</td>
+<td>有 (支援 zip)</td>
+<td>只收 json, 得轉檔</td>
+<td>有(未測試)</td>
+<td>好像沒有?</td>
+</tr>
+<tr>
+<td>下載影片</td>
+<td>有 (影音分開)</td>
+<td>有(影音<strong>合併</strong>)</td>
+<td>有(影音<strong>合併</strong>)</td>
+<td>無</td>
+</tr>
+<tr>
+<td>手勢</td>
+<td>音量/亮度</td>
+<td>音量/亮度/<strong>前進後退</strong></td>
+<td>無</td>
+<td>無</td>
+</tr>
+<tr>
+<td>Chromecast</td>
+<td>無</td>
+<td>Extra 版才有 <br/> (non-opensource)</td>
+<td>無</td>
+<td>無</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意</strong>
+這些 App 除了 NewPipe 以外, 大多都還在 active development, 尤其是 VueTube, 所以功能會一直在調整和加強.</p>
+<ol>
+<li>
+<p><a href="https://github.com/TeamNewPipe/NewPipe">NewPipe</a>:</p>
+<ol>
+<li>不能 login (這是他的設計理念)</li>
+<li>Gesture: 可直接調整音量和亮度, 很方便, 但 <strong>沒有</strong> 快轉倒退</li>
+<li>訂閱清單可直接 import Google takeout 的 zip 檔</li>
+<li>下載 video/audio 是分開的, 得再合併</li>
+</ol>
+</li>
+<li>
+<p><a href="https://github.com/polymorphicshade/NewPipe">NewPipe NewPipe x SponsorBlock</a></p>
+<ol>
+<li>這個 App 基本上就是 NewPipe, 只是每次 NewPipe 出了新版後, 他會再多上 <a href="https://sponsor.ajay.app/">SponsorBlock</a> 和 <a href="https://returnyoutubedislike.com/">Return YouTube Dislike</a> 這兩個功能的 patch. 網站上也有提到, 是因為原來的 NewPipe team 不同意加上這兩個功能, 所以才有這個 fork.</li>
+</ol>
+</li>
+<li>
+<p><a href="https://github.com/SkyTubeTeam/SkyTube">SkyTube</a></p>
+<ol>
+<li>不能 login (有人提了, 但不知道會不會實作 <a href="https://github.com/SkyTubeTeam/SkyTube/issues/25">https://github.com/SkyTubeTeam/SkyTube/issues/25</a>)</li>
+<li>Gesture: 可直接調整音量和亮度, 很方便, 還 <strong>有</strong> 快轉倒退</li>
+<li>訂閱清單 <strong>只</strong> 收 json 格式, 得找 3rd party 程式來轉檔</li>
+<li>下載 video/audio 是合併的 (但下載的過程中只能從通知看到進度)</li>
+<li>SkyTube Extra: 有包含 closed-source, third-party library, 但 <strong>支援 Chromecast</strong></li>
+</ol>
+</li>
+<li>
+<p><a href="https://github.com/libre-tube/LibreTube">LibreTube</a></p>
+<ol>
+<li>下載 video/audio 是合併的 (但下載的過程中只能從通知看到進度)</li>
+<li>Gesture: 看來是不會支援 (參考: <a href="https://github.com/libre-tube/LibreTube/issues/381">https://github.com/libre-tube/LibreTube/issues/381</a>)</li>
+</ol>
+</li>
+<li>
+<p><a href="https://github.com/VueTubeApp/VueTube">VueTube</a>: 這個還真的是在 early beta (2022/7/1), 很多功能都還沒做出來, 再觀察.</p>
+</li>
+<li>
+<p><a href="https://github.com/revanced">ReVanced</a>: 這個看來是要繼承原來的 Vanced, 還要再觀望.</p>
+</li>
+<li>
+<p>有一些是 web-based 的, 譬如 Piped, VueTube, LibreTube (based on Piped)</p>
+</li>
+</ol>
+<h2 id="google-tv-android-tv">Google TV (Android TV)</h2>
+<ol>
+<li>如果家裡有 Google TV, 推薦試試 <a href="https://github.com/yuliskov/SmartTubeNext">SmartTubeNext (STN)</a>, 他也是 Android App, 但他是設計給電視用的.
+要注意的是, 他可以檢查更新和下載, 但 14 版到 15 版好像不行, 至少我這邊搭配 Google TV 是一直更新失敗, 最後是手動下載 Apk 重新安裝.</li>
+</ol>
+<h2 id="ios">iOS</h2>
+<p>沒想到 iOS 竟然也有 ... 不過都只有 ipa 檔, 不是越獄, 就得用<a href="https://altstore.io/">AltStor</a></p>
+<ol>
+<li><a href="https://github.com/qnblackcat/uYouPlus">uYouPlus</a></li>
+<li><a href="https://github.com/yattee/yattee">Yattee</a></li>
+<li><a href="https://github.com/VueTubeApp">VueTube</a>: 他同時提供 Android 和 iOS</li>
+</ol>
+<h2 id="參考">參考</h2>
+<ol>
+<li>GitHub: <a href="https://gist.github.com/SkyyySi/1b621c7c20ae7e0865a8ac428156c1cf">https://gist.github.com/SkyyySi/1b621c7c20ae7e0865a8ac428156c1cf</a></li>
+<li>PTT: <a href="https://www.ptt.cc/bbs/MobileComm/M.1647892683.A.23B.html">https://www.ptt.cc/bbs/MobileComm/M.1647892683.A.23B.html</a></li>
+<li><a href="https://abooo.pixnet.net/blog/post/225867041">https://abooo.pixnet.net/blog/post/225867041</a></li>
+</ol>
+<h2 id="whats-next">What's next</h2>
+<ol>
+<li>要找個方法修改 Android 上自動開啟 youtube 的 App</li>
+<li>有些 App 不支援 Google 帳號登入, 那要找方法把原來的 YouTube 訂閱清單等等資料轉過去.</li>
+</ol>
 
     </div>
 <div class="post_comments">
@@ -290,9 +417,6 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/tw/doc/software/youtube-enhancer/" class="nav-link" title="YouTube 各種加強工具">YouTube 各種加強工具</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="使用 Grafana 管理 SonarQube KPI">使用 Grafana 管理 SonarQube KPI</a>
       </li>
       <li>
@@ -312,6 +436,9 @@
       </li>
       <li>
         <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/" class="nav-link" title="Open Source VPN 之不嚴謹比較">Open Source VPN 之不嚴謹比較</a>
       </li>
     </ul>
     <div>
