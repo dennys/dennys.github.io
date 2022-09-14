@@ -231,8 +231,8 @@
 When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
 <ol>
 <li><a href="https://gitlab.com/">GitLab</a> sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan.</li>
-<li><a href="https://gitlab.com/">GitLab</a> triggers <a href="https://www.sonarqube.org/">SonarQube</a> to sacn.</li>
-<li><a href="https://www.sonarqube.org/">SonarQube</a> integrate <a href="https://checkmarx.com/">Checkmarx</a>'s report.</li>
+<li><a href="https://gitlab.com/">GitLab</a> triggers <a href="https://www.sonarqube.org/">SonarQube</a> to scan.</li>
+<li><a href="https://www.sonarqube.org/">SonarQube</a> integrates <a href="https://checkmarx.com/">Checkmarx</a>'s report.</li>
 </ol>
 <h2 id="procedure">Procedure</h2>
 <p>You can reference the official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up</a></p>
@@ -240,7 +240,7 @@ When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab 
 <li>Download the plugin from <a href="https://checkmarx.com/plugins/">here</a>, it only supports SonarQube LTS version (for now, it's 8.x)</li>
 <li>Configurea Quality Gate/Profiles of SonarQube for Checkmarx's rules.</li>
 <li>Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.</li>
-<li>Configure Checkmarx data in SonarQube, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up">here</a>.</li>
+<li>Configure Checkmarx data in SonarQube, which you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up">here</a>.</li>
 <li>Trigger GitLab CI again, you will see the following log in your SonarQube job</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">INFO: Sensor Import Checkmarx scan results to SonarQube <span class="o">[</span>checkmarx<span class="o">]</span>
@@ -325,7 +325,7 @@ When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab 
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

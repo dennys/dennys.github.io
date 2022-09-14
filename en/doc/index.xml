@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus</title>
-      <link>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/</link>
+      <link>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/</guid>
+      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/</guid>
       <description>
         
           
@@ -52,7 +52,7 @@ Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter
         
           
             Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard need this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] Solution 2: Use gitlab-ci-pipelines-exporter Exporter: https://github.
+Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard needs this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] Solution 2: Use gitlab-ci-pipelines-exporter Exporter: https://github.
           
           
         
@@ -68,8 +68,8 @@ Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in met
       <description>
         
           
-            Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
-Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Softwware There are lots of rename tools.
+            Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
+Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Software There are lots of rename tools.
           
           
         
@@ -85,8 +85,8 @@ Batch change filenames to P[photo capture date]-[camera model].jpg. For example,
       <description>
         
           
-            I usually use Spotify to listen Podcast, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
-And I find Pocket Casts has a interested feature, it can skip the first or last *** seconds. It means some Podcasts have an introduction in the beginning, if you want to skip it, you can do it in this app. (This feature is provided in free version.
+            I usually use Spotify to listen to podcasts, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
+And I find Pocket Casts has an interesting feature, it can skip the first or last *** seconds. It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app. (This feature is provided in the free version.
           
           
         
@@ -102,7 +102,7 @@ And I find Pocket Casts has a interested feature, it can skip the first or last 
       <description>
         
           
-            If you want to get the 1st record of a range records, you can use this SQL command.
+            If you want to get the 1st record of range records, you can use this SQL command.
 1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
           
           
@@ -119,7 +119,7 @@ And I find Pocket Casts has a interested feature, it can skip the first or last 
       <description>
         
           
-            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           
@@ -136,8 +136,8 @@ Procedure Step 1 - Prepare .NET build environment First, you need to prepare an 
       <description>
         
           
-            Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
+            Requirement I want to have daily mail including currency exchange rate information.
+Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate pages. Include some exchange rate history charts. Solution Use ifttt.com
 Create a new Applet on IFTTT
 Add a new &amp;quot;If This&amp;quot;
 Choose &amp;quot;finance&amp;quot; service
@@ -159,7 +159,7 @@ Add a new &amp;quot;Then That&amp;quot;
       <description>
         
           
-            Requirement I want to have a daily mail including currency exchange rate information.
+            Requirement I want to have daily mail including currency exchange rate information.
 Solution use https://wise.com (no need to register an account)
 Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
           
@@ -178,7 +178,7 @@ Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency excha
         
           
             Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resource to scan the code.) Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
           
           
         
@@ -195,7 +195,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
         
           
             Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
 Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
           
           
@@ -212,7 +212,7 @@ Download the plugin from here, it only supports SonarQube LTS version (for now, 
       <description>
         
           
-            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others Index need to be rebuild, delete/update record will NOT free index block Need DBA to check block&#39;s definition.
+            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index-related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others An index needs to be rebuilt, deleting or updating records will NOT free the index block Need DBA to check the block&#39;s definition.
           
           
         

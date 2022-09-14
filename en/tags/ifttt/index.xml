@@ -17,8 +17,8 @@
       <description>
         
           
-            Requirement I want to have a daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate page. Include some exchange rate history chart. Solution Use ifttt.com
+            Requirement I want to have daily mail including currency exchange rate information.
+Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate pages. Include some exchange rate history charts. Solution Use ifttt.com
 Create a new Applet on IFTTT
 Add a new &amp;quot;If This&amp;quot;
 Choose &amp;quot;finance&amp;quot; service

@@ -34,8 +34,8 @@ In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, A
       <description>
         
           
-            Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
-Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Softwware There are lots of rename tools.
+            Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
+Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Software There are lots of rename tools.
           
           
         
@@ -51,8 +51,8 @@ Batch change filenames to P[photo capture date]-[camera model].jpg. For example,
       <description>
         
           
-            I usually use Spotify to listen Podcast, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
-And I find Pocket Casts has a interested feature, it can skip the first or last *** seconds. It means some Podcasts have an introduction in the beginning, if you want to skip it, you can do it in this app. (This feature is provided in free version.
+            I usually use Spotify to listen to podcasts, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
+And I find Pocket Casts has an interesting feature, it can skip the first or last *** seconds. It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app. (This feature is provided in the free version.
           
           
         
@@ -68,7 +68,7 @@ And I find Pocket Casts has a interested feature, it can skip the first or last 
       <description>
         
           
-            Requirement I want to have a daily mail including currency exchange rate information.
+            Requirement I want to have daily mail including currency exchange rate information.
 Solution use https://wise.com (no need to register an account)
 Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
           

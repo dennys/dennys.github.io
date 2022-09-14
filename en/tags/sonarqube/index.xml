@@ -35,7 +35,7 @@ Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter
         
           
             Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
 Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
           
           

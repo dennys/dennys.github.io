@@ -17,7 +17,7 @@
       <description>
         
           
-            If you want to get the 1st record of a range records, you can use this SQL command.
+            If you want to get the 1st record of range records, you can use this SQL command.
 1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
           
           
@@ -34,7 +34,7 @@
       <description>
         
           
-            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others Index need to be rebuild, delete/update record will NOT free index block Need DBA to check block&#39;s definition.
+            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index-related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others An index needs to be rebuilt, deleting or updating records will NOT free the index block Need DBA to check the block&#39;s definition.
           
           
         

@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail) | Dennys Diary</title>
+<title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="K-9 Mail 6.200 is released on 2022/07/08, it add the support to OAuth 2.0. Before it, if you activated the 2-factor verification on your Google account, when …" />
+<meta name="description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="K-9 Mail 6.200 Supports OAuth 2.0 (gmail)" />
+<meta name="twitter:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/" />
-<meta property="og:title" content="K-9 Mail 6.200 Supports OAuth 2.0 (gmail)" />
-<meta property="og:description" content="K-9 Mail 6.200 is released on 2022/07/08, it add the support to OAuth 2.0. Before it, if you activated the 2-factor verification on your Google account, when …" />
+<meta property="og:url" content="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" />
+<meta property="og:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
+<meta property="og:description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/">
+<link rel="canonical" href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/">
 
 
 
@@ -152,7 +152,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</h1>
+    <h1 class="post_title">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -160,21 +160,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jul 13, 2022</span>
-    <span class="post_time"> · 1 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/software/' title="Software" class="post_tag button button_translucent">Software
+      Aug 31, 2022</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/prometheus/' title="Prometheus" class="post_tag button button_translucent">Prometheus
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=K-9%20Mail%206.200%20Supports%20OAuth%202.0%20%28gmail%29&url=https%3a%2f%2fdennys.github.io%2fen%2fposts%2f202207%2fk-9-mail-supports-oauth-2.0-gmail%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Prometheus%20Pulls%2fPushes%20Metrics%20from%2fto%20Another%20Prometheus&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pull-push-metrics-prometheus%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fposts%2f202207%2fk-9-mail-supports-oauth-2.0-gmail%2f&t=K-9%20Mail%206.200%20Supports%20OAuth%202.0%20%28gmail%29" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pull-push-metrics-prometheus%2f&t=Prometheus%20Pulls%2fPushes%20Metrics%20from%2fto%20Another%20Prometheus" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -188,7 +188,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -199,14 +199,119 @@
   </span>
   </div>
 
-    <div class="post_body"><p><a href="https://github.com/thundernest/k-9">K-9 Mail</a> 6.200 is released on 2022/07/08, it add the support to OAuth 2.0.
-Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail,
-you need to use <a href="https://support.google.com/mail/answer/185833?hl=en">App Passwords</a>.
-It's not convenient, you can reference <a href="https://ekiwi-blog.de/en/16841/">https://ekiwi-blog.de/en/16841/</a> to check the detail with a step-by-step video.</p>
-<p>In K-9 Mail <a href="https://github.com/thundernest/k-9/releases/tag/6.200">6.200</a> release, it supports for using OAuth 2.0 with Google, Yahoo, AOL, 
-and personal Microsoft accounts (Office365 accounts are not supported yet). You don't need to input your Google password anymore,
-you just need to grant privilege to K-9 mail.</p>
+      <div class="post_toc">
+        <h2>Overview</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#requirement">Requirement</a></li>
+    <li><a href="#prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</a></li>
+    <li><a href="#prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</a></li>
+    <li><a href="#note">Note</a></li>
+    <li><a href="#port-forward">Port forward</a></li>
+  </ol>
+</nav>
+      </div>
+    
+    <div class="post_body"><pre><code><figure><img src="/images/software/grafana/prometheus.webp"/>
+    </figure>
 
+</code></pre>
+<h2 id="requirement">Requirement</h2>
+<p>I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
+And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule
+from this zone to other zones.</p>
+<h2 id="prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</h2>
+<p>In this scenario, we use the <a href="https://prometheus.io/docs/prometheus/latest/federation/">Federation</a> feature to pull metrics from another Prometheus.
+You don't need to do any changes in Prometheus B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
+<p>Please check lines 13~15, you can only pull some metrics you need.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span>- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">honor_labels</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">metric_relabel_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">      </span>- <span class="nt">source_labels</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">id]</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">        </span><span class="nt">regex</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;^static-agent$&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">        </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l">drop </span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;/federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">      </span><span class="nt">&#39;match[]&#39;</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;prometheus&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{__name__=~&#34;job:.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;node_.*|container_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">15</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;windows_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;probe_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job!=&#34;&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;node&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_http_2xx&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_icmp&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">        </span><span class="c">#match[]={__name__=~&#34;..*&#34;}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">        </span><span class="c">#match[]=&#34;{__name__=~&#34;.+&#34;}&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">      </span>- <span class="nt">targets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;x.x.x.x:9090&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity Check: You can connect to <a href="http://x.x.x.x:9090/targets">http://x.x.x.x:9090/targets</a> and find the federation job status.
+<figure><img src="/images/software/grafana/prometheus_federate.webp"/>
+</figure>
+</p>
+<h2 id="prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</h2>
+<p>In this scenario, first, you need to enable the <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
+You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/web.yml:/etc/prometheus/web.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.config.file=/etc/prometheus/web.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.enable-remote-write-receiver&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Then, you need to modify <em>docker-compose.yml</em> and *prometheus.yml of Prometheus C.
+First, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#prometheus-agent">Prometheus agent</a> mode,
+just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># docker-compose.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/grafana/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--enable-feature=agent&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--log.level=debug&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section, and input Prometheus A's URL in it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># prometheus.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">global</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">
+</span></span></span><span class="line hl"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="nt">remote_write</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;http://(Domain of Prometheus A):9090/api/v1/write&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">9</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity check: you can enable the log to debug level and check it sends the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">prometheus           | ts=2022-08-31T06:58:46.065Z caller=dedupe.go:112 component=remote level=debug remote_name=3c577a url=http://x.x.x.x:3128/api/v1/write msg=QueueManager.calculateDesiredShards dataInRate=95.10224000000001 dataOutRate=273.83119999999997 dataKeptRatio=1 dataPendingRate=-178.72895999999997 dataPending=285.30672000000004 dataOutDuration=0.026267519444000003 timePerSample=9.592595527463637e-05 desiredShards=0.010491189203871395 highestSent=1.66192912e+09 highestRecv=1.661929123e+09
+</span></span></code></pre></div><h2 id="note">Note</h2>
+<p>You should enable authentication in Prometheus, you can reference this page to hash your password <a href="https://prometheus.io/docs/guides/basic-auth/">https://prometheus.io/docs/guides/basic-auth/</a>,
+and save it into your <em>web.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">basic_auth_users</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="cp">******************************************</span><span class="w">
+</span></span></span></code></pre></div><h2 id="port-forward">Port forward</h2>
+<p>If you have a restricted firewall, you can use socat to forward the request to another host.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">socat -v TCP-LISTEN:3128,fork,reuseaddr TCP:x.x.x.x:9090
+</span></span></code></pre></div>
     </div>
 <div class="post_comments">
   
@@ -240,13 +345,13 @@ you just need to grant privilege to K-9 mail.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
-      </li>
-      <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/" class="nav-link" title="Use Grafana to Manage GitLab CI/CD Pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/" class="nav-link" title="K-9 Mail 6.200 Supports OAuth 2.0 (gmail)">K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/" class="nav-link" title="Batch Photo Files Rename Tools (by EXIF).">Batch Photo Files Rename Tools (by EXIF).</a>

@@ -211,7 +211,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>If you want to get the 1st record of a range records, you can use this SQL command.
+            <p>If you want to get the 1st record of range records, you can use this SQL command.
 1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &gt; p_cur_timestamp 5 AND a.update_dt &lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1</p>
           
           <br>
@@ -278,7 +278,7 @@
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE 'AB%' Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index related information (it doesn't contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE 'AB%' …</p>
+            <p>Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE 'AB%' Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index-related information (it doesn't contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE 'AB%' …</p>
           
           <br>
           <a href="https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/" title="Read More" class="excerpt_more button">Read More</a>
@@ -303,7 +303,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

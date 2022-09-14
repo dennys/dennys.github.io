@@ -26,16 +26,16 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="If you want to get the 1st record of a range records, you can use this SQL command.
-1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER …" />
+<meta name="description" content="If you want to get the 1st record of range records, you can use this SQL command.
+1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="SQL to get 1st record of a range" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" />
 <meta property="og:title" content="SQL to get 1st record of a range" />
-<meta property="og:description" content="If you want to get the 1st record of a range records, you can use this SQL command.
-1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER …" />
+<meta property="og:description" content="If you want to get the 1st record of range records, you can use this SQL command.
+1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -201,7 +201,7 @@
   </span>
   </div>
 
-    <div class="post_body"><p>If you want to get the 1st record of a range records, you can use this SQL command.</p>
+    <div class="post_body"><p>If you want to get the 1st record of range records, you can use this SQL command.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">rank</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="p">(</span><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">username</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">update_dt</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="n">rn</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">   </span><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="n">a</span><span class="w">
@@ -243,7 +243,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

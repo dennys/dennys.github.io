@@ -203,7 +203,7 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">all_tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;AB%&#39;</span><span class="w"> 
 </span></span></span></code></pre></div><h3 id="re-analyze-table">Re-analyze table</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">ANALYZE</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">TABLE_NAME</span><span class="w"> </span><span class="n">estimate</span><span class="w"> </span><span class="n">statisitics</span><span class="w">
-</span></span></span></code></pre></div><h3 id="check-index-related-information-it-doesnt-contain-block-information">Check index related information (it doesn't contain block information)</h3>
+</span></span></span></code></pre></div><h3 id="check-index-related-information-it-doesnt-contain-block-information">Check index-related information (it doesn't contain block information)</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">all_indexes</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;AB%&#39;</span><span class="w">
 </span></span></span></code></pre></div><h3 id="re-analyze-index">Re-analyze index:</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">ANALYZE</span><span class="w"> </span><span class="k">index</span><span class="w"> </span><span class="n">INDEX_NAME</span><span class="w"> </span><span class="n">validate</span><span class="w"> </span><span class="k">structure</span><span class="p">;</span><span class="w">
@@ -211,8 +211,8 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">index_stats</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></div><h3 id="others">Others</h3>
 <ol>
-<li>Index need to be rebuild, delete/update record will NOT free index block</li>
-<li>Need DBA to check block's definition.</li>
+<li>An index needs to be rebuilt, deleting or updating records will NOT free the index block</li>
+<li>Need DBA to check the block's definition.</li>
 </ol>
 
     </div>
@@ -248,7 +248,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

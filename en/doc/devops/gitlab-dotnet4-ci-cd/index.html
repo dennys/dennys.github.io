@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you …" />
+<meta name="description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Use GitLab to do .NET 4.8 CI/CD" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" />
 <meta property="og:title" content="Use GitLab to do .NET 4.8 CI/CD" />
-<meta property="og:description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you …" />
+<meta property="og:description" content="Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -228,15 +228,15 @@
   </div>
 
 <h2 id="precondition">Precondition</h2>
-<p>You already have a GitLab (<a href="http://gitlab.com/">GitLab Saas</a> or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.</p>
+<p>You already have a GitLab (<a href="http://gitlab.com/">GitLab Saas</a> or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.</p>
 <h3 id="procedure">Procedure</h3>
 <h3 id="step-1---prepare-net-build-environment">Step 1 - Prepare .NET build environment</h3>
 <ol>
 <li>First, you need to prepare an environment to build .NET application. The easiest solution is to install <a href="https://visualstudio.microsoft.com/">Visual Studio</a>. (Please let me know if I can build a .NET build environment without Visual Studio, thanks.)</li>
-<li>But it's strange, MSBuild.exe is not included in PATH after the installatioin. Please put <code>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin</code> into your PATH.</li>
+<li>But it's strange, MSBuild.exe is not included in PATH after the installation. Please put <code>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin</code> into your PATH.</li>
 </ol>
 <h3 id="step-2---install-git-client">Step 2 - Install Git client</h3>
-<p>Download and install <a href="https://git-scm.com/download/win">Git for Windows</a>. Portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.</p>
+<p>Download and install <a href="https://git-scm.com/download/win">Git for Windows</a>. The portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.</p>
 <h3 id="step-3---install-gitlab-runner">Step 3 - Install GitLab Runner</h3>
 <ol>
 <li>
@@ -256,13 +256,13 @@
 <li>
 <p>Modify config.toml</p>
 <ol>
-<li>Because Gitlab Runner doesn't suppoer Windows shell after version 13, you need to use <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a>, you have 2 options:
+<li>Because Gitlab Runner doesn't support Windows shell after version 13, you need to use <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a>, you have 2 options:
 <ol>
 <li>If you use Power Shell, please open config.toml and rename 'pwsh' to 'powershell'.</li>
 <li>If you use <a href="https://github.com/PowerShell/PowerShell">Power Shell Core</a>, you don't need to do anything.</li>
 </ol>
 </li>
-<li>If you find your log is garbled (ex: your Windows server is not English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
+<li>If you find your log is garbled (ex: your Windows server is not an English version), please add <code>chcp 65001</code> to change the encoding to UTF-8.</li>
 <li>If you use a portable Git, you need to modify <code>$env:Path</code> in config.toml. (comment line 13 and uncomment line 14)</li>
 </ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nx">listen_address</span> <span class="p">=</span> <span class="s2">&#34;[::]:9252&#34;</span>
@@ -322,7 +322,7 @@
 </ol>
 <h3 id="step-5---start-to-buildtestdeploy-code-on-local-machine">Step 5 - Start to build/test/deploy code (on local machine)</h3>
 <ol>
-<li>Before you start to run CI/CD on your GitLab, you can try it in your local machine. It's easier to debug in local environment. Please change directory to the location of .gitlab-ci.yml and execute this command.
+<li>Before you start to run CI/CD on your GitLab, you can try it on your local machine. It's easier to debug in a local environment. Please change the directory to the location of .gitlab-ci.yml and execute this command.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln"> 1</span><span class="cl">C<span class="p">:</span><span class="nl">\Gitlab\builds\j5AFD9Qz\0\gis\commission_moi_dtm</span><span class="c1">&gt; gitlab-runner.exe exec shell build</span>
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl">Runtime platform                                    arch=amd64 os=windows pid=13728 revision=e91107dd version=14.5.2
 </span></span><span class="line"><span class="ln"> 3</span><span class="cl">Running with gitlab-runner 14.5.2 (e91107dd)
@@ -343,7 +343,7 @@
 <h3 id="step-6---start-to-test-cicd-on-gitlab">Step 6 - Start to test CI/CD (on GitLab)</h3>
 <p>If everything is ok, you can commit .gitlab-ci.yml and GitLab should run it automatically.</p>
 <h2 id="sast-static-application-security-testing">SAST (Static Application Security Testing)</h2>
-<p>GitLab can check your source code for known vulnerabilities, unfortunately, it only support Linux container, Windows containers are not yet supported. (reference: <a href="https://docs.gitlab.com/ee/user/application_security/sast/">https://docs.gitlab.com/ee/user/application_security/sast/</a>)</p>
+<p>GitLab can check your source code for known vulnerabilities, unfortunately, it only supports Linux containers, and Windows containers are not yet supported. (reference: <a href="https://docs.gitlab.com/ee/user/application_security/sast/">https://docs.gitlab.com/ee/user/application_security/sast/</a>)</p>
 
     </div>
 
@@ -394,7 +394,7 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

@@ -228,7 +228,7 @@ Use Grafana to Manage GitLab …" />
 <li>Exporter: GitLab build-in (reference: <a href="https://docs.gitlab.com/ee/administration/monitoring/prometheus/">https://docs.gitlab.com/ee/administration/monitoring/prometheus/</a>)</li>
 <li>Grafana dashboard: <a href="https://grafana.com/grafana/dashboards/10620">https://grafana.com/grafana/dashboards/10620</a>
 <ol>
-<li>This dashboard need this plugin: <a href="https://grafana.com/grafana/plugins/grafana-polystat-panel/">https://grafana.com/grafana/plugins/grafana-polystat-panel/</a></li>
+<li>This dashboard needs this plugin: <a href="https://grafana.com/grafana/plugins/grafana-polystat-panel/">https://grafana.com/grafana/plugins/grafana-polystat-panel/</a></li>
 </ol>
 </li>
 <li>prometheus.yml
@@ -245,7 +245,7 @@ Use Grafana to Manage GitLab …" />
 <h3 id="solution-2-use-gitlab-ci-pipelines-exporter">Solution 2: Use gitlab-ci-pipelines-exporter</h3>
 <ul>
 <li>Exporter: <a href="https://github.com/mvisonneau/gitlab-ci-pipelines-exporter">https://github.com/mvisonneau/gitlab-ci-pipelines-exporter</a>
-This exporter provides several spectives metrics (with different Grafana dashboard)</li>
+This exporter provides several spectives metrics (with different Grafana dashboards)</li>
 </ul>
 <ol>
 <li>
@@ -313,7 +313,7 @@ This exporter provides several spectives metrics (with different Grafana dashboa
 <h2 id="job-status-of-ci-pipelines">Job status of CI Pipelines</h2>
 <ol>
 <li>
-<p>The above solution is to check entire CI pipelines result, if you want to see individual job status in Grafana, you can modify gitlab-ci-pipelines-exporter.yml to add line 5~6.
+<p>The above solution is to check the entire CI pipeline results, if you want to see individual job status in Grafana, you can modify gitlab-ci-pipelines-exporter.yml to add lines 5~6.
 And you can install this Grafana dashboard <a href="https://grafana.com/grafana/dashboards/13328">https://grafana.com/grafana/dashboards/13328</a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl"># Pull jobs related metrics on all projects
 </span></span><span class="line"><span class="ln">2</span><span class="cl">project_defaults:
@@ -325,7 +325,7 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
 <li>
 <p>Result</p>
 <ol>
-<li>You can see every jobs execution time and result, and you can click ID to see the detail in GitLab.
+<li>You can see every job's execution time and result, and you can click ID to see the detail in GitLab.
 <figure><img src="/images/software/grafana/grafana_gitlab_ci_pipelines_jobs.webp" width="800"/>
     </figure>
 </li>
@@ -384,7 +384,7 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

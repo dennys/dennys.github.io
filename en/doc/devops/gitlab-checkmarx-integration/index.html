@@ -213,7 +213,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
         <li><a href="#gitlab-project-configuration">GitLab project configuration</a></li>
       </ol>
     </li>
-    <li><a href="#trouble-shooting">Trouble shooting</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
     <li><a href="#reference">Reference</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#whats-next">What's next</a></li>
@@ -249,8 +249,8 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 <h2 id="purpose">Purpose</h2>
 <p><a href="https://checkmarx.com/">Checkmarx</a> is a good tool to do code analysis, but there are 2 pain points during the flow.</p>
 <ol>
-<li>Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot <strong>be triggered by</strong> by a code commit, it can only schedule the job to run the scan. (If I don't commit code, I don't want to waste resource to scan the code.)</li>
-<li>Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or <a href="https://www.atlassian.com/software/jira">JIRA</a> or ...</li>
+<li>Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot <strong>be triggered by</strong> by a code commit, it can only schedule the job to run the scan. (If I don't commit code, I don't want to waste resources scanning the code.)</li>
+<li>Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or <a href="https://www.atlassian.com/software/jira">JIRA</a> or ...</li>
 </ol>
 <p>What we want is to integrate Checkmarx scan into GitLab's CI/CD flow including</p>
 <ol>
@@ -290,8 +290,8 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it …" />
 <h3 id="gitlab-project-configuration">GitLab project configuration</h3>
 <ol>
 <li>
-<p>It's very easy to enable Checkmarx analysis in your GitLab jobs, you just need to edit your .gitlab-ci.yml and to include Checkmarx's yml into it (line 1).
-And you also need to assign the Checkmarx's project name in this yml file (line 4).</p>
+<p>It's very easy to enable Checkmarx analysis in your GitLab jobs, you just need to edit your .gitlab-ci.yml and include Checkmarx's yml into it (line 1).
+And you also need to assign Checkmarx's project name in this yml file (line 4).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line hl"><span class="ln">1</span><span class="cl">include: &#39;https://raw.githubusercontent.com/checkmarx-ltd/cx-flow/develop/templates/gitlab/v3/Checkmarx.gitlab-ci.yml&#39;
 </span></span><span class="line"><span class="ln">2</span><span class="cl">
 </span></span><span class="line"><span class="ln">3</span><span class="cl">variables:
@@ -413,7 +413,7 @@ And you also need to assign the Checkmarx's project name in this yml file (line 
 </span></span><span class="line"><span class="ln">107</span><span class="cl">Job succeeded
 </span></span></code></pre></div></li>
 <li>
-<p>During the Checkmarx analysis, you can check the status from it's GUI, it takes long time to analyze.</p>
+<p>During the Checkmarx analysis, you can check the status from its GUI, it takes a long time to analyze.</p>
 <p><a href="https://dennys.files.wordpress.com/2022/01/image-6.png"><img src="https://dennys.files.wordpress.com/2022/01/image-6.png?w=1024" alt="" class="wp-image-193"/></a></p>
 </li>
 <li>
@@ -439,20 +439,20 @@ And you also need to assign the Checkmarx's project name in this yml file (line 
 </ol>
 </li>
 </ol>
-<h2 id="trouble-shooting">Trouble shooting</h2>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <ol>
-<li>If you find Checkmarx cannot find your team, please make sure to use <strong>English only</strong> in CX_TEAM, if you use non English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.
+<li>If you find Checkmarx cannot find your team, please make sure to use <strong>English only</strong> in CX_TEAM, if you use non-English (ex: Chinese or Japanese), you can check the log and find it cannot find the team.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">2022-01-12 02:51:22.748  INFO <span class="m">11</span> --- <span class="o">[</span>main<span class="o">]</span> c.c.s.s.CxService <span class="o">[</span>x4DNMhOL<span class="o">]</span> : Found team /CxServer/Team1 with ID <span class="m">16</span>
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="reference">Reference</h2>
 <ol>
-<li>You can reference official document to do the integration: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a>.</li>
+<li>You can reference the official document to do the integration: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1929937052/GitLab+Integration</a>.</li>
 </ol>
 <h2 id="conclusion">Conclusion</h2>
 <ol>
 <li>After this integration, you just need to commit the code and see the result in GitLab. All flows are in GitLab now, you don't need to worry about Checkmarx.</li>
-<li>Checkmarx provide lots of integration, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations</a>.</li>
+<li>Checkmarx provides lots of integration, you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/1339162785/CxSAST+CxSCA+Plugins+and+Integrations</a>.</li>
 </ol>
 <h2 id="whats-next">What's next</h2>
 <ol>
@@ -508,7 +508,7 @@ And you also need to assign the Checkmarx's project name in this yml file (line 
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

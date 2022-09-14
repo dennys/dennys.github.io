@@ -18,7 +18,7 @@
         
           
             Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard need this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] Solution 2: Use gitlab-ci-pipelines-exporter Exporter: https://github.
+Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard needs this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] Solution 2: Use gitlab-ci-pipelines-exporter Exporter: https://github.
           
           
         
@@ -34,7 +34,7 @@ Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in met
       <description>
         
           
-            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           
@@ -52,7 +52,7 @@ Procedure Step 1 - Prepare .NET build environment First, you need to prepare an 
         
           
             Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resource to scan the code.) Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
           
           
         
@@ -69,7 +69,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
         
           
             Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
 Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
           
           

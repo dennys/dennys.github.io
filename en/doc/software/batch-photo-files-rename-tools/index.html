@@ -26,7 +26,7 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
+<meta name="description" content="Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
 Batch change filenames to P[photo …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
@@ -34,7 +34,7 @@ Batch change filenames to P[photo …" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/" />
 <meta property="og:title" content="Batch Photo Files Rename Tools (by EXIF)." />
-<meta property="og:description" content="Requirement Most cameras&#39; filename are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool which has the following features.
+<meta property="og:description" content="Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
 Batch change filenames to P[photo …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
@@ -206,7 +206,7 @@ Batch change filenames to P[photo …" />
         <nav id="TableOfContents">
   <ol>
     <li><a href="#requirement">Requirement</a></li>
-    <li><a href="#softwware">Softwware</a>
+    <li><a href="#software">Software</a>
       <ol>
         <li><a href="#f2">F2</a></li>
         <li><a href="#exiftool">ExifTool</a></li>
@@ -220,15 +220,15 @@ Batch change filenames to P[photo …" />
       </div>
     
     <div class="post_body"><h2 id="requirement">Requirement</h2>
-<p>Most cameras' filename are like 'DC*****' or 'P*****', I want to find a tool which has the following features.</p>
+<p>Most cameras' filenames are like 'DC*****' or 'P*****', I want to find a tool that has the following features.</p>
 <ol>
 <li>Batch change filenames to P[photo capture date]-[camera model].jpg. For example, <em>P20220710-101405-iPhone 13.jpg</em>.</li>
 <li>Can change the camera model string, for example, I want to change &quot;iPhone 6&quot; to &quot;i6&quot;, &quot;DMC-G6&quot; to &quot;G6&quot;, &quot;DSC-RX100M5A&quot; to &quot;R1005A&quot;, ...</li>
 <li>Can add a serial number automatically when the new filename is duplicated with others.</li>
 </ol>
-<h2 id="softwware">Softwware</h2>
-<p>There are lots of rename tools. I try 3 tools, all of them are freeware. (Rename Master is not open source, but it's not a problem.). 
-F2 (by <a href="https://go.dev/">Go</a> and ExifTool (by <a href="https://www.perl.org/">Perl</a>) are cross platform.
+<h2 id="software">Software</h2>
+<p>There are lots of rename tools. I try 3 tools, and all of them are freeware. (Rename Master is not open source, but it's not a problem.). 
+F2 (by <a href="https://go.dev/">Go</a> and ExifTool (by <a href="https://www.perl.org/">Perl</a>) are cross-platform.
 Rename Master is for Windows only.</p>
 <ul>
 <li><a href="https://github.com/ayoisaiah/f2">F2</a> (GitHub: 480 stars)</li>
@@ -238,7 +238,7 @@ Rename Master is for Windows only.</p>
 <h3 id="f2">F2</h3>
 <ol>
 <li>
-<p>First run, use it's build-in function, the problem is it cannot get the <em>capture date</em>.</p>
+<p>First run, use its build-in function, the problem is it cannot get the <em>capture date</em>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">C<span class="p">:</span><span class="nl">\</span><span class="c1">&gt;f2 -r &#39;P{{mtime.YYYY}}{{mtime.MM}}{{mtime.DD}}-{{mtime.H}}{{mtime.mm}}{{mtime.ss}}-{{x.model}}&#39;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">┌─────────────────────────────────────────────────┐
 </span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="p">|</span> ORIGINAL     <span class="p">|</span> RENAMED                 <span class="p">|</span> STATUS <span class="p">|</span>
@@ -292,12 +292,12 @@ I try to create a feature request to add the support for <em>DateTimeOriginal</e
 </span></span></code></pre></div></li>
 <li>I cannot find a parameter to show the result, I need to run <em>dir</em> to check the new filenames. If you know how to do it, please let me know, thanks.</li>
 <li>I cannot find a function to modify the camera model string in ExifTool, but it's possible to do it by F2 easily.
-But for my requirement, I need to run F2 many time like the following. It should be ok but I prefer to find a better solution.
+But for my requirement, I need to run F2 many times like the following. It should be ok but I prefer to find a better solution.
 <ol>
 <li>Run ExifTool to rename files</li>
 <li>Run F2 to rename files for my 1st camera/phone.</li>
 <li>Run F2 to rename files for my 2nd camera/phone.</li>
-<li>Run F2 to rename files for my 3nd camera/phone.</li>
+<li>Run F2 to rename files for my 3rd camera/phone.</li>
 <li>...</li>
 </ol>
 </li>
@@ -341,7 +341,7 @@ This is my script, it has 5 steps:</p>
 </ol>
 </li>
 <li>
-<p>If you have hundreds of files, it will hang for several seconds (depends on your files) to scan the file, please be patient!</p>
+<p>If you have hundreds of files, it will hang for several seconds (depending on your files) to scan the file, please be patient!</p>
 </li>
 <li>
 <p>The following is my script, if you like, you can download it into a xxx.rmscr and use Rename Master to open it.
@@ -450,11 +450,11 @@ Then you can modify the script for your requirement.</p>
 </ol>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="other-sofotwares">Other sofotwares</h2>
-<p>There are lots of rename tools, you can try them....</p>
+<p>There are lots of rename tools, you can try them...</p>
 <ul>
-<li><a href="https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>: it seems this utility has lots of features and it supports to write javascript to rename file. But it's for personal use only, if you want to use it in commercial, you need to pay.</li>
+<li><a href="https://www.bulkrenameutility.co.uk/">Bulk Rename Utility</a>: it seems this utility has lots of features and it supports writing javascript to rename files. But it's for personal use only, if you want to use it in commercial, you need to pay.</li>
 <li><a href="https://antp.be/software/renamer">Ant Renamer</a>: The last change is 2015/04/07.</li>
-<li>Ken Rename: I cannot find the official website of it.</li>
+<li>Ken Rename: I cannot find its official website of it.</li>
 </ul>
 
     </div>
@@ -490,7 +490,7 @@ Then you can modify the script for your requirement.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
-        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
+        <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a>

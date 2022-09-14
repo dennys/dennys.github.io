@@ -18,7 +18,7 @@
         
           
             Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resource to scan the code.) Checkmarx has a build-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
           
           
         
@@ -35,7 +35,7 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
         
           
             Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to sacn. SonarQube integrate Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
+GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
 Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
           
           
