@@ -17,8 +17,8 @@
       <description>
         
           
-            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only permit a special firewall rule from this zone to other zones.
-Prometheus A pulls (receive) metrics from Prometheus B In this scenario, we use Fedaration feature to pull metrics from another Prometheus. You don&#39;t need to do any change in Promethes B, just add a new job in prometheus.
+            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule from this zone to other zones.
+Prometheus A pulls (receive) metrics from Prometheus B In this scenario, we use the Federation feature to pull metrics from another Prometheus. You don&#39;t need to do any changes in Prometheus B, just add a new job in prometheus.
           
           
         

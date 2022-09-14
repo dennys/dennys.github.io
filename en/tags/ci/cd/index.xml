@@ -17,7 +17,7 @@
         
           
             Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.
-Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It suports SonarQube 7, not sure it supports 8 or 9, I don&#39;t plan to try it.
+Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don&#39;t plan to try it.
           
           
         

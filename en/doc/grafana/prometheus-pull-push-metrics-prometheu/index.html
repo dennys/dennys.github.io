@@ -26,14 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only …" />
+<meta name="description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheu/" />
 <meta property="og:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
-<meta property="og:description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricited zone and this zone only …" />
+<meta property="og:description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -205,7 +205,7 @@
   <ol>
     <li><a href="#requirement">Requirement</a></li>
     <li><a href="#prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</a></li>
-    <li><a href="#prometheus-c-pushs-forwards-metrics-to-prometheus-a">Prometheus C pushs (forwards) metrics to Prometheus A</a></li>
+    <li><a href="#prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</a></li>
     <li><a href="#note">Note</a></li>
     <li><a href="#port-forward">Port forward</a></li>
   </ol>
@@ -218,12 +218,12 @@
 </code></pre>
 <h2 id="requirement">Requirement</h2>
 <p>I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
-And one VM (Server C) is in a restricited zone and this zone only permit a special firewall rule
+And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule
 from this zone to other zones.</p>
 <h2 id="prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</h2>
-<p>In this scenario, we use <a href="https://prometheus.io/docs/prometheus/latest/federation/">Fedaration</a> feature to pull metrics from another Prometheus.
-You don't need to do any change in Promethes B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
-<p>Please check line 13~15, you can only pull some metrics you need.</p>
+<p>In this scenario, we use the <a href="https://prometheus.io/docs/prometheus/latest/federation/">Federation</a> feature to pull metrics from another Prometheus.
+You don't need to do any changes in Prometheus B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
+<p>Please check lines 13~15, you can only pull some metrics you need.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span>- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;federate&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
@@ -256,8 +256,8 @@ You don't need to do any change in Promethes B, just add a new job in <em>promet
 <figure><img src="/images/software/grafana/prometheus_federate.webp"/>
 </figure>
 </p>
-<h2 id="prometheus-c-pushs-forwards-metrics-to-prometheus-a">Prometheus C pushs (forwards) metrics to Prometheus A</h2>
-<p>In this scenario, first, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
+<h2 id="prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</h2>
+<p>In this scenario, first, you need to enable the <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
 You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
@@ -291,13 +291,13 @@ just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.
 </span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--enable-feature=agent&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--log.level=debug&#39;</span><span class="w">
-</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section and input Prometheus A's url in it.</p>
+</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section, and input Prometheus A's URL in it.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># prometheus.yml of C</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">global</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">
 </span></span></span><span class="line hl"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="nt">remote_write</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;http://(Domain of PrometheusA):9090/api/v1/write&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;http://(Domain of Prometheus A):9090/api/v1/write&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">9</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">

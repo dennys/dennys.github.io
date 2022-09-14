@@ -231,12 +231,12 @@
 <h3 id="solution-1">Solution 1</h3>
 <ol>
 <li>Exporter: <a href="https://github.com/dmeiners88/sonarqube-prometheus-exporter">https://github.com/dmeiners88/sonarqube-prometheus-exporter</a>:
-It's a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It suports SonarQube 7, not sure it supports 8 or 9, I don't plan to try it.</li>
+It's a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don't plan to try it.</li>
 </ol>
 <h3 id="solution-2">Solution 2</h3>
 <ol>
 <li>Exporter: <a href="https://github.com/nthienan/sonarqube-exporter">https://github.com/nthienan/sonarqube-exporter</a></li>
-<li>Grafana dashboard: you can find 2s dashboard <em>overview.json</em> and <em>dashboard details.json</em> in this GitHub.</li>
+<li>Grafana dashboard: you can find 2s dashboard <em>overview.json</em> and <em>dashboard details.json</em> on this GitHub.</li>
 <li>Generate a SonarQube token, you can reference <a href="https://docs.sonarqube.org/latest/user-guide/user-token/">https://docs.sonarqube.org/latest/user-guide/user-token/</a></li>
 <li>How to start this exporter
 <ol>
@@ -270,14 +270,14 @@ It's a SonarQube plugin, but it only supports 5 KPIs, and the last commit date i
 <h2 id="result">Result</h2>
 <ol>
 <li>
-<p>Restart Prometheus and re-build project, and you can see the result in Grafana.</p>
+<p>Restart Prometheus and rebuild the project, and you can see the result in Grafana.</p>
 <figure><img src="/images/software/grafana/grafana_sonarqube.webp" width="700"/>
     </figure>
 
 </li>
 <li>
-<p>You can also check the detail dashboard, it contains more information like build trend chart.
-The following is not a goole sample, I'll update it in the future.</p>
+<p>You can also check the detail dashboard, it contains more information like a build trend chart.
+The following is not a google sample, I'll update it in the future.</p>
 <figure><img src="/images/software/grafana/grafana_sonarqube_detail.webp" width="700"/>
     </figure>
 
