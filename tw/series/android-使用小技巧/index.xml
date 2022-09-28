@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何修改 Android 預設的 YouTube App (YouTube Vanced, New Pipe, ...)</title>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <description>
+        
+          
+            注意 這方法僅適用於 Android 11 或更以前的版本!!! 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
+作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
+這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
       <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>

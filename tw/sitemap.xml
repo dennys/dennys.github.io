@@ -82,6 +82,16 @@
   </url><url>
     <loc>https://dennys.github.io/tw/tags/youtube/</loc>
     <lastmod>2022-08-31T10:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/youtube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/youtube/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/youtube-enhancer/</loc>
     <lastmod>2022-08-31T10:18:32+08:00</lastmod>
@@ -197,14 +207,27 @@
     <loc>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</loc>
     <lastmod>2022-07-06T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</loc>
-    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/tags/android/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/android/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/android/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-06-29T00:00:00+08:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</loc>
+    <lastmod>2022-07-02T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</loc>
+    <lastmod>2022-07-01T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/pixel-5/</loc>
     <lastmod>2022-06-29T00:00:00+08:00</lastmod>
