@@ -26,16 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
-在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建的 metrics Exporter: GitLab …" />
+<meta name="description" content="本文更新紀錄 2022/10/13: 新增幾個步驟的檢查點 需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
+在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="使用 Grafana 管理 GitLab CI/CD Pipelines" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/" />
 <meta property="og:title" content="使用 Grafana 管理 GitLab CI/CD Pipelines" />
-<meta property="og:description" content="需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
-在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建的 metrics Exporter: GitLab …" />
+<meta property="og:description" content="本文更新紀錄 2022/10/13: 新增幾個步驟的檢查點 需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
+在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -207,6 +207,7 @@
         <h2>文章目錄</h2>
         <nav id="TableOfContents">
   <ol>
+    <li><a href="#本文更新紀錄">本文更新紀錄</a></li>
     <li><a href="#需求">需求</a></li>
     <li><a href="#在-grafana-上面顯示-gitlab-ci-pipelines">在 Grafana 上面顯示 GitLab CI pipelines</a>
       <ol>
@@ -220,7 +221,11 @@
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="需求">需求</h2>
+    <div class="post_body"><h2 id="本文更新紀錄">本文更新紀錄</h2>
+<ol>
+<li>2022/10/13: 新增幾個步驟的檢查點</li>
+</ol>
+<h2 id="需求">需求</h2>
 <p>當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.</p>
 <h2 id="在-grafana-上面顯示-gitlab-ci-pipelines">在 Grafana 上面顯示 GitLab CI pipelines</h2>
 <h3 id="方案1-使用-gitlab-內建的-metrics">方案1: 使用 GitLab 內建的 metrics</h3>
@@ -254,7 +259,33 @@
 <li>
 <p>啟動方式</p>
 <ol>
-<li>如果要直接跑, 可下這個指令
+<li>
+<p>假設你把 gitlab-ci-pipelines-exporter 的設定放在這 /opt/grafana/gitlab-ci-pipelines-exporter/gitlab-ci-pipelines-exporter.yml</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="c"># [address:port] to make the process listen</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="c"># upon (optional, default: :8080)</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w"></span><span class="nt">listen_address</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="m">9103</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w"></span><span class="nt">gitlab</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://gitlab.xxx.xxx.xxx/</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w"></span><span class="c"># You can also configure the token using --gitlab-token</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w"></span><span class="c"># or the $GCPE_GITLAB_TOKEN environment variable</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w"></span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">xrN14n9-ywvAFxxxxxx</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w"></span><span class="nt">project_defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w"></span><span class="nt">pull</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">pipeline</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span><span class="nt">environments</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w"></span><span class="nt">wildcards</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w"></span>- <span class="nt">owner</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">g1</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">group</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">    </span><span class="nt">include_subgroups</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>如果要直接跑, 可下這個指令, 把程式啟動在 docker</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker run --restart always <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>--name gitlab-ci-pipelines-exporter <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>-v /opt/gitlab-runner/gitlab-ci-pipelines-exporter.yml:/etc/config.yml <span class="se">\
@@ -264,7 +295,8 @@
 </span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="se"></span>mvisonneau/gitlab-ci-pipelines-exporter:v0.5.3 <span class="se">\
 </span></span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="se"></span>run --config /etc/config.yml
 </span></span></code></pre></div></li>
-<li>docker-compose.yml 的方式如下
+<li>
+<p>若你用的是 docker-compose, 他的 yml 如下</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">gitlab-ci-pipelines-exporter</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mvisonneau/gitlab-ci-pipelines-exporter:v0.5.3</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">gitlab-ci-pipelines-exporter</span><span class="w">
@@ -280,6 +312,22 @@
 </span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="c">#GCPE_GITLAB_TOKEN: ${GCPE_GITLAB_TOKEN}</span><span class="w">
 </span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span><span class="c">#GCPE_INTERNAL_MONITORING_LISTENER_ADDRESS: tcp://127.0.0.1:8082</span><span class="w">
 </span></span></span></code></pre></div></li>
+<li>
+<p>檢查方式: 可檢查 <a href="http://your.server:9103/metrics">http://your.server:9103/metrics</a>, 然後你應該會看到一對長的像這樣的 metrics &quot;gitlab_ci_pineline_xxxx&quot;
+如果你只看到 &quot;gcpe_projects_***&quot; 和 &quot;promhttp_metric_handler_errors_total&quot;, 那這樣代表設定有問題, 沒有抓到值.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl"># TYPE gitlab_ci_pipeline_coverage gauge
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">gitlab_ci_pipeline_coverage{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 0
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">gitlab_ci_pipeline_coverage{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 0
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"># HELP gitlab_ci_pipeline_duration_seconds Duration in seconds of the most recent pipeline
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"># TYPE gitlab_ci_pipeline_duration_seconds gauge
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">gitlab_ci_pipeline_duration_seconds{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 253
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">gitlab_ci_pipeline_duration_seconds{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 489
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"># HELP gitlab_ci_pipeline_id ID of the most recent pipeline
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"># TYPE gitlab_ci_pipeline_id gauge
+</span></span><span class="line"><span class="ln">10</span><span class="cl">gitlab_ci_pipeline_id{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 811
+</span></span><span class="line"><span class="ln">11</span><span class="cl">gitlab_ci_pipeline_id{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;main&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 823
+</span></span><span class="line"><span class="ln">12</span><span class="cl">......
+</span></span></code></pre></div></li>
 </ol>
 </li>
 <li>

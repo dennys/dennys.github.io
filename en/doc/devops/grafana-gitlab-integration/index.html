@@ -26,16 +26,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab …" />
+<meta name="description" content="Change log 2022/10/13: Add some check points. Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Use Grafana to Manage GitLab CI/CD Pipelines" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/" />
 <meta property="og:title" content="Use Grafana to Manage GitLab CI/CD Pipelines" />
-<meta property="og:description" content="Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab …" />
+<meta property="og:description" content="Change log 2022/10/13: Add some check points. Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -163,7 +161,7 @@ Use Grafana to Manage GitLab …" />
 </span>
     <span class="post_date">
       Jul 16, 2022</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/gitlab/' title="GitLab" class="post_tag button button_translucent">GitLab
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/gitlab/' title="GitLab" class="post_tag button button_translucent">GitLab
         </a><a href='https://dennys.github.io/en/tags/ci/cd/' title="CI/CD" class="post_tag button button_translucent">CI/CD
         </a><a href='https://dennys.github.io/en/tags/grafana/' title="Grafana" class="post_tag button button_translucent">Grafana
         </a>
@@ -207,6 +205,7 @@ Use Grafana to Manage GitLab …" />
         <h2>Overview</h2>
         <nav id="TableOfContents">
   <ol>
+    <li><a href="#change-log">Change log</a></li>
     <li><a href="#requirement">Requirement</a></li>
     <li><a href="#use-grafana-to-manage-gitlab-cicd-pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</a>
       <ol>
@@ -220,7 +219,11 @@ Use Grafana to Manage GitLab …" />
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="requirement">Requirement</h2>
+    <div class="post_body"><h2 id="change-log">Change log</h2>
+<ol>
+<li>2022/10/13: Add some check points.</li>
+</ol>
+<h2 id="requirement">Requirement</h2>
 <p>When there are lots of projects on GitLab, it's not easy to know the overall build status of their CI/CD Pipelines.</p>
 <h2 id="use-grafana-to-manage-gitlab-cicd-pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</h2>
 <h3 id="solution-1-use-gitlab-build-in-metrics">Solution 1: Use GitLab build-in metrics</h3>
@@ -252,9 +255,35 @@ This exporter provides several spectives metrics (with different Grafana dashboa
 <p>Grafana dashboard: the same as solution 1 (it also needs Ploystat plugin)</p>
 </li>
 <li>
-<p>How to start</p>
+<p>How to start gitlab-ci-pipelines-exporter</p>
 <ol>
-<li>You can run this command to start this exporter
+<li>
+<p>Assume you put gitlab-ci-pipelines-exporter's configuration at /opt/grafana/gitlab-ci-pipelines-exporter/gitlab-ci-pipelines-exporter.yml</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="c"># [address:port] to make the process listen</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="c"># upon (optional, default: :8080)</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w"></span><span class="nt">listen_address</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="m">9103</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w"></span><span class="nt">gitlab</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://gitlab.xxx.xxx.xxx/</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w"></span><span class="c"># You can also configure the token using --gitlab-token</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w"></span><span class="c"># or the $GCPE_GITLAB_TOKEN environment variable</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w"></span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">xrN14n9-ywvAFxxxxxx</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w"></span><span class="nt">project_defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w"></span><span class="nt">pull</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">pipeline</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span><span class="nt">environments</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w"></span><span class="nt">wildcards</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w"></span>- <span class="nt">owner</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">g1</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">group</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">    </span><span class="nt">include_subgroups</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p>You can run this command to start this exporter in docker</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker run --restart always <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>--name gitlab-ci-pipelines-exporter <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>-v /opt/gitlab-runner/gitlab-ci-pipelines-exporter.yml:/etc/config.yml <span class="se">\
@@ -264,7 +293,8 @@ This exporter provides several spectives metrics (with different Grafana dashboa
 </span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="se"></span>mvisonneau/gitlab-ci-pipelines-exporter:v0.5.3 <span class="se">\
 </span></span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="se"></span>run --config /etc/config.yml
 </span></span></code></pre></div></li>
-<li>If you use docker-compose, you can reference the following
+<li>
+<p>If you use docker-compose, you can reference the following yml</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">gitlab-ci-pipelines-exporter</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">mvisonneau/gitlab-ci-pipelines-exporter:v0.5.3</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">gitlab-ci-pipelines-exporter</span><span class="w">
@@ -280,6 +310,22 @@ This exporter provides several spectives metrics (with different Grafana dashboa
 </span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="c">#GCPE_GITLAB_TOKEN: ${GCPE_GITLAB_TOKEN}</span><span class="w">
 </span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span><span class="c">#GCPE_INTERNAL_MONITORING_LISTENER_ADDRESS: tcp://127.0.0.1:8082</span><span class="w">
 </span></span></span></code></pre></div></li>
+<li>
+<p>How to check: You can connect to <a href="http://your.server:9103/metrics">http://your.server:9103/metrics</a>, and you should see some metrics start like &quot;gitlab_ci_pineline_xxxx&quot;
+If you only see metrics like &quot;gcpe_projects_***&quot; and &quot;promhttp_metric_handler_errors_total&quot;, you may need to check your configuration.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl"># TYPE gitlab_ci_pipeline_coverage gauge
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">gitlab_ci_pipeline_coverage{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 0
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">gitlab_ci_pipeline_coverage{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 0
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"># HELP gitlab_ci_pipeline_duration_seconds Duration in seconds of the most recent pipeline
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"># TYPE gitlab_ci_pipeline_duration_seconds gauge
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">gitlab_ci_pipeline_duration_seconds{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 253
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">gitlab_ci_pipeline_duration_seconds{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 489
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"># HELP gitlab_ci_pipeline_id ID of the most recent pipeline
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"># TYPE gitlab_ci_pipeline_id gauge
+</span></span><span class="line"><span class="ln">10</span><span class="cl">gitlab_ci_pipeline_id{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;master&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 811
+</span></span><span class="line"><span class="ln">11</span><span class="cl">gitlab_ci_pipeline_id{kind=&#34;branch&#34;,project=&#34;******&#34;,ref=&#34;main&#34;,topics=&#34;&#34;,variables=&#34;&#34;} 823
+</span></span><span class="line"><span class="ln">12</span><span class="cl">......
+</span></span></code></pre></div></li>
 </ol>
 </li>
 <li>
