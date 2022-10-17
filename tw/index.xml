@@ -28,6 +28,23 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     </item>
     
     <item>
+      <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
+      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
+      <pubDate>Sat, 17 Sep 2022 00:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
+      <description>
+        
+          
+            需求 因為要使用 ActivityWatch 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 Remote server 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: https://github.com/ActivityWatch/aw-watcher-web/issues/44), 因此放棄 Remote server 這招, 改用 SSH Tunnel (SSH port forwarding) 來實現需求.
+簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 只收 localhost 的連線, 不對外開放, 然後我在 client 的 AP 要連上那個 service. 方法 啟動 server, 他要去聽 http://localhost:5600 在 client 上面執行 ssh 1ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>YouTube 各種加強工具</title>
       <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>
       <pubDate>Wed, 31 Aug 2022 10:18:32 +0800</pubDate>
@@ -42,6 +59,72 @@ Magic Actions for YouTube 上次更新是 2021/5/2, 而且他有可能會拿走�
 用電腦下載 (Linux, macOS, Windows) YouTube 預設是不能讓人下載影片的 (即使是你自己上傳的影片也是一樣), 最有名的就是曾被 GitHub 下架的 youtube-dl 或是 ytl-dp. 使用起來很簡單, 可參考: https://dennys.github.io/tw/doc/software/download-youtube-private-video/
 Android 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代品, 不過看來很多都是基於NewPipe Extractor. 試玩了幾個, 每個人的需求不同, 對我來講比較有感的是這幾個功能:
 官方 YouTube 的全螢幕模式我用不太習慣, 我是比較喜歡按下全螢幕就直接轉成橫向放大. 手勢, 尤其前後快轉真的好用. 下載的時候能自動合併影音, 這還滿方便的, 不然還得另外合併, 而且是在手機上, 會很麻煩.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt 頻寬管理 (依照 interface) </title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <description>
+        
+          
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰 (by interface) 用了多少頻寬等等
+OpenWrt 的方案 有一堆... 多到眼花撩亂 https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
+collectd collectd 其實不是針對網路而已, 他是一個通用的收集資料的平台, 這裡只是把網路相關的 plugin 打開.
+網站
+官方網站: https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd GitHub: https://github.com/collectd/collectd 安裝: 裝 luci-app-statistics 就可以了, 他會把相關的 lib 包進來
+1opkg install luci-app-statistics 使用
+連線到選單上的 Statistics -&amp;gt; Setup -&amp;gt; Network plugins, 把你要看的 Interface or Wireless 相關 plugin 設定好 切到 Statistics -&amp;gt; Setup -&amp;gt; Graphs 就可以看到圖表了 vnStat: 老牌, only for network 網站
+官方網站: https://humdi.net/vnstat/ GitHub: https://github.com/vergoh/vnstat 安裝
+1opkg install vnstat2 vnstati2 luci-app-vnstat2 注意, vnstat1 和 vnstat2 版不相容, 如果要移除 vnstat 1.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt 頻寬管理 (依照使用者) </title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</guid>
+      <description>
+        
+          
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: https://www.asuswrt-merlin.net/screenshots
+OpenWrt 的方案 有一堆... 多到眼花撩亂 https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
+注意 這裡假設你已經有現成的 Grafana 和 Prometheus Grafana 的部分如果沒有, 可使用 Grafana Cloud Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspberry Pi 就夠了)
+1. nlbwmon (Netlink based traffic accounting) 網站
+官方網站: https://openwrt.org/packages/pkgdata/nlbwmon GitHub: https://github.com/jow-/nlbwmon 安裝指令
+1opkg install nlbwmon 2opkg install luci-app-nlbwmon 使用
+連線到選單上的 Service -&amp;gt; Bandwidth Monitor (http://192.168.1.1/cgi-bin/luci/admin/services/nlbw)
+基本報表如下 依照 Protocol 分類的報表 2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fortinet VPN on OpenWrt</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</guid>
+      <description>
+        
+          
+            需求 Fortinet VPN 是個商用軟體, 他雖然有提供一個免費版的 FortiClient VPN, 但有個很麻煩的地方是, 他不會自動連線, 要買付費版的才有這功能. 但有一個 Open Source 的 openfortivpn, 提供 Fortinet VPN 的連線, 他支援 Linux/macOS/FreeBSD (對, 很不幸的, 沒有 Windows). 然後 OpenWrt 21.02 版以上有支援 openfortivpn (參考: https://forum.openwrt.org/t/98134/2).
+因此, 我們只要把 OpenWrt 上面的 Fortinet VPN 設定好, 所有透過這台 OpenWrt 的 client 就都可以直接進去了.
+安裝 Fortinet VPN on OpenWrt 在 OpenWrt 上面安裝 Fortinet VPN 還滿簡單的, 他需要安裝兩個 package
+openfortivpn: 這其實只是個空殼子, 從 code 裡面可以看到, 他實際上放在這 https://github.com/adrienverge/openfortivpn/ An open implementation of Fortinet&#39;s proprietary PPP+SSL VPN solution.
           
           
         
@@ -76,6 +159,44 @@ Android 最有名的 Vanced 已經在 2022 年 3 月下架了, 有一堆替代�
           
             本文更新紀錄 2022/10/13: 新增幾個步驟的檢查點 需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
 在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建的 metrics Exporter: GitLab 內建 (參考 https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 這個 dashboard 需要安裝這個 plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] 方案2: 使用 gitlab-ci-pipelines-exporter Exporter: https://github.com/mvisonneau/gitlab-ci-pipelines-exporter 這個 exporter 提供好幾個面向的 metrics (搭配不同 dashboard) Grafana dashboard: 和方案1是同一個 (也需要裝 Ploystat plugin)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt Router Samba</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
+      <description>
+        
+          
+            需求 安裝 https://openwrt.org/docs/guide-user/services/nas/cifs.server
+設定 http://192.168.1.1/cgi-bin/luci/admin/services/samba4
+測試 基本上開檔案總管看一下 OpenWrt 上面的小檔案 (設定檔等等) 是沒有問題的. 但稍微大一點點的檔案就不太行了, 譬如下面這個測試, 35MB 就花了 17 秒...
+複製檔案 35MB 的檔案, 跑了 17 秒 1root@OpenWrt:/tmp# ll /usr/bin/AdGuardHome 2-rwxr-xr-x 1 root root 35690672 Apr 18 15:47 /usr/bin/AdGuardHome* 3root@OpenWrt:/tmp# date; cp /usr/bin/AdGuardHome /tmp; date 4Thu Jul 16 09:15:16 CST 2022 5Thu Jul 16 09:15:33 CST 2022 解除安裝 1/etc/init.d/samba4 stop 2/etc/init.d/samba4 enable 結論 可能只能真的拿來看看 config file, 不太可能拿來分享檔案.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt Router 選購</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
+      <description>
+        
+          
+            需求 最近也在找 OpenWrt 的機器, 在 PTT 上面問了一下要刷 OpenWrt 的建議機種. 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 + Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
+家裡用量除了小孩線上課要開視訊, 平常其實不大 (沒人打電動, 也只有偶爾 半夜看點影片.) 目前 Merlin 有裝 Diversion (擋廣告), QoS, OpenVPN (非常少用)
+我的需求
+AC 就可以了. 要有 USB 16MB/128MB: 這個其實沒甚麼概念, 但官方都這麼建議了. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB. 想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家) 有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份. 結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
           
           
         

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samba on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/samba/</link>
+    <description>Recent content in Samba on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt Router Samba</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
+      <description>
+        
+          
+            需求 安裝 https://openwrt.org/docs/guide-user/services/nas/cifs.server
+設定 http://192.168.1.1/cgi-bin/luci/admin/services/samba4
+測試 基本上開檔案總管看一下 OpenWrt 上面的小檔案 (設定檔等等) 是沒有問題的. 但稍微大一點點的檔案就不太行了, 譬如下面這個測試, 35MB 就花了 17 秒...
+複製檔案 35MB 的檔案, 跑了 17 秒 1root@OpenWrt:/tmp# ll /usr/bin/AdGuardHome 2-rwxr-xr-x 1 root root 35690672 Apr 18 15:47 /usr/bin/AdGuardHome* 3root@OpenWrt:/tmp# date; cp /usr/bin/AdGuardHome /tmp; date 4Thu Jul 16 09:15:16 CST 2022 5Thu Jul 16 09:15:33 CST 2022 解除安裝 1/etc/init.d/samba4 stop 2/etc/init.d/samba4 enable 結論 可能只能真的拿來看看 config file, 不太可能拿來分享檔案.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

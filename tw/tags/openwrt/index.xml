@@ -7,20 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OpenWrt 頻寬報表 Bandwidthd</title>
-      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
-      <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
+      <title>OpenWrt 頻寬管理 (依照 interface) </title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
-            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
-官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
-安裝 請依照官方網站指示即可
-使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細, 要再找其他工具. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰 (by interface) 用了多少頻寬等等
+OpenWrt 的方案 有一堆... 多到眼花撩亂 https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
+collectd collectd 其實不是針對網路而已, 他是一個通用的收集資料的平台, 這裡只是把網路相關的 plugin 打開.
+網站
+官方網站: https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd GitHub: https://github.com/collectd/collectd 安裝: 裝 luci-app-statistics 就可以了, 他會把相關的 lib 包進來
+1opkg install luci-app-statistics 使用
+連線到選單上的 Statistics -&amp;gt; Setup -&amp;gt; Network plugins, 把你要看的 Interface or Wireless 相關 plugin 設定好 切到 Statistics -&amp;gt; Setup -&amp;gt; Graphs 就可以看到圖表了 vnStat: 老牌, only for network 網站
+官方網站: https://humdi.net/vnstat/ GitHub: https://github.com/vergoh/vnstat 安裝
+1opkg install vnstat2 vnstati2 luci-app-vnstat2 注意, vnstat1 和 vnstat2 版不相容, 如果要移除 vnstat 1.
           
           
         
@@ -28,18 +33,79 @@
     </item>
     
     <item>
-      <title>OpenWrt 頻寬報表 Bandwidthd</title>
-      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      <title>OpenWrt 頻寬管理 (依照使用者) </title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidthd/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</guid>
       <description>
         
           
-            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬等等, 選用 Bandwidthd
-官方網站(新): https://openwrt.org/docs/guide-user/services/network_monitoring/bandwidthd 官方網站(舊): http://bandwidthd.sourceforge.net/ GitHub: https://github.com/NethServer/bandwidthd (已停止維護)
-安裝 請依照官方網站指示即可
-使用 連線到 http://192.168.1.1/bandwidthd/ 就可以看到全部還有各 IP 的流量, 這裡偷懶, 直接把官方網站(舊)的圖內嵌進來. 結論 很可惜這工具已經沒在維護了, 而且他只有 by protocol 的傳輸量, 不夠細. 另外, 他可能用掉不少資源, 在 router 上寸土寸金. 1PID PPID USER STAT VSZ %VSZ %CPU COMMAND 24049 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 34046 1 root S 5220 4% 0% /usr/sbin/bandwidthd 44048 4046 root S 5220 4% 0% /usr/sbin/bandwidthd 54050 4046 root S 5196 4% 0% /usr/sbin/bandwidthd 62254 1 root S 4100 3% 0% /usr/sbin/uhttpd -f -h /www -r OpenWrt -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 - 
+            需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: https://www.asuswrt-merlin.net/screenshots
+OpenWrt 的方案 有一堆... 多到眼花撩亂 https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
+注意 這裡假設你已經有現成的 Grafana 和 Prometheus Grafana 的部分如果沒有, 可使用 Grafana Cloud Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspberry Pi 就夠了)
+1. nlbwmon (Netlink based traffic accounting) 網站
+官方網站: https://openwrt.org/packages/pkgdata/nlbwmon GitHub: https://github.com/jow-/nlbwmon 安裝指令
+1opkg install nlbwmon 2opkg install luci-app-nlbwmon 使用
+連線到選單上的 Service -&amp;gt; Bandwidth Monitor (http://192.168.1.1/cgi-bin/luci/admin/services/nlbw)
+基本報表如下 依照 Protocol 分類的報表 2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fortinet VPN on OpenWrt</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</guid>
+      <description>
+        
+          
+            需求 Fortinet VPN 是個商用軟體, 他雖然有提供一個免費版的 FortiClient VPN, 但有個很麻煩的地方是, 他不會自動連線, 要買付費版的才有這功能. 但有一個 Open Source 的 openfortivpn, 提供 Fortinet VPN 的連線, 他支援 Linux/macOS/FreeBSD (對, 很不幸的, 沒有 Windows). 然後 OpenWrt 21.02 版以上有支援 openfortivpn (參考: https://forum.openwrt.org/t/98134/2).
+因此, 我們只要把 OpenWrt 上面的 Fortinet VPN 設定好, 所有透過這台 OpenWrt 的 client 就都可以直接進去了.
+安裝 Fortinet VPN on OpenWrt 在 OpenWrt 上面安裝 Fortinet VPN 還滿簡單的, 他需要安裝兩個 package
+openfortivpn: 這其實只是個空殼子, 從 code 裡面可以看到, 他實際上放在這 https://github.com/adrienverge/openfortivpn/ An open implementation of Fortinet&#39;s proprietary PPP+SSL VPN solution.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt Router Samba</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
+      <description>
+        
+          
+            需求 安裝 https://openwrt.org/docs/guide-user/services/nas/cifs.server
+設定 http://192.168.1.1/cgi-bin/luci/admin/services/samba4
+測試 基本上開檔案總管看一下 OpenWrt 上面的小檔案 (設定檔等等) 是沒有問題的. 但稍微大一點點的檔案就不太行了, 譬如下面這個測試, 35MB 就花了 17 秒...
+複製檔案 35MB 的檔案, 跑了 17 秒 1root@OpenWrt:/tmp# ll /usr/bin/AdGuardHome 2-rwxr-xr-x 1 root root 35690672 Apr 18 15:47 /usr/bin/AdGuardHome* 3root@OpenWrt:/tmp# date; cp /usr/bin/AdGuardHome /tmp; date 4Thu Jul 16 09:15:16 CST 2022 5Thu Jul 16 09:15:33 CST 2022 解除安裝 1/etc/init.d/samba4 stop 2/etc/init.d/samba4 enable 結論 可能只能真的拿來看看 config file, 不太可能拿來分享檔案.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt Router 選購</title>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
+      <description>
+        
+          
+            需求 最近也在找 OpenWrt 的機器, 在 PTT 上面問了一下要刷 OpenWrt 的建議機種. 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 + Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
+家裡用量除了小孩線上課要開視訊, 平常其實不大 (沒人打電動, 也只有偶爾 半夜看點影片.) 目前 Merlin 有裝 Diversion (擋廣告), QoS, OpenVPN (非常少用)
+我的需求
+AC 就可以了. 要有 USB 16MB/128MB: 這個其實沒甚麼概念, 但官方都這麼建議了. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB. 想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家) 有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份. 結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
           
           
         
