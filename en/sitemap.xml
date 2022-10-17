@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -71,7 +71,7 @@
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -84,7 +84,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -97,7 +97,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -111,6 +111,54 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/categories/devops/</loc>
+    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/dotnet/</loc>
+    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/gitlab/</loc>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/gitlab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/gitlab/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/gitlab-devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/gitlab-devops/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
+    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
+    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/sonarqube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/sonarqube/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/prometheus/</loc>
     <lastmod>2022-08-31T00:00:00+08:00</lastmod>
@@ -137,21 +185,8 @@
                 href="https://dennys.github.io/en/tags/youtube/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/gitlab-devops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/gitlab-devops/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/tags/grafana/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -163,37 +198,11 @@
                 href="https://dennys.github.io/en/tags/grafana/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
-    <lastmod>2022-07-17T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/sonarqube/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/sonarqube/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</loc>
     <lastmod>2022-07-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/gitlab/</loc>
-    <lastmod>2022-07-16T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/gitlab/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/gitlab/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</loc>
-    <lastmod>2022-07-16T00:00:00+08:00</lastmod>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</loc>
     <lastmod>2022-07-13T00:00:00+08:00</lastmod>
@@ -264,12 +273,6 @@
   </url><url>
     <loc>https://dennys.github.io/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/categories/devops/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/dotnet/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
