@@ -361,13 +361,13 @@ If you only see metrics like &quot;gcpe_projects_***&quot; and &quot;promhttp_me
 <li>
 <p>The above solution is to check the entire CI pipeline results, if you want to see individual job status in Grafana, you can modify gitlab-ci-pipelines-exporter.yml to add lines 5~6.
 And you can install this Grafana dashboard <a href="https://grafana.com/grafana/dashboards/13328">https://grafana.com/grafana/dashboards/13328</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl"># Pull jobs related metrics on all projects
-</span></span><span class="line"><span class="ln">2</span><span class="cl">project_defaults:
-</span></span><span class="line"><span class="ln">3</span><span class="cl">pull:
-</span></span><span class="line"><span class="ln">4</span><span class="cl">  pipeline:
-</span></span><span class="line hl"><span class="ln">5</span><span class="cl">    jobs:
-</span></span><span class="line hl"><span class="ln">6</span><span class="cl">        enabled: true
-</span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># Pull jobs related metrics on all projects</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">project_defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nt">pull</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">  </span><span class="nt">pipeline</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">5</span><span class="cl"><span class="w">    </span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></div></li>
 <li>
 <p>Result</p>
 <ol>
@@ -443,6 +443,12 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/" class="nav-link" title="How to Change Gmail Notification Action from Archive to Delete">How to Change Gmail Notification Action from Archive to Delete</a>
+      </li>
+      <li>
+        <a href="https://dennys.github.io/en/doc/android/android-gmail-notification-actions/" class="nav-link" title="Android Gmail Notification Actions (Archive, Delete, ...)">Android Gmail Notification Actions (Archive, Delete, ...)</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/" class="nav-link" title="Prometheus Pulls/Pushes Metrics from/to Another Prometheus">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</a>
       </li>
       <li>
@@ -460,19 +466,13 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
       <li>
         <a href="https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/" class="nav-link" title="Batch Photo Files Rename Tools (by EXIF).">Batch Photo Files Rename Tools (by EXIF).</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/" class="nav-link" title="How to Skip Podcast&#39;s Introduction">How to Skip Podcast's Introduction</a>
-      </li>
-      <li>
-        <a href="https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/" class="nav-link" title="SQL to get 1st record of a range">SQL to get 1st record of a range</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">14</span>
+          <span class="button_tally">16</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
@@ -496,6 +496,11 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
           <span class="button_tally">5</span>
         </a>
         
+        <a href='https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
+          ANDROID-使用小技巧
+          <span class="button_tally">2</span>
+        </a>
+        
         <a href='https://dennys.github.io/en/series/android-tips/' class="post_tag button button_translucent" title="android-tips">
           ANDROID-TIPS
           <span class="button_tally">1</span>
@@ -515,6 +520,11 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
         <a href='https://dennys.github.io/en/tags/software/' class="post_tag button button_translucent" title="software">
           SOFTWARE
           <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/tags/android/' class="post_tag button button_translucent" title="android">
+          ANDROID
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
@@ -540,11 +550,6 @@ And you can install this Grafana dashboard <a href="https://grafana.com/grafana/
         <a href='https://dennys.github.io/en/tags/sonarqube/' class="post_tag button button_translucent" title="sonarqube">
           SONARQUBE
           <span class="button_tally">2</span>
-        </a>
-        
-        <a href='https://dennys.github.io/en/tags/android/' class="post_tag button button_translucent" title="android">
-          ANDROID
-          <span class="button_tally">1</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/dotnet/' class="post_tag button button_translucent" title="dotnet">

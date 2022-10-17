@@ -337,63 +337,63 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 <ol>
 <li>
 <p>不透過 VPN 直接連線, 每秒約 556Mbits</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Connecting to host 211.73.81.92, port 5201
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  4] local 10.100.201.3 port 49787 connected to 211.73.81.92 port 5201
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  4]   0.00-1.00   sec  43.4 MBytes   363 Mbits/sec
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  4]   1.00-2.00   sec  20.5 MBytes   172 Mbits/sec
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  4]   2.00-3.00   sec  35.1 MBytes   295 Mbits/sec
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  4]   3.00-4.00   sec  67.0 MBytes   562 Mbits/sec
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  4]   4.00-5.00   sec  86.4 MBytes   725 Mbits/sec
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  4]   5.00-6.00   sec  81.1 MBytes   679 Mbits/sec
-</span></span><span class="line"><span class="ln">10</span><span class="cl">[  4]   6.00-7.00   sec  81.5 MBytes   686 Mbits/sec
-</span></span><span class="line"><span class="ln">11</span><span class="cl">[  4]   7.00-8.00   sec  82.8 MBytes   693 Mbits/sec
-</span></span><span class="line"><span class="ln">12</span><span class="cl">[  4]   8.00-9.00   sec  81.8 MBytes   687 Mbits/sec
-</span></span><span class="line"><span class="ln">13</span><span class="cl">[  4]   9.00-10.00  sec  83.0 MBytes   695 Mbits/sec
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Connecting to host 211.73.81.92, port <span class="m">5201</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span> <span class="nb">local</span> 10.100.201.3 port <span class="m">49787</span> connected to 211.73.81.92 port <span class="m">5201</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bandwidth
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   0.00-1.00   sec  43.4 MBytes   <span class="m">363</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   1.00-2.00   sec  20.5 MBytes   <span class="m">172</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   2.00-3.00   sec  35.1 MBytes   <span class="m">295</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   3.00-4.00   sec  67.0 MBytes   <span class="m">562</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   4.00-5.00   sec  86.4 MBytes   <span class="m">725</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   5.00-6.00   sec  81.1 MBytes   <span class="m">679</span> Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   6.00-7.00   sec  81.5 MBytes   <span class="m">686</span> Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   7.00-8.00   sec  82.8 MBytes   <span class="m">693</span> Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   8.00-9.00   sec  81.8 MBytes   <span class="m">687</span> Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   9.00-10.00  sec  83.0 MBytes   <span class="m">695</span> Mbits/sec
 </span></span><span class="line"><span class="ln">14</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span class="line"><span class="ln">15</span><span class="cl">[ ID] Interval           Transfer     Bandwidth
-</span></span><span class="line hl"><span class="ln">16</span><span class="cl">[  4]   0.00-10.00  sec   662 MBytes   556 Mbits/sec             sender
-</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  4]   0.00-10.00  sec   662 MBytes   556 Mbits/sec             receiver
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bandwidth
+</span></span><span class="line hl"><span class="ln">16</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   0.00-10.00  sec   <span class="m">662</span> MBytes   <span class="m">556</span> Mbits/sec             sender
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl"><span class="o">[</span>  4<span class="o">]</span>   0.00-10.00  sec   <span class="m">662</span> MBytes   <span class="m">556</span> Mbits/sec             receiver
 </span></span></code></pre></div></li>
 <li>
 <p>透過 OpenVPN 連線, 每秒約 193Mbits</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port 49750
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  5] local 192.168.211.3 port 5201 connected to 192.168.211.4 port 49751
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bitrate
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  5]   0.00-1.00   sec  28.5 MBytes   239 Mbits/sec
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  5]   1.00-2.00   sec  21.3 MBytes   179 Mbits/sec
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  5]   2.00-3.00   sec  21.1 MBytes   177 Mbits/sec
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  5]   3.00-4.00   sec  20.6 MBytes   173 Mbits/sec
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  5]   4.00-5.00   sec  18.7 MBytes   157 Mbits/sec
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  5]   5.00-6.00   sec  21.6 MBytes   181 Mbits/sec
-</span></span><span class="line"><span class="ln">10</span><span class="cl">[  5]   6.00-7.00   sec  25.4 MBytes   213 Mbits/sec
-</span></span><span class="line"><span class="ln">11</span><span class="cl">[  5]   7.00-8.00   sec  23.6 MBytes   198 Mbits/sec
-</span></span><span class="line"><span class="ln">12</span><span class="cl">[  5]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec
-</span></span><span class="line"><span class="ln">13</span><span class="cl">[  5]   9.00-10.00  sec  25.3 MBytes   212 Mbits/sec
-</span></span><span class="line"><span class="ln">14</span><span class="cl">[  5]  10.00-10.03  sec   660 KBytes   175 Mbits/sec
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port <span class="m">49750</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span> <span class="nb">local</span> 192.168.211.3 port <span class="m">5201</span> connected to 192.168.211.4 port <span class="m">49751</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   0.00-1.00   sec  28.5 MBytes   <span class="m">239</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   1.00-2.00   sec  21.3 MBytes   <span class="m">179</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   2.00-3.00   sec  21.1 MBytes   <span class="m">177</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   3.00-4.00   sec  20.6 MBytes   <span class="m">173</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   4.00-5.00   sec  18.7 MBytes   <span class="m">157</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   5.00-6.00   sec  21.6 MBytes   <span class="m">181</span> Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   6.00-7.00   sec  25.4 MBytes   <span class="m">213</span> Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   7.00-8.00   sec  23.6 MBytes   <span class="m">198</span> Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   8.00-9.00   sec  23.8 MBytes   <span class="m">200</span> Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   9.00-10.00  sec  25.3 MBytes   <span class="m">212</span> Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>  10.00-10.03  sec   <span class="m">660</span> KBytes   <span class="m">175</span> Mbits/sec
 </span></span><span class="line"><span class="ln">15</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span class="line"><span class="ln">16</span><span class="cl">[ ID] Interval           Transfer     Bitrate
-</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  5]   0.00-10.03  sec   230 MBytes   193 Mbits/sec                  receiver
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bitrate
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   0.00-10.03  sec   <span class="m">230</span> MBytes   <span class="m">193</span> Mbits/sec                  receiver
 </span></span></code></pre></div></li>
 <li>
 <p>透過 SoftEther VPN 連線, 每秒約 98.8Mbits</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port 37244
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">[  5] local 192.168.211.3 port 5201 connected to 192.168.211.4 port 37246
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">[ ID] Interval           Transfer     Bitrate
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">[  5]   0.00-1.00   sec  11.5 MBytes  96.1 Mbits/sec
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">[  5]   1.00-2.00   sec  15.1 MBytes   127 Mbits/sec
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">[  5]   2.00-3.00   sec  10.7 MBytes  89.9 Mbits/sec
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">[  5]   3.00-4.00   sec  9.61 MBytes  80.6 Mbits/sec
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">[  5]   4.00-5.00   sec  12.1 MBytes   101 Mbits/sec
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">[  5]   5.00-6.00   sec  9.89 MBytes  83.0 Mbits/sec
-</span></span><span class="line"><span class="ln">10</span><span class="cl">[  5]   6.00-7.00   sec  6.34 MBytes  53.2 Mbits/sec
-</span></span><span class="line"><span class="ln">11</span><span class="cl">[  5]   7.00-8.00   sec  11.1 MBytes  92.7 Mbits/sec
-</span></span><span class="line"><span class="ln">12</span><span class="cl">[  5]   8.00-9.00   sec  15.7 MBytes   131 Mbits/sec
-</span></span><span class="line"><span class="ln">13</span><span class="cl">[  5]   9.00-10.00  sec  15.8 MBytes   132 Mbits/sec
-</span></span><span class="line"><span class="ln">14</span><span class="cl">[  5]  10.00-10.01  sec   235 KBytes   148 Mbits/sec
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Accepted connection from 192.168.211.4, port <span class="m">37244</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span> <span class="nb">local</span> 192.168.211.3 port <span class="m">5201</span> connected to 192.168.211.4 port <span class="m">37246</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bitrate
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   0.00-1.00   sec  11.5 MBytes  96.1 Mbits/sec
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   1.00-2.00   sec  15.1 MBytes   <span class="m">127</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   2.00-3.00   sec  10.7 MBytes  89.9 Mbits/sec
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   3.00-4.00   sec  9.61 MBytes  80.6 Mbits/sec
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   4.00-5.00   sec  12.1 MBytes   <span class="m">101</span> Mbits/sec
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   5.00-6.00   sec  9.89 MBytes  83.0 Mbits/sec
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   6.00-7.00   sec  6.34 MBytes  53.2 Mbits/sec
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   7.00-8.00   sec  11.1 MBytes  92.7 Mbits/sec
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   8.00-9.00   sec  15.7 MBytes   <span class="m">131</span> Mbits/sec
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   9.00-10.00  sec  15.8 MBytes   <span class="m">132</span> Mbits/sec
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>  10.00-10.01  sec   <span class="m">235</span> KBytes   <span class="m">148</span> Mbits/sec
 </span></span><span class="line"><span class="ln">15</span><span class="cl">- - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span class="line"><span class="ln">16</span><span class="cl">[ ID] Interval           Transfer     Bitrate
-</span></span><span class="line hl"><span class="ln">17</span><span class="cl">[  5]   0.00-10.01  sec   118 MBytes  98.8 Mbits/sec                  receiver
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="o">[</span> ID<span class="o">]</span> Interval           Transfer     Bitrate
+</span></span><span class="line hl"><span class="ln">17</span><span class="cl"><span class="o">[</span>  5<span class="o">]</span>   0.00-10.01  sec   <span class="m">118</span> MBytes  98.8 Mbits/sec                  receiver
 </span></span></code></pre></div></li>
 </ol>
 <p>比較意外的是, <a href="https://www.softether.org/1-features/4._Fast_Throughput_and_High_Ability">SoftEhter VPN 官方網站有提到他比 OpenVPN 快 13 倍</a>, 但測起來卻不是這樣. 不過一來這是 2006 年的測速, 二來 SoftEther VPN 的設定很多, 也 <strong>很有可能是我沒有調整好</strong>, 所以這個測試僅供參考.</p>
@@ -404,25 +404,25 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
 <ol>
 <li>
 <p>透過 OpenVPN 連線, CPU 約使用 30.7%</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">top - 15:01:40 up 2 days,  3:22,  4 users,  load average: 0.00, 0.00, 0.00
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: 119 total,   1 running, 118 sleeping,   0 stopped,   0 zombie
-</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu(s):  5.4 us,  9.9 sy,  0.0 ni, 82.8 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">top - 15:01:40 up <span class="m">2</span> days,  3:22,  <span class="m">4</span> users,  load average: 0.00, 0.00, 0.00
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: <span class="m">119</span> total,   <span class="m">1</span> running, <span class="m">118</span> sleeping,   <span class="m">0</span> stopped,   <span class="m">0</span> zombie
+</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu<span class="o">(</span>s<span class="o">)</span>:  5.4 us,  9.9 sy,  0.0 ni, 82.8 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st
 </span></span><span class="line"><span class="ln">4</span><span class="cl">MiB Mem :  16009.7 total,  13538.6 free,    417.3 used,   2053.8 buff/cache
 </span></span><span class="line"><span class="ln">5</span><span class="cl">MiB Swap:      0.0 total,      0.0 free,      0.0 used.  15288.2 avail Mem
 </span></span><span class="line"><span class="ln">6</span><span class="cl">
 </span></span><span class="line"><span class="ln">7</span><span class="cl">    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-</span></span><span class="line hl"><span class="ln">8</span><span class="cl">    934 openvpn+  20   0    8012   6748   5544 S  32.3   0.0   0:14.82 openvpn-openssl
+</span></span><span class="line hl"><span class="ln">8</span><span class="cl">    <span class="m">934</span> openvpn+  <span class="m">20</span>   <span class="m">0</span>    <span class="m">8012</span>   <span class="m">6748</span>   <span class="m">5544</span> S  32.3   0.0   0:14.82 openvpn-openssl
 </span></span></code></pre></div></li>
 <li>
 <p>透過 SoftEther VPN 連線, CPU 約使用 22.3%</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">top - 15:05:47 up 2 days,  3:26,  4 users,  load average: 0.00, 0.01, 0.00
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: 120 total,   1 running, 119 sleeping,   0 stopped,   0 zombie
-</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu(s):  0.3 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">top - 15:05:47 up <span class="m">2</span> days,  3:26,  <span class="m">4</span> users,  load average: 0.00, 0.01, 0.00
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Tasks: <span class="m">120</span> total,   <span class="m">1</span> running, <span class="m">119</span> sleeping,   <span class="m">0</span> stopped,   <span class="m">0</span> zombie
+</span></span><span class="line"><span class="ln">3</span><span class="cl">%Cpu<span class="o">(</span>s<span class="o">)</span>:  0.3 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
 </span></span><span class="line"><span class="ln">4</span><span class="cl">MiB Mem :  16009.7 total,  13512.0 free,    436.3 used,   2061.4 buff/cache
 </span></span><span class="line"><span class="ln">5</span><span class="cl">MiB Swap:      0.0 total,      0.0 free,      0.0 used.  15269.1 avail Mem
 </span></span><span class="line"><span class="ln">6</span><span class="cl">
 </span></span><span class="line"><span class="ln">7</span><span class="cl">    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-</span></span><span class="line hl"><span class="ln">8</span><span class="cl">13540 ubuntu    20   0 1016272  20404   5576 S   22.7   0.1   0:03.93 vpnserver
+</span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="m">13540</span> ubuntu    <span class="m">20</span>   <span class="m">0</span> <span class="m">1016272</span>  <span class="m">20404</span>   <span class="m">5576</span> S   22.7   0.1   0:03.93 vpnserver
 </span></span></code></pre></div></li>
 </ol>
 <h2 id="結論">結論</h2>
@@ -531,6 +531,9 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/" class="nav-link" title="Android 各種 Gmail 的通知動作 (封存, 刪除, ...)">Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/software/youtube-enhancer/" class="nav-link" title="YouTube 各種加強工具">YouTube 各種加強工具</a>
       </li>
       <li>
@@ -551,16 +554,13 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
       <li>
         <a href="https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/" class="nav-link" title="用 Prometheus 來監控 OpenVPN server">用 Prometheus 來監控 OpenVPN server</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/grafana/grafana-postgresql/" class="nav-link" title="使用 PostgreSQL 當作 Grafana 的資料庫">使用 PostgreSQL 當作 Grafana 的資料庫</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">分類</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">57</span>
+          <span class="button_tally">58</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -574,14 +574,14 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
     <div>
       <h2 class="mt-4 taxonomy" id="series-section">專欄</h2>
       <nav class="tags_nav">
-        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
-          ANDROID-改機
+        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
+          ANDROID-使用小技巧
           <span class="button_tally">7</span>
         </a>
         
-        <a href='https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
-          ANDROID-使用小技巧
-          <span class="button_tally">6</span>
+        <a href='https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="android-改機">
+          ANDROID-改機
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/' class="post_tag button button_translucent" title="asuswrt-merlin-改機">
@@ -612,7 +612,7 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
         
         <a href='https://dennys.github.io/tw/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
-          <span class="button_tally">14</span>
+          <span class="button_tally">15</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/java/' class="post_tag button button_translucent" title="java">
@@ -681,7 +681,7 @@ OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan �
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=14 title="android">ANDROID<span class="button_tally">14</span>
+            <a href='https://dennys.github.io/tw/tags/android/' class=" post_tag button button_translucent" data-position=15 title="android">ANDROID<span class="button_tally">15</span>
             </a>
             
             

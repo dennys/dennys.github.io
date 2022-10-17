@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
+      <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</guid>
+      <description>
+        
+          
+            需求 在上次的文章中, 我們知道預設 Android 的通知是 封存, 然後可以把封存改為刪除, 但沒法兩者同時出現.
+不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
+K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 Gmail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 在 K9 裡面, 預設就有 回覆, 標示為已讀取, 刪除 這三種可選擇, 但他並沒有提供 封存 這個功能.
+FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 action. 你可以在 設定 裡面的 通知動作 選擇你想要顯示的動作. 注意, 免費版最多可選擇 3 種.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>YouTube 各種加強工具</title>
       <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>
@@ -489,7 +508,7 @@ Chrome (2022年7月被 Google 下架): https://chrome.google.com/webstore/detail
     </item>
     
     <item>
-      <title>將 Gmail 的通知改成可以直接刪除</title>
+      <title>將 Gmail 的通知改成可以直接刪除 (預設是封存)</title>
       <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
@@ -498,9 +517,7 @@ Chrome (2022年7月被 Google 下架): https://chrome.google.com/webstore/detail
         
           
             需求 Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.
-作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.
-修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.
-後記 如果可以讓封存和刪除都出來就更好了.
+作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. 後記 如果可以讓封存和刪除都出來就更好了.
           
           
         
