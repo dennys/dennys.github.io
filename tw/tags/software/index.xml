@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Oct 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>檔案搜尋替代工具</title>
+      <link>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</link>
+      <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</guid>
+      <description>
+        
+          
+            需求 要找一個可以在某個目錄下, 對檔案執行搜尋或替代文字的工具, 需支援以下功能:
+免費軟體 支援 UTF-8 可在搜尋結果直接顯示部分內容 (不然沒有前後文的情況下, 一個一個點進去其實很花時間) Double click 搜尋結果就可以打開檔案編輯 最好是能 replace 愈快愈好 (廢話) 軟體比較 找了三個免費軟體來試試看, 目前看來是 grepWin 比較合用
+grepWin SearchMyFiles Find and Replace (FNR) grepWin SearchMyFiles Find and Replace (FNR) GitHub star 1.3K N/A N/A UTF-8 有 有 (*註1) 有 顯示檔案部分內容 有 (放在欄位) 有 (放在欄位) 有 (下方獨立 panel) Double click 開檔 有 有 (*註2) 有 Replace 有 有 有 速度 快 快 稍慢 註1: SearchMyFiles 的 UTF-8 怪怪的, 如果輸入中文, 那他找得到, 也可以顯示.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>YouTube 各種加強工具</title>
       <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>

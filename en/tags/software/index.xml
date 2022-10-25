@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Oct 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Search/Replace Tool</title>
+      <link>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</link>
+      <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</guid>
+      <description>
+        
+          
+            Requirement Try to find software that can search or replace text in files, and it should support these functions:
+Free software. Supports UTF-8. It can show partial find content in the search result (or it takes lots of time to see the file content). Double click can open the file with the associated editor. Support replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
       <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
