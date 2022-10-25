@@ -188,7 +188,7 @@
     <li><a href="#方法">方法</a></li>
     <li><a href="#trouble-shooting">Trouble shooting</a></li>
     <li><a href="#whats-next">What's next</a></li>
-    <li><a href="#其他方案">其他方案</a></li>
+    <li><a href="#其他方案---socat">其他方案 - SOCAT</a></li>
   </ol>
 </nav>
       </div>
@@ -252,9 +252,10 @@
 <li>包成 Windows service: 這樣才方便, 不用手動連, 而且應該要有 auto re-connect 功能.</li>
 <li>找找看好用的 Android SSH Tunnel 方案.</li>
 </ol>
-<h2 id="其他方案">其他方案</h2>
-<p>socat 也可以做到 port forwarding.</p>
-
+<h2 id="其他方案---socat">其他方案 - SOCAT</h2>
+<p>socat 也可以做到 port forwarding, 譬如以下指令就會起一個 socat 去收 port 8080, 然後把收到的東西全都轉到 localhost:9090</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">socat -v TCP-LISTEN:8080,fork,reuseaddr TCP:localhost:9090 
+</span></span></code></pre></div>
     </div>
 
 
