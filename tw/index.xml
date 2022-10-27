@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Oct 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Oct 2022 18:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 TWCC-CLI 從 TWCC 容器複本建立新的容器</title>
+      <link>https://dennys.github.io/tw/doc/software/batch-photo-files-rename-tools/</link>
+      <pubDate>Wed, 26 Oct 2022 18:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/batch-photo-files-rename-tools/</guid>
+      <description>
+        
+          
+            需求 已經有一個之前建好的 TWCC 容器複本, 要從這個複本建立一個新的容器, 操作完後並將他刪除
+前置作業 (執行一次就好) 設定環境變數
+1$ export LANG=C.UTF-8 2$ export LC_ALL=C.UTF-8 3$ export PYTHONIOENCODING=UTF-8 登入TWCC
+1$ twccli config init 檢查 TWCC CLI版本
+1$ twccli config version 2[TWCCLI] This version is 0.5.24.2 如果你的版本不是 0.5.24.2, 請升級
+1$ pip install -U TWCC-CLI 最後用這個指令看一下有哪些容器複本
+1$ twccli ls ccs -img &amp;#34;Custom Image&amp;#34; 2Note : this operation take 1-2 mins 3+ img ---------+------------------------------------------------+ 4| sol_name | images | 5+--------------+------------------------------------------------+ 6| Custom Image | [01] tensorflow-21.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>檔案搜尋替代工具</title>
       <link>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</link>
