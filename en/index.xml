@@ -17,8 +17,7 @@
       <description>
         
           
-            Requirement I&#39;m trying to search photos in Google Photos by device name, but it&#39;s strange... I have a Google Pixel 5, if I use Google Pixel 5, I can get all photos, but if I only use Google Pixel, it only shows partial photos. I don&#39;t know the actual rules, the following is my test results.
-Apple iPhone 6 Apple iPhone 11 Apple iPhone XS Max Apple iPad (6th generation) Google Pixel 5 samsung SM-M135F (Samsumg Galaxy M13) samsung SM-G935F (Samsung S7 edge) Panasonic DMC-G6 Panasonic DMC-G2 SONY DSC-RX100M5A And you can use Apple, Google, Samsung to find their devices, but it will search some othes photos.
+            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s strange. I have a Google Pixel 5, if I try to search for Google Pixel 5, I can get all photos shot by it, but if I only input Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
           
           
         
