@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
+<meta name="description" content="注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="CDMA@wifi (Oleg) 之 3G 上網" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/" />
 <meta property="og:title" content="CDMA@wifi (Oleg) 之 3G 上網" />
-<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
+<meta property="og:description" content="注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!前言 Oleg官方的 firmware 並沒有支援 3G 上網, 而且也已經很久沒更新了. CDMA@wifi 是個修改自 Oleg 的 firmware, 有特別支援 3G 上網, 雖然也有一陣子沒更新了, 不過這 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -48,8 +48,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" as="script" integrity=
-"sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.51369af0efa4bf7a84cc2ad57cb5bdc2919128da3a829253ee55f420b6300523c40dfb366eb622d3e18ecccac725af3a15b4b2165b7e3044df8b195f972cd42c.js" as="script" integrity=
+"sha512-UTaa8O&#43;kv3qEzCrVfLW9wpGRKNo6gpJT7lX0ILYwBSPEDfs2brYi0&#43;GOzMrHJa86FbSyFlt&#43;METfixlflyzULA==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
@@ -317,36 +317,36 @@ Modem type: Huawei E169
 <p>插入 E169, 按下 connect, 應該就會開始 ppp 撥號, 然後就可以看是否連線成功了, 如果成功了, log 應該如下:</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: hub.c: new USB device 01:03.0-1, assigned address <span class="m">4</span>  
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: Manufacturer:   
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: Product: HUAWEI Mobile  
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: SerialNumber:   
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter detected  
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB0 <span class="o">(</span>or usb/tts/0 <span class="k">for</span> devfs<span class="o">)</span>  
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter detected  
-</span></span><span class="line"><span class="ln">10</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln">11</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln">12</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB1 <span class="o">(</span>or usb/tts/1 <span class="k">for</span> devfs<span class="o">)</span>  
-</span></span><span class="line"><span class="ln">13</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter detected  
-</span></span><span class="line"><span class="ln">14</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln">15</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
-</span></span><span class="line"><span class="ln">16</span><span class="cl">Jan  <span class="m">1</span> 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB2 <span class="o">(</span>or usb/tts/2 <span class="k">for</span> devfs<span class="o">)</span>  
-</span></span><span class="line"><span class="ln">17</span><span class="cl">Jan  <span class="m">1</span> 01:18:52 pppd<span class="se">\[</span>227<span class="se">\]</span>: pppd 2.4.2 started by admin, uid <span class="m">0</span>  
-</span></span><span class="line"><span class="ln">18</span><span class="cl">Jan  <span class="m">1</span> 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Serial connection established.  
-</span></span><span class="line"><span class="ln">19</span><span class="cl">Jan  <span class="m">1</span> 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Using interface ppp0  
-</span></span><span class="line"><span class="ln">20</span><span class="cl">Jan  <span class="m">1</span> 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Connect: ppp0 &lt;--&gt; /dev/usb/tts/0  
-</span></span><span class="line"><span class="ln">21</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: Could not determine remote IP address: defaulting to 10.64.64.64  
-</span></span><span class="line"><span class="ln">22</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: <span class="nb">local</span>  IP address 114.xxx.xxx.xxx  
-</span></span><span class="line"><span class="ln">23</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: remote IP address 10.64.64.64  
-</span></span><span class="line"><span class="ln">24</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: primary   DNS address 168.95.1.1  
-</span></span><span class="line"><span class="ln">25</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: secondary DNS address 168.95.192.1  
-</span></span><span class="line"><span class="ln">26</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: <span class="nb">read</span> /etc/hosts - <span class="m">5</span> addresses  
-</span></span><span class="line"><span class="ln">27</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: reading /tmp/resolv.conf  
-</span></span><span class="line"><span class="ln">28</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.192.1#53  
-</span></span><span class="line"><span class="ln">29</span><span class="cl">Jan  <span class="m">1</span> 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.1.1#53  
-</span></span><span class="line"><span class="ln">30</span><span class="cl">Jan  <span class="m">1</span> 01:19:06 USB Connection: connected to ISP
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Jan  1 01:18:48 kernel: hub.c: new USB device 01:03.0-1, assigned address <span class="m">4</span>  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Jan  1 01:18:48 kernel: Manufacturer:   
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Jan  1 01:18:48 kernel: Product: HUAWEI Mobile  
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Jan  1 01:18:48 kernel: SerialNumber:   
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB0 <span class="o">(</span>or usb/tts/0 <span class="k">for</span> devfs<span class="o">)</span>  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln">11</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln">12</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB1 <span class="o">(</span>or usb/tts/1 <span class="k">for</span> devfs<span class="o">)</span>  
+</span></span><span class="line"><span class="ln">13</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter detected  
+</span></span><span class="line"><span class="ln">14</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>in is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln">15</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Buffer size <span class="k">for</span> bulk<span class="se">\_</span>out is <span class="m">4096</span> modem reports <span class="m">64</span>  
+</span></span><span class="line"><span class="ln">16</span><span class="cl">Jan  1 01:18:48 kernel: usbserial.c: Generic converter now attached to ttyUSB2 <span class="o">(</span>or usb/tts/2 <span class="k">for</span> devfs<span class="o">)</span>  
+</span></span><span class="line"><span class="ln">17</span><span class="cl">Jan  1 01:18:52 pppd<span class="se">\[</span>227<span class="se">\]</span>: pppd 2.4.2 started by admin, uid <span class="m">0</span>  
+</span></span><span class="line"><span class="ln">18</span><span class="cl">Jan  1 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Serial connection established.  
+</span></span><span class="line"><span class="ln">19</span><span class="cl">Jan  1 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Using interface ppp0  
+</span></span><span class="line"><span class="ln">20</span><span class="cl">Jan  1 01:18:55 pppd<span class="se">\[</span>227<span class="se">\]</span>: Connect: ppp0 &lt;--&gt; /dev/usb/tts/0  
+</span></span><span class="line"><span class="ln">21</span><span class="cl">Jan  1 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: Could not determine remote IP address: defaulting to 10.64.64.64  
+</span></span><span class="line"><span class="ln">22</span><span class="cl">Jan  1 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: <span class="nb">local</span>  IP address 114.xxx.xxx.xxx  
+</span></span><span class="line"><span class="ln">23</span><span class="cl">Jan  1 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: remote IP address 10.64.64.64  
+</span></span><span class="line"><span class="ln">24</span><span class="cl">Jan  1 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: primary   DNS address 168.95.1.1  
+</span></span><span class="line"><span class="ln">25</span><span class="cl">Jan  1 01:19:03 pppd<span class="se">\[</span>227<span class="se">\]</span>: secondary DNS address 168.95.192.1  
+</span></span><span class="line"><span class="ln">26</span><span class="cl">Jan  1 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: <span class="nb">read</span> /etc/hosts - <span class="m">5</span> addresses  
+</span></span><span class="line"><span class="ln">27</span><span class="cl">Jan  1 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: reading /tmp/resolv.conf  
+</span></span><span class="line"><span class="ln">28</span><span class="cl">Jan  1 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.192.1#53  
+</span></span><span class="line"><span class="ln">29</span><span class="cl">Jan  1 01:19:03 dnsmasq<span class="se">\[</span>73<span class="se">\]</span>: using nameserver 168.95.1.1#53  
+</span></span><span class="line"><span class="ln">30</span><span class="cl">Jan  1 01:19:06 USB Connection: connected to ISP
 </span></span></code></pre></div><ol start="4">
 <li>無意中發現的好處
 測試了幾天, 發現透過 hub 的 3G 上網, 似乎比直接用 Mobile Partner 還快滿多的, 不知道是不是 USB device packet size 的功勞?</li>
@@ -780,6 +780,6 @@ Modem type: Huawei E169
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" integrity="sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.51369af0efa4bf7a84cc2ad57cb5bdc2919128da3a829253ee55f420b6300523c40dfb366eb622d3e18ecccac725af3a15b4b2165b7e3044df8b195f972cd42c.js" integrity="sha512-UTaa8O&#43;kv3qEzCrVfLW9wpGRKNo6gpJT7lX0ILYwBSPEDfs2brYi0&#43;GOzMrHJa86FbSyFlt&#43;METfixlflyzULA==" crossorigin="anonymous"></script>
   </body>
 </html>

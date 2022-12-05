@@ -206,6 +206,19 @@ function parseBoolean(string) {
   }
 };
 
+function forEach(node, callback) {
+  node ? Array.prototype.forEach.call(node.childNodes, callback) : false;
+}
+
+function findQuery(query = 'query') {
+  const urlParams = new URLSearchParams(window.location.search);
+  if(urlParams.has(query)){
+    let c = urlParams.get(query);
+    return c;
+  }
+  return "";
+}
+
 function wrapText(text, context, wrapper = 'mark') {
   let open = `<${wrapper}>`;
   let close = `</${wrapper}>`;

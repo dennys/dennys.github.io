@@ -36,7 +36,7 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
       <description>
         
           
-            注意 這方法僅適用於 Android 11 或更以前的版本!!! 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
+            注意這方法僅適用於 Android 11 或更以前的版本!!!需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
 作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
 這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了. 常見問題 若你進去 App 發現無法更改, 通常是因為你沒有把原來預設開啟的 App 關掉, 因為他一個連結只能選擇一個 App.
           
@@ -54,7 +54,7 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行. 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
+            提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
 2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01 上的討論, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
           
           
@@ -171,7 +171,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
 自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個...)
 爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
 修改步驟 首先, 要 Unlock, Pixel 5 (Android 12) 可參考 https://dennys.
@@ -190,7 +190,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
 方法 1 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
 用 fastboot 刷回原始的 boot.img
 1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 方法 2 其實 Magisk 有這個功能刷回原始的 boot.img
@@ -211,7 +211,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
 可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
 最有名的 LineageOS 15~19.1 (Android 8~12L) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 安裝 Samsung USB drivar 和 ODIN Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN 是用來刷 firmware 的工具, 請在這裡下載並安裝: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19.1: https://forum.xda-developers.com/t/4369001/ LineageOS 18: https://forum.
           
@@ -229,7 +229,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
 安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好. https://developer.android.com/studio/releases/platform-tools#downloads
 ===================================================
 手機解鎖 Unlock 步驟 請記得先備份資料, 因為解鎖會清空資料
@@ -251,7 +251,7 @@ fastboot reboot
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
+            提醒這個方法不用 Root, 但需要從電腦上執行.需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 😛 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.xda-developers.com/t/4353717/ 和 https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/), 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.
 要注意的是, 他會清除所有 toggle (就是說, 設完以後, 你的快速設定就只剩下 Wi-Fi 和行動數據兩個), 不過這再加回來就好了.
           
           
@@ -268,7 +268,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
 官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0 ODIN: https://odindownloader.com/ 下載 TWRP 以及 Magisk TWRP: https://androidfilehost.com/?fid=818070582850510050 Magisk: https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 安裝 TWRP 步驟 打開 Samsung Galaxy View 的工程模式 (參考 這裡) 重開機進入 download mode 執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了 安裝 Magisk 把 Magisk-v20.
           
           
@@ -285,7 +285,7 @@ fastboot reboot
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
 Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ 安裝 htc driver https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z TWRP 可參考以下兩篇 https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.com/root-htc-ultra/ Magisk 安裝 參考: https://izaka.tw/android-magisk-installation-guide/
 用手機從這裡下載 Magisk-v20.3.zip https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 重開進入 TWRP (指令: adb wait-for-device reboot recovery) 選擇 INSTALL, 路徑選擇 /sdcard/Download 選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash 重開系統 Magisk Module YouTube Vanced 如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced 要把 Google Play 的自動更新關閉 LineageOS 官網
           

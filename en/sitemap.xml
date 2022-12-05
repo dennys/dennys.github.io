@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -41,11 +41,11 @@
                 href="https://dennys.github.io/en/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <loc>https://dennys.github.io/en/tags/google-photos/</loc>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -57,8 +57,11 @@
                 href="https://dennys.github.io/en/categories/it/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</loc>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/tags/software/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -71,7 +74,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -82,6 +85,9 @@
                 hreflang="en"
                 href="https://dennys.github.io/en/tags/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</loc>
+    <lastmod>2022-10-23T10:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/android/</loc>
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>

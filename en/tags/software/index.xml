@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 23 Oct 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Google Photos by Device</title>
+      <link>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</link>
+      <pubDate>Sun, 04 Dec 2022 10:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</guid>
+      <description>
+        
+          
+            Requirement I&#39;m trying to search photos in Google Photos by device name, but it&#39;s strange... I have a Google Pixel 5, if I use Google Pixel 5, I can get all photos, but if I only use Google Pixel, it only shows partial photos. I don&#39;t know the actual rules, the following is my test results.
+Apple iPhone 6 Apple iPhone 11 Apple iPhone XS Max Apple iPad (6th generation) Google Pixel 5 samsung SM-M135F (Samsumg Galaxy M13) samsung SM-G935F (Samsung S7 edge) Panasonic DMC-G6 Panasonic DMC-G2 SONY DSC-RX100M5A And you can use Apple, Google, Samsung to find their devices, but it will search some othes photos.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>File Search/Replace Tool</title>
       <link>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</link>
