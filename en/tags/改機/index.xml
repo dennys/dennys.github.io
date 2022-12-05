@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>改機 on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/</link>
+    <description>Recent content in 改機 on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt Bandwidth Management (by interface) </title>
+      <link>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <description>
+        
+          
+            Requirement Find a bandwidth management tool in OpenWrt to see which application (by interface) uses the most bandwidth.
+OpenWrt solution There are lots of bandwidth monitor tools in OpenWrt... https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
+collectd collectd is not just for network only, it&#39;s a common data collection tool in the UNIX platform. We can use collectd&#39;s network related plugins here.
+Website:
+Official website: https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd GitHub: https://github.com/collectd/collectd Installation: just install luci-app-statistics and it will include related libraries.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

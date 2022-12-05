@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: …" />
+<meta name="description" content="提醒 2022年8月有人用 Grafana&#43;Prometheus 來監控 OpenWrt, 可參考 https://github.com/benisai/Openwrt-Monitoring. 需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表 …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="OpenWrt 頻寬管理 (依照使用者) " />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/" />
 <meta property="og:title" content="OpenWrt 頻寬管理 (依照使用者) " />
-<meta property="og:description" content="需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: …" />
+<meta property="og:description" content="提醒 2022年8月有人用 Grafana&#43;Prometheus 來監控 OpenWrt, 可參考 https://github.com/benisai/Openwrt-Monitoring. 需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表 …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -141,7 +141,7 @@
 </span>
     <span class="post_date">
       Jul 25, 2022</span>
-    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/openwrt/' title="OpenWrt" class="post_tag button button_translucent">OpenWrt
+    <span class="post_time"> · 4 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/openwrt/' title="OpenWrt" class="post_tag button button_translucent">OpenWrt
         </a><a href='https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/' title="改機" class="post_tag button button_translucent">改機
         </a><a href='https://dennys.github.io/tw/tags/router/' title="Router" class="post_tag button button_translucent">Router
         </a>
@@ -203,7 +203,13 @@
 </nav>
       </div>
     
-    <div class="post_body"><h2 id="需求">需求</h2>
+    <div class="post_body">
+<div class="notices info">
+    <div class="label">提醒</div>
+    2022年8月有人用 Grafana+Prometheus 來監控 OpenWrt, 可參考 <a href="https://github.com/benisai/Openwrt-Monitoring">https://github.com/benisai/Openwrt-Monitoring</a>.
+  </div>
+
+<h2 id="需求">需求</h2>
 <p>找一個 <a href="https://openwrt.org/">OpenWrt</a> 上的頻寬管理工具, 看誰用了多少頻寬.
 以 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a> 來說, 目前提供的報表如下, 他可以依照<strong>使用者</strong>或<strong>時段</strong>來看流量.
 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便.
@@ -509,6 +515,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
 這個滿酷的, 用 Syslog-ng + Elasticsearch + Kibana 來產生報表.</li>
 </ol>
 <h2 id="心得">心得</h2>
+<p>Asuswrt-Merlin 內建的可以看出 Youtube/Netflix/... 的使用量, 這很好用, 但 OpenWrt 似乎找不到相同功能的.</p>
 
     </div>
 

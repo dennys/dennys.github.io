@@ -152,18 +152,58 @@
   </url><url>
     <loc>https://dennys.github.io/tw/tags/openwrt/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/openwrt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/openwrt/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/openwrt-%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/router/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/router/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/router/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</loc>
     <lastmod>2022-07-25T00:00:00+08:00</lastmod>
