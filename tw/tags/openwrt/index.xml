@@ -94,7 +94,7 @@ openfortivpn: 這其實只是個空殼子, 從 code 裡面可以看到, 他實�
     </item>
     
     <item>
-      <title>OpenWrt Router 選購</title>
+      <title>OpenWrt Router 選擇</title>
       <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
       
@@ -102,10 +102,8 @@ openfortivpn: 這其實只是個空殼子, 從 code 裡面可以看到, 他實�
       <description>
         
           
-            需求 最近也在找 OpenWrt 的機器, 在 PTT 上面問了一下要刷 OpenWrt 的建議機種. 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 + Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
-家裡用量除了小孩線上課要開視訊, 平常其實不大 (沒人打電動, 也只有偶爾 半夜看點影片.) 目前 Merlin 有裝 Diversion (擋廣告), QoS, OpenVPN (非常少用)
-我的需求
-AC 就可以了. 要有 USB 16MB/128MB: 這個其實沒甚麼概念, 但官方都這麼建議了. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB. 想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家) 有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份. 結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
+            需求 目前家裡用的是 Asus AC66U B1, 韌體刷 Asuswrt-Merlin. 因為 DD-WRT, Tomoto 都用過了, 想試試看 OpenWrt, 在 PTT 上面問了一下刷 OpenWrt 的建議機種, 大概有以下需求:
+802.11 AC 就可以了, 沒有 802.11 AX 的需求 要有 USB 16MB/128MB: 這個沒用過其實不知道需要多大的記憶體, 官方是建議 16M/128M. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB. 想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家) 有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份. 可以裝擋廣告的 plugin (目前 Merlin 有裝 Diversion) 選擇 結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
           
           
         

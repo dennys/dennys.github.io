@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>OpenWrt Router 選購 | Dennys Diary</title>
+<title>OpenWrt Router 選擇 | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,16 +26,16 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="需求 最近也在找 OpenWrt 的機器, 在 PTT 上面問了一下要刷 OpenWrt 的建議機種. 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 &#43; Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
-家裡用量除了小孩線上課要 …" />
+<meta name="description" content="需求 目前家裡用的是 Asus AC66U B1, 韌體刷 Asuswrt-Merlin. 因為 DD-WRT, Tomoto 都用過了, 想試試看 OpenWrt, 在 PTT 上面問了一下刷 OpenWrt 的建議機種, 大概有以下需求:
+802.11 AC 就可以了, 沒有 802.11 AX …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="OpenWrt Router 選購" />
+<meta name="twitter:title" content="OpenWrt Router 選擇" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/openwrt-router-choice/" />
-<meta property="og:title" content="OpenWrt Router 選購" />
-<meta property="og:description" content="需求 最近也在找 OpenWrt 的機器, 在 PTT 上面問了一下要刷 OpenWrt 的建議機種. 我沒有 AX 的需求, 想請大家給點建議. 目前用 Asus AC66U B1 &#43; Merlin, 準備拿回老家用, 新的想試試看 Openwrt (DD-WRT, Tomoto 都用過了)
-家裡用量除了小孩線上課要 …" />
+<meta property="og:title" content="OpenWrt Router 選擇" />
+<meta property="og:description" content="需求 目前家裡用的是 Asus AC66U B1, 韌體刷 Asuswrt-Merlin. 因為 DD-WRT, Tomoto 都用過了, 想試試看 OpenWrt, 在 PTT 上面問了一下刷 OpenWrt 的建議機種, 大概有以下需求:
+802.11 AC 就可以了, 沒有 802.11 AX …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -134,7 +134,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">OpenWrt Router 選購</h1>
+    <h1 class="post_title">OpenWrt Router 選擇</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -151,14 +151,14 @@
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=OpenWrt%20Router%20%e9%81%b8%e8%b3%bc&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fopenwrt-router-choice%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=OpenWrt%20Router%20%e9%81%b8%e6%93%87&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fopenwrt-router-choice%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fopenwrt-router-choice%2f&t=OpenWrt%20Router%20%e9%81%b8%e8%b3%bc" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2frouter%2fopenwrt-router-choice%2f&t=OpenWrt%20Router%20%e9%81%b8%e6%93%87" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -189,74 +189,98 @@
   <ol>
     <li><a href="#需求">需求</a></li>
     <li><a href="#選擇">選擇</a></li>
-    <li><a href="#結果">結果</a></li>
+    <li><a href="#結果-archer-c7-v4">結果 (Archer C7 V4)</a></li>
+    <li><a href="#安裝設定-openwrt-21023">安裝設定 (OpenWrt 21.02.3)</a></li>
     <li><a href="#初步心得">初步心得</a></li>
-    <li><a href="#whats-next">What's next</a></li>
+    <li><a href="#後續可以試玩的東西">後續可以試玩的東西</a></li>
   </ol>
 </nav>
       </div>
     
     <div class="post_body"><h2 id="需求">需求</h2>
-<p>最近也在找 OpenWrt 的機器, 在 <a href="https://www.ptt.cc/bbs/Broad_Band/M.1656915489.A.582.html">PTT</a> 上面問了一下要刷 OpenWrt 的建議機種.
-我沒有 AX 的需求, 想請大家給點建議.
-目前用 Asus AC66U B1 + Merlin, 準備拿回老家用, 新的想試試看 Openwrt
-(DD-WRT, Tomoto 都用過了)</p>
-<p>家裡用量除了小孩線上課要開視訊, 平常其實不大 (沒人打電動, 也只有偶爾
-半夜看點影片.) 目前 Merlin 有裝 Diversion (擋廣告), QoS, OpenVPN (非常少用)</p>
-<p>我的需求</p>
+<p>目前家裡用的是 <a href="https://www.asus.com/us/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ac66u-b1/">Asus AC66U B1</a>, 韌體刷 <a href="https://www.asuswrt-merlin.net/">Asuswrt-Merlin</a>. 因為 DD-WRT, Tomoto 都用過了, 想試試看 <a href="https://openwrt.org/">OpenWrt</a>, 在 <a href="https://www.ptt.cc/bbs/Broad_Band/M.1656915489.A.582.html">PTT</a> 上面問了一下刷 OpenWrt 的建議機種, 大概有以下需求:</p>
 <ol>
-<li>AC 就可以了.</li>
+<li>802.11 AC 就可以了, 沒有 802.11 AX 的需求</li>
 <li>要有 USB</li>
-<li>16MB/128MB: 這個其實沒甚麼概念, 但官方都這麼建議了.
-不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB.</li>
+<li>16MB/128MB: 這個沒用過其實不知道需要多大的記憶體, 官方是建議 16M/128M. 不過 Openwrt 比較不吃資源嗎? 因為 AC66U B1 是 128MB/256MB.</li>
 <li>想裝的 plugin 是 Ad Home (也會玩玩其他家的), OpenVPN, QoS (還沒研究要裝哪家)</li>
 <li>有點想試試 Syncthing, 我已經有 NAS 了, 想再多一個備份.</li>
+<li>可以裝擋廣告的 plugin (目前 Merlin 有裝 Diversion)</li>
 </ol>
-<p>結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台.
-<a href="https://openwrt.org/toh/views/toh_available_16128">https://openwrt.org/toh/views/toh_available_16128</a></p>
-<p>後來試著用 &quot;openwrt number of installations report&quot;, &quot;best openwrt router&quot;找,
-也沒有找到合用的資訊, 大家推的並沒有很一致... 我是希望找比較多人用的,
-最好是開發 team 自己用的, 這樣遇到問題的機率應該會大幅降低吧?</p>
-<p>推文提到的 Linksys E8450 這台看起來是 ok, 只是似乎太新了?
-Openwrt 的支援感覺還不穩定?
-然後 紅米 ac2100, 小米 AX6S, 小米 AX3600 都沒有 USB. Asus AC1200: RAM 只有 64M</p>
-<p>另外, 有看到一篇把 Ad Home 裝在樹莓派 Zero 上, 然後直接用 router 的 USB 供電
-這也是種方法, 只是覺得 DNS 還是裝在 router 上比較好? 目前我 Merlin 是這樣用的.
-<a href="https://forum.openwrt.org/t/112329">https://forum.openwrt.org/t/112329</a></p>
 <h2 id="選擇">選擇</h2>
-<p>感謝大家的回覆, 有些問題再請教一下</p>
+<p>結果一看 Openwrt 支援的 router, 16MB/128MB 竟然有 599 台, 有 USB 的有 385 台. (參考: <a href="https://openwrt.org/toh/views/toh_available_16128">https://openwrt.org/toh/views/toh_available_16128</a>)</p>
+<p>後來試著用 &quot;openwrt number of installations report&quot;, &quot;best openwrt router&quot;找, 也沒有找到合用的資訊, 大家推的並沒有很一致... 我是希望找比較多人用的, 最好是開發 team 自己用的, 這樣遇到問題的機率應該會大幅降低吧?</p>
+<p>PTT 推文提到的 Linksys E8450 這台看起來是 ok, 只是似乎太新了? Openwrt 的支援感覺還不穩定? 然後 紅米 ac2100, 小米 AX6S, 小米 AX3600 都沒有 USB. Asus AC1200: RAM 只有 64M</p>
+<p>另外, 有看到一篇把 Ad Home 裝在樹莓派 Zero 上, 然後直接用 router 的 USB 供電. 這也是種方法, 只是覺得 DNS 還是裝在 router 上比較好? 目前我 Merlin 是這樣用的. (參考: <a href="https://forum.openwrt.org/t/112329">https://forum.openwrt.org/t/112329</a>)</p>
+<p>最後看了一下 32MB 以上, 比較有聽過的牌子 (Asus, Linksys, Netgear, TPlink)</p>
 <ol>
-<li>可以請問是甚麼法規會讓 Openwrt (或其他 firmware) 沒得玩了嗎?</li>
-<li>沒有考慮 PVE/軟路由等等是我這台 AC66UB1 的效能都過剩了, 好像不需要再升級</li>
-<li>USB 是因為 Merlin 一堆 plugin 都需要 USB 才能裝,
-不過確實應該考慮用樹莓派來跑 Syncthing</li>
-<li>DNS 我還是傾向裝在 router 上比較簡單, 外接或用外部的,
-出問題時(或斷網時)很容易忘記.
-像我用 Diversion 其實真的無感.</li>
-<li>MikroTik RouterOS 以前其實沒聽過, 查了一下好酷, 也不貴, 似乎是可以考慮.
-不過這東西看來花的時間會比 Merlin 多很多很多..</li>
-<li>我查官方是說不支援 AX9000 <a href="https://openwrt.org/inbox/toh/xiaomi/ax9000">https://openwrt.org/inbox/toh/xiaomi/ax9000</a></li>
+<li>Linksys EA8300(32/256): 好像還不錯</li>
+<li>Linksys MR8300(32/512): 這價差也太大, 從三千到七千</li>
+<li>Linksys WRT32X/WRT3200ACM(32/512): 有點貴</li>
+<li>Netgear/TPlink 都沒看到 32G 以上然後價錢 &lt;3000 的
+感覺好樣就 EA8300, 只是看來不太好買了</li>
 </ol>
-<p>看了一下 32MB 以上, 比較有聽過的牌子 (Asus, Linksys, Netgear, TPlink)
-Linksys EA8300(32/256): 好像還不錯
-Linksys MR8300(32/512): 這價差也太大, 從三千到七千
-Linksys WRT32X/WRT3200ACM(32/512): 有點貴
-Netgear/TPlink 都沒看到 32G 以上然後價錢 &lt;3000 的</p>
-<p>感覺好樣就 EA8300, 只是看來不太好買了</p>
-<h2 id="結果">結果</h2>
-<p>後來看到一台二手 Archer C7 V4 雙 USB 就買了, 先玩玩看.</p>
-<h2 id="初步心得">初步心得</h2>
+<h2 id="結果-archer-c7-v4">結果 (Archer C7 V4)</h2>
+<p>後來看到一台二手 <a href="https://openwrt.org/toh/hwdata/tp-link/tp-link_archer_c7_v4">Archer C7 V4</a> 雙 USB 就買了, 先玩玩看.</p>
+<h2 id="安裝設定-openwrt-21023">安裝設定 (OpenWrt 21.02.3)</h2>
 <ol>
 <li>刷 OpenWrt 21.02.3 r16554-1d4dea6d4f / LuCI openwrt-21.02 branch git-22.083.69138-0a0ce2a</li>
-<li>預設只有開 5G, 2.4G 是被 disable 的</li>
-<li>先試裝 OpenVPN server, 沒想到安裝步驟比 Asuswrt-Merlin 多了一些, 基本上在 Asuswrt-Merlin 簡單許多, 可參考
+<li>USB 安裝
 <ol>
-<li>Asuswrt-Merlin 使用 OpenVPN: <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</a></li>
-<li>OpenWrt 使用 OpenVPN 安裝: <a href="https://ithelp.ithome.com.tw/articles/10277516">https://ithelp.ithome.com.tw/articles/10277516</a></li>
+<li>Ref: <a href="https://openwrt.org/docs/guide-user/additional-software/extroot_configuration">https://openwrt.org/docs/guide-user/additional-software/extroot_configuration</a></li>
+<li>This command will download the tools needed to create and fix f2fs <code>opkg install f2fs-tools</code></li>
+<li>If in the list of supported filesystems in your device you don't see f2fs, you must install also the driver itself
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">opkg install kmod-fs-f2fs
+</span></span><span class="line"><span class="ln">2</span><span class="cl">mkfs.f2fs <span class="si">${</span><span class="nv">DEVICE</span><span class="si">}</span>
+</span></span></code></pre></div></li>
+</ol>
+</li>
+<li>OpenVPN server 安裝
+<ol>
+<li>在 OpenWrt 上面安裝 OpenVPN server, 比 Asuswrt-Merlin 複雜一點點 (參考: <a href="https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/">Asuswrt-Merlin 使用 OpenVPN</a>), 不過也不會太難, 先執行以下指令:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">$ opkg update
+</span></span><span class="line"><span class="ln">2</span><span class="cl">$ opkg install openvpn-easy-rsa openvpn-mbedtls luci-app-openvpn
+</span></span></code></pre></div></li>
+<li>連線到這裡設定 http://192.168.1.1/cgi-bin/luci/admin/vpn/openvpn, <a href="https://openwrt.org/docs/guide-user/services/vpn/openvpn/server">官方文件</a> 或 <a href="https://ithelp.ithome.com.tw/articles/10277516">iThome</a> 上面的那些文字檔設定, 都可以用這裡的 GUI 來處理.</li>
 </ol>
 </li>
 </ol>
-<h2 id="whats-next">What's next</h2>
+<h2 id="初步心得">初步心得</h2>
+<ol>
+<li>要注意預設只有開 5G, 2.4G 是被 disable 的</li>
+<li>記得設定正確時區 http://192.168.1.1/cgi-bin/luci/admin/system/system</li>
+<li>他並不會把原來存在機器上的設定刪除, 而是複製一份到 USB, 然後再蓋掉原來的設定. 也就是說, 把 USB 拔掉再開機, 他就會回到原來的設定.</li>
+<li>記憶體使用量如下:
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:right">Total Available</th>
+<th style="text-align:right">Used</th>
+<th style="text-align:right">Buffered</th>
+<th style="text-align:right">Cached</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空機</td>
+<td style="text-align:right">74.6% (64%)</td>
+<td style="text-align:right">29.5M (24%)</td>
+<td style="text-align:right">3.3M (2%)</td>
+<td style="text-align:right">10.2M (8%)</td>
+</tr>
+<tr>
+<td>設好有線/無線網路</td>
+<td style="text-align:right">62.1M (52%)</td>
+<td style="text-align:right">41.8M (33%)</td>
+<td style="text-align:right">3.2M (2%)</td>
+<td style="text-align:right">9.6M (7%)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="後續可以試玩的東西">後續可以試玩的東西</h2>
 <ul>
 <li>General
 <ul>
@@ -272,16 +296,14 @@ Netgear/TPlink 都沒看到 32G 以上然後價錢 &lt;3000 的</p>
 <li>AdGuard Home</li>
 <li>File sharing
 <ul>
-<li>Samba</li>
-</ul>
-</li>
-</ul>
-<p>跑這樣的指令, 機器就 hang 住了... (AdGuardHome 這個檔案約 32MB)</p>
+<li>Samba: 硬體好像不太行, 跑這樣的指令, 機器就 hang 住了... (AdGuardHome 這個檔案約 32MB)
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">cd</span> /tmp
 </span></span><span class="line"><span class="ln">2</span><span class="cl">cp /usr/bin/AdGuardHome .
-</span></span></code></pre></div><ul>
+</span></span></code></pre></div></li>
 <li>NextCloud</li>
 <li>SyncThing</li>
+</ul>
+</li>
 <li>Monitor/Bandwidth:
 <ul>
 <li>luci-app-nlbwmon</li>
@@ -329,7 +351,7 @@ Netgear/TPlink 都沒看到 32G 以上然後價錢 &lt;3000 的</p>
 	  
 	      <li><a href="https://dennys.github.io/tw/doc/router/openwrt-samba/" class="nav-link" title="OpenWrt Router Samba">OpenWrt Router Samba</a></li>
 	  
-	      <li><a href="https://dennys.github.io/tw/doc/router/openwrt-router-choice/" class="nav-link" title="OpenWrt Router 選購">OpenWrt Router 選購</a></li>
+	      <li><a href="https://dennys.github.io/tw/doc/router/openwrt-router-choice/" class="nav-link" title="OpenWrt Router 選擇">OpenWrt Router 選擇</a></li>
 	  
 	</ul>
 
