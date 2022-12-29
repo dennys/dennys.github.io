@@ -96,10 +96,10 @@ $SONAR_URL: The URL of SonarQube $SONAR_TOKEN: The token to access SonarQube $CI
     
     <item>
       <title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus</title>
-      <link>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/</link>
+      <link>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pull-push-metrics-prometheus/</guid>
+      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</guid>
       <description>
         
           

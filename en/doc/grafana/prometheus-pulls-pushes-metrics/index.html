@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>GitLab Checkmarx SonarQube Integration | Dennys Diary</title>
+<title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,21 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, …" />
+<meta name="description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="GitLab Checkmarx SonarQube Integration" />
+<meta name="twitter:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" />
-<meta property="og:title" content="GitLab Checkmarx SonarQube Integration" />
-<meta property="og:description" content="Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, …" />
+<meta property="og:url" content="https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/" />
+<meta property="og:title" content="Prometheus Pulls/Pushes Metrics from/to Another Prometheus" />
+<meta property="og:description" content="Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/">
+<link rel="canonical" href="https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/">
 
 
 
@@ -148,7 +148,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">GitLab Checkmarx SonarQube Integration</h1>
+    <h1 class="post_title">Prometheus Pulls/Pushes Metrics from/to Another Prometheus</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -156,23 +156,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jan 15, 2022</span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/gitlab/' title="GitLab" class="post_tag button button_translucent">GitLab
-        </a><a href='https://dennys.github.io/en/tags/checkmarx/' title="Checkmarx" class="post_tag button button_translucent">Checkmarx
-        </a><a href='https://dennys.github.io/en/tags/sonarqube/' title="SonarQube" class="post_tag button button_translucent">SonarQube
+      Aug 31, 2022</span>
+    <span class="post_time"> · 3 min read</span><span>&nbsp;· <a href='https://dennys.github.io/en/tags/prometheus/' title="Prometheus" class="post_tag button button_translucent">Prometheus
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=GitLab%20Checkmarx%20SonarQube%20Integration&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-sonarqube-integration%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Prometheus%20Pulls%2fPushes%20Metrics%20from%2fto%20Another%20Prometheus&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pulls-pushes-metrics%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgitlab-checkmarx-sonarqube-integration%2f&t=GitLab%20Checkmarx%20SonarQube%20Integration" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fgrafana%2fprometheus-pulls-pushes-metrics%2f&t=Prometheus%20Pulls%2fPushes%20Metrics%20from%2fto%20Another%20Prometheus" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -186,7 +184,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -197,100 +195,120 @@
   </span>
   </div>
 
-    <div class="post_body"><p><figure>
-  <picture>
-
+      <div class="post_toc">
+        <h2>Overview</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#requirement">Requirement</a></li>
+    <li><a href="#prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</a></li>
+    <li><a href="#prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</a></li>
+    <li><a href="#note">Note</a></li>
+    <li><a href="#port-forward">Port forward</a></li>
+  </ol>
+</nav>
+      </div>
     
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/logo/GitLab_Checkmarx_SonarQube.webp"
-      
-      
-    />
+    <div class="post_body"><pre><code><figure><img src="/images/software/grafana/prometheus.webp"/>
+    </figure>
 
-    </picture>
+</code></pre>
+<h2 id="requirement">Requirement</h2>
+<p>I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
+And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule
+from this zone to other zones.</p>
+<h2 id="prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</h2>
+<p>In this scenario, we use the <a href="https://prometheus.io/docs/prometheus/latest/federation/">Federation</a> feature to pull metrics from another Prometheus.
+You don't need to do any changes in Prometheus B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
+<p>Please check lines 13~15, you can only pull some metrics you need.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span>- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">honor_labels</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">metric_relabel_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">      </span>- <span class="nt">source_labels</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">id]</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">        </span><span class="nt">regex</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;^static-agent$&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">        </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l">drop </span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;/federate&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span><span class="nt">params</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">      </span><span class="nt">&#39;match[]&#39;</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;prometheus&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{__name__=~&#34;job:.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;node_.*|container_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">15</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;windows_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;{__name__=~&#34;probe_.*&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job!=&#34;&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;node&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_http_2xx&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">        </span><span class="c">#- &#39;{job=&#34;blackbox_icmp&#34;}&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">        </span><span class="c">#match[]={__name__=~&#34;..*&#34;}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">        </span><span class="c">#match[]=&#34;{__name__=~&#34;.+&#34;}&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">      </span>- <span class="nt">targets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w">        </span>- <span class="s1">&#39;x.x.x.x:9090&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;********&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity Check: You can connect to <a href="http://x.x.x.x:9090/targets">http://x.x.x.x:9090/targets</a> and find the federation job status.
+<figure><img src="/images/software/grafana/prometheus_federate.webp"/>
 </figure>
 </p>
-<h2 id="purpose">Purpose</h2>
-<p>In <a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/">previous article</a>, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too.
-When we commit code to <a href="https://gitlab.com/">GitLab</a>, we want GitLab to trigger these actions automatically:</p>
-<ol>
-<li><a href="https://gitlab.com/">GitLab</a> sends the code to <a href="https://checkmarx.com/">Checkmarx</a> to scan.</li>
-<li><a href="https://gitlab.com/">GitLab</a> triggers <a href="https://www.sonarqube.org/">SonarQube</a> to scan.</li>
-<li><a href="https://www.sonarqube.org/">SonarQube</a> integrates <a href="https://checkmarx.com/">Checkmarx</a>'s report.</li>
-</ol>
-<h2 id="procedure">Procedure</h2>
-<p>You can reference the official document: <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up">https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up</a></p>
-<ol>
-<li>Download the plugin from <a href="https://checkmarx.com/plugins/">here</a>, it only supports SonarQube LTS version (for now, it's 8.x)</li>
-<li>Configurea Quality Gate/Profiles of SonarQube for Checkmarx's rules.</li>
-<li>Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.</li>
-<li>Configure Checkmarx data in SonarQube, which you can reference <a href="https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up">here</a>.</li>
-<li>Trigger GitLab CI again, you will see the following log in your SonarQube job</li>
-</ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">INFO: Sensor Import Checkmarx scan results to SonarQube <span class="o">[</span>checkmarx<span class="o">]</span>
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">INFO: Retrieving Checkmarx scan results <span class="k">for</span> current module <span class="o">[</span>Checkmarx plugin version: 2021.2.1<span class="o">]</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">INFO: Getting Checkmarx configuration data from sonar Database.
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">INFO: Sonar server token is provided
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">INFO: Checkmarx credentials migration not needed
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">INFO: Sonar server token is provided
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">INFO: Resolving Cx setting: checkmarx.server.project_name
-</span></span><span class="line"><span class="ln">10</span><span class="cl">INFO: Forced authentication is enabled: Sonar credentials must be provided
-</span></span><span class="line"><span class="ln">11</span><span class="cl">INFO: Checkmarx server version <span class="o">[</span>9.2.0.41015<span class="o">]</span>. Hotfix <span class="o">[</span>24<span class="o">]</span>.
-</span></span><span class="line"><span class="ln">12</span><span class="cl">INFO: Logging into the Checkmarx service.
-</span></span><span class="line"><span class="ln">13</span><span class="cl">INFO: Connecting to https://your.checkmarx.server/
-</span></span><span class="line"><span class="ln">14</span><span class="cl">INFO: Initializing Cx client <span class="o">[</span>2020.2.4.NO.SCA<span class="o">]</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">INFO: Checkmarx server version <span class="o">[</span>9.2.0.41015<span class="o">]</span>. Hotfix <span class="o">[</span>24<span class="o">]</span>.
-</span></span><span class="line"><span class="ln">16</span><span class="cl">INFO: Logging into the Checkmarx service.
-</span></span><span class="line"><span class="ln">17</span><span class="cl">INFO: full team path: <span class="se">\C</span>xServer<span class="se">\\</span>Team1
-</span></span><span class="line"><span class="ln">18</span><span class="cl">INFO: preset name: All
-</span></span><span class="line"><span class="ln">19</span><span class="cl">INFO: ---------------------------------Get Last CxSAST Results:--------------------------------
-</span></span><span class="line"><span class="ln">20</span><span class="cl">INFO: Waiting <span class="k">for</span> server to generate xml report. <span class="m">4990</span> seconds left to timeout
-</span></span><span class="line"><span class="ln">21</span><span class="cl">INFO: Checkmarx High vulnerabilities: <span class="m">3</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl">INFO: Checkmarx New-High vulnerabilities: <span class="m">0</span>
-</span></span><span class="line"><span class="ln">23</span><span class="cl">INFO: Checkmarx Medium vulnerabilities: <span class="m">23</span>
-</span></span><span class="line"><span class="ln">24</span><span class="cl">INFO: Checkmarx New-Medium vulnerabilities: <span class="m">1</span>
-</span></span><span class="line"><span class="ln">25</span><span class="cl">INFO: Checkmarx Low vulnerabilities: <span class="m">142</span>
-</span></span><span class="line"><span class="ln">26</span><span class="cl">INFO: Checkmarx New-Low vulnerabilities: <span class="m">7</span>
-</span></span><span class="line"><span class="ln">27</span><span class="cl">INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId<span class="o">=</span>1000157<span class="p">&amp;</span><span class="nv">ProjectID</span><span class="o">=</span><span class="m">67</span>
-</span></span></code></pre></div><ol start="6">
-<li>You can see the Checkmarx issues in SonarQube now.</li>
-</ol>
-<h2 id="problem">Problem</h2>
-<p>I find some issues are not created in SonarQube and it seems due to the rule is not defined in Checkmarx's SonarQube plugin. I'm still checking it.</p>
-
+<h2 id="prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</h2>
+<p>In this scenario, first, you need to enable the <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
+You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/prometheus/web.yml:/etc/prometheus/web.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.config.file=/etc/prometheus/web.yml&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.enable-remote-write-receiver&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Then, you need to modify <em>docker-compose.yml</em> and *prometheus.yml of Prometheus C.
+First, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#prometheus-agent">Prometheus agent</a> mode,
+just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># docker-compose.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">prometheus</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">    </span><span class="nt">expose</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="m">9090</span><span class="p">:</span><span class="m">9090</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">    </span>- <span class="l">/opt/grafana/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--enable-feature=agent&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--log.level=debug&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section, and input Prometheus A's URL in it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># prometheus.yml of C</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">global</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">
+</span></span></span><span class="line hl"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="nt">remote_write</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">6</span><span class="cl"><span class="w">  </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;http://(Domain of Prometheus A):9090/api/v1/write&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span><span class="line hl"><span class="ln">9</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
+</span></span></span></code></pre></div><p>Sanity check: you can enable the log to debug level and check it sends the data.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">prometheus           | ts=2022-08-31T06:58:46.065Z caller=dedupe.go:112 component=remote level=debug remote_name=3c577a url=http://x.x.x.x:3128/api/v1/write msg=QueueManager.calculateDesiredShards dataInRate=95.10224000000001 dataOutRate=273.83119999999997 dataKeptRatio=1 dataPendingRate=-178.72895999999997 dataPending=285.30672000000004 dataOutDuration=0.026267519444000003 timePerSample=9.592595527463637e-05 desiredShards=0.010491189203871395 highestSent=1.66192912e+09 highestRecv=1.661929123e+09
+</span></span></code></pre></div><h2 id="note">Note</h2>
+<p>You should enable authentication in Prometheus, you can reference this page to hash your password <a href="https://prometheus.io/docs/guides/basic-auth/">https://prometheus.io/docs/guides/basic-auth/</a>,
+and save it into your <em>web.yml</em>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">basic_auth_users</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="cp">******************************************</span><span class="w">
+</span></span></span></code></pre></div><h2 id="port-forward">Port forward</h2>
+<p>If you have a restricted firewall, you can use socat to forward the request to another host.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">socat -v TCP-LISTEN:3128,fork,reuseaddr TCP:x.x.x.x:9090
+</span></span></code></pre></div>
     </div>
-
-	<h2 class="post_related">Posts in this Series</h2>
-	<ul>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/" class="nav-link" title="GitLab SonarQube Integration with dotNET">GitLab SonarQube Integration with dotNET</a></li>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a></li>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/" class="nav-link" title="Use Grafana to Manage GitLab CI/CD Pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</a></li>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/" class="nav-link" title="Use GitLab to do .NET 4.8 CI/CD">Use GitLab to do .NET 4.8 CI/CD</a></li>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/" class="nav-link" title="GitLab Checkmarx CI/CD Integration">GitLab Checkmarx CI/CD Integration</a></li>
-	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/" class="nav-link" title="GitLab Checkmarx SonarQube Integration">GitLab Checkmarx SonarQube Integration</a></li>
-	  
-	</ul>
-
 
 
     
