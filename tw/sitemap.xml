@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,47 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/edu/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/kids-a-to-z/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/kids-a-to-z/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/categories/%E6%95%99%E8%82%B2/</loc>
+    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
     <lastmod>2022-10-26T18:18:32+08:00</lastmod>
@@ -67,19 +108,6 @@
                 href="https://dennys.github.io/tw/tags/software/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</loc>
     <lastmod>2022-10-26T18:18:32+08:00</lastmod>
   </url><url>
@@ -114,19 +142,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2022-09-17T00:18:32+08:00</lastmod>

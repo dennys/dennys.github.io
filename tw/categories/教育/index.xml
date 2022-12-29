@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>教育 on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/categories/%E6%95%99%E8%82%B2/</link>
+    <description>Recent content in 教育 on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Dec 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/%E6%95%99%E8%82%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kids A to Z 給家長看的報表</title>
+      <link>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</link>
+      <pubDate>Thu, 29 Dec 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</guid>
+      <description>
+        
+          
+            甚麼是 Kids A to Z? Kids A to Z 基本上就是一個線上閱讀系統, 適合 K-5 的年紀. 然後他有分 29 等級, 這裡 有他的等級和其他不同分類等級 (譬如常見的 Lexile 藍思) 的對照表.
+給家長看的報表有甚麼用途? 看這些報表, 比較可以掌握小孩的學習狀況, 譬如
+最近在看那些書 看書的頻率 回答問題的正確率 等級的記錄, 如下圖 如何申請 家長申請 從 https://www.kidsa-z.com/main/Login 註冊一個 家長帳號, 這個帳號先註冊好, 要等老師同意之後才用得到.
+用 小孩的帳號 登入 Kids A to Z (https://www.kidsa-z.com/main/Login/)
+選擇右上角的 Parents 連結 選擇左邊的 Request Parent Access (我是申請之後才來抓圖, 所以左邊馬賽克的地方是我已經註冊好的 email) 填好右邊的姓名還有 email, 然後按下 Request Access (我是申請之後才來抓圖, 所以左邊馬賽克的地方是我已經註冊好的 email) 這時會收到一封信, 通知你申請程序已經完成, 現在要等老師核准 老師核准 老師可以接進入系統, 然後進入 Roster page, 再同意這個申請就好.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
