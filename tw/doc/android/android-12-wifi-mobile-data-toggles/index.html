@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
+<meta name="description" content="注意 這個方法不用 Root, 但需要從電腦上執行 adb (Android Debug Bridge). 此方法僅適用於 Android 12, Android 13 以上不行. Android 13 目前只找到用 Better-Internet-Tiles, 但他需要搭配 Shizuku, 而且得固定開啟 USB  …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/" />
 <meta property="og:title" content="如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)" />
-<meta property="og:description" content="提醒 這個方法不用 Root, 但需要從電腦上執行. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後 …" />
+<meta property="og:description" content="注意 這個方法不用 Root, 但需要從電腦上執行 adb (Android Debug Bridge). 此方法僅適用於 Android 12, Android 13 以上不行. Android 13 目前只找到用 Better-Internet-Tiles, 但他需要搭配 Shizuku, 而且得固定開啟 USB  …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -210,9 +210,14 @@
       </div>
     
     <div class="post_body">
-<div class="notices info">
-    <div class="label">提醒</div>
-    這個方法不用 Root, 但需要從電腦上執行.
+<div class="notices warning">
+    <div class="label">注意</div>
+    <ol>
+<li>這個方法不用 Root, 但需要從電腦上執行 adb (<a href="https://developer.android.com/studio/command-line/adb">Android Debug Bridge</a>).</li>
+<li>此方法僅適用於 Android 12, Android 13 以上不行.</li>
+<li>Android 13 目前只找到用 <a href="https://github.com/CasperVerswijvelt/Better-Internet-Tiles">Better-Internet-Tiles</a>, 但他需要搭配 <a href="https://github.com/RikkaApps/Shizuku">Shizuku</a>, 而且得固定開啟 USB 偵錯.</li>
+</ol>
+
   </div>
 
 <h2 id="需求">需求</h2>
@@ -236,7 +241,7 @@
         class="image_figure image_external image_processed"
         width="300"
         height="106"
-        src="/old_15369994747089407617.png"
+        src="/old_3111967064387905572.png"
       
       
     />
@@ -262,9 +267,9 @@
       alt=""
       
         class="image_figure image_external image_processed"
-        width="600"
-        height="236"
-        src="/internet_6305281696736897104.png"
+        width="400"
+        height="157"
+        src="/internet_1122230649487461803.png"
       
       
     />
@@ -290,9 +295,9 @@
       alt=""
       
         class="image_figure image_external image_processed"
-        width="600"
-        height="749"
-        src="/internet2_8127206464116836738.png"
+        width="400"
+        height="499"
+        src="/internet2_10509461726959111544.png"
       
       
     />
@@ -346,9 +351,9 @@
       alt=""
       
         class="image_figure image_external image_processed"
-        width="939"
-        height="354"
-        src="/image-10_1271737343354428249.png"
+        width="698"
+        height="263"
+        src="/image-10_12683830187614077186.png"
       
       
     />
@@ -374,9 +379,9 @@
       alt=""
       
         class="image_figure image_external image_processed"
-        width="915"
-        height="469"
-        src="/image-11_12006874048046722926.png"
+        width="800"
+        height="410"
+        src="/image-11_948701973518736468.png"
       
       
     />
@@ -389,7 +394,7 @@
 <p>網路上找到解法如下 (參考 <a href="https://forum.xda-developers.com/t/4353717/">https://forum.xda-developers.com/t/4353717/</a> 和 <a href="https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/)">https://9to5google.com/2021/12/08/android-12-internet-wifi-mobile-data-toggles/)</a>, 比較奇怪的是, XDA 上面說要 root, 但我沒 root 也成功了.</p>
 <p><strong>要注意的是, 他會清除所有 toggle (就是說, 設完以後, 你的快速設定就只剩下 Wi-Fi 和行動數據兩個), 不過這再加回來就好了</strong>.</p>
 <ol>
-<li>安裝 ADB (在<a href="https://developer.android.com/studio/releases/platform-tools">這裡</a>下載, 如果 adb.exe 執行起來一直 crash, 可用舊版 <a href="https://dl.google.com/android/repository/platform-tools_r28.0.0-windows.zip">https://dl.google.com/android/repository/platform-tools_r28.0.0-windows.zip</a></li>
+<li>安裝 ADB (在<a href="https://developer.android.com/studio/releases/platform-tools">這裡</a>下載, 如果 adb.exe 執行起來一直 crash, 可用舊版 <a href="https://dl.google.com/android/repository/platform-tools_r28.0.0-windows.zip">https://dl.google.com/android/repository/platform-tools_r28.0.0-windows.zip</a>)</li>
 <li>打開手機的 USB debug mode (參考 <a href="https://blog.pulipuli.info/2019/01/adbfastbootandroid-sdk-platform-tools.html">https://blog.pulipuli.info/2019/01/adbfastbootandroid-sdk-platform-tools.html</a>)</li>
 <li>執行 <code>adb devices</code>, 確定手機有連線成功
 <ul>

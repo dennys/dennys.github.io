@@ -26,14 +26,14 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise …" />
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 此方法適用於 Android 11, 12. 還沒在 Android 13 上測試 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
 <meta name="twitter:title" content="Android 11 如何不要驗證 Wi-Fi CA 憑證" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/" />
 <meta property="og:title" content="Android 11 如何不要驗證 Wi-Fi CA 憑證" />
-<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise …" />
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 此方法適用於 Android 11, 12. 還沒在 Android 13 上測試 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
@@ -216,7 +216,11 @@
     <div class="post_body">
 <div class="notices warning">
     <div class="label">注意</div>
-    系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+    <ol>
+<li>系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!</li>
+<li>此方法適用於 Android 11, 12. 還沒在 Android 13 上測試</li>
+</ol>
+
   </div>
 
 <h2 id="本文更新紀錄">本文更新紀錄</h2>
@@ -234,20 +238,20 @@
 <p>首先, 要 Unlock, Pixel 5 (Android 12) 可參考 <a href="https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/">https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</a>. (要做到把 boot.img 換掉, Magisk 不需要裝)</p>
 </li>
 <li>
-<p>試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<em><strong>當然是不會成功</strong></em>, 目的只是要先寫入一版 Config 檔案, 等一下可以修改.
+<p>試著連上 Wi-Fi, 網域就隨便給他寫, 然後試著連線, 這<em><strong>當然是不會成功</strong></em>, 目的只是要把帳號密碼寫進 Config 檔案.
 <a href="https://dennys.files.wordpress.com/2022/02/1-1.png"><img src="https://dennys.files.wordpress.com/2022/02/1-1.png?w=373" alt="" class="wp-image-316" width="261" height="369"/></a></p>
 </li>
 <li>
-<p>先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看. 若執行時發生</p>
+<p>先用下列指令檢查 WifiConfigStore.xml 是否正確, 這裡也可以用 adb pull 拉到電腦檢查, 但我一直沒成功, 就先用 cat 看.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">adb shell
 </span></span><span class="line"><span class="ln">2</span><span class="cl">su
 </span></span><span class="line"><span class="ln">3</span><span class="cl">cat /data/misc/apexdata/com.android.wifi/WifiConfigStore.xml
-</span></span></code></pre></div><ul>
-<li>若執行 su 時發生 inaccessible or not found (如下), 通常是 root 沒成功, 請再確認一次 root 步驟.
+</span></span></code></pre></div><ol>
+<li>若執行 su 時發生 <em>inaccessible or not found</em> (如下圖), 通常是 root 沒成功, 請再確認一次 root 步驟.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">127<span class="p">|</span>redfin:/system/bin $ su
-</span></span><span class="line"><span class="ln">2</span><span class="cl">/system/bin/sh: su: inaccessible or not found
+</span></span><span class="line hl"><span class="ln">2</span><span class="cl">/system/bin/sh: su: inaccessible or not found
 </span></span></code></pre></div></li>
-</ul>
+</ol>
 </li>
 <li>
 <p>讀出來的 WifiConfigStore.xml 內容如下, 可找 WifiEnterpriseConfiguration 這個關鍵字, 目的是要把 12,13 行的設定值清掉</p>
@@ -315,7 +319,7 @@
 <p>這時候就可以測試連線了</p>
 </li>
 <li>
-<p>因為實際上並不需要 root, 只是為了修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 <a href="https://dennys.github.io/tw/doc/android/android-remove-root-magisk/">https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</a></p>
+<p>因為實際上並不需要 root, 我們的目的是要修改 WifiConfigStore.xml, 因此改完後可以 UnRoot (移除 Magisk 和刷回原廠 boot.img), 但因為解鎖會清空資料, 而且下次又遇到新的 Wi-Fi 又得重來, 我就維持解鎖狀態了. 方法可參考 <a href="https://dennys.github.io/tw/doc/android/android-remove-root-magisk/">https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</a></p>
 </li>
 </ol>
 <h2 id="系統更新後如何處理">系統更新後如何處理?</h2>
@@ -323,11 +327,11 @@
 <h2 id="wi-fi-密碼更新後如何處理">Wi-Fi 密碼更新後如何處理?</h2>
 <ol>
 <li>如果系統有更新過, 就得先用 Magisk 重新 patch 一次.</li>
-<li>一樣要試著連線 (當然不會成功), 重點是把密碼寫進去.</li>
+<li>一樣要試著連線一次 (當然也是不會成功), 重點是要把新密碼寫進 WifiConfigStore.xml.</li>
 <li>然後再用 adb shell 跑一次上面的 sed 指令修改 WifiConfigStore.xml 即可.</li>
 </ol>
 <h2 id="後記">後記</h2>
-<p>這個方法並不是把不要驗證 (Do Not Validate) 的設定加回去, 而是先嘗試連線一個要驗證的 Wi-Fi (當然這裡會失敗), 等他把設定檔存下來之後, 再進系統把憑證的設定改掉, 所以還是和 Android 10 以前不太一樣. 而且 <em><strong>每次連上一個新的要使用 EAP 的 Wi-Fi 基地台都要重新執行一次</strong></em> , 會比較麻煩.</p>
+<p>這個方法並不是把不要驗證 (Do Not Validate) 的設定加回去, 而是先嘗試連線一個要驗證的 Wi-Fi (當然這裡會失敗), 等他把設定檔存下來之後, 再進系統把憑證的設定改掉, 所以還是和 Android 10 以前不太一樣. 而且 <em><strong>每次連上一個新的要使用 EAP 的 Wi-Fi 基地台都要重新執行一次</strong></em>, 還是比較麻煩.</p>
 
     </div>
 
