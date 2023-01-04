@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,57 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/forti/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/categories/it/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</loc>
+    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/edu/</loc>
     <lastmod>2022-12-29T00:00:00+08:00</lastmod>
@@ -53,47 +104,8 @@
                 href="https://dennys.github.io/tw/series/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/categories/%E6%95%99%E8%82%B2/</loc>
     <lastmod>2022-12-29T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/software/</loc>
     <lastmod>2022-10-26T18:18:32+08:00</lastmod>
@@ -142,9 +154,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/network/</loc>
-    <lastmod>2022-09-17T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/network/ssh-tunnel/</loc>
     <lastmod>2022-09-17T00:18:32+08:00</lastmod>
@@ -224,9 +233,6 @@
     <lastmod>2022-07-25T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</loc>
-    <lastmod>2022-07-22T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/vpn/</loc>
     <lastmod>2022-07-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/series/gitlab-devops/</loc>
