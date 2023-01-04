@@ -9,7 +9,7 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Wed, 04 Jan 2023 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在 FortiClient VPN for Windows 保存密碼</title>
+      <title>如何在 FortiClient VPN for Windows 保存密碼</title>
       <link>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</link>
       <pubDate>Wed, 04 Jan 2023 00:18:32 +0800</pubDate>
       
@@ -21,7 +21,7 @@
 解決方法 方法其實很簡單, 就改一下 Registry 就好了
 執行 regedit
 選 *電腦\HKEY_CURRENT_USER\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\XXXXX (注意, 是 HKEY_CURRENT_USER, 不是 HKEY_LOCAL_MACHINE)
-按右鍵新增一個 DWORD, 有 2 個設定可以使用 *. show_remember_password: 這個設成 1, 他就會出現 保存密碼 這個選項 *. SavePass: 這個設成 1, 他就會把密碼存起來 成果 參考 *. https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn
+按右鍵新增一個 DWORD, 有 2 個設定可以使用 *. show_remember_password: 這個設成 1, 他就會出現 保存密碼 這個選項 *. SavePass: 這個設成 1, 他就會把密碼存起來 成果 參考 https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn 
           
           
         
