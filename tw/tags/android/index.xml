@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手機照片自動備份到電腦 (使用 Syncthing for Android)</title>
+      <link>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
+      <description>
+        
+          
+            需求 現在的手機都不能插卡, 照片直接存在手機上, 萬一手機掛的很嚴重, 有時連照片都救不回來. 但是要常常拿手機接線到電腦上傳檔也很麻煩, 因此要找一個自動把手機照片備份到電腦的方式. 大概有幾種作法
+最簡單的, 花錢買 Google Drive 或 Google Photos, 只要有上網, 就會自動幫你備份到雲端去. Resilio Sync, 他是走BitTorrent協定的傳輸軟體, 免費版和付費版的差異可以看這裡, 不過這軟體我沒有實際使用過. Syncthing, 這是一個 Open Source 的檔案同步軟體. 因為我的需求是要把照片先轉存到電腦, 整理後再上雲端, 因此我用的是 Syncthing, 他可以把各種平台, 譬如 Windows, Linux, Android, maxOS, *BSD, ... 的檔案做互相同步. 甚至連 Synology 都有人做好 Addon了. 沒錯, 你注意到了, 他沒有官方支援的 iOS solution ... (iOS 可參考 Möbius Sync, 這是別的廠商做的付費 App, 支援 iPhone/iPad)
+手機端安裝 Syncthing 在手機上有兩個 App, 一個是 syncthing-android, 另一個是 Syncthing-Fork. Syncthing-Fork 有多一些功能, 可參考他的 GitHub, 上面有說明, 所以我就用這個了.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
       <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
