@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 15 Jul 2012 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>非專業 2.5 吋外接硬碟效能測試大亂鬥</title>
+      <link>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</guid>
+      <description>
+        
+          
+            前言 多年來手上有不少用來備份用的 USB 硬碟, 拿來測測看效能如何.
+測試環境 測試軟體: CrystalDiskInfo 8.0.4 測試軟體: CrystalDiskMark 8.0.4 測試硬體: Lenovo Thinkpad E15 Gen 3 測試硬體(USB Hub): Hootoo HT-UC001 USB-C Hub, 也測試一下透過 USB hub 會衰減多少. 測試方式 直接接在 USB 3.2 Gen 1 透過 Hootoo HT-UC001 接在 USB-C 3.2 Gen 1 接在 USB 2.0 測試結果 ADATA HV320 1TB (Toshiba MQ04ABF100) 直接接在電腦上的 USB 3.2 Gen 1 透過 USB hub (Hootoo HT-UC001) Seagate Expansion 5TB (ST5000LM000-2AN170) 直接接在電腦上的 USB 3.2 Gen 1 透過 USB hub (Hootoo HT-UC001) Seagate Backup Plus 4TB (ST4000LM016-1N2170) 直接接在電腦上的 USB 3.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>2012 電腦升級</title>
       <link>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</link>

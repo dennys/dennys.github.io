@@ -57,7 +57,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意 FreshJR_Qos已停止維護, 請改用 FlexQoS
+            注意FreshJR_Qos已停止維護, 請改用 FlexQoS
 FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
 安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
 原文: https://www.snbforums.com/threads/36836/ 中文摘要翻譯: https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html 如何確定安裝成功
@@ -77,7 +77,7 @@ FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上�
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
 Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
 要注意的是, Diversion 為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 FAQ 看一下這是甚麼東西還有他能做的事情.

@@ -2,6 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennys.github.io/tw/categories/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/hardware/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/categories/it/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/android/</loc>
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -28,58 +99,6 @@
                 href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/series/</loc>
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -95,19 +114,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/tags/syncthing/</loc>
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</loc>
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
@@ -522,9 +528,6 @@
     <lastmod>2012-09-08T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</loc>
-    <lastmod>2012-07-15T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/hardware/</loc>
     <lastmod>2012-07-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/java/</loc>
