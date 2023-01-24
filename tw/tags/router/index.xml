@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asuswrt Merlin AdGuard Home (分享器擋廣告)</title>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
+      <description>
+        
+          
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 addon 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
+Asuswrt-Merlin 上的擋廣告方案 要在 Asuswrt-Merlin 上面擋廣告, 主要應該是這兩個 addon:
+Diversion: 這個好多年了, 可參考我之前寫的心得 https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/ Pi-hole: 這個我沒試過, google 了一下, 網路上有不少文件可參考. AdGuard Home: 他和 Diversion 類似, 也是透過 DNS 的方法來擋掉廣告, 這次我要試的是這個. AdGuard Home 是甚麼 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>OpenWrt 頻寬管理 (依照 interface) </title>
       <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>

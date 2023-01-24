@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/</loc>
     <lastmod>2023-01-24T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -57,6 +66,32 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/router/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/router/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/router/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
     <lastmod>2023-01-24T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -68,6 +103,19 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</loc>
@@ -97,19 +145,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/syncthing/</loc>
@@ -214,32 +249,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</loc>
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/router/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/router/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/router/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</loc>
     <lastmod>2022-07-25T00:00:00+08:00</lastmod>
@@ -413,12 +422,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/network/realvnc/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
-    <lastmod>2022-06-01T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-06-01T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</loc>
     <lastmod>2022-06-01T22:18:32+08:00</lastmod>
