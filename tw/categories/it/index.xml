@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Double Commander (檔案總管替代工具)</title>
+      <link>https://dennys.github.io/tw/doc/software/double-commander/</link>
+      <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/software/double-commander/</guid>
+      <description>
+        
+          
+            Double Commander 是個好用的跨平台 open source 的 file manager (設計理念接近 Total Commander), 他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.
+GitHub: https://github.com/doublecmd/doublecmd Download: https://sourceforge.net/p/doublecmd/wiki/Download/ 設定 Directory Hotlist
+這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄. 建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&amp;gt; D, 他就會跳到 下載 目錄, 很方便. File operations
+最上面的 show operations progress initially in, 把它改成 minimized separate window, 這樣他就會在最下面顯示 progress bar. (預設是會有個視窗跳出來, 會有點干擾) Select file name without extension when renaming: 取消打勾, 這樣 rename 的時候, 就不會選到副檔名 (這樣和檔案總管行為類似) Delete to trash operation: 取消打勾 (這樣和檔案總管行為類似) File views -&amp;gt; custom columns
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Asuswrt-Merlin Syncthing (檔案同步)</title>
       <link>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>

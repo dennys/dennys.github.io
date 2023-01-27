@@ -2,14 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -22,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,8 +41,11 @@
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/doc/software/double-commander/</loc>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -59,6 +56,38 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/software/</loc>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/software/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2023-01-27T10:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
+    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</loc>
+    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/router/</loc>
     <lastmod>2023-01-25T00:00:00+08:00</lastmod>
@@ -91,19 +120,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/series/syncthing/</loc>
     <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</loc>
     <lastmod>2023-01-25T00:00:00+08:00</lastmod>
@@ -175,19 +191,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/categories/%E6%95%99%E8%82%B2/</loc>
     <lastmod>2022-12-29T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/software/</loc>
-    <lastmod>2022-10-26T18:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/software/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</loc>
     <lastmod>2022-10-26T18:18:32+08:00</lastmod>
