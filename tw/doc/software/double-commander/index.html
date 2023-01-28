@@ -159,7 +159,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 </span>
     <span class="post_date">
       Jan 27, 2023</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
+    <span class="post_time"> · 2 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/software/' title="Software" class="post_tag button button_translucent">Software
         </a>
     </span>
     <span class="page_only">&nbsp;·
@@ -220,9 +220,33 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <ol>
 <li>這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄.</li>
 <li>建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&gt; D, 他就會跳到 <strong>下載</strong> 目錄, 很方便.
-<figure><img src="/images/software/double_commander/doublecmd_directory_hotlist.png" width="800"/>
+<figure><img src="/images/software/double_commander/doublecmd_directory_hotlist.webp" width="800"/>
     </figure>
 </li>
+</ol>
+</li>
+<li>
+<p>File associations</p>
+<p>這個是用來設定在檔案按下右鍵的時候, <em>Actions</em> 裡面會出現的指令, 預設是只有 <em>View</em> 和 <em>Edit</em>.
+如果我要在 <em>Actions</em> 裡面加上一個 <em>Convert to WebP</em> 的功能 (使用 <a href="https://imagemagick.org/">ImageMagick</a> ), 方法如下:</p>
+<ol>
+<li>將轉檔程式放在 <em>d:\bin\image\imagemagick\convert.exe</em></li>
+<li>File types, Icon, Actions name 請自行輸入喜歡的名字.</li>
+<li>Extensions 請輸入你要對應的檔案副檔名.</li>
+<li>Command 就輸入 ImageMagick 裡面的 convert.exe 的完整路徑.</li>
+<li>Parameters: 我是用 <em>%&quot;0&quot;%f&quot; %&quot;0&quot;%o.webp&quot;</em>, 因為 ImageMagick 是認檔案名稱來決定轉檔格式, 所以這裡直接寫檔名就好. 變數的部分可參考 <a href="https://doublecmd.github.io/doc/en/variables.html">https://doublecmd.github.io/doc/en/variables.html</a>.
+這邊請 <a href="https://doublecmd.github.io/doc/en/variables.html#quotation"><em><strong>特別注意雙引號的問題</strong></em></a> .</li>
+<li>Start path 預設就會是執行的目錄, 所以我這邊不填
+<figure><img src="/images/software/double_commander/doublecmd_file_associations.webp" width="700"/>
+    </figure>
+</li>
+<li>如果跑出來不如預期, 可以從 Layout 打開 <em>Show log window</em>, 看他實際執行的指令
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">Launch external: Filename=d:\bin\image\imagemagick\convert / Param=<span class="s2">&#34;P20220310.JPG&#34;</span> <span class="s2">&#34;P20220310.webp&#34;</span> / WorkDir=C:\temp\
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Result external: Result=Success! / Filename=d:\bin\image\imagemagick\convert / Param=<span class="s2">&#34;P20220310.JPG&#34;</span> <span class="s2">&#34;P20220310.webp&#34;</span> / WorkDir=C:\temp\
+</span></span></code></pre></div></li>
+<li><em><strong>注意</strong></em>: 他只能一次處理一個檔案, 如果給他兩個, 他會把檔案名稱串在一起去執行, 變成如下, 這樣當然就跑不出來.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="ln">1</span><span class="cl">Launch external: Filename=d:\bin\image\imagemagick\convert / Param=<span class="s2">&#34;File1.JPG File2.JPG&#34;</span> <span class="s2">&#34;File1 File2.webp&#34;</span> / WorkDir=C:\temp\ 
+</span></span></code></pre></div></li>
 </ol>
 </li>
 <li>
@@ -231,7 +255,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <li>最上面的 <em>show operations progress initially in</em>, 把它改成 minimized separate window, 這樣他就會在最下面顯示 progress bar. (預設是會有個視窗跳出來, 會有點干擾)</li>
 <li><em>Select file name without extension when renaming</em>: 取消打勾, 這樣 rename 的時候, 就不會選到副檔名 (這樣和檔案總管行為類似)</li>
 <li><em>Delete to trash operation</em>: 取消打勾 (這樣和檔案總管行為類似)
-<figure><img src="/images/software/double_commander/doublecmd_file_operations.png" width="700"/>
+<figure><img src="/images/software/double_commander/doublecmd_file_operations.webp" width="700"/>
     </figure>
 </li>
 </ol>
@@ -239,16 +263,16 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <li>
 <p>File views -&gt; custom columns</p>
 <p>這邊是修改要顯示的欄位名稱和對齊的方法
-<figure><img src="/images/software/double_commander/doublecmd_file_views_custom_columns.png" width="700"/>
+<figure><img src="/images/software/double_commander/doublecmd_file_views_custom_columns.webp" width="700"/>
     </figure>
 </p>
 </li>
 <li>
 <p>Icons</p>
 <ol>
-<li>File panel 的預設 icon size 是 40x40, 這會導致她每列的間隔很大 (可參考<a href="https://doublecmd.sourceforge.io/gallery/images/MainWindow.png">這裡</a>),
+<li>File panel 的預設 icon size 是 40x40, 這會導致她每列的間隔很大 (可參考<a href="https://doublecmd.sourceforge.io/gallery/images/MainWindow.webp">這裡</a>),
 我希望能多顯示一些資訊, 所以把他調小.
-<figure><img src="/images/software/double_commander/doublecmd_icons.png" width="600"/>
+<figure><img src="/images/software/double_commander/doublecmd_icons.webp" width="600"/>
     </figure>
 </li>
 </ol>
@@ -256,7 +280,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <li>
 <p>Layout</p>
 <p>這邊是設定要顯示那些工具在畫面上
-<figure><img src="/images/software/double_commander/doublecmd_layout.png" width="600"/>
+<figure><img src="/images/software/double_commander/doublecmd_layout.webp" width="600"/>
     </figure>
 </p>
 </li>
@@ -264,7 +288,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <p>Mouse -&gt; Drag &amp; drop</p>
 <ol>
 <li><em>Show confirmation dialog after drop</em>: 取消打勾, 這樣用滑鼠 drap &amp; drop 之後, 不會跳出確認視窗
-<figure><img src="/images/software/double_commander/doublecmd_mouse_drag_n_drop.png" width="700"/>
+<figure><img src="/images/software/double_commander/doublecmd_mouse_drag_n_drop.webp" width="700"/>
     </figure>
 </li>
 </ol>
@@ -273,7 +297,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <p>Toolbar</p>
 <ol>
 <li>這裡新增一個 Windows Terminal 為例子
-<figure><img src="/images/software/double_commander/doublecmd_toolbar.png" width="800"/>
+<figure><img src="/images/software/double_commander/doublecmd_toolbar.webp" width="800"/>
     </figure>
 </li>
 </ol>
@@ -289,6 +313,7 @@ GitHub: https://github.com/doublecmd/doublecmd …" />
 <h2 id="不順手的地方">不順手的地方</h2>
 <ol>
 <li>使用滑鼠做 drag and drop 時, 預設是 copy (檔案總管預設是 move), 這個沒有地方可調整, 有人提出過, 但還沒被開發團隊接受. 可參考 <a href="https://github.com/doublecmd/doublecmd/issues/271">https://github.com/doublecmd/doublecmd/issues/271</a></li>
+<li>在 tree view 沒辦法改名字</li>
 </ol>
 
     </div>

@@ -19,8 +19,9 @@
           
             Double Commander 是個好用的跨平台 open source 的 file manager (設計理念接近 Total Commander), 他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.
 GitHub: https://github.com/doublecmd/doublecmd Download: https://sourceforge.net/p/doublecmd/wiki/Download/ 設定 Directory Hotlist
-這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄. 建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&amp;gt; D, 他就會跳到 下載 目錄, 很方便. File operations
-最上面的 show operations progress initially in, 把它改成 minimized separate window, 這樣他就會在最下面顯示 progress bar. (預設是會有個視窗跳出來, 會有點干擾) Select file name without extension when renaming: 取消打勾, 這樣 rename 的時候, 就不會選到副檔名 (這樣和檔案總管行為類似) Delete to trash operation: 取消打勾 (這樣和檔案總管行為類似) File views -&amp;gt; custom columns
+這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄. 建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&amp;gt; D, 他就會跳到 下載 目錄, 很方便. File associations
+這個是用來設定在檔案按下右鍵的時候, Actions 裡面會出現的指令, 預設是只有 View 和 Edit. 如果我要在 Actions 裡面加上一個 Convert to WebP 的功能 (使用 ImageMagick ), 方法如下:
+將轉檔程式放在 d:\bin\image\imagemagick\convert.exe File types, Icon, Actions name 請自行輸入喜歡的名字. Extensions 請輸入你要對應的檔案副檔名. Command 就輸入 ImageMagick 裡面的 convert.
           
           
         
