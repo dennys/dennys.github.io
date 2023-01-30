@@ -41,9 +41,9 @@ collectd collectd 其實不是針對網路而已, 他是一個通用的收集資
       <description>
         
           
-            提醒2022年8月有人用 Grafana+Prometheus 來監控 OpenWrt, 可參考 https://github.com/benisai/Openwrt-Monitoring.需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: https://www.asuswrt-merlin.net/screenshots
+            提醒 2022年8月有人用 Grafana+Prometheus 來監控 OpenWrt, 可參考 https://github.com/benisai/Openwrt-Monitoring. 需求 找一個 OpenWrt 上的頻寬管理工具, 看誰用了多少頻寬. 以 Asuswrt-Merlin 來說, 目前提供的報表如下, 他可以依照使用者或時段來看流量. 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便. 其他 Asuswrt-Merlin 提供的報表可參考這裡: https://www.asuswrt-merlin.net/screenshots
 OpenWrt 的方案 有一堆... 多到眼花撩亂 https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
-注意這裡假設你已經有現成的 Grafana 和 Prometheus Grafana 的部分如果沒有, 可使用 Grafana Cloud Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspberry Pi 就夠了)
+注意 這裡假設你已經有現成的 Grafana 和 Prometheus Grafana 的部分如果沒有, 可使用 Grafana Cloud Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspberry Pi 就夠了)
 1. nlbwmon (Netlink based traffic accounting) 網站
 官方網站: https://openwrt.org/packages/pkgdata/nlbwmon GitHub: https://github.com/jow-/nlbwmon 安裝指令
 1opkg install nlbwmon 2opkg install luci-app-nlbwmon 使用
