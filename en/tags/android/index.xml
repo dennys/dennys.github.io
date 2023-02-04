@@ -9,7 +9,7 @@
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Mon, 10 Oct 2022 06:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Change Gmail Notification Action from Archive to Delete</title>
+      <title>How to Change the Gmail Notification Action from Archive to Delete</title>
       <link>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Mon, 10 Oct 2022 06:18:32 +0800</pubDate>
       
@@ -17,8 +17,8 @@
       <description>
         
           
-            Requirement You can choose Archive or Reply in Gmail&#39;s default notification actions. But you can change it.
-Solution Open Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete. After the configuration, you can delete mail in Gmail&#39;s notification. What&#39;s next It&#39;s better to enable bothe Archive and Delete in notification.
+            Requirement In Gmail&#39;s default notification actions, you can choose to Archive or Reply . But you can change it.
+Solution Open the Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, but you can change it to Delete. After configuring, you will be able to delete emails in Gmail&#39;s notification. What&#39;s next It&#39;s better to enable both Archive and Delete in the notification.
           
           
         
@@ -34,8 +34,8 @@ Solution Open Gmail App&#39;s General setting, change the *Default email notific
       <description>
         
           
-            需求 In previous artiche, we know we can change archive to delete in the Email(Gmail) notification of Android (Reference: http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/) But we cannot enable BOTH, therefore, I try to find a solution in other Apps.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s review Gmail&#39;s ability, the default action is Archive. Open Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete.
+            Requirement In the previous article, we know we can change archive to delete in the Email(Gmail) notification of Android (Reference: http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/) But we cannot enable BOTH, therefore, I try to find a solution in other Apps.
+K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s check Gmail&#39;s ability, the default action is Archive. Open the Gmail App&#39;s General setting, and change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete.
           
           
         

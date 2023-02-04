@@ -200,7 +200,7 @@
         <nav id="TableOfContents">
   <ol>
     <li><a href="#requirement">Requirement</a></li>
-    <li><a href="#prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</a></li>
+    <li><a href="#prometheus-a-pulls-receives-metrics-from-prometheus-b">Prometheus A pulls (receives) metrics from Prometheus B</a></li>
     <li><a href="#prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</a></li>
     <li><a href="#note">Note</a></li>
     <li><a href="#port-forward">Port forward</a></li>
@@ -214,11 +214,11 @@
 </code></pre>
 <h2 id="requirement">Requirement</h2>
 <p>I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
-And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule
+And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule
 from this zone to other zones.</p>
-<h2 id="prometheus-a-pulls-receive-metrics-from-prometheus-b">Prometheus A pulls (receive) metrics from Prometheus B</h2>
+<h2 id="prometheus-a-pulls-receives-metrics-from-prometheus-b">Prometheus A pulls (receives) metrics from Prometheus B</h2>
 <p>In this scenario, we use the <a href="https://prometheus.io/docs/prometheus/latest/federation/">Federation</a> feature to pull metrics from another Prometheus.
-You don't need to do any changes in Prometheus B, just add a new job in <em>prometheus.yml</em> of Prometheus A.</p>
+You don't need to make any changes to Prometheus B, just add a new job to <em>prometheus.yml</em> of Prometheus A.</p>
 <p>Please check lines 13~15, you can only pull some metrics you need.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span>- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;federate&#39;</span><span class="w">
@@ -253,8 +253,8 @@ You don't need to do any changes in Prometheus B, just add a new job in <em>prom
 </figure>
 </p>
 <h2 id="prometheus-c-pushes-forwards-metrics-to-prometheus-a">Prometheus C pushes (forwards) metrics to Prometheus A</h2>
-<p>In this scenario, first, you need to enable the <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
-You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
+<p>In this scenario, you first need to enable the <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#remote-write-receiver">Remote Write Receiver</a> feature in Prometheus A.
+You just need to add <em>--web.enable-remote-write-receiver</em> to your <em>docker-compose.yml</em>, no need to modify <em>prometheus.yml</em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># prometheus.yml of A</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
@@ -272,7 +272,7 @@ You just need to add <em>--web.enable-remote-write-receiver</em> in your <em>doc
 </span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--web.enable-remote-write-receiver&#39;</span><span class="w">
 </span></span></span></code></pre></div><p>Then, you need to modify <em>docker-compose.yml</em> and *prometheus.yml of Prometheus C.
 First, you need to enable <a href="https://prometheus.io/docs/prometheus/latest/feature_flags/#prometheus-agent">Prometheus agent</a> mode,
-just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.</p>
+just need to add <em>--enable-feature=agent</em> to <em>docker-compose.yml</em>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># docker-compose.yml of C</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">prom/prometheus:latest</span><span class="w">
@@ -287,7 +287,7 @@ just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.
 </span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--config.file=/etc/prometheus/prometheus.yml&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--enable-feature=agent&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="s1">&#39;--log.level=debug&#39;</span><span class="w">
-</span></span></span></code></pre></div><p>Second, you need to modify <em>prometheus.yml</em>, add the remote_write section, and input Prometheus A's URL in it.</p>
+</span></span></span></code></pre></div><p>Second, you need to edit <em>prometheus.yml</em>, add the remote_write section, and enter the URL of Prometheus A in it.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="c"># prometheus.yml of C</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nt">global</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">15s</span><span class="w">
@@ -297,11 +297,11 @@ just need to add <em>--enable-feature=agent</em> in <em>docker-compose.yml</em>.
 </span></span></span><span class="line hl"><span class="ln">7</span><span class="cl"><span class="w">    </span><span class="nt">basic_auth</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
 </span></span></span><span class="line hl"><span class="ln">9</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;******&#39;</span><span class="w">
-</span></span></span></code></pre></div><p>Sanity check: you can enable the log to debug level and check it sends the data.</p>
+</span></span></span></code></pre></div><p>Sanity check: you can enable the log to debug level and check that it's sending the data.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">prometheus           | ts=2022-08-31T06:58:46.065Z caller=dedupe.go:112 component=remote level=debug remote_name=3c577a url=http://x.x.x.x:3128/api/v1/write msg=QueueManager.calculateDesiredShards dataInRate=95.10224000000001 dataOutRate=273.83119999999997 dataKeptRatio=1 dataPendingRate=-178.72895999999997 dataPending=285.30672000000004 dataOutDuration=0.026267519444000003 timePerSample=9.592595527463637e-05 desiredShards=0.010491189203871395 highestSent=1.66192912e+09 highestRecv=1.661929123e+09
 </span></span></code></pre></div><h2 id="note">Note</h2>
-<p>You should enable authentication in Prometheus, you can reference this page to hash your password <a href="https://prometheus.io/docs/guides/basic-auth/">https://prometheus.io/docs/guides/basic-auth/</a>,
-and save it into your <em>web.yml</em>.</p>
+<p>You should enable authentication in Prometheus, you can refer to this page to hash your password <a href="https://prometheus.io/docs/guides/basic-auth/">https://prometheus.io/docs/guides/basic-auth/</a>,
+and save it in your <em>web.yml</em>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nt">basic_auth_users</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="cp">******************************************</span><span class="w">
 </span></span></span></code></pre></div><h2 id="port-forward">Port forward</h2>
@@ -360,7 +360,7 @@ and save it into your <em>web.yml</em>.</p>
         <a href="https://dennys.github.io/en/doc/software/file-search-and-replace-tool/" class="nav-link" title="File Search/Replace Tool">File Search/Replace Tool</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/" class="nav-link" title="How to Change Gmail Notification Action from Archive to Delete">How to Change Gmail Notification Action from Archive to Delete</a>
+        <a href="https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/" class="nav-link" title="How to Change the Gmail Notification Action from Archive to Delete">How to Change the Gmail Notification Action from Archive to Delete</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/android/android-gmail-notification-actions/" class="nav-link" title="Android Gmail Notification Actions (Archive, Delete, ...)">Android Gmail Notification Actions (Archive, Delete, ...)</a>

@@ -17,7 +17,7 @@
       <description>
         
           
-            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s strange. I have a Google Pixel 5, if I try to search for Google Pixel 5, I can get all photos shot by it, but if I only input Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
+            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a Google Pixel 5, when I try to search for Google Pixel 5, I can get all the photos taken by it, but when I just type Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
           
           
         
@@ -34,7 +34,7 @@
         
           
             Requirement Try to find software that can search or replace text in files, and it should support these functions:
-Free software. Supports UTF-8. It can show partial find content in the search result (or it takes lots of time to see the file content). Double click can open the file with the associated editor. Support replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
+Free software. Supports UTF-8. It can show partial find content in the search result (or it takes a long time to see the file content). Double click can open the file with the associated editor. Supports replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
           
           
         

@@ -17,7 +17,7 @@
       <description>
         
           
-            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s strange. I have a Google Pixel 5, if I try to search for Google Pixel 5, I can get all photos shot by it, but if I only input Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
+            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a Google Pixel 5, when I try to search for Google Pixel 5, I can get all the photos taken by it, but when I just type Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
           
           
         
@@ -34,7 +34,7 @@
         
           
             Requirement Try to find software that can search or replace text in files, and it should support these functions:
-Free software. Supports UTF-8. It can show partial find content in the search result (or it takes lots of time to see the file content). Double click can open the file with the associated editor. Support replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
+Free software. Supports UTF-8. It can show partial find content in the search result (or it takes a long time to see the file content). Double click can open the file with the associated editor. Supports replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
           
           
         
@@ -42,7 +42,7 @@ Free software. Supports UTF-8. It can show partial find content in the search re
     </item>
     
     <item>
-      <title>How to Change Gmail Notification Action from Archive to Delete</title>
+      <title>How to Change the Gmail Notification Action from Archive to Delete</title>
       <link>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Mon, 10 Oct 2022 06:18:32 +0800</pubDate>
       
@@ -50,8 +50,8 @@ Free software. Supports UTF-8. It can show partial find content in the search re
       <description>
         
           
-            Requirement You can choose Archive or Reply in Gmail&#39;s default notification actions. But you can change it.
-Solution Open Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete. After the configuration, you can delete mail in Gmail&#39;s notification. What&#39;s next It&#39;s better to enable bothe Archive and Delete in notification.
+            Requirement In Gmail&#39;s default notification actions, you can choose to Archive or Reply . But you can change it.
+Solution Open the Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, but you can change it to Delete. After configuring, you will be able to delete emails in Gmail&#39;s notification. What&#39;s next It&#39;s better to enable both Archive and Delete in the notification.
           
           
         
@@ -67,8 +67,8 @@ Solution Open Gmail App&#39;s General setting, change the *Default email notific
       <description>
         
           
-            需求 In previous artiche, we know we can change archive to delete in the Email(Gmail) notification of Android (Reference: http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/) But we cannot enable BOTH, therefore, I try to find a solution in other Apps.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s review Gmail&#39;s ability, the default action is Archive. Open Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete.
+            Requirement In the previous article, we know we can change archive to delete in the Email(Gmail) notification of Android (Reference: http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/) But we cannot enable BOTH, therefore, I try to find a solution in other Apps.
+K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s check Gmail&#39;s ability, the default action is Archive. Open the Gmail App&#39;s General setting, and change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete.
           
           
         
@@ -84,8 +84,8 @@ K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s re
       <description>
         
           
-            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please check the following procedures.
-GitLab + SonarQube + .NET Core or .NET 5/6/7/... (docker) Reference this document to integrate GitLab and SonarQube.
+            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please see the following procedures.
+GitLab + SonarQube + .NET Core or .NET 5/6/7/... (docker) Refer to this document to integrate GitLab and SonarQube.
 Set the environment variable in GitLab
 $SONAR_URL: The URL of SonarQube $SONAR_TOKEN: The token to access SonarQube $CI_PROJECT_DIR: This is a predifined variable in GitLab, you can reference https://docs.gitlab.com/ee/ci/variables/predefined_variables.html $CI_JOB_NAME: This is a predifined variable in GitLab, you can reference https://docs.
           
@@ -103,8 +103,8 @@ $SONAR_URL: The URL of SonarQube $SONAR_TOKEN: The token to access SonarQube $CI
       <description>
         
           
-            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only permits a special firewall rule from this zone to other zones.
-Prometheus A pulls (receive) metrics from Prometheus B In this scenario, we use the Federation feature to pull metrics from another Prometheus. You don&#39;t need to do any changes in Prometheus B, just add a new job in prometheus.
+            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule from this zone to other zones.
+Prometheus A pulls (receives) metrics from Prometheus B In this scenario, we use the Federation feature to pull metrics from another Prometheus. You don&#39;t need to make any changes to Prometheus B, just add a new job to prometheus.
           
           
         
