@@ -47,8 +47,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" as="script" integrity=
-"sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.51369af0efa4bf7a84cc2ad57cb5bdc2919128da3a829253ee55f420b6300523c40dfb366eb622d3e18ecccac725af3a15b4b2165b7e3044df8b195f972cd42c.js" as="script" integrity=
+"sha512-UTaa8O&#43;kv3qEzCrVfLW9wpGRKNo6gpJT7lX0ILYwBSPEDfs2brYi0&#43;GOzMrHJa86FbSyFlt&#43;METfixlflyzULA==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
@@ -481,7 +481,7 @@ descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
+            <p>注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
 問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
 java.lang.OutOfMemoryError: PermGen space
 解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被 …</p>
@@ -622,8 +622,8 @@ WebLogic
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC …</p>
+            <p>注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
+jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC …</p>
           
           <br>
           <a href="https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/" title="閱讀更多" class="excerpt_more button">閱讀更多</a>
@@ -756,7 +756,7 @@ jdbc_monitor 解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
       <div class="excerpt_footer">
         <div class="pale">
           
-            <p>注意 這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過. 前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
+            <p>注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
 Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
           
           <br>
@@ -782,6 +782,9 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/" class="nav-link" title="C# MVVM 中兩個 View Model 之間如何分享組件">C# MVVM 中兩個 View Model 之間如何分享組件</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/software/double-commander/" class="nav-link" title="Double Commander (檔案總管替代工具)">Double Commander (檔案總管替代工具)</a>
       </li>
       <li>
@@ -802,16 +805,13 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
       <li>
         <a href="https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/" class="nav-link" title="如何在 FortiClient VPN for Windows 保存密碼">如何在 FortiClient VPN for Windows 保存密碼</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/" class="nav-link" title="Kids A to Z 給家長看的報表">Kids A to Z 給家長看的報表</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">分類</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">73</span>
+          <span class="button_tally">74</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -863,6 +863,11 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
         <a href='https://dennys.github.io/tw/series/gitlab-devops/' class="post_tag button button_translucent" title="gitlab-devops">
           GITLAB-DEVOPS
           <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://dennys.github.io/tw/series/dotnet/' class="post_tag button button_translucent" title="dotnet">
+          DOTNET
+          <span class="button_tally">1</span>
         </a>
         
         <a href='https://dennys.github.io/tw/series/kids-a-to-z/' class="post_tag button button_translucent" title="kids-a-to-z">
@@ -965,6 +970,10 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
             
             
             <a href='https://dennys.github.io/tw/tags/database/' class=" post_tag button button_translucent" data-position=3 title="database">DATABASE<span class="button_tally">3</span>
+            </a>
+            
+            
+            <a href='https://dennys.github.io/tw/tags/dotnet/' class=" post_tag button button_translucent" data-position=1 title="dotnet">DOTNET<span class="button_tally">1</span>
             </a>
             
             
@@ -1185,6 +1194,6 @@ Command line deploy 的方法 如果 WebLogic 就裝在自己 …</p>
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" integrity="sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.51369af0efa4bf7a84cc2ad57cb5bdc2919128da3a829253ee55f420b6300523c40dfb366eb622d3e18ecccac725af3a15b4b2165b7e3044df8b195f972cd42c.js" integrity="sha512-UTaa8O&#43;kv3qEzCrVfLW9wpGRKNo6gpJT7lX0ILYwBSPEDfs2brYi0&#43;GOzMrHJa86FbSyFlt&#43;METfixlflyzULA==" crossorigin="anonymous"></script>
   </body>
 </html>
