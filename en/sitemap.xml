@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -41,34 +41,11 @@
                 href="https://dennys.github.io/en/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/dotnet/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/dotnet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/dotnet/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/series/dotnet/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/dotnet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/dotnet/"
-                />
+    <loc>https://dennys.github.io/en/tags/google-photos/</loc>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="tw"
@@ -79,38 +56,6 @@
                 hreflang="en"
                 href="https://dennys.github.io/en/categories/it/"
                 />
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/google-photos/</loc>
-    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</loc>
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
@@ -126,6 +71,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dennys.github.io/en/tags/software/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/</loc>
+    <lastmod>2022-12-04T10:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</loc>
@@ -159,6 +117,19 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</loc>
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/</loc>
+    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
