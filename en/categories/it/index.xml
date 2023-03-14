@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sharing components between two view models in C# MVVM</title>
+      <link>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <description>
+        
+          
+            Reqruiement I have two view models - MainViewModel and OptionViewModel -, that share a common component CustomConfiguration. My goal is to load the data into MainViewModel in MainWindow, and when the Option button ic clicked on MainWindow, OptionWindow will be opened, and the CustomConfiguration data will be passed into it.
+Code MainWindow.xaml Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.
+1&amp;lt;Window.DataContext&amp;gt; 2 &amp;lt;local:MainViewModel /&amp;gt; 3&amp;lt;/Window.DataContext&amp;gt; 4&amp;lt;StackPanel&amp;gt; 5 &amp;lt;TextBlock Text=&amp;#34;{Binding CustomConfig.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Search Google Photos by Device</title>
       <link>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</link>

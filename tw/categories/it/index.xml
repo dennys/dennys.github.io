@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 27 Jan 2023 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C# MVVM 中兩個 View Model 之間如何分享組件</title>
+      <link>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <description>
+        
+          
+            需求 我有兩個 View Model — MainViewModel 和 OptionViewModel -, 他們共用一個名為 CustomConfiguration 的元件. 需求是在 MainWindow 中將資料載入 MainViewModel,並當在 MainWindow 上點選 Option 按鈕時, 會開啟 OptionWindow,並將 CustomConfiguration 資料傳遞給它.
+Code MainWindow.xaml 這裡只有 bind data (CustomConfig.GeneralSettings.IsLogEnabled) 和設定 command.
+1&amp;lt;Window.DataContext&amp;gt; 2 &amp;lt;local:MainViewModel /&amp;gt; 3&amp;lt;/Window.DataContext&amp;gt; 4&amp;lt;StackPanel&amp;gt; 5 &amp;lt;TextBlock Text=&amp;#34;{Binding CustomConfig.GeneralSettings.IsLogEnabled}&amp;#34; /&amp;gt; 6 &amp;lt;Button Content=&amp;#34;Open Options&amp;#34; Command=&amp;#34;{Binding OpenOptionsCommand}&amp;#34; /&amp;gt; 7&amp;lt;/StackPanel&amp;gt; OptionWindow.xaml 和 MainWindow.xaml 類似, 這裡只有 bind data (CustomConfig.GeneralSettings.IsLogEnabled) 和設定 command..
+1&amp;lt;Window.DataContext&amp;gt; 2 &amp;lt;local:OptionViewModel /&amp;gt; 3&amp;lt;/Window.DataContext&amp;gt; 4&amp;lt;StackPanel&amp;gt; 5 &amp;lt;CheckBox Content=&amp;#34;Enable Logging&amp;#34; IsChecked=&amp;#34;{Binding CustomConfig.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Double Commander (檔案總管替代工具)</title>
       <link>https://dennys.github.io/tw/doc/software/double-commander/</link>
