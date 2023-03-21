@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wake on Lan</title>
+      <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
+      <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/wake_on_lan/</guid>
+      <description>
+        
+          
+            需求 有時在外面要連回家裡的電腦/NAS 等, 一直開著浪費電, 應該是需要時再打開就好. 最好的方法是可以直接從分享器上面把該設備透過喚醒 (Wake on Lan).
+設定 Synology DSM Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.
+Asuswrt Merlin (不需設定) 分享器上面不需要做設定.
+使用 從 Asuswrt 上面喚醒其他設備 選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了. (這畫面是 Asyswrt Merlin 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)
+他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.
+耗電 打開 WOL 會增加耗電, 我的是 Synology DS213, 把 WOL 打開後, 用 TP-Link Kasa HS300 看到的電量約是 1.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>C# MVVM 中兩個 View Model 之間如何分享組件</title>
       <link>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>

@@ -208,11 +208,7 @@
     <li><a href="#手機上新增要同步的遠端電腦和檔案">手機上新增要同步的遠端電腦和檔案</a></li>
     <li><a href="#在-pc-端上設定接受手機的連線">在 PC 端上設定接受手機的連線</a></li>
     <li><a href="#設定好之後-就會開始同步了">設定好之後, 就會開始同步了</a></li>
-    <li><a href="#注意">注意</a>
-      <ol>
-        <li><a href="#手機建議要設定特定-wi-fi-才啟動同步">手機建議要設定特定 Wi-Fi 才啟動同步</a></li>
-      </ol>
-    </li>
+    <li><a href="#注意">注意</a></li>
     <li><a href="#結論">結論</a></li>
   </ol>
 </nav>
@@ -357,12 +353,30 @@
 </li>
 </ol>
 <h2 id="注意">注意</h2>
-<h3 id="手機建議要設定特定-wi-fi-才啟動同步">手機建議要設定特定 Wi-Fi 才啟動同步</h3>
+<ol>
+<li>
+<p>手機建議要設定特定 Wi-Fi 才啟動同步</p>
 <p>手機會在外面連線 Wi-Fi, 如果外面的 Wi-Fi 沒有提供很大頻寬, 還要給 Syncthing 使用, 很可能就爆了.
 因此建議要指定要連上特定 Wi-Fi 才去同步特定裝置, 譬如連上家裡的 Wi-Fi 才去同步家裡的 Syncthing.</p>
 <ol>
 <li>設定 -&gt; 執行條件 -&gt; Run on specified Wi-Fi networks: 這裡可以多選</li>
 <li>裝置 -&gt; 選擇你要指定的裝置 -&gt; 自訂同步條件 -&gt; Specify sync conditions -&gt; Run on specified Wi-Fi networks: 這裡一樣可以多選</li>
+</ol>
+</li>
+<li>
+<p>無法關閉電池最佳化, 導致耗電問題</p>
+<p>裝了 <a href="https://github.com/Catfriend1/syncthing-android">Syncthing-Fork</a> 之後, 超級耗電.
+第一個反應是, 那就啟用 <strong>電池最佳化</strong>, 結果呢, 下次使用 Syncthing-Fork 時, 他又顯示需要這個權限.
+不給權限, 就無法使用.</p>
+<ul>
+<li>GitHub 上的討論</li>
+</ul>
+<p>參考這個 issue: <a href="https://github.com/Catfriend1/syncthing-android/issues/419">https://github.com/Catfriend1/syncthing-android/issues/419</a>
+有人提出需求, 希望能夠 Allow app usage without Battery optimisation, 但被拒絕了.
+作者的回覆是 Just because you give the permission does not mean we use it everytime. So basically no we won't make it optional to avoid database corruption in case Android can't communicate with the SyncthingNative before putting the app and native in suspend.</p>
+<p>然後作者寫了篇 Wiki 來說明, 結論就是不行:
+<a href="https://github.com/Catfriend1/syncthing-android/wiki/Info-on-battery-optimization-and-settings-affecting-battery-usage">https://github.com/Catfriend1/syncthing-android/wiki/Info-on-battery-optimization-and-settings-affecting-battery-usage</a></p>
+</li>
 </ol>
 <h2 id="結論">結論</h2>
 <p>優點: 設定好之後還滿方便的
@@ -426,6 +440,9 @@
     <h2 class="mt-4">最新文章</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/tw/doc/network/wake_on_lan/" class="nav-link" title="Wake on Lan">Wake on Lan</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/" class="nav-link" title="C# MVVM 中兩個 View Model 之間如何分享組件">C# MVVM 中兩個 View Model 之間如何分享組件</a>
       </li>
       <li>
@@ -446,16 +463,13 @@
       <li>
         <a href="https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/" class="nav-link" title="手機照片自動備份到電腦 (使用 Syncthing for Android)">手機照片自動備份到電腦 (使用 Syncthing for Android)</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/" class="nav-link" title="如何在 FortiClient VPN for Windows 保存密碼">如何在 FortiClient VPN for Windows 保存密碼</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">分類</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/tw/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">74</span>
+          <span class="button_tally">75</span>
         </a>
         
         <a href='https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/' class="post_tag button button_translucent" title="生活大小事">
@@ -537,7 +551,7 @@
         
         <a href='https://dennys.github.io/tw/tags/router/' class="post_tag button button_translucent" title="router">
           ROUTER
-          <span class="button_tally">15</span>
+          <span class="button_tally">16</span>
         </a>
         
         <a href='https://dennys.github.io/tw/tags/java/' class="post_tag button button_translucent" title="java">
@@ -693,7 +707,7 @@
             </a>
             
             
-            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=15 title="router">ROUTER<span class="button_tally">15</span>
+            <a href='https://dennys.github.io/tw/tags/router/' class=" post_tag button button_translucent" data-position=16 title="router">ROUTER<span class="button_tally">16</span>
             </a>
             
             
