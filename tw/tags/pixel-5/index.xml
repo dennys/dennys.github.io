@@ -17,9 +17,9 @@
       <description>
         
           
-            提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
+            2023/4/30 更新 在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了. 9TO5 Google 的報導: Google says Android will separate notification and ringtone volume Issue URL: Separate notification and ringtone volumes 提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
-2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. https://issuetracker.google.com/issues/177060206 Mobile01 上的討論, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的 解法 (使用 Sound Profile App) Google 了很久, 找不到甚麼簡單的做法, 只找到一個 Sound Profile 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, .
+2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展.
           
           
         

@@ -54,6 +54,9 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2023-03-19T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/router/</loc>
     <lastmod>2023-03-19T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -198,9 +201,6 @@
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/forti/</loc>
-    <lastmod>2023-01-04T00:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2023-01-04T00:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/vpn/</loc>
@@ -457,9 +457,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</loc>
     <lastmod>2022-06-02T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/vnc/</loc>
-    <lastmod>2022-06-02T10:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</loc>
     <lastmod>2022-06-02T10:18:32+08:00</lastmod>
