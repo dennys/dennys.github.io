@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 31 May 2022 00:09:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 23:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>南寮自行車 30KM</title>
+      <link>https://dennys.github.io/tw/posts/202305/nanliao-bicycle-30km/</link>
+      <pubDate>Sat, 13 May 2023 23:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/posts/202305/nanliao-bicycle-30km/</guid>
+      <description>
+        
+          
+            統計資料的部分, 左圖用的是 Geo Tracker, 右圖用的是 OpenTracks
+軌跡的部分, GPX 使用 OsmAnd 紀錄, 圖資使用 OpenStreetMap, 地圖軌跡使用 gpx/studio.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>單月創新高 703 pageviews / 月</title>
       <link>https://dennys.github.io/tw/posts/202205/20220531-month-pageviews/</link>
