@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YOLO on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/yolo/</link>
+    <description>Recent content in YOLO on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/yolo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Colab 上用 YOLOv7 判讀照片, 並將結果存到 Google Drive</title>
+      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</guid>
+      <description>
+        
+          
+            程式 試玩一下, 在 Google Colab 上, 用 YOLOv7 做簡單的照片判讀, 並將結果存回 Google Drive. 程式碼如下, 他會直接判讀內建的 inference/images/horses.jpg, 然後把結果寫回 Google Drive 的根目錄.
+1# Connect to Google Drive 2from google.colab import drive 3drive.mount(&amp;#39;/content/drive&amp;#39;) 4 5# Download YOLOv7 6!git clone https://github.com/WongKinYiu/yolov7 7%cd /content 8%ll 9 10# Install YOLOv7 related libraries 11%cd yolov7 12!pip install -r requirements.txt 13!wget &amp;#34;https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt&amp;#34; 14 15# Analyze the image 16!python detect.py --weights yolov7-e6e.pt --conf 0.25 --img-size 640 --source inference/images/horses.jpg 17 18# Copy the image to Google Drive 19%cp runs/detect/exp/horses.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

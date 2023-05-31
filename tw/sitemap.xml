@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2023-05-13T23:00:00+08:00</lastmod>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2023-05-13T23:00:00+08:00</lastmod>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,67 @@
                 hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/doc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/doc/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/categories/it/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/yolo/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/yolo/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</loc>
+    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/posts/</loc>
     <lastmod>2023-05-13T23:00:00+08:00</lastmod>
@@ -47,32 +108,6 @@
     <loc>https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/</loc>
     <lastmod>2023-05-13T23:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2023-03-19T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/doc/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/doc/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2023-03-19T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2023-03-19T00:00:00+08:00</lastmod>
   </url><url>
@@ -87,19 +122,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/tags/router/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2023-03-19T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/network/wake_on_lan/</loc>
@@ -132,19 +154,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/series/dotnet/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/double-commander/</loc>
