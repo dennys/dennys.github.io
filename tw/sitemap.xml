@@ -107,6 +107,22 @@
     <loc>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</loc>
     <lastmod>2023-07-31T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/grafana/</loc>
+    <lastmod>2023-07-02T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/grafana/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/grafana/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</loc>
+    <lastmod>2023-07-02T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</loc>
     <lastmod>2023-05-31T00:00:00+08:00</lastmod>
   </url><url>
@@ -357,19 +373,6 @@
                 rel="alternate"
                 hreflang="tw"
                 href="https://dennys.github.io/tw/series/gitlab-devops/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/grafana/</loc>
-    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/grafana/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/grafana/"
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/sonarqube/</loc>

@@ -87,6 +87,24 @@ CPU (or GPU) specification yolov7.pt yolov7-e6e.pt 環境 AMD Ryan 7 Pro 5850U (
     </item>
     
     <item>
+      <title>使用 Grafana 做 Ping 和 測速</title>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</link>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</guid>
+      <description>
+        
+          
+            背景 開一個網站, 然後要記錄從各地方連過來的 Ping 狀況還有 Speed Test
+測速工具 使用 e7d/speedtest, 他提供 IP, Ping, Jitter, Upload/Download 的相關資料, 並且會把資料存到 DB. (可惜這專案在 2023/7/4 archived 了) 使用 Grafana 讀取該 DB, 並做成 dashboard. 使用方式 e7d/speedtest 有提供 docker image, 在 https://hub.docker.com/r/e7db/speedtest, 可直接使用, docker-compose.yml 如下 (他需要搭配一個 PostgreSQL):
+1speedtest: 2 image: e7db/speedtest 3 container_name: speedtest 4 networks: 5 - speedtest 6 expose: 7 - 80 8 ports: 9 - 80:80 10 volumes: 11 - /opt/speedtest/results:/app/results 12 - /etc/hosts:/etc/hosts 13postgres: 14 image: postgres:14 15 container_name: postgres 16 networks: 17 - speedtest 18 expose: 19 - 9105 20 ports: 21 - 9105:5432 # Postgres port 22 #- 443:5432 # Postgres port 23 volumes: 24 - /opt/speedtest/postgresql/:/var/lib/postgresql 25 - /opt/speedtest/postgresql/data/:/var/lib/postgresql/data 26 - /etc/hosts:/etc/hosts 27 environment: 28 POSTGRES_USER: postgres # define credentials 29 POSTGRES_PASSWORD: ******** # define credentials 30 POSTGRES_DB: postgres # define database 31 TZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 32 PGTZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 測速, 直接打開上面的網站, 做幾次測速.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>在 Colab 上用 YOLO v7 判讀照片, 並將結果存到 Google Drive</title>
       <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate>
