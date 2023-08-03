@@ -107,6 +107,38 @@
     <loc>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</loc>
     <lastmod>2023-07-31T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/dotnet/</loc>
+    <lastmod>2023-07-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/dotnet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/dotnet/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/dotnet/</loc>
+    <lastmod>2023-07-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/dotnet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/dotnet/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/</loc>
+    <lastmod>2023-07-13T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/dotnet/run-winform-in-wpf/</loc>
+    <lastmod>2023-07-13T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/android/</loc>
     <lastmod>2023-07-03T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -192,32 +224,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/dotnet/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/dotnet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/dotnet/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/dotnet/</loc>
-    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/dotnet/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/dotnet/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/double-commander/</loc>
     <lastmod>2023-01-27T10:18:32+08:00</lastmod>

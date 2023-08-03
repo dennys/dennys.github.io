@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>如何讓 Word 裡面的程式有 syntax highlighting (語法突顯) | Dennys Diary</title>
+<title>在 dotNet GUI 呼叫檔案總管的 Context Menu | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +26,23 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="在 Word 貼 code 上去之後, 格式幾乎都會跑掉, 一個一個去設定不但麻煩也不漂亮. 找到一個簡單的方法可以讓 Word 裡面的 code 也有 syntax highlighting. 方法很簡單, 先把 code 放在 Notepad&#43;&#43;, 然後依照下圖執行功能表上的 Plugins -&gt; …" />
+<meta name="description" content="需求 顯示一個檔案總管的 Context Menu, 輸入參數是檔案名稱陣列.
+環境 Visual Studio Community 2022 3rd party library: …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)" />
+<meta name="twitter:title" content="在 dotNet GUI 呼叫檔案總管的 Context Menu" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" />
-<meta property="og:title" content="如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)" />
-<meta property="og:description" content="在 Word 貼 code 上去之後, 格式幾乎都會跑掉, 一個一個去設定不但麻煩也不漂亮. 找到一個簡單的方法可以讓 Word 裡面的 code 也有 syntax highlighting. 方法很簡單, 先把 code 放在 Notepad&#43;&#43;, 然後依照下圖執行功能表上的 Plugins -&gt; …" />
+<meta property="og:url" content="https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/" />
+<meta property="og:title" content="在 dotNet GUI 呼叫檔案總管的 Context Menu" />
+<meta property="og:description" content="需求 顯示一個檔案總管的 Context Menu, 輸入參數是檔案名稱陣列.
+環境 Visual Studio Community 2022 3rd party library: …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://dennys.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dennys.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://dennys.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/">
+<link rel="canonical" href="https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/">
 
 
 
@@ -148,7 +150,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)</h1>
+    <h1 class="post_title">在 dotNet GUI 呼叫檔案總管的 Context Menu</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -156,21 +158,21 @@
 </svg>
 </span>
     <span class="post_date">
-      Jun 20, 2022</span>
-    <span class="post_time"> · 1 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/word/' title="Word" class="post_tag button button_translucent">Word
+      Jul 13, 2023</span>
+    <span class="post_time"> · 3 分鐘閱讀</span><span>&nbsp;· <a href='https://dennys.github.io/tw/tags/dotnet/' title="dotNet" class="post_tag button button_translucent">dotNet
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     分享到:
-    <a href="https://twitter.com/intent/tweet?text=%e5%a6%82%e4%bd%95%e8%ae%93%20Word%20%e8%a3%a1%e9%9d%a2%e7%9a%84%e7%a8%8b%e5%bc%8f%e6%9c%89%20syntax%20highlighting%20%28%e8%aa%9e%e6%b3%95%e7%aa%81%e9%a1%af%29&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fword%2fword-with-syntax-highlighting-code%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=%e5%9c%a8%20dotNet%20GUI%20%e5%91%bc%e5%8f%ab%e6%aa%94%e6%a1%88%e7%b8%bd%e7%ae%a1%e7%9a%84%20Context%20Menu&url=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdotnet%2fshow-explorer-context-menu%2f&tw_p=tweetbutton" class="twitter" title="分享到 Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fword%2fword-with-syntax-highlighting-code%2f&t=%e5%a6%82%e4%bd%95%e8%ae%93%20Word%20%e8%a3%a1%e9%9d%a2%e7%9a%84%e7%a8%8b%e5%bc%8f%e6%9c%89%20syntax%20highlighting%20%28%e8%aa%9e%e6%b3%95%e7%aa%81%e9%a1%af%29" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2ftw%2fdoc%2fdotnet%2fshow-explorer-context-menu%2f&t=%e5%9c%a8%20dotNet%20GUI%20%e5%91%bc%e5%8f%ab%e6%aa%94%e6%a1%88%e7%b8%bd%e7%ae%a1%e7%9a%84%20Context%20Menu" class="facebook" title="分享到 Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -184,7 +186,7 @@
 </svg>
 
     </a>
-    <a href="https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/" title="Copy Link" class="link link_yank">
+    <a href="https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -195,61 +197,166 @@
   </span>
   </div>
 
-    <div class="post_body"><p>在 Word 貼 code 上去之後, 格式幾乎都會跑掉, 一個一個去設定不但麻煩也不漂亮. 找到一個簡單的方法可以讓 Word 裡面的 code 也有 syntax highlighting. 方法很簡單, 先把 code 放在 <a href="https://notepad-plus-plus.org/">Notepad++</a>, 然後依照下圖執行功能表上的 Plugins -&gt; NppExport -&gt; Copy all formats to clipboard. NppExport 是 Notepad++ 內建的 plugin, 他就會把加上 syntax highlighting 的 code 複製到 clipboard.
-<figure>
-  <picture>
-
+      <div class="post_toc">
+        <h2>文章目錄</h2>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#環境">環境</a>
+      <ol>
+        <li><a href="#顯示一個檔案總管的-context-menu">顯示一個檔案總管的 Context Menu</a></li>
+        <li><a href="#如果遇到-systemoverflowexception">如果遇到 System.OverflowException</a></li>
+        <li><a href="#如果-傳送到-有問題">如果 &quot;傳送到&quot; 有問題</a></li>
+        <li><a href="#在-context-menu-新增一個新的-menu">在 Context Menu 新增一個新的 menu</a></li>
+        <li><a href="#未完成-在-context-menu-新增一個新的-menu">(未完成) 在 Context Menu 新增一個新的 menu</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </div>
     
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/notepad/notepad_copy_all_format.webp"
-      
-      
-    />
-
-    </picture>
-</figure>
-</p>
-<p>再來就到 Word 直接貼上即可, 在 Word 看到的結果如下, 有需要的話, 可再調整一下列的高度
-<figure>
-  <picture>
-
-    
-      
-        
-        
-        
-        
-        
-        
-    <img
-      loading="lazy"
-      decoding="async"
-      alt=" "
-      
-        class="image_figure image_internal image_unprocessed"
-        src="/images/software/word/word_code_result.webp"
-      
-      
-    />
-
-    </picture>
-</figure>
-</p>
-<p>實務上還有很多做法, 可參考 <a href="https://stackoverflow.com/questions/387453/">https://stackoverflow.com/questions/387453/</a></p>
+    <div class="post_body"><h2 id="需求">需求</h2>
+<p>顯示一個檔案總管的 Context Menu, 輸入參數是檔案名稱陣列.</p>
+<h2 id="環境">環境</h2>
+<ol>
+<li><a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community 2022</a></li>
+<li>3rd party library: <a href="https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu">https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu</a></li>
+<li>這個是 <a href="https://zh.wikipedia.org/zh-tw/Windows_Forms">WinForm (Windows Forms)</a>, 如果你是用 <a href="https://zh.wikipedia.org/zh-tw/Windows_Presentation_Foundation">WPF (Windows Presentation Foundation)</a>,
+需要在 .csproj 加上 <em>&lt;UseWindowsForms&gt;true&lt;/UseWindowsForms&gt;</em></li>
+</ol>
+<h3 id="顯示一個檔案總管的-context-menu">顯示一個檔案總管的 Context Menu</h3>
+<ol>
+<li>Download the component from <a href="https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu">https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu</a>.</li>
+<li>Extract ShellContextMenu.cs from the above zip file and put it into your project.</li>
+<li>執行以下指令, 就會在游標處顯示檔案總管的 context menu.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">using</span> <span class="nn">Peter</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">public</span> <span class="n">MainWindow</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">ShellContextMenu</span> <span class="n">ctxMnu</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShellContextMenu</span><span class="p">();</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">FileInfo</span><span class="p">[]</span> <span class="n">arrFI</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">arrFI</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@&#34;c:\cmd.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="n">ctxMnu</span><span class="p">.</span><span class="n">ShowContextMenu</span><span class="p">(</span><span class="n">arrFI</span><span class="p">,</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Cursor</span><span class="p">.</span><span class="n">Position</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>這邊要注意的是, 他的輸入參數是 array, 因為實際上可能先選多個檔案, 然後再按右鍵, 測試範例如下
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">using</span> <span class="nn">Peter</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">public</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">ShellContextMenu</span> <span class="n">ctxMnu</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShellContextMenu</span><span class="p">();</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">FileInfo</span><span class="p">[]</span> <span class="n">arrFI</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">[</span><span class="m">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">arrFI</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@&#34;c:\cmd1.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="n">arrFI</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@&#34;c:\cmd2.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl">    <span class="n">ctxMnu</span><span class="p">.</span><span class="n">ShowContextMenu</span><span class="p">(</span><span class="n">arrFI</span><span class="p">,</span> <span class="n">System</span><span class="p">.</span><span class="n">Windows</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Cursor</span><span class="p">.</span><span class="n">Position</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="如果遇到-systemoverflowexception">如果遇到 System.OverflowException</h3>
+<p>我一開始在 Visual Studio 2022 + .Net 7.0 一切正常, 但換成 .net 6.0 就遇到 System.OverflowException, 查了一下, 可參考這篇, 修改 HiWord/LoWord 就好.
+<a href="https://www.codeproject.com/Articles/15059/C-File-Browser?msg=3541887#xx3541887xx">https://www.codeproject.com/Articles/15059/C-File-Browser?msg=3541887#xx3541887xx</a></p>
+<h3 id="如果-傳送到-有問題">如果 &quot;傳送到&quot; 有問題</h3>
+<p>參考這裡修改: <a href="https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu?msg=3706303#xx3706303xx">https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu?msg=3706303#xx3706303xx</a></p>
+<h3 id="在-context-menu-新增一個新的-menu">在 Context Menu 新增一個新的 menu</h3>
+<p>上面的功能是把檔案總管的 Context Menu 原封不動搬過來, 如果要新增一些自己的 menu, 可參考下面作法:</p>
+<ol>
+<li><em><strong>注意</strong></em>: 以下只是把這裡的內容複製過來 <a href="https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu?msg=3666382#xx3666382xx">https://www.codeproject.com/Articles/22012/Explorer-Shell-Context-Menu?msg=3666382#xx3666382xx</a></li>
+<li>修改 ShellContextMenu.cs
+<ol>
+<li>
+<p>尋找這段程式碼</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">pMenu</span> <span class="p">=</span> <span class="n">CreatePopupMenu</span><span class="p">();</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="kt">int</span> <span class="n">nResult</span> <span class="p">=</span> <span class="n">_oContextMenu</span><span class="p">.</span><span class="n">QueryContextMenu</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="n">pMenu</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="m">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">CMD_FIRST</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">CMD_LAST</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="n">CMF</span><span class="p">.</span><span class="n">EXPLORE</span> <span class="p">|</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl">    <span class="n">CMF</span><span class="p">.</span><span class="n">NORMAL</span> <span class="p">|</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl">    <span class="p">((</span><span class="n">Control</span><span class="p">.</span><span class="n">ModifierKeys</span> <span class="p">&amp;</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Shift</span><span class="p">)</span> <span class="p">!=</span> <span class="m">0</span> <span class="p">?</span> <span class="n">CMF</span><span class="p">.</span><span class="n">EXTENDEDVERBS</span> <span class="p">:</span> <span class="m">0</span><span class="p">));</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在上面這段程式碼的後面加上以下程式, 目的是定義這個新的功能表的相關資訊</p>
+<ul>
+<li>第 6 行: 這個數字之後會用來判斷要執行哪個 function</li>
+<li>第 8 行: 這是 menu 的名字</li>
+<li>第 10 行: 新功能表如果要加在最上面, 就 uncomment 這行</li>
+<li>第 12 行: 新功能表如果要加在最下面, 就 uncomment 這行</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">MENUITEMINFO</span> <span class="n">mii</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MENUITEMINFO</span><span class="p">();</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">cbSize</span> <span class="p">=</span> <span class="n">Marshal</span><span class="p">.</span><span class="n">SizeOf</span><span class="p">(</span><span class="n">mii</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">fMask</span> <span class="p">=</span> <span class="n">MIIM</span><span class="p">.</span><span class="n">STRING</span> <span class="p">|</span> <span class="n">MIIM</span><span class="p">.</span><span class="n">ID</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">fState</span> <span class="p">=</span> <span class="n">MFS</span><span class="p">.</span><span class="n">DEFAULT</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">fType</span> <span class="p">=</span> <span class="n">MFT</span><span class="p">.</span><span class="n">BYCOMMAND</span><span class="p">;</span>
+</span></span><span class="line hl"><span class="ln"> 6</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">wID</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span> <span class="c1">//Application-defined ID of menu item</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">dwItemData</span> <span class="p">=</span> <span class="n">IntPtr</span><span class="p">.</span><span class="n">Zero</span><span class="p">;</span>
+</span></span><span class="line hl"><span class="ln"> 8</span><span class="cl"><span class="n">mii</span><span class="p">.</span><span class="n">dwTypeData</span> <span class="p">=</span> <span class="s">&#34;Your_Item_Name&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="c1">//this function adds your item at the top of Context Menu</span>
+</span></span><span class="line hl"><span class="ln">10</span><span class="cl"><span class="c1">//InsertMenuItem(pMenu, (uint)(0), true, ref mii);</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="c1">//this function adds your item at the end of Context Menu</span>
+</span></span><span class="line hl"><span class="ln">12</span><span class="cl"><span class="c1">//InsertMenuItem(pMenu, (uint)(GetMenuItemCount(pMenu) + 1), true, ref mii);</span>
+</span></span></code></pre></div></li>
+<li>
+<p>找個地方加入這個 function, 這個是上面那段程式裡面 <code>InsertMenuItem</code> 的實作</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1">// Inserts a new menu item at the specified position in a menu</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="na">[DllImport(&#34;user32&#34;,
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="na">    SetLastError = true,
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="na">    CharSet = CharSet.Auto)]</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">InsertMenuItem</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">IntPtr</span> <span class="n">hMenu</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="kt">uint</span> <span class="n">uItem</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="kt">bool</span> <span class="n">fByPosition</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="k">ref</span> <span class="n">MENUITEMINFO</span> <span class="n">lpmii</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="na">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="na">[DllImport(&#34;user32.dll&#34;)]</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">GetMenuItemCount</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hMenu</span><span class="p">);</span>
+</span></span></code></pre></div></li>
+<li>
+<p>在程式裡面找下面這段程式, 然後把原來的 InvokeCommand 改成 18~24 行的寫法, 這裡的 500 就會和上面對應</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1">//this code is already written in ShowContextMenu.cs</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1">//this API-function returns user selection</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kt">uint</span> <span class="n">nSelected</span> <span class="p">=</span> <span class="n">TrackPopupMenuEx</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    <span class="n">pMenu</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="n">TPM</span><span class="p">.</span><span class="n">RETURNCMD</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">pointScreen</span><span class="p">.</span><span class="n">X</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="n">pointScreen</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="k">this</span><span class="p">.</span><span class="n">Handle</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="n">IntPtr</span><span class="p">.</span><span class="n">Zero</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="n">DestroyMenu</span><span class="p">(</span><span class="n">pMenu</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="n">pMenu</span> <span class="p">=</span> <span class="n">IntPtr</span><span class="p">.</span><span class="n">Zero</span><span class="p">;</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">nSelected</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    <span class="c1">//nSelected contains ID of selected item</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    <span class="c1">//check if user selected your item</span>
+</span></span><span class="line hl"><span class="ln">18</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">nSelected</span> <span class="p">==</span> <span class="m">500</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln">19</span><span class="cl">        <span class="c1">//doing anything</span>
+</span></span><span class="line hl"><span class="ln">20</span><span class="cl">        <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;I&#39;m the new menu!!!&#34;</span><span class="p">);</span>
+</span></span><span class="line hl"><span class="ln">21</span><span class="cl">    <span class="k">else</span>
+</span></span><span class="line hl"><span class="ln">22</span><span class="cl">        <span class="n">InvokeCommand</span><span class="p">(</span><span class="n">_oContextMenu</span><span class="p">,</span> <span class="n">nSelected</span><span class="p">,</span> <span class="n">_strParentFolder</span><span class="p">,</span> <span class="n">pointScreen</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>以上就完成了</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="未完成-在-context-menu-新增一個新的-menu">(未完成) 在 Context Menu 新增一個新的 menu</h3>
+<p>上面只能新增一個或多個 menu, 沒有辦法做成階層式的 (類似 開啟檔案 或是 傳送到), 程式裡面有看到 MIIM.SUBMENU, 有空再試試看.</p>
 
     </div>
+
+	<h2 class="post_related">Posts in this Series</h2>
+	<ul>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/" class="nav-link" title="在 dotNet GUI 呼叫檔案總管的 Context Menu">在 dotNet GUI 呼叫檔案總管的 Context Menu</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/dotnet/run-winform-in-wpf/" class="nav-link" title="在 dotNet WPF 裡面使用 WinForm">在 dotNet WPF 裡面使用 WinForm</a></li>
+	  
+	      <li><a href="https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/" class="nav-link" title="C# MVVM 中兩個 View Model 之間如何分享組件">C# MVVM 中兩個 View Model 之間如何分享組件</a></li>
+	  
+	</ul>
+
 
 
     
