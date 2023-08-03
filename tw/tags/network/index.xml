@@ -28,6 +28,24 @@ PowerShell 7 PowerShell 7 沒有找到合適的方法顯示 SSL 憑證資訊, �
     </item>
     
     <item>
+      <title>使用 Wireshark 擷取 HTTP 密碼</title>
+      <link>https://dennys.github.io/tw/doc/network/wireshark-http-password/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/network/wireshark-http-password/</guid>
+      <description>
+        
+          
+            背景 多年前念書時, 有用過一些 sniffer 來聽網路封包, 用來看 BBS 的密碼. 現在試試看用 Wireshark 來抓 HTTP/HTTPS 的密碼. 因為要測試 http, 而現在很少網站是 http 了, 因此 http 的部分我用 XAMPP 來跑一個簡單的 web server.
+Capture HTTP 密碼 因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback 切換到 Chrome, 登入進 phyMyAdmin. 回 wireshark 看結果
+切回 Wireshark 按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture 因為我們只看 http, 所以要在 filter 欄位輸入 http 就可以看到剛剛輸入的帳號密碼了 這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了 Capture HTTPS 密碼 理論上 https 是加密的, 但查了一下, 竟然有方法可以把加解密的 key 弄出來.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Wake on Lan</title>
       <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>

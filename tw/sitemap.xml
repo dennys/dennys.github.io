@@ -60,6 +60,25 @@
     <loc>https://dennys.github.io/tw/tags/network/</loc>
     <lastmod>2023-08-03T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/security/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/security/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
     <lastmod>2023-08-03T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -73,18 +92,8 @@
                 href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2023-05-31T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/"
-                />
+    <loc>https://dennys.github.io/tw/doc/network/wireshark-http-password/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/yolo/</loc>
     <lastmod>2023-05-31T00:00:00+08:00</lastmod>
