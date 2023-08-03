@@ -7,9 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/yolo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/yolo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在 Colab 上用 YOLOv7 判讀照片, 並將結果存到 Google Drive</title>
+      <title>用 YOLO v7 和 EasyOCR 做車牌辨識</title>
+      <link>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</guid>
+      <description>
+        
+          
+            資料 資料來源: https://www.kaggle.com/datasets/bomaich/vnlicenseplate (1000 images of Vietnamese License Plate) 用這個資料集的主要原因是, 他有提供 bounding box, 直接標出車牌的座標, 這樣就不用花人力去標記.
+YOLO 參考: https://www.kaggle.com/code/bomaich/yolo-v7-license-plate-detection
+設定檔 data_LP.yaml:
+1names: 2 - LP 3nc: 1 4train: c/train 5val: c/valid 訓練指令:
+1pip install -r requirements.txt 2python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 30 --data data_LP.yaml --weights &amp;#39;yolov7.pt&amp;#39; --device 0 最後產生模型於這個位置 runs/train/exp/weights/best.pt
+EasyOCR OCR 的部分直接使用 EasyOCR 產生的 pretrained model, 參數如下:
+ocr.py: 自己寫的程式 (程式碼在文章最後面), 目的是呼叫 EasyOCR 判讀 bbox.txt 指定的範圍, 然後把 OCR 結果寫回照片 (檔名會是 xxx_tagged.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>YOLO v7 在不同硬體下, 判讀影片的速度</title>
+      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</guid>
+      <description>
+        
+          
+            基於上次 在 Colab 上用 YOLOv7 判讀照片, 以下測試在不同硬體跑 YOLOv7 來判讀影片.
+資料 原始影像: https://pixabay.com/videos/pigeon-animal-bird-background-5938/ (約 15 秒)
+指令 1conda create -n yolov7 python=3.10 -y 2conda activate yolov7 3pip install -r requirements.txt 4 5python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source pigeon.mp4 --view-img --device cpu 跑出來的數據 其實和預期的差不多, GPU 真的快很多.
+CPU (or GPU) specification yolov7.pt yolov7-e6e.pt 環境 AMD Ryan 7 Pro 5850U (8core) 263s 415s 筆電 Intel Xeon Gold 6154 CPU (32core) 115s 216s Server Tesla V100-SXM2-32GB 8.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>在 Colab 上用 YOLO v7 判讀照片, 並將結果存到 Google Drive</title>
       <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate>
       
