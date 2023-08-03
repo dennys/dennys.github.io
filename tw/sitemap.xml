@@ -107,6 +107,35 @@
     <loc>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</loc>
     <lastmod>2023-07-31T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/tw/tags/android/</loc>
+    <lastmod>2023-07-03T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/android/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/android/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/android/android-app-backup/</loc>
+    <lastmod>2023-07-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2023-07-03T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/tw/tags/grafana/</loc>
     <lastmod>2023-07-02T00:00:00+08:00</lastmod>
     <xhtml:link
@@ -246,19 +275,6 @@
     <loc>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</loc>
     <lastmod>2023-01-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/android/</loc>
-    <lastmod>2023-01-15T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/android/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/tags/android/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</loc>
     <lastmod>2023-01-15T00:00:00+08:00</lastmod>
   </url><url>
@@ -291,19 +307,6 @@
   </url><url>
     <loc>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</loc>
     <lastmod>2022-10-23T10:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-10-10T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="tw"
-                href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
-                />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>

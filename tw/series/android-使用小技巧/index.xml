@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android App 備份 (使用 Syncthing)</title>
+      <link>https://dennys.github.io/tw/doc/android/android-app-backup/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/android/android-app-backup/</guid>
+      <description>
+        
+          
+            需求 Android 手機現在都不能插卡了, 萬一手機掛了, 上面的資料沒備份就很麻煩. 我目前是使用 Syncthing-Fork, 他在 PC 和手機上的設定可參考 https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/.
+這邊紀錄的是, Syncthing 設定好後, 要如何把對應的 App 的資料放到容易被 Syncthing 讀寫的地方.
+Syncthing (Android 設定) Ignore patterns .trasn* *.obf (主要是這兩個檔案, Taiwan_asia.obf: 548MB, World_basemap_mini.obf: 49MB) 各 App 設定方法 (設定一次就好) OsmAnd+ (OSM Automated Navigation Directions) 執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄
+Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
+打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案
+各 App 設定方法 (每次執行一次, 才會備份一次) Nova Launcher 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 Syncthing (自己備份自己) 執行 設定 -&amp;gt; 備份 &amp;amp; 還原 -&amp;gt; 備份, 把設定檔存到 Download 目錄 讓 Syncthing 自己同步 AntennaPod 執行 設定 -&amp;gt; 儲存空間 -&amp;gt; 匯入/匯出 -&amp;gt; 資料庫匯出 -&amp;gt; 儲存, 把設定檔存到備份目錄 讓 Syncthing 自己同步 Geo Tracker 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
       <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
