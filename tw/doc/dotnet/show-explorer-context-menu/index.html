@@ -50,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" as="script" integrity=
-"sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6d9a1a6bf801a561f74c87171ec2099a794228da3d0115c747fffff43bac3a642fa4e67c024f81362424f82b657a52f13076effe2cf60fc90b8a7e107bafb871.js" as="script" integrity=
+"sha512-bZoaa/gBpWH3TIcXHsIJmnlCKNo9ARXHR///9DusOmQvpOZ8Ak&#43;BNiQk&#43;CtlelLxMHbv/iz2D8kLin4Qe6&#43;4cQ==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
@@ -231,7 +231,7 @@
 <li>執行以下指令, 就會在游標處顯示檔案總管的 context menu.
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">using</span> <span class="nn">Peter</span><span class="p">;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">public</span> <span class="n">MainWindow</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kd">public</span> <span class="n">MainWindow</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">ShellContextMenu</span> <span class="n">ctxMnu</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShellContextMenu</span><span class="p">();</span>
 </span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">FileInfo</span><span class="p">[]</span> <span class="n">arrFI</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
 </span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">arrFI</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@&#34;c:\cmd.txt&#34;</span><span class="p">);</span>
@@ -241,7 +241,7 @@
 <li>這邊要注意的是, 他的輸入參數是 array, 因為實際上可能先選多個檔案, 然後再按右鍵, 測試範例如下
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">using</span> <span class="nn">Peter</span><span class="p">;</span>
 </span></span><span class="line"><span class="ln">2</span><span class="cl">
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">public</span> <span class="n">MainWindow</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="kd">public</span> <span class="n">MainWindow</span><span class="p">()</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">ShellContextMenu</span> <span class="n">ctxMnu</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShellContextMenu</span><span class="p">();</span>
 </span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">FileInfo</span><span class="p">[]</span> <span class="n">arrFI</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">[</span><span class="m">2</span><span class="p">];</span>
 </span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">arrFI</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileInfo</span><span class="p">(</span><span class="s">@&#34;c:\cmd1.txt&#34;</span><span class="p">);</span>
@@ -300,14 +300,14 @@
 </span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="na">[DllImport(&#34;user32&#34;,
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="na">    SetLastError = true,
 </span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="na">    CharSet = CharSet.Auto)]</span>
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">InsertMenuItem</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="kd">private</span> <span class="kd">static</span> <span class="kd">extern</span> <span class="kt">bool</span> <span class="n">InsertMenuItem</span><span class="p">(</span>
 </span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="n">IntPtr</span> <span class="n">hMenu</span><span class="p">,</span>
 </span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="kt">uint</span> <span class="n">uItem</span><span class="p">,</span>
 </span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="kt">bool</span> <span class="n">fByPosition</span><span class="p">,</span>
 </span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="k">ref</span> <span class="n">MENUITEMINFO</span> <span class="n">lpmii</span><span class="p">);</span>
 </span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="na">
 </span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="na">[DllImport(&#34;user32.dll&#34;)]</span>
-</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="k">private</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">GetMenuItemCount</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hMenu</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="kd">private</span> <span class="kd">static</span> <span class="kd">extern</span> <span class="kt">int</span> <span class="n">GetMenuItemCount</span><span class="p">(</span><span class="n">IntPtr</span> <span class="n">hMenu</span><span class="p">);</span>
 </span></span></code></pre></div></li>
 <li>
 <p>在程式裡面找下面這段程式, 然後把原來的 InvokeCommand 改成 18~24 行的寫法, 這裡的 500 就會和上面對應</p>
@@ -827,6 +827,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" integrity="sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6d9a1a6bf801a561f74c87171ec2099a794228da3d0115c747fffff43bac3a642fa4e67c024f81362424f82b657a52f13076effe2cf60fc90b8a7e107bafb871.js" integrity="sha512-bZoaa/gBpWH3TIcXHsIJmnlCKNo9ARXHR///9DusOmQvpOZ8Ak&#43;BNiQk&#43;CtlelLxMHbv/iz2D8kLin4Qe6&#43;4cQ==" crossorigin="anonymous"></script>
   </body>
 </html>

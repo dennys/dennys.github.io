@@ -57,7 +57,7 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
       <description>
         
           
-            注意 這方法僅適用於 Android 11 或更以前的版本!!! Android 12 或以上請使用 Better Open With. 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
+            注意這方法僅適用於 Android 11 或更以前的版本!!! Android 12 或以上請使用 Better Open With. 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
 作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
 這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了.
           
@@ -75,7 +75,7 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
       <description>
         
           
-            2023/4/30 更新 在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了. 9TO5 Google 的報導: Google says Android will separate notification and ringtone volume Issue URL: Separate notification and ringtone volumes 提醒 這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
+            2023/4/30 更新在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了. 9TO5 Google 的報導: Google says Android will separate notification and ringtone volume Issue URL: Separate notification and ringtone volumes 提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
 需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
 2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展.
           
