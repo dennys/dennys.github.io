@@ -7,25 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Node &#43; FastAPI &#43; OpenAPI &#43; Statistics</title>
-      <link>https://dennys.github.io/en/doc/javascript/node-openapi/</link>
-      <pubDate>Mon, 25 Sep 2023 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/en/doc/javascript/node-openapi/</guid>
-      <description>
-        
-          
-            Requirement I aim to develop a [Node].js(https://nodejs.org/)-based FastAPI that is OpenAPI compatible (formerly known as Swagger). To accomplish this, I will employ RepiDoc for generating OpenAPI documents and keep track of the API&#39;s execution status using swagger-stats.
-Code This is package.json
-1{ 2 &amp;#34;name&amp;#34;: &amp;#34;fastify-example&amp;#34;, 3 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, 4 &amp;#34;description&amp;#34;: &amp;#34;A simple Fastify example with OpenAPI&amp;#34;, 5 &amp;#34;type&amp;#34;: &amp;#34;commonjs&amp;#34;, 6 &amp;#34;scripts&amp;#34;: { 7 &amp;#34;start&amp;#34;: &amp;#34;node app.js&amp;#34; 8 }, 9 &amp;#34;dependencies&amp;#34;: { 10 &amp;#34;@fastify/express&amp;#34;: &amp;#34;^2.
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sharing components between two view models in C# MVVM</title>
       <link>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
@@ -176,7 +158,7 @@ Official website: https://openwrt.org/docs/guide-user/perf_and_log/statistic.col
       <description>
         
           
-            NoticeThis solution is only for Android 11 or below!!! Please use Better Open With in Android 12 or above. Requirement Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), NewPipe, ...), although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.
+            Notice This solution is only for Android 11 or below!!! Please use Better Open With in Android 12 or above. Requirement Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), NewPipe, ...), although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.
 Solution Android Settings -&amp;gt; Apps -&amp;gt; Default apps -&amp;gt; Opening links
 It will list all Apps, choose YouTube, and you will see the following screen.
           
@@ -296,7 +278,7 @@ And I find Pocket Casts has an interesting feature, it can skip the first or las
       <description>
         
           
-            RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
+            Remind This is for .NET 4.8 or below only!! Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
 Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
           
           

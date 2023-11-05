@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/categories/"
                 />
     <xhtml:link
@@ -16,10 +16,10 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
     <xhtml:link
@@ -29,10 +29,10 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/doc/"
                 />
     <xhtml:link
@@ -41,62 +41,11 @@
                 href="https://dennys.github.io/en/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/categories/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/javascript/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/node/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/node/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/javascript/node-openapi/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/tags/dotnet/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/dotnet/"
                 />
     <xhtml:link
@@ -109,7 +58,7 @@
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/dotnet/"
                 />
     <xhtml:link
@@ -118,8 +67,47 @@
                 href="https://dennys.github.io/en/series/dotnet/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/en/categories/it/</loc>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/categories/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/series/</loc>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/</loc>
+    <lastmod>2023-03-14T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/google-photos/</loc>
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
@@ -131,7 +119,7 @@
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/software/"
                 />
     <xhtml:link
@@ -147,7 +135,7 @@
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/android/"
                 />
     <xhtml:link
@@ -160,7 +148,7 @@
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
                 />
     <xhtml:link
@@ -185,7 +173,7 @@
     <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/gitlab/"
                 />
     <xhtml:link
@@ -198,7 +186,7 @@
     <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/gitlab-devops/"
                 />
     <xhtml:link
@@ -214,7 +202,7 @@
     <lastmod>2022-09-17T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/sonarqube/"
                 />
     <xhtml:link
@@ -233,7 +221,7 @@
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/openwrt/"
                 />
     <xhtml:link
@@ -249,7 +237,7 @@
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/"
                 />
     <xhtml:link
@@ -262,7 +250,7 @@
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/router/"
                 />
     <xhtml:link
@@ -275,7 +263,7 @@
     <lastmod>2022-07-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
                 />
     <xhtml:link
@@ -294,7 +282,7 @@
     <lastmod>2022-07-21T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/youtube/"
                 />
     <xhtml:link
@@ -307,7 +295,7 @@
     <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/grafana/"
                 />
     <xhtml:link
@@ -329,7 +317,7 @@
     <lastmod>2022-07-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/posts/"
                 />
     <xhtml:link
@@ -348,7 +336,7 @@
     <lastmod>2022-07-09T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/podcast/"
                 />
     <xhtml:link
@@ -361,7 +349,7 @@
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/database/"
                 />
     <xhtml:link
@@ -386,7 +374,7 @@
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/ifttt/"
                 />
     <xhtml:link
@@ -416,7 +404,7 @@
     <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/ci/cd/"
                 />
     <xhtml:link

@@ -11,7 +11,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/categories/"
                 />
   </url><url>
@@ -24,7 +24,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/"
                 />
   </url><url>
@@ -37,7 +37,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
@@ -53,7 +53,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
@@ -75,7 +75,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/"
                 />
   </url><url>
@@ -88,7 +88,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/"
                 />
   </url><url>
@@ -116,7 +116,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/dotnet/"
                 />
   </url><url>
@@ -129,7 +129,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/dotnet/"
                 />
   </url><url>
@@ -148,7 +148,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/android/"
                 />
   </url><url>
@@ -164,7 +164,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
                 />
   </url><url>
@@ -177,7 +177,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/grafana/"
                 />
   </url><url>
@@ -196,7 +196,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/posts/"
                 />
   </url><url>
@@ -215,7 +215,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/router/"
                 />
   </url><url>
@@ -237,7 +237,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/software/"
                 />
   </url><url>
@@ -265,7 +265,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
                 />
   </url><url>
@@ -329,7 +329,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/youtube/"
                 />
   </url><url>
@@ -345,7 +345,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/openwrt/"
                 />
   </url><url>
@@ -358,7 +358,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/"
                 />
   </url><url>
@@ -380,7 +380,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/series/gitlab-devops/"
                 />
   </url><url>
@@ -393,7 +393,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/sonarqube/"
                 />
   </url><url>
@@ -409,7 +409,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/gitlab/"
                 />
   </url><url>
@@ -434,7 +434,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/podcast/"
                 />
   </url><url>
@@ -561,7 +561,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/ifttt/"
                 />
   </url><url>
@@ -676,7 +676,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/database/"
                 />
   </url><url>
@@ -712,7 +712,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
+                hreflang="tw"
                 href="https://dennys.github.io/tw/tags/ci/cd/"
                 />
   </url>

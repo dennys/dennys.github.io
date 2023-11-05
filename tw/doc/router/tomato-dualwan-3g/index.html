@@ -26,7 +26,7 @@
 <meta property="og:locale" content="tw" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+<meta name="description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
@@ -34,7 +34,7 @@
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/" />
 <meta property="og:title" content="Tomato DualWan 之 3G 上網" />
-<meta property="og:description" content="注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+<meta property="og:description" content="注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 前言 無意中發現 Tomato DualWAN 自 1.23.0410 (2009/11/09 的版本) 開始, 已經有支援 3G 上網了, 因此就拿來測試了一下. 要注意的是, 雖然這個 firmware …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
@@ -50,8 +50,8 @@
 
 
 
-<link rel="preload" href="https://dennys.github.io/tw/js/bundle.6d9a1a6bf801a561f74c87171ec2099a794228da3d0115c747fffff43bac3a642fa4e67c024f81362424f82b657a52f13076effe2cf60fc90b8a7e107bafb871.js" as="script" integrity=
-"sha512-bZoaa/gBpWH3TIcXHsIJmnlCKNo9ARXHR///9DusOmQvpOZ8Ak&#43;BNiQk&#43;CtlelLxMHbv/iz2D8kLin4Qe6&#43;4cQ==" crossorigin="anonymous">
+<link rel="preload" href="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" as="script" integrity=
+"sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous">
 
 
 <link rel="stylesheet" type="text/css" href="https://dennys.github.io/css/styles.42e2c5f6d8cf9c52872666f8d8b2678ad0c426978b9d78aff3c33b7a1e7f6f97f54bcdaf0518a25fb0fe26367d04f8b07c683b3b38b331cb098daadee06b1f3e.css" integrity="sha512-QuLF9tjPnFKHJmb42LJnitDEJpeLnXiv88M7eh5/b5f1S82vBRiiX7D&#43;JjZ9BPiwfGg7OzizMcsJjare4GsfPg==" crossorigin="anonymous">
@@ -328,22 +328,22 @@
 <li>接下來就會開始自動撥號了(官方文件是說要手動去按連線, 不過我發現是不需要).<br>
 觀察 /tmp/var/log/message, 首先會看到下列這一段</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Jan  <span class="m">1</span> 08:00:13 user.info kernel: usbserial.c: Option GSM modem converter now attached to ttyUSB2 <span class="o">(</span>or usb/tts/2 <span class="k">for</span> devfs<span class="o">)</span>  
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Jan  <span class="m">1</span> 08:00:14 user.warn kernel: Vendor: HUAWEI Model: Mass Storage Rev: 2.31  
-</span></span><span class="line"><span class="ln">3</span><span class="cl">Jan  <span class="m">1</span> 08:00:14 user.warn kernel: Type:   CD-ROM ANSI SCSI revision: <span class="m">02</span>  
-</span></span><span class="line"><span class="ln">4</span><span class="cl">Jan  <span class="m">1</span> 08:00:17 user.info hotplug<span class="se">\[</span>293<span class="se">\]</span>: device 12d1/1001/0 switch to modem mode
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">Jan  1 08:00:13 user.info kernel: usbserial.c: Option GSM modem converter now attached to ttyUSB2 <span class="o">(</span>or usb/tts/2 <span class="k">for</span> devfs<span class="o">)</span>  
+</span></span><span class="line"><span class="ln">2</span><span class="cl">Jan  1 08:00:14 user.warn kernel: Vendor: HUAWEI Model: Mass Storage Rev: 2.31  
+</span></span><span class="line"><span class="ln">3</span><span class="cl">Jan  1 08:00:14 user.warn kernel: Type:   CD-ROM ANSI SCSI revision: <span class="m">02</span>  
+</span></span><span class="line"><span class="ln">4</span><span class="cl">Jan  1 08:00:17 user.info hotplug<span class="se">\[</span>293<span class="se">\]</span>: device 12d1/1001/0 switch to modem mode
 </span></span></code></pre></div><p>以上代表偵測到 USB 網卡了<br>
 因為是設定 60 秒重新連線, 因此在上面 log 出來後, 會停下來, 60 秒之後會再看到下列這一段, 這樣就代表成功了.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Jan  <span class="m">1</span> 08:01:17 user.info redial<span class="se">\[</span>92<span class="se">\]</span>: ALL WAN down. Reconnecting...  
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Jan  <span class="m">1</span> 08:01:17 user.info redial<span class="se">\[</span>312<span class="se">\]</span>: Started. Time: <span class="m">60</span>  
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Jan  <span class="m">1</span> 08:01:19 daemon.info pppd<span class="se">\[</span>311<span class="se">\]</span>: Serial connection established.  
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Jan  <span class="m">1</span> 08:01:19 daemon.info pppd<span class="se">\[</span>311<span class="se">\]</span>: Using interface ppp0  
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Jan  <span class="m">1</span> 08:01:19 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: Connect: ppp0 &lt;--&gt; /dev/usb/tts/0  
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.warn pppd<span class="se">\[</span>311<span class="se">\]</span>: Could not determine remote IP address: defaulting to 10.64.64.64  
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: <span class="nb">local</span>  IP address 114.136.<span class="se">\*\*\*</span>.<span class="se">\*\*\*</span>  
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: remote IP address 10.64.64.64  
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: primary   DNS address 168.95.1.1  
-</span></span><span class="line"><span class="ln">10</span><span class="cl">Jan  <span class="m">1</span> 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: secondary DNS address 168.95.192.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln"> 1</span><span class="cl">Jan  1 08:01:17 user.info redial<span class="se">\[</span>92<span class="se">\]</span>: ALL WAN down. Reconnecting...  
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">Jan  1 08:01:17 user.info redial<span class="se">\[</span>312<span class="se">\]</span>: Started. Time: <span class="m">60</span>  
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">Jan  1 08:01:19 daemon.info pppd<span class="se">\[</span>311<span class="se">\]</span>: Serial connection established.  
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">Jan  1 08:01:19 daemon.info pppd<span class="se">\[</span>311<span class="se">\]</span>: Using interface ppp0  
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">Jan  1 08:01:19 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: Connect: ppp0 &lt;--&gt; /dev/usb/tts/0  
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">Jan  1 08:01:23 daemon.warn pppd<span class="se">\[</span>311<span class="se">\]</span>: Could not determine remote IP address: defaulting to 10.64.64.64  
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">Jan  1 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: <span class="nb">local</span>  IP address 114.136.<span class="se">\*\*\*</span>.<span class="se">\*\*\*</span>  
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">Jan  1 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: remote IP address 10.64.64.64  
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">Jan  1 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: primary   DNS address 168.95.1.1  
+</span></span><span class="line"><span class="ln">10</span><span class="cl">Jan  1 08:01:23 daemon.notice pppd<span class="se">\[</span>311<span class="se">\]</span>: secondary DNS address 168.95.192.
 </span></span></code></pre></div><h2 id="測試結果">測試結果</h2>
 <p>有試著連續開好幾天, 基本上連線是 ok 的, 但是有幾個地方很困擾.</p>
 <ol>
@@ -843,6 +843,6 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.6d9a1a6bf801a561f74c87171ec2099a794228da3d0115c747fffff43bac3a642fa4e67c024f81362424f82b657a52f13076effe2cf60fc90b8a7e107bafb871.js" integrity="sha512-bZoaa/gBpWH3TIcXHsIJmnlCKNo9ARXHR///9DusOmQvpOZ8Ak&#43;BNiQk&#43;CtlelLxMHbv/iz2D8kLin4Qe6&#43;4cQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://dennys.github.io/tw/js/bundle.262984c7f73585c42a474864f81087869bba6a968adbd0ec8865ede9fee55627c3136a2a0e4dcc864224c3763797d0a15e83047fe9e1c5bcafbafd8657d1e757.js" integrity="sha512-JimEx/c1hcQqR0hk&#43;BCHhpu6apaK29DsiGXt6f7lVifDE2oqDk3MhkIkw3Y3l9ChXoMEf&#43;nhxbyvuv2GV9HnVw==" crossorigin="anonymous"></script>
   </body>
 </html>
