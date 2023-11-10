@@ -18,7 +18,7 @@
         
           
             需求 Syncthing 是一個 Open Source 的檔案同步軟體, 預計把她跑在 Asuswrt-Merlin 上, 然後在上面掛一顆 USB HDD, 以便及時把檔案同步備份過去.
-注意 Syncthing 滿吃 CPU 的, 而分享器的 CPU 通常效能很弱, 因此不建議同步太多檔案上去 !!!
+注意Syncthing 滿吃 CPU 的, 而分享器的 CPU 通常效能很弱, 因此不建議同步太多檔案上去 !!!
 安裝 目前 amtm 並沒有支援 Syncthing, 不過可以透過 opkg 來安裝
 首先看一下 opkg 上面的 Syncthing, 目前有兩個, 我的 Asus AC68U B1 要用的是 nohf 版本.
 1admin@RT-AC66U_B1-B898:/tmp/home/root# opkg list |grep synct 2syncthing - 1.22.1-1 - Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&amp;#39;&amp;#39;s transmitted over the Internet.
@@ -37,7 +37,7 @@
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 addon 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
 Asuswrt-Merlin 上的擋廣告方案 要在 Asuswrt-Merlin 上面擋廣告, 主要應該是這兩個 addon:
 Diversion: 這個好多年了, 可參考我之前寫的心得 https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/ Pi-hole: 這個我沒試過, google 了一下, 網路上有不少文件可參考. AdGuard Home: 他和 Diversion 類似, 也是透過 DNS 的方法來擋掉廣告, 這次我要試的是這個. AdGuard Home 是甚麼 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
@@ -96,7 +96,7 @@ Diversion for YouTube 自 2020/5/20 起, Diversion 新增擋 YouTube 廣告的�
       <description>
         
           
-            注意 FreshJR_Qos已停止維護, 請改用 FlexQoS
+            注意FreshJR_Qos已停止維護, 請改用 FlexQoS
 FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上的流量管理軟體
 安裝步驟 用 amtm (Asuswrt-Merlin 384.15 以上已內建) 安裝就就好, 手動安裝可參考下列說明
 原文: https://www.snbforums.com/threads/36836/ 中文摘要翻譯: https://www.ptt.cc/bbs/Broad_Band/M.1546556091.A.F79.html 如何確定安裝成功
@@ -116,7 +116,7 @@ FreshJR Adaptive QOS FreshJR Adaptive QoS 是個可安裝在 Asuswrt Merlin 上�
       <description>
         
           
-            注意 系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
+            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
 Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party fireware, 提供了不少增強的功能, 也有很多 plugin 可以使用. 刷機的方法可參考官方文件: https://github.com/RMerl/asuswrt-merlin.ng/wiki/Installation (不過寫的滿簡單的, 建議 google 一下其他人寫的介紹)
 Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 軟體, 他的原理是直接在 Hub 上面裝一個 DNS server, 然後當你的 client 要查某一個 domain 的時候, 他如果發現這個 domain 在他的黑名單裡面, 就把他擋掉.
 要注意的是, Diversion 為了要檔 https, 有安裝 pixelserv-tls, 可參考這個 FAQ 看一下這是甚麼東西還有他能做的事情.
