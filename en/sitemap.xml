@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -52,6 +52,41 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://dennys.github.io/en/categories/it/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/microbit/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/microbit/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://dennys.github.io/en/tags/javascript/</loc>
@@ -65,32 +100,6 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/javascript/node-openapi/</loc>
     <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2023-09-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/dotnet/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micro:bit on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/microbit/</link>
+    <description>Recent content in Micro:bit on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/microbit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Micro:bit Rainbow Lighting (with Expansion Board)</title>
+      <link>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</guid>
+      <description>
+        
+          
+            WarningThis code only supports Micro:bit v2 or above. Demo Code Library Because I use Expansion Board, please add Neopixel extension in your micro:bit editor (https://makecode.microbit.org/pkg/microsoft/pxt-neopixel) Block code This is the block code, you can click Edit button to check the code.
+Python code If you prefer Python, the following is the code. (I use block only to develop this.)
+1run = 0 2item: neopixel.Strip = None 3 4def on_button_pressed_a(): 5 global run, item 6 run = 1 7 while run == 1: 8 item = neopixel.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

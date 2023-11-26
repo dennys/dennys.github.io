@@ -9,7 +9,7 @@ const pageHasLoaded = 'DOMContentLoaded';
 const imageAltClass = 'img_alt';
 
 
-
+const defaultSiteLanguage = 'tw';
 const baseURL = 'https://dennys.github.io/';
 const searchFieldClass = '.search_field';
 const searchClass = '.search';
