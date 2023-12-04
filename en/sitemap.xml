@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennys.github.io/en/tags/.net/</loc>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -16,7 +19,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -29,7 +32,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -41,8 +44,21 @@
                 href="https://dennys.github.io/en/doc/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/series/gitlab-devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/gitlab-devops/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -54,17 +70,11 @@
                 href="https://dennys.github.io/en/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/microbit/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/microbit/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
+    <lastmod>2023-12-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -76,8 +86,21 @@
                 href="https://dennys.github.io/en/series/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/sonarqube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/sonarqube/"
+                />
+  </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -88,6 +111,15 @@
                 hreflang="en"
                 href="https://dennys.github.io/en/tags/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/microbit/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/microbit/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</loc>
+    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/javascript/</loc>
     <lastmod>2023-09-25T00:00:00+08:00</lastmod>
@@ -184,14 +216,8 @@
     <loc>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/.net/</loc>
-    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/categories/devops/</loc>
-    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/en/tags/gitlab/</loc>
-    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -203,34 +229,8 @@
                 href="https://dennys.github.io/en/tags/gitlab/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
-    <lastmod>2022-10-13T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/gitlab-devops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/gitlab-devops/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
-    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
-    <lastmod>2022-09-17T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/sonarqube/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/sonarqube/"
-                />
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/prometheus/</loc>
     <lastmod>2022-08-31T00:00:00+08:00</lastmod>
@@ -387,6 +387,9 @@
   </url><url>
     <loc>https://dennys.github.io/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/categories/devops/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>

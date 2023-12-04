@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</title>
+      <link>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</guid>
+      <description>
+        
+          
+            Requirement We know how to run SonarQube to scan .NET 4 code in GitLab + SonarQube + .NET 4.8 (non-docker), but it needs a Windows environment and does not support Linux.
+Therefore, we want to find a solution to run SonarQube on Linux in docker if possible. In this artiflce, we try to use Mono framework (a cross platform .NET 4.7 framework) to run SonarQube on Linux to scan .NET 4 code.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>GitLab SonarQube Integration with .NET</title>
       <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>

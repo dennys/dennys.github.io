@@ -197,6 +197,7 @@ GitLab &#43; SonarQube &#43; .NET Core or .NET 5/6/7/... …" />
   <ol>
     <li><a href="#gitlab--sonarqube--net-core-or-net-567-docker">GitLab + SonarQube + .NET Core or .NET 5/6/7/... (docker)</a></li>
     <li><a href="#gitlab--sonarqube--net-48-non-docker">GitLab + SonarQube + .NET 4.8 (non-docker)</a></li>
+    <li><a href="#run-sonarqube-on-linux-docker-with-mono-to-scan-net-48-code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a></li>
   </ol>
 </nav>
       </div>
@@ -320,15 +321,19 @@ And you can follow the following procedures to integrate SonarQube.</p>
 </span></span></code></pre></div></li>
 <li>Try to build the code</li>
 </ol>
+<h2 id="run-sonarqube-on-linux-docker-with-mono-to-scan-net-48-code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</h2>
+<p>If you want to run SonarQube to scan .Net 4 code on Linux docker, you can reference <a href="/en/doc/devops/sonarqube-mono-dotnet4-integration/">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a>, but it has some limitation.</p>
 
     </div>
 
 	<h2 class="post_related">Posts in this Series</h2>
 	<ul>
 	  
+	      <li><a href="https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/" class="nav-link" title="Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a></li>
+	  
 	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/" class="nav-link" title="GitLab SonarQube Integration with .NET">GitLab SonarQube Integration with .NET</a></li>
 	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a></li>
+	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manage SonarQube KPI">Use Grafana to Manage SonarQube KPI</a></li>
 	  
 	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/" class="nav-link" title="Use Grafana to Manage GitLab CI/CD Pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</a></li>
 	  
@@ -373,10 +378,13 @@ And you can follow the following procedures to integrate SonarQube.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/" class="nav-link" title="Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/" class="nav-link" title="Micro:bit Rainbow Lighting (with Expansion Board)">Micro:bit Rainbow Lighting (with Expansion Board)</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/javascript/node-openapi/" class="nav-link" title="Node &#43; FastAPI &#43; OpenAPI &#43; Statistics">Node + FastAPI + OpenAPI + Statistics</a>
+        <a href="https://dennys.github.io/en/doc/javascript/node-openapi/" class="nav-link" title="Node &#43; Fastify &#43; OpenAPI &#43; Statistics">Node + Fastify + OpenAPI + Statistics</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/" class="nav-link" title="Sharing components between two view models in C# MVVM">Sharing components between two view models in C# MVVM</a>
@@ -393,21 +401,18 @@ And you can follow the following procedures to integrate SonarQube.</p>
       <li>
         <a href="https://dennys.github.io/en/doc/android/android-gmail-notification-actions/" class="nav-link" title="Android Gmail Notification Actions (Archive, Delete, ...)">Android Gmail Notification Actions (Archive, Delete, ...)</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/" class="nav-link" title="GitLab SonarQube Integration with .NET">GitLab SonarQube Integration with .NET</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">23</span>
+          <span class="button_tally">24</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
           DEVOPS
-          <span class="button_tally">4</span>
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
@@ -423,7 +428,7 @@ And you can follow the following procedures to integrate SonarQube.</p>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/series/gitlab-devops/' class="post_tag button button_translucent" title="gitlab-devops">
           GITLAB-DEVOPS
-          <span class="button_tally">6</span>
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
@@ -467,29 +472,29 @@ And you can follow the following procedures to integrate SonarQube.</p>
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/en/tags/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
+          CI/CD
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/en/tags/gitlab/' class="post_tag button button_translucent" title="gitlab">
           GITLAB
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://dennys.github.io/en/tags/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
-          CI/CD
+        <a href='https://dennys.github.io/en/tags/sonarqube/' class="post_tag button button_translucent" title="sonarqube">
+          SONARQUBE
           <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/tags/.net/' class="post_tag button button_translucent" title=".net">
+          .NET
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
           <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/en/tags/sonarqube/' class="post_tag button button_translucent" title="sonarqube">
-          SONARQUBE
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/en/tags/.net/' class="post_tag button button_translucent" title=".net">
-          .NET
-          <span class="button_tally">2</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/checkmarx/' class="post_tag button button_translucent" title="checkmarx">
@@ -538,7 +543,7 @@ And you can follow the following procedures to integrate SonarQube.</p>
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/en/tags/.net/' class=" post_tag button button_translucent" data-position=2 title=".net">.NET<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/en/tags/.net/' class=" post_tag button button_translucent" data-position=3 title=".net">.NET<span class="button_tally">3</span>
             </a>
             
             
@@ -550,7 +555,7 @@ And you can follow the following procedures to integrate SonarQube.</p>
             </a>
             
             
-            <a href='https://dennys.github.io/en/tags/ci/cd/' class=" post_tag button button_translucent" data-position=4 title="ci/cd">CI/CD<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/en/tags/ci/cd/' class=" post_tag button button_translucent" data-position=5 title="ci/cd">CI/CD<span class="button_tally">5</span>
             </a>
             
             
@@ -610,7 +615,7 @@ And you can follow the following procedures to integrate SonarQube.</p>
             </a>
             
             
-            <a href='https://dennys.github.io/en/tags/sonarqube/' class=" post_tag button button_translucent" data-position=3 title="sonarqube">SONARQUBE<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/en/tags/sonarqube/' class=" post_tag button button_translucent" data-position=4 title="sonarqube">SONARQUBE<span class="button_tally">4</span>
             </a>
             
             

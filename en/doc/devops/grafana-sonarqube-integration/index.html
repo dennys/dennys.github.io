@@ -9,7 +9,7 @@
   
   >
   <head>
-<title>Use Grafana to Manager SonarQube KPI | Dennys Diary</title>
+<title>Use Grafana to Manage SonarQube KPI | Dennys Diary</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +31,10 @@
 <meta name="description" content="Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@dennys">
-<meta name="twitter:title" content="Use Grafana to Manager SonarQube KPI" />
+<meta name="twitter:title" content="Use Grafana to Manage SonarQube KPI" />
 <meta name="twitter:image" content="https://dennys.github.io/images/thumbnail.png"/>
 <meta property="og:url" content="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" />
-<meta property="og:title" content="Use Grafana to Manager SonarQube KPI" />
+<meta property="og:title" content="Use Grafana to Manage SonarQube KPI" />
 <meta property="og:description" content="Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But …" />
 <meta property="og:image" content="https://dennys.github.io/images/thumbnail.png" />
 
@@ -139,7 +139,7 @@
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Use Grafana to Manager SonarQube KPI</h1>
+    <h1 class="post_title">Use Grafana to Manage SonarQube KPI</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -156,14 +156,14 @@
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Use%20Grafana%20to%20Manager%20SonarQube%20KPI&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgrafana-sonarqube-integration%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Use%20Grafana%20to%20Manage%20SonarQube%20KPI&url=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgrafana-sonarqube-integration%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgrafana-sonarqube-integration%2f&t=Use%20Grafana%20to%20Manager%20SonarQube%20KPI" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdennys.github.io%2fen%2fdoc%2fdevops%2fgrafana-sonarqube-integration%2f&t=Use%20Grafana%20to%20Manage%20SonarQube%20KPI" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -222,15 +222,24 @@ It's a SonarQube plugin, but it only supports 5 KPIs, and the last commit date i
 </ol>
 <h3 id="solution-2">Solution 2</h3>
 <ol>
-<li>Exporter: <a href="https://github.com/nthienan/sonarqube-exporter">https://github.com/nthienan/sonarqube-exporter</a></li>
-<li>Grafana dashboard: you can find 2s dashboard <em>overview.json</em> and <em>dashboard details.json</em> on this GitHub.</li>
-<li>Generate a SonarQube token, you can reference <a href="https://docs.sonarqube.org/latest/user-guide/user-token/">https://docs.sonarqube.org/latest/user-guide/user-token/</a></li>
-<li>How to start this exporter
+<li>
+<p>Exporter: <a href="https://github.com/nthienan/sonarqube-exporter">https://github.com/nthienan/sonarqube-exporter</a></p>
+</li>
+<li>
+<p>Grafana dashboard: you can find 2s dashboard <em>overview.json</em> and <em>dashboard details.json</em> on this GitHub.</p>
+</li>
+<li>
+<p>Generate a SonarQube token, you can reference <a href="https://docs.sonarqube.org/latest/user-guide/user-token/">https://docs.sonarqube.org/latest/user-guide/user-token/</a></p>
+</li>
+<li>
+<p>How to start this exporter</p>
 <ol>
-<li>You can run this command directly:
+<li>
+<p>You can run this command directly:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">docker run --expose <span class="m">9102</span> -p 9102:9102 nthienan/sonarqube-exporter sqe -p <span class="m">9102</span> --url http://sonar.x.x.x:9000 --user-token xxxxxxxxxxx --ignore-ssl-verification --log-level DEBUG
 </span></span></code></pre></div></li>
-<li>If you use docker-compose, you can reference this docker-compose.yml
+<li>
+<p>If you use docker-compose, you can reference this docker-compose.yml</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">sonarqube-exporter</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l">sonarqube-exporter</span><span class="w">
 </span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nthienan/sonarqube-exporter</span><span class="w">
@@ -246,7 +255,8 @@ It's a SonarQube plugin, but it only supports 5 KPIs, and the last commit date i
 </span></span></span></code></pre></div></li>
 </ol>
 </li>
-<li>prometheus.yml
+<li>
+<p>prometheus.yml</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="ln">1</span><span class="cl">- <span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;sonarqube&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l">5s</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;/metrics&#39;</span><span class="w">
@@ -276,9 +286,11 @@ The following is not a google sample, I'll update it in the future.</p>
 	<h2 class="post_related">Posts in this Series</h2>
 	<ul>
 	  
+	      <li><a href="https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/" class="nav-link" title="Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a></li>
+	  
 	      <li><a href="https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/" class="nav-link" title="GitLab SonarQube Integration with .NET">GitLab SonarQube Integration with .NET</a></li>
 	  
-	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manager SonarQube KPI">Use Grafana to Manager SonarQube KPI</a></li>
+	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/" class="nav-link" title="Use Grafana to Manage SonarQube KPI">Use Grafana to Manage SonarQube KPI</a></li>
 	  
 	      <li><a href="https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/" class="nav-link" title="Use Grafana to Manage GitLab CI/CD Pipelines">Use Grafana to Manage GitLab CI/CD Pipelines</a></li>
 	  
@@ -323,10 +335,13 @@ The following is not a google sample, I'll update it in the future.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/" class="nav-link" title="Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code">Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</a>
+      </li>
+      <li>
         <a href="https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/" class="nav-link" title="Micro:bit Rainbow Lighting (with Expansion Board)">Micro:bit Rainbow Lighting (with Expansion Board)</a>
       </li>
       <li>
-        <a href="https://dennys.github.io/en/doc/javascript/node-openapi/" class="nav-link" title="Node &#43; FastAPI &#43; OpenAPI &#43; Statistics">Node + FastAPI + OpenAPI + Statistics</a>
+        <a href="https://dennys.github.io/en/doc/javascript/node-openapi/" class="nav-link" title="Node &#43; Fastify &#43; OpenAPI &#43; Statistics">Node + Fastify + OpenAPI + Statistics</a>
       </li>
       <li>
         <a href="https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/" class="nav-link" title="Sharing components between two view models in C# MVVM">Sharing components between two view models in C# MVVM</a>
@@ -343,21 +358,18 @@ The following is not a google sample, I'll update it in the future.</p>
       <li>
         <a href="https://dennys.github.io/en/doc/android/android-gmail-notification-actions/" class="nav-link" title="Android Gmail Notification Actions (Archive, Delete, ...)">Android Gmail Notification Actions (Archive, Delete, ...)</a>
       </li>
-      <li>
-        <a href="https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/" class="nav-link" title="GitLab SonarQube Integration with .NET">GitLab SonarQube Integration with .NET</a>
-      </li>
     </ul>
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/categories/it/' class="post_tag button button_translucent" title="it">
           IT
-          <span class="button_tally">23</span>
+          <span class="button_tally">24</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/devops/' class="post_tag button button_translucent" title="devops">
           DEVOPS
-          <span class="button_tally">4</span>
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://dennys.github.io/en/categories/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
@@ -373,7 +385,7 @@ The following is not a google sample, I'll update it in the future.</p>
       <nav class="tags_nav">
         <a href='https://dennys.github.io/en/series/gitlab-devops/' class="post_tag button button_translucent" title="gitlab-devops">
           GITLAB-DEVOPS
-          <span class="button_tally">6</span>
+          <span class="button_tally">7</span>
         </a>
         
         <a href='https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/' class="post_tag button button_translucent" title="android-使用小技巧">
@@ -417,29 +429,29 @@ The following is not a google sample, I'll update it in the future.</p>
           <span class="button_tally">6</span>
         </a>
         
+        <a href='https://dennys.github.io/en/tags/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
+          CI/CD
+          <span class="button_tally">5</span>
+        </a>
+        
         <a href='https://dennys.github.io/en/tags/gitlab/' class="post_tag button button_translucent" title="gitlab">
           GITLAB
           <span class="button_tally">5</span>
         </a>
         
-        <a href='https://dennys.github.io/en/tags/ci/cd/' class="post_tag button button_translucent" title="ci/cd">
-          CI/CD
+        <a href='https://dennys.github.io/en/tags/sonarqube/' class="post_tag button button_translucent" title="sonarqube">
+          SONARQUBE
           <span class="button_tally">4</span>
+        </a>
+        
+        <a href='https://dennys.github.io/en/tags/.net/' class="post_tag button button_translucent" title=".net">
+          .NET
+          <span class="button_tally">3</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/android/' class="post_tag button button_translucent" title="android">
           ANDROID
           <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/en/tags/sonarqube/' class="post_tag button button_translucent" title="sonarqube">
-          SONARQUBE
-          <span class="button_tally">3</span>
-        </a>
-        
-        <a href='https://dennys.github.io/en/tags/.net/' class="post_tag button button_translucent" title=".net">
-          .NET
-          <span class="button_tally">2</span>
         </a>
         
         <a href='https://dennys.github.io/en/tags/checkmarx/' class="post_tag button button_translucent" title="checkmarx">
@@ -488,7 +500,7 @@ The following is not a google sample, I'll update it in the future.</p>
         <div class="post_tags">
           <div class="tags_list">
             
-            <a href='https://dennys.github.io/en/tags/.net/' class=" post_tag button button_translucent" data-position=2 title=".net">.NET<span class="button_tally">2</span>
+            <a href='https://dennys.github.io/en/tags/.net/' class=" post_tag button button_translucent" data-position=3 title=".net">.NET<span class="button_tally">3</span>
             </a>
             
             
@@ -500,7 +512,7 @@ The following is not a google sample, I'll update it in the future.</p>
             </a>
             
             
-            <a href='https://dennys.github.io/en/tags/ci/cd/' class=" post_tag button button_translucent" data-position=4 title="ci/cd">CI/CD<span class="button_tally">4</span>
+            <a href='https://dennys.github.io/en/tags/ci/cd/' class=" post_tag button button_translucent" data-position=5 title="ci/cd">CI/CD<span class="button_tally">5</span>
             </a>
             
             
@@ -560,7 +572,7 @@ The following is not a google sample, I'll update it in the future.</p>
             </a>
             
             
-            <a href='https://dennys.github.io/en/tags/sonarqube/' class=" post_tag button button_translucent" data-position=3 title="sonarqube">SONARQUBE<span class="button_tally">3</span>
+            <a href='https://dennys.github.io/en/tags/sonarqube/' class=" post_tag button button_translucent" data-position=4 title="sonarqube">SONARQUBE<span class="button_tally">4</span>
             </a>
             
             

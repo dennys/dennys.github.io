@@ -2,8 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</loc>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/tw/categories/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +25,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +38,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/doc/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,11 +50,8 @@
                 href="https://dennys.github.io/tw/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/categories/it/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,17 +63,21 @@
                 href="https://dennys.github.io/tw/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/network/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/tags/security/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/security/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/tw/tags/router/</loc>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/router/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/router/"
+                />
   </url><url>
     <loc>https://dennys.github.io/tw/series/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -80,7 +90,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/tw/tags/</loc>
-    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -91,6 +101,31 @@
                 hreflang="zh-tw"
                 href="https://dennys.github.io/tw/tags/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2023-11-30T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/network/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/tags/security/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/tw/series/security/</loc>
+    <lastmod>2023-08-03T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/doc/network/wireshark-http-password/</loc>
     <lastmod>2023-08-03T00:00:00+08:00</lastmod>
@@ -206,19 +241,6 @@
     <loc>https://dennys.github.io/tw/categories/%E7%94%9F%E6%B4%BB%E5%A4%A7%E5%B0%8F%E4%BA%8B/</loc>
     <lastmod>2023-05-13T23:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/router/</loc>
-    <lastmod>2023-03-19T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/router/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/router/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/network/wake_on_lan/</loc>
     <lastmod>2023-03-19T00:00:00+08:00</lastmod>
   </url><url>
@@ -241,9 +263,6 @@
                 href="https://dennys.github.io/tw/tags/software/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/asuswrt-merlin/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</loc>
     <lastmod>2023-01-25T00:00:00+08:00</lastmod>
   </url><url>
@@ -256,23 +275,7 @@
     <loc>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</loc>
     <lastmod>2023-01-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2023-01-25T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
-                />
-  </url><url>
     <loc>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</loc>
-    <lastmod>2023-01-24T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</loc>
     <lastmod>2023-01-24T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/hardware/</loc>
@@ -297,9 +300,6 @@
     <lastmod>2022-12-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/tags/kids-a-to-z/</loc>
-    <lastmod>2022-12-29T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/tw/series/kids-a-to-z/</loc>
     <lastmod>2022-12-29T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</loc>
