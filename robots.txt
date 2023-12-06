@@ -1,1 +1,7 @@
 User-agent: *
+Disallow: /en/categories/
+Disallow: /en/series/
+Disallow: /en/tags/
+Disallow: /tw/categories/
+Disallow: /tw/series/
+Disallow: /tw/tags/
