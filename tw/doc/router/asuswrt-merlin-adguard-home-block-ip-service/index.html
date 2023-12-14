@@ -13,27 +13,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script data-goatcounter="https://dennys.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-		
+<script data-goatcounter="https://dennys.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://us.umami.is/script.js" data-website-id="77c38b2c-011c-4a17-af19-e8b8869ed690"></script>
 <script type="text/javascript">
-(function(window, document, dataLayerName, id) {
-window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
-function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
-var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
-var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
-tags.async=!0,tags.src="https://dennys.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
-!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
-})(window, document, 'dataLayer', 'febc9a7d-1dc0-4345-a613-3614d6c12101');
+  (function (window, document, dataLayerName, id) {
+    window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({ start: (new Date).getTime(), event: "stg.start" }); var scripts = document.getElementsByTagName('script')[0], tags = document.createElement('script');
+    function stgCreateCookie(a, b, c) { var d = ""; if (c) { var e = new Date; e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString(); f = "; SameSite=Strict" } document.cookie = a + "=" + b + d + f + "; path=/" }
+    var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug"); stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+    var qP = []; dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug"); var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+    tags.async = !0, tags.src = "https://dennys.containers.piwik.pro/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+    !function (a, n, i) { a[n] = a[n] || {}; for (var c = 0; c < i.length; c++)!function (i) { a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function () { var a = [].slice.call(arguments, 0); "string" == typeof a[0] && window[dataLayerName].push({ event: n + "." + i + ":" + a[0], parameters: [].slice.call(arguments, 1) }) } }(i[c]) }(window, "ppms", ["tm", "cm"]);
+  })(window, document, 'dataLayer', 'febc9a7d-1dc0-4345-a613-3614d6c12101');
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-440571-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'UA-440571-1');
 </script>
-
 
 
 
@@ -212,6 +210,7 @@ Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party firewar
     <li><a href="#adguard-home-是甚麼">AdGuard Home 是甚麼</a></li>
     <li><a href="#asuswrt-merlin-adguard-home-安裝步驟">Asuswrt Merlin AdGuard Home 安裝步驟</a></li>
     <li><a href="#如何針對-ip-擋某些服務">如何針對 IP 擋某些服務</a></li>
+    <li><a href="#在-asuswrt-merlin-設定固定-ip-的方式">在 Asuswrt-Merlin 設定固定 IP 的方式</a></li>
   </ol>
 </nav>
       </div>
@@ -238,20 +237,34 @@ Asuswrt-Merlin 是甚麼 Asuswrt-Merlin 是個 Asus router 的 3rd party firewar
 <p>參考 <a href="http://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/">Asuswrt Merlin AdGuard Home (分享器擋廣告)</a></p>
 <h2 id="如何針對-ip-擋某些服務">如何針對 IP 擋某些服務</h2>
 <ol>
-<li>連上 <a href="http://192.168.1.1:3000/">http://192.168.1.1:3000/</a></li>
-<li>設定 -&gt; 用戶端設定</li>
-<li>新增用戶端
+<li>
+<p>連上 <a href="http://192.168.1.1:3000/">http://192.168.1.1:3000/</a></p>
+</li>
+<li>
+<p>設定 -&gt; 用戶端設定</p>
+</li>
+<li>
+<p>新增用戶端</p>
 <ol>
 <li><code>輸入用戶端名稱</code>: 這邊輸入一個容易識別的名字</li>
 <li><code>輸入識別碼</code>: 這邊輸入 IP address</li>
 <li>下面幾個 tab 中, 選擇 <code>封鎖特定的服務</code></li>
-<li>把你要擋掉的服務 (e.g. YouTube) 選起來</li>
+<li>把你要擋掉的服務 (e.g. Amazone 或 YouTube) 選起來</li>
 <li>儲存</li>
 </ol>
+<figure><img src="/images/software/asuswrt/asuswrt_merlin_adguard_new_client_tw.webp" width="700"/>
+    </figure>
+
 </li>
-<li>回到上層, 就會看到如下畫面</li>
+<li>
+<p>回到上層, 就會看到如下畫面, 就代表設定成功了</p>
+<figure><img src="/images/software/asuswrt/asuswrt_merlin_adguard_client_tw.webp" width="800"/>
+    </figure>
+
+</li>
 </ol>
 <p><strong>要注意的是, 如果用 IP address, 記得要把那台電腦的 IP 設成固定的, 不然 IP 一換就沒效了</strong></p>
+<h2 id="在-asuswrt-merlin-設定固定-ip-的方式">在 Asuswrt-Merlin 設定固定 IP 的方式</h2>
 <ol>
 <li>連上 Asuswrt-Merlin</li>
 <li>在左邊 Advanced Settings 選 LAN, 右邊 tab 選 DHCP Server</li>
