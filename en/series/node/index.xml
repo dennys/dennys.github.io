@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/node/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
+      <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/javascript/node-mysql/</guid>
+      <description>
+        
+          
+            Requirement I&#39;m tring to write some Node.js functions to wrap some basic database operations and my requirement is to support these features.
+Connection pool Prepared statement Transaction Throw exception: when there is any exception, it can throw the exception to outside. Node.js MySQL drivers First, I find there are 4 drivers for Node.js to connect to MySQL/MariaDB, this is really ...
+This is an old project and it&#39;s original driver is mysql.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Node &#43; Fastify &#43; OpenAPI &#43; Statistics</title>
       <link>https://dennys.github.io/en/doc/javascript/node-openapi/</link>

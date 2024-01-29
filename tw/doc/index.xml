@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Micro:bit 射擊遊戲 (有聲光效果)</title>
+      <link>https://dennys.github.io/tw/doc/microbit/microbit-shooting-game/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/microbit/microbit-shooting-game/</guid>
+      <description>
+        
+          
+            注意這個程式只支援 Micro:bit v2 或更高版. 展示 程式 Library 因為我有使用 Expansion Board, 因此請在 micro:bit editor 新增 Neopixel 這個擴充套件 (https://makecode.microbit.org/pkg/microsoft/pxt-neopixel) Block code 這是積木版的程式, 你可以按下 編輯 檢視原始程式.
+Python code 以下是 Python 程式碼 (我是用 block code 寫這個小遊戲)
+1def on_button_pressed_a(): 2 monkey.change(LedSpriteProperty.X, -1) 3input.on_button_pressed(Button.A, on_button_pressed_a) 4 5def on_button_pressed_ab(): 6 global bullet, banana 7 music.play_sound_effect(music.builtin_sound_effect(soundExpression.happy), 8 SoundExpressionPlayMode.IN_BACKGROUND) 9 bullet = game.create_sprite(monkey.get(LedSpriteProperty.X), 10 monkey.get(LedSpriteProperty.Y)) 11 bullet.turn(Direction.LEFT, 90) 12 for index in range(4): 13 bullet.move(1) 14 if bullet.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Asuswrt Merlin AdGuard Home - 針對 IP 擋某些服務</title>
       <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
