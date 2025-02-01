@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPN on Dennys Diary</title>
+    <link>http://localhost:1313/en/tags/vpn/</link>
+    <description>Recent content in VPN on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenWrt ADGuard Home</title>
+      <link>http://localhost:1313/en/doc/router/openwrt-adguard/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/router/openwrt-adguard/</guid>
+      <description>
+        
+          
+            Reference AdGuard for OpenWrt: https://openwrt.org/docs/guide-user/services/dns/adguard-home AdGuard GitHub: https://github.com/AdguardTeam/AdGuardHome IThome (Traditional Chinese): https://ithelp.ithome.com.tw/articles/10280241 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X on Dennys Diary</title>
+    <link>http://localhost:1313/en/series/x/</link>
+    <description>Recent content in X on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 29 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/x/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Analytics Alternatives - GoatCounter &amp; Piwik.Pro</title>
+      <link>http://localhost:1313/en/doc/network/google-analytics-alternatives/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/network/google-analytics-alternatives/</guid>
+      <description>
+        
+          
+            Requirement Google Analytics
+small
+Data ownership Data retenation Cloud based GoatCounnter Demo: https://stats.arp242.net/
+Umami Piwik.Pro Mixpanel - not try GoAccess But neither GoatCounter nor Piwik.Pro provide a mobile App.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

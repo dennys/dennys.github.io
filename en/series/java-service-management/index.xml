@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java Service Management on Dennys Diary</title>
+    <link>http://localhost:1313/en/series/java-service-management/</link>
+    <description>Recent content in Java Service Management on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 03 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/java-service-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java RESTful service</title>
+      <link>http://localhost:1313/en/doc/java/java-restful-service/</link>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/java/java-restful-service/</guid>
+      <description>
+        
+          
+             Service Document (Swagger) Validation Authentication Authorizatio Log Test Stress test Auto test, mock, … Management – supervisor – Python vs Golang Monitor – Grafana Monitor – OpenTelemetry, Jaeger, 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

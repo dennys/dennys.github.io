@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Dennys Diary</title>
+    <link>http://localhost:1313/tw/categories/documentation/</link>
+    <description>Recent content in Documentation on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 03 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doc (test)</title>
+      <link>http://localhost:1313/tw/doc/hugo/gitlab-checkmarx-integration/</link>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tw/doc/hugo/gitlab-checkmarx-integration/</guid>
+      <description>
+        
+          
+            this is a test document
+themes\LoveIt\assets\css\_variables.scss$global-font-size: 20px !default; =&amp;gt; change font size from 16 to 20
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

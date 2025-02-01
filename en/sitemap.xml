@@ -147,6 +147,35 @@
     <loc>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</loc>
     <lastmod>2025-01-25T22:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/en/tags/microbit/</loc>
+    <lastmod>2024-12-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/microbit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/microbit/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/series/microbit/</loc>
+    <lastmod>2024-12-13T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/series/microbit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/microbit/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/microbit/microbit-shooting-game/</loc>
+    <lastmod>2024-12-13T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/tags/node/</loc>
     <lastmod>2024-01-28T00:00:00+08:00</lastmod>
   </url><url>
@@ -174,32 +203,6 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
     <lastmod>2023-12-04T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/microbit/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/microbit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/microbit/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/series/microbit/</loc>
-    <lastmod>2023-11-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/microbit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/microbit/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</loc>
     <lastmod>2023-11-26T00:00:00+08:00</lastmod>
