@@ -7,7 +7,60 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Never Type Your Password Again: Automatic SSH Logins in Windows Terminal</title>
+      <link>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
+      <description>
+        
+          
+            Requirement Procedures Generate key
+Execute ssh-keygen and generate the file id_rsa
+1C:\Users\dennys&amp;gt;ssh-keygen 2Generating public/private rsa key pair. 3Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa): The content of id_rsa is like the following.
+1ssh-rsa AAAAB******************== dennys@mypc123 Put the key on Linux
+Open the file ~/.ssh/authorized_keys and paste the content of id_rsa into it. Test automatically login
+Execute ssh name@host, you don&#39;t need to input password any more. Configuratino Windows Terminal
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GitLab Node.js SonarQube Integration</title>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <description>
+        
+          
+            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Python Code Quality: GitLab, SonarQube, OWASP, Dependency-Check, and Essential Dev Tools Integration</title>
+      <link>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
+      <pubDate>Sat, 25 Jan 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
+      <description>
+        
+          
+            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
       <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>

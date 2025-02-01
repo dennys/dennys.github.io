@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dotNet on Dennys Diary</title>
+    <title>DotNet on Dennys Diary</title>
     <link>https://dennys.github.io/tw/series/dotnet/</link>
-    <description>Recent content in dotNet on Dennys Diary</description>
+    <description>Recent content in DotNet on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>

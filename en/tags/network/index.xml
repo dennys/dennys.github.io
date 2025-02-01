@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/network/</link>
+    <description>Recent content in Network on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Never Type Your Password Again: Automatic SSH Logins in Windows Terminal</title>
+      <link>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
+      <description>
+        
+          
+            Requirement Procedures Generate key
+Execute ssh-keygen and generate the file id_rsa
+1C:\Users\dennys&amp;gt;ssh-keygen 2Generating public/private rsa key pair. 3Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa): The content of id_rsa is like the following.
+1ssh-rsa AAAAB******************== dennys@mypc123 Put the key on Linux
+Open the file ~/.ssh/authorized_keys and paste the content of id_rsa into it. Test automatically login
+Execute ssh name@host, you don&#39;t need to input password any more. Configuratino Windows Terminal
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

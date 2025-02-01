@@ -1,0 +1,50 @@
+
+LINE Developer
+
+https://developers.line.biz/en/
+
+選 console
+
+https://developers.line.biz/console/channel/2006823849/messaging-api
+
+LINE biz account
+
+
+
+https://manager.line.biz/account/@605nhwdu
+
+
+# 如何取得 Webhook id
+
+https://webhook.site/
+
+https://webhook.site/#!/view/e3de5772-ca5d-43b3-8421-53814e930fc6/69e0abd9-9b1a-4bcf-90d9-8f237ef0eb25/1
+
+```json
+{
+  "destination": "U********************************",
+  "events": [
+    {
+      "type": "message",
+      "message": {
+        "type": "text",
+        "id": "54****************",
+        "quoteToken": "9C********************************",
+        "text": "testqqq"
+      },
+      "webhookEventId": "01************************",
+      "deliveryContext": {
+        "isRedelivery": false
+      },
+      "timestamp": 1737948747912,
+      "source": {
+        "type": "group",
+        "groupId": "C********************************",
+        "userId": "U********************************"
+      },
+      "replyToken": "c*******************************",
+      "mode": "active"
+    }
+  ]
+}
+```

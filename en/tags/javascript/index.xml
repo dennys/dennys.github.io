@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitLab Node.js SonarQube Integration</title>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <description>
+        
+          
+            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
       <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>

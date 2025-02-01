@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dennys.github.io/en/categories/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/doc/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://dennys.github.io/en/categories/it/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -54,33 +54,24 @@
                 href="https://dennys.github.io/en/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/javascript/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/node/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/node/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/javascript/node-mysql/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/en/tags/network/</loc>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/"
+                href="https://dennys.github.io/tw/tags/network/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/"
+                href="https://dennys.github.io/en/tags/network/"
                 />
   </url><url>
+    <loc>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</loc>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/tags/</loc>
-    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+    <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -92,11 +83,21 @@
                 href="https://dennys.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/.net/</loc>
-    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <loc>https://dennys.github.io/en/tags/gitlab/</loc>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/gitlab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/gitlab/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
-    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -108,11 +109,27 @@
                 href="https://dennys.github.io/en/series/gitlab-devops/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
-    <lastmod>2023-12-04T00:00:00+08:00</lastmod>
+    <loc>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</loc>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/javascript/</loc>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/</loc>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/series/"
+                />
   </url><url>
     <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
-    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -123,6 +140,40 @@
                 hreflang="en"
                 href="https://dennys.github.io/en/tags/sonarqube/"
                 />
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/python/</loc>
+    <lastmod>2025-01-25T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</loc>
+    <lastmod>2025-01-25T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/node/</loc>
+    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/series/node/</loc>
+    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/javascript/node-mysql/</loc>
+    <lastmod>2024-01-28T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/.net/</loc>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
+    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://dennys.github.io/tw/tags/ci/cd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dennys.github.io/en/tags/ci/cd/"
+                />
+  </url><url>
+    <loc>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
+    <lastmod>2023-12-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://dennys.github.io/en/tags/microbit/</loc>
     <lastmod>2023-11-26T00:00:00+08:00</lastmod>
@@ -238,19 +289,6 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/gitlab/</loc>
-    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/gitlab/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/gitlab/"
-                />
   </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
     <lastmod>2023-12-04T22:18:32+08:00</lastmod>
@@ -439,6 +477,9 @@
     <loc>https://dennys.github.io/en/tags/checkmarx/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://dennys.github.io/en/categories/ci/cd/</loc>
+    <lastmod>2022-01-15T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
@@ -447,19 +488,5 @@
   </url><url>
     <loc>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</loc>
     <lastmod>2005-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/ci/cd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/ci/cd/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/categories/ci/cd/</loc>
   </url>
 </urlset>

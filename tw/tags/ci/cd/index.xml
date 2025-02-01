@@ -6,7 +6,8 @@
     <description>Recent content in CI/CD on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><atom:link href="https://dennys.github.io/tw/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Grafana 管理 SonarQube KPI</title>
       <link>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</link>

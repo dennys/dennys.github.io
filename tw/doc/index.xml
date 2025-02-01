@@ -7,7 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/doc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 人座休旅車</title>
+      <link>https://dennys.github.io/tw/doc/car/suv-7-2024/</link>
+      <pubDate>Sun, 04 Feb 2024 00:09:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/car/suv-7-2024/</guid>
+      <description>
+        
+          
+            10 年前, 研究過一次 7 人座休旅車, 10 年後再來研究一次. https://dennys.github.io/tw/posts/201310/suv-7/
+需求: 偶爾可坐 7 人, 安全配備盡量齊全 (6氣囊, TSC, ...), 有 ISOFIX
+回顧 2013 年看過的車: 嗯... 大半都停產了
+Mazda 5 (已於 2016 停產) 優點: 安全配備較齊全 (最貴的版本) 缺點: 最貴的版本才有 6 氣囊 + DSC. 但無法取消天窗, DVD 等. 維修費用可能較高. 第 2 排的中間為位子實在不好坐 (有人戲稱那其實是個大扶手) 煞車問題: 請問各位馬自達 5 的車主，有關煞車的問題? Luxgen MPV (已於 2021 停產) 優點: 正 7 人座, 第 1, 2 排空間真的超大. 電子配備真的很炫. 缺點: 第 3 排的座位實在不好坐, 氣囊只有 2 個. (SUV 有比較多個).
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Micro:bit 射擊遊戲 (有聲光效果)</title>
       <link>https://dennys.github.io/tw/doc/microbit/microbit-shooting-game/</link>
@@ -1076,7 +1095,7 @@ Chrome (2022年7月被 Google 下架): https://chrome.google.com/webstore/detail
 看起來評價不是很好, 我也覺得很不直覺...
 不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
 成果 結果就會變成如下
-參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;amp;msgid=154180966 
+參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966 
           
           
         
@@ -1307,6 +1326,23 @@ Diversion 是甚麼 Diversion 是個可安裝在 Asuswrt Merlin 上的 AD block 
     </item>
     
     <item>
+      <title>7 人座休旅車</title>
+      <link>https://dennys.github.io/tw/doc/car/suv-7/</link>
+      <pubDate>Mon, 14 Oct 2013 00:09:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/doc/car/suv-7/</guid>
+      <description>
+        
+          
+            需求: 偶爾可坐 7 人, 安全配備盡量齊全 (6氣囊, TSC, ...), 有 ISOFIX
+評比: Mazda 5 優點: 安全配備較齊全 (最貴的版本) 缺點: 最貴的版本才有 6 氣囊 + DSC. 但無法取消天窗, DVD 等. 維修費用可能較高. 第 2 排的中間為位子實在不好坐 (有人戲稱那其實是個大扶手) 煞車問題: 請問各位馬自達 5 的車主，有關煞車的問題? Luxgen MPV 優點: 正 7 人座, 第 1, 2 排空間真的超大. 電子配備真的很炫. 缺點: 第 3 排的座位實在不好坐, 氣囊只有 2 個. (SUV 有比較多個). 但最大的問題應該是這個: 壹電視》直擊踢爆納智捷瞞客貨兩用非法銷售 Luxgen SUV 經銷商是說 5+2 的已經停產了, 現在在出清庫存, 實際坐了一下, 第 2 排中間比 Mazda 5 舒服, 但沒有 5+2 的可試乘, 沒法比較第 3 排.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Thinkpad T530</title>
       <link>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</link>
       <pubDate>Sat, 23 Feb 2013 08:07:00 +0800</pubDate>
@@ -1360,24 +1396,6 @@ HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤 巧克力鍵盤可能還好, �
 HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.
 Wifi 雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)
 Power Adapter 這個 170W 的 adapter 實在是好大.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>2012 電腦升級</title>
-      <link>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</link>
-      <pubDate>Sun, 15 Jul 2012 00:00:00 +0800</pubDate>
-      
-      <guid>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</guid>
-      <description>
-        
-          
-            最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
-用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU ：$6190 I5-3470/HD2500 主機板：$3690 華碩 P8H77-M PRO 記憶體：$1688 金士頓DDR3-1333 4G*2 其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價. 主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus 出的幾款 H77 板子感覺都滿接近的. 然後想玩 3 螢幕, P8H77-M PRO 這塊板子有支援 DVI、HDMI、Display Port 及 VGA,. 還有網路和音效都是螃蟹. P8H77-M PRO的音效輸出有 6 個, 沒用過這麼多孔的, 看了一下官方使用手冊, 在p43-44 有詳細說明如下:
-CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 基本上就剩下 i5, i7 還有 K/非K 系列排列組合共 4 種.
           
           
         

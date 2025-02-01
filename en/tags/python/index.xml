@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Dennys Diary</title>
+    <link>https://dennys.github.io/en/tags/python/</link>
+    <description>Recent content in Python on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 25 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Code Quality: GitLab, SonarQube, OWASP, Dependency-Check, and Essential Dev Tools Integration</title>
+      <link>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
+      <pubDate>Sat, 25 Jan 2025 22:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
+      <description>
+        
+          
+            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
