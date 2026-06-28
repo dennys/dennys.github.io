@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on Dennys Diary</title>
+    <link>https://dennys.github.io/tw/tags/english/</link>
+    <description>Recent content in English on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 28 Jun 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>英文學習紀錄</title>
+      <link>https://dennys.github.io/tw/edu/english/english-study-record/</link>
+      <pubDate>Sun, 28 Jun 2026 18:00:00 +0800</pubDate>
+      
+      <guid>https://dennys.github.io/tw/edu/english/english-study-record/</guid>
+      <description>
+        
+          
+            Anki 學習紀錄
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

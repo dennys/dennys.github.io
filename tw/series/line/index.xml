@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LINE on Dennys Diary</title>
+    <link>http://localhost:1313/tw/series/line/</link>
+    <description>Recent content in LINE on Dennys Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用 Python &#43; LINE Message API 發送訊息</title>
+      <link>http://localhost:1313/tw/doc/software/line-message-api-python/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tw/doc/software/line-message-api-python/</guid>
+      <description>
+        
+          
+            需求 使用 Python 程式發送 LINE 訊息到特定群組
+帳號準備 請先註冊 LINE Developer 帳號 (用一般 LINE 帳號即可, 不需要商用帳號)
+步驟 連線到 https://developers.line.biz/ 選擇右上角 Log in to Console 建立一個新的 Provider, 步驟如下: 選擇 Providers, 然後按下 Create 取個有意義的名字 建立一個新的 Message API 在上面建好的 Provider 裡面選擇 Channels -&amp;gt; Create a Message API channel 選擇 Create a LINE Official Account 他會開一個新視窗, 然後請 建立 LINE 官方帳號, 完成後請按確定 ... 設定 Message API 在 provider 裡面選擇剛建好的 Message API channel 選擇 Message API 這個 tab 進行以下設定 如果要用 Webhook, 請設定 Webhook URL, 並且將 Use webhook 打開 打開 Allow bot to join group chats, 因為這樣才能在群組發訊息 產生一個 Channel access token 選 console
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
