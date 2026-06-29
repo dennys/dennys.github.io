@@ -2,23 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hardware on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/hardware/</link>
+    <link>http://localhost:1313/tw/tags/hardware/</link>
     <description>Recent content in Hardware on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>非專業 2.5 吋外接硬碟效能測試大亂鬥</title>
-      <link>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</link>
+      <link>http://localhost:1313/tw/doc/hardware/external-hdd-speed-test/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</guid>
+      <guid>http://localhost:1313/tw/doc/hardware/external-hdd-speed-test/</guid>
       <description>
         
           
-            前言 多年來手上有不少用來備份用的 USB 硬碟, 拿來測測看效能如何.
-測試環境 測試軟體: CrystalDiskInfo 8.0.4 測試軟體: CrystalDiskMark 8.0.4 測試硬體: Lenovo Thinkpad E15 Gen 3 測試硬體(USB Hub): Hootoo HT-UC001 USB-C Hub, 也測試一下透過 USB hub 會衰減多少. 測試方式 直接接在 USB 3.2 Gen 1 透過 Hootoo HT-UC001 接在 USB-C 3.2 Gen 1 接在 USB 2.0 測試結果 ADATA HV320 1TB (Toshiba MQ04ABF100) 直接接在電腦上的 USB 3.2 Gen 1 透過 USB hub (Hootoo HT-UC001) Seagate Expansion 5TB (ST5000LM000-2AN170) 直接接在電腦上的 USB 3.2 Gen 1 透過 USB hub (Hootoo HT-UC001) Seagate Backup Plus 4TB (ST4000LM016-1N2170) 直接接在電腦上的 USB 3.
+            &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;多年來手上有不少用來備份用的 USB 硬碟, 拿來測測看效能如何.&lt;/p&gt;
+&lt;h2 id=&#34;測試環境&#34;&gt;測試環境&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;測試軟體: &lt;a href=&#34;https://crystalmark.info/en/software/crystaldiskinfo/&#34;&gt;CrystalDiskInfo 8.0.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;測試軟體: &lt;a href=&#34;https://crystalmark.info/en/software/crystaldiskmark/&#34;&gt;CrystalDiskMark 8.0.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;測試硬體: &lt;a href=&#34;https://www.lenovo.com/tw/zh/laptops/thinkpad/thinkpad-e-series/ThinkPad-E15-Gen-3-15%E2%80%9D-AMD/p/22TPE15E5A3&#34;&gt;Lenovo Thinkpad E15 Gen 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;測試硬體(USB Hub): &lt;a href=&#34;https://24h.pchome.com.tw/prod/DGAXDF-A900ARIRU&#34;&gt;Hootoo HT-UC001 USB-C Hub&lt;/a&gt;, 也測試一下透過 USB hub 會衰減多少.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;測試方式&#34;&gt;測試方式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;直接接在 USB 3.2 Gen 1&lt;/li&gt;
+&lt;li&gt;透過 Hootoo HT-UC001 接在 USB-C 3.2 Gen 1&lt;/li&gt;
+&lt;li&gt;接在 USB 2.0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;測試結果&#34;&gt;測試結果&lt;/h2&gt;
+&lt;h3 id=&#34;adata-hv320-1tb-toshiba-mq04abf100&#34;&gt;ADATA HV320 1TB (Toshiba MQ04ABF100)&lt;/h3&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;直接接在電腦上的 USB 3.2 Gen 1&lt;/th&gt;
+					&lt;th&gt;透過 USB hub (Hootoo HT-UC001)&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_ADATA_HV320_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_ADATA_HV320_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;seagate-expansion-5tb-st5000lm000-2an170&#34;&gt;Seagate Expansion 5TB (ST5000LM000-2AN170)&lt;/h3&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;直接接在電腦上的 USB 3.2 Gen 1&lt;/th&gt;
+					&lt;th&gt;透過 USB hub (Hootoo HT-UC001)&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;seagate-backup-plus-4tb-st4000lm016-1n2170&#34;&gt;Seagate Backup Plus 4TB (ST4000LM016-1N2170)&lt;/h3&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;直接接在電腦上的 USB 3.2 Gen 1&lt;/th&gt;
+					&lt;th&gt;透過 USB hub (Hootoo HT-UC001)&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;seagate-expension-15tb-st1500lm006-hn-m151rad&#34;&gt;Seagate Expension 1.5TB (ST1500LM006 HN-M151RAD)&lt;/h3&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;直接接在電腦上的 USB 3.2 Gen 1&lt;/th&gt;
+					&lt;th&gt;透過 USB hub (Hootoo HT-UC001)&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+&lt;/figure&gt;
+&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;同場加映-usb-20-測試&#34;&gt;(同場加映) USB 2.0 測試&lt;/h3&gt;
+&lt;p&gt;這個是測好玩的, 上次把 USB HDD 接到 USB 2.0, 就覺得比較慢, 想說測測看到底有多慢.
+USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 40MB/s 左右, 寫入約 27~28MB/s,
+大概是只有 USB 3.0 一半左右速度.&lt;/p&gt;
           
           
         
@@ -27,16 +121,61 @@
     
     <item>
       <title>2012 電腦升級</title>
-      <link>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</link>
+      <link>http://localhost:1313/tw/doc/hardware/2012-computer-upgrade/</link>
       <pubDate>Sun, 15 Jul 2012 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/hardware/2012-computer-upgrade/</guid>
+      <guid>http://localhost:1313/tw/doc/hardware/2012-computer-upgrade/</guid>
       <description>
         
           
-            最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一
-用途: 文書上網 , 不玩遊戲, 常看 YouTube 會處理很多照片 一點影片處理(剪接小朋友的 h264 影片) 規格需求 多螢幕輸出(整理照片超好用) USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM) 項目: CPU ：$6190 I5-3470/HD2500 主機板：$3690 華碩 P8H77-M PRO 記憶體：$1688 金士頓DDR3-1333 4G*2 其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價. 主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus 出的幾款 H77 板子感覺都滿接近的. 然後想玩 3 螢幕, P8H77-M PRO 這塊板子有支援 DVI、HDMI、Display Port 及 VGA,. 還有網路和音效都是螃蟹. P8H77-M PRO的音效輸出有 6 個, 沒用過這麼多孔的, 看了一下官方使用手冊, 在p43-44 有詳細說明如下:
-CPU現在的選擇真是眼花撩亂, 不過 Ivy Bridge 的 i3 系列還沒出, 基本上就剩下 i5, i7 還有 K/非K 系列排列組合共 4 種.
+            &lt;p&gt;最近覺得電腦實在頗慢, 尤其是處理相片時更慢... 決定來給他升級一&lt;/p&gt;
+&lt;h2 id=&#34;用途&#34;&gt;用途:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;文書上網 , 不玩遊戲,  常看 YouTube&lt;/li&gt;
+&lt;li&gt;會處理很多照片&lt;/li&gt;
+&lt;li&gt;一點影片處理(剪接小朋友的 h264 影片)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;規格需求&#34;&gt;規格需求&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;多螢幕輸出(整理照片超好用)&lt;/li&gt;
+&lt;li&gt;USB3, SATA, 有支援 VT-x 佳(偶爾會要跑 VM)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;項目&#34;&gt;項目:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU    ：$6190 I5-3470/HD2500&lt;/li&gt;
+&lt;li&gt;主機板：$3690 華碩 P8H77-M PRO&lt;/li&gt;
+&lt;li&gt;記憶體：$1688 金士頓DDR3-1333 4G*2&lt;/li&gt;
+&lt;li&gt;其它如機殼, 硬碟(SATA 1T), 螢幕(*2)等都有了. 價格先貼 pchome, 還沒比價.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主機板其實好像都差不多, 不超頻所以應該不用 Z77 系列的, 以 Asus 出的幾款 H77 板子感覺都滿接近的. 然後想玩 3 螢幕, P8H77-M PRO 這塊板子有支援  DVI、HDMI、Display Port 及 VGA,. 還有網路和音效都是螃蟹. &lt;/p&gt;
+&lt;p&gt;P8H77-M PRO的音效輸出有 6 個, 沒用過這麼多孔的, 看了一下&lt;a href=&#34;http://tw.asus.com/Motherboards/Intel_Socket_1155/P8H77M_PRO/#download&#34;&gt;官方使用手冊&lt;/a&gt;, 在p43-44 有詳細說明如下:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-K9LHxsg_Z78/UAQaATIH6NI/AAAAAAAAB_M/OODVcZBxBI4/s1600/s.jpg&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;618&#34;
+        height=&#34;283&#34;
+        src=&#34;http://localhost:1313/s_16336304230674363145.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
           
           
         

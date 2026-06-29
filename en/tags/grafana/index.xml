@@ -2,23 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grafana on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/grafana/</link>
+    <link>http://localhost:1313/en/tags/grafana/</link>
     <description>Recent content in Grafana on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Use Grafana to Manage SonarQube KPI</title>
-      <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      <title>Grafana Cloud</title>
+      <link>http://localhost:1313/en/doc/grafana/grafana-cloud/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <guid>http://localhost:1313/en/doc/grafana/grafana-cloud/</guid>
       <description>
         
           
-            Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.
-Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don&#39;t plan to try it.
+            &lt;p&gt;How to get user ID and API key to push data into Grafana: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&#34;&gt;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Send Prometheus data to Grafana Cloud Metrics: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&#34;&gt;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&lt;/a&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use Grafana to Manage SonarQube KPI</title>
+      <link>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Usually we use SonarQube to check the KPI of projects:
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;You can also check the build history of a project:
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;use-grafana-to-manager-sonarqube-kpi&#34;&gt;Use Grafana to Manager SonarQube KPI&lt;/h2&gt;
+&lt;p&gt;But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.&lt;/p&gt;
+&lt;h3 id=&#34;solution-1&#34;&gt;Solution 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Exporter: &lt;a href=&#34;https://github.com/dmeiners88/sonarqube-prometheus-exporter&#34;&gt;https://github.com/dmeiners88/sonarqube-prometheus-exporter&lt;/a&gt;:
+It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don&#39;t plan to try it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;solution-2&#34;&gt;Solution 2&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Exporter: &lt;a href=&#34;https://github.com/nthienan/sonarqube-exporter&#34;&gt;https://github.com/nthienan/sonarqube-exporter&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -27,15 +62,47 @@ Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter
     
     <item>
       <title>Use Grafana to Manage GitLab CI/CD Pipelines</title>
-      <link>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           
-            Change log 2022/10/13: Add some check points. Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard needs this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.
+            &lt;h2 id=&#34;change-log&#34;&gt;Change log&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2022/10/13: Add some check points.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.&lt;/p&gt;
+&lt;h2 id=&#34;use-grafana-to-manage-gitlab-cicd-pipelines&#34;&gt;Use Grafana to Manage GitLab CI/CD Pipelines&lt;/h2&gt;
+&lt;h3 id=&#34;solution-1-use-gitlab-build-in-metrics&#34;&gt;Solution 1: Use GitLab build-in metrics&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Exporter: GitLab build-in (reference: &lt;a href=&#34;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&#34;&gt;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Grafana dashboard: &lt;a href=&#34;https://grafana.com/grafana/dashboards/10620&#34;&gt;https://grafana.com/grafana/dashboards/10620&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;This dashboard needs this plugin: &lt;a href=&#34;https://grafana.com/grafana/plugins/grafana-polystat-panel/&#34;&gt;https://grafana.com/grafana/plugins/grafana-polystat-panel/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;prometheus.yml
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;nt&#34;&gt;job_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GitLab&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scrape_interval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;5s&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;metrics_path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/-/metrics&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;static_configs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;targets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;token&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;***************&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;solution-2-use-gitlab-ci-pipelines-exporter&#34;&gt;Solution 2: Use gitlab-ci-pipelines-exporter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Exporter: &lt;a href=&#34;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&#34;&gt;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&lt;/a&gt;
+This exporter provides several spectives metrics (with different Grafana dashboards)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Grafana dashboard: the same as solution 1 (it also needs Ploystat plugin)&lt;/p&gt;
           
           
         

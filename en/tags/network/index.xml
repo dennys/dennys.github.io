@@ -2,27 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/network/</link>
+    <link>http://localhost:1313/en/tags/network/</link>
     <description>Recent content in Network on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Never Type Your Password Again: Automatic SSH Logins in Windows Terminal</title>
-      <link>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</link>
+      <link>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
+      <guid>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
       <description>
         
           
-            Requirement Procedures Generate key
-Execute ssh-keygen and generate the file id_rsa
-1C:\Users\dennys&amp;gt;ssh-keygen 2Generating public/private rsa key pair. 3Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa): The content of id_rsa is like the following.
-1ssh-rsa AAAAB******************== dennys@mypc123 Put the key on Linux
-Open the file ~/.ssh/authorized_keys and paste the content of id_rsa into it. Test automatically login
-Execute ssh name@host, you don&#39;t need to input password any more. Configuratino Windows Terminal
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;h2 id=&#34;procedures&#34;&gt;Procedures&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Generate key&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Execute &lt;code&gt;ssh-keygen&lt;/code&gt; and generate the file &lt;code&gt;id_rsa&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\Users\dennys&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&amp;gt;ssh-keygen&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Generating public/private rsa key pair.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa):
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The content of id_rsa is like the following.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ssh-rsa AAAAB******************&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; dennys@mypc123
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Put the key on Linux&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the file &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; and paste the content of id_rsa into it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test automatically login&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Execute &lt;code&gt;ssh name@host&lt;/code&gt;, you don&#39;t need to input password any more.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuratino Windows Terminal&lt;/p&gt;
           
           
         

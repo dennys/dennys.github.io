@@ -2,26 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ThinkPad on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/thinkpad/</link>
+    <link>http://localhost:1313/tw/tags/thinkpad/</link>
     <description>Recent content in ThinkPad on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 23 Feb 2013 08:07:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Feb 2013 08:07:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thinkpad T530</title>
-      <link>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</link>
+      <link>http://localhost:1313/tw/doc/hardware/thinkpad-t530/</link>
       <pubDate>Sat, 23 Feb 2013 08:07:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/hardware/thinkpad-t530/</guid>
+      <guid>http://localhost:1313/tw/doc/hardware/thinkpad-t530/</guid>
       <description>
         
           
-            購買 Lenovo Coupon: http://www.dealigg.com/story-Lenovo-Coupons-Promotions
-使用手冊 http://support.lenovo.com/en_US/downloads/detail.page?DocID=UM014841
-硬體 硬碟 SATA3, 7mm規格 (注意不是 9mm)
-mSATA 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 似乎是因為 Ivy Bridge 只支援兩個 SATA3, 而 HDD, DVD 就用掉 2 個了.
-WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Advanced-N 6205 AGN : dual stream (2x2) and up to 300Mbps (2 x 150Mbps per stream), 2.4GHz and 5GHz Intel Centrino Ultimate-N 6300 AGN: triple stream (3x3) and up to 450Mbps (3 x 150Mbps per stream), 2.
+            &lt;h2 id=&#34;購買&#34;&gt;購買&lt;/h2&gt;
+&lt;p&gt;Lenovo Coupon: &lt;a href=&#34;http://www.dealigg.com/story-Lenovo-Coupons-Promotions&#34;&gt;http://www.dealigg.com/story-Lenovo-Coupons-Promotions&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用手冊&#34;&gt;使用手冊&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://support.lenovo.com/en_US/downloads/detail.page?DocID=UM014841&#34;&gt;http://support.lenovo.com/en_US/downloads/detail.page?DocID=UM014841&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;硬體&#34;&gt;硬體&lt;/h2&gt;
+&lt;h3 id=&#34;硬碟&#34;&gt;硬碟&lt;/h3&gt;
+&lt;p&gt;SATA3, 7mm規格 (注意不是 9mm)&lt;/p&gt;
+&lt;h3 id=&#34;msata&#34;&gt;mSATA&lt;/h3&gt;
+&lt;p&gt;很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 似乎是因為 Ivy Bridge 只支援兩個 SATA3, 而 HDD, DVD 就用掉 2 個了.&lt;/p&gt;
+&lt;h3 id=&#34;wifi&#34;&gt;WiFi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Thinkpad 1x1 bgn&lt;/li&gt;
+&lt;li&gt;Intel Centrino Wireless-N 2200 2x2 BGN&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.intel.com/content/www/us/en/wireless-products/centrino-advanced-n-6205.html&#34;&gt;Intel Centrino Advanced-N 6205 AGN&lt;/a&gt; : dual stream (2x2) and up to 300Mbps (2 x 150Mbps per stream), 2.4GHz and 5GHz&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.intel.com/content/www/us/en/wireless-products/centrino-ultimate-n-6300.html&#34;&gt;Intel Centrino Ultimate-N 6300 AGN&lt;/a&gt;: triple stream (3x3) and up to 450Mbps (3 x 150Mbps per stream), 2.4GHz and 5GHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;外接螢幕&#34;&gt;外接螢幕&lt;/h3&gt;
+&lt;p&gt;mini Display: 有 ++, 有含聲音輸出&lt;/p&gt;
           
           
         
@@ -30,18 +43,28 @@ WiFi Thinkpad 1x1 bgn Intel Centrino Wireless-N 2200 2x2 BGN Intel Centrino Adva
     
     <item>
       <title>Thinkpad W530</title>
-      <link>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</link>
+      <link>http://localhost:1313/tw/doc/hardware/thinkpad-w530/</link>
       <pubDate>Sat, 08 Sep 2012 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/hardware/thinkpad-w530/</guid>
+      <guid>http://localhost:1313/tw/doc/hardware/thinkpad-w530/</guid>
       <description>
         
           
-            螢幕解析度 現在用的 T41 (14&amp;quot;) 是 1024x768, 15&amp;quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉. 另外, Browser 的字型似乎不會跟著系統放大?
-HD 1366x768 HD+ 1600x900 FHD 1920x1080 鍵盤 巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起
-HDD 很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.
-Wifi 雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)
-Power Adapter 這個 170W 的 adapter 實在是好大.
+            &lt;h2 id=&#34;螢幕解析度&#34;&gt;螢幕解析度&lt;/h2&gt;
+&lt;p&gt;現在用的 T41 (14&amp;quot;) 是 1024x768, 15&amp;quot; 的話又是寬螢幕, 如果只有 HD, 用起來應該不太好. FHD 的話, 字型是一定要放大, 但是某些 Windows 軟體整個 layout 會跑掉.  另外, Browser 的字型似乎不會跟著系統放大?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HD      1366x768&lt;/li&gt;
+&lt;li&gt;HD+    1600x900&lt;/li&gt;
+&lt;li&gt;FHD    1920x1080&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;鍵盤&#34;&gt;鍵盤&lt;/h2&gt;
+&lt;p&gt;巧克力鍵盤可能還好, 但 layout 實在不習慣, 尤其上面 Fn 鍵 變小還連在一起&lt;/p&gt;
+&lt;h2 id=&#34;hdd&#34;&gt;HDD&lt;/h2&gt;
+&lt;p&gt;很可惜的, mSATA 只支援 SATA 2, 而且官方文件只建議用來當 cache 而不建議拿來當開機碟? 雖然網路上也看到很多人用來開機沒問題. 如果把 HDD 換成 SSD, 則就得把光碟機換成 2nd HDD. 不然就得等到 SSD 1TB 很便宜的時代了.&lt;/p&gt;
+&lt;h2 id=&#34;wifi&#34;&gt;Wifi&lt;/h2&gt;
+&lt;p&gt;雖然有支援 802.11n, 但是應該只有 150Mbps 的 (待查)&lt;/p&gt;
+&lt;h2 id=&#34;power-adapter&#34;&gt;Power Adapter&lt;/h2&gt;
+&lt;p&gt;這個 170W 的 adapter 實在是好大.&lt;/p&gt;
           
           
         

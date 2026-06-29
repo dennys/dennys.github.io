@@ -17,10 +17,21 @@
       <description>
         
           
-            Requirement Google Analytics
-small
-Data ownership Data retenation Cloud based GoatCounnter Demo: https://stats.arp242.net/
-Umami Piwik.Pro Mixpanel - not try GoAccess But neither GoatCounter nor Piwik.Pro provide a mobile App.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://analytics.google.com/analytics/web/&#34;&gt;Google Analytics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;small&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data ownership&lt;/li&gt;
+&lt;li&gt;Data retenation&lt;/li&gt;
+&lt;li&gt;Cloud based&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goatcounnter&#34;&gt;&lt;a href=&#34;https://goatcounter.com/&#34;&gt;GoatCounnter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Demo: &lt;a href=&#34;https://stats.arp242.net/&#34;&gt;https://stats.arp242.net/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;umami&#34;&gt;&lt;a href=&#34;https://umami.is/&#34;&gt;Umami&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;piwikpro&#34;&gt;&lt;a href=&#34;https://piwik.pro/&#34;&gt;Piwik.Pro&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;mixpanel---not-try&#34;&gt;&lt;a href=&#34;https://mixpanel.com/&#34;&gt;Mixpanel&lt;/a&gt; - not try&lt;/h2&gt;
+&lt;h2 id=&#34;goaccess&#34;&gt;&lt;a href=&#34;https://github.com/allinurl/goaccess&#34;&gt;GoAccess&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;But neither GoatCounter nor Piwik.Pro provide a mobile App.&lt;/p&gt;
           
           
         

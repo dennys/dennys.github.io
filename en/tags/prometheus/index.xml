@@ -2,23 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prometheus on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/prometheus/</link>
+    <link>http://localhost:1313/en/tags/prometheus/</link>
     <description>Recent content in Prometheus on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus</title>
-      <link>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</link>
+      <link>http://localhost:1313/en/doc/grafana/prometheus-pulls-pushes-metrics/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</guid>
+      <guid>http://localhost:1313/en/doc/grafana/prometheus-pulls-pushes-metrics/</guid>
       <description>
         
           
-            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule from this zone to other zones.
-Prometheus A pulls (receives) metrics from Prometheus B In this scenario, we use the Federation feature to pull metrics from another Prometheus. You don&#39;t need to make any changes to Prometheus B, just add a new job to prometheus.
+            &lt;pre&gt;&lt;code&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/prometheus.webp&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
+And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule
+from this zone to other zones.&lt;/p&gt;
+&lt;h2 id=&#34;prometheus-a-pulls-receives-metrics-from-prometheus-b&#34;&gt;Prometheus A pulls (receives) metrics from Prometheus B&lt;/h2&gt;
+&lt;p&gt;In this scenario, we use the &lt;a href=&#34;https://prometheus.io/docs/prometheus/latest/federation/&#34;&gt;Federation&lt;/a&gt; feature to pull metrics from another Prometheus.
+You don&#39;t need to make any changes to Prometheus B, just add a new job to &lt;em&gt;prometheus.yml&lt;/em&gt; of Prometheus A.&lt;/p&gt;
           
           
         

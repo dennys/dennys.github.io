@@ -2,27 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dennys Diary</title>
-    <link>https://dennys.github.io/en/</link>
+    <link>http://localhost:1313/en/</link>
     <description>Recent content on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Never Type Your Password Again: Automatic SSH Logins in Windows Terminal</title>
-      <link>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</link>
+      <link>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
+      <guid>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
       <description>
         
           
-            Requirement Procedures Generate key
-Execute ssh-keygen and generate the file id_rsa
-1C:\Users\dennys&amp;gt;ssh-keygen 2Generating public/private rsa key pair. 3Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa): The content of id_rsa is like the following.
-1ssh-rsa AAAAB******************== dennys@mypc123 Put the key on Linux
-Open the file ~/.ssh/authorized_keys and paste the content of id_rsa into it. Test automatically login
-Execute ssh name@host, you don&#39;t need to input password any more. Configuratino Windows Terminal
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;h2 id=&#34;procedures&#34;&gt;Procedures&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Generate key&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Execute &lt;code&gt;ssh-keygen&lt;/code&gt; and generate the file &lt;code&gt;id_rsa&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\Users\dennys&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&amp;gt;ssh-keygen&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Generating public/private rsa key pair.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Enter file in which to save the key (C:\Users\dennys/.ssh/id_rsa):
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The content of id_rsa is like the following.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ssh-rsa AAAAB******************&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; dennys@mypc123
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Put the key on Linux&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the file &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; and paste the content of id_rsa into it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test automatically login&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Execute &lt;code&gt;ssh name@host&lt;/code&gt;, you don&#39;t need to input password any more.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuratino Windows Terminal&lt;/p&gt;
           
           
         
@@ -31,14 +57,15 @@ Execute ssh name@host, you don&#39;t need to input password any more. Configurat
     
     <item>
       <title>GitLab Node.js SonarQube Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
       <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
       <description>
         
           
-            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+            &lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities. Join us as we explore each tool&#39;s role in this integration, demonstrating how they collectively contribute to a more resilient and high-performing software development lifecycle.&lt;/p&gt;
           
           
         
@@ -47,14 +74,15 @@ Execute ssh name@host, you don&#39;t need to input password any more. Configurat
     
     <item>
       <title>Python Code Quality: GitLab, SonarQube, OWASP, Dependency-Check, and Essential Dev Tools Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
+      <link>http://localhost:1313/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
       <pubDate>Sat, 25 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
+      <guid>http://localhost:1313/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
       <description>
         
           
-            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+            &lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities. Join us as we explore each tool&#39;s role in this integration, demonstrating how they collectively contribute to a more resilient and high-performing software development lifecycle.&lt;/p&gt;
           
           
         
@@ -63,15 +91,261 @@ Execute ssh name@host, you don&#39;t need to input password any more. Configurat
     
     <item>
       <title>Micro:bit Shooting Game with Sound and Light Effects</title>
-      <link>https://dennys.github.io/en/doc/microbit/microbit-shooting-game/</link>
+      <link>http://localhost:1313/en/doc/microbit/microbit-shooting-game/</link>
       <pubDate>Fri, 13 Dec 2024 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/microbit/microbit-shooting-game/</guid>
+      <guid>http://localhost:1313/en/doc/microbit/microbit-shooting-game/</guid>
       <description>
         
           
-            WarningThis program only supports Micro:bit v2 or higher. Demo Code Library Because I use Expansion Board, please add Neopixel extension in your micro:bit editor. (https://makecode.microbit.org/pkg/microsoft/pxt-neopixel) Block code This is the block code, you can press edit to see the source code. Python code If you prefer Python, the following is the code. (I use block only to develop this.)
-1def on_button_pressed_a(): 2 monkey.change(LedSpriteProperty.X, -1) 3input.on_button_pressed(Button.A, on_button_pressed_a) 4 5def on_button_pressed_ab(): 6 global bullet, banana 7 music.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Warning&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;This program only supports Micro:bit v2 or higher.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y7sNvxLGjTI?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;library&#34;&gt;Library&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Because I use Expansion Board, please add &lt;em&gt;Neopixel&lt;/em&gt; extension in your micro:bit editor. (&lt;a href=&#34;https://makecode.microbit.org/pkg/microsoft/pxt-neopixel&#34;&gt;https://makecode.microbit.org/pkg/microsoft/pxt-neopixel&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This is the block code, you can press &lt;em&gt;edit&lt;/em&gt; to see the source code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe height=&#34;700&#34; width=&#34;100%&#34; src=&#34;https://makecode.microbit.org/#pub:S16711-88441-62720-58614&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;python-code&#34;&gt;Python code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you prefer Python, the following is the code. (I use block only to develop this.)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;change&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_ab&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;play_sound_effect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;builtin_sound_effect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;soundExpression&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;happy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;SoundExpressionPlayMode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IN_BACKGROUND&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_sprite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;turn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Direction&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LEFT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;move&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;is_touching&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;add_score&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;play_sound_effect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;builtin_sound_effect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;soundExpression&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;giggle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;SoundExpressionPlayMode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IN_BACKGROUND&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_rainbow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;360&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index2&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rotate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;colors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NeoPixelColors&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BLACK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_sprite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;delete&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AB&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_ab&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;change&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;bullet&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSprite&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSprite&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSprite&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Strip&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DigitalPin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;P2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NeoPixelMode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RGB&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_brightness&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_sprite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;monkey&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create_sprite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;46&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_score&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;47&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;game&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;start_countdown&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;48&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;500&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;51&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;52&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;banana&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;LedSpriteProperty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;randint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;53&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pinglunliao.medium.com/5d43099722a1&#34;&gt;https://pinglunliao.medium.com/5d43099722a1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://makecode.microbit.org/12919-60581-17970-44525&#34;&gt;https://makecode.microbit.org/12919-60581-17970-44525&lt;/a&gt; =&amp;gt; 互相射擊&lt;/li&gt;
+&lt;/ul&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ollama &#43; Open Web UI</title>
+      <link>http://localhost:1313/en/doc/ai/ollama-open-webui/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/ai/ollama-open-webui/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;xxx&#34;&gt;xxx&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;[Ollama] &lt;a href=&#34;https://github.com/ollama/ollama&#34;&gt;https://github.com/ollama/ollama&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Open WebUI] &lt;a href=&#34;https://github.com/open-webui/open-webui&#34;&gt;https://github.com/open-webui/open-webui&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;docker-commands&#34;&gt;Docker commands&lt;/h1&gt;
+&lt;p&gt;This is the &lt;code&gt;docker-compse.yml&lt;/code&gt; for Ollama and Open Web UI, you can use &lt;code&gt;docker-compose up -d&lt;/code&gt; to start these containers.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can use&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;$ cat docker-compose.yml&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;3.8&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ollama&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ollama/ollama:0.3.13&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;expose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;11434&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;11434&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;11434&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;.:/code&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;./ollama/ollama:/root/.ollama&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;container_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ollama&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#pull_policy: always&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tty&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;restart&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;always&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;networks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;ollama-docker&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;resources&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;reservations&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;          &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;devices&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;driver&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;nvidia&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;              &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;device_ids&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Use specific GPU&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#               count: 1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#               count: all  # Use all GPUs&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;              &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;capabilities&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;gpu]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;open-webui&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ghcr.io/open-webui/open-webui:0.3.35&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;container_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;open-webui&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;./ollama/open-webui:/app/backend/data&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;depends_on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;ollama&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;expose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;11444&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;11444&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;8080&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;/ollama/api=http://ollama:11434/api&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;extra_hosts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;host.docker.internal:host-gateway&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;restart&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;unless-stopped&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;networks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;46&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;ollama-docker&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;47&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;48&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;networks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ollama-docker&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;external&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use these commands to download models.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Google Analytics Alternatives - GoatCounter &amp; Piwik.Pro</title>
+      <link>http://localhost:1313/en/doc/network/google-analytics-alternatives/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/network/google-analytics-alternatives/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://analytics.google.com/analytics/web/&#34;&gt;Google Analytics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;small&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data ownership&lt;/li&gt;
+&lt;li&gt;Data retenation&lt;/li&gt;
+&lt;li&gt;Cloud based&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;goatcounnter&#34;&gt;&lt;a href=&#34;https://goatcounter.com/&#34;&gt;GoatCounnter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Demo: &lt;a href=&#34;https://stats.arp242.net/&#34;&gt;https://stats.arp242.net/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;umami&#34;&gt;&lt;a href=&#34;https://umami.is/&#34;&gt;Umami&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;piwikpro&#34;&gt;&lt;a href=&#34;https://piwik.pro/&#34;&gt;Piwik.Pro&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;mixpanel---not-try&#34;&gt;&lt;a href=&#34;https://mixpanel.com/&#34;&gt;Mixpanel&lt;/a&gt; - not try&lt;/h2&gt;
+&lt;h2 id=&#34;goaccess&#34;&gt;&lt;a href=&#34;https://github.com/allinurl/goaccess&#34;&gt;GoAccess&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;But neither GoatCounter nor Piwik.Pro provide a mobile App.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Scratch Shooting Game</title>
+      <link>http://localhost:1313/en/doc/scratch/scratch-shooting-game/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/scratch/scratch-shooting-game/</guid>
+      <description>
+        
+          
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Notice&lt;/div&gt;
+    &lt;p&gt;This is not an original game; I just followed instructions on YouTube to create it.!!!&lt;/p&gt;
+&lt;p&gt;YouTube: &lt;a href=&#34;https://www.youtube.com/watch?v=V_6i1-diUY0&#34;&gt;https://www.youtube.com/watch?v=V_6i1-diUY0&lt;/a&gt; (0:12~1:07)&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;A simple shooting game.&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://scratch.mit.edu/projects/778705218/editor/&#34;&gt;https://scratch.mit.edu/projects/778705218/editor/&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://scratch.mit.edu/projects/778705218/embed&#34; allowtransparency=&#34;true&#34; width=&#34;485&#34; height=&#34;402&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Top SonarQube Plugins for Enhanced Code Quality</title>
+      <link>http://localhost:1313/en/doc/devops/sonarqube-plugins/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/devops/sonarqube-plugins/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;dependency-check-plugin-for-sonarqube&#34;&gt;&lt;a href=&#34;https://github.com/dependency-check/dependency-check-sonar-plugin&#34;&gt;Dependency-Check Plugin for SonarQube&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you use &lt;a href=&#34;https://github.com/jeremylong/DependencyCheck&#34;&gt;DependencyCheck&lt;/a&gt; to detect publicly disclosed vulnerabilities in your project&#39;s dependencies,
+and you want to integrate the result into &lt;a href=&#34;https://www.sonarsource.com/products/sonarqube/&#34;&gt;SonarQube&lt;/a&gt;, you can use this plugin to do it.&lt;/p&gt;
+&lt;h3 id=&#34;use-command-line&#34;&gt;Use command line&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You can execute this command to generate &lt;code&gt;dependency-check-report.json&lt;/code&gt; and &lt;code&gt;dependency-check-report.html&lt;/code&gt;. (If you use Python, please add &lt;code&gt;--enableExperimental&lt;/code&gt; parameter)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;dependency-check.sh -n --scan &lt;span class=&#34;s2&#34;&gt;&amp;#34;.&amp;#34;&lt;/span&gt; --format ALL --project &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PROJECT_NAME&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; --failOnCVSS &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; --enableExperimental
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can add the 2 parameters when you call SonarQube, and it will import the reports generated by Dependency-Check.&lt;/p&gt;
           
           
         
@@ -80,16 +354,77 @@ Execute ssh name@host, you don&#39;t need to input password any more. Configurat
     
     <item>
       <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
-      <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>
+      <link>http://localhost:1313/en/doc/javascript/node-mysql/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/javascript/node-mysql/</guid>
+      <guid>http://localhost:1313/en/doc/javascript/node-mysql/</guid>
       <description>
         
           
-            Requirement I&#39;m tring to write some Node.js functions to wrap some basic database operations and my requirement is to support these features.
-Connection pool Prepared statement Transaction Throw exception: when there is any exception, it can throw the exception to outside. Node.js MySQL drivers First, I find there are 4 drivers for Node.js to connect to MySQL/MariaDB, this is really ...
-This is an old project and it&#39;s original driver is mysql.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I&#39;m tring to write some Node.js functions to wrap some basic database operations and my requirement is
+to support these features.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connection pool&lt;/li&gt;
+&lt;li&gt;Prepared statement&lt;/li&gt;
+&lt;li&gt;Transaction&lt;/li&gt;
+&lt;li&gt;Throw exception: when there is any exception, it can throw the exception to outside.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;nodejs-mysql-drivers&#34;&gt;Node.js MySQL drivers&lt;/h2&gt;
+&lt;p&gt;First, I find there are 4 drivers for Node.js to connect to MySQL/MariaDB, this is really ...&lt;/p&gt;
+&lt;p&gt;This is an old project and it&#39;s original driver is &lt;a href=&#34;https://github.com/mysqljs/mysql&#34;&gt;mysql&lt;/a&gt;.
+Because it doesn&#39;t support Prepared statement, I decide to migrate it to &lt;a href=&#34;https://github.com/sidorares/node-mysql2&#34;&gt;mysql2&lt;/a&gt;.
+These are MySQL drivers for Node.js:&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Micro:bit Radio Communication</title>
+      <link>http://localhost:1313/en/doc/microbit/microbit-radio-communication/</link>
+      <pubDate>Wed, 13 Dec 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/microbit/microbit-radio-communication/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+&lt;iframe height=&#34;700&#34; width=&#34;100%&#34; src=&#34;https://makecode.microbit.org/#pub:_dVhKEqJo1VDy&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;python-code&#34;&gt;Python code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;radio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;send_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;GOOD MORNING&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;play_melody&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;C C G G A A G G &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;120&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_received_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;receivedString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;receivedString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_icon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IconNames&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;YES&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clear_screen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;radio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_received_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_received_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;radio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;send_string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;hihi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;play_melody&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;F F E E D D C C &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;120&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_leds&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    . . . . .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        . # . # .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        . . . . .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        # . . . #
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        . # # # .
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;radio&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;set_group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=SHMJTulQpJM&#34;&gt;https://www.youtube.com/watch?v=SHMJTulQpJM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LintangWisesa/Microbit_Radio_Communication&#34;&gt;https://github.com/LintangWisesa/Microbit_Radio_Communication&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
           
           
         
@@ -98,15 +433,16 @@ This is an old project and it&#39;s original driver is mysql.
     
     <item>
       <title>Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</title>
-      <link>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/sonarqube-mono-dotnet4-integration/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/sonarqube-mono-dotnet4-integration/</guid>
       <description>
         
           
-            Requirement We know how to run SonarQube to scan .NET 4 code in GitLab + SonarQube + .NET 4.8 (non-docker), but it needs a Windows environment and does not support Linux.
-Therefore, we want to find a solution to run SonarQube on Linux in docker if possible. In this artiflce, we try to use Mono framework (a cross platform .NET 4.7 framework) to run SonarQube on Linux to scan .NET 4 code.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;We know how to run SonarQube to scan .NET 4 code in &lt;a href=&#34;http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/#gitlab--sonarqube--net-48-non-docker&#34;&gt;GitLab + SonarQube + .NET 4.8 (non-docker)&lt;/a&gt;, but it needs a &lt;em&gt;Windows&lt;/em&gt; environment and does not support Linux.&lt;/p&gt;
+&lt;p&gt;Therefore, we want to find a solution to run SonarQube on Linux in docker if possible. In this artiflce, we try to use &lt;a href=&#34;https://www.mono-project.com/&#34;&gt;Mono framework&lt;/a&gt; (a cross platform .NET 4.7 framework) to run SonarQube on Linux to scan .NET 4 code.&lt;/p&gt;
           
           
         
@@ -115,16 +451,74 @@ Therefore, we want to find a solution to run SonarQube on Linux in docker if pos
     
     <item>
       <title>Micro:bit Rainbow Lighting (with Expansion Board)</title>
-      <link>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</link>
+      <link>http://localhost:1313/en/doc/microbit/microbit-rainbow-lighting/</link>
       <pubDate>Sun, 26 Nov 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</guid>
+      <guid>http://localhost:1313/en/doc/microbit/microbit-rainbow-lighting/</guid>
       <description>
         
           
-            WarningThis code only supports Micro:bit v2 or above. Demo Code Library Because I use Expansion Board, please add Neopixel extension in your micro:bit editor (https://makecode.microbit.org/pkg/microsoft/pxt-neopixel) Block code This is the block code, you can click Edit button to check the code.
-Python code If you prefer Python, the following is the code. (I use block only to develop this.)
-1run = 0 2item: neopixel.Strip = None 3 4def on_button_pressed_a(): 5 global run, item 6 run = 1 7 while run == 1: 8 item = neopixel.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Warning&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;This code only supports Micro:bit v2 or above.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;div class=&#34;video&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fSfUNPYCP-M?controls=1&amp;rel=0&#34; loading=&#34;lazy&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;library&#34;&gt;Library&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Because I use Expansion Board, please add &lt;em&gt;Neopixel&lt;/em&gt; extension in your micro:bit editor (&lt;a href=&#34;https://makecode.microbit.org/pkg/microsoft/pxt-neopixel&#34;&gt;https://makecode.microbit.org/pkg/microsoft/pxt-neopixel&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is the block code, you can click &lt;em&gt;Edit&lt;/em&gt; button to check the code.&lt;/p&gt;
+  &lt;iframe height=&#34;700&#34; width=&#34;100%&#34; src=&#34;https://makecode.microbit.org/#pub:_Df0Jkk84thJq&#34;&gt;&lt;/iframe&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;python-code&#34;&gt;Python code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you prefer Python, the following is the code. (I use block only to develop this.)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Strip&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DigitalPin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;P2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NeoPixelMode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RGB&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_rainbow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;360&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;index&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rotate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;neopixel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;colors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NeoPixelColors&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BLACK&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;run&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;pass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;qa&#34;&gt;Q&amp;amp;A&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If you get error code 207&lt;/p&gt;
           
           
         
@@ -133,16 +527,40 @@ Python code If you prefer Python, the following is the code. (I use block only t
     
     <item>
       <title>Node &#43; Fastify &#43; OpenAPI &#43; Statistics</title>
-      <link>https://dennys.github.io/en/doc/javascript/node-openapi/</link>
+      <link>http://localhost:1313/en/doc/javascript/node-openapi/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/javascript/node-openapi/</guid>
+      <guid>http://localhost:1313/en/doc/javascript/node-openapi/</guid>
       <description>
         
           
-            Requirement I aim to develop a [Node].js(https://nodejs.org/)-based FastAPI that is OpenAPI compatible (formerly known as Swagger). To accomplish this, I will employ RepiDoc for generating OpenAPI documents and keep track of the API&#39;s execution status using swagger-stats.
-Code This is package.json
-1{ 2 &amp;#34;name&amp;#34;: &amp;#34;fastify-example&amp;#34;, 3 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, 4 &amp;#34;description&amp;#34;: &amp;#34;A simple Fastify example with OpenAPI&amp;#34;, 5 &amp;#34;type&amp;#34;: &amp;#34;commonjs&amp;#34;, 6 &amp;#34;scripts&amp;#34;: { 7 &amp;#34;start&amp;#34;: &amp;#34;node app.js&amp;#34; 8 }, 9 &amp;#34;dependencies&amp;#34;: { 10 &amp;#34;@fastify/express&amp;#34;: &amp;#34;^2.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I aim to develop a [Node].js(&lt;a href=&#34;https://nodejs.org/%29-based&#34;&gt;https://nodejs.org/)-based&lt;/a&gt; &lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; that is OpenAPI compatible (formerly known as &lt;a href=&#34;https://swagger.io/&#34;&gt;Swagger&lt;/a&gt;).
+To accomplish this, I will employ &lt;a href=&#34;https://rapidocweb.com/&#34;&gt;RepiDoc&lt;/a&gt; for generating OpenAPI documents and keep track of the API&#39;s execution status using &lt;a href=&#34;https://github.com/slanatech/swagger-stats&#34;&gt;swagger-stats&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This is package.json&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fastify-example&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;version&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;description&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;A simple Fastify example with OpenAPI&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;type&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;commonjs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;scripts&amp;#34;: &lt;/span&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;start&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;node app.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;}&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;dependencies&amp;#34;: &lt;/span&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/express&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^2.3.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/static&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^6.11.2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/swagger&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^8.10.1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/swagger-ui&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^1.9.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;fastify&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;latest&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;swagger-stats&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^0.99.7&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;}&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is app.js&lt;/p&gt;
           
           
         
@@ -151,16 +569,118 @@ Code This is package.json
     
     <item>
       <title>Sharing components between two view models in C# MVVM</title>
-      <link>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <link>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <guid>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
       <description>
         
           
-            Reqruiement I have two view models - MainViewModel and OptionViewModel -, that share a common component CustomConfiguration. My goal is to load the data into MainViewModel in MainWindow, and when the Option button ic clicked on MainWindow, OptionWindow will be opened, and the CustomConfiguration data will be passed into it.
-Code MainWindow.xaml Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.
-1&amp;lt;Window.DataContext&amp;gt; 2 &amp;lt;local:MainViewModel /&amp;gt; 3&amp;lt;/Window.DataContext&amp;gt; 4&amp;lt;StackPanel&amp;gt; 5 &amp;lt;TextBlock Text=&amp;#34;{Binding CustomConfig.
+            &lt;h2 id=&#34;reqruiement&#34;&gt;Reqruiement&lt;/h2&gt;
+&lt;p&gt;I have two view models - &lt;em&gt;MainViewModel&lt;/em&gt; and &lt;em&gt;OptionViewModel&lt;/em&gt; -, that share a common component &lt;em&gt;CustomConfiguration&lt;/em&gt;.
+My goal is to load the data into &lt;em&gt;MainViewModel&lt;/em&gt; in &lt;em&gt;MainWindow&lt;/em&gt;, and when the &lt;em&gt;Option&lt;/em&gt; button ic clicked on &lt;em&gt;MainWindow&lt;/em&gt;,
+&lt;em&gt;OptionWindow&lt;/em&gt; will be opened, and the &lt;em&gt;CustomConfiguration&lt;/em&gt; data will be passed into it.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;mainwindowxaml&#34;&gt;MainWindow.xaml&lt;/h3&gt;
+&lt;p&gt;Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;local&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MainViewModel&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;StackPanel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TextBlock&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{Binding CustomConfig.GeneralSettings.IsLogEnabled}&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Open Options&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{Binding OpenOptionsCommand}&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;StackPanel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;optionwindowxaml&#34;&gt;OptionWindow.xaml&lt;/h3&gt;
+&lt;p&gt;The same as MainWindow.xaml, only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Micro:bit Countdown Timer</title>
+      <link>http://localhost:1313/en/doc/microbit/microbit-countdown-timer/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/microbit/microbit-countdown-timer/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+&lt;iframe height=&#34;700&#34; width=&#34;100%&#34; src=&#34;https://makecode.microbit.org/#pub:_fEUY6m3JxFXX&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;python-code&#34;&gt;Python code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;play_tone&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;659&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;music&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beat&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BeatFraction&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WHOLE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_forever&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://makecode.microbit.org/projects/watch/timer&#34;&gt;https://makecode.microbit.org/projects/watch/timer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://makecode.microbit.org/90772-90547-86148-68356&#34;&gt;https://makecode.microbit.org/90772-90547-86148-68356&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Micro:bit Running Counter</title>
+      <link>http://localhost:1313/en/doc/microbit/microbit-running-counter/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/microbit/microbit-running-counter/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
+&lt;iframe height=&#34;700&#34; width=&#34;100%&#34; src=&#34;https://makecode.microbit.org/#pub:_fAv88pEAtAow&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;python-code&#34;&gt;Python code&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_gesture_screen_up&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_gesture&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Gesture&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SCREEN_UP&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_gesture_screen_up&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_button_pressed_ab&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;clear_screen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;basic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;show_icon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IconNames&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_button_pressed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AB&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_button_pressed_ab&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;on_gesture_shake&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on_gesture&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Gesture&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SHAKE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;on_gesture_shake&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Step_Count&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=TTI0OfoclcU&#34;&gt;https://www.youtube.com/watch?v=TTI0OfoclcU&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Vbz4zPwsavc&#34;&gt;https://www.youtube.com/watch?v=Vbz4zPwsavc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
           
           
         
@@ -169,14 +689,14 @@ Code MainWindow.xaml Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled
     
     <item>
       <title>Search Google Photos by Device</title>
-      <link>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</link>
+      <link>http://localhost:1313/en/doc/software/google-photos-search-by-device/</link>
       <pubDate>Sun, 04 Dec 2022 10:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</guid>
+      <guid>http://localhost:1313/en/doc/software/google-photos-search-by-device/</guid>
       <description>
         
           
-            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a Google Pixel 5, when I try to search for Google Pixel 5, I can get all the photos taken by it, but when I just type Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
+            &lt;p&gt;I&#39;m trying to search my photos in &lt;a href=&#34;https://photos.google.com/&#34;&gt;Google Photos&lt;/a&gt; by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pixel_5&#34;&gt;Google Pixel 5&lt;/a&gt;, when I try to search for &lt;em&gt;Google Pixel 5&lt;/em&gt;, I can get all the photos taken by it, but when I just type &lt;em&gt;Google Pixel&lt;/em&gt; to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.&lt;/p&gt;
           
           
         
@@ -185,15 +705,25 @@ Code MainWindow.xaml Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled
     
     <item>
       <title>File Search/Replace Tool</title>
-      <link>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</link>
+      <link>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</link>
       <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</guid>
+      <guid>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</guid>
       <description>
         
           
-            Requirement Try to find software that can search or replace text in files, and it should support these functions:
-Free software. Supports UTF-8. It can show partial find content in the search result (or it takes a long time to see the file content). Double click can open the file with the associated editor. Supports replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Try to find software that can search or replace text in files, and it should support these functions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Free software.&lt;/li&gt;
+&lt;li&gt;Supports UTF-8.&lt;/li&gt;
+&lt;li&gt;It can show partial find content in the search result (or it takes a long time to see the file content).&lt;/li&gt;
+&lt;li&gt;Double click can open the file with the associated editor.&lt;/li&gt;
+&lt;li&gt;Supports replace.&lt;/li&gt;
+&lt;li&gt;As fast as possible (of course)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;software-comparison&#34;&gt;Software comparison&lt;/h2&gt;
+&lt;p&gt;Compare 3 software, I prefer to use grepWin.&lt;/p&gt;
           
           
         
@@ -202,15 +732,99 @@ Free software. Supports UTF-8. It can show partial find content in the search re
     
     <item>
       <title>How to Change the Gmail Notification Action from Archive to Delete</title>
-      <link>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</link>
+      <link>http://localhost:1313/en/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Mon, 10 Oct 2022 06:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>http://localhost:1313/en/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
-            Requirement In Gmail&#39;s default notification actions, you can choose to Archive or Reply . But you can change it.
-Solution Open the Gmail App&#39;s General setting, change the *Default email notification action&amp;quot;. The default action is Archive, but you can change it to Delete. After configuring, you will be able to delete emails in Gmail&#39;s notification. What&#39;s next It&#39;s better to enable both Archive and Delete in the notification.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;In Gmail&#39;s default notification actions, you can choose to &lt;em&gt;Archive&lt;/em&gt; or &lt;em&gt;Reply&lt;/em&gt; .
+But you can change it.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Gmail App&#39;s &lt;em&gt;General setting&lt;/em&gt;, change the *Default email notification action&amp;quot;.
+The default action is &lt;em&gt;Archive&lt;/em&gt;, but you can change it to &lt;em&gt;Delete&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;After configuring, you will be able to delete emails in Gmail&#39;s notification.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -219,15 +833,79 @@ Solution Open the Gmail App&#39;s General setting, change the *Default email not
     
     <item>
       <title>Android Gmail Notification Actions (Archive, Delete, ...)</title>
-      <link>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</link>
+      <link>http://localhost:1313/en/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</guid>
+      <guid>http://localhost:1313/en/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
-            Requirement In the previous article, we know we can change archive to delete in the Email(Gmail) notification of Android (Reference: http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/) But we cannot enable BOTH, therefore, I try to find a solution in other Apps.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s check Gmail&#39;s ability, the default action is Archive. Open the Gmail App&#39;s General setting, and change the *Default email notification action&amp;quot;. The default action is Archive, you can change it to Delete.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;In the previous article, we know we can change &lt;em&gt;archive&lt;/em&gt; to &lt;em&gt;delete&lt;/em&gt; in the Email(Gmail) notification of Android
+(Reference: &lt;a href=&#34;http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/&#34;&gt;http://dennys.github.io/en/doc/android/gmail-notify-delete-archive/&lt;/a&gt;)
+But we cannot enable &lt;strong&gt;BOTH&lt;/strong&gt;, therefore, I try to find a solution in other Apps.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thundernest/k-9&#34;&gt;K-9 Mail&lt;/a&gt;, ( &lt;a href=&#34;https://blog.thunderbird.net/2022/06/revealed-thunderbird-on-android-plans-k9/&#34;&gt;K-9 Mail Joins The Thunderbird Family&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/M66B/FairEmail&#34;&gt;FairEmail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gmail&#34;&gt;Gmail&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Let&#39;s check Gmail&#39;s ability, the default action is &lt;em&gt;Archive&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Open the Gmail App&#39;s &lt;em&gt;General setting&lt;/em&gt;, and change the *Default email notification action&amp;quot;.
+The default action is &lt;em&gt;Archive&lt;/em&gt;, you can change it to &lt;em&gt;Delete&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -236,17 +914,31 @@ K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail Let&#39;s ch
     
     <item>
       <title>GitLab SonarQube Integration with .NET</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
       <description>
         
           
-            If you want to use SonarQube to scan your code during GitLab&#39;s CI/CD flow, please see the following procedures.
-GitLab + SonarQube + .NET Core or .NET 5/6/7/... (docker) Refer to this document to integrate GitLab and SonarQube.
-Set the environment variable in GitLab
-$SONAR_URL: The URL of SonarQube $SONAR_TOKEN: The token to access SonarQube $CI_PROJECT_DIR: This is a predifined variable in GitLab, you can reference https://docs.gitlab.com/ee/ci/variables/predefined_variables.html $CI_JOB_NAME: This is a predifined variable in GitLab, you can reference https://docs.
+            &lt;p&gt;If you want to use &lt;a href=&#34;https://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; to scan your code during GitLab&#39;s CI/CD flow,
+please see the following procedures.&lt;/p&gt;
+&lt;h2 id=&#34;gitlab--sonarqube--net-core-or-net-567-docker&#34;&gt;GitLab + SonarQube + .NET Core or .NET 5/6/7/... (docker)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Refer to &lt;a href=&#34;https://docs.sonarqube.org/latest/analysis/gitlab-integration/&#34;&gt;this document&lt;/a&gt; to integrate GitLab and SonarQube.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable in GitLab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$SONAR_URL: The URL of SonarQube&lt;/li&gt;
+&lt;li&gt;$SONAR_TOKEN: The token to access SonarQube&lt;/li&gt;
+&lt;li&gt;$CI_PROJECT_DIR: This is a predifined variable in GitLab, you can reference &lt;a href=&#34;https://docs.gitlab.com/ee/ci/variables/predefined_variables.html&#34;&gt;https://docs.gitlab.com/ee/ci/variables/predefined_variables.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;$CI_JOB_NAME: This is a predifined variable in GitLab, you can reference &lt;a href=&#34;https://docs.gitlab.com/ee/ci/variables/predefined_variables.html&#34;&gt;https://docs.gitlab.com/ee/ci/variables/predefined_variables.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the following to your .gitlab-ci.yml&lt;/p&gt;
           
           
         
@@ -255,15 +947,41 @@ $SONAR_URL: The URL of SonarQube $SONAR_TOKEN: The token to access SonarQube $CI
     
     <item>
       <title>Prometheus Pulls/Pushes Metrics from/to Another Prometheus</title>
-      <link>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</link>
+      <link>http://localhost:1313/en/doc/grafana/prometheus-pulls-pushes-metrics/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</guid>
+      <guid>http://localhost:1313/en/doc/grafana/prometheus-pulls-pushes-metrics/</guid>
       <description>
         
           
-            Requirement I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana. And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule from this zone to other zones.
-Prometheus A pulls (receives) metrics from Prometheus B In this scenario, we use the Federation feature to pull metrics from another Prometheus. You don&#39;t need to make any changes to Prometheus B, just add a new job to prometheus.
+            &lt;pre&gt;&lt;code&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/prometheus.webp&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I have 3 Prometheus servers and want to consolidate all of them into 1 Grafana.
+And one VM (Server C) is in a restricted zone and this zone only allows a special firewall rule
+from this zone to other zones.&lt;/p&gt;
+&lt;h2 id=&#34;prometheus-a-pulls-receives-metrics-from-prometheus-b&#34;&gt;Prometheus A pulls (receives) metrics from Prometheus B&lt;/h2&gt;
+&lt;p&gt;In this scenario, we use the &lt;a href=&#34;https://prometheus.io/docs/prometheus/latest/federation/&#34;&gt;Federation&lt;/a&gt; feature to pull metrics from another Prometheus.
+You don&#39;t need to make any changes to Prometheus B, just add a new job to &lt;em&gt;prometheus.yml&lt;/em&gt; of Prometheus A.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Grafana Cloud</title>
+      <link>http://localhost:1313/en/doc/grafana/grafana-cloud/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/grafana/grafana-cloud/</guid>
+      <description>
+        
+          
+            &lt;p&gt;How to get user ID and API key to push data into Grafana: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&#34;&gt;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Send Prometheus data to Grafana Cloud Metrics: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&#34;&gt;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -272,18 +990,34 @@ Prometheus A pulls (receives) metrics from Prometheus B In this scenario, we use
     
     <item>
       <title>OpenWrt Bandwidth Management (by interface) </title>
-      <link>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</link>
+      <link>http://localhost:1313/en/doc/router/openwrt-bandwidth-by-interface/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <guid>http://localhost:1313/en/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
-            Requirement Find a bandwidth management tool in OpenWrt to see which application (by interface) uses the most bandwidth.
-OpenWrt solution There are lots of bandwidth monitor tools in OpenWrt... https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools
-collectd collectd is not just for network only, it&#39;s a common data collection tool in the UNIX platform. We can use collectd&#39;s network related plugins here.
-Website:
-Official website: https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd GitHub: https://github.com/collectd/collectd Installation: just install luci-app-statistics and it will include related libraries.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Find a bandwidth management tool in &lt;a href=&#34;https://openwrt.org/&#34;&gt;OpenWrt&lt;/a&gt; to see which application (by interface) uses the most bandwidth.&lt;/p&gt;
+&lt;h2 id=&#34;openwrt-solution&#34;&gt;OpenWrt solution&lt;/h2&gt;
+&lt;p&gt;There are lots of bandwidth monitor tools in OpenWrt...
+&lt;a href=&#34;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools&#34;&gt;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon#available_tools&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;collectd&#34;&gt;collectd&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://collectd.org/&#34;&gt;collectd&lt;/a&gt; is not just for network only, it&#39;s a common data collection tool in the UNIX platform. We can use collectd&#39;s network related plugins here.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Website:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Official website: &lt;a href=&#34;https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd&#34;&gt;https://openwrt.org/docs/guide-user/perf_and_log/statistic.collectd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/collectd/collectd&#34;&gt;https://github.com/collectd/collectd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Installation: just install &lt;em&gt;luci-app-statistics&lt;/em&gt; and it will include related libraries.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;opkg install luci-app-statistics
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usage&lt;/p&gt;
           
           
         
@@ -292,16 +1026,57 @@ Official website: https://openwrt.org/docs/guide-user/perf_and_log/statistic.col
     
     <item>
       <title>How to Change Default YouTube App (YouTube Vanced, NewPipe, ...) in Android</title>
-      <link>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</link>
+      <link>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
-            NoticeThis solution is only for Android 11 or below!!! Please use Better Open With in Android 12 or above. Requirement Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), NewPipe, ...), although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.
-Solution Android Settings -&amp;gt; Apps -&amp;gt; Default apps -&amp;gt; Opening links
-It will list all Apps, choose YouTube, and you will see the following screen.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Notice&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;This solution is only for Android 11 or below!!!&lt;/li&gt;
+&lt;li&gt;Please use &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.aboutmycode.betteropenwith&#34;&gt;Better Open With&lt;/a&gt; in Android 12 or above.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), &lt;a href=&#34;https://github.com/TeamNewPipe/NewPipe&#34;&gt;NewPipe&lt;/a&gt;, ...),
+although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Android Settings -&amp;gt; Apps -&amp;gt; Default apps -&amp;gt; Opening links&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It will list all Apps, choose YouTube, and you will see the following screen.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -310,15 +1085,33 @@ It will list all Apps, choose YouTube, and you will see the following screen.
     
     <item>
       <title>Use Grafana to Manage SonarQube KPI</title>
-      <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</guid>
       <description>
         
           
-            Requirement Usually we use SonarQube to check the KPI of projects: You can also check the build history of a project: Use Grafana to Manager SonarQube KPI But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.
-Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter: It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don&#39;t plan to try it.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Usually we use SonarQube to check the KPI of projects:
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;You can also check the build history of a project:
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;use-grafana-to-manager-sonarqube-kpi&#34;&gt;Use Grafana to Manager SonarQube KPI&lt;/h2&gt;
+&lt;p&gt;But there are some SonarQube exporters, they can export SonarQube&#39;s KPI to Grafana/Prometheus.&lt;/p&gt;
+&lt;h3 id=&#34;solution-1&#34;&gt;Solution 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Exporter: &lt;a href=&#34;https://github.com/dmeiners88/sonarqube-prometheus-exporter&#34;&gt;https://github.com/dmeiners88/sonarqube-prometheus-exporter&lt;/a&gt;:
+It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit date is 2018/11/9. It supports SonarQube 7, not sure if it supports 8 or 9, I don&#39;t plan to try it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;solution-2&#34;&gt;Solution 2&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Exporter: &lt;a href=&#34;https://github.com/nthienan/sonarqube-exporter&#34;&gt;https://github.com/nthienan/sonarqube-exporter&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -327,15 +1120,47 @@ Solution 1 Exporter: https://github.com/dmeiners88/sonarqube-prometheus-exporter
     
     <item>
       <title>Use Grafana to Manage GitLab CI/CD Pipelines</title>
-      <link>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           
-            Change log 2022/10/13: Add some check points. Requirement When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.
-Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in metrics Exporter: GitLab build-in (reference: https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 This dashboard needs this plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.
+            &lt;h2 id=&#34;change-log&#34;&gt;Change log&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2022/10/13: Add some check points.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;When there are lots of projects on GitLab, it&#39;s not easy to know the overall build status of their CI/CD Pipelines.&lt;/p&gt;
+&lt;h2 id=&#34;use-grafana-to-manage-gitlab-cicd-pipelines&#34;&gt;Use Grafana to Manage GitLab CI/CD Pipelines&lt;/h2&gt;
+&lt;h3 id=&#34;solution-1-use-gitlab-build-in-metrics&#34;&gt;Solution 1: Use GitLab build-in metrics&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Exporter: GitLab build-in (reference: &lt;a href=&#34;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&#34;&gt;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Grafana dashboard: &lt;a href=&#34;https://grafana.com/grafana/dashboards/10620&#34;&gt;https://grafana.com/grafana/dashboards/10620&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;This dashboard needs this plugin: &lt;a href=&#34;https://grafana.com/grafana/plugins/grafana-polystat-panel/&#34;&gt;https://grafana.com/grafana/plugins/grafana-polystat-panel/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;prometheus.yml
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;nt&#34;&gt;job_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GitLab&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scrape_interval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;5s&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;metrics_path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/-/metrics&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;static_configs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;targets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;token&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;***************&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;solution-2-use-gitlab-ci-pipelines-exporter&#34;&gt;Solution 2: Use gitlab-ci-pipelines-exporter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Exporter: &lt;a href=&#34;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&#34;&gt;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&lt;/a&gt;
+This exporter provides several spectives metrics (with different Grafana dashboards)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Grafana dashboard: the same as solution 1 (it also needs Ploystat plugin)&lt;/p&gt;
           
           
         
@@ -344,15 +1169,41 @@ Use Grafana to Manage GitLab CI/CD Pipelines Solution 1: Use GitLab build-in met
     
     <item>
       <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
-      <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
+      <link>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
       <pubDate>Wed, 13 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
+      <guid>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
       <description>
         
           
-            K-9 Mail 6.200 is released on 2022/07/08, it add the support to OAuth 2.0. Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail, you need to use App Passwords. It&#39;s not convenient, you can reference https://ekiwi-blog.de/en/16841/ to check the detail with a step-by-step video.
-In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, AOL, and personal Microsoft accounts (Office365 accounts are not supported yet).
+            &lt;p&gt;&lt;a href=&#34;https://github.com/thundernest/k-9&#34;&gt;K-9 Mail&lt;/a&gt; 6.200 is released on 2022/07/08, it add the support to OAuth 2.0.
+Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail,
+you need to use &lt;a href=&#34;https://support.google.com/mail/answer/185833?hl=en&#34;&gt;App Passwords&lt;/a&gt;.
+It&#39;s not convenient, you can reference &lt;a href=&#34;https://ekiwi-blog.de/en/16841/&#34;&gt;https://ekiwi-blog.de/en/16841/&lt;/a&gt; to check the detail with a step-by-step video.&lt;/p&gt;
+&lt;p&gt;In K-9 Mail &lt;a href=&#34;https://github.com/thundernest/k-9/releases/tag/6.200&#34;&gt;6.200&lt;/a&gt; release, it supports for using OAuth 2.0 with Google, Yahoo, AOL,
+and personal Microsoft accounts (Office365 accounts are not supported yet). You don&#39;t need to input your Google password anymore,
+you just need to grant privilege to K-9 mail.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OpenWrt ADGuard Home</title>
+      <link>http://localhost:1313/en/doc/router/openwrt-adguard/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/router/openwrt-adguard/</guid>
+      <description>
+        
+          
+            &lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AdGuard for OpenWrt: &lt;a href=&#34;https://openwrt.org/docs/guide-user/services/dns/adguard-home&#34;&gt;https://openwrt.org/docs/guide-user/services/dns/adguard-home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AdGuard GitHub: &lt;a href=&#34;https://github.com/AdguardTeam/AdGuardHome&#34;&gt;https://github.com/AdguardTeam/AdGuardHome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;IThome (Traditional Chinese): &lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10280241&#34;&gt;https://ithelp.ithome.com.tw/articles/10280241&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
           
           
         
@@ -361,15 +1212,24 @@ In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, A
     
     <item>
       <title>Batch Photo Files Rename Tools (by EXIF).</title>
-      <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>
+      <link>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</link>
       <pubDate>Sun, 10 Jul 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</guid>
+      <guid>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</guid>
       <description>
         
           
-            Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
-Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Software There are lots of rename tools.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Batch change filenames to P[photo capture date]-[camera model].jpg. For example, &lt;em&gt;P20220710-101405-iPhone 13.jpg&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ...&lt;/li&gt;
+&lt;li&gt;Can add a serial number automatically when the new filename is duplicated with others.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;
+&lt;p&gt;There are lots of rename tools. I try 3 tools, and all of them are freeware. (Rename Master is not open source, but it&#39;s not a problem.).
+F2 (by &lt;a href=&#34;https://go.dev/&#34;&gt;Go&lt;/a&gt; and ExifTool (by &lt;a href=&#34;https://www.perl.org/&#34;&gt;Perl&lt;/a&gt;) are cross-platform.
+Rename Master is for Windows only.&lt;/p&gt;
           
           
         
@@ -378,15 +1238,18 @@ Batch change filenames to P[photo capture date]-[camera model].jpg. For example,
     
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
-      <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
+      <link>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            I usually use Spotify to listen to podcasts, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
-And I find Pocket Casts has an interesting feature, it can skip the first or last *** seconds. It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app. (This feature is provided in the free version.
+            &lt;p&gt;I usually use &lt;a href=&#34;https://spotify.com/&#34;&gt;Spotify&lt;/a&gt; to listen to podcasts, but because I use Spotify with my children,
+I want to find another Podcast App for my personal use.&lt;/p&gt;
+&lt;p&gt;And I find &lt;a href=&#34;https://pocketcasts.com/&#34;&gt;Pocket Casts&lt;/a&gt; has an interesting feature, it can skip the first or last *** seconds.
+It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app.
+(This feature is provided in the free version.)&lt;/p&gt;
           
           
         
@@ -395,15 +1258,51 @@ And I find Pocket Casts has an interesting feature, it can skip the first or las
     
     <item>
       <title>SQL to get 1st record of a range</title>
-      <link>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</link>
+      <link>http://localhost:1313/en/doc/database/get-first-record-of-a-range-sql/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</guid>
+      <guid>http://localhost:1313/en/doc/database/get-first-record-of-a-range-sql/</guid>
       <description>
         
           
-            If you want to get the 1st record of range records, you can use this SQL command.
-1SELECT * FROM 2(SELECT DISTINCT rank() over(PARTITION BY a.username ORDER BY a.update_dt desc) rn, a.* 3 FROM table_name a 4 WHERE a.update_dt &amp;gt; p_cur_timestamp 5 AND a.update_dt &amp;lt;= p_cur_timestamp + C_PERIOD 6 ) 7WHERE rn = 1 
+            &lt;p&gt;If you want to get the 1st record of range records, you can use this SQL command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DISTINCT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rank&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;over&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;PARTITION&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ORDER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;update_dt&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;desc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table_name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;update_dt&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p_cur_timestamp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;AND&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;update_dt&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p_cur_timestamp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;C_PERIOD&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rn&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Java RESTful service</title>
+      <link>http://localhost:1313/en/doc/java/java-restful-service/</link>
+      <pubDate>Fri, 03 Jun 2022 22:18:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/en/doc/java/java-restful-service/</guid>
+      <description>
+        
+          
+            &lt;ol&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;Document (Swagger)&lt;/li&gt;
+&lt;li&gt;Validation&lt;/li&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Authorizatio&lt;/li&gt;
+&lt;li&gt;Log&lt;/li&gt;
+&lt;li&gt;Test&lt;/li&gt;
+&lt;li&gt;Stress test&lt;/li&gt;
+&lt;li&gt;Auto test, mock, …&lt;/li&gt;
+&lt;li&gt;Management – supervisor – Python vs Golang&lt;/li&gt;
+&lt;li&gt;Monitor – Grafana&lt;/li&gt;
+&lt;li&gt;Monitor – OpenTelemetry, Jaeger,&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -412,15 +1311,28 @@ And I find Pocket Casts has an interesting feature, it can skip the first or las
     
     <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
       <description>
         
           
-            RemindThis is for .NET 4.8 or below only!!Precondition You already have a GitLab (GitLab Saas or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.
-Procedure Step 1 - Prepare .NET build environment First, you need to prepare an environment to build .NET application. The easiest solution is to install Visual Studio.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Remind&lt;/div&gt;
+    This is for .NET 4.8 or below only!!
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;precondition&#34;&gt;Precondition&lt;/h2&gt;
+&lt;p&gt;You already have a GitLab (&lt;a href=&#34;http://gitlab.com/&#34;&gt;GitLab Saas&lt;/a&gt; or GitLab self-managed). This document is for .NET 4.X, if you want to build .NET core or .NET 5/6/7/..., you can use docker to run GitLab Runner.&lt;/p&gt;
+&lt;h3 id=&#34;procedure&#34;&gt;Procedure&lt;/h3&gt;
+&lt;h3 id=&#34;step-1---prepare-net-build-environment&#34;&gt;Step 1 - Prepare .NET build environment&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;First, you need to prepare an environment to build .NET application. The easiest solution is to install &lt;a href=&#34;https://visualstudio.microsoft.com/&#34;&gt;Visual Studio&lt;/a&gt;. (Please let me know if I can build a .NET build environment without Visual Studio, thanks.)&lt;/li&gt;
+&lt;li&gt;But it&#39;s strange, MSBuild.exe is not included in PATH after the installation. Please put &lt;code&gt;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin&lt;/code&gt; into your PATH.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;step-2---install-git-client&#34;&gt;Step 2 - Install Git client&lt;/h3&gt;
+&lt;p&gt;Download and install &lt;a href=&#34;https://git-scm.com/download/win&#34;&gt;Git for Windows&lt;/a&gt;. The portable version is ok, but because Git Runner is a Windows service, please add git.exe into PATH.&lt;/p&gt;
           
           
         
@@ -429,21 +1341,45 @@ Procedure Step 1 - Prepare .NET build environment First, you need to prepare an 
     
     <item>
       <title>Use IFTTT to send currency exchange rate mail daily</title>
-      <link>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</link>
+      <link>http://localhost:1313/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</guid>
+      <guid>http://localhost:1313/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</guid>
       <description>
         
           
-            Requirement I want to have daily mail including currency exchange rate information.
-Mail subject: include the exchange rate in the mail subject. Mail content: Has some links to banks&#39; exchange rate pages. Include some exchange rate history charts. Solution Use ifttt.com
-Create a new Applet on IFTTT
-Add a new &amp;quot;If This&amp;quot;
-Choose &amp;quot;finance&amp;quot; service
-Choose &amp;quot;Today&#39;s exchange rate report&amp;quot;
-Choose the input/output currency and trigger time.
-Add a new &amp;quot;Then That&amp;quot;
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I want to have daily mail including currency exchange rate information.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mail subject: include the exchange rate in the mail subject.&lt;/li&gt;
+&lt;li&gt;Mail content:
+&lt;ol&gt;
+&lt;li&gt;Has some links to banks&#39; exchange rate pages.&lt;/li&gt;
+&lt;li&gt;Include some exchange rate history charts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Use &lt;a href=&#34;https://ifttt.com/&#34;&gt;ifttt.com&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new Applet on IFTTT&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a new &amp;quot;If This&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-8.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-8.png?w=605&#34; alt=&#34;&#34; class=&#34;wp-image-432&#34; width=&#34;382&#34; height=&#34;180&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &amp;quot;finance&amp;quot; service&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image.png?w=811&#34; alt=&#34;&#34; class=&#34;wp-image-416&#34; width=&#34;446&#34; height=&#34;274&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose &amp;quot;Today&#39;s exchange rate report&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-1.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-1.png?w=1024&#34; alt=&#34;&#34; class=&#34;wp-image-418&#34; width=&#34;568&#34; height=&#34;280&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose the input/output currency and trigger time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-2.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-2.png?w=702&#34; alt=&#34;&#34; class=&#34;wp-image-420&#34; width=&#34;385&#34; height=&#34;373&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -452,16 +1388,26 @@ Add a new &amp;quot;Then That&amp;quot;
     
     <item>
       <title>Use WISE to send currency exchange rate mail daily</title>
-      <link>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
+      <link>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
+      <guid>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
       <description>
         
           
-            Requirement I want to have daily mail including currency exchange rate information.
-Solution use https://wise.com (no need to register an account)
-Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I want to have daily mail including currency exchange rate information.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;use &lt;a href=&#34;https://wise.com&#34;&gt;https://wise.com&lt;/a&gt; (no need to register an account)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect to &lt;a href=&#34;https://wise.com/tools/exchange-rate-alerts/&#34;&gt;https://wise.com/tools/exchange-rate-alerts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Input the currency exchange rate you want to know and your email address.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-10.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-10.png?w=673&#34; alt=&#34;&#34; class=&#34;wp-image-443&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /wp:image --&gt;
+&lt;h2 id=&#34;mail-result&#34;&gt;Mail result&lt;/h2&gt;
+&lt;p&gt;You will receive the mail daily.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-11.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-11.png?w=682&#34; alt=&#34;&#34; class=&#34;wp-image-445&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -470,15 +1416,45 @@ Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency excha
     
     <item>
       <title>GitLab Checkmarx CI/CD Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</guid>
       <description>
         
           
-            Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt; is a good tool to do code analysis, but there are 2 pain points during the flow.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot &lt;strong&gt;be triggered by&lt;/strong&gt; by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.)&lt;/li&gt;
+&lt;li&gt;Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or &lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt; or ...&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What we want is to integrate Checkmarx scan into GitLab&#39;s CI/CD flow including&lt;/p&gt;
           
           
         
@@ -487,16 +1463,87 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
     
     <item>
       <title>GitLab Checkmarx SonarQube Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
       <description>
         
           
-            Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
-Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&#34;https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/&#34;&gt;previous article&lt;/a&gt;, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too.
+When we commit code to &lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt;, we want GitLab to trigger these actions automatically:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt; sends the code to &lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt; to scan.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt; triggers &lt;a href=&#34;https://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; to scan.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; integrates &lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt;&#39;s report.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
+&lt;p&gt;You can reference the official document: &lt;a href=&#34;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube&amp;#43;Plugin&amp;#43;v8.5.0&amp;#43;and&amp;#43;up&#34;&gt;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the plugin from &lt;a href=&#34;https://checkmarx.com/plugins/&#34;&gt;here&lt;/a&gt;, it only supports SonarQube LTS version (for now, it&#39;s 8.x)&lt;/li&gt;
+&lt;li&gt;Configurea Quality Gate/Profiles of SonarQube for Checkmarx&#39;s rules.&lt;/li&gt;
+&lt;li&gt;Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.&lt;/li&gt;
+&lt;li&gt;Configure Checkmarx data in SonarQube, which you can reference &lt;a href=&#34;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Trigger GitLab CI again, you will see the following log in your SonarQube job&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sensor Import Checkmarx scan results to SonarQube &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;checkmarx&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Retrieving Checkmarx scan results &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; current module &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Checkmarx plugin version: 2021.2.1&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Getting Checkmarx configuration data from sonar Database.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Resolving Cx setting: checkmarx.server.project_name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Forced authentication is enabled: Sonar credentials must be provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sonar server token is provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx credentials migration not needed
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sonar server token is provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Resolving Cx setting: checkmarx.server.project_name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Forced authentication is enabled: Sonar credentials must be provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx server version &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;9.2.0.41015&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;. Hotfix &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Logging into the Checkmarx service.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Connecting to https://your.checkmarx.server/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Initializing Cx client &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;2020.2.4.NO.SCA&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx server version &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;9.2.0.41015&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;. Hotfix &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Logging into the Checkmarx service.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: full team path: &lt;span class=&#34;se&#34;&gt;\C&lt;/span&gt;xServer&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;Team1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: preset name: All
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: ---------------------------------Get Last CxSAST Results:--------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Waiting &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; server to generate xml report. &lt;span class=&#34;m&#34;&gt;4990&lt;/span&gt; seconds left to timeout
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx High vulnerabilities: &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-High vulnerabilities: &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx Medium vulnerabilities: &lt;span class=&#34;m&#34;&gt;23&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-Medium vulnerabilities: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx Low vulnerabilities: &lt;span class=&#34;m&#34;&gt;142&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-Low vulnerabilities: &lt;span class=&#34;m&#34;&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1000157&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ProjectID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;67&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;You can see the Checkmarx issues in SonarQube now.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I find some issues are not created in SonarQube and it seems due to the rule is not defined in Checkmarx&#39;s SonarQube plugin. I&#39;m still checking it.&lt;/p&gt;
           
           
         
@@ -505,14 +1552,28 @@ Download the plugin from here, it only supports SonarQube LTS version (for now, 
     
     <item>
       <title>How to analyze size of table, index in Oracle</title>
-      <link>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</link>
+      <link>http://localhost:1313/en/doc/database/how-to-analyze-size-of-table-index/</link>
       <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <guid>http://localhost:1313/en/doc/database/how-to-analyze-size-of-table-index/</guid>
       <description>
         
           
-            Check table size (remember to check last_analyzed_date) 1SELECT * FROM all_tables WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze table 1ANALYZE table TABLE_NAME estimate statisitics Check index-related information (it doesn&#39;t contain block information) 1SELECT * FROM all_indexes WHERE table_name LIKE &amp;#39;AB%&amp;#39; Re-analyze index: 1ANALYZE index INDEX_NAME validate structure; Check index size: (it only checks the last analyzed index) 1SELECT * FROM index_stats; Others An index needs to be rebuilt, deleting or updating records will NOT free the index block Need DBA to check the block&#39;s definition.
+            &lt;h3 id=&#34;check-table-size-remember-to-check-last_analyzed_date&#34;&gt;Check table size (remember to check last_analyzed_date)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all_tables&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table_name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIKE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;AB%&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;re-analyze-table&#34;&gt;Re-analyze table&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ANALYZE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE_NAME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;estimate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;statisitics&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;check-index-related-information-it-doesnt-contain-block-information&#34;&gt;Check index-related information (it doesn&#39;t contain block information)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all_indexes&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;table_name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIKE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;AB%&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;re-analyze-index&#34;&gt;Re-analyze index:&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ANALYZE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;INDEX_NAME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;validate&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;structure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;check-index-size-it-only-checks-the-last-analyzed-index&#34;&gt;Check index size: (it only checks the last analyzed index)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index_stats&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;others&#34;&gt;Others&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;An index needs to be rebuilt, deleting or updating records will NOT free the index block&lt;/li&gt;
+&lt;li&gt;Need DBA to check the block&#39;s definition.&lt;/li&gt;
+&lt;/ol&gt;
           
           
         

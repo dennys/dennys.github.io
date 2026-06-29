@@ -17,11 +17,19 @@
       <description>
         
           
-            NoticeThis is not an original game; I just followed instructions on YouTube to create it.!!!
-YouTube: https://www.youtube.com/watch?v=V_6i1-diUY0 (0:12~1:07)
-Introduction A simple shooting game.
-Demo https://scratch.mit.edu/projects/778705218/editor/
-Block code 
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Notice&lt;/div&gt;
+    &lt;p&gt;This is not an original game; I just followed instructions on YouTube to create it.!!!&lt;/p&gt;
+&lt;p&gt;YouTube: &lt;a href=&#34;https://www.youtube.com/watch?v=V_6i1-diUY0&#34;&gt;https://www.youtube.com/watch?v=V_6i1-diUY0&lt;/a&gt; (0:12~1:07)&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;A simple shooting game.&lt;/p&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://scratch.mit.edu/projects/778705218/editor/&#34;&gt;https://scratch.mit.edu/projects/778705218/editor/&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://scratch.mit.edu/projects/778705218/embed&#34; allowtransparency=&#34;true&#34; width=&#34;485&#34; height=&#34;402&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;block-code&#34;&gt;Block code&lt;/h3&gt;
           
           
         

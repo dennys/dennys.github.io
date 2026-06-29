@@ -2,494 +2,581 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennys.github.io/en/categories/</loc>
+    <loc>http://localhost:1313/en/categories/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/categories/"
+                href="http://localhost:1313/tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/"
+                href="http://localhost:1313/tw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/</loc>
+    <loc>http://localhost:1313/en/doc/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/doc/"
+                href="http://localhost:1313/tw/doc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/doc/"
+                href="http://localhost:1313/en/doc/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/categories/it/</loc>
+    <loc>http://localhost:1313/en/categories/it/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/categories/it/"
+                href="http://localhost:1313/tw/categories/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/categories/it/"
+                href="http://localhost:1313/en/categories/it/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/network/</loc>
+    <loc>http://localhost:1313/en/tags/network/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/network/"
+                href="http://localhost:1313/tw/tags/network/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/network/"
+                href="http://localhost:1313/en/tags/network/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</loc>
+    <loc>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/</loc>
+    <loc>http://localhost:1313/en/tags/</loc>
     <lastmod>2025-01-30T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/"
+                href="http://localhost:1313/tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/gitlab/</loc>
+    <loc>http://localhost:1313/en/tags/gitlab/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/gitlab/"
+                href="http://localhost:1313/tw/tags/gitlab/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/gitlab/"
+                href="http://localhost:1313/en/tags/gitlab/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/gitlab-devops/</loc>
+    <loc>http://localhost:1313/en/series/gitlab-devops/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/gitlab-devops/"
+                href="http://localhost:1313/tw/series/gitlab-devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/gitlab-devops/"
+                href="http://localhost:1313/en/series/gitlab-devops/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</loc>
+    <loc>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/javascript/</loc>
+    <loc>http://localhost:1313/en/tags/javascript/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/series/</loc>
+    <loc>http://localhost:1313/en/series/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/"
+                href="http://localhost:1313/tw/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/"
+                href="http://localhost:1313/en/series/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/sonarqube/</loc>
+    <loc>http://localhost:1313/en/tags/sonarqube/</loc>
     <lastmod>2025-01-26T22:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/sonarqube/"
+                href="http://localhost:1313/tw/tags/sonarqube/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/sonarqube/"
+                href="http://localhost:1313/en/tags/sonarqube/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/python/</loc>
+    <loc>http://localhost:1313/en/tags/python/</loc>
+    <lastmod>2025-01-25T22:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</loc>
     <lastmod>2025-01-25T22:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</loc>
-    <lastmod>2025-01-25T22:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/microbit/</loc>
+    <loc>http://localhost:1313/en/series/microbit/</loc>
     <lastmod>2024-12-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/microbit/"
+                href="http://localhost:1313/tw/series/microbit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/microbit/"
+                href="http://localhost:1313/en/series/microbit/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/microbit/</loc>
+    <loc>http://localhost:1313/en/tags/microbit/</loc>
     <lastmod>2024-12-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/microbit/"
+                href="http://localhost:1313/tw/tags/microbit/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/microbit/"
+                href="http://localhost:1313/en/tags/microbit/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/microbit/microbit-shooting-game/</loc>
+    <loc>http://localhost:1313/en/doc/microbit/microbit-shooting-game/</loc>
     <lastmod>2024-12-13T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/node/</loc>
+    <loc>http://localhost:1313/en/tags/ai/</loc>
+    <lastmod>2024-10-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/ai/ollama-open-webui/</loc>
+    <lastmod>2024-10-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/ci/cd/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/ci/cd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ci/cd/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/network/google-analytics-alternatives/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/series/scratch/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/scratch/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/scratch/scratch-shooting-game/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/devops/sonarqube-plugins/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/series/x/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/x/</loc>
+    <lastmod>2024-01-29T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/series/node/</loc>
     <lastmod>2024-01-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/series/node/</loc>
+    <loc>http://localhost:1313/en/tags/node/</loc>
     <lastmod>2024-01-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/javascript/node-mysql/</loc>
+    <loc>http://localhost:1313/en/doc/javascript/node-mysql/</loc>
     <lastmod>2024-01-28T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/.net/</loc>
+    <loc>http://localhost:1313/en/doc/microbit/microbit-radio-communication/</loc>
+    <lastmod>2023-12-13T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/.net/</loc>
     <lastmod>2023-12-04T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/ci/cd/</loc>
-    <lastmod>2023-12-04T22:18:32+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/ci/cd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/ci/cd/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
+    <loc>http://localhost:1313/en/doc/devops/sonarqube-mono-dotnet4-integration/</loc>
     <lastmod>2023-12-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/microbit/microbit-rainbow-lighting/</loc>
+    <loc>http://localhost:1313/en/doc/microbit/microbit-rainbow-lighting/</loc>
     <lastmod>2023-11-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/javascript/node-openapi/</loc>
+    <loc>http://localhost:1313/en/doc/javascript/node-openapi/</loc>
     <lastmod>2023-09-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/dotnet/</loc>
+    <loc>http://localhost:1313/en/series/dotnet/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/dotnet/"
+                href="http://localhost:1313/tw/series/dotnet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/dotnet/"
+                href="http://localhost:1313/en/series/dotnet/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/dotnet/</loc>
+    <loc>http://localhost:1313/en/tags/dotnet/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/dotnet/"
+                href="http://localhost:1313/tw/tags/dotnet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/dotnet/"
+                href="http://localhost:1313/en/tags/dotnet/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</loc>
+    <loc>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</loc>
     <lastmod>2023-03-14T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/google-photos/</loc>
+    <loc>http://localhost:1313/en/doc/microbit/microbit-countdown-timer/</loc>
+    <lastmod>2023-01-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/microbit/microbit-running-counter/</loc>
+    <lastmod>2023-01-03T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/google-photos/</loc>
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</loc>
+    <loc>http://localhost:1313/en/doc/software/google-photos-search-by-device/</loc>
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/software/</loc>
+    <loc>http://localhost:1313/en/tags/software/</loc>
     <lastmod>2022-12-04T10:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/software/"
+                href="http://localhost:1313/tw/tags/software/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/software/"
+                href="http://localhost:1313/en/tags/software/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</loc>
+    <loc>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</loc>
     <lastmod>2022-10-23T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/android/</loc>
+    <loc>http://localhost:1313/en/tags/android/</loc>
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/android/"
+                href="http://localhost:1313/tw/tags/android/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/android/"
+                href="http://localhost:1313/en/tags/android/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://localhost:1313/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
+                href="http://localhost:1313/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
+                href="http://localhost:1313/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</loc>
+    <loc>http://localhost:1313/en/doc/android/gmail-notify-delete-archive/</loc>
     <lastmod>2022-10-10T06:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</loc>
+    <loc>http://localhost:1313/en/doc/android/android-gmail-notification-actions/</loc>
     <lastmod>2022-10-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
+    <loc>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</loc>
     <lastmod>2023-12-04T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/prometheus/</loc>
+    <loc>http://localhost:1313/en/tags/prometheus/</loc>
     <lastmod>2022-08-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/grafana/prometheus-pulls-pushes-metrics/</loc>
+    <loc>http://localhost:1313/en/doc/grafana/prometheus-pulls-pushes-metrics/</loc>
     <lastmod>2022-08-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/openwrt/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/openwrt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/openwrt/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/series/openwrt-%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/series/openwrt-%E6%94%B9%E6%A9%9F/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/series/openwrt-%E6%94%B9%E6%A9%9F/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/router/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/router/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/router/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/</loc>
-    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/%E6%94%B9%E6%A9%9F/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/%E6%94%B9%E6%A9%9F/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/series/android-tips/</loc>
-    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</loc>
-    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/youtube/</loc>
-    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/youtube/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dennys.github.io/en/tags/youtube/"
-                />
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/grafana/</loc>
+    <loc>http://localhost:1313/en/tags/grafana/</loc>
     <lastmod>2022-10-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/grafana/"
+                href="http://localhost:1313/tw/tags/grafana/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/grafana/"
+                href="http://localhost:1313/en/tags/grafana/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</loc>
+    <loc>http://localhost:1313/en/doc/grafana/grafana-cloud/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/openwrt/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/openwrt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/openwrt/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/router/openwrt-bandwidth-by-interface/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/series/openwrt-%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/series/openwrt-%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/series/openwrt-%E6%94%B9%E6%A9%9F/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/router/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/router/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/router/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/%E6%94%B9%E6%A9%9F/</loc>
+    <lastmod>2022-07-26T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/%E6%94%B9%E6%A9%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/%E6%94%B9%E6%A9%9F/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/series/android-tips/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/youtube/</loc>
+    <lastmod>2022-07-21T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/youtube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/youtube/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</loc>
     <lastmod>2022-07-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</loc>
+    <loc>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</loc>
     <lastmod>2022-10-13T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</loc>
+    <loc>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</loc>
     <lastmod>2022-07-13T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/posts/</loc>
+    <loc>http://localhost:1313/en/posts/</loc>
     <lastmod>2022-07-13T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/posts/"
+                href="http://localhost:1313/tw/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/posts/"
+                href="http://localhost:1313/en/posts/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</loc>
+    <loc>http://localhost:1313/en/doc/router/openwrt-adguard/</loc>
+    <lastmod>2022-07-12T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/vpn/</loc>
+    <lastmod>2022-07-12T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/vpn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vpn/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</loc>
     <lastmod>2022-07-10T10:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</loc>
+    <loc>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</loc>
     <lastmod>2022-07-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/podcast/</loc>
+    <loc>http://localhost:1313/en/tags/podcast/</loc>
     <lastmod>2022-07-09T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/podcast/"
+                href="http://localhost:1313/tw/tags/podcast/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/podcast/"
+                href="http://localhost:1313/en/tags/podcast/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/tags/database/</loc>
+    <loc>http://localhost:1313/en/tags/database/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/database/"
+                href="http://localhost:1313/tw/tags/database/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/database/"
+                href="http://localhost:1313/en/tags/database/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</loc>
+    <loc>http://localhost:1313/en/doc/database/get-first-record-of-a-range-sql/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/comments/</loc>
+    <loc>http://localhost:1313/en/comments/</loc>
     <lastmod>2022-06-20T00:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/about/</loc>
+    <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2022-06-03T22:18:32+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/categories/devops/</loc>
+    <loc>http://localhost:1313/en/tags/java/</loc>
     <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
-    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
-  </url><url>
-    <loc>https://dennys.github.io/en/tags/ifttt/</loc>
-    <lastmod>2022-03-24T00:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
-                href="https://dennys.github.io/tw/tags/ifttt/"
+                href="http://localhost:1313/tw/tags/java/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://dennys.github.io/en/tags/ifttt/"
+                href="http://localhost:1313/en/tags/java/"
                 />
   </url><url>
-    <loc>https://dennys.github.io/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</loc>
+    <loc>http://localhost:1313/en/doc/java/java-restful-service/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/series/java-service-management/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/service/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/categories/devops/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</loc>
+    <lastmod>2022-06-09T22:18:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/ifttt/</loc>
+    <lastmod>2022-03-24T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/tw/tags/ifttt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/ifttt/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/doc/ifttt/ifttt-send-currency-exchange-rate-mail/</loc>
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</loc>
+    <loc>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</loc>
     <lastmod>2022-03-24T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/tags/checkmarx/</loc>
+    <loc>http://localhost:1313/en/tags/checkmarx/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/categories/ci/cd/</loc>
+    <loc>http://localhost:1313/en/categories/ci/cd/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</loc>
+    <loc>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</loc>
+    <loc>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</loc>
     <lastmod>2022-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</loc>
+    <loc>http://localhost:1313/en/doc/database/how-to-analyze-size-of-table-index/</loc>
     <lastmod>2005-05-05T00:00:00+00:00</lastmod>
   </url>
 </urlset>

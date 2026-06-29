@@ -2,23 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Checkmarx on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/checkmarx/</link>
+    <link>http://localhost:1313/en/tags/checkmarx/</link>
     <description>Recent content in Checkmarx on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/checkmarx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/checkmarx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab Checkmarx CI/CD Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</guid>
       <description>
         
           
-            Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt; is a good tool to do code analysis, but there are 2 pain points during the flow.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot &lt;strong&gt;be triggered by&lt;/strong&gt; by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.)&lt;/li&gt;
+&lt;li&gt;Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or &lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt; or ...&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What we want is to integrate Checkmarx scan into GitLab&#39;s CI/CD flow including&lt;/p&gt;
           
           
         
@@ -27,16 +57,87 @@ Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered b
     
     <item>
       <title>GitLab Checkmarx SonarQube Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
       <description>
         
           
-            Purpose In previous article, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too. When we commit code to GitLab, we want GitLab to trigger these actions automatically:
-GitLab sends the code to Checkmarx to scan. GitLab triggers SonarQube to scan. SonarQube integrates Checkmarx&#39;s report. Procedure You can reference the official document: https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up
-Download the plugin from here, it only supports SonarQube LTS version (for now, it&#39;s 8.
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&#34;https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/&#34;&gt;previous article&lt;/a&gt;, we know how to integrate GitLab and Checkmarx. In this article, we want to integrate SonarQube too.
+When we commit code to &lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt;, we want GitLab to trigger these actions automatically:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt; sends the code to &lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt; to scan.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt; triggers &lt;a href=&#34;https://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; to scan.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; integrates &lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt;&#39;s report.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
+&lt;p&gt;You can reference the official document: &lt;a href=&#34;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube&amp;#43;Plugin&amp;#43;v8.5.0&amp;#43;and&amp;#43;up&#34;&gt;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169246832/SonarQube+Plugin+v8.5.0+and+up&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the plugin from &lt;a href=&#34;https://checkmarx.com/plugins/&#34;&gt;here&lt;/a&gt;, it only supports SonarQube LTS version (for now, it&#39;s 8.x)&lt;/li&gt;
+&lt;li&gt;Configurea Quality Gate/Profiles of SonarQube for Checkmarx&#39;s rules.&lt;/li&gt;
+&lt;li&gt;Use GitLab to trigger Checkmarx scan and record the project name of Checkmarx.&lt;/li&gt;
+&lt;li&gt;Configure Checkmarx data in SonarQube, which you can reference &lt;a href=&#34;https://checkmarx.atlassian.net/wiki/spaces/SD/pages/169345207/Configuring+a+Project+for+the+Checkmarx+SonarQube+Plugin+v8.5.0+and+up&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Trigger GitLab CI again, you will see the following log in your SonarQube job&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sensor Import Checkmarx scan results to SonarQube &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;checkmarx&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Retrieving Checkmarx scan results &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; current module &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;Checkmarx plugin version: 2021.2.1&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Getting Checkmarx configuration data from sonar Database.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Resolving Cx setting: checkmarx.server.project_name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Forced authentication is enabled: Sonar credentials must be provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sonar server token is provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx credentials migration not needed
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Sonar server token is provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Resolving Cx setting: checkmarx.server.project_name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Forced authentication is enabled: Sonar credentials must be provided
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx server version &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;9.2.0.41015&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;. Hotfix &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Logging into the Checkmarx service.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Connecting to https://your.checkmarx.server/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Initializing Cx client &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;2020.2.4.NO.SCA&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx server version &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;9.2.0.41015&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;. Hotfix &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Logging into the Checkmarx service.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: full team path: &lt;span class=&#34;se&#34;&gt;\C&lt;/span&gt;xServer&lt;span class=&#34;se&#34;&gt;\\&lt;/span&gt;Team1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: preset name: All
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: ---------------------------------Get Last CxSAST Results:--------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Waiting &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; server to generate xml report. &lt;span class=&#34;m&#34;&gt;4990&lt;/span&gt; seconds left to timeout
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx High vulnerabilities: &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-High vulnerabilities: &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx Medium vulnerabilities: &lt;span class=&#34;m&#34;&gt;23&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-Medium vulnerabilities: &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx Low vulnerabilities: &lt;span class=&#34;m&#34;&gt;142&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx New-Low vulnerabilities: &lt;span class=&#34;m&#34;&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;INFO: Checkmarx scan link: https://your.checkmarx.server//CxWebClient/ViewerMain.aspx?scanId&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;1000157&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;ProjectID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;67&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;You can see the Checkmarx issues in SonarQube now.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;
+&lt;p&gt;I find some issues are not created in SonarQube and it seems due to the rule is not defined in Checkmarx&#39;s SonarQube plugin. I&#39;m still checking it.&lt;/p&gt;
           
           
         

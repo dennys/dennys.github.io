@@ -2,23 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/java/</link>
+    <link>http://localhost:1313/tw/tags/java/</link>
     <description>Recent content in Java on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maven 4 - Others</title>
-      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
+      <link>http://localhost:1313/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
+      <guid>http://localhost:1313/tw/doc/java/maven-4-others/</guid>
       <description>
         
           
-            Package source code 在 multi module 的架構裡面, 因為都只有打包 .class 到 local repository 的 .jar 檔裡面. 因此在 Eclipse 裡面按 F3 是無法連結到 source code 的, 要使用 maven-source-plugin 把 source code 也打包到 local repository 才可以. 如果原始的檔名是 app-1.0.jar, 則 source 會被打包到 app-1.0-sources.jar goal 請使用 source:jar
-1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;!-- Attach sources to repository --&amp;gt; 4 &amp;lt;plugin&amp;gt; 5 &amp;lt;artifactId&amp;gt;maven-source-plugin&amp;lt;/artifactId&amp;gt; 6 &amp;lt;executions&amp;gt; 7 &amp;lt;execution&amp;gt; 8 &amp;lt;id&amp;gt;attach-sources&amp;lt;/id&amp;gt; 9 &amp;lt;phase&amp;gt;verify&amp;lt;/phase&amp;gt; 10 &amp;lt;goals&amp;gt; 11 &amp;lt;goal&amp;gt;jar&amp;lt;/goal&amp;gt; 12 &amp;lt;/goals&amp;gt; 13 &amp;lt;/execution&amp;gt; 14 &amp;lt;/executions&amp;gt; 15 &amp;lt;/plugin&amp;gt; 16 &amp;lt;/plugins&amp;gt; 17 &amp;lt;/build&amp;gt; 參考 http://maven.
+            &lt;h2 id=&#34;package-source-code&#34;&gt;Package source code&lt;/h2&gt;
+&lt;p&gt;在 multi module 的架構裡面, 因為都只有打包 .class 到 local repository 的 .jar 檔裡面. 因此在 Eclipse 裡面按 F3 是無法連結到 source code 的, 要使用 maven-source-plugin 把 source code 也打包到 local repository 才可以. 如果原始的檔名是 app-1.0.jar, 則 source 會被打包到 app-1.0-sources.jar goal 請使用 source:jar&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;c&#34;&gt;&amp;lt;!-- Attach sources to repository --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;maven-source-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;attach-sources&lt;span class=&#34;nt&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;phase&amp;gt;&lt;/span&gt;verify&lt;span class=&#34;nt&#34;&gt;&amp;lt;/phase&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;goal&amp;gt;&lt;/span&gt;jar&lt;span class=&#34;nt&#34;&gt;&amp;lt;/goal&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;/goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;/execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://maven.apache.org/plugins/maven-source-plugin/jar-mojo.html&#34;&gt;http://maven.apache.org/plugins/maven-source-plugin/jar-mojo.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -27,16 +48,46 @@
     
     <item>
       <title>Maven 3 - 打包 EJB, EAR</title>
-      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
+      <link>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</link>
       <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
+      <guid>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</guid>
       <description>
         
           
-            Ear 的打包 Ear 的打包分成兩階段, 第一個打包各個 ejb, 第二是把各個 ejb 加上 library 打包成 ear. 打包 ejb 的部分相對簡單, 如下. 最後會打包出 app-ejb1.jar (依據 finalName 的設定) 這個 ejb 檔案.
-EJB Client generateClient 是指定要產生一個 app-ejb1-client.jar 的檔案, 不過如果只加 generateClient 而沒有任何其他參數, 預設是只會過濾某幾個 pattern 而已, 請再加上 clientIncludes, clientExcludes 來過濾. 詳情可參考
-http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html 1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;plugin&amp;gt; 4 &amp;lt;groupid&amp;gt;org.apache.maven.plugins&amp;lt;/groupid&amp;gt; 5 &amp;lt;artifactid&amp;gt;maven-compiler-plugin&amp;lt;/artifactid&amp;gt; 6 &amp;lt;version&amp;gt;2.3.2&amp;lt;/version&amp;gt; 7 &amp;lt;configuration&amp;gt; 8 &amp;lt;source&amp;gt;&amp;lt;/source&amp;gt;1.6 9 &amp;lt;target&amp;gt;1.6&amp;lt;/target&amp;gt; 10 &amp;lt;/configuration&amp;gt; 11 &amp;lt;/plugin&amp;gt; 12 &amp;lt;plugin&amp;gt; 13 &amp;lt;groupid&amp;gt;org.apache.maven.plugins&amp;lt;/groupid&amp;gt; 14 &amp;lt;artifactid&amp;gt;maven-ejb-plugin&amp;lt;/artifactid&amp;gt; 15 &amp;lt;version&amp;gt;2.
+            &lt;h2 id=&#34;ear-的打包&#34;&gt;Ear 的打包&lt;/h2&gt;
+&lt;p&gt;Ear 的打包分成兩階段, 第一個打包各個 ejb, 第二是把各個 ejb 加上 library 打包成 ear. 打包 ejb 的部分相對簡單, 如下. 最後會打包出 app-ejb1.jar (依據 finalName 的設定) 這個 ejb 檔案.&lt;/p&gt;
+&lt;h3 id=&#34;ejb-client&#34;&gt;EJB Client&lt;/h3&gt;
+&lt;p&gt;generateClient 是指定要產生一個 app-ejb1-client.jar 的檔案, 不過如果只加 generateClient 而沒有任何其他參數, 預設是只會過濾某幾個 pattern 而已, 請再加上 clientIncludes, clientExcludes 來過濾. 詳情可參考&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html&#34;&gt;http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html&#34;&gt;http://maven.apache.org/plugins/maven-ejb-plugin/examples/ejb-client-dependency.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;maven-compiler-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.3.2&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;source&amp;gt;&amp;lt;/source&amp;gt;&lt;/span&gt;1.6
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;target&amp;gt;&lt;/span&gt;1.6&lt;span class=&#34;nt&#34;&gt;&amp;lt;/target&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;maven-ejb-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.3&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;ejbversion&amp;gt;&lt;/span&gt;2.1&lt;span class=&#34;nt&#34;&gt;&amp;lt;/ejbversion&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;generateclient&amp;gt;&lt;/span&gt;true&lt;span class=&#34;nt&#34;&gt;&amp;lt;/generateclient&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;finalname&amp;gt;&lt;/span&gt;app-ejb1&lt;span class=&#34;nt&#34;&gt;&amp;lt;/finalname&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打包 ear 檔的部分則要注意一下. 首先是要設定好 dependency 如下, 注意雖然上面打包的 ejb 其副檔名是 .jar, 但這裡的 type 必須設定成 ejb&lt;/p&gt;
           
           
         
@@ -45,16 +96,51 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 2 - 打包 war (含 applet)</title>
-      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
+      <link>http://localhost:1313/tw/doc/java/maven-2-war-applet/</link>
       <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
+      <guid>http://localhost:1313/tw/doc/java/maven-2-war-applet/</guid>
       <description>
         
           
-            在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的目錄結構放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).
-另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:
-先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local repository 裡面去. 使用 maven-dependency-plugin 的 copy, 將 applet 放到指定的目錄. 這裡因為要放到 root, 所以指定的是 ${project.build.directory}/app-war-1.0. 後面的 &amp;quot;app-war-1.0&amp;quot; 請依照實際的專案修改. 1 &amp;lt;build&amp;gt; 2 &amp;lt;plugins&amp;gt; 3 &amp;lt;plugin&amp;gt; 4 &amp;lt;artifactid&amp;gt;maven-dependency-plugin&amp;lt;/artifactid&amp;gt; 5 &amp;lt;version&amp;gt;2.
+            &lt;p&gt;在 Maven 裡面打包 war 應該是最簡單的了, 照著 Maven 的&lt;a href=&#34;https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html&#34;&gt;目錄結構&lt;/a&gt;放好, 他就會自動去幫你把程式打包好. 唯一的問題是, 如果有用到 applet, 那就得另外處理了. 一個簡單的方法, 把 applet 設定成 war 的 dependency, 那就會把 applet 放到 WEB-INF/lib 下面, 不過這樣子似乎無法呼叫到 (這部分如果有解麻煩指正).&lt;/p&gt;
+&lt;p&gt;另外的方法是用 Maven 的 maven-dependency-plugin, 做法如下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;先把 applet 打包好, 並且記得在使用 Maven 時加上 install 這個 goal, 這樣就會把打包好的 applet 放到 local repository 裡面去.&lt;/li&gt;
+&lt;li&gt;使用 maven-dependency-plugin 的 copy, 將 applet 放到指定的目錄. 這裡因為要放到 root, 所以指定的是 ${project.build.directory}/app-war-1.0. 後面的 &amp;quot;app-war-1.0&amp;quot; 請依照實際的專案修改.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;maven-dependency-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.2&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;copy&lt;span class=&#34;nt&#34;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;phase&amp;gt;&lt;/span&gt;prepare-package&lt;span class=&#34;nt&#34;&gt;&amp;lt;/phase&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;goal&amp;gt;&lt;/span&gt;copy&lt;span class=&#34;nt&#34;&gt;&amp;lt;/goal&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;/goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactitems&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactitem&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;com.yourcompany&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;app-client&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;1.0&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;type&amp;gt;&lt;/span&gt;jar&lt;span class=&#34;nt&#34;&gt;&amp;lt;/type&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;overwrite&amp;gt;&lt;/span&gt;true&lt;span class=&#34;nt&#34;&gt;&amp;lt;/overwrite&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                  &lt;span class=&#34;nt&#34;&gt;&amp;lt;destfilename&amp;gt;&lt;/span&gt;app-client.jar&lt;span class=&#34;nt&#34;&gt;&amp;lt;/destfilename&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactitem&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactitems&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;outputdirectory&amp;gt;&lt;/span&gt;${project.build.directory}/app-war-1.0&lt;span class=&#34;nt&#34;&gt;&amp;lt;/outputdirectory&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;/execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://maven.apache.org/plugins/maven-dependency-plugin/&#34;&gt;http://maven.apache.org/plugins/maven-dependency-plugin/&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -63,16 +149,62 @@ http://maven.apache.org/plugins/maven-ejb-plugin/examples/generating-ejb-client.
     
     <item>
       <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
-      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
+      <link>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</link>
       <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <guid>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</guid>
       <description>
         
           
-            Maven 1 - 打包 Jar, Applet 並簽名 Sign&#39;,&#39;Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.
-以下是要把 Applet 程式打包的寫法, 幾個重點:
-descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, 則會打包成 app-client-1.0-jar-with-dependencies.jar appendAssemblyId 設成 false, 這樣產生出來的 jar 檔案名稱才不會有 -with-dependencies 的字 phase 請指定 package, 這樣才會把需要的 class 都打包進去 goal 請使用 assembly:single (不指定也可以, 有 package 也會執行到這裡) 注意, maven-assembly-plugin 一定要用 2.2-beta-5, 用 2.
+            &lt;p&gt;Maven 1 - 打包 Jar, Applet 並簽名 Sign&#39;,&#39;Applet 程式在 package 時有兩個重點, 一是要把所有用到的 jar 程式庫都包在一起, 因為 applet 不像 ear 或 war 有固定目錄可以放 *.jar. 二是如果需要用到 browser 機器的一些資源 (如印表機), 則必須經過簽名.&lt;/p&gt;
+&lt;p&gt;以下是要把 Applet 程式打包的寫法, 幾個重點:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打包進最後的 jar 檔. 預設會打包到另一個檔案, 原來的名字如果是 app-client-1.0.jar, 則會打包成 app-client-1.0-jar-with-dependencies.jar&lt;/li&gt;
+&lt;li&gt;appendAssemblyId 設成 false, 這樣產生出來的 jar 檔案名稱才不會有 &lt;em&gt;&lt;strong&gt;-with-dependencies&lt;/strong&gt;&lt;/em&gt; 的字&lt;/li&gt;
+&lt;li&gt;phase 請指定 package, 這樣才會把需要的 class 都打包進去&lt;/li&gt;
+&lt;li&gt;goal 請使用 assembly:single (不指定也可以, 有 package 也會執行到這裡)&lt;/li&gt;
+&lt;li&gt;注意, maven-assembly-plugin 一定要用 2.2-beta-5, 用 2.2 或 2.2.1 都會有問題 (這感覺不太合理, 不過測試結果目前就是這樣, 或許是我哪裡弄錯了)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;pre&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;brush: xml&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;title=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Client 的 pom.xml (打包用)&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupid&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;maven-compiler-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.3.2&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;source&amp;gt;&amp;lt;/source&amp;gt;&lt;/span&gt;1.6
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;target&amp;gt;&lt;/span&gt;1.6&lt;span class=&#34;nt&#34;&gt;&amp;lt;/target&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactid&amp;gt;&lt;/span&gt;maven-assembly-plugin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.2-beta-5&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;descriptorrefs&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;descriptorref&amp;gt;&lt;/span&gt;jar-with-dependencies&lt;span class=&#34;nt&#34;&gt;&amp;lt;/descriptorref&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;/descriptorrefs&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;finalname&amp;gt;&lt;/span&gt;${project.build.finalName}&lt;span class=&#34;nt&#34;&gt;&amp;lt;/finalname&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;appendassemblyid&amp;gt;&lt;/span&gt;false&lt;span class=&#34;nt&#34;&gt;&amp;lt;/appendassemblyid&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;archive&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;index&amp;gt;&lt;/span&gt;true&lt;span class=&#34;nt&#34;&gt;&amp;lt;/index&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;manifest&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;adddefaultimplementationentries&amp;gt;&lt;/span&gt;true&lt;span class=&#34;nt&#34;&gt;&amp;lt;/adddefaultimplementationentries&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;/manifest&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;/archive&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;phase&amp;gt;&lt;/span&gt;package&lt;span class=&#34;nt&#34;&gt;&amp;lt;/phase&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;nt&#34;&gt;&amp;lt;goal&amp;gt;&lt;/span&gt;single&lt;span class=&#34;nt&#34;&gt;&amp;lt;/goal&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;lt;/goals&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;nt&#34;&gt;&amp;lt;/execution&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;lt;/executions&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;簽名的部分, 使用 maven-jarsigner-plugin 來做簽名即可.&lt;/p&gt;
           
           
         
@@ -81,20 +213,52 @@ descriptorRef 使用 jar-with-dependencies: 會把用到的 class 都一起打�
     
     <item>
       <title>設定 WebLogic 的 memory 參數</title>
-      <link>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</link>
+      <link>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</link>
       <pubDate>Fri, 02 Apr 2010 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</guid>
+      <guid>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</guid>
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.問題 這是第二次吃虧了, 把他記下來, 免得下次又忘記了...
-問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.
-java.lang.OutOfMemoryError: PermGen space
-解法 如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...
-建議的作法是修改 USER_MEM_ARGS, 可參考 Modifying JVM Parameters in Server Start Scripts
-最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.
-1if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 2 if [ &amp;#34;${PRODUCTION_MODE}&amp;#34; = &amp;#34;&amp;#34; ] ; then 3 MEM_DEV_ARGS=&amp;#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &amp;#34; 4 export MEM_DEV_ARGS 5 fi 6fi 7 8# Had to have a separate test here BECAUSE of immediate variable expansion on windows 9 10if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;Sun&amp;#34; ] ; then 11 MEM_ARGS=&amp;#34;${MEM_ARGS} ${MEM_DEV_ARGS} -XX:MaxPermSize=128m&amp;#34; 12 export MEM_ARGS 13fi 14 15if [ &amp;#34;${JAVA_VENDOR}&amp;#34; = &amp;#34;HP&amp;#34; ] ; then 16 MEM_ARGS=&amp;#34;${MEM_ARGS} -XX:MaxPermSize=128m&amp;#34; 17 export MEM_ARGS 18fi 19 20# IF USER_MEM_ARGS the environment variable is set, use it to override ALL MEM_ARGS values 21 22if [ &amp;#34;${USER_MEM_ARGS}&amp;#34; !
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;問題&#34;&gt;問題&lt;/h2&gt;
+&lt;p&gt;這是第二次吃虧了, 把他記下來, 免得下次又忘記了...&lt;/p&gt;
+&lt;p&gt;問題的起源在於記憶體不足, 通常訊息如下. 一次是某個單一 XML 訊息太大, 另一次是 ear 檔案太大, re-deploy 的時候會出問題.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;java.lang.OutOfMemoryError: PermGen space&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解法&#34;&gt;解法&lt;/h2&gt;
+&lt;p&gt;如果是簡單的 Java 程式, 那解法很簡單, 改參數就好了, 把 -XX:PermSize=*** 放大即可. 不過在 WebLogic 裡面, script 包了好幾層, 就很容易漏掉了. 這次就是因為呆呆的直接在最外層設定 MEM_ARGS, 然後被裡層的 script 蓋掉了, 所以當然沒作用...&lt;/p&gt;
+&lt;p&gt;建議的作法是修改 &lt;code&gt;USER_MEM_ARGS&lt;/code&gt;, 可參考 Modifying JVM Parameters in Server Start Scripts&lt;/p&gt;
+&lt;p&gt;最後, 在 WebLogic 10, 設定環境變數的程式在 domains//bin/setDomainEnv.sh, 可以看出不同平台, 甚至 production/develop mode 的不同也會導致參數不同, 不過不建議改這裡.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;JAVA_VENDOR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Sun&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;PRODUCTION_MODE&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;nv&#34;&gt;MEM_DEV_ARGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-XX:CompileThreshold=8000 -XX:PermSize=48m &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;               &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; MEM_DEV_ARGS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Had to have a separate test here BECAUSE of immediate variable expansion on windows&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;JAVA_VENDOR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Sun&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nv&#34;&gt;MEM_ARGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;MEM_ARGS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;MEM_DEV_ARGS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -XX:MaxPermSize=128m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; MEM_ARGS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;JAVA_VENDOR&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;HP&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nv&#34;&gt;MEM_ARGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;MEM_ARGS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; -XX:MaxPermSize=128m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; MEM_ARGS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# IF USER_MEM_ARGS the environment variable is set, use it to override ALL MEM_ARGS values&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;USER_MEM_ARGS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; !&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nv&#34;&gt;MEM_ARGS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;USER_MEM_ARGS&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;       &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; MEM_ARGS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
           
           
         
@@ -103,24 +267,28 @@ java.lang.OutOfMemoryError: PermGen space
     
     <item>
       <title>WebLogic 和 NetWeaver 的 License</title>
-      <link>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</link>
+      <link>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</link>
       <pubDate>Sat, 08 Aug 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</guid>
+      <guid>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</guid>
       <description>
         
           
-            又是一篇筆記, 又是一個吃虧兩次的問題...
-WebLogic
-先講 WebLogic, 免費的 developer license, 可以用一年, 但是只能有 5 個 IP 連上來, 而且我覺得他 server 本身應該就已經算上一個 IP 了. 如果超過了, 第 6 個以後的 IP 會看到錯誤訊息
-錯誤訊息如下:
-&amp;lt;BEA-000211&amp;gt; &amp;lt;Connection rejected, the server license allows connections from only 5 unique IP addresses.&amp;gt;
-聽說 Bea 在被 Oracle 買下之後, 這些 license 檔案都開放自由下載了(當然, 該給錢的還是要給), 不過我是沒有找到就是了. (有人如果知道, 麻煩提供一下, 謝謝.
-解法:
-重開機就會重新計算 當然, 放上 license 就可以了. 參考: WebLogic Overview
-http://edocs.bea.com/platform/docs81/install/license.html
-NetWeaver
-NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 過了時間之後, 每 25 分鐘會給你自動停機.
+            &lt;p&gt;又是一篇筆記, 又是一個吃虧兩次的問題...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.bea.com/framework.jsp?CNT=index.htm&amp;amp;FP=/content/products/weblogic&#34;&gt;WebLogic&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先講 WebLogic, 免費的 developer license, 可以用一年, 但是只能有 5 個 IP 連上來, 而且我覺得他 server 本身應該就已經算上一個 IP 了. 如果超過了, 第 6 個以後的 IP 會看到錯誤訊息&lt;br&gt;
+錯誤訊息如下:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;BEA-000211&amp;gt; &amp;lt;Connection rejected, the server license allows connections from only 5 unique IP addresses.&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;聽說 Bea 在被 Oracle 買下之後, 這些 license 檔案都開放自由下載了(當然, 該給錢的還是要給), 不過我是沒有找到就是了. (有人如果知道, 麻煩提供一下, 謝謝.&lt;/p&gt;
+&lt;p&gt;解法:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;重開機就會重新計算&lt;/li&gt;
+&lt;li&gt;當然, 放上 license 就可以了.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;參考: &lt;a href=&#34;http://e-docs.bea.com/wls/docs92/intro/overview.html#wp1087177&#34;&gt;WebLogic Overview&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://edocs.bea.com/platform/docs81/install/license.html&#34; title=&#34;http://edocs.bea.com/platform/docs81/install/license.html&#34;&gt;http://edocs.bea.com/platform/docs81/install/license.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NetWeaver&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 過了時間之後, 每 25 分鐘會給你自動停機. 但是如果直接 restart 是無法啟動的, 得先 stop 再 start, 而且重點是, 畫面上是看不到的, 因此得去 log 裡面翻箱倒櫃找...&lt;/p&gt;
           
           
         
@@ -129,16 +297,54 @@ NetWeaver 安裝完之後, 會有一個 temporary license, 可以使用 28 天, 
     
     <item>
       <title>JDBC Leaked Connection in WebLogic</title>
-      <link>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
+      <link>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
       <pubDate>Mon, 06 Jul 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
+      <guid>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 最近發現某個 WebLogic 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.
-jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.
-1java.sql.SQLException: Internal error: Cannot obtain XAConnection 2weblogic.common.resourcepool.ResourceDeadException 因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近發現某個 &lt;a href=&#34;http://www.bea.com/framework.jsp?CNT=index.htm&amp;amp;FP=/content/products/weblogic&#34;&gt;WebLogic&lt;/a&gt; 的 JDBC connection 只會增加, 不會減少, 意思是說, 程式和 WebLogic 拿了很多 JDBC connection, 但是都沒有還給系統. 在程式執行一段時間之後, 就會拿不到 JDBC connection 了, 然後就掛了. WebLogic 的 console 可以看到, connection 的數字一直增加.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/dennys_blog/3373931575&#34; title=&#34;jdbc_monitor&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;jdbc_monitor&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;929&#34;
+        height=&#34;132&#34;
+        src=&#34;http://localhost:1313/3373931575_16a47e0632_o_10117429165571155939.jpg&#34;
+      
+      
+        title=&#34;jdbc_monitor&#34;
+      
+    /&gt;
+
+    &lt;figcaption class=&#34;caption_figure caption_external&#34;&gt;jdbc_monitor&lt;/figcaption&gt;&lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;p&gt;WebLogic 的 log 如下, 整個 stack trace 就不全列出來了, 重點在於, 當 WebLogic 的 JDBC connection pool 的 connection 都被要光之後, 後面的程式就無法和 database 連線了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;java.sql.SQLException: Internal error: Cannot obtain XAConnection  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;weblogic.common.resourcepool.ResourceDeadException  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;因為在上圖中的 WebLogic 的 console 看到的 &amp;quot;leaked connection count&amp;quot; 一直都是 0, 所以我也沒有往這個方向思考過. 不過後來才發現需要做一些設定才能偵測 leaked connection, 如下&lt;/p&gt;
           
           
         
@@ -147,16 +353,23 @@ jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
     
     <item>
       <title>Command Line Deploy on NetWeaver</title>
-      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</link>
+      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</link>
       <pubDate>Sun, 22 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</guid>
+      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</guid>
       <description>
         
           
-            前言 要把 ear 檔給 deploy 到 NetWeaver, 標準的作法應該是使用 SDM Remote GUI Client , 使用上是不困難, 但有幾個缺點:
-雖然說是 Remote GUI, 但是基本上你的環境得有安裝 NetWeaver 才行, 也不知道能不能只單單安裝 SDM. 因此我都是用 VNC 連上去再做 deploy GUI 的好處是簡單, 缺點就是你如果常常要做這個動作, 然後一直在選檔案, 執行, 確認, ... 等等按來按去, 按久了也真的滿累的 這個 GUI 有個很怪的地方, 沒法 re-deploy, 也就是說, 如果要更新版本時, 得先把舊版 un-deploy, 然後再 deploy, 這樣真的滿不方便的 Command line deploy 的方法 因此呢, 需要研究如何在 NetWeaver 上使用 command line deploy. 研讀了一下使用手冊 (裝好 SDM 就有了, 放在 /program/doc/SDMCommandLineDoc***_en_final.pdf), 指令如下
-步驟1: 把 SDM 停下來 (*** 代表你 instance 的名字, 通常是三個大寫字元)
+            &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;要把 ear 檔給 deploy 到 NetWeaver, 標準的作法應該是使用 &lt;a href=&#34;http://help.sap.com/SAPHELP_NW70/helpdata/EN/3c/7d9e2588827546a2b8f2e7d8a26434/frameset.htm&#34;&gt;SDM Remote GUI Client&lt;/a&gt; , 使用上是不困難, 但有幾個缺點:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;雖然說是 Remote GUI, 但是基本上你的環境得有安裝 NetWeaver 才行, 也不知道能不能只單單安裝 SDM. 因此我都是用 VNC 連上去再做 deploy&lt;/li&gt;
+&lt;li&gt;GUI 的好處是簡單, 缺點就是你如果常常要做這個動作, 然後一直在選檔案, 執行, 確認, ... 等等按來按去, 按久了也真的滿累的&lt;/li&gt;
+&lt;li&gt;這個 GUI 有個很怪的地方, 沒法 re-deploy, 也就是說, 如果要更新版本時, 得先把舊版 un-deploy, 然後再 deploy, 這樣真的滿不方便的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;command-line-deploy-的方法&#34;&gt;Command line deploy 的方法&lt;/h2&gt;
+&lt;p&gt;因此呢, 需要研究如何在 NetWeaver 上使用 command line deploy. 研讀了一下使用手冊 (裝好 SDM 就有了, 放在 /program/doc/SDMCommandLineDoc***_en_final.pdf), 指令如下&lt;/p&gt;
+&lt;p&gt;步驟1: 把 SDM 停下來 (*** 代表你 instance 的名字, 通常是三個大寫字元)&lt;/p&gt;
           
           
         
@@ -165,16 +378,24 @@ jdbc_monitor解決方法 WebLogic 的 log 如下, 整個 stack trace 就不全�
     
     <item>
       <title>Command Line Deploy on WebLogic</title>
-      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</link>
+      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</link>
       <pubDate>Sat, 21 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</guid>
+      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</guid>
       <description>
         
           
-            注意這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.前言 在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 Ant 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 WebLogic 的文件, 看來不難做到, 而且還滿方便的.
-Command line deploy 的方法 如果 WebLogic 就裝在自己的電腦上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.
-1java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &amp;#34;D:\\app\_name.ear&amp;#34; 如果 WebLogic 是裝在遠端的電腦, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    這篇文章是 WebLogic 10 的時代寫的, 並沒有在後續版本測試過.
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 ear 檔愈長愈大之後 (30mb左右), deploy 程式變成一個有點累的動作, 因為 &lt;a href=&#34;http://ant.apache.org/&#34;&gt;Ant&lt;/a&gt; 只能做到把 ear 檔給 build 好, 之後的動作 (開 browser, login, deploy, active, start ap, ...) 需要不少時間, 不但要按好幾個按鍵, 中間還得等待, 因此, 得找個方法讓 deploy 的動作自動化, 以便放進 Ant 或是批次檔. 翻了一下 &lt;a href=&#34;http://www.bea.com/framework.jsp?CNT=index.htm&amp;amp;FP=/content/products/weblogic&#34;&gt;WebLogic&lt;/a&gt; 的文件, 看來不難做到, 而且還滿方便的.&lt;/p&gt;
+&lt;h2 id=&#34;command-line-deploy-的方法&#34;&gt;Command line deploy 的方法&lt;/h2&gt;
+&lt;p&gt;如果 WebLogic 就裝在&lt;strong&gt;自己的電腦&lt;/strong&gt;上, 假設程式放在 D:\app_name.ear, 使用下列的指令就可以很方便的直接 deploy 上去.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;java -cp D:\\bea\\wlserver\_10.0\\server\\lib\\weblogic.jar weblogic.Deployer -adminurl t3://localhost:7001 -user weblogic -password weblogic -deploy &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\\app\_name.ear&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果 WebLogic 是裝在&lt;strong&gt;遠端的電腦&lt;/strong&gt;, 指令基本上還是一樣, 只要多加上 -upload 參數就可以了.&lt;/p&gt;
           
           
         

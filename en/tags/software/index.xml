@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/software/</link>
+    <link>http://localhost:1313/en/tags/software/</link>
     <description>Recent content in Software on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search Google Photos by Device</title>
-      <link>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</link>
+      <link>http://localhost:1313/en/doc/software/google-photos-search-by-device/</link>
       <pubDate>Sun, 04 Dec 2022 10:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</guid>
+      <guid>http://localhost:1313/en/doc/software/google-photos-search-by-device/</guid>
       <description>
         
           
-            I&#39;m trying to search my photos in Google Photos by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a Google Pixel 5, when I try to search for Google Pixel 5, I can get all the photos taken by it, but when I just type Google Pixel to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.
+            &lt;p&gt;I&#39;m trying to search my photos in &lt;a href=&#34;https://photos.google.com/&#34;&gt;Google Photos&lt;/a&gt; by device name (iPhone or Google Pixel or ...), but it&#39;s weird. I have a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pixel_5&#34;&gt;Google Pixel 5&lt;/a&gt;, when I try to search for &lt;em&gt;Google Pixel 5&lt;/em&gt;, I can get all the photos taken by it, but when I just type &lt;em&gt;Google Pixel&lt;/em&gt; to search, it only shows partial photos. I&#39;m not sure about Google&#39;s search algorithm, I just record my test results.&lt;/p&gt;
           
           
         
@@ -26,15 +26,25 @@
     
     <item>
       <title>File Search/Replace Tool</title>
-      <link>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</link>
+      <link>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</link>
       <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</guid>
+      <guid>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</guid>
       <description>
         
           
-            Requirement Try to find software that can search or replace text in files, and it should support these functions:
-Free software. Supports UTF-8. It can show partial find content in the search result (or it takes a long time to see the file content). Double click can open the file with the associated editor. Supports replace. As fast as possible (of course) Software comparison Compare 3 software, I prefer to use grepWin.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Try to find software that can search or replace text in files, and it should support these functions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Free software.&lt;/li&gt;
+&lt;li&gt;Supports UTF-8.&lt;/li&gt;
+&lt;li&gt;It can show partial find content in the search result (or it takes a long time to see the file content).&lt;/li&gt;
+&lt;li&gt;Double click can open the file with the associated editor.&lt;/li&gt;
+&lt;li&gt;Supports replace.&lt;/li&gt;
+&lt;li&gt;As fast as possible (of course)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;software-comparison&#34;&gt;Software comparison&lt;/h2&gt;
+&lt;p&gt;Compare 3 software, I prefer to use grepWin.&lt;/p&gt;
           
           
         
@@ -43,15 +53,20 @@ Free software. Supports UTF-8. It can show partial find content in the search re
     
     <item>
       <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
-      <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
+      <link>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
       <pubDate>Wed, 13 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
+      <guid>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
       <description>
         
           
-            K-9 Mail 6.200 is released on 2022/07/08, it add the support to OAuth 2.0. Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail, you need to use App Passwords. It&#39;s not convenient, you can reference https://ekiwi-blog.de/en/16841/ to check the detail with a step-by-step video.
-In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, AOL, and personal Microsoft accounts (Office365 accounts are not supported yet).
+            &lt;p&gt;&lt;a href=&#34;https://github.com/thundernest/k-9&#34;&gt;K-9 Mail&lt;/a&gt; 6.200 is released on 2022/07/08, it add the support to OAuth 2.0.
+Before it, if you activated the 2-factor verification on your Google account, when you try to use K-9 mail to connect to Gmail,
+you need to use &lt;a href=&#34;https://support.google.com/mail/answer/185833?hl=en&#34;&gt;App Passwords&lt;/a&gt;.
+It&#39;s not convenient, you can reference &lt;a href=&#34;https://ekiwi-blog.de/en/16841/&#34;&gt;https://ekiwi-blog.de/en/16841/&lt;/a&gt; to check the detail with a step-by-step video.&lt;/p&gt;
+&lt;p&gt;In K-9 Mail &lt;a href=&#34;https://github.com/thundernest/k-9/releases/tag/6.200&#34;&gt;6.200&lt;/a&gt; release, it supports for using OAuth 2.0 with Google, Yahoo, AOL,
+and personal Microsoft accounts (Office365 accounts are not supported yet). You don&#39;t need to input your Google password anymore,
+you just need to grant privilege to K-9 mail.&lt;/p&gt;
           
           
         
@@ -60,15 +75,24 @@ In K-9 Mail 6.200 release, it supports for using OAuth 2.0 with Google, Yahoo, A
     
     <item>
       <title>Batch Photo Files Rename Tools (by EXIF).</title>
-      <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>
+      <link>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</link>
       <pubDate>Sun, 10 Jul 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</guid>
+      <guid>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</guid>
       <description>
         
           
-            Requirement Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.
-Batch change filenames to P[photo capture date]-[camera model].jpg. For example, P20220710-101405-iPhone 13.jpg. Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ... Can add a serial number automatically when the new filename is duplicated with others. Software There are lots of rename tools.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Most cameras&#39; filenames are like &#39;DC*****&#39; or &#39;P*****&#39;, I want to find a tool that has the following features.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Batch change filenames to P[photo capture date]-[camera model].jpg. For example, &lt;em&gt;P20220710-101405-iPhone 13.jpg&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Can change the camera model string, for example, I want to change &amp;quot;iPhone 6&amp;quot; to &amp;quot;i6&amp;quot;, &amp;quot;DMC-G6&amp;quot; to &amp;quot;G6&amp;quot;, &amp;quot;DSC-RX100M5A&amp;quot; to &amp;quot;R1005A&amp;quot;, ...&lt;/li&gt;
+&lt;li&gt;Can add a serial number automatically when the new filename is duplicated with others.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;
+&lt;p&gt;There are lots of rename tools. I try 3 tools, and all of them are freeware. (Rename Master is not open source, but it&#39;s not a problem.).
+F2 (by &lt;a href=&#34;https://go.dev/&#34;&gt;Go&lt;/a&gt; and ExifTool (by &lt;a href=&#34;https://www.perl.org/&#34;&gt;Perl&lt;/a&gt;) are cross-platform.
+Rename Master is for Windows only.&lt;/p&gt;
           
           
         
@@ -77,15 +101,18 @@ Batch change filenames to P[photo capture date]-[camera model].jpg. For example,
     
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
-      <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
+      <link>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            I usually use Spotify to listen to podcasts, but because I use Spotify with my children, I want to find another Podcast App for my personal use.
-And I find Pocket Casts has an interesting feature, it can skip the first or last *** seconds. It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app. (This feature is provided in the free version.
+            &lt;p&gt;I usually use &lt;a href=&#34;https://spotify.com/&#34;&gt;Spotify&lt;/a&gt; to listen to podcasts, but because I use Spotify with my children,
+I want to find another Podcast App for my personal use.&lt;/p&gt;
+&lt;p&gt;And I find &lt;a href=&#34;https://pocketcasts.com/&#34;&gt;Pocket Casts&lt;/a&gt; has an interesting feature, it can skip the first or last *** seconds.
+It means some podcasts have an introduction at the beginning, if you want to skip it, you can do it in this app.
+(This feature is provided in the free version.)&lt;/p&gt;
           
           
         
@@ -94,16 +121,26 @@ And I find Pocket Casts has an interesting feature, it can skip the first or las
     
     <item>
       <title>Use WISE to send currency exchange rate mail daily</title>
-      <link>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
+      <link>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
+      <guid>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
       <description>
         
           
-            Requirement I want to have daily mail including currency exchange rate information.
-Solution use https://wise.com (no need to register an account)
-Connect to https://wise.com/tools/exchange-rate-alerts/ Input the currency exchange rate you want to know and your email address. Mail result You will receive the mail daily.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I want to have daily mail including currency exchange rate information.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;use &lt;a href=&#34;https://wise.com&#34;&gt;https://wise.com&lt;/a&gt; (no need to register an account)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect to &lt;a href=&#34;https://wise.com/tools/exchange-rate-alerts/&#34;&gt;https://wise.com/tools/exchange-rate-alerts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Input the currency exchange rate you want to know and your email address.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-10.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-10.png?w=673&#34; alt=&#34;&#34; class=&#34;wp-image-443&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- /wp:image --&gt;
+&lt;h2 id=&#34;mail-result&#34;&gt;Mail result&lt;/h2&gt;
+&lt;p&gt;You will receive the mail daily.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-11.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-11.png?w=682&#34; alt=&#34;&#34; class=&#34;wp-image-445&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         

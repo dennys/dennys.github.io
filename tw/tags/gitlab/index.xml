@@ -2,23 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitLab on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/gitlab/</link>
+    <link>http://localhost:1313/tw/tags/gitlab/</link>
     <description>Recent content in GitLab on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Grafana 管理 GitLab CI/CD Pipelines</title>
-      <link>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</link>
+      <link>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           
-            本文更新紀錄 2022/10/13: 新增幾個步驟的檢查點 需求 當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.
-在 Grafana 上面顯示 GitLab CI pipelines 方案1: 使用 GitLab 內建的 metrics Exporter: GitLab 內建 (參考 https://docs.gitlab.com/ee/administration/monitoring/prometheus/) Grafana dashboard: https://grafana.com/grafana/dashboards/10620 這個 dashboard 需要安裝這個 plugin: https://grafana.com/grafana/plugins/grafana-polystat-panel/ prometheus.yml 1- job_name: &amp;#39;GitLab&amp;#39; 2 scrape_interval: 5s 3 metrics_path: &amp;#39;/-/metrics&amp;#39; 4 scheme: https 5 static_configs: 6 - targets: [&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;] 7 params: 8 token: [&amp;#39;***************&amp;#39;] 方案2: 使用 gitlab-ci-pipelines-exporter Exporter: https://github.com/mvisonneau/gitlab-ci-pipelines-exporter 這個 exporter 提供好幾個面向的 metrics (搭配不同 dashboard) Grafana dashboard: 和方案1是同一個 (也需要裝 Ploystat plugin)
+            &lt;h2 id=&#34;本文更新紀錄&#34;&gt;本文更新紀錄&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2022/10/13: 新增幾個步驟的檢查點&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;當 GitLab 上的 project 一多, 好像不容易有個單一的進入點, 可以看到各 project 的 CI/CD Pipelines 狀況.&lt;/p&gt;
+&lt;h2 id=&#34;在-grafana-上面顯示-gitlab-ci-pipelines&#34;&gt;在 Grafana 上面顯示 GitLab CI pipelines&lt;/h2&gt;
+&lt;h3 id=&#34;方案1-使用-gitlab-內建的-metrics&#34;&gt;方案1: 使用 GitLab 內建的 metrics&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Exporter: GitLab 內建 (參考 &lt;a href=&#34;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&#34;&gt;https://docs.gitlab.com/ee/administration/monitoring/prometheus/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Grafana dashboard: &lt;a href=&#34;https://grafana.com/grafana/dashboards/10620&#34;&gt;https://grafana.com/grafana/dashboards/10620&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;這個 dashboard 需要安裝這個 plugin: &lt;a href=&#34;https://grafana.com/grafana/plugins/grafana-polystat-panel/&#34;&gt;https://grafana.com/grafana/plugins/grafana-polystat-panel/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;prometheus.yml
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;- &lt;span class=&#34;nt&#34;&gt;job_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;GitLab&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scrape_interval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;5s&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;metrics_path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/-/metrics&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;static_configs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;targets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;gitlab.xxx.xxx.xxx&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;token&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;***************&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;方案2-使用-gitlab-ci-pipelines-exporter&#34;&gt;方案2: 使用 gitlab-ci-pipelines-exporter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Exporter: &lt;a href=&#34;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&#34;&gt;https://github.com/mvisonneau/gitlab-ci-pipelines-exporter&lt;/a&gt;
+這個 exporter 提供好幾個面向的 metrics (搭配不同 dashboard)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Grafana dashboard: 和方案1是同一個 (也需要裝 Ploystat plugin)&lt;/p&gt;
           
           
         

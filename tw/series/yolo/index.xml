@@ -2,28 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>YOLO on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/series/yolo/</link>
+    <link>http://localhost:1313/tw/series/yolo/</link>
     <description>Recent content in YOLO on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/yolo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/yolo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 YOLO v7 和 EasyOCR 做車牌辨識</title>
-      <link>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</link>
+      <link>http://localhost:1313/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</guid>
+      <guid>http://localhost:1313/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</guid>
       <description>
         
           
-            資料 資料來源: https://www.kaggle.com/datasets/bomaich/vnlicenseplate (1000 images of Vietnamese License Plate) 用這個資料集的主要原因是, 他有提供 bounding box, 直接標出車牌的座標, 這樣就不用花人力去標記.
-YOLO 參考: https://www.kaggle.com/code/bomaich/yolo-v7-license-plate-detection
-設定檔 data_LP.yaml:
-1names: 2 - LP 3nc: 1 4train: c/train 5val: c/valid 訓練指令:
-1pip install -r requirements.txt 2python train.py --batch 16 --cfg cfg/training/yolov7.yaml --epochs 30 --data data_LP.yaml --weights &amp;#39;yolov7.pt&amp;#39; --device 0 最後產生模型於這個位置 runs/train/exp/weights/best.pt
-EasyOCR OCR 的部分直接使用 EasyOCR 產生的 pretrained model, 參數如下:
-ocr.py: 自己寫的程式 (程式碼在文章最後面), 目的是呼叫 EasyOCR 判讀 bbox.txt 指定的範圍, 然後把 OCR 結果寫回照片 (檔名會是 xxx_tagged.
+            &lt;h2 id=&#34;資料&#34;&gt;資料&lt;/h2&gt;
+&lt;p&gt;資料來源: &lt;a href=&#34;https://www.kaggle.com/datasets/bomaich/vnlicenseplate&#34;&gt;https://www.kaggle.com/datasets/bomaich/vnlicenseplate&lt;/a&gt; (1000 images of Vietnamese License Plate)
+用這個資料集的主要原因是, 他有提供 bounding box, 直接標出車牌的座標, 這樣就不用花人力去標記.&lt;/p&gt;
+&lt;h2 id=&#34;yolo&#34;&gt;YOLO&lt;/h2&gt;
+&lt;p&gt;參考: &lt;a href=&#34;https://www.kaggle.com/code/bomaich/yolo-v7-license-plate-detection&#34;&gt;https://www.kaggle.com/code/bomaich/yolo-v7-license-plate-detection&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;設定檔 data_LP.yaml:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;names&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;LP&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;nc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;train&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;c/train&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;c/valid&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;訓練指令:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;pip install -r requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;python train.py --batch &lt;span class=&#34;m&#34;&gt;16&lt;/span&gt; --cfg cfg/training/yolov7.yaml --epochs &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; --data data_LP.yaml --weights &lt;span class=&#34;s1&#34;&gt;&amp;#39;yolov7.pt&amp;#39;&lt;/span&gt; --device &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最後產生模型於這個位置 runs/train/exp/weights/best.pt&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;easyocr&#34;&gt;EasyOCR&lt;/h2&gt;
+&lt;p&gt;OCR 的部分直接使用 &lt;a href=&#34;https://github.com/JaidedAI/EasyOCR&#34;&gt;EasyOCR&lt;/a&gt; 產生的 pretrained model, 參數如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ocr.py: 自己寫的程式 (程式碼在文章最後面), 目的是呼叫 EasyOCR 判讀 bbox.txt 指定的範圍, 然後把 OCR 結果寫回照片 (檔名會是 xxx_tagged.jpg)&lt;/li&gt;
+&lt;li&gt;image.jpg: 要判讀的照片 (直接拿這個資料集的任一張即可)&lt;/li&gt;
+&lt;li&gt;bbox.txt: bounding box (直接拿這張照片對應的 .txr 即可, 他會放在 labels 目錄下)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;指令:&lt;/p&gt;
           
           
         
@@ -32,17 +58,55 @@ ocr.py: 自己寫的程式 (程式碼在文章最後面), 目的是呼叫 EasyOC
     
     <item>
       <title>YOLO v7 在不同硬體下, 判讀影片的速度</title>
-      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</link>
+      <link>http://localhost:1313/tw/doc/ai/yolo-v7-detect-speed-test/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</guid>
+      <guid>http://localhost:1313/tw/doc/ai/yolo-v7-detect-speed-test/</guid>
       <description>
         
           
-            基於上次 在 Colab 上用 YOLOv7 判讀照片, 以下測試在不同硬體跑 YOLOv7 來判讀影片.
-資料 原始影像: https://pixabay.com/videos/pigeon-animal-bird-background-5938/ (約 15 秒)
-指令 1conda create -n yolov7 python=3.10 -y 2conda activate yolov7 3pip install -r requirements.txt 4 5python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source pigeon.mp4 --view-img --device cpu 跑出來的數據 其實和預期的差不多, GPU 真的快很多.
-CPU (or GPU) specification yolov7.pt yolov7-e6e.pt 環境 AMD Ryan 7 Pro 5850U (8core) 263s 415s 筆電 Intel Xeon Gold 6154 CPU (32core) 115s 216s Server Tesla V100-SXM2-32GB 8.
+            &lt;p&gt;基於上次 &lt;a href=&#34;https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/&#34;&gt;在 Colab 上用 YOLOv7 判讀照片&lt;/a&gt;,
+以下測試在不同硬體跑 YOLOv7 來判讀影片.&lt;/p&gt;
+&lt;h2 id=&#34;資料&#34;&gt;資料&lt;/h2&gt;
+&lt;p&gt;原始影像: &lt;a href=&#34;https://pixabay.com/videos/pigeon-animal-bird-background-5938/&#34;&gt;https://pixabay.com/videos/pigeon-animal-bird-background-5938/&lt;/a&gt; (約 15 秒)&lt;/p&gt;
+&lt;h2 id=&#34;指令&#34;&gt;指令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;conda create -n yolov7 python=3.10 -y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;conda activate yolov7
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;pip install -r requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source pigeon.mp4 --view-img --device cpu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;跑出來的數據&#34;&gt;跑出來的數據&lt;/h2&gt;
+&lt;p&gt;其實和預期的差不多, GPU 真的快很多.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;CPU (or GPU) specification&lt;/th&gt;
+					&lt;th&gt;yolov7.pt&lt;/th&gt;
+					&lt;th&gt;yolov7-e6e.pt&lt;/th&gt;
+					&lt;th&gt;環境&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;AMD Ryan 7 Pro 5850U (8core)&lt;/td&gt;
+					&lt;td&gt;263s&lt;/td&gt;
+					&lt;td&gt;415s&lt;/td&gt;
+					&lt;td&gt;筆電&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Intel Xeon Gold 6154 CPU (32core)&lt;/td&gt;
+					&lt;td&gt;115s&lt;/td&gt;
+					&lt;td&gt;216s&lt;/td&gt;
+					&lt;td&gt;Server&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Tesla V100-SXM2-32GB&lt;/td&gt;
+					&lt;td&gt;8.3s&lt;/td&gt;
+					&lt;td&gt;10.8s&lt;/td&gt;
+					&lt;td&gt;某雲&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
           
           
         
@@ -51,15 +115,37 @@ CPU (or GPU) specification yolov7.pt yolov7-e6e.pt 環境 AMD Ryan 7 Pro 5850U (
     
     <item>
       <title>在 Colab 上用 YOLO v7 判讀照片, 並將結果存到 Google Drive</title>
-      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
+      <link>http://localhost:1313/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</guid>
+      <guid>http://localhost:1313/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</guid>
       <description>
         
           
-            程式 試玩一下, 在 Google Colab 上, 用 YOLOv7 做簡單的照片判讀, 並將結果存回 Google Drive. 程式碼如下, 他會直接判讀內建的 inference/images/horses.jpg, 然後把結果寫回 Google Drive 的根目錄.
-1# Connect to Google Drive 2from google.colab import drive 3drive.mount(&amp;#39;/content/drive&amp;#39;) 4 5# Download YOLOv7 6!git clone https://github.com/WongKinYiu/yolov7 7%cd /content 8%ll 9 10# Install YOLOv7 related libraries 11%cd yolov7 12!pip install -r requirements.txt 13!wget &amp;#34;https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt&amp;#34; 14 15# Analyze the image 16!python detect.py --weights yolov7-e6e.pt --conf 0.25 --img-size 640 --source inference/images/horses.jpg 17 18# Copy the image to Google Drive 19%cp runs/detect/exp/horses.
+            &lt;h2 id=&#34;程式&#34;&gt;程式&lt;/h2&gt;
+&lt;p&gt;試玩一下, 在 &lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; 上, 用 &lt;a href=&#34;https://github.com/WongKinYiu/yolov7&#34;&gt;YOLOv7&lt;/a&gt; 做簡單的照片判讀, 並將結果存回 &lt;a href=&#34;https://www.google.com.tw/drive/&#34;&gt;Google Drive&lt;/a&gt;.
+程式碼如下, 他會直接判讀內建的 inference/images/horses.jpg, 然後把結果寫回 Google Drive 的根目錄.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Connect to Google Drive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;google.colab&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;drive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;drive&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mount&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/content/drive&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Download YOLOv7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;clone&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WongKinYiu&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;yolov7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ll&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Install YOLOv7 related libraries&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yolov7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;requirements&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;txt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Analyze the image&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;python&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;detect&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;py&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;weights&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yolov7&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e6e&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;conf&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.25&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;img&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;640&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;source&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;inference&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;images&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;horses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jpg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Copy the image to Google Drive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cp&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;runs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;detect&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exp&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;horses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jpg&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;drive&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MyDrive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ll&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;drive&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MyDrive&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;horses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jpg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;下面是把 Colab 上的 Jupyter notebook 直接存到 GitHub Gist 上, 可直接點 &lt;em&gt;Open in Colab&lt;/em&gt;, 就可以直接打開來測試了.&lt;/p&gt;
           
           
         

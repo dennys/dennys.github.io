@@ -2,23 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI/CD on Dennys Diary</title>
-    <link>https://dennys.github.io/en/categories/ci/cd/</link>
+    <link>http://localhost:1313/en/categories/ci/cd/</link>
     <description>Recent content in CI/CD on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/categories/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab Checkmarx CI/CD Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</guid>
       <description>
         
           
-            Purpose Checkmarx is a good tool to do code analysis, but there are 2 pain points during the flow.
-Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot be triggered by by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.) Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or JIRA or .
+            &lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://checkmarx.com/&#34;&gt;Checkmarx&lt;/a&gt; is a good tool to do code analysis, but there are 2 pain points during the flow.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Checkmarx can integrate SCM like GitHub/GitLab/..., but it cannot &lt;strong&gt;be triggered by&lt;/strong&gt; by a code commit, it can only schedule the job to run the scan. (If I don&#39;t commit code, I don&#39;t want to waste resources scanning the code.)&lt;/li&gt;
+&lt;li&gt;Checkmarx has a built-in issue tracking system, but I think most people prefer to use their issue tracking system in their Git or &lt;a href=&#34;https://www.atlassian.com/software/jira&#34;&gt;JIRA&lt;/a&gt; or ...&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What we want is to integrate Checkmarx scan into GitLab&#39;s CI/CD flow including&lt;/p&gt;
           
           
         

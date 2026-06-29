@@ -2,27 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android 使用小技巧 on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+    <link>http://localhost:1313/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
     <description>Recent content in Android 使用小技巧 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android App 備份 (使用 Syncthing)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-app-backup/</link>
+      <link>http://localhost:1313/tw/doc/android/android-app-backup/</link>
       <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-app-backup/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-app-backup/</guid>
       <description>
         
           
-            需求 Android 手機現在都不能插卡了, 萬一手機掛了, 上面的資料沒備份就很麻煩. 我目前是使用 Syncthing-Fork, 他在 PC 和手機上的設定可參考 https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/.
-這邊紀錄的是, Syncthing 設定好後, 要如何把對應的 App 的資料放到容易被 Syncthing 讀寫的地方.
-Syncthing (Android 設定) Ignore patterns .trasn* *.obf (主要是這兩個檔案, Taiwan_asia.obf: 548MB, World_basemap_mini.obf: 49MB) 各 App 設定方法 (設定一次就好) OsmAnd+ (OSM Automated Navigation Directions) 執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄
-Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
-打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案
-各 App 設定方法 (每次執行一次, 才會備份一次) Nova Launcher 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 Syncthing (自己備份自己) 執行 設定 -&amp;gt; 備份 &amp;amp; 還原 -&amp;gt; 備份, 把設定檔存到 Download 目錄 讓 Syncthing 自己同步 AntennaPod 執行 設定 -&amp;gt; 儲存空間 -&amp;gt; 匯入/匯出 -&amp;gt; 資料庫匯出 -&amp;gt; 儲存, 把設定檔存到備份目錄 讓 Syncthing 自己同步 Geo Tracker 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 手機現在都不能插卡了, 萬一手機掛了, 上面的資料沒備份就很麻煩. 我目前是使用 &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&amp;amp;hl=en_US&#34;&gt;Syncthing-Fork&lt;/a&gt;,
+他在 PC 和手機上的設定可參考 &lt;a href=&#34;https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/&#34;&gt;https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;這邊紀錄的是, Syncthing 設定好後, 要如何把對應的 App 的資料放到容易被 Syncthing 讀寫的地方.&lt;/p&gt;
+&lt;h3 id=&#34;syncthing-android-設定&#34;&gt;Syncthing (Android 設定)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Ignore patterns
+&lt;ul&gt;
+&lt;li&gt;.trasn*&lt;/li&gt;
+&lt;li&gt;*.obf (主要是這兩個檔案, Taiwan_asia.obf: 548MB, World_basemap_mini.obf: 49MB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;各-app-設定方法-設定一次就好&#34;&gt;各 App 設定方法 (設定一次就好)&lt;/h2&gt;
+&lt;h3 id=&#34;osmand-osm-automated-navigation-directions&#34;&gt;&lt;a href=&#34;https://f-droid.org/zh_Hant/packages/net.osmand.plus/&#34;&gt;OsmAnd+&lt;/a&gt; (OSM Automated Navigation Directions)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;open-tracks&#34;&gt;&lt;a href=&#34;https://f-droid.org/android/packages/de.dennisguse.opentracks/&#34;&gt;Open Tracks&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;各-app-設定方法-每次執行一次-才會備份一次&#34;&gt;各 App 設定方法 (每次執行一次, 才會備份一次)&lt;/h2&gt;
+&lt;h3 id=&#34;nova-launcher&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher&#34;&gt;Nova Launcher&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;syncthing-自己備份自己&#34;&gt;Syncthing (自己備份自己)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; 備份 &amp;amp; 還原 -&amp;gt; 備份, 把設定檔存到 Download 目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;antennapod&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=de.danoeh.antennapod&#34;&gt;AntennaPod&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; 儲存空間 -&amp;gt; 匯入/匯出 -&amp;gt; 資料庫匯出 -&amp;gt; 儲存, 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;geo-tracker&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker&#34;&gt;Geo Tracker&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -31,17 +81,87 @@ Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
     
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
+      <link>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
-            需求 在上次的文章中, 我們知道預設 Android 的通知是 封存, 然後可以把封存改為刪除, 但沒法兩者同時出現.
-不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 Gmail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 在 K9 裡面, 預設就有 回覆, 標示為已讀取, 刪除 這三種可選擇, 但他並沒有提供 封存 這個功能.
-FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 action. 你可以在 設定 裡面的 通知動作 選擇你想要顯示的動作. 注意, 免費版最多可選擇 3 種.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;在&lt;a href=&#34;http://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/&#34;&gt;上次的文章&lt;/a&gt;中, 我們知道預設 Android 的通知是 &lt;strong&gt;封存&lt;/strong&gt;, 然後可以把封存改為&lt;strong&gt;刪除&lt;/strong&gt;, 但沒法兩者同時出現.&lt;/p&gt;
+&lt;p&gt;不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thundernest/k-9&#34;&gt;K-9 Mail&lt;/a&gt;, ( &lt;a href=&#34;https://blog.thunderbird.net/2022/06/revealed-thunderbird-on-android-plans-k9/&#34;&gt;K-9 Mail Joins The Thunderbird Family&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/M66B/FairEmail&#34;&gt;FairEmail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gmail&#34;&gt;Gmail&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先回顧一下 Gmail 的部分, 預設是只能封存.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-6.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-6.png?w=348&#34; alt=&#34;&#34; class=&#34;wp-image-523&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-10.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-10.png?w=405&#34; alt=&#34;&#34; class=&#34;wp-image-364&#34; width=&#34;245&#34; height=&#34;321&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-7.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-7.png?w=344&#34; alt=&#34;&#34; class=&#34;wp-image-525&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;k9&#34;&gt;K9&lt;/h2&gt;
+&lt;p&gt;在 K9 裡面, 預設就有 &lt;strong&gt;回覆&lt;/strong&gt;, &lt;strong&gt;標示為已讀取&lt;/strong&gt;, &lt;strong&gt;刪除&lt;/strong&gt; 這三種可選擇, 但他並沒有提供 &lt;strong&gt;封存&lt;/strong&gt; 這個功能.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/k9_notification.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;fairemail&#34;&gt;FairEmail&lt;/h2&gt;
+&lt;p&gt;在 FairEmail, 預設是提供 &lt;strong&gt;垃圾桶&lt;/strong&gt; 和 &lt;strong&gt;標示已讀&lt;/strong&gt; 兩種 action.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -50,16 +170,141 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何修改預設的 YouTube App (YouTube Vanced, NewPipe, ...)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
+      <link>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
-            注意這方法僅適用於 Android 11 或更以前的版本!!! Android 12 或以上請使用 Better Open With. 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
-作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
-這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;這方法僅適用於 Android 11 或更以前的版本!!!&lt;/li&gt;
+&lt;li&gt;Android 12 或以上請使用 &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.aboutmycode.betteropenwith&#34;&gt;Better Open With&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, &lt;a href=&#34;https://github.com/TeamNewPipe/NewPipe&#34;&gt;NewPipe&lt;/a&gt;, ... 等等),
+但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把 &amp;quot;開啟支援的連結&amp;quot; 關掉.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把 YouTube 相關的 4 個連結打勾.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -68,16 +313,98 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
-      <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
+      <link>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</guid>
       <description>
         
           
-            2023/4/30 更新在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了. 9TO5 Google 的報導: Google says Android will separate notification and ringtone volume Issue URL: Separate notification and ringtone volumes 提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
-需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
-2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;2023/4/30 更新&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了.&lt;/li&gt;
+&lt;li&gt;9TO5 Google 的報導: &lt;a href=&#34;https://9to5google.com/2023/04/29/android-notification-ringtone-volume/&#34;&gt;Google says Android will separate notification and ringtone volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Issue URL: &lt;a href=&#34;https://issuetracker.google.com/issues/36937094&#34;&gt;Separate notification and ringtone volumes&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+
+&lt;div class=&#34;notices info&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;提醒&lt;/div&gt;
+    &lt;p&gt;這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/sound/Android_Sound.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google 一下, 其實滿多人反映這件事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. &lt;a href=&#34;https://issuetracker.google.com/issues/69842456&#34;&gt;https://issuetracker.google.com/issues/69842456&lt;/a&gt; =&amp;gt; 有 Google 帳號的可以上去 +1 一下&lt;/li&gt;
+&lt;li&gt;這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. &lt;a href=&#34;https://issuetracker.google.com/issues/177060206&#34;&gt;https://issuetracker.google.com/issues/177060206&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6482657&#34;&gt;Mobile01 上的討論&lt;/a&gt;, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;解法-使用-sound-profile-app&#34;&gt;解法 (使用 Sound Profile App)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Google 了很久, 找不到甚麼簡單的做法, 只找到一個 &lt;a href=&#34;https://play.google.com/store/apps/details?id=Orion.Soft&#34;&gt;Sound Profile&lt;/a&gt; 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, ...)
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/sound/SoundProfile.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -86,18 +413,26 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何設定 Android 零打擾的時間長度</title>
-      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
+      <link>http://localhost:1313/tw/doc/android/android-do-not-disturb/</link>
       <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-do-not-disturb/</guid>
       <description>
         
           
-            需求 Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.
-作法 如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度
-預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;
-改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項
-結果 這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-8.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-8.png?w=393&#34; alt=&#34;&#34; class=&#34;wp-image-608&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;p&gt;如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-2.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-2.png?w=405&#34; alt=&#34;&#34; class=&#34;wp-image-596&#34; width=&#34;293&#34; height=&#34;538&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-3.png?w=347&#34; alt=&#34;&#34; class=&#34;wp-image-598&#34; width=&#34;300&#34; height=&#34;218&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-7.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-7.png?w=396&#34; alt=&#34;&#34; class=&#34;wp-image-607&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-4.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-4.png?w=350&#34; alt=&#34;&#34; class=&#34;wp-image-601&#34; width=&#34;324&#34; height=&#34;232&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -106,15 +441,18 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
-      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <link>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <guid>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
       <description>
         
           
-            需求 不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.
-作法 後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;p&gt;後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-8.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-8.png?w=384&#34; alt=&#34;&#34; class=&#34;wp-image-530&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -123,15 +461,99 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>將 Gmail 的通知改成可以直接刪除 (預設是封存)</title>
-      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
+      <link>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
-            需求 Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.
-作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. 後記 如果可以讓封存和刪除都出來就更好了.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;後記&#34;&gt;後記&lt;/h2&gt;
+&lt;p&gt;如果可以讓封存和刪除都出來就更好了.&lt;/p&gt;
           
           
         
@@ -140,18 +562,28 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
+      <link>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
       <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
       <description>
         
           
-            前言 自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.
-看起來評價不是很好, 我也覺得很不直覺...
-不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
-成果 結果就會變成如下
-參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966 
+            &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-1.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-1.png?w=381&#34; alt=&#34;&#34; class=&#34;wp-image-496&#34; height=&#34;300&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;看起來&lt;a href=&#34;https://support.google.com/pixelphone/thread/133395984/&#34;&gt;評價&lt;/a&gt;不是很好, 我也覺得很不直覺...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-3.png?w=913&#34; alt=&#34;&#34; class=&#34;wp-image-500&#34; height=&#34;290&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-12.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-12.png?w=397&#34; alt=&#34;&#34; class=&#34;wp-image-452&#34; height=&#34;250&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
+&lt;p&gt;結果就會變成如下&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-2.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-2.png?w=378&#34; alt=&#34;&#34; class=&#34;wp-image-497&#34; height=&#34;400&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考&#34;&gt;參考:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Google Pixel Update - March 2022(&lt;a href=&#34;https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022&#34;&gt;https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022&lt;/a&gt;) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.)&lt;/li&gt;
+&lt;li&gt;Google community 的說明: &lt;a href=&#34;https://support.google.com/pixelphone/thread/133395984?hl=en&amp;amp;msgid=154180966&#34;&gt;https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
           
           
         

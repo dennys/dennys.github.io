@@ -2,25 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/network/</link>
+    <link>http://localhost:1313/tw/tags/network/</link>
     <description>Recent content in Network on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTPS Checker by PowerShell</title>
-      <link>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</link>
+      <link>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</guid>
+      <guid>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</guid>
       <description>
         
           
-            注意以下程式是用 ChatGPT 產生的
-需求 寫一個簡單的 PowerShell script 來檢查 https 狀況, 包含憑證過期資訊.
-PowerShell 7 PowerShell 7 沒有找到合適的方法顯示 SSL 憑證資訊, 目前只顯示 http return code.
-1$urls = @( 2 &amp;#34;https://example1.com&amp;#34;, 3 &amp;#34;https://example2.com&amp;#34;, 4 &amp;#34;https://example3.com&amp;#34; 5) 6 7foreach ($url in $urls) { 8 try { 9 $response = Invoke-WebRequest $url -UseBasicParsing 10 $statusCode = $response.StatusCode 11 Write-Host &amp;#34;$url - Status Code: $statusCode&amp;#34; 12 } catch { 13 Write-Host &amp;#34;$url - Error: $($_.Exception.Message)&amp;#34; 14 } 15} Output 1PS D:\&amp;gt; .
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;以下程式是用 ChatGPT 產生的&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;寫一個簡單的 PowerShell script 來檢查 https 狀況, 包含憑證過期資訊.&lt;/p&gt;
+&lt;h2 id=&#34;powershell-7&#34;&gt;PowerShell 7&lt;/h2&gt;
+&lt;p&gt;PowerShell 7 沒有找到合適的方法顯示 SSL 憑證資訊, 目前只顯示 http return code.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ps&#34; data-lang=&#34;ps&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;$urls&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example1.com&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example2.com&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example3.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;($url in $urls)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$response&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Invoke-WebRequest&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$url&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-UseBasicParsing&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$statusCode&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$response.StatusCode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;$url&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$statusCode&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;$url&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Error:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;($_.Exception.Message)&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;output&#34;&gt;Output&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ps&#34; data-lang=&#34;ps&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;PS&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;D:\&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;.\webmonitor.ps1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example1.com-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example2.com-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example3.com-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;powershell-5&#34;&gt;PowerShell 5&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ps&#34; data-lang=&#34;ps&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Get-WebData&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;($url)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Net.ServicePointManager&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;::ServerCertificateValidationCallback&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$true&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$webRequest&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Net.HttpWebRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;::Create&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;($url)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$webRequest.ServicePoint.ConnectionLimit&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$webRequest.ServicePoint.Expect100Continue&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$webRequest.AllowAutoRedirect&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Retrieve&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;response&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$response&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$webRequest.GetResponse&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$httpStatusCode&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;$response.StatusCode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$certificate&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$webRequest.ServicePoint.Certificate&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;($certificate -ne $null)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;$expiryDate&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$certificate.GetExpirationDateString&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;$expiryDate&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Get-Date&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$expiryDate&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-Format&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;yyyy-MM-dd&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;HH:mm:ss&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;$remainingDays&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(Get-Date $expiryDate)&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(Get-Date)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;$response.Close&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;Url&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;HttpStatusCode&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$httpStatusCode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;ExpiryDate&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$expiryDate&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;RemainingDays&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$remainingDays.Days&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;$response.Close&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;Url&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;HttpStatusCode&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$httpStatusCode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;ExpiryDate&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;No&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;SSL&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Certificate&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;found.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;nf&#34;&gt;&amp;#39;RemainingDays&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;-1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;33&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;34&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;36&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$errorMessage&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$_.Exception.Message&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;37&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;$innerExceptionMessage&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$_.Exception.InnerException.Message&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;38&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;39&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;Error:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$errorMessage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;Inner&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Exception:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$innerExceptionMessage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;41&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;43&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;&amp;#39;Url&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;44&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;&amp;#39;HttpStatusCode&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;45&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;&amp;#39;ExpiryDate&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;&amp;#34;Error:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$errorMessage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;46&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nf&#34;&gt;&amp;#39;RemainingDays&amp;#39;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;-1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;47&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;48&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;49&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;51&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;$urls&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;52&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example1.com&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;53&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example22.com&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;54&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    &amp;#34;https://example333.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;55&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;56&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;57&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Find&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;the&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;maximum&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;length&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;of&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;URLs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;58&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;$maxUrlLength&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;($urls | Measure-Object -Maximum Length)&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;.Maximum&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;59&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;($url in $urls)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;61&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;$data&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Get-WebData&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;$url&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;62&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(&amp;#34;{0,-$maxUrlLength} - HTTP Status Code: {1}, Expiry Date: {2} (Remaining Days: {3})&amp;#34; -f $data.Url, $data.HttpStatusCode, $data.ExpiryDate, $data.RemainingDays)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;63&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;output-1&#34;&gt;Output&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ps&#34; data-lang=&#34;ps&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;PS&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;D:\&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;.\webmonitor.ps1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example1.com&lt;/span&gt;   &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;HTTP&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;200,&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Expiry&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Date:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;2023-11-22&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;07:59:59&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(Remaining Days: 110)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example22.com&lt;/span&gt;  &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;HTTP&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;200,&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Expiry&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Date:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;2023-11-22&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;07:59:59&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(Remaining Days: 110)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nf&#34;&gt;https:&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;/example333.com&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;HTTP&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Status&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Code:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;200,&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Expiry&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;Date:&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;2024-06-25&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;07:59:59&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;(Remaining Days: 326)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
           
           
         
@@ -29,16 +125,53 @@ PowerShell 7 PowerShell 7 沒有找到合適的方法顯示 SSL 憑證資訊, �
     
     <item>
       <title>使用 Wireshark 擷取 HTTP 密碼</title>
-      <link>https://dennys.github.io/tw/doc/network/wireshark-http-password/</link>
+      <link>http://localhost:1313/tw/doc/network/wireshark-http-password/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/wireshark-http-password/</guid>
+      <guid>http://localhost:1313/tw/doc/network/wireshark-http-password/</guid>
       <description>
         
           
-            背景 多年前念書時, 有用過一些 sniffer 來聽網路封包, 用來看 BBS 的密碼. 現在試試看用 Wireshark 來抓 HTTP/HTTPS 的密碼. 因為要測試 http, 而現在很少網站是 http 了, 因此 http 的部分我用 XAMPP 來跑一個簡單的 web server.
-Capture HTTP 密碼 因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback 切換到 Chrome, 登入進 phyMyAdmin. 回 wireshark 看結果
-切回 Wireshark 按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture 因為我們只看 http, 所以要在 filter 欄位輸入 http 就可以看到剛剛輸入的帳號密碼了 這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了 Capture HTTPS 密碼 理論上 https 是加密的, 但查了一下, 竟然有方法可以把加解密的 key 弄出來.
+            &lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;多年前念書時, 有用過一些 sniffer 來聽網路封包, 用來看 BBS 的密碼. 現在試試看用 &lt;a href=&#34;https://www.wireshark.org/&#34;&gt;Wireshark&lt;/a&gt; 來抓 HTTP/HTTPS 的密碼.
+因為要測試 http, 而現在很少網站是 http 了, 因此 http 的部分我用 &lt;a href=&#34;https://www.apachefriends.org/&#34;&gt;XAMPP&lt;/a&gt; 來跑一個簡單的 web server.&lt;/p&gt;
+&lt;h2 id=&#34;capture-http-密碼&#34;&gt;Capture HTTP 密碼&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切換到 Chrome, 登入進 phyMyAdmin.
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回 wireshark 看結果&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;切回 Wireshark&lt;/li&gt;
+&lt;li&gt;按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture&lt;/li&gt;
+&lt;li&gt;因為我們只看 http, 所以要在 filter 欄位輸入 &lt;em&gt;http&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;就可以看到剛剛輸入的帳號密碼了
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
+    &lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;capture-https-密碼&#34;&gt;Capture HTTPS 密碼&lt;/h2&gt;
+&lt;p&gt;理論上 https 是加密的, 但查了一下, 竟然有方法可以把加解密的 key 弄出來. 下面文章提供兩種方法,
+第一篇的方法是設定環境變數 &lt;em&gt;SSLKEYLOGFILE&lt;/em&gt;, 他就會把 key 存到檔案去.
+第二篇的方法是有人寫了個小工具把 key 轉出來&lt;/p&gt;
           
           
         
@@ -47,16 +180,62 @@ Capture HTTP 密碼 因為我的 XAMPP 跑在 localhost, 所以網路要選擇 l
     
     <item>
       <title>使用 Grafana 做 Ping 和 測速</title>
-      <link>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</link>
+      <link>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</guid>
+      <guid>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</guid>
       <description>
         
           
-            背景 開一個網站, 然後要記錄從各地方連過來的 Ping 狀況還有 Speed Test
-測速工具 使用 e7d/speedtest, 他提供 IP, Ping, Jitter, Upload/Download 的相關資料, 並且會把資料存到 DB. (可惜這專案在 2023/7/4 archived 了) 使用 Grafana 讀取該 DB, 並做成 dashboard. 使用方式 e7d/speedtest 有提供 docker image, 在 https://hub.docker.com/r/e7db/speedtest, 可直接使用, docker-compose.yml 如下 (他需要搭配一個 PostgreSQL):
-1speedtest: 2 image: e7db/speedtest 3 container_name: speedtest 4 networks: 5 - speedtest 6 expose: 7 - 80 8 ports: 9 - 80:80 10 volumes: 11 - /opt/speedtest/results:/app/results 12 - /etc/hosts:/etc/hosts 13postgres: 14 image: postgres:14 15 container_name: postgres 16 networks: 17 - speedtest 18 expose: 19 - 9105 20 ports: 21 - 9105:5432 # Postgres port 22 #- 443:5432 # Postgres port 23 volumes: 24 - /opt/speedtest/postgresql/:/var/lib/postgresql 25 - /opt/speedtest/postgresql/data/:/var/lib/postgresql/data 26 - /etc/hosts:/etc/hosts 27 environment: 28 POSTGRES_USER: postgres # define credentials 29 POSTGRES_PASSWORD: ******** # define credentials 30 POSTGRES_DB: postgres # define database 31 TZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 32 PGTZ: Asia/Singapore # This is for PostgreSQL&amp;#39;s time zone 測速, 直接打開上面的網站, 做幾次測速.
+            &lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;開一個網站, 然後要記錄從各地方連過來的 Ping 狀況還有 Speed Test&lt;/p&gt;
+&lt;h2 id=&#34;測速工具&#34;&gt;測速工具&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;a href=&#34;https://github.com/e7d/speedtest&#34;&gt;e7d/speedtest&lt;/a&gt;, 他提供 IP, Ping, Jitter, Upload/Download 的相關資料, 並且會把資料存到 DB. (可惜這專案在 2023/7/4 archived 了)&lt;/li&gt;
+&lt;li&gt;使用 &lt;a href=&#34;https://grafana.com/&#34;&gt;Grafana&lt;/a&gt; 讀取該 DB, 並做成 dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;e7d/speedtest 有提供 docker image, 在 &lt;a href=&#34;https://hub.docker.com/r/e7db/speedtest&#34;&gt;https://hub.docker.com/r/e7db/speedtest&lt;/a&gt;, 可直接使用, docker-compose.yml 如下 (他需要搭配一個 PostgreSQL):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;e7db/speedtest&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;container_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;networks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;expose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/opt/speedtest/results:/app/results&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/etc/hosts:/etc/hosts&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;postgres:14&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;container_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;postgres&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;networks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;expose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;9105&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;9105&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;5432&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;                 &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Postgres port&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#- 443:5432                 # Postgres port&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/opt/speedtest/postgresql/:/var/lib/postgresql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/opt/speedtest/postgresql/data/:/var/lib/postgresql/data&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;/etc/hosts:/etc/hosts&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;POSTGRES_USER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;postgres    &lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# define credentials&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;POSTGRES_PASSWORD&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;********&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# define credentials&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;POSTGRES_DB&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;postgres      &lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# define database&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;TZ&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Asia/Singapore      &lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# This is for PostgreSQL&amp;#39;s time zone&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;PGTZ&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Asia/Singapore    &lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# This is for PostgreSQL&amp;#39;s time zone&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;測速, 直接打開上面的網站, 做幾次測速. 然後可以用 browser 開一些跨國 VPN 來模擬從其他國家來的測速.
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/speedtest.webp&#34; width=&#34;442&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -65,19 +244,35 @@ Capture HTTP 密碼 因為我的 XAMPP 跑在 localhost, 所以網路要選擇 l
     
     <item>
       <title>Wake on Lan</title>
-      <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
+      <link>http://localhost:1313/tw/doc/network/wake_on_lan/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/wake_on_lan/</guid>
+      <guid>http://localhost:1313/tw/doc/network/wake_on_lan/</guid>
       <description>
         
           
-            需求 有時在外面要連回家裡的電腦/NAS 等, 一直開著浪費電, 應該是需要時再打開就好. 最好的方法是可以直接從分享器上面把該設備透過喚醒 (Wake on Lan).
-設定 Synology DSM Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.
-Asuswrt Merlin (不需設定) 分享器上面不需要做設定.
-使用 從 Asuswrt 上面喚醒其他設備 選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了. (這畫面是 Asyswrt Merlin 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)
-他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.
-耗電 打開 WOL 會增加耗電, 我的是 Synology DS213, 把 WOL 打開後, 用 TP-Link Kasa HS300 看到的電量約是 1.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;有時在外面要連回家裡的電腦/NAS 等, 一直開著浪費電, 應該是需要時再打開就好.
+最好的方法是可以直接從分享器上面把該設備透過喚醒 (Wake on Lan).&lt;/p&gt;
+&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
+&lt;h3 id=&#34;synology-dsm&#34;&gt;Synology DSM&lt;/h3&gt;
+&lt;p&gt;Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;asuswrt-merlin-不需設定&#34;&gt;Asuswrt Merlin (不需設定)&lt;/h3&gt;
+&lt;p&gt;分享器上面不需要做設定.&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;h3 id=&#34;從-asuswrt-上面喚醒其他設備&#34;&gt;從 Asuswrt 上面喚醒其他設備&lt;/h3&gt;
+&lt;p&gt;選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了.
+(這畫面是 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asyswrt Merlin&lt;/a&gt; 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)&lt;/p&gt;
+&lt;p&gt;他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;耗電&#34;&gt;耗電&lt;/h2&gt;
+&lt;p&gt;打開 WOL 會增加耗電, 我的是 Synology DS213, 把 WOL 打開後, 用 &lt;a href=&#34;https://www.tp-link.com/tw/home-networking/smart-plug/hs300/&#34;&gt;TP-Link Kasa HS300&lt;/a&gt; 看到的電量約是 1.38 W.
+關掉的話就變成 0 了.&lt;/p&gt;
           
           
         
@@ -86,18 +281,41 @@ Asuswrt Merlin (不需設定) 分享器上面不需要做設定.
     
     <item>
       <title>如何在 FortiClient VPN for Windows 保存密碼</title>
-      <link>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</link>
+      <link>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</link>
       <pubDate>Wed, 04 Jan 2023 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</guid>
+      <guid>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</guid>
       <description>
         
           
-            需求 不知道為什麼, 在 FortiClient VPN (Windows 版) 上面設定的 VPN, 有些可以保存密碼, 有些不行, 這樣每次 login 還要輸入密碼有點麻煩. (雖然也是比較安全啦, 但科技始終來自惰性啊...)
-解決方法 方法其實很簡單, 就改一下 Registry 就好了
-執行 regedit
-選 *電腦\HKEY_CURRENT_USER\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\XXXXX (注意, 是 HKEY_CURRENT_USER, 不是 HKEY_LOCAL_MACHINE)
-按右鍵新增一個 DWORD, 有 2 個設定可以使用 *. show_remember_password: 這個設成 1, 他就會出現 保存密碼 這個選項 *. SavePass: 這個設成 1, 他就會把密碼存起來 成果 參考 https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn 
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;不知道為什麼, 在 &lt;a href=&#34;https://www.fortinet.com/tw/support/product-downloads#vpn&#34;&gt;FortiClient VPN&lt;/a&gt; (Windows 版) 上面設定的 VPN, 有些可以保存密碼, 有些不行, 這樣每次 login 還要輸入密碼有點麻煩. (雖然也是比較安全啦, 但科技始終來自惰性啊...)&lt;/p&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;p&gt;方法其實很簡單, 就改一下 Registry 就好了&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 regedit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;選 *電腦\HKEY_CURRENT_USER\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\XXXXX (注意, 是 &lt;em&gt;HKEY_CURRENT_USER&lt;/em&gt;, 不是 &lt;em&gt;HKEY_LOCAL_MACHINE&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按右鍵新增一個 DWORD, 有 2 個設定可以使用
+*. show_remember_password: 這個設成 1, 他就會出現 &lt;strong&gt;保存密碼&lt;/strong&gt; 這個選項
+*. SavePass: 這個設成 1, 他就會把密碼存起來
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn&#34;&gt;https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
           
           
         
@@ -106,15 +324,74 @@ Asuswrt Merlin (不需設定) 分享器上面不需要做設定.
     
     <item>
       <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
-      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
+      <link>http://localhost:1313/tw/doc/network/ssh-tunnel/</link>
       <pubDate>Sat, 17 Sep 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
+      <guid>http://localhost:1313/tw/doc/network/ssh-tunnel/</guid>
       <description>
         
           
-            需求 因為要使用 ActivityWatch 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 Remote server 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: https://github.com/ActivityWatch/aw-watcher-web/issues/44), 因此放棄 Remote server 這招, 改用 SSH Tunnel (SSH port forwarding) 來實現需求.
-簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 只收 localhost 的連線, 不對外開放, 然後我在 client 的 AP 要連上那個 service. 方法 啟動 server, 他要去聽 http://localhost:5600 在 client 上面執行 ssh 1ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;因為要使用 &lt;a href=&#34;https://activitywatch.net/&#34;&gt;ActivityWatch&lt;/a&gt; 來記錄使用資料, 單機跑起來沒有問題, 而我有 3 台 PC, 因此希望能把資料放在一個集中的 server. 本來是想用 &lt;a href=&#34;https://docs.activitywatch.net/en/latest/remote-server.html&#34;&gt;Remote server&lt;/a&gt; 的方法, 大致上也都通了, 但最後卡在他的 Chrome extension, 因為這個 extension 固定只能送資料給 http://localhost, 作者已經表明不會修改 (參考: &lt;a href=&#34;https://github.com/ActivityWatch/aw-watcher-web/issues/44%29&#34;&gt;https://github.com/ActivityWatch/aw-watcher-web/issues/44)&lt;/a&gt;, 因此放棄 Remote server 這招, 改用 &lt;a href=&#34;https://www.ssh.com/academy/ssh/tunneling&#34;&gt;SSH Tunnel&lt;/a&gt; (SSH port forwarding) 來實現需求.&lt;/p&gt;
+&lt;p&gt;簡單來講, 就是我在一台 server 上跑了一個 service, 他使用的是 port 5600, 而且他 &lt;strong&gt;只收 localhost 的連線, 不對外開放&lt;/strong&gt;, 然後我在 client 的 AP 要連上那個 service.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/network/ssh-tunnel.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;啟動 server, 他要去聽 http://localhost:5600&lt;/li&gt;
+&lt;li&gt;在 client 上面執行 ssh
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ssh -L 5600:127.0.0.1:5600 ubuntu@xxx.xxx.xxx.xxx -i &amp;#39;.\xxx.pem&amp;#39; -N
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;strong&gt;參數說明&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;-N 是不執行指令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;這時候 client 上的程式, 如果連線到 http://localhost:5600, 他就會連到 server 上的 5600, 而不是 client 上的 5600.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;trouble-shooting&#34;&gt;Trouble shooting&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;若遇到 Permissions for &#39;.\xxx.pem&#39; are too open. 訊息如下, 那就是檔案權限開大太, SSH 覺得不安全
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Permissions for &amp;#39;.\\xxx.pem&amp;#39; are too open.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;It is required that your private key files are NOT accessible by others.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;This private key will be ignored.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Load key &lt;span class=&#34;s2&#34;&gt;&amp;#34;.\\xxx.pem&amp;#34;&lt;/span&gt;: bad permissions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;ubuntu@x.x.x.x: Permission denied (publickey).
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;如果是 Linux 就簡單多了, 直接 &lt;code&gt;chmod 600 xxx.pem&lt;/code&gt; 就好. 但可惜我們這次是在 Windows, 解法可參考: &lt;a href=&#34;https://leesonhsu.blogspot.com/2021/03/ssh-key-windows-permission-denied.html&#34;&gt;https://leesonhsu.blogspot.com/2021/03/ssh-key-windows-permission-denied.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&#39;s next&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;包成 Windows service: 這樣才方便, 不用手動連, 而且應該要有 auto re-connect 功能.&lt;/li&gt;
+&lt;li&gt;找找看好用的 Android SSH Tunnel 方案.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;其他方案---socat&#34;&gt;其他方案 - SOCAT&lt;/h2&gt;
+&lt;p&gt;socat 也可以做到 port forwarding, 譬如以下指令就會起一個 socat 去收 port 8080, 然後把收到的東西全都轉到 localhost:9090&lt;/p&gt;
           
           
         
@@ -123,20 +400,57 @@ Asuswrt Merlin (不需設定) 分享器上面不需要做設定.
     
     <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
-      <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
+      <link>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</guid>
+      <guid>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</guid>
       <description>
         
           
-            需求 如果你已經有了一個自己管理的 OpenVPN access server, 他本身是有一個簡單的管理介面, 但在這個時代, 用 Grafana + Prometheus 應該是比較好的選擇.
-OpenVPN 的 Prometheus 方案 Google 一下有幾個, 不過因為我們用的是自建的 OpenVPN Access Server, 只能用這個.
-https://github.com/lfdominguez/openvpn-access-exporter 這個是不能用的, 不過很可惜, 這個的功能看來比較多.
-https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的程式 (https://github.com/lfdominguez/openvpn-access-exporter/releases)
-執行下列指令啟動 exporter
-1$ openvpn-access-exporter --file /usr/local/openvpn_as/etc/db/log.db 2[2022-07-05T23:10:41Z INFO openvpn_access_exporter] Using file: /usr/local/openvpn_as/etc/db/log.db 連線到 http://localhost:9185, 就會看到類似下面的 metrics
-1# HELP access_counter Requests counter 2# TYPE access_counter counter 3access_counter 61 4# HELP openvpn_user_bytes_in Bytes in 5# TYPE openvpn_user_bytes_in gauge 6openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.x.x.x&amp;#34;,session_id=&amp;#34;hYTtny0ozcppC3tS&amp;#34;,username=&amp;#34;user1&amp;#34;,vpn_ip=&amp;#34;172.27.224.2&amp;#34;} 3623 1656473784000 7openvpn_user_bytes_in{common_name=&amp;#34;user1&amp;#34;,node=&amp;#34;vm1655366325290-2779681-iaas&amp;#34;,real_ip=&amp;#34;x.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;如果你已經有了一個自己管理的 &lt;a href=&#34;https://openvpn.net/access-server/&#34;&gt;OpenVPN access server&lt;/a&gt;, 他本身是有一個簡單的管理介面, 但在這個時代, 用 &lt;a href=&#34;https://grafana.com/&#34;&gt;Grafana&lt;/a&gt; + &lt;a href=&#34;https://prometheus.io/&#34;&gt;Prometheus&lt;/a&gt; 應該是比較好的選擇.&lt;/p&gt;
+&lt;h2 id=&#34;openvpn-的-prometheus-方案&#34;&gt;OpenVPN 的 Prometheus 方案&lt;/h2&gt;
+&lt;p&gt;Google 一下有幾個, 不過因為我們用的是自建的 OpenVPN Access Server, 只能用這個.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lfdominguez/openvpn-access-exporter&#34;&gt;https://github.com/lfdominguez/openvpn-access-exporter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;這個是不能用的, 不過很可惜, 這個的功能看來比較多.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kumina/openvpn_exporter&#34;&gt;https://github.com/kumina/openvpn_exporter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安裝使用&#34;&gt;安裝使用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下載適合你環境的程式 (&lt;a href=&#34;https://github.com/lfdominguez/openvpn-access-exporter/releases&#34;&gt;https://github.com/lfdominguez/openvpn-access-exporter/releases&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;執行下列指令啟動 exporter&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;$ openvpn-access-exporter --file /usr/local/openvpn_as/etc/db/log.db
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;2022-07-05T23:10:41Z INFO  openvpn_access_exporter&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Using file: /usr/local/openvpn_as/etc/db/log.db
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;連線到 http://localhost:9185, 就會看到類似下面的 metrics&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HELP access_counter Requests counter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# TYPE access_counter counter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;access_counter &lt;span class=&#34;m&#34;&gt;61&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HELP openvpn_user_bytes_in Bytes in&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# TYPE openvpn_user_bytes_in gauge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_in&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;hYTtny0ozcppC3tS&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.2&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3623&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1656473784000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_in&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;lXgWcyk33yOe92Zg&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3320&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1655708617000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_in&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;9RCKoPcSj0CB8Cyo&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.8&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3554022&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1657085339000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HELP openvpn_user_bytes_out Bytes out&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# TYPE openvpn_user_bytes_out gauge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_out&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;hYTtny0ozcppC3tS&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.2&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3145&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1656473784000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_out&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;lXgWcyk33yOe92Zg&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3592&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1655708617000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_bytes_out&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;9RCKoPcSj0CB8Cyo&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.8&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;11765019&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1657085339000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# HELP openvpn_user_duration Connection duration&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# TYPE openvpn_user_duration gauge&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_duration&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;hYTtny0ozcppC3tS&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.2&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1656473784000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_duration&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;lXgWcyk33yOe92Zg&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1655708617000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;openvpn_user_duration&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,node&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;vm1655366325290-2779681-iaas&amp;#34;&lt;/span&gt;,real_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;x.x.x.x&amp;#34;&lt;/span&gt;,session_id&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;9RCKoPcSj0CB8Cyo&amp;#34;&lt;/span&gt;,username&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;user1&amp;#34;&lt;/span&gt;,vpn_ip&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;172.27.224.8&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;901&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1657085339000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;不過很可惜的, 沒有找到現成的 &lt;a href=&#34;https://grafana.com/grafana/dashboards/&#34;&gt;Grafana Dashboard&lt;/a&gt;, 只能自力救濟了.&lt;/p&gt;
           
           
         
@@ -145,16 +459,94 @@ https://github.com/kumina/openvpn_exporter 安裝使用 下載適合你環境的
     
     <item>
       <title>Open Source VPN 之不嚴謹比較</title>
-      <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
+      <link>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</guid>
+      <guid>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</guid>
       <description>
         
           
-            Open Source VPN 目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...
-OpenVPN: https://openvpn.net/ SoftEther VPN: https://softether.org/ Libreswan VPN: https://libreswan.org/ OpenSwan VPN: https://openswan.org/ strongSwan VPN: https://www.strongswan.org/ FreeLan VPN: https://www.freelan.org/ Open Connect VPN: https://www.infradead.org/openconnect/ 先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN
-OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 7.2K 9K 662 770 1.4K 1.2K N/A Last release 2022/5/24 2021/6/24 2022/5/25 2021/1/22 2022/4/29 2019/5/7 2022/4/29 再用 Google Trend 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
+            &lt;h2 id=&#34;open-source-vpn&#34;&gt;Open Source VPN&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;目前市面上 Open Source VPN 有一堆, 查了一下 OpenSource 的就有一堆, 眼花撩亂, 不知該選誰...&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenVPN: &lt;a href=&#34;https://openvpn.net/&#34;&gt;https://openvpn.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;SoftEther VPN: &lt;a href=&#34;https://softether.org/&#34;&gt;https://softether.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Libreswan VPN: &lt;a href=&#34;https://libreswan.org/&#34;&gt;https://libreswan.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenSwan VPN: &lt;a href=&#34;https://openswan.org/&#34;&gt;https://openswan.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;strongSwan VPN: &lt;a href=&#34;https://www.strongswan.org/&#34;&gt;https://www.strongswan.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FreeLan VPN: &lt;a href=&#34;https://www.freelan.org/&#34;&gt;https://www.freelan.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open Connect VPN: &lt;a href=&#34;https://www.infradead.org/openconnect/&#34;&gt;https://www.infradead.org/openconnect/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先看一下大家在 GitHub 上的星星數, 前兩名是 OpenVPN 和 SoftEther VPN&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;OpenVPN&lt;/th&gt;
+					&lt;th&gt;SoftEther&lt;/th&gt;
+					&lt;th&gt;LibreSwan&lt;/th&gt;
+					&lt;th&gt;OpenSwan&lt;/th&gt;
+					&lt;th&gt;StrongSwan&lt;/th&gt;
+					&lt;th&gt;FreeLan&lt;/th&gt;
+					&lt;th&gt;OpenConnect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;GitHub star&lt;/td&gt;
+					&lt;td&gt;7.2K&lt;/td&gt;
+					&lt;td&gt;9K&lt;/td&gt;
+					&lt;td&gt;662&lt;/td&gt;
+					&lt;td&gt;770&lt;/td&gt;
+					&lt;td&gt;1.4K&lt;/td&gt;
+					&lt;td&gt;1.2K&lt;/td&gt;
+					&lt;td&gt;N/A&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Last release&lt;/td&gt;
+					&lt;td&gt;2022/5/24&lt;/td&gt;
+					&lt;td&gt;2021/6/24&lt;/td&gt;
+					&lt;td&gt;2022/5/25&lt;/td&gt;
+					&lt;td&gt;2021/1/22&lt;/td&gt;
+					&lt;td&gt;2022/4/29&lt;/td&gt;
+					&lt;td&gt;2019/5/7&lt;/td&gt;
+					&lt;td&gt;2022/4/29&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再用 &lt;a href=&#34;https://trends.google.com.tw/trends/?geo=TW&#34;&gt;Google Trend&lt;/a&gt; 比一下, 結果也滿明顯的, 第一名是 OpenVPN, 第二名是 SoftEther VPN, 那就比這兩個就好.
+(因為 Google Trend 只能比 5 個, 另外兩個沒放上來的基本上也是躺平)
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/network/vpn_google_trend.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -163,16 +555,118 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
     
     <item>
       <title>點對點網路測速軟體 iPerf3</title>
-      <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
+      <link>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
+      <guid>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
       <description>
         
           
-            需求 需要一個測試點對點網路速度的軟體, 要有以下幾項功能
-免費 支援 Windows 和 Linux 只測網路, 不測 I/O 有簡易報表 找了一下, iPerf3 算是符合需求
-安裝方法 (Server 和 Client 是同一個程式) 連線到 https://iperf.fr/iperf-download.php, 選擇需要的作業系統 如果是 Windows, 直接下載 iperf-3..-win64.zip 即可, 免安裝, server/client 是同一個執行檔 以 Ubuntu 為例, 理論上是執行這個指令就可以了 1sudo apt-get install iperf3 若是無法安裝, 可能是缺了某些 library, 可參考官網指示, 如下 (這是我執行時候的範本, 請參考官網看最新的指令) 1sudo apt remove iperf3 libiperf0 2sudo apt install libsctp1 3wget https://iperf.fr/download/ubuntu/libiperf0_3.9-1_amd64.deb 4wget https://iperf.fr/download/ubuntu/iperf3_3.9-1_amd64.deb 5sudo dpkg -i libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb 6rm libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb 測試 (Server 端) 不論 Windows 或是 Ubuntu, 指令都是一樣的簡單, 加上 -s 就可以了.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;需要一個測試點對點網路速度的軟體, 要有以下幾項功能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;免費&lt;/li&gt;
+&lt;li&gt;支援 Windows 和 Linux&lt;/li&gt;
+&lt;li&gt;只測網路, 不測 I/O&lt;/li&gt;
+&lt;li&gt;有簡易報表&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;找了一下, &lt;a href=&#34;https://iperf.fr/&#34;&gt;iPerf3&lt;/a&gt; 算是符合需求&lt;/p&gt;
+&lt;h2 id=&#34;安裝方法-server-和-client-是同一個程式&#34;&gt;安裝方法 (Server 和 Client 是同一個程式)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;連線到 &lt;a href=&#34;https://iperf.fr/iperf-download.php&#34;&gt;https://iperf.fr/iperf-download.php&lt;/a&gt;, 選擇需要的作業系統&lt;/li&gt;
+&lt;li&gt;如果是 Windows, 直接下載 iperf-3.&lt;em&gt;.&lt;/em&gt;-win64.zip 即可, 免安裝, server/client 是同一個執行檔&lt;/li&gt;
+&lt;li&gt;以 Ubuntu 為例, 理論上是執行這個指令就可以了
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install iperf3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;若是無法安裝, 可能是缺了某些 library, 可參考官網指示, 如下 (這是我執行時候的範本, 請參考官網看最新的指令)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt remove iperf3 libiperf0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install libsctp1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;wget https://iperf.fr/download/ubuntu/libiperf0_3.9-1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;wget https://iperf.fr/download/ubuntu/iperf3_3.9-1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;sudo dpkg -i libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;rm libiperf0_3.9-1_amd64.deb iperf3_3.9-1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;測試-server-端&#34;&gt;測試 (Server 端)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;不論 Windows 或是 Ubuntu, 指令都是一樣的簡單, 加上 -s 就可以了. 有需要的話, 可以加上 -p 指定 port
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;$ iperf3 -s -p &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;-----------------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Server listening on &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;-----------------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;測試-client-端&#34;&gt;測試 (Client 端)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;執行時指定 server 的 IP, port, 還有測試的時間長度就好, 他會顯示每秒的測速結果還有最後的平均值
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$iperf3&lt;/span&gt;.exe -c 192.168.1.3 -t &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Connecting to host 192.168.1.3, port &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; 192.168.1.4 port &lt;span class=&#34;m&#34;&gt;56034&lt;/span&gt; connected to 192.168.1.3 port &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ID&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Interval           Transfer     Bandwidth
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   0.00-1.00   sec  46.0 MBytes   &lt;span class=&#34;m&#34;&gt;385&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   1.00-2.00   sec  48.1 MBytes   &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   2.00-3.00   sec  48.8 MBytes   &lt;span class=&#34;m&#34;&gt;410&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   3.00-4.00   sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;404&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   4.00-5.00   sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;404&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   5.00-6.00   sec  48.8 MBytes   &lt;span class=&#34;m&#34;&gt;410&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   6.00-7.00   sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;411&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   7.00-8.00   sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;413&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   8.00-9.00   sec  48.4 MBytes   &lt;span class=&#34;m&#34;&gt;406&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   9.00-10.00  sec  48.4 MBytes   &lt;span class=&#34;m&#34;&gt;406&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  10.00-11.00  sec  49.4 MBytes   &lt;span class=&#34;m&#34;&gt;413&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  11.00-12.00  sec  45.1 MBytes   &lt;span class=&#34;m&#34;&gt;379&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  12.00-13.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  13.00-14.00  sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;411&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  14.00-15.00  sec  50.0 MBytes   &lt;span class=&#34;m&#34;&gt;419&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  15.00-16.00  sec  50.0 MBytes   &lt;span class=&#34;m&#34;&gt;420&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  16.00-17.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  17.00-18.00  sec  46.9 MBytes   &lt;span class=&#34;m&#34;&gt;393&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  18.00-19.00  sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;413&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  19.00-20.00  sec  49.4 MBytes   &lt;span class=&#34;m&#34;&gt;414&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;- - - - - - - - - - - - - - - - - - - - - - - - -
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ID&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Interval           Transfer     Bandwidth
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   0.00-20.00  sec   &lt;span class=&#34;m&#34;&gt;971&lt;/span&gt; MBytes   &lt;span class=&#34;m&#34;&gt;407&lt;/span&gt; Mbits/sec                  sender
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  4&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   0.00-20.00  sec   &lt;span class=&#34;m&#34;&gt;971&lt;/span&gt; MBytes   &lt;span class=&#34;m&#34;&gt;407&lt;/span&gt; Mbits/sec                  receiver
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;iperf Done. 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;後記&#34;&gt;後記&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;iPerf3 預設是測試 &lt;em&gt;&lt;strong&gt;upload&lt;/strong&gt;&lt;/em&gt; 的速度, 若要測試 &lt;em&gt;&lt;strong&gt;download&lt;/strong&gt;&lt;/em&gt;, 請記得加上 &lt;em&gt;&lt;strong&gt;-R&lt;/strong&gt;&lt;/em&gt; 參數&lt;/li&gt;
+&lt;li&gt;有個不錯的地方是, 他的 server 端也會有 log, 如下, 這樣很方便.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;-----------------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Server listening on &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;-----------------------------------------------------------
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Accepted connection from 192.168.1.4, port &lt;span class=&#34;m&#34;&gt;56033&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;local&lt;/span&gt; 192.168.1.3 port &lt;span class=&#34;m&#34;&gt;5201&lt;/span&gt; connected to 192.168.1.4 port &lt;span class=&#34;m&#34;&gt;56034&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ID&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Interval           Transfer     Bitrate
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   0.00-1.00   sec  44.9 MBytes   &lt;span class=&#34;m&#34;&gt;377&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   1.00-2.00   sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;404&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   2.00-3.00   sec  48.7 MBytes   &lt;span class=&#34;m&#34;&gt;408&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   3.00-4.00   sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;404&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   4.00-5.00   sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;404&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   5.00-6.00   sec  48.8 MBytes   &lt;span class=&#34;m&#34;&gt;409&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   6.00-7.00   sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;412&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   7.00-8.00   sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;412&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   8.00-9.00   sec  48.5 MBytes   &lt;span class=&#34;m&#34;&gt;407&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   9.00-10.00  sec  48.2 MBytes   &lt;span class=&#34;m&#34;&gt;405&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  10.00-11.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  11.00-12.00  sec  45.2 MBytes   &lt;span class=&#34;m&#34;&gt;380&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  12.00-13.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  13.00-14.00  sec  49.0 MBytes   &lt;span class=&#34;m&#34;&gt;411&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  14.00-15.00  sec  49.8 MBytes   &lt;span class=&#34;m&#34;&gt;418&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  15.00-16.00  sec  50.1 MBytes   &lt;span class=&#34;m&#34;&gt;420&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  16.00-17.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  17.00-18.00  sec  46.9 MBytes   &lt;span class=&#34;m&#34;&gt;393&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  18.00-19.00  sec  49.1 MBytes   &lt;span class=&#34;m&#34;&gt;412&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  19.00-20.00  sec  49.5 MBytes   &lt;span class=&#34;m&#34;&gt;415&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;  20.00-20.02  sec  1.12 MBytes   &lt;span class=&#34;m&#34;&gt;420&lt;/span&gt; Mbits/sec
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;- - - - - - - - - - - - - - - - - - - - - - - - -
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;29&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ID&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Interval           Transfer     Bitrate
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;  5&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;   0.00-20.02  sec   &lt;span class=&#34;m&#34;&gt;971&lt;/span&gt; MBytes   &lt;span class=&#34;m&#34;&gt;407&lt;/span&gt; Mbits/sec                  receiver
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -181,17 +675,42 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
     
     <item>
       <title>OpenVPN server 簡易安裝使用 (Ubuntu)</title>
-      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
+      <link>http://localhost:1313/tw/doc/network/openvpn-server/</link>
       <pubDate>Fri, 17 Jun 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
+      <guid>http://localhost:1313/tw/doc/network/openvpn-server/</guid>
       <description>
         
           
-            需求 建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到某一台特定機器.
-方法 (Server 端) 從這裡下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)
-1apt update &amp;amp;&amp;amp; apt -y install ca-certificates wget net-tools gnupg 2wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add - 3echo &amp;#34;deb http://as-repository.openvpn.net/as/debian focal main&amp;#34;&amp;gt;/etc/apt/sources.list.d/openvpn-as-repo.list 4apt update &amp;amp;&amp;amp; apt -y install openvpn-as 最後一個指令的最後面請注意, 他會產生一個 admin 的密碼
-1To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool. 2 3+++++++++++++++++++++++++++++++++++++++++++++++ 4Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as 5Configuration log file has been written to /usr/local/openvpn_as/init.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;建立一個 OpenVPN, 讓遠端機器可以連到內網的機器, 而且只能連到&lt;em&gt;&lt;strong&gt;某一台特定機器&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;方法-server-端&#34;&gt;方法 (Server 端)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從&lt;a href=&#34;https://openvpn.net/vpn-software-packages/&#34;&gt;這裡&lt;/a&gt;下載 OpenVPN server, 並依照他的指示執行 apt-get 等指令. (以下為參考, 請看 server 上的說明)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;apt update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt -y install ca-certificates wget net-tools gnupg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; apt-key add -
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;deb http://as-repository.openvpn.net/as/debian focal main&amp;#34;&lt;/span&gt;&amp;gt;/etc/apt/sources.list.d/openvpn-as-repo.list
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;apt update &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt -y install openvpn-as
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最後一個指令的最後面請注意, 他會產生一個 admin 的密碼&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;+++++++++++++++++++++++++++++++++++++++++++++++
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Access Server 2.10.3 has been successfully installed in /usr/local/openvpn_as
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Configuration log file has been written to /usr/local/openvpn_as/init.log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Access Server Web UIs are available here:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Admin  UI: https://192.168.1.2:943/admin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Client UI: https://192.168.1.2:943/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Login as &lt;span class=&#34;s2&#34;&gt;&amp;#34;openvpn&amp;#34;&lt;/span&gt; with &lt;span class=&#34;s2&#34;&gt;&amp;#34;fRxnu6bf3fC1&amp;#34;&lt;/span&gt; to &lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;password can be changed on Admin UI&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;+++++++++++++++++++++++++++++++++++++++++++++++
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;裝好後, 就可以直接連到 https://localhost:943/admin 用上面的帳號密碼進去&lt;/p&gt;
           
           
         
@@ -200,17 +719,36 @@ OpenVPN SoftEther LibreSwan OpenSwan StrongSwan FreeLan OpenConnect GitHub star 
     
     <item>
       <title>無聲無影遠端桌面連線 - VNC</title>
-      <link>https://dennys.github.io/tw/doc/network/realvnc/</link>
+      <link>http://localhost:1313/tw/doc/network/realvnc/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/realvnc/</guid>
+      <guid>http://localhost:1313/tw/doc/network/realvnc/</guid>
       <description>
         
           
-            需求 需要一個遠端登入的功能, 要做到以下幾項功能
-進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思 進去的時候, 預設是只有 &amp;quot;看&amp;quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺 有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了 方法 (Server 端) 測試了一下, TeamViewer 和 AnyDesk 都做不出來這種功能, 目前是只有看到 RealVNC可以做到, 就先用這個測試.
-先下載 RealVNC server (從這裡下載: https://www.realvnc.com/en/connect/download/vnc/)
-打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線. 再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間) 如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了, 如下 &amp;#x1f60b;
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;需要一個遠端登入的功能, 要做到以下幾項功能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;進去的時候不能有任何跳出的畫面, 就是不讓使用者有感覺的意思&lt;/li&gt;
+&lt;li&gt;進去的時候, 預設是只有 &amp;quot;看&amp;quot; 而不能控制滑鼠鍵盤, 同樣也是不讓使用者有感覺&lt;/li&gt;
+&lt;li&gt;有需要的話, 可以切換一下, 就可以控制滑鼠鍵盤了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;方法-server-端&#34;&gt;方法 (Server 端)&lt;/h2&gt;
+&lt;p&gt;測試了一下, &lt;a href=&#34;https://www.teamviewer.com/&#34;&gt;TeamViewer&lt;/a&gt; 和 &lt;a href=&#34;https://anydesk.com/&#34;&gt;AnyDesk&lt;/a&gt; 都做不出來這種功能, 目前是只有看到 &lt;a href=&#34;https://www.realvnc.com/&#34;&gt;RealVNC&lt;/a&gt;可以做到, 就先用這個測試.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;先下載 RealVNC server (從這裡下載: &lt;a href=&#34;https://www.realvnc.com/en/connect/download/vnc/&#34;&gt;https://www.realvnc.com/en/connect/download/vnc/&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打開設定, 把 show accept/reject prompt for each connection 關掉, 這樣連線上去時就不會跳一個視窗出來問是否同意連線.
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/06/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/06/image-3.png?w=608&#34; alt=&#34;&#34; class=&#34;wp-image-749&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再關掉 Notify when users connect and disconnect, 這樣連線時就不會跳出視窗. 另外, 預設是如果一段時間沒動作, 就會自動斷線. 如果不希望這樣, 可以把 Disconnect users who have been idle for an extended period 取消, 這樣就算放一整天也不會斷線. (也可以在 Expert 裡面設定 idleTimeout 時間)
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/06/image-4.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/06/image-4.png?w=608&#34; alt=&#34;&#34; class=&#34;wp-image-751&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果沒有關掉, 那有人連上來時, 就會跳出這個視窗, 就被發現了, 如下 &amp;#x1f60b;&lt;/p&gt;
           
           
         

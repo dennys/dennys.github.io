@@ -2,26 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forti on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/forti/</link>
+    <link>http://localhost:1313/tw/tags/forti/</link>
     <description>Recent content in Forti on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 04 Jan 2023 00:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/forti/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 00:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/forti/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在 FortiClient VPN for Windows 保存密碼</title>
-      <link>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</link>
+      <link>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</link>
       <pubDate>Wed, 04 Jan 2023 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</guid>
+      <guid>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</guid>
       <description>
         
           
-            需求 不知道為什麼, 在 FortiClient VPN (Windows 版) 上面設定的 VPN, 有些可以保存密碼, 有些不行, 這樣每次 login 還要輸入密碼有點麻煩. (雖然也是比較安全啦, 但科技始終來自惰性啊...)
-解決方法 方法其實很簡單, 就改一下 Registry 就好了
-執行 regedit
-選 *電腦\HKEY_CURRENT_USER\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\XXXXX (注意, 是 HKEY_CURRENT_USER, 不是 HKEY_LOCAL_MACHINE)
-按右鍵新增一個 DWORD, 有 2 個設定可以使用 *. show_remember_password: 這個設成 1, 他就會出現 保存密碼 這個選項 *. SavePass: 這個設成 1, 他就會把密碼存起來 成果 參考 https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn 
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;不知道為什麼, 在 &lt;a href=&#34;https://www.fortinet.com/tw/support/product-downloads#vpn&#34;&gt;FortiClient VPN&lt;/a&gt; (Windows 版) 上面設定的 VPN, 有些可以保存密碼, 有些不行, 這樣每次 login 還要輸入密碼有點麻煩. (雖然也是比較安全啦, 但科技始終來自惰性啊...)&lt;/p&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;p&gt;方法其實很簡單, 就改一下 Registry 就好了&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 regedit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;選 *電腦\HKEY_CURRENT_USER\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\XXXXX (注意, 是 &lt;em&gt;HKEY_CURRENT_USER&lt;/em&gt;, 不是 &lt;em&gt;HKEY_LOCAL_MACHINE&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按右鍵新增一個 DWORD, 有 2 個設定可以使用
+*. show_remember_password: 這個設成 1, 他就會出現 &lt;strong&gt;保存密碼&lt;/strong&gt; 這個選項
+*. SavePass: 這個設成 1, 他就會把密碼存起來
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn&#34;&gt;https://stackoverflow.com/questions/36356394/how-to-remember-password-in-forticlient-vpn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
           
           
         

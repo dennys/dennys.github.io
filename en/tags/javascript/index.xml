@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Dennys Diary</title>
-    <link>https://dennys.github.io/en/tags/javascript/</link>
+    <link>http://localhost:1313/en/tags/javascript/</link>
     <description>Recent content in JavaScript on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab Node.js SonarQube Integration</title>
-      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <link>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
       <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <guid>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
       <description>
         
           
-            Purpose In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities.
+            &lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;In the fast-evolving landscape of software development, ensuring code quality and security is paramount. To streamline this process, integrating a robust set of tools becomes imperative. In this blog, we embark on a journey to seamlessly integrate GitLab, SonarQube, pytest, coverage.py, and dependency-check into a unified ecosystem. By combining version control, code analysis, testing, code coverage evaluation, and dependency scanning, we aim to create a powerful and efficient pipeline that not only enhances the overall quality of the codebase but also fortifies it against potential vulnerabilities. Join us as we explore each tool&#39;s role in this integration, demonstrating how they collectively contribute to a more resilient and high-performing software development lifecycle.&lt;/p&gt;
           
           
         
@@ -26,16 +27,27 @@
     
     <item>
       <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
-      <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>
+      <link>http://localhost:1313/en/doc/javascript/node-mysql/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/javascript/node-mysql/</guid>
+      <guid>http://localhost:1313/en/doc/javascript/node-mysql/</guid>
       <description>
         
           
-            Requirement I&#39;m tring to write some Node.js functions to wrap some basic database operations and my requirement is to support these features.
-Connection pool Prepared statement Transaction Throw exception: when there is any exception, it can throw the exception to outside. Node.js MySQL drivers First, I find there are 4 drivers for Node.js to connect to MySQL/MariaDB, this is really ...
-This is an old project and it&#39;s original driver is mysql.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I&#39;m tring to write some Node.js functions to wrap some basic database operations and my requirement is
+to support these features.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Connection pool&lt;/li&gt;
+&lt;li&gt;Prepared statement&lt;/li&gt;
+&lt;li&gt;Transaction&lt;/li&gt;
+&lt;li&gt;Throw exception: when there is any exception, it can throw the exception to outside.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;nodejs-mysql-drivers&#34;&gt;Node.js MySQL drivers&lt;/h2&gt;
+&lt;p&gt;First, I find there are 4 drivers for Node.js to connect to MySQL/MariaDB, this is really ...&lt;/p&gt;
+&lt;p&gt;This is an old project and it&#39;s original driver is &lt;a href=&#34;https://github.com/mysqljs/mysql&#34;&gt;mysql&lt;/a&gt;.
+Because it doesn&#39;t support Prepared statement, I decide to migrate it to &lt;a href=&#34;https://github.com/sidorares/node-mysql2&#34;&gt;mysql2&lt;/a&gt;.
+These are MySQL drivers for Node.js:&lt;/p&gt;
           
           
         
@@ -44,16 +56,40 @@ This is an old project and it&#39;s original driver is mysql.
     
     <item>
       <title>Node &#43; Fastify &#43; OpenAPI &#43; Statistics</title>
-      <link>https://dennys.github.io/en/doc/javascript/node-openapi/</link>
+      <link>http://localhost:1313/en/doc/javascript/node-openapi/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/javascript/node-openapi/</guid>
+      <guid>http://localhost:1313/en/doc/javascript/node-openapi/</guid>
       <description>
         
           
-            Requirement I aim to develop a [Node].js(https://nodejs.org/)-based FastAPI that is OpenAPI compatible (formerly known as Swagger). To accomplish this, I will employ RepiDoc for generating OpenAPI documents and keep track of the API&#39;s execution status using swagger-stats.
-Code This is package.json
-1{ 2 &amp;#34;name&amp;#34;: &amp;#34;fastify-example&amp;#34;, 3 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, 4 &amp;#34;description&amp;#34;: &amp;#34;A simple Fastify example with OpenAPI&amp;#34;, 5 &amp;#34;type&amp;#34;: &amp;#34;commonjs&amp;#34;, 6 &amp;#34;scripts&amp;#34;: { 7 &amp;#34;start&amp;#34;: &amp;#34;node app.js&amp;#34; 8 }, 9 &amp;#34;dependencies&amp;#34;: { 10 &amp;#34;@fastify/express&amp;#34;: &amp;#34;^2.
+            &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;I aim to develop a [Node].js(&lt;a href=&#34;https://nodejs.org/%29-based&#34;&gt;https://nodejs.org/)-based&lt;/a&gt; &lt;a href=&#34;https://fastapi.tiangolo.com/&#34;&gt;FastAPI&lt;/a&gt; that is OpenAPI compatible (formerly known as &lt;a href=&#34;https://swagger.io/&#34;&gt;Swagger&lt;/a&gt;).
+To accomplish this, I will employ &lt;a href=&#34;https://rapidocweb.com/&#34;&gt;RepiDoc&lt;/a&gt; for generating OpenAPI documents and keep track of the API&#39;s execution status using &lt;a href=&#34;https://github.com/slanatech/swagger-stats&#34;&gt;swagger-stats&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This is package.json&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fastify-example&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;version&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;description&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;A simple Fastify example with OpenAPI&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;type&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;commonjs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;scripts&amp;#34;: &lt;/span&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;start&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;node app.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;}&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;dependencies&amp;#34;: &lt;/span&gt;{&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/express&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^2.3.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/static&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^6.11.2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/swagger&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^8.10.1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;@fastify/swagger-ui&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^1.9.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;fastify&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;latest&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;#34;swagger-stats&amp;#34;: &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;^0.99.7&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;}&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This is app.js&lt;/p&gt;
           
           
         

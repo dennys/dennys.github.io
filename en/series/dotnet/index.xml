@@ -2,24 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DotNet on Dennys Diary</title>
-    <link>https://dennys.github.io/en/series/dotnet/</link>
+    <link>http://localhost:1313/en/series/dotnet/</link>
     <description>Recent content in DotNet on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/dotnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sharing components between two view models in C# MVVM</title>
-      <link>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <link>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <guid>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
       <description>
         
           
-            Reqruiement I have two view models - MainViewModel and OptionViewModel -, that share a common component CustomConfiguration. My goal is to load the data into MainViewModel in MainWindow, and when the Option button ic clicked on MainWindow, OptionWindow will be opened, and the CustomConfiguration data will be passed into it.
-Code MainWindow.xaml Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.
-1&amp;lt;Window.DataContext&amp;gt; 2 &amp;lt;local:MainViewModel /&amp;gt; 3&amp;lt;/Window.DataContext&amp;gt; 4&amp;lt;StackPanel&amp;gt; 5 &amp;lt;TextBlock Text=&amp;#34;{Binding CustomConfig.
+            &lt;h2 id=&#34;reqruiement&#34;&gt;Reqruiement&lt;/h2&gt;
+&lt;p&gt;I have two view models - &lt;em&gt;MainViewModel&lt;/em&gt; and &lt;em&gt;OptionViewModel&lt;/em&gt; -, that share a common component &lt;em&gt;CustomConfiguration&lt;/em&gt;.
+My goal is to load the data into &lt;em&gt;MainViewModel&lt;/em&gt; in &lt;em&gt;MainWindow&lt;/em&gt;, and when the &lt;em&gt;Option&lt;/em&gt; button ic clicked on &lt;em&gt;MainWindow&lt;/em&gt;,
+&lt;em&gt;OptionWindow&lt;/em&gt; will be opened, and the &lt;em&gt;CustomConfiguration&lt;/em&gt; data will be passed into it.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;h3 id=&#34;mainwindowxaml&#34;&gt;MainWindow.xaml&lt;/h3&gt;
+&lt;p&gt;Only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;local&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MainViewModel&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;StackPanel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TextBlock&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{Binding CustomConfig.GeneralSettings.IsLogEnabled}&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Open Options&amp;#34;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{Binding OpenOptionsCommand}&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;StackPanel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;optionwindowxaml&#34;&gt;OptionWindow.xaml&lt;/h3&gt;
+&lt;p&gt;The same as MainWindow.xaml, only bind a data (CustomConfig.GeneralSettings.IsLogEnabled) and assign the command.&lt;/p&gt;
           
           
         

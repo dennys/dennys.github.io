@@ -2,24 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android Tips on Dennys Diary</title>
-    <link>https://dennys.github.io/en/series/android-tips/</link>
+    <link>http://localhost:1313/en/series/android-tips/</link>
     <description>Recent content in Android Tips on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/android-tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/android-tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Change Default YouTube App (YouTube Vanced, NewPipe, ...) in Android</title>
-      <link>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</link>
+      <link>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
-            NoticeThis solution is only for Android 11 or below!!! Please use Better Open With in Android 12 or above. Requirement Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), NewPipe, ...), although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.
-Solution Android Settings -&amp;gt; Apps -&amp;gt; Default apps -&amp;gt; Opening links
-It will list all Apps, choose YouTube, and you will see the following screen.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Notice&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;This solution is only for Android 11 or below!!!&lt;/li&gt;
+&lt;li&gt;Please use &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.aboutmycode.betteropenwith&#34;&gt;Better Open With&lt;/a&gt; in Android 12 or above.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Android&#39;s default YouTube App is not very convenient, there are lots of Open Source alternatives (YouTube Vanced (removed), &lt;a href=&#34;https://github.com/TeamNewPipe/NewPipe&#34;&gt;NewPipe&lt;/a&gt;, ...),
+although you can install them, if you don&#39;t change the default YouTube App, it&#39;s still inconvenient.&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Android Settings -&amp;gt; Apps -&amp;gt; Default apps -&amp;gt; Opening links&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It will list all Apps, choose YouTube, and you will see the following screen.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.en.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         

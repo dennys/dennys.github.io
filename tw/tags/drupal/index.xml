@@ -2,23 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drupal on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/drupal/</link>
+    <link>http://localhost:1313/tw/tags/drupal/</link>
     <description>Recent content in Drupal on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 26 Mar 2009 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2009 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何對 Drupal 的 cron 做 Debug</title>
-      <link>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</link>
+      <link>http://localhost:1313/tw/doc/drupal/drupal-cron-debug/</link>
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</guid>
+      <guid>http://localhost:1313/tw/doc/drupal/drupal-cron-debug/</guid>
       <description>
         
           
-            注意這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.Drupal&#39;s cron Drupal 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.
-1Attempting to re-run cron while it is already running. 2Cron run exceeded the time limit and was aborted. 3Cron has been running for more than an hour and is most likely stuck. Debug 方法 在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    這篇文章是 Drupal 6 的時代寫的, 並沒有在後續版本測試過.
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;drupals-cron&#34;&gt;Drupal&#39;s cron&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://drupal.org/&#34;&gt;Drupal&lt;/a&gt; 的 cron 是個好用的東西, 但有時候出問題時也很難 debug, 當看到這幾個訊息時, 通常是上次的 cron 執行失敗了.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Attempting to re-run cron &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; it is already running.  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Cron run exceeded the &lt;span class=&#34;nb&#34;&gt;time&lt;/span&gt; limit and was aborted.  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Cron has been running &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; more than an hour and is most likely stuck.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;debug-方法&#34;&gt;Debug 方法&lt;/h2&gt;
+&lt;p&gt;在 variable 裡面, 有兩個相關參數, cron_last 是上次執行的時間, cron_semaphore 是代表 cron 正在執行. 所以如果執行 cron 的途中系統掛了, 可能就得手動清掉 semaphore, 不然即使你手動執行 cron, 系統也會回應已經有一個 cron 在執行了. 可用下列指令:&lt;/p&gt;
           
           
         

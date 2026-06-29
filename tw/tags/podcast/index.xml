@@ -2,25 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Podcast on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/podcast/</link>
+    <link>http://localhost:1313/tw/tags/podcast/</link>
     <description>Recent content in Podcast on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>跳過 Podcast 的片頭片尾</title>
-      <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
+      <link>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
-            我通常都用 Spotify 來聽 Podcast, 後來也會和家人共用, 但這樣有時候就會混在一起, 想說找別的 App 分開使用. 無意中看到 Pocket Casts 這個 App 滿有意思的, 她有個功能是可以跳過固定的片頭和片尾 (依據秒數), 免費版就有這功能了.
-步驟如下:
-選擇要調整的 Podcast. 進去設定. 選擇你要跳過的時間. 2022/9/14 更新: 結果發現 AntennaPod (一個 OpenSource 的 Android Podcast App), 在 2020 年就有這功能了, 這裡有示範影片: https://github.com/AntennaPod/AntennaPod/pull/3975
-而且 AntennaPod 還支援 Podcast 2.0, 可直接跳到你想聽的段落
+            &lt;p&gt;我通常都用 &lt;a href=&#34;https://spotify.com/&#34;&gt;Spotify&lt;/a&gt; 來聽 Podcast, 後來也會和家人共用, 但這樣有時候就會混在一起, 想說找別的 App 分開使用.
+無意中看到 &lt;a href=&#34;https://pocketcasts.com/&#34;&gt;Pocket Casts&lt;/a&gt; 這個 App 滿有意思的, 她有個功能是可以跳過固定的片頭和片尾 (依據秒數), 免費版就有這功能了.&lt;/p&gt;
+&lt;p&gt;步驟如下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;選擇要調整的 Podcast.&lt;/li&gt;
+&lt;li&gt;進去設定.&lt;/li&gt;
+&lt;li&gt;選擇你要跳過的時間.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/podcast/pocket-casts-skip-intro.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2022/9/14 更新:
+結果發現 &lt;a href=&#34;https://github.com/AntennaPod/AntennaPod&#34;&gt;AntennaPod&lt;/a&gt; (一個 OpenSource 的 Android Podcast App), 在 2020 年就有這功能了,
+這裡有示範影片: &lt;a href=&#34;https://github.com/AntennaPod/AntennaPod/pull/3975&#34;&gt;https://github.com/AntennaPod/AntennaPod/pull/3975&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/149837/77842715-786ab880-714a-11ea-94ca-4ab0fb3ed133.gif&#34;&gt;
+&lt;p&gt;而且 AntennaPod 還支援 Podcast 2.0, 可直接跳到你想聽的段落&lt;/p&gt;
           
           
         

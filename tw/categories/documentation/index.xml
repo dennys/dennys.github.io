@@ -17,8 +17,11 @@
       <description>
         
           
-            this is a test document
-themes\LoveIt\assets\css\_variables.scss$global-font-size: 20px !default; =&amp;gt; change font size from 16 to 20
+            &lt;p&gt;this is a test document&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;themes\LoveIt\assets\css\_variables.scss
+
+$global-font-size: 20px !default; =&amp;gt; change font size from 16 to 20
+&lt;/code&gt;&lt;/pre&gt;
           
           
         

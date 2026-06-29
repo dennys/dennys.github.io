@@ -2,27 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/tags/android/</link>
+    <link>http://localhost:1313/tw/tags/android/</link>
     <description>Recent content in Android on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android App 備份 (使用 Syncthing)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-app-backup/</link>
+      <link>http://localhost:1313/tw/doc/android/android-app-backup/</link>
       <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-app-backup/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-app-backup/</guid>
       <description>
         
           
-            需求 Android 手機現在都不能插卡了, 萬一手機掛了, 上面的資料沒備份就很麻煩. 我目前是使用 Syncthing-Fork, 他在 PC 和手機上的設定可參考 https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/.
-這邊紀錄的是, Syncthing 設定好後, 要如何把對應的 App 的資料放到容易被 Syncthing 讀寫的地方.
-Syncthing (Android 設定) Ignore patterns .trasn* *.obf (主要是這兩個檔案, Taiwan_asia.obf: 548MB, World_basemap_mini.obf: 49MB) 各 App 設定方法 (設定一次就好) OsmAnd+ (OSM Automated Navigation Directions) 執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄
-Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
-打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案
-各 App 設定方法 (每次執行一次, 才會備份一次) Nova Launcher 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 Syncthing (自己備份自己) 執行 設定 -&amp;gt; 備份 &amp;amp; 還原 -&amp;gt; 備份, 把設定檔存到 Download 目錄 讓 Syncthing 自己同步 AntennaPod 執行 設定 -&amp;gt; 儲存空間 -&amp;gt; 匯入/匯出 -&amp;gt; 資料庫匯出 -&amp;gt; 儲存, 把設定檔存到備份目錄 讓 Syncthing 自己同步 Geo Tracker 執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄 讓 Syncthing 自己同步 
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 手機現在都不能插卡了, 萬一手機掛了, 上面的資料沒備份就很麻煩. 我目前是使用 &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&amp;amp;hl=en_US&#34;&gt;Syncthing-Fork&lt;/a&gt;,
+他在 PC 和手機上的設定可參考 &lt;a href=&#34;https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/&#34;&gt;https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;這邊紀錄的是, Syncthing 設定好後, 要如何把對應的 App 的資料放到容易被 Syncthing 讀寫的地方.&lt;/p&gt;
+&lt;h3 id=&#34;syncthing-android-設定&#34;&gt;Syncthing (Android 設定)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Ignore patterns
+&lt;ul&gt;
+&lt;li&gt;.trasn*&lt;/li&gt;
+&lt;li&gt;*.obf (主要是這兩個檔案, Taiwan_asia.obf: 548MB, World_basemap_mini.obf: 49MB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;各-app-設定方法-設定一次就好&#34;&gt;各 App 設定方法 (設定一次就好)&lt;/h2&gt;
+&lt;h3 id=&#34;osmand-osm-automated-navigation-directions&#34;&gt;&lt;a href=&#34;https://f-droid.org/zh_Hant/packages/net.osmand.plus/&#34;&gt;OsmAnd+&lt;/a&gt; (OSM Automated Navigation Directions)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;open-tracks&#34;&gt;&lt;a href=&#34;https://f-droid.org/android/packages/de.dennisguse.opentracks/&#34;&gt;Open Tracks&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
+    &lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;各-app-設定方法-每次執行一次-才會備份一次&#34;&gt;各 App 設定方法 (每次執行一次, 才會備份一次)&lt;/h2&gt;
+&lt;h3 id=&#34;nova-launcher&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher&#34;&gt;Nova Launcher&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;syncthing-自己備份自己&#34;&gt;Syncthing (自己備份自己)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; 備份 &amp;amp; 還原 -&amp;gt; 備份, 把設定檔存到 Download 目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;antennapod&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=de.danoeh.antennapod&#34;&gt;AntennaPod&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; 儲存空間 -&amp;gt; 匯入/匯出 -&amp;gt; 資料庫匯出 -&amp;gt; 儲存, 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;geo-tracker&#34;&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker&#34;&gt;Geo Tracker&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;執行 設定 -&amp;gt; Export to folder -&amp;gt; 儲存 (選 GPS or KML, or KMZ 格式), 把設定檔存到備份目錄&lt;/li&gt;
+&lt;li&gt;讓 Syncthing 自己同步&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -31,16 +81,34 @@ Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
     
     <item>
       <title>手機照片自動備份到電腦 (使用 Syncthing for Android)</title>
-      <link>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
+      <link>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
+      <guid>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
       <description>
         
           
-            需求 現在的手機都不能插卡, 照片直接存在手機上, 萬一手機掛的很嚴重, 有時連照片都救不回來. 但是要常常拿手機接線到電腦上傳檔也很麻煩, 因此要找一個自動把手機照片備份到電腦的方式. 大概有幾種作法
-最簡單的, 花錢買 Google Drive 或 Google Photos, 只要有上網, 就會自動幫你備份到雲端去. Resilio Sync, 他是走BitTorrent協定的傳輸軟體, 免費版和付費版的差異可以看這裡, 不過這軟體我沒有實際使用過. Syncthing, 這是一個 Open Source 的檔案同步軟體. 因為我的需求是要把照片先轉存到電腦, 整理後再上雲端, 因此我用的是 Syncthing, 他可以把各種平台, 譬如 Windows, Linux, Android, maxOS, *BSD, ... 的檔案做互相同步. 甚至連 Synology 都有人做好 Addon了. 沒錯, 你注意到了, 他沒有官方支援的 iOS solution ... (iOS 可參考 Möbius Sync, 這是別的廠商做的付費 App, 支援 iPhone/iPad)
-手機端安裝 Syncthing 在手機上有兩個 App, 一個是 syncthing-android, 另一個是 Syncthing-Fork. Syncthing-Fork 有多一些功能, 可參考他的 GitHub, 上面有說明, 所以我就用這個了.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;現在的手機都不能插卡, 照片直接存在手機上, 萬一手機掛的很嚴重, 有時連照片都救不回來. 但是要常常拿手機接線到電腦上傳檔也很麻煩, 因此要找一個自動把手機照片備份到電腦的方式.
+大概有幾種作法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最簡單的, 花錢買 &lt;a href=&#34;https://drive.google.com/&#34;&gt;Google Drive&lt;/a&gt; 或 &lt;a href=&#34;https://photos.google.com/&#34;&gt;Google Photos&lt;/a&gt;, 只要有上網, 就會自動幫你備份到雲端去.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.resilio.com/individuals/&#34;&gt;Resilio Sync&lt;/a&gt;, 他是走&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/BitTorrent_%28%E5%8D%8F%E8%AE%AE%29&#34;&gt;BitTorrent協定&lt;/a&gt;的傳輸軟體, 免費版和付費版的差異可以看&lt;a href=&#34;https://help.resilio.com/hc/en-us/articles/204754419-Sync-FREE-vs-Sync-PRO&#34;&gt;這裡&lt;/a&gt;, 不過這軟體我沒有實際使用過.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt;, 這是一個 Open Source 的檔案同步軟體.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因為我的需求是要把照片先轉存到電腦, 整理後再上雲端, 因此我用的是 Syncthing, 他可以把各種平台, 譬如 Windows, Linux, Android, maxOS, *BSD, ... 的檔案做互相同步. 甚至連 &lt;a href=&#34;https://www.synology.com/&#34;&gt;Synology&lt;/a&gt; 都有人做好 &lt;a href=&#34;https://www.synology.com/en-uk/dsm/packages/syncthing.net?os_ver=6.2&#34;&gt;Addon&lt;/a&gt;了.
+沒錯, 你注意到了, 他沒有官方支援的 iOS solution ... (iOS 可參考 &lt;a href=&#34;https://apps.apple.com/us/app/m%C3%B6bius-sync/id1539203216&#34;&gt;Möbius Sync&lt;/a&gt;, 這是別的廠商做的付費 App, 支援 iPhone/iPad)&lt;/p&gt;
+&lt;h2 id=&#34;手機端安裝&#34;&gt;手機端安裝&lt;/h2&gt;
+&lt;p&gt;Syncthing 在手機上有兩個 App, 一個是 &lt;a href=&#34;https://github.com/syncthing/syncthing-android&#34;&gt;syncthing-android&lt;/a&gt;, 另一個是 &lt;a href=&#34;https://github.com/Catfriend1/syncthing-android&#34;&gt;Syncthing-Fork&lt;/a&gt;. Syncthing-Fork 有多一些功能, 可參考他的 GitHub, 上面有說明, 所以我就用這個了.&lt;/p&gt;
+&lt;p&gt;下載點: &lt;figure&gt;&lt;a href=&#34;https://f-droid.org/zh_Hant/packages/com.github.catfriend1.syncthingandroid/&#34;&gt;&lt;img src=&#34;https://f-droid.org/badge/get-it-on.png&#34; width=&#34;200&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;figure&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&#34;&gt;&lt;img src=&#34;https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png&#34; width=&#34;200&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安裝好後, Syncthing-Fork 需要 3 種權限, 我把截圖直接合併成一張&lt;/p&gt;
           
           
         
@@ -49,17 +117,87 @@ Open Tracks 執行 設定 -&amp;gt; 蹤跡匯出目錄 -&amp;gt; 輸入目錄
     
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
+      <link>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
-            需求 在上次的文章中, 我們知道預設 Android 的通知是 封存, 然後可以把封存改為刪除, 但沒法兩者同時出現.
-不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.
-K-9 Mail, ( K-9 Mail Joins The Thunderbird Family ) FairEmail Gmail 先回顧一下 Gmail 的部分, 預設是只能封存. 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. K9 在 K9 裡面, 預設就有 回覆, 標示為已讀取, 刪除 這三種可選擇, 但他並沒有提供 封存 這個功能.
-FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 action. 你可以在 設定 裡面的 通知動作 選擇你想要顯示的動作. 注意, 免費版最多可選擇 3 種.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;在&lt;a href=&#34;http://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/&#34;&gt;上次的文章&lt;/a&gt;中, 我們知道預設 Android 的通知是 &lt;strong&gt;封存&lt;/strong&gt;, 然後可以把封存改為&lt;strong&gt;刪除&lt;/strong&gt;, 但沒法兩者同時出現.&lt;/p&gt;
+&lt;p&gt;不過看來是沒有辦法, 因此找了幾個其他的 Email App 來試試看.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thundernest/k-9&#34;&gt;K-9 Mail&lt;/a&gt;, ( &lt;a href=&#34;https://blog.thunderbird.net/2022/06/revealed-thunderbird-on-android-plans-k9/&#34;&gt;K-9 Mail Joins The Thunderbird Family&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/M66B/FairEmail&#34;&gt;FairEmail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gmail&#34;&gt;Gmail&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;先回顧一下 Gmail 的部分, 預設是只能封存.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-6.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-6.png?w=348&#34; alt=&#34;&#34; class=&#34;wp-image-523&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-10.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-10.png?w=405&#34; alt=&#34;&#34; class=&#34;wp-image-364&#34; width=&#34;245&#34; height=&#34;321&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-7.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-7.png?w=344&#34; alt=&#34;&#34; class=&#34;wp-image-525&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;k9&#34;&gt;K9&lt;/h2&gt;
+&lt;p&gt;在 K9 裡面, 預設就有 &lt;strong&gt;回覆&lt;/strong&gt;, &lt;strong&gt;標示為已讀取&lt;/strong&gt;, &lt;strong&gt;刪除&lt;/strong&gt; 這三種可選擇, 但他並沒有提供 &lt;strong&gt;封存&lt;/strong&gt; 這個功能.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/k9_notification.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;fairemail&#34;&gt;FairEmail&lt;/h2&gt;
+&lt;p&gt;在 FairEmail, 預設是提供 &lt;strong&gt;垃圾桶&lt;/strong&gt; 和 &lt;strong&gt;標示已讀&lt;/strong&gt; 兩種 action.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -68,16 +206,141 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何修改預設的 YouTube App (YouTube Vanced, NewPipe, ...)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
+      <link>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
-            注意這方法僅適用於 Android 11 或更以前的版本!!! Android 12 或以上請使用 Better Open With. 需求 Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, NewPipe, ... 等等), 但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.
-作法 進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).
-這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面. 把 &amp;quot;開啟支援的連結&amp;quot; 關掉. 回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;. 把 YouTube 相關的 4 個連結打勾. 回到上一層, 這時候 NewPipe 就有綁定這 4 個連結了.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;這方法僅適用於 Android 11 或更以前的版本!!!&lt;/li&gt;
+&lt;li&gt;Android 12 或以上請使用 &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.aboutmycode.betteropenwith&#34;&gt;Better Open With&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 預設的 YouTube App 不是很好用, 有很多 Open Source 的替代品 (被下架的 YouTube Vanced, &lt;a href=&#34;https://github.com/TeamNewPipe/NewPipe&#34;&gt;NewPipe&lt;/a&gt;, ... 等等),
+但安裝之後, 如果沒有把預設開啟 YouTube 的 App 一起改掉, 用起來還是沒有那麼方便.&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;進入 Android 的設定-&amp;gt;應用程式-&amp;gt;預設應用程式-&amp;gt;開啟連結(在最下面).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這裡就會把所有 App 都列出來, 拉到最下面, 選擇 YouTube, 應該會看到如下畫面.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把 &amp;quot;開啟支援的連結&amp;quot; 關掉.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回到上一層, 選擇你要使用的 YouTube App, 這裡以 NewPipe 為例, 進去後選擇 &amp;quot; + 新增連結&amp;quot;.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把 YouTube 相關的 4 個連結打勾.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -86,16 +349,98 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
-      <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
+      <link>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</guid>
       <description>
         
           
-            2023/4/30 更新在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了. 9TO5 Google 的報導: Google says Android will separate notification and ringtone volume Issue URL: Separate notification and ringtone volumes 提醒這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.
-需求 Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開. Google 一下, 其實滿多人反映這件事
-2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. https://issuetracker.google.com/issues/69842456 =&amp;gt; 有 Google 帳號的可以上去 +1 一下 這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;2023/4/30 更新&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;在 2011 年, 有人提了一個需求, 希望把鈴聲和通知的音量大小分開, 時隔 11 年多, 竟然修正了. 查了一下, Android 14 DP2 就有了, Android 13 QPR3 就不知道會不會下放了.&lt;/li&gt;
+&lt;li&gt;9TO5 Google 的報導: &lt;a href=&#34;https://9to5google.com/2023/04/29/android-notification-ringtone-volume/&#34;&gt;Google says Android will separate notification and ringtone volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Issue URL: &lt;a href=&#34;https://issuetracker.google.com/issues/36937094&#34;&gt;Separate notification and ringtone volumes&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+
+&lt;div class=&#34;notices info&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;提醒&lt;/div&gt;
+    &lt;p&gt;這個方法不用 Root, 但需要裝一個 App, 而且這 App 會一直在執行.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Android 在音量調整的部分, 鈴聲和通知的音量大小是綁在一起的, 無法分開.
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/sound/Android_Sound.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Google 一下, 其實滿多人反映這件事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;2017 年就有人開 ticket, 然後也 assign 人了, 不過看來是還沒進展, 中間也曾被 close 過. &lt;a href=&#34;https://issuetracker.google.com/issues/69842456&#34;&gt;https://issuetracker.google.com/issues/69842456&lt;/a&gt; =&amp;gt; 有 Google 帳號的可以上去 +1 一下&lt;/li&gt;
+&lt;li&gt;這是另一個 ticket, 他的訴求不太一樣, 是希望能把 notification 的聲音完全關掉, 這需求也被 accepted 了, 不過也是沒進展. &lt;a href=&#34;https://issuetracker.google.com/issues/177060206&#34;&gt;https://issuetracker.google.com/issues/177060206&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mobile01.com/topicdetail.php?f=565&amp;amp;t=6482657&#34;&gt;Mobile01 上的討論&lt;/a&gt;, 看來原生 Android 都是這樣, 只知道三星和LG的手機都是分開的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;解法-使用-sound-profile-app&#34;&gt;解法 (使用 Sound Profile App)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Google 了很久, 找不到甚麼簡單的做法, 只找到一個 &lt;a href=&#34;https://play.google.com/store/apps/details?id=Orion.Soft&#34;&gt;Sound Profile&lt;/a&gt; 可以做到, 安裝過程他會需要 Modify system settings 和 DoNotDisturbMode 這兩個權限. 執行後可以看到他內建了幾組 profile (Normal, Quiet, Silent, ...)
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/sound/SoundProfile.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
           
           
         
@@ -104,24 +449,47 @@ FairEmail 在 FairEmail, 預設是提供 垃圾桶 和 標示已讀 兩種 actio
     
     <item>
       <title>如何更新 Unlock 過的 Pixel 5</title>
-      <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
+      <link>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</link>
       <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</guid>
+      <guid>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</guid>
       <description>
         
           
-            前言 Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.
-事前準備 下載 Pixel OTA Images Pixel Factory Images 把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img 利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中 進入開發者模式並確定 adb devices 可以連 1C:\platform-tools&amp;gt;adb devices 2List of devices attached 3*************** device 更新步驟 執行以下指令重新開機進入sideload mode
-adb reboot sideload
-刷入安全性更新檔案, 這個步驟會比較久
-adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip
-完成上傳後勿重新開機，&amp;quot;在手機上&amp;quot; 選擇Reboot to bootloader
-刷入被 Magisk 修補後的 boot.img
-fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img
-執行以下指令重新開機
-fastboot reboot
-進入 設定-&amp;gt;關於-&amp;gt;Android 版本, 確定有更新成功.
+            &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Pixel 5 在 Unlock 之後, 自動更新就失效了, 得手動更新, 方法如下.&lt;/p&gt;
+&lt;h2 id=&#34;事前準備&#34;&gt;事前準備&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;下載
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/android/ota&#34;&gt;Pixel OTA Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/android/images&#34;&gt;Pixel Factory Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;把redfin-sq1a.220205.002-factory-734556ab.zip (檔案名稱看實際的版本) 解壓縮, 要解兩層, 直到解出 boot.img&lt;/li&gt;
+&lt;li&gt;利用 Magisk 修補 boot.img, 產生的檔案名稱長類似這樣 magisk_patched-24201_LSQ4E.img, 再把這個檔案傳回電腦中&lt;/li&gt;
+&lt;li&gt;進入開發者模式並確定 adb devices 可以連
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\platform-tools&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&amp;gt;adb devices&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;List of devices attached
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;*************** device
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;更新步驟&#34;&gt;更新步驟&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行以下指令重新開機進入sideload mode&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;adb reboot sideload&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷入安全性更新檔案, 這個步驟會比較久&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;adb sideload redfin-ota-sq1a.220205.002-84ba2421.zip&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;完成上傳後&lt;strong&gt;&lt;mark style=&#34;background-color:rgba(0, 0, 0, 0);&#34; class=&#34;has-inline-color has-vivid-red-color&#34;&gt;勿重新開機，&amp;quot;在手機上&amp;quot; 選擇Reboot to bootloader&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刷入被 Magisk 修補後的 boot.img&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;fastboot flash boot --slot=all magisk_patched-24201_LSQ4E.img&lt;/code&gt;&lt;/p&gt;
           
           
         
@@ -130,18 +498,26 @@ fastboot reboot
     
     <item>
       <title>如何設定 Android 零打擾的時間長度</title>
-      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
+      <link>http://localhost:1313/tw/doc/android/android-do-not-disturb/</link>
       <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-do-not-disturb/</guid>
       <description>
         
           
-            需求 Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.
-作法 如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度
-預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;
-改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項
-結果 這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Android 可以從快速設定來開關零打擾, 但預設只能開和關, 常常開了後就忘了關了.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-8.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-8.png?w=393&#34; alt=&#34;&#34; class=&#34;wp-image-608&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;p&gt;如果要調整零打擾的長度, 可從這裡修改: 設定 -&amp;gt; 通知 -&amp;gt; 零打擾 -&amp;gt; 從快速設定開啟時的持續時間長度&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-2.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-2.png?w=405&#34; alt=&#34;&#34; class=&#34;wp-image-596&#34; width=&#34;293&#34; height=&#34;538&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;預設值是&amp;quot;直到你關閉為止&amp;quot;, 因此他就只能開和關. 我是把它改成&amp;quot;每次都詢問&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-3.png?w=347&#34; alt=&#34;&#34; class=&#34;wp-image-598&#34; width=&#34;300&#34; height=&#34;218&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;改過之後再看快速設定, 右邊就多了一個箭頭, 按下去就會有選項&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-7.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-7.png?w=396&#34; alt=&#34;&#34; class=&#34;wp-image-607&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;這裡就可以設定你要零打擾的時間長度 (以小時為單位), 或是直接指定時間.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/05/image-4.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/05/image-4.png?w=350&#34; alt=&#34;&#34; class=&#34;wp-image-601&#34; width=&#34;324&#34; height=&#34;232&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -150,15 +526,18 @@ fastboot reboot
     
     <item>
       <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
-      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <link>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <guid>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
       <description>
         
           
-            需求 不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.
-作法 後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;不知道為甚麼, 手機接一般藍牙喇叭都不會延遲, 但接車機藍牙就會延遲, 而且延遲時間會愈來愈長. 聽音樂是還好, 但是導航語音延遲太長就是個問題了, 可能地方都過了才聽到聲音.&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;p&gt;後來找到的解法是, 設定不要&amp;quot;透過藍牙撥放語音&amp;quot;, 這樣就可以了. 當有導航時, 車上的音樂 (從手機的藍牙過來) 會暫停, 然後導航語音是直接從手機出來. 要注意的是, 導航音量可能要調大聲一點.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-8.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-8.png?w=384&#34; alt=&#34;&#34; class=&#34;wp-image-530&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
           
           
         
@@ -167,15 +546,99 @@ fastboot reboot
     
     <item>
       <title>將 Gmail 的通知改成可以直接刪除 (預設是封存)</title>
-      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
+      <link>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
-            需求 Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.
-作法 打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除. 修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件. 後記 如果可以讓封存和刪除都出來就更好了.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Gmail 的通知, 預設是可以在通知的地方選&amp;quot;封存&amp;quot;或&amp;quot;回覆&amp;quot;, 但其實可以修改.&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打開 Gmail App, 進入一般設定, 修改預設的電子郵件通知動作, 預設是&amp;quot;封存&amp;quot;, 把它改成刪除.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修改完後, 就可以在收到 Gmail 通知時, 直接刪除信件.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;後記&#34;&gt;後記&lt;/h2&gt;
+&lt;p&gt;如果可以讓封存和刪除都出來就更好了.&lt;/p&gt;
           
           
         
@@ -184,18 +647,28 @@ fastboot reboot
     
     <item>
       <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
+      <link>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
       <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
       <description>
         
           
-            前言 自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.
-看起來評價不是很好, 我也覺得很不直覺...
-不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.
-成果 結果就會變成如下
-參考: Google Pixel Update - March 2022(https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.) Google community 的說明: https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966 
+            &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;自 Android 12 開始, 鎖定畫面的時鐘變成兩列, 而且無法更改.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-1.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-1.png?w=381&#34; alt=&#34;&#34; class=&#34;wp-image-496&#34; height=&#34;300&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;看起來&lt;a href=&#34;https://support.google.com/pixelphone/thread/133395984/&#34;&gt;評價&lt;/a&gt;不是很好, 我也覺得很不直覺...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-3.png?w=913&#34; alt=&#34;&#34; class=&#34;wp-image-500&#34; height=&#34;290&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不過自 2022年3月更新後, 新增了一個選項, 可以取消雙行時鐘了.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/03/image-12.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/03/image-12.png?w=397&#34; alt=&#34;&#34; class=&#34;wp-image-452&#34; height=&#34;250&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
+&lt;p&gt;結果就會變成如下&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/04/image-2.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/04/image-2.png?w=378&#34; alt=&#34;&#34; class=&#34;wp-image-497&#34; height=&#34;400&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;參考&#34;&gt;參考:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Google Pixel Update - March 2022(&lt;a href=&#34;https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022&#34;&gt;https://support.google.com/pixelphone/thread/153884074/google-pixel-update-march-2022&lt;/a&gt;) (奇怪的是, 官方的 3 月更新 list 並沒有提到這點.)&lt;/li&gt;
+&lt;li&gt;Google community 的說明: &lt;a href=&#34;https://support.google.com/pixelphone/thread/133395984?hl=en&amp;amp;msgid=154180966&#34;&gt;https://support.google.com/pixelphone/thread/133395984?hl=en&amp;msgid=154180966&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -204,16 +677,31 @@ fastboot reboot
     
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!! 此方法適用於 Android 11, 12. 還沒在 Android 13 上測試 本文更新紀錄 2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式 Wi-Fi CA 憑證驗證在 Android 11 的改變 Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:
-自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (而且 iPhone 至少到 15.4 都沒有卡這個...)
-爬了一下文, 看來是可以直接把這個設定加回去 (參考: https://android.stackexchange.com/questions/231859/), 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案必須 Unlock 才能修改. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/li&gt;
+&lt;li&gt;此方法適用於 Android 11, 12. 還沒在 Android 13 上測試&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;本文更新紀錄&#34;&gt;本文更新紀錄&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2022/05/30: 新增系統更新或 Wi-Fi 密碼修改後的處理方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;wi-fi-ca-憑證驗證在-android-11-的改變&#34;&gt;Wi-Fi CA 憑證驗證在 Android 11 的改變&lt;/h2&gt;
+&lt;p&gt;Android 10 以前, 如果是連到 Enterprise Wi-Fi (EAP/PEAP), CA 憑證是可以選 &amp;quot;不要驗證&amp;quot;, 如下:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-13.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-13.png?w=346&#34; alt=&#34;&#34; class=&#34;wp-image-394&#34; width=&#34;233&#34; height=&#34;297&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自 Android 11 起, 如果是連到 Enterprise Wi-Fi (PEAP), CA 憑證就無法選 &amp;quot;不要驗證&amp;quot;, 原因可參考 &lt;a href=&#34;https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/&#34;&gt;https://www.xda-developers.com/android-11-break-enterprise-wifi-connection/&lt;/a&gt;. 這個方向是對的, 但如果網管不改, 一般使用者恐怕也無能為力. (&lt;em&gt;&lt;strong&gt;而且 iPhone 至少到 15.4 都沒有卡這個...&lt;/strong&gt;&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;爬了一下文, 看來是可以直接把這個設定加回去 (參考: &lt;a href=&#34;https://android.stackexchange.com/questions/231859/%29&#34;&gt;https://android.stackexchange.com/questions/231859/)&lt;/a&gt;, 但很不幸的, 檔案是放在 /data/misc/apexdata/com.android.wifi/WifiConfigStore.xm, 這裡的檔案&lt;em&gt;&lt;strong&gt;必須 Unlock 才能修改&lt;/strong&gt;&lt;/em&gt;. 文章裡面是寫有可能透過 App 修改, 但我沒找到方法, 如果有人找到好方法了, 也麻煩分享一下.&lt;/p&gt;
           
           
         
@@ -222,20 +710,45 @@ fastboot reboot
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
+      <link>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-需求 在上次這篇 Android 11 如何不要驗證 Wi-Fi CA 憑證 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:
-方法 1 將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式
-用 fastboot 刷回原始的 boot.img
-1fastboot boot boot.img&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt; 方法 2 其實 Magisk 有這個功能刷回原始的 boot.img
-但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷
-結果 刷回原來的 boot.img 之後, 絕大多數 App 都可以用了. 不過實測發現如果只刷 boot.img, 但沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;在上次這篇 &lt;a href=&#34;http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
+&lt;h3 id=&#34;方法-1&#34;&gt;方法 1&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;將手機重開, 並同時按下 電源+音量下鍵進入 bootloader 模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用 fastboot 刷回原始的 boot.img&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;fastboot boot boot.img&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;/code&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&amp;lt;/pre&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;方法-2&#34;&gt;方法 2&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;其實 Magisk 有這個功能刷回原始的 boot.img&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-3.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-3.png?w=289&#34; alt=&#34;&#34; class=&#34;wp-image-327&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-4.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-4.png?w=296&#34; alt=&#34;&#34; class=&#34;wp-image-333&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;但我實測按下還原原始映像檔是沒作用的, 所以只好自己刷&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-5.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-5.png?w=293&#34; alt=&#34;&#34; class=&#34;wp-image-335&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;刷回原來的 boot.img 之後, 絕大多數 App 都可以用了. 不過實測發現如果只刷 boot.img, 但沒有移除 Magisk, 還是有某些 App 譬如 Costco 或國泰世華銀行無法使用, 所以最後還是把 Magisk 移除. 但手機還是維持在 Unlock 狀態.&lt;/p&gt;
           
           
         
@@ -244,17 +757,60 @@ fastboot reboot
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-需求 Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.
-可以刷的 ROM 看來有很多 (可參考 https://forum.xda-developers.com/f/5186/)
-最有名的 LineageOS 15~19.1 (Android 8~12L) FloydQ: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能 作法 安裝 Samsung USB drivar 和 ODIN Samsung USB driver: http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows ODIN 是用來刷 firmware 的工具, 請在這裡下載並安裝: https://odindownloader.com/ 下載 LineageOS 和 Open GApps LineageOS 19.1: https://forum.xda-developers.com/t/4369001/ LineageOS 18: https://forum.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;Samsung Galaxy S7 Edge 是 2016 年初的手機, 最多可更新到 Android 8, 最後的 patch 是 2020 年 9 月.&lt;/p&gt;
+&lt;p&gt;可以刷的 ROM 看來有很多 (可參考 &lt;a href=&#34;https://forum.xda-developers.com/f/5186/&#34;&gt;https://forum.xda-developers.com/f/5186/&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最有名的 LineageOS 15&lt;del&gt;19.1 (Android 8&lt;/del&gt;12L)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forum.xda-developers.com/t/rom-10-0-oneui-2-5-g930x-g935x-n930x-n935x-floydq-v6-0.4085667/&#34;&gt;FloydQ&lt;/a&gt;: 這是基於 Android 10 的 Samsung OneUI 2.5, 這應該是可以用到比較多 Samsung 手機特有的功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;作法&#34;&gt;作法&lt;/h2&gt;
+&lt;h3 id=&#34;安裝-samsung-usb-drivar-和-odin&#34;&gt;安裝 Samsung USB drivar 和 ODIN&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Samsung USB driver: &lt;a href=&#34;http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows&#34;&gt;http://developer.samsung.com/galaxy/others/android-usb-driver-for-windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ODIN 是用來刷 firmware 的工具, 請在這裡下載並安裝: &lt;a href=&#34;https://odindownloader.com/&#34;&gt;https://odindownloader.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;下載-lineageos-和-open-gapps&#34;&gt;下載 LineageOS 和 Open GApps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;LineageOS 19.1: &lt;a href=&#34;https://forum.xda-developers.com/t/4369001/&#34;&gt;https://forum.xda-developers.com/t/4369001/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LineageOS 18: &lt;a href=&#34;https://forum.xda-developers.com/t/4172727/&#34;&gt;https://forum.xda-developers.com/t/4172727/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open Gapps: &lt;a href=&#34;https://sourceforge.net/projects/opengapps/files/arm64/&#34;&gt;https://sourceforge.net/projects/opengapps/files/arm64/&lt;/a&gt; =&amp;gt; 注意, 這有綁 OS 版本, 在 2022/2/15 的版本還沒有支援 Android 12.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;下載-twrp&#34;&gt;下載 TWRP&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;從這裡下載 &lt;a href=&#34;https://dl.twrp.me/hero2lte/twrp-3.6.0_9-0-hero2lte.img.tar.html&#34;&gt;https://dl.twrp.me/hero2lte/twrp-3.6.0_9-0-hero2lte.img.tar.html&lt;/a&gt;, 注意, 一開始使用 3.1.1 版, 結果都讀不到 SD card, 升到最新版後就好了.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;安裝-twrp&#34;&gt;安裝 TWRP&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟工程模式
+&lt;ol&gt;
+&lt;li&gt;設定→關於裝置→軟體資訊→版本號碼處連點8下&lt;/li&gt;
+&lt;li&gt;進入開發人員選項後，USB偵錯以及OEM解鎖選項要打勾。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;重開機進入 download mode
+&lt;ol&gt;
+&lt;li&gt;執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;刷-lineageos-和-open-gapps&#34;&gt;刷 LineageOS 和 Open Gapps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;執行 adb reboot recovery 或是先關機, 然後按音量上+Home+Power 鍵進入 TWRP Recovery. 選 INSTALL, 把LineageOS 和 Open Gapps 的 zip 檔案裝上去, 重開機就可以了.&lt;/p&gt;
           
           
         
@@ -263,21 +819,43 @@ fastboot reboot
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-環境準備 安裝 Google USB driver 首先要在電腦上安裝 Google USB driver, 可在這裡下載 解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了 沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下 1C:\platform-tools&amp;gt;fastboot boot magisk_patched.img 2&amp;lt; waiting for any device &amp;gt; ===================================================
-安裝 Android SDK Platform Tools 從這裡下載, 一直 next next 就好. https://developer.android.com/studio/releases/platform-tools#downloads
-===================================================
-手機解鎖 Unlock 步驟 請記得先備份資料, 因為解鎖會清空資料
-請記得先備份資料, 因為解鎖會清空資料
-請記得先備份資料, 因為解鎖會清空資料
-手機進入開發者模式並確定 adb devices 可以連上手機
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;環境準備&#34;&gt;環境準備&lt;/h2&gt;
+&lt;h3 id=&#34;安裝-google-usb-driver&#34;&gt;安裝 Google USB driver&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;首先要在電腦上安裝 Google USB driver, 可在&lt;a href=&#34;https://developer.android.com/studio/run/win-usb&#34;&gt;這裡&lt;/a&gt;下載&lt;/li&gt;
+&lt;li&gt;解開壓縮檔 (應該是 usb_driver_r13-windows.zip), 在 android_winusb.inf 按右鍵, 然後一直往下就好了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://dennys.files.wordpress.com/2022/02/image-11.png&#34;&gt;&lt;img src=&#34;https://dennys.files.wordpress.com/2022/02/image-11.png?w=485&#34; alt=&#34;&#34; class=&#34;wp-image-383&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;沒有裝 driver 的話, 在執行 fastboot 的時候, 就會遇到 waiting for any device 的訊息, 如下
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;C&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;\platform-tools&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&amp;gt;fastboot boot magisk_patched.img&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; waiting &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; any device &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;===================================================&lt;/p&gt;
+&lt;h3 id=&#34;安裝-android-sdk-platform-tools&#34;&gt;安裝 Android SDK Platform Tools&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;從這裡下載, 一直 next next 就好.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.android.com/studio/releases/platform-tools#downloads&#34;&gt;https://developer.android.com/studio/releases/platform-tools#downloads&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;===================================================&lt;/p&gt;
+&lt;h2 id=&#34;手機解鎖-unlock-步驟&#34;&gt;手機解鎖 Unlock 步驟&lt;/h2&gt;
+&lt;p&gt;&lt;mark style=&#34;background-color:rgba(0,0,0,0);&#34; class=&#34;has-inline-color has-vivid-red-color&#34;&gt;&lt;strong&gt;請記得先備份資料, 因為解鎖會清空資料&lt;/strong&gt;&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark style=&#34;background-color:rgba(0,0,0,0);&#34; class=&#34;has-inline-color has-luminous-vivid-orange-color&#34;&gt;請記得先備份資料, 因為解鎖會清空資料&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark style=&#34;background-color:rgba(0,0,0,0);&#34; class=&#34;has-inline-color has-luminous-vivid-orange-color&#34;&gt;請記得先備份資料, 因為解鎖會清空資料&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
           
           
         
@@ -286,14 +864,224 @@ fastboot reboot
     
     <item>
       <title>如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</title>
-      <link>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
+      <link>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
       <pubDate>Fri, 28 Jan 2022 18:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
+      <guid>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
       <description>
         
           
-            注意這個方法不用 Root, 但需要從電腦上執行 adb (Android Debug Bridge). 此方法僅適用於 Android 12, Android 13 以上不行. Android 13 目前只找到用 Better-Internet-Tiles, 但他需要搭配 Shizuku, 而且得固定開啟 USB 偵錯. 需求 在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定. 但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖. 所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢... 而且這個改變看來 Google 是有做過研究的, 可參考 https://support.google.com/pixelphone/thread/132446941/. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情) 再往下看, 負評的人不少, 所以我也給他按負評了 &amp;#x1f61b; 不過客服也辛苦了, 被人抱怨 this sucks, 還會回 You&#39;re welcome... (參考論壇: https://support.google.com/pixelphone/thread/133649087/). 解法 (免 root) 網路上找到解法如下 (參考 https://forum.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;ol&gt;
+&lt;li&gt;這個方法不用 Root, 但需要從電腦上執行 adb (&lt;a href=&#34;https://developer.android.com/studio/command-line/adb&#34;&gt;Android Debug Bridge&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;此方法僅適用於 Android 12, Android 13 以上不行.&lt;/li&gt;
+&lt;li&gt;Android 13 目前只找到用 &lt;a href=&#34;https://github.com/CasperVerswijvelt/Better-Internet-Tiles&#34;&gt;Better-Internet-Tiles&lt;/a&gt;, 但他需要搭配 &lt;a href=&#34;https://github.com/RikkaApps/Shizuku&#34;&gt;Shizuku&lt;/a&gt;, 而且得固定開啟 USB 偵錯.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;在 Android 11 以前, 只要從手機上面往下滑, 就可以看到快速開關來切換很多設定.
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/01/old.png&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;300&#34;
+        height=&#34;106&#34;
+        src=&#34;http://localhost:1313/old_1698246484852952014.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但自 Android 12 開始, Wi-Fi 和行動數據的開關被整合成一個網際網路開關, 如下圖.
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/01/internet.png&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;400&#34;
+        height=&#34;157&#34;
+        src=&#34;http://localhost:1313/internet_15842000385930727438.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;所以要改變 Wi-Fi 或行動數據時, 得先進去網際網路, 然後才能修改, 改完之後還得去按那個完成. 這真的很難用也很慢...
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/01/internet2.png&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;400&#34;
+        height=&#34;499&#34;
+        src=&#34;http://localhost:1313/internet2_1766533305285528634.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而且這個改變看來 Google 是有做過研究的, 可參考 &lt;a href=&#34;https://support.google.com/pixelphone/thread/132446941/&#34;&gt;https://support.google.com/pixelphone/thread/132446941/&lt;/a&gt;. 他的原因是很多人會因為 Wi-Fi 不穩定而改用行動數據, 然後忘了開回 Wi-Fi... 雖然我不是很懂這個改變能怎麼避免這件事情. (後面的留言也滿多人反映同樣事情)
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/01/internet3.jpg&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;713&#34;
+        height=&#34;248&#34;
+        src=&#34;http://localhost:1313/internet3_17129319179048612052.jpg&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;再往下看, 負評的人不少, 所以我也給他按負評了 &amp;#x1f61b;
+&lt;a href=&#34;https://dennys.files.wordpress.com/2022/01/image-10.png&#34;&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_external image_processed&#34;
+        width=&#34;698&#34;
+        height=&#34;263&#34;
+        src=&#34;http://localhost:1313/image-10_13389724086430110577.png&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>大尺寸 Pixel 3/4/5 &amp; Galaxy S8/S9/10</title>
+      <link>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</link>
+      <pubDate>Thu, 16 Dec 2021 07:17:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</guid>
+      <description>
+        
+          
+            &lt;p&gt;需求如下, 看來是 Pixel 3 XL 最符合, 不過 4GB 不知道會不會 lag…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大螢幕 (&amp;gt;6″)&lt;/li&gt;
+&lt;li&gt;無線充電&lt;/li&gt;
+&lt;li&gt;指紋辨識&lt;/li&gt;
+&lt;li&gt;Google 相簿 (optional)&lt;/li&gt;
+&lt;li&gt;插卡 (optional, 好像也用不太到)&lt;/li&gt;
+&lt;li&gt;不玩遊戲, 不看影片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pixel 3 XL&lt;/p&gt;
+&lt;p&gt;Pixel 3a XL&lt;/p&gt;
+&lt;p&gt;Pixel 4 XL&lt;/p&gt;
+&lt;p&gt;Pixel 4a 5G&lt;/p&gt;
+&lt;p&gt;Pixel 5&lt;/p&gt;
+&lt;p&gt;Pixel 5a&lt;/p&gt;
+&lt;p&gt;Galaxy S8+&lt;/p&gt;
+&lt;p&gt;Galaxy S9+&lt;/p&gt;
+&lt;p&gt;Galaxy S10+&lt;/p&gt;
+&lt;p&gt;上市時間&lt;/p&gt;
+&lt;p&gt;2018/10&lt;/p&gt;
+&lt;p&gt;2019/5&lt;/p&gt;
+&lt;p&gt;2019/10&lt;/p&gt;
+&lt;p&gt;2020/9&lt;/p&gt;
+&lt;p&gt;2020/10&lt;/p&gt;
+&lt;p&gt;2021/8&lt;/p&gt;
+&lt;p&gt;2017/4&lt;/p&gt;
+&lt;p&gt;2018/2&lt;/p&gt;
+&lt;p&gt;2019/2&lt;/p&gt;
+&lt;p&gt;上市價格&lt;/p&gt;
+&lt;p&gt;31100&lt;br&gt;
+34100&lt;/p&gt;
+&lt;p&gt;17100&lt;/p&gt;
+&lt;p&gt;29550&lt;br&gt;
+32550&lt;/p&gt;
+&lt;p&gt;15990&lt;/p&gt;
+&lt;p&gt;18990&lt;/p&gt;
+&lt;p&gt;未上市&lt;br&gt;
+(US$499)&lt;/p&gt;
+&lt;p&gt;27900&lt;/p&gt;
+&lt;p&gt;28900&lt;br&gt;
+29900&lt;br&gt;
+31900&lt;/p&gt;
+&lt;p&gt;32900&lt;br&gt;
+39900&lt;br&gt;
+52900&lt;/p&gt;
           
           
         
@@ -302,16 +1090,79 @@ fastboot reboot
     
     <item>
       <title>Samsung Galaxy View Root</title>
-      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</link>
+      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</guid>
+      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-需求 Samsung Galaxy View 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:
-官方: Android 5.1.1 (security patch 到 2016/02/01) LineageOS 15 (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …) 方法 請先安裝以下兩個程式 Samsung USB driver: https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0 ODIN: https://odindownloader.com/ 下載 TWRP 以及 Magisk TWRP: https://androidfilehost.com/?fid=818070582850510050 Magisk: https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 安裝 TWRP 步驟 打開 Samsung Galaxy View 的工程模式 (參考 這裡) 重開機進入 download mode 執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了 安裝 Magisk 把 Magisk-v20.
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.samsung.com/tw/support/model/SM-T670NZWABRI/&#34;&gt;Samsung Galaxy View&lt;/a&gt; 是 2015 年出的巨無霸平板 (18″), 早已停產, 最後的 firmware status 如下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;官方: Android 5.1.1 (security patch 到 2016/02/01)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forum.xda-developers.com/galaxy-view/development/rom-lineageos-15-1-sm-t670-gvwifi-t3783243&#34;&gt;LineageOS 15&lt;/a&gt; (Android 8): 最新的版本是 20184/28, 這應該已經沒在維護了, 而且他還有些大問題一直沒解 (ex: Camera, Ambient Light, …)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;請先安裝以下兩個程式
+&lt;ol&gt;
+&lt;li&gt;Samsung USB driver: &lt;a href=&#34;https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0&#34;&gt;https://samsungusbdriver.com/download/samsung-driver-v1-5-63-0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ODIN: &lt;a href=&#34;https://odindownloader.com/&#34;&gt;https://odindownloader.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;下載 TWRP 以及 Magisk
+&lt;ol&gt;
+&lt;li&gt;TWRP: &lt;a href=&#34;https://androidfilehost.com/?fid=818070582850510050&#34;&gt;https://androidfilehost.com/?fid=818070582850510050&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Magisk: &lt;a href=&#34;https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445&#34;&gt;https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;安裝 TWRP 步驟
+&lt;ol&gt;
+&lt;li&gt;打開 Samsung Galaxy View 的工程模式 (參考 &lt;a href=&#34;https://www.samsung.com/uk/support/mobile-devices/how-do-i-turn-on-the-developer-options-menu-on-my-samsung-galaxy-device/&#34;&gt;這裡&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;重開機進入 download mode&lt;/li&gt;
+&lt;li&gt;執行 ODIN, 把剛才的 twrp 給刷進去, 再重開就可以了
+&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34; &#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;http://localhost:1313/images/software/samsung/samsung_odin.webp&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;安裝 Magisk
+&lt;ol&gt;
+&lt;li&gt;把 Magisk-v20.3.zip 複製到 本機\Galaxy View\Internal storage\Download&lt;/li&gt;
+&lt;li&gt;重開進入 TWRP, 使用 INSTALL, 把 Magisk 裝上去&lt;/li&gt;
+&lt;li&gt;重開, 就可以看到 Magisk 了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
           
           
         
@@ -320,17 +1171,51 @@ fastboot reboot
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
+      <link>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           
-            注意系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!
-HTC U Ultra HTC U Ultra 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)
-Root 方法 htc 官方解鎖 http://www.rayzen-dev.com/htc-unlocked-download/ 安裝 htc driver https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z TWRP 可參考以下兩篇 https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html http://www.rayzen-dev.com/root-htc-ultra/ Magisk 安裝 參考: https://izaka.tw/android-magisk-installation-guide/
-用手機從這裡下載 Magisk-v20.3.zip https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445 重開進入 TWRP (指令: adb wait-for-device reboot recovery) 選擇 INSTALL, 路徑選擇 /sdcard/Download 選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash 重開系統 Magisk Module YouTube Vanced 如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced 要把 Google Play 的自動更新關閉 LineageOS 官網
+            &lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;系統刷機有一定的風險, 可能導致手機無法開機和失去保固, 資料還會被清空, 執行前請先三思!!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;htc-u-ultra&#34;&gt;HTC U Ultra&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://zh.m.wikipedia.org/zh-tw/HTC_U_Ultra&#34;&gt;HTC U Ultra&lt;/a&gt; 是 2017 年初的手機, 可更新到 Android 8 (security patch 到 2018/3/1)&lt;/p&gt;
+&lt;h2 id=&#34;root-方法&#34;&gt;Root 方法&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;htc 官方解鎖 &lt;a href=&#34;http://www.rayzen-dev.com/htc-unlocked-download/&#34;&gt;http://www.rayzen-dev.com/htc-unlocked-download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安裝 htc driver &lt;a href=&#34;https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z&#34;&gt;https://drive.google.com/open?id=1sgIbTgW9PKXb9PKQ_PSzJxHkwc5tMV6Z&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TWRP 可參考以下兩篇
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html&#34;&gt;https://www.ptt.cc/bbs/MobileComm/M.1521510168.A.45F.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rayzen-dev.com/root-htc-ultra/&#34;&gt;http://www.rayzen-dev.com/root-htc-ultra/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;magisk-安裝&#34;&gt;Magisk 安裝&lt;/h2&gt;
+&lt;p&gt;參考: &lt;a href=&#34;https://izaka.tw/android-magisk-installation-guide/&#34;&gt;https://izaka.tw/android-magisk-installation-guide/&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用手機從這裡下載 Magisk-v20.3.zip &lt;a href=&#34;https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445&#34;&gt;https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;重開進入 TWRP (指令: adb wait-for-device reboot recovery)&lt;/li&gt;
+&lt;li&gt;選擇 INSTALL, 路徑選擇 /sdcard/Download&lt;/li&gt;
+&lt;li&gt;選擇檔案後, 執行螢幕最下面的 Swipe to confirm Flash&lt;/li&gt;
+&lt;li&gt;重開系統&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;magisk-module&#34;&gt;Magisk Module&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;YouTube Vanced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;如果有更新過 YouTube, 需要進 Google Play 把更新移除, 這樣才會看到 YouTube Vanced&lt;/li&gt;
+&lt;li&gt;要把 Google Play 的自動更新關閉&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;lineageos&#34;&gt;LineageOS&lt;/h2&gt;
+&lt;p&gt;官網&lt;/p&gt;
           
           
         

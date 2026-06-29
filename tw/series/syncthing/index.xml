@@ -2,26 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syncthing on Dennys Diary</title>
-    <link>https://dennys.github.io/tw/series/syncthing/</link>
+    <link>http://localhost:1313/tw/series/syncthing/</link>
     <description>Recent content in Syncthing on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/syncthing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/syncthing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt-Merlin Syncthing (檔案同步)</title>
-      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
+      <link>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
+      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
       <description>
         
           
-            需求 Syncthing 是一個 Open Source 的檔案同步軟體, 預計把她跑在 Asuswrt-Merlin 上, 然後在上面掛一顆 USB HDD, 以便及時把檔案同步備份過去.
-注意Syncthing 滿吃 CPU 的, 而分享器的 CPU 通常效能很弱, 因此不建議同步太多檔案上去 !!!
-安裝 目前 amtm 並沒有支援 Syncthing, 不過可以透過 opkg 來安裝
-首先看一下 opkg 上面的 Syncthing, 目前有兩個, 我的 Asus AC68U B1 要用的是 nohf 版本.
-1admin@RT-AC66U_B1-B898:/tmp/home/root# opkg list |grep synct 2syncthing - 1.22.1-1 - Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&amp;#39;&amp;#39;s transmitted over the Internet.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt; 是一個 Open Source 的檔案同步軟體, 預計把她跑在 Asuswrt-Merlin 上, 然後在上面掛一顆 USB HDD, 以便及時把檔案同步備份過去.&lt;/p&gt;
+
+&lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;注意&lt;/div&gt;
+    &lt;p&gt;Syncthing 滿吃 CPU 的, 而分享器的 CPU 通常效能很弱, 因此不建議同步太多檔案上去 !!!&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;安裝&#34;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;目前 amtm 並沒有支援 Syncthing, 不過可以透過 opkg 來安裝&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先看一下 opkg 上面的 Syncthing, 目前有兩個, 我的 Asus AC68U B1 要用的是 nohf 版本.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line hl&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;admin@RT-AC66U_B1-B898:/tmp/home/root# opkg list &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;grep synct
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;syncthing - 1.22.1-1 - Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; it is shared with some third party and how it&lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;s transmitted over the Internet.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;syncthing_nohf - 1.22.1-1 - Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; it is shared with some third party and how it&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;s transmitted over the Internet.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;這裡我們安裝 syncthing_nohf&lt;/p&gt;
           
           
         
@@ -30,15 +45,56 @@
     
     <item>
       <title>在 Synology DSM 上面跑 Syncthing (檔案同步)</title>
-      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</link>
+      <link>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</guid>
+      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</guid>
       <description>
         
           
-            需求 Syncthing 是一個 Open Source 的檔案同步軟體, 預計把她跑在 Synology DSM NAS 上, 以便及時把檔案同步備份過去.
-安裝 打開 DSM, 直接在 套件中心 -&amp;gt; 社群 裡面找一下 Syncthing, 這裡安裝的版本不重要, 因為 Syncthing 會自己升級. 安裝完後就可以試著連線 http://your.synology:8384/ 如果無法連線, 請查看 /volume1/@appstore/syncthing/var/syncthing.log, 找一下是否有下列錯誤訊息 1WARNING: GUI/API: accept tcp [::]:8384: accept: function not implemented (restarting) 若有這個訊息, 大致的原因是 Syncthing 是使用 Go, 而 go 1.17 以前的行為是會先使用 accept4(), 如果沒有 accept4(), 就改回用 accept(). 但在 go 1.18 這個行為被改變了, 他新版本只支援 accept4(), 而 Syncthing 1.20 以上使用的是新板 Go. 因此如果你的作業系統沒有 accept4(), 那你就沒法使用 Syncthing 1.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt; 是一個 Open Source 的檔案同步軟體, 預計把她跑在 Synology DSM NAS 上, 以便及時把檔案同步備份過去.&lt;/p&gt;
+&lt;h2 id=&#34;安裝&#34;&gt;安裝&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打開 DSM, 直接在 &lt;strong&gt;套件中心 -&amp;gt; 社群&lt;/strong&gt; 裡面找一下 Syncthing, 這裡安裝的版本不重要, 因為 Syncthing 會自己升級.&lt;/li&gt;
+&lt;li&gt;安裝完後就可以試著連線 &lt;a href=&#34;http://your.synology:8384/&#34;&gt;http://your.synology:8384/&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;如果無法連線, 請查看 /volume1/@appstore/syncthing/var/syncthing.log, 找一下是否有下列錯誤訊息
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;WARNING: GUI/API: accept tcp &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;::&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;:8384: accept: &lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; not implemented &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;restarting&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;若有這個訊息, 大致的原因是 Syncthing 是使用 Go, 而 go 1.17 以前的行為是會先使用 accept4(), 如果沒有 accept4(), 就改回用 accept().
+但在 go 1.18 這個行為被改變了, 他新版本只支援 accept4(), 而 Syncthing 1.20 以上使用的是新板 Go.
+因此如果你的作業系統沒有 accept4(), 那你就沒法使用 Syncthing 1.20 以上. 可參考以下這幾個討論:
+&lt;ul&gt;
+&lt;li&gt;Synology 的討論: &lt;a href=&#34;https://github.com/SynoCommunity/spksrc/issues/5289&#34;&gt;Syncthing: accept: function not implemented #5289&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Syncthing 的討論: &lt;a href=&#34;https://github.com/syncthing/syncthing/issues/8325&#34;&gt;&amp;quot;accept: function not implemented&amp;quot; after upgrading to syncthing v1.20.1 #8325&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go 的討論: &lt;a href=&#34;https://github.com/golang/go/issues/57333&#34;&gt;syscall, internal/poll: accept4-to-accept fallback removal broke Go code on Synology DSM 6.2 ARM devices #57333&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解法: 目前 &lt;strong&gt;暫時&lt;/strong&gt; 只能降級回 Syncthing 1.19.2, 方法如下
+&lt;ol&gt;
+&lt;li&gt;在這裡檢查你的 Synology DSM 是哪種架構: &lt;a href=&#34;https://github.com/SynoCommunity/spksrc/wiki/Architecture-per-Synology-model&#34;&gt;https://github.com/SynoCommunity/spksrc/wiki/Architecture-per-Synology-model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在這裡下載對應的版本: &lt;a href=&#34;https://github.com/syncthing/syncthing/releases/tag/v1.19.2&#34;&gt;https://github.com/syncthing/syncthing/releases/tag/v1.19.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;修改 /volume1/@appstore/syncthing/var/options.conf, 加上這段設定, 以避免他自動升級
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;SYNCTHING_OPTIONS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;--no-upgrade&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;啟動 Syncthing
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;synopkgctl start syncthing
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;這個問題在 Go 這邊有提出根本解 (實際上就是改回原來的作法, 若找不到 accept4, 就使用 accept), 在 Go 1.18/1.19 都會出新版修正.
+實際的版本要再等等, 應該是會出在 Go 1.18.10 or Go 1.19.5, 但即使出了, 也要等 Syncthing 也用新版 rebuild 才能用.
+(到目前為止 Syncthing 1.23.0 還是不行)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;進去之後, 就和一般的 Syncthing 沒有不同了.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+&lt;h3 id=&#34;gui-的密碼萬一忘了怎麼辦&#34;&gt;GUI 的密碼萬一忘了怎麼辦?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打開 /volume1/@appstore/syncthing/var/config.xml, 尋找 &lt;em&gt;gui&lt;/em&gt; 這個段落, 然後把 &lt;em&gt;user&lt;/em&gt;, &lt;em&gt;password&lt;/em&gt; 這兩行移除&lt;/p&gt;
           
           
         
@@ -47,16 +103,34 @@
     
     <item>
       <title>手機照片自動備份到電腦 (使用 Syncthing for Android)</title>
-      <link>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
+      <link>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
+      <guid>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
       <description>
         
           
-            需求 現在的手機都不能插卡, 照片直接存在手機上, 萬一手機掛的很嚴重, 有時連照片都救不回來. 但是要常常拿手機接線到電腦上傳檔也很麻煩, 因此要找一個自動把手機照片備份到電腦的方式. 大概有幾種作法
-最簡單的, 花錢買 Google Drive 或 Google Photos, 只要有上網, 就會自動幫你備份到雲端去. Resilio Sync, 他是走BitTorrent協定的傳輸軟體, 免費版和付費版的差異可以看這裡, 不過這軟體我沒有實際使用過. Syncthing, 這是一個 Open Source 的檔案同步軟體. 因為我的需求是要把照片先轉存到電腦, 整理後再上雲端, 因此我用的是 Syncthing, 他可以把各種平台, 譬如 Windows, Linux, Android, maxOS, *BSD, ... 的檔案做互相同步. 甚至連 Synology 都有人做好 Addon了. 沒錯, 你注意到了, 他沒有官方支援的 iOS solution ... (iOS 可參考 Möbius Sync, 這是別的廠商做的付費 App, 支援 iPhone/iPad)
-手機端安裝 Syncthing 在手機上有兩個 App, 一個是 syncthing-android, 另一個是 Syncthing-Fork. Syncthing-Fork 有多一些功能, 可參考他的 GitHub, 上面有說明, 所以我就用這個了.
+            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
+&lt;p&gt;現在的手機都不能插卡, 照片直接存在手機上, 萬一手機掛的很嚴重, 有時連照片都救不回來. 但是要常常拿手機接線到電腦上傳檔也很麻煩, 因此要找一個自動把手機照片備份到電腦的方式.
+大概有幾種作法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;最簡單的, 花錢買 &lt;a href=&#34;https://drive.google.com/&#34;&gt;Google Drive&lt;/a&gt; 或 &lt;a href=&#34;https://photos.google.com/&#34;&gt;Google Photos&lt;/a&gt;, 只要有上網, 就會自動幫你備份到雲端去.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.resilio.com/individuals/&#34;&gt;Resilio Sync&lt;/a&gt;, 他是走&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/BitTorrent_%28%E5%8D%8F%E8%AE%AE%29&#34;&gt;BitTorrent協定&lt;/a&gt;的傳輸軟體, 免費版和付費版的差異可以看&lt;a href=&#34;https://help.resilio.com/hc/en-us/articles/204754419-Sync-FREE-vs-Sync-PRO&#34;&gt;這裡&lt;/a&gt;, 不過這軟體我沒有實際使用過.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt;, 這是一個 Open Source 的檔案同步軟體.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因為我的需求是要把照片先轉存到電腦, 整理後再上雲端, 因此我用的是 Syncthing, 他可以把各種平台, 譬如 Windows, Linux, Android, maxOS, *BSD, ... 的檔案做互相同步. 甚至連 &lt;a href=&#34;https://www.synology.com/&#34;&gt;Synology&lt;/a&gt; 都有人做好 &lt;a href=&#34;https://www.synology.com/en-uk/dsm/packages/syncthing.net?os_ver=6.2&#34;&gt;Addon&lt;/a&gt;了.
+沒錯, 你注意到了, 他沒有官方支援的 iOS solution ... (iOS 可參考 &lt;a href=&#34;https://apps.apple.com/us/app/m%C3%B6bius-sync/id1539203216&#34;&gt;Möbius Sync&lt;/a&gt;, 這是別的廠商做的付費 App, 支援 iPhone/iPad)&lt;/p&gt;
+&lt;h2 id=&#34;手機端安裝&#34;&gt;手機端安裝&lt;/h2&gt;
+&lt;p&gt;Syncthing 在手機上有兩個 App, 一個是 &lt;a href=&#34;https://github.com/syncthing/syncthing-android&#34;&gt;syncthing-android&lt;/a&gt;, 另一個是 &lt;a href=&#34;https://github.com/Catfriend1/syncthing-android&#34;&gt;Syncthing-Fork&lt;/a&gt;. Syncthing-Fork 有多一些功能, 可參考他的 GitHub, 上面有說明, 所以我就用這個了.&lt;/p&gt;
+&lt;p&gt;下載點: &lt;figure&gt;&lt;a href=&#34;https://f-droid.org/zh_Hant/packages/com.github.catfriend1.syncthingandroid/&#34;&gt;&lt;img src=&#34;https://f-droid.org/badge/get-it-on.png&#34; width=&#34;200&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;figure&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&#34;&gt;&lt;img src=&#34;https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png&#34; width=&#34;200&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安裝好後, Syncthing-Fork 需要 3 種權限, 我把截圖直接合併成一張&lt;/p&gt;
           
           
         
