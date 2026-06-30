@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>English on Dennys Diary</title>
-    <link>http://localhost:1313/tw/series/english/</link>
+    <link>https://dennys.github.io/tw/series/english/</link>
     <description>Recent content in English on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Jun 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jun 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>英文學習紀錄</title>
-      <link>http://localhost:1313/tw/edu/english/english-study-record/</link>
+      <link>https://dennys.github.io/tw/edu/english/english-study-record/</link>
       <pubDate>Sun, 28 Jun 2026 18:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/edu/english/english-study-record/</guid>
+      <guid>https://dennys.github.io/tw/edu/english/english-study-record/</guid>
       <description>
         
           
@@ -35,7 +35,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2023.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2023.webp&#34;
       
       
     /&gt;
@@ -60,7 +60,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2024.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2024.webp&#34;
       
       
     /&gt;
@@ -85,7 +85,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2025.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2025.webp&#34;
       
       
     /&gt;
@@ -110,7 +110,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2026.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2026.webp&#34;
       
       
     /&gt;
@@ -135,7 +135,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_reviews_20260628.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_reviews_20260628.webp&#34;
       
       
     /&gt;
@@ -160,7 +160,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_card_count_20260628.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_card_count_20260628.webp&#34;
       
       
     /&gt;

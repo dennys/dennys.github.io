@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitLab on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/gitlab/</link>
+    <link>https://dennys.github.io/tw/tags/gitlab/</link>
     <description>Recent content in GitLab on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Grafana 管理 GitLab CI/CD Pipelines</title>
-      <link>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</link>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           

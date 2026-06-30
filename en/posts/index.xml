@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dennys Diary</title>
-    <link>http://localhost:1313/en/posts/</link>
+    <link>https://dennys.github.io/en/posts/</link>
     <description>Recent content in Posts on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
-      <link>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
+      <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
       <pubDate>Wed, 13 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
+      <guid>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
       <description>
         
           

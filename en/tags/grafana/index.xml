@@ -2,45 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grafana on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/grafana/</link>
+    <link>https://dennys.github.io/en/tags/grafana/</link>
     <description>Recent content in Grafana on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Grafana Cloud</title>
-      <link>http://localhost:1313/en/doc/grafana/grafana-cloud/</link>
-      <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/en/doc/grafana/grafana-cloud/</guid>
-      <description>
-        
-          
-            &lt;p&gt;How to get user ID and API key to push data into Grafana: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&#34;&gt;https://grafana.com/docs/grafana-cloud/fundamentals/cloud-portal/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Send Prometheus data to Grafana Cloud Metrics: &lt;a href=&#34;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&#34;&gt;https://grafana.com/docs/grafana-cloud/data-configuration/metrics/metrics-prometheus/&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use Grafana to Manage SonarQube KPI</title>
-      <link>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/grafana-sonarqube-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/grafana-sonarqube-integration/</guid>
       <description>
         
           
             &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
 &lt;p&gt;Usually we use SonarQube to check the KPI of projects:
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;You can also check the build history of a project:
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;use-grafana-to-manager-sonarqube-kpi&#34;&gt;Use Grafana to Manager SonarQube KPI&lt;/h2&gt;
@@ -62,10 +45,10 @@ It&#39;s a SonarQube plugin, but it only supports 5 KPIs, and the last commit da
     
     <item>
       <title>Use Grafana to Manage GitLab CI/CD Pipelines</title>
-      <link>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           

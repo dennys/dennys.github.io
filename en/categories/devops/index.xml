@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps on Dennys Diary</title>
-    <link>http://localhost:1313/en/categories/devops/</link>
+    <link>https://dennys.github.io/en/categories/devops/</link>
     <description>Recent content in DevOps on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
       <description>
         
           
@@ -40,10 +40,10 @@
     
     <item>
       <title>GitLab Checkmarx CI/CD Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
       <description>
         
           
@@ -64,7 +64,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/logo/GitLab_Checkmarx.webp&#34;
       
       
     /&gt;
@@ -87,10 +87,10 @@
     
     <item>
       <title>GitLab Checkmarx SonarQube Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
       <description>
         
           
@@ -111,7 +111,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
       
       
     /&gt;

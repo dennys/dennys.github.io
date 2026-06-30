@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Router on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/router/</link>
+    <link>https://dennys.github.io/tw/tags/router/</link>
     <description>Recent content in Router on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/router/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt Merlin AdGuard Home - 針對 IP 擋某些服務</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@
     
     <item>
       <title>Wake on Lan</title>
-      <link>http://localhost:1313/tw/doc/network/wake_on_lan/</link>
+      <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wake_on_lan/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wake_on_lan/</guid>
       <description>
         
           
@@ -55,7 +55,7 @@
 &lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
 &lt;h3 id=&#34;synology-dsm&#34;&gt;Synology DSM&lt;/h3&gt;
 &lt;p&gt;Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h3 id=&#34;asuswrt-merlin-不需設定&#34;&gt;Asuswrt Merlin (不需設定)&lt;/h3&gt;
@@ -65,7 +65,7 @@
 &lt;p&gt;選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了.
 (這畫面是 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asyswrt Merlin&lt;/a&gt; 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)&lt;/p&gt;
 &lt;p&gt;他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;耗電&#34;&gt;耗電&lt;/h2&gt;
@@ -79,10 +79,10 @@
     
     <item>
       <title>Asuswrt-Merlin Syncthing (檔案同步)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
       <description>
         
           
@@ -114,10 +114,10 @@
     
     <item>
       <title>Asuswrt Merlin AdGuard Home (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
       <description>
         
           
@@ -146,10 +146,10 @@
     
     <item>
       <title>OpenWrt 頻寬管理 (依照 interface) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
@@ -200,38 +200,11 @@
     </item>
     
     <item>
-      <title>OpenWrt Collectd</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-collectd/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/router/openwrt-collectd/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h3 id=&#34;protocols&#34;&gt;protocols&lt;/h3&gt;
-&lt;p&gt;官方網站: &lt;a href=&#34;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&#34;&gt;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&lt;/a&gt;
-opkg install collectd-mod-protocols&lt;/p&gt;
-&lt;h3 id=&#34;samples&#34;&gt;Samples:&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&#34;&gt;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/YYzvFFmR&#34;&gt;https://pastebin.com/YYzvFFmR&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;whats-next&#34;&gt;What&#39;s next&lt;/h3&gt;
-&lt;p&gt;pmacct: &lt;a href=&#34;http://www.pmacct.net/&#34;&gt;http://www.pmacct.net/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ntop.org/&#34;&gt;https://www.ntop.org/&lt;/a&gt;  =&amp;gt; 這個可以看出 application (YouTube, Facebook, Gmail, ...) 的流量
-但前面要用 nProbe/fProbe/ipt-netflow/pmacct 之類的東西把資料送過去
-&lt;a href=&#34;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&#34;&gt;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>OpenWrt 頻寬管理 (依照使用者) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</guid>
       <description>
         
           
@@ -244,7 +217,7 @@ opkg install collectd-mod-protocols&lt;/p&gt;
 &lt;p&gt;找一個 &lt;a href=&#34;https://openwrt.org/&#34;&gt;OpenWrt&lt;/a&gt; 上的頻寬管理工具, 看誰用了多少頻寬.
 以 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asuswrt-Merlin&lt;/a&gt; 來說, 目前提供的報表如下, 他可以依照&lt;strong&gt;使用者&lt;/strong&gt;或&lt;strong&gt;時段&lt;/strong&gt;來看流量.
 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;其他 Asuswrt-Merlin 提供的報表可參考這裡: &lt;a href=&#34;https://www.asuswrt-merlin.net/screenshots&#34;&gt;https://www.asuswrt-merlin.net/screenshots&lt;/a&gt;&lt;/p&gt;
@@ -282,7 +255,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;基本報表如下
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           
@@ -293,10 +266,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Fortinet VPN on OpenWrt</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</link>
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</guid>
       <description>
         
           
@@ -321,10 +294,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router Samba</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-samba/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-samba/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
       <description>
         
           
@@ -357,10 +330,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router 選擇</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-router-choice/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-router-choice/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
       <description>
         
           
@@ -384,10 +357,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
       <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
       <description>
         
           
@@ -429,10 +402,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -472,10 +445,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -520,7 +493,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;465&#34;
         height=&#34;193&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_4017759652474118919.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_4017759652474118919.png&#34;
       
       
     /&gt;
@@ -554,7 +527,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;790&#34;
         height=&#34;174&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_13300853250689698010.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_13300853250689698010.png&#34;
       
       
     /&gt;
@@ -584,7 +557,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;474&#34;
         height=&#34;133&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_3974293899304740460.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_3974293899304740460.png&#34;
       
       
     /&gt;
@@ -611,7 +584,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;438&#34;
         height=&#34;110&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_15191974654561182337.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_15191974654561182337.png&#34;
       
       
     /&gt;
@@ -644,7 +617,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;789&#34;
         height=&#34;299&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_5859030795245524685.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_5859030795245524685.png&#34;
       
       
     /&gt;
@@ -674,7 +647,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;479&#34;
         height=&#34;135&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_11522542528187301806.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_11522542528187301806.png&#34;
       
       
     /&gt;
@@ -701,7 +674,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;543&#34;
         height=&#34;337&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_2149974349091501244.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_2149974349091501244.png&#34;
       
       
     /&gt;
@@ -721,10 +694,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -762,7 +735,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;768&#34;
         height=&#34;407&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_17655262974304489079.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_17655262974304489079.png&#34;
       
       
     /&gt;
@@ -783,10 +756,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
-      <link>http://localhost:1313/tw/doc/router/dd-wrt-3g-lly-driver/</link>
+      <link>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</link>
       <pubDate>Thu, 04 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
       <description>
         
           
@@ -809,7 +782,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -856,10 +829,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>CDMA@wifi (Oleg) 之 3G 上網</title>
-      <link>http://localhost:1313/tw/doc/router/cdma-wifi-oleg-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/cdma-wifi-oleg-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</guid>
       <description>
         
           
@@ -882,7 +855,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -948,10 +921,10 @@ Modem type: Huawei E169
     
     <item>
       <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
-      <link>http://localhost:1313/tw/doc/router/asus-wl-500gp-v1-35g/</link>
+      <link>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</link>
       <pubDate>Sat, 09 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
       <description>
         
           
@@ -974,7 +947,7 @@ Modem type: Huawei E169
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -1009,10 +982,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>Tomato DualWan 之 3G 上網</title>
-      <link>http://localhost:1313/tw/doc/router/tomato-dualwan-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/tomato-dualwan-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</guid>
       <description>
         
           
@@ -1035,7 +1008,7 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -1086,7 +1059,7 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;476&#34;
         height=&#34;500&#34;
-        src=&#34;http://localhost:1313/4394875396_f4933b89fd_15941939331289937129.jpg&#34;
+        src=&#34;https://dennys.github.io/4394875396_f4933b89fd_15941939331289937129.jpg&#34;
       
       
         title=&#34;Tomato DualWan 3G&#34;

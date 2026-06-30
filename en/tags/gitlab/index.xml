@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitLab on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/gitlab/</link>
+    <link>https://dennys.github.io/en/tags/gitlab/</link>
     <description>Recent content in GitLab on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab Node.js SonarQube Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
       <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
       <description>
         
           
@@ -27,10 +27,10 @@
     
     <item>
       <title>Python Code Quality: GitLab, SonarQube, OWASP, Dependency-Check, and Essential Dev Tools Integration</title>
-      <link>http://localhost:1313/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
+      <link>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</link>
       <pubDate>Sat, 25 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/python-quality-gitlab-sonarqube-owasp-dependency/</guid>
       <description>
         
           
@@ -44,10 +44,10 @@
     
     <item>
       <title>GitLab SonarQube Integration with .NET</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
       <description>
         
           
@@ -77,10 +77,10 @@ please see the following procedures.&lt;/p&gt;
     
     <item>
       <title>Use Grafana to Manage GitLab CI/CD Pipelines</title>
-      <link>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           
@@ -126,10 +126,10 @@ This exporter provides several spectives metrics (with different Grafana dashboa
     
     <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
       <description>
         
           
@@ -156,10 +156,10 @@ This exporter provides several spectives metrics (with different Grafana dashboa
     
     <item>
       <title>GitLab Checkmarx CI/CD Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-integration/</guid>
       <description>
         
           
@@ -180,7 +180,7 @@ This exporter provides several spectives metrics (with different Grafana dashboa
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/logo/GitLab_Checkmarx.webp&#34;
       
       
     /&gt;
@@ -203,10 +203,10 @@ This exporter provides several spectives metrics (with different Grafana dashboa
     
     <item>
       <title>GitLab Checkmarx SonarQube Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-checkmarx-sonarqube-integration/</guid>
       <description>
         
           
@@ -227,7 +227,7 @@ This exporter provides several spectives metrics (with different Grafana dashboa
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/logo/GitLab_Checkmarx_SonarQube.webp&#34;
       
       
     /&gt;

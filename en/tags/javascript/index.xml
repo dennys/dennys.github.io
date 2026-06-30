@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/javascript/</link>
+    <link>https://dennys.github.io/en/tags/javascript/</link>
     <description>Recent content in JavaScript on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 22:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab Node.js SonarQube Integration</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</link>
       <pubDate>Sun, 26 Jan 2025 22:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-nodejs-dependency-test-sonarqube/</guid>
       <description>
         
           
@@ -27,10 +27,10 @@
     
     <item>
       <title>Node.js &#43; MySQL (Connecton Pool &#43; Prepared Statement &#43; Transaction)</title>
-      <link>http://localhost:1313/en/doc/javascript/node-mysql/</link>
+      <link>https://dennys.github.io/en/doc/javascript/node-mysql/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/javascript/node-mysql/</guid>
+      <guid>https://dennys.github.io/en/doc/javascript/node-mysql/</guid>
       <description>
         
           
@@ -56,10 +56,10 @@ These are MySQL drivers for Node.js:&lt;/p&gt;
     
     <item>
       <title>Node &#43; Fastify &#43; OpenAPI &#43; Statistics</title>
-      <link>http://localhost:1313/en/doc/javascript/node-openapi/</link>
+      <link>https://dennys.github.io/en/doc/javascript/node-openapi/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/javascript/node-openapi/</guid>
+      <guid>https://dennys.github.io/en/doc/javascript/node-openapi/</guid>
       <description>
         
           

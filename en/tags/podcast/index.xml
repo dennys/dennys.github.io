@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Podcast on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/podcast/</link>
+    <link>https://dennys.github.io/en/tags/podcast/</link>
     <description>Recent content in Podcast on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
-      <link>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</link>
+      <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           

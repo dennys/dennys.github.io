@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XBMC on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/xbmc/</link>
+    <link>https://dennys.github.io/tw/tags/xbmc/</link>
     <description>Recent content in XBMC on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 03 Aug 2011 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2011 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/xbmc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>XBMC (XBox, Windows 7) &#43; iPhone</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
       <pubDate>Wed, 03 Aug 2011 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
       <description>
         
           
@@ -34,10 +34,10 @@
     
     <item>
       <title>XBMC Babylon 9.04 安裝筆記</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</link>
       <pubDate>Thu, 24 Dec 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</guid>
       <description>
         
           

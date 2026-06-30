@@ -2,210 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/software/</link>
+    <link>https://dennys.github.io/tw/tags/software/</link>
     <description>Recent content in Software on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>VSCode</title>
-      <link>http://localhost:1313/tw/doc/software/vscode/</link>
-      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/vscode/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;style&#34;&gt;Style&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons&#34;&gt;file-icons&lt;/a&gt;
-&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&#34;&gt;Material Icon Theme&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;test-related&#34;&gt;Test related&lt;/h2&gt;
-&lt;h3 id=&#34;coverage-gutters&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters&#34;&gt;Coverage Gutters&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Ctrl-Shift-6: Generate a HTML report.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;settings.json&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;coverage-gutters.showLineCoverage&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;coverage-gutters.showGutterCoverage&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;formatter&#34;&gt;Formatter&lt;/h2&gt;
-&lt;h3 id=&#34;isort&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.isort&#34;&gt;isort&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--line-length=150&lt;/td&gt;
-					&lt;td&gt;Change the line width to 150 chars.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;isort.check: true&lt;/td&gt;
-					&lt;td&gt;Enable the check.&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;isort.args&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--line-length=150&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    ],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;isort.check&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;black-formatter&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&#34;&gt;Black Formatter&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--line-length=150&lt;/td&gt;
-					&lt;td&gt;Change the line width to 150 chars.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--skip-string-normalization&lt;/td&gt;
-					&lt;td&gt;Disables Black&#39;s conversion of string delimiters, e.g. it will NOT convert single quote to double quote.&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;black-formatter.args&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--line-length=150&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--skip-string-normalization&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    ],
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;editor&#34;&gt;Editor&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnPaste&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer paste&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnSave&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer save&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnType&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer typing&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnPaste&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnSave&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnType&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.defaultFormatter&lt;/td&gt;
-					&lt;td&gt;Assign the default formatter&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;source.organizeImports&lt;/td&gt;
-					&lt;td&gt;Execute isort when save&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;[python]&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;ms-python.black-formatter&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.codeActionsOnSave&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;source.organizeImports&amp;#34;: true
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    },
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;diffEditor.ignoreTrimWhitespace&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.wordBasedSuggestions&amp;#34;: false
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>如何在 XnView MP 中添加照片 GPS 信息</title>
-      <link>http://localhost:1313/tw/doc/software/xnview-how-to-add-gps-info/</link>
-      <pubDate>Fri, 31 Mar 2023 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/xnview-how-to-add-gps-info/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;用相機拍的照片, 一般來講不會有 GPS 資訊, 得手動設定, 需要這些功能&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;支援 Google Maps&lt;/li&gt;
-&lt;li&gt;支援一次寫入多張&lt;/li&gt;
-&lt;li&gt;盡量不要用 &lt;a href=&#34;https://exiftool.org/&#34;&gt;ExifTool&lt;/a&gt;, 因為檔案一多, 呼叫外部程式一張一張改要很久.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;使用-xnview-mp-編輯-gps-資訊&#34;&gt;使用 XnView MP 編輯 GPS 資訊&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.xnview.com/en/xnviewmp/&#34;&gt;XnView MP&lt;/a&gt; 是老牌影像軟體了, 依下列步驟可編輯 GPS 資訊&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;使用 Google Maps 找到你的位置, 並對著經緯度按左鍵, 他就會把經位度複製到剪貼簿 (實際內容類似 25.171603204182567, 121.55359931326444)&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/google-map-copy-gps-data.webp&#34; width=&#34;350&#34;&gt;
-    &lt;/figure&gt;
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;執行 XnView MP&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;選好照片 (單張或多張)&lt;/li&gt;
-&lt;li&gt;執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit GPS&lt;/li&gt;
-&lt;li&gt;按下 Paste, 就會看到經緯度貼上來了. 記得要按 Write(單張)或 Write all(多張), 他才會真的寫入檔案.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-gps-data.webp&#34; width=&#34;553&#34;&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;如果你還要編輯地點,國家,城市等等, 有兩個地方可以修改
-&lt;ol&gt;
-&lt;li&gt;若要放在 IPTC, 則執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit IPTC..., 然後選 Source tab
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-iptc.webp&#34; width=&#34;528&#34;&gt;
-        &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;若要放在 XMP, 則執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit XMP..., 然後選 Origin tab
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-xmp.webp&#34; width=&#34;528&#34;&gt;
-        &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;編輯完後請記得要 Write (or Write all)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;存檔完後, 在 XnView 的 Info 視窗裡面的 GPS, Exif, IPTC-IIM, XMP 這幾個 tab 都會有相關資訊&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Fri, 27 Jan 2023 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Double Commander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/double-commander/</link>
+      <link>https://dennys.github.io/tw/doc/software/double-commander/</link>
       <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/double-commander/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/double-commander/</guid>
       <description>
         
           
@@ -221,7 +29,7 @@
 &lt;ol&gt;
 &lt;li&gt;這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄.&lt;/li&gt;
 &lt;li&gt;建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&amp;gt; D, 他就會跳到 &lt;strong&gt;下載&lt;/strong&gt; 目錄, 很方便.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/double_commander/doublecmd_directory_hotlist.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/double_commander/doublecmd_directory_hotlist.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -238,7 +46,7 @@
 &lt;li&gt;Parameters: 我是用 &lt;em&gt;%&amp;quot;0&amp;quot;%f&amp;quot; %&amp;quot;0&amp;quot;%o.webp&amp;quot;&lt;/em&gt;, 因為 ImageMagick 是認檔案名稱來決定轉檔格式, 所以這裡直接寫檔名就好. 變數的部分可參考 &lt;a href=&#34;https://doublecmd.github.io/doc/en/variables.html&#34;&gt;https://doublecmd.github.io/doc/en/variables.html&lt;/a&gt;.
 這邊請 &lt;a href=&#34;https://doublecmd.github.io/doc/en/variables.html#quotation&#34;&gt;&lt;em&gt;&lt;strong&gt;特別注意雙引號的問題&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; .&lt;/li&gt;
 &lt;li&gt;Start path 預設就會是執行的目錄, 所以我這邊不填
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/double_commander/doublecmd_file_associations.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/double_commander/doublecmd_file_associations.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;如果跑出來不如預期, 可以從 Layout 打開 &lt;em&gt;Show log window&lt;/em&gt;, 看他實際執行的指令
@@ -259,83 +67,11 @@
     </item>
     
     <item>
-      <title>FreeCommander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/free-commander/</link>
-      <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/free-commander/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;a href=&#34;https://freecommander.com/&#34;&gt;FreeCommander&lt;/a&gt; 是個好用的跨平台 open source 的 file manager (設計理念接近 &lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;),  他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.&lt;/p&gt;
-&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Tools -&amp;gt; Define action toolsbars: 把 splitter 取消, 就可以關掉中間那條 toolbar.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;不順手的地方&#34;&gt;不順手的地方&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;暫時沒有&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;64 bit 是要錢的&lt;/li&gt;
-&lt;li&gt;更版沒有很頻繁, 大概一年一版&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;和其他類似軟體的比較&#34;&gt;和其他類似軟體的比較&lt;/h2&gt;
-&lt;p&gt;類似的軟體很多, 功能都有些許接近和重複, 挑喜歡的就好.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://freecommander.com/en/summary/&#34;&gt;FreeCommander&lt;/a&gt;, &lt;a href=&#34;http://multicommander.com/&#34;&gt;MultiCommander&lt;/a&gt;: 這兩個是免費的.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.q-dir.com/&#34;&gt;Q-Dir&lt;/a&gt;: 這個也是免費的, 小巧, 可以開 4 個 panel.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;, &lt;a href=&#34;https://www.xyplorer.com/&#34;&gt;XYplorer&lt;/a&gt;: 這兩個是要付錢的.&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Multi Commander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/multi-commander/</link>
-      <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/multi-commander/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;a href=&#34;http://multicommander.com/&#34;&gt;Multi Commander&lt;/a&gt; 是個好用的跨平台 open source 的 file manager (設計理念接近 &lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;),  他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.&lt;/p&gt;
-&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;如何關閉下方 button panel&lt;/p&gt;
-&lt;p&gt;按下 Ctrl-B 可開關&lt;/p&gt;
-&lt;p&gt;Menu &amp;gt; Configuration &amp;gt; Core Settings, 然後參考 &lt;a href=&#34;http://multicommander.com/docs/buttonpanel&#34;&gt;這篇&lt;/a&gt;, 把 &lt;em&gt;Allow button panel to be undocked&lt;/em&gt; 打勾.
-重開後就可以把 button panel 關掉了.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;顯示 special folders&lt;/p&gt;
-&lt;p&gt;Menu &amp;gt; Configuration &amp;gt; Explorer panel Settings -&amp;gt; Layout, 參考&lt;a href=&#34;http://multicommander.com/docs/drivebar&#34;&gt;這篇&lt;/a&gt;,&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;不順手的地方&#34;&gt;不順手的地方&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;他的一般 toolbar 沒法自行加減 button, 只能修改 launch bar 上的 button. 但 launch bar 會是獨立的一列, 沒法和其他合併.&lt;/li&gt;
-&lt;li&gt;他的 script 不容易 debug.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;和其他類似軟體的比較&#34;&gt;和其他類似軟體的比較&lt;/h2&gt;
-&lt;p&gt;類似的軟體很多, 功能都有些許接近和重複, 挑喜歡的就好.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>使用 TWCC-CLI 從 TWCC 容器複本建立新的容器</title>
-      <link>http://localhost:1313/tw/doc/software/twcc-twccli-duplicate-ccs/</link>
+      <link>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</link>
       <pubDate>Wed, 26 Oct 2022 18:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/twcc-twccli-duplicate-ccs/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</guid>
       <description>
         
           
@@ -387,10 +123,10 @@
     
     <item>
       <title>檔案搜尋替代工具</title>
-      <link>http://localhost:1313/tw/doc/software/file-search-and-replace-tool/</link>
+      <link>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</link>
       <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/file-search-and-replace-tool/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</guid>
       <description>
         
           
@@ -471,10 +207,10 @@
     
     <item>
       <title>YouTube 各種加強工具</title>
-      <link>http://localhost:1313/tw/doc/software/youtube-enhancer/</link>
+      <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>
       <pubDate>Wed, 31 Aug 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/youtube-enhancer/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/youtube-enhancer/</guid>
       <description>
         
           
@@ -586,10 +322,10 @@
     
     <item>
       <title>跳過 Podcast 的片頭片尾</title>
-      <link>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</link>
+      <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
@@ -617,7 +353,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/podcast/pocket-casts-skip-intro.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/podcast/pocket-casts-skip-intro.zh-tw.webp&#34;
       
       
     /&gt;
@@ -638,132 +374,11 @@
     </item>
     
     <item>
-      <title>ActivityWatch</title>
-      <link>http://localhost:1313/tw/doc/software/activity-watch/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/activity-watch/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;他有一堆 Watcher &lt;a href=&#34;https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers&#34;&gt;https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;chrome-plugin&#34;&gt;Chrome Plugin&lt;/h2&gt;
-&lt;p&gt;如果要看他開的是哪個 tab, 可裝這個 &lt;a href=&#34;https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi&#34;&gt;https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Amazon Kindle</title>
-      <link>http://localhost:1313/tw/doc/software/amazon-kindle/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/amazon-kindle/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;用 email 傳檔
-優點: 雲端同步, 我甚至可以從手機管理書籍 (collection, ...)
-缺點: 只有 mobi 格式會顯示封面&lt;/p&gt;
-&lt;p&gt;Kindle 殘體書看得很痛苦？一勞永逸簡中轉繁中教學（免越獄免轉書檔）
-&lt;a href=&#34;http://blog.chrisflicker.com/post/kindle-%E7%B0%A1%E8%BD%89%E7%B9%81&#34;&gt;http://blog.chrisflicker.com/post/kindle-%E7%B0%A1%E8%BD%89%E7%B9%81&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>HandBrake</title>
-      <link>http://localhost:1313/tw/doc/software/handbrake/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/handbrake/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/HandBrake/HandBrake&#34;&gt;HandBrake&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>NeoVIM</title>
-      <link>http://localhost:1313/tw/doc/software/neovim/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/neovim/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://ddadaal.me/articles/from-vscode-to-vim-to-both&#34;&gt;https://ddadaal.me/articles/from-vscode-to-vim-to-both&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Windows Terminal Power Shell</title>
-      <link>http://localhost:1313/tw/doc/software/windows-terminal-power-shell/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/windows-terminal-power-shell/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.miniasp.com/post/2021/11/24/PowerShell-prompt-with-Oh-My-Posh-and-Windows-Terminal&#34;&gt;如何打造一個華麗又實用的 PowerShell 命令輸入環境&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kwchang0831.dev/dev-env/pwsh/oh-my-posh&#34;&gt;安裝新版 Oh My Posh 與插件來美化 PowerShell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/137595941&#34;&gt;Windows Terminal 完美配置PowerShell 7.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>看圖軟體</title>
-      <link>http://localhost:1313/tw/doc/software/image-viewer/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/image-viewer/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.irfanview.com/&#34;&gt;IrfanView&lt;/a&gt;, 唯一缺點: free for non-commercial use, 不是 open source&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nyam.pe.kr/dev/imagine/&#34;&gt;Imagine&lt;/a&gt;, freeware, no restriction.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sylikc/jpegview&#34;&gt;JPEGView&lt;/a&gt;: GPL, 缺了一些基本編輯功能 (ex: 裁切和改變大小), 而且他的 portable mode 得去裝 &lt;a href=&#34;https://portableapps.com/apps/graphics_pictures/jpegview_portable&#34;&gt;https://portableapps.com/apps/graphics_pictures/jpegview_portable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xnview.com/en/&#34;&gt;XnView&lt;/a&gt;: 他的&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</title>
-      <link>http://localhost:1313/tw/doc/software/noncompressiblefiles/</link>
+      <link>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/noncompressiblefiles/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</guid>
       <description>
         
           
@@ -798,10 +413,10 @@
     
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
-      <link>http://localhost:1313/tw/doc/software/download-youtube-private-video/</link>
+      <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/download-youtube-private-video/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</guid>
       <description>
         
           
@@ -846,10 +461,10 @@
     
     <item>
       <title>XBMC (XBox, Windows 7) &#43; iPhone</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
       <pubDate>Wed, 03 Aug 2011 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
       <description>
         
           
@@ -870,10 +485,10 @@
     
     <item>
       <title>XBMC Babylon 9.04 安裝筆記</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</link>
       <pubDate>Thu, 24 Dec 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</guid>
       <description>
         
           

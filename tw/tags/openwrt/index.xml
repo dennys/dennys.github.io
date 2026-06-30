@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenWrt on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/openwrt/</link>
+    <link>https://dennys.github.io/tw/tags/openwrt/</link>
     <description>Recent content in OpenWrt on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenWrt 頻寬管理 (依照 interface) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
@@ -64,38 +64,11 @@
     </item>
     
     <item>
-      <title>OpenWrt Collectd</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-collectd/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/router/openwrt-collectd/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h3 id=&#34;protocols&#34;&gt;protocols&lt;/h3&gt;
-&lt;p&gt;官方網站: &lt;a href=&#34;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&#34;&gt;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&lt;/a&gt;
-opkg install collectd-mod-protocols&lt;/p&gt;
-&lt;h3 id=&#34;samples&#34;&gt;Samples:&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&#34;&gt;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/YYzvFFmR&#34;&gt;https://pastebin.com/YYzvFFmR&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;whats-next&#34;&gt;What&#39;s next&lt;/h3&gt;
-&lt;p&gt;pmacct: &lt;a href=&#34;http://www.pmacct.net/&#34;&gt;http://www.pmacct.net/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ntop.org/&#34;&gt;https://www.ntop.org/&lt;/a&gt;  =&amp;gt; 這個可以看出 application (YouTube, Facebook, Gmail, ...) 的流量
-但前面要用 nProbe/fProbe/ipt-netflow/pmacct 之類的東西把資料送過去
-&lt;a href=&#34;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&#34;&gt;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>OpenWrt 頻寬管理 (依照使用者) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</guid>
       <description>
         
           
@@ -108,7 +81,7 @@ opkg install collectd-mod-protocols&lt;/p&gt;
 &lt;p&gt;找一個 &lt;a href=&#34;https://openwrt.org/&#34;&gt;OpenWrt&lt;/a&gt; 上的頻寬管理工具, 看誰用了多少頻寬.
 以 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asuswrt-Merlin&lt;/a&gt; 來說, 目前提供的報表如下, 他可以依照&lt;strong&gt;使用者&lt;/strong&gt;或&lt;strong&gt;時段&lt;/strong&gt;來看流量.
 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;其他 Asuswrt-Merlin 提供的報表可參考這裡: &lt;a href=&#34;https://www.asuswrt-merlin.net/screenshots&#34;&gt;https://www.asuswrt-merlin.net/screenshots&lt;/a&gt;&lt;/p&gt;
@@ -146,7 +119,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;基本報表如下
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           
@@ -157,10 +130,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Fortinet VPN on OpenWrt</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</link>
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</guid>
       <description>
         
           
@@ -185,10 +158,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router Samba</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-samba/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-samba/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
       <description>
         
           
@@ -221,10 +194,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router 選擇</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-router-choice/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-router-choice/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
       <description>
         
           

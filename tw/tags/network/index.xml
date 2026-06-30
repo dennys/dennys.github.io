@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/network/</link>
+    <link>https://dennys.github.io/tw/tags/network/</link>
     <description>Recent content in Network on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTPS Checker by PowerShell</title>
-      <link>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</link>
+      <link>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</guid>
       <description>
         
           
@@ -125,10 +125,10 @@
     
     <item>
       <title>使用 Wireshark 擷取 HTTP 密碼</title>
-      <link>http://localhost:1313/tw/doc/network/wireshark-http-password/</link>
+      <link>https://dennys.github.io/tw/doc/network/wireshark-http-password/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wireshark-http-password/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wireshark-http-password/</guid>
       <description>
         
           
@@ -139,13 +139,13 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;切換到 Chrome, 登入進 phyMyAdmin.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -156,14 +156,14 @@
 &lt;li&gt;按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture&lt;/li&gt;
 &lt;li&gt;因為我們只看 http, 所以要在 filter 欄位輸入 &lt;em&gt;http&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;就可以看到剛剛輸入的帳號密碼了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -180,10 +180,10 @@
     
     <item>
       <title>使用 Grafana 做 Ping 和 測速</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</guid>
       <description>
         
           
@@ -233,7 +233,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;測速, 直接打開上面的網站, 做幾次測速. 然後可以用 browser 開一些跨國 VPN 來模擬從其他國家來的測速.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/speedtest.webp&#34; width=&#34;442&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/speedtest.webp&#34; width=&#34;442&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           
@@ -244,10 +244,10 @@
     
     <item>
       <title>Wake on Lan</title>
-      <link>http://localhost:1313/tw/doc/network/wake_on_lan/</link>
+      <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wake_on_lan/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wake_on_lan/</guid>
       <description>
         
           
@@ -257,7 +257,7 @@
 &lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
 &lt;h3 id=&#34;synology-dsm&#34;&gt;Synology DSM&lt;/h3&gt;
 &lt;p&gt;Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h3 id=&#34;asuswrt-merlin-不需設定&#34;&gt;Asuswrt Merlin (不需設定)&lt;/h3&gt;
@@ -267,7 +267,7 @@
 &lt;p&gt;選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了.
 (這畫面是 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asyswrt Merlin&lt;/a&gt; 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)&lt;/p&gt;
 &lt;p&gt;他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;耗電&#34;&gt;耗電&lt;/h2&gt;
@@ -281,10 +281,10 @@
     
     <item>
       <title>如何在 FortiClient VPN for Windows 保存密碼</title>
-      <link>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</link>
+      <link>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</link>
       <pubDate>Wed, 04 Jan 2023 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</guid>
       <description>
         
           
@@ -303,13 +303,13 @@
 &lt;p&gt;按右鍵新增一個 DWORD, 有 2 個設定可以使用
 *. show_remember_password: 這個設成 1, 他就會出現 &lt;strong&gt;保存密碼&lt;/strong&gt; 這個選項
 *. SavePass: 這個設成 1, 他就會把密碼存起來
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
@@ -324,10 +324,10 @@
     
     <item>
       <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
-      <link>http://localhost:1313/tw/doc/network/ssh-tunnel/</link>
+      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
       <pubDate>Sat, 17 Sep 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/ssh-tunnel/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
       <description>
         
           
@@ -351,7 +351,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/network/ssh-tunnel.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/network/ssh-tunnel.webp&#34;
       
       
     /&gt;
@@ -400,10 +400,10 @@
     
     <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</link>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</guid>
       <description>
         
           
@@ -459,10 +459,10 @@
     
     <item>
       <title>Open Source VPN 之不嚴謹比較</title>
-      <link>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</link>
+      <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</guid>
       <description>
         
           
@@ -539,7 +539,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/network/vpn_google_trend.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/network/vpn_google_trend.webp&#34;
       
       
     /&gt;
@@ -555,10 +555,10 @@
     
     <item>
       <title>點對點網路測速軟體 iPerf3</title>
-      <link>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
+      <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
       <description>
         
           
@@ -675,10 +675,10 @@
     
     <item>
       <title>OpenVPN server 簡易安裝使用 (Ubuntu)</title>
-      <link>http://localhost:1313/tw/doc/network/openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
       <pubDate>Fri, 17 Jun 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
       <description>
         
           
@@ -719,10 +719,10 @@
     
     <item>
       <title>無聲無影遠端桌面連線 - VNC</title>
-      <link>http://localhost:1313/tw/doc/network/realvnc/</link>
+      <link>https://dennys.github.io/tw/doc/network/realvnc/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/realvnc/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/realvnc/</guid>
       <description>
         
           

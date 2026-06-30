@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syncthing on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/syncthing/</link>
+    <link>https://dennys.github.io/tw/tags/syncthing/</link>
     <description>Recent content in Syncthing on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/syncthing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/syncthing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt-Merlin Syncthing (檔案同步)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
       <description>
         
           
@@ -45,10 +45,10 @@
     
     <item>
       <title>在 Synology DSM 上面跑 Syncthing (檔案同步)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</guid>
       <description>
         
           
@@ -103,10 +103,10 @@
     
     <item>
       <title>手機照片自動備份到電腦 (使用 Syncthing for Android)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
       <description>
         
           

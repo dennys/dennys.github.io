@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>.NET on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/.net/</link>
+    <link>https://dennys.github.io/en/tags/.net/</link>
     <description>Recent content in .NET on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Run SonarQube on Linux Docker with Mono to scan .NET 4.8 Code</title>
-      <link>http://localhost:1313/en/doc/devops/sonarqube-mono-dotnet4-integration/</link>
+      <link>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</link>
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/sonarqube-mono-dotnet4-integration/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/sonarqube-mono-dotnet4-integration/</guid>
       <description>
         
           
             &lt;h2 id=&#34;requirement&#34;&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;We know how to run SonarQube to scan .NET 4 code in &lt;a href=&#34;http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/#gitlab--sonarqube--net-48-non-docker&#34;&gt;GitLab + SonarQube + .NET 4.8 (non-docker)&lt;/a&gt;, but it needs a &lt;em&gt;Windows&lt;/em&gt; environment and does not support Linux.&lt;/p&gt;
+&lt;p&gt;We know how to run SonarQube to scan .NET 4 code in &lt;a href=&#34;https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/#gitlab--sonarqube--net-48-non-docker&#34;&gt;GitLab + SonarQube + .NET 4.8 (non-docker)&lt;/a&gt;, but it needs a &lt;em&gt;Windows&lt;/em&gt; environment and does not support Linux.&lt;/p&gt;
 &lt;p&gt;Therefore, we want to find a solution to run SonarQube on Linux in docker if possible. In this artiflce, we try to use &lt;a href=&#34;https://www.mono-project.com/&#34;&gt;Mono framework&lt;/a&gt; (a cross platform .NET 4.7 framework) to run SonarQube on Linux to scan .NET 4 code.&lt;/p&gt;
           
           
@@ -28,10 +28,10 @@
     
     <item>
       <title>GitLab SonarQube Integration with .NET</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-sonarqube-integration-dotnet/</guid>
       <description>
         
           
@@ -61,10 +61,10 @@ please see the following procedures.&lt;/p&gt;
     
     <item>
       <title>Use GitLab to do .NET 4.8 CI/CD</title>
-      <link>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
+      <link>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
+      <guid>https://dennys.github.io/en/doc/devops/gitlab-dotnet4-ci-cd/</guid>
       <description>
         
           

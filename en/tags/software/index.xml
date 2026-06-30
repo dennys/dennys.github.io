@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/software/</link>
+    <link>https://dennys.github.io/en/tags/software/</link>
     <description>Recent content in Software on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 10:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search Google Photos by Device</title>
-      <link>http://localhost:1313/en/doc/software/google-photos-search-by-device/</link>
+      <link>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</link>
       <pubDate>Sun, 04 Dec 2022 10:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/google-photos-search-by-device/</guid>
+      <guid>https://dennys.github.io/en/doc/software/google-photos-search-by-device/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@
     
     <item>
       <title>File Search/Replace Tool</title>
-      <link>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</link>
+      <link>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</link>
       <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/file-search-and-replace-tool/</guid>
+      <guid>https://dennys.github.io/en/doc/software/file-search-and-replace-tool/</guid>
       <description>
         
           
@@ -53,10 +53,10 @@
     
     <item>
       <title>K-9 Mail 6.200 Supports OAuth 2.0 (gmail)</title>
-      <link>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
+      <link>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</link>
       <pubDate>Wed, 13 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
+      <guid>https://dennys.github.io/en/posts/202207/k-9-mail-supports-oauth-2.0-gmail/</guid>
       <description>
         
           
@@ -75,10 +75,10 @@ you just need to grant privilege to K-9 mail.&lt;/p&gt;
     
     <item>
       <title>Batch Photo Files Rename Tools (by EXIF).</title>
-      <link>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</link>
+      <link>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</link>
       <pubDate>Sun, 10 Jul 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/batch-photo-files-rename-tools/</guid>
+      <guid>https://dennys.github.io/en/doc/software/batch-photo-files-rename-tools/</guid>
       <description>
         
           
@@ -101,10 +101,10 @@ Rename Master is for Windows only.&lt;/p&gt;
     
     <item>
       <title>How to Skip Podcast&#39;s Introduction</title>
-      <link>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</link>
+      <link>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>https://dennys.github.io/en/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
@@ -121,10 +121,10 @@ It means some podcasts have an introduction at the beginning, if you want to ski
     
     <item>
       <title>Use WISE to send currency exchange rate mail daily</title>
-      <link>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
+      <link>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
+      <guid>https://dennys.github.io/en/doc/software/wise-send-currency-exchange-rate-mail/</guid>
       <description>
         
           

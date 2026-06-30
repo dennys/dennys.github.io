@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Dennys Diary</title>
-    <link>http://localhost:1313/tw/posts/</link>
+    <link>https://dennys.github.io/tw/posts/</link>
     <description>Recent content in Posts on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 13 May 2023 23:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 23:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>南寮自行車 30KM</title>
-      <link>http://localhost:1313/tw/posts/202305/nanliao-bicycle-30km/</link>
+      <link>https://dennys.github.io/tw/posts/202305/nanliao-bicycle-30km/</link>
       <pubDate>Sat, 13 May 2023 23:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/202305/nanliao-bicycle-30km/</guid>
+      <guid>https://dennys.github.io/tw/posts/202305/nanliao-bicycle-30km/</guid>
       <description>
         
           
             &lt;p&gt;統計資料的部分, 左圖用的是 &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker&amp;amp;hl=zh_TW&amp;amp;gl=US&#34;&gt;Geo Tracker&lt;/a&gt;,
 右圖用的是  &lt;a href=&#34;https://play.google.com/store/apps/details?id=de.dennisguse.opentracks.playstore&amp;amp;hl=en_US&#34;&gt;OpenTracks&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&#34;display: flex;&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/geo/2023-0513_Nanliao_Bicycle_GeoTracker.webp&#34; style=&#34;width: 300px;&#34;&gt;
-  &lt;img src=&#34;http://localhost:1313/geo/2023-0513_Nanliao_Bicycle_OpenTracks.webp&#34; style=&#34;width: 300px;&#34;&gt;
+  &lt;img src=&#34;https://dennys.github.io/geo/2023-0513_Nanliao_Bicycle_GeoTracker.webp&#34; style=&#34;width: 300px;&#34;&gt;
+  &lt;img src=&#34;https://dennys.github.io/geo/2023-0513_Nanliao_Bicycle_OpenTracks.webp&#34; style=&#34;width: 300px;&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;軌跡的部分, GPX 使用 &lt;a href=&#34;https://osmand.net/&#34;&gt;OsmAnd&lt;/a&gt; 紀錄, 圖資使用 &lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt;, 地圖軌跡使用 &lt;a href=&#34;https://gpx.studio/&#34;&gt;gpx/studio&lt;/a&gt;.&lt;/p&gt;
 &lt;iframe src=&#34;https://gpx.studio/?state=%7B%22urls%22:%5B%22https%3A%2F%2Fdennys.github.io%2Fgeo%2F2023-0513_Nanliao_Bicycle.gpx%22%5D%7D&amp;embed&amp;distance&#34; width=&#34;100%&#34; height=&#34;900&#34; frameborder=&#34;0&#34; allowfullscreen&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>單月創新高 703 pageviews / 月</title>
-      <link>http://localhost:1313/tw/posts/202205/20220531-month-pageviews/</link>
+      <link>https://dennys.github.io/tw/posts/202205/20220531-month-pageviews/</link>
       <pubDate>Tue, 31 May 2022 00:09:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/202205/20220531-month-pageviews/</guid>
+      <guid>https://dennys.github.io/tw/posts/202205/20220531-month-pageviews/</guid>
       <description>
         
           
@@ -59,7 +59,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/web_history/wordpress-20220531.webp&#34;
+        src=&#34;https://dennys.github.io/images/web_history/wordpress-20220531.webp&#34;
       
       
     /&gt;
@@ -75,10 +75,10 @@
     
     <item>
       <title>單日創新高 66 pageviews / 日</title>
-      <link>http://localhost:1313/tw/posts/202205/20220529-day-pageviews/</link>
+      <link>https://dennys.github.io/tw/posts/202205/20220529-day-pageviews/</link>
       <pubDate>Mon, 30 May 2022 00:09:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/202205/20220529-day-pageviews/</guid>
+      <guid>https://dennys.github.io/tw/posts/202205/20220529-day-pageviews/</guid>
       <description>
         
           
@@ -100,7 +100,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/web_history/wordpress-20220529.webp&#34;
+        src=&#34;https://dennys.github.io/images/web_history/wordpress-20220529.webp&#34;
       
       
     /&gt;
@@ -116,10 +116,10 @@
     
     <item>
       <title>單週創新高 223 pageview / 週</title>
-      <link>http://localhost:1313/tw/posts/202205/20220530-week-pageviews/</link>
+      <link>https://dennys.github.io/tw/posts/202205/20220530-week-pageviews/</link>
       <pubDate>Mon, 30 May 2022 00:09:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/202205/20220530-week-pageviews/</guid>
+      <guid>https://dennys.github.io/tw/posts/202205/20220530-week-pageviews/</guid>
       <description>
         
           
@@ -141,7 +141,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/web_history/wordpress-20220530.webp&#34;
+        src=&#34;https://dennys.github.io/images/web_history/wordpress-20220530.webp&#34;
       
       
     /&gt;
@@ -156,244 +156,11 @@
     </item>
     
     <item>
-      <title>大尺寸 Pixel 3/4/5 &amp; Galaxy S8/S9/10</title>
-      <link>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</link>
-      <pubDate>Thu, 16 Dec 2021 07:17:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/pixel-345-galaxy-s8s910/</guid>
-      <description>
-        
-          
-            &lt;p&gt;需求如下, 看來是 Pixel 3 XL 最符合, 不過 4GB 不知道會不會 lag…&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;大螢幕 (&amp;gt;6″)&lt;/li&gt;
-&lt;li&gt;無線充電&lt;/li&gt;
-&lt;li&gt;指紋辨識&lt;/li&gt;
-&lt;li&gt;Google 相簿 (optional)&lt;/li&gt;
-&lt;li&gt;插卡 (optional, 好像也用不太到)&lt;/li&gt;
-&lt;li&gt;不玩遊戲, 不看影片&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pixel 3 XL&lt;/p&gt;
-&lt;p&gt;Pixel 3a XL&lt;/p&gt;
-&lt;p&gt;Pixel 4 XL&lt;/p&gt;
-&lt;p&gt;Pixel 4a 5G&lt;/p&gt;
-&lt;p&gt;Pixel 5&lt;/p&gt;
-&lt;p&gt;Pixel 5a&lt;/p&gt;
-&lt;p&gt;Galaxy S8+&lt;/p&gt;
-&lt;p&gt;Galaxy S9+&lt;/p&gt;
-&lt;p&gt;Galaxy S10+&lt;/p&gt;
-&lt;p&gt;上市時間&lt;/p&gt;
-&lt;p&gt;2018/10&lt;/p&gt;
-&lt;p&gt;2019/5&lt;/p&gt;
-&lt;p&gt;2019/10&lt;/p&gt;
-&lt;p&gt;2020/9&lt;/p&gt;
-&lt;p&gt;2020/10&lt;/p&gt;
-&lt;p&gt;2021/8&lt;/p&gt;
-&lt;p&gt;2017/4&lt;/p&gt;
-&lt;p&gt;2018/2&lt;/p&gt;
-&lt;p&gt;2019/2&lt;/p&gt;
-&lt;p&gt;上市價格&lt;/p&gt;
-&lt;p&gt;31100&lt;br&gt;
-34100&lt;/p&gt;
-&lt;p&gt;17100&lt;/p&gt;
-&lt;p&gt;29550&lt;br&gt;
-32550&lt;/p&gt;
-&lt;p&gt;15990&lt;/p&gt;
-&lt;p&gt;18990&lt;/p&gt;
-&lt;p&gt;未上市&lt;br&gt;
-(US$499)&lt;/p&gt;
-&lt;p&gt;27900&lt;/p&gt;
-&lt;p&gt;28900&lt;br&gt;
-29900&lt;br&gt;
-31900&lt;/p&gt;
-&lt;p&gt;32900&lt;br&gt;
-39900&lt;br&gt;
-52900&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>GF5, LX7, RX100</title>
-      <link>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/gf5-lx7-rx100/</link>
-      <pubDate>Sat, 06 Oct 2012 20:22:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/posts/draft/%E6%9C%89-grid-%E7%9A%84%E6%96%87%E7%AB%A0/gf5-lx7-rx100/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Panasonic GF5 + 20mm F1.7&lt;/p&gt;
-&lt;p&gt;Panasonic LX7&lt;/p&gt;
-&lt;p&gt;Sony RX100&lt;/p&gt;
-&lt;p&gt;焦段&lt;/p&gt;
-&lt;p&gt;20mm&lt;/p&gt;
-&lt;p&gt;24-90mm&lt;/p&gt;
-&lt;p&gt;28-100mm &lt;/p&gt;
-&lt;p&gt;光圈&lt;/p&gt;
-&lt;p&gt;F1.7&lt;/p&gt;
-&lt;p&gt;F1.4-2.3&lt;/p&gt;
-&lt;p&gt;F1.8-4.9&lt;/p&gt;
-&lt;p&gt;體積 (mm)&lt;/p&gt;
-&lt;p&gt;107.7 x 66.6 x 36.8mm&lt;br&gt;
-鏡頭: 63x25.5mm&lt;/p&gt;
-&lt;p&gt;111 x 67 x 46 mm&lt;/p&gt;
-&lt;p&gt;102 x 59 x 36 mm&lt;/p&gt;
-&lt;p&gt;重量 (g)&lt;/p&gt;
-&lt;p&gt;225g (不含鏡頭)&lt;/p&gt;
-&lt;p&gt;269g&lt;/p&gt;
-&lt;p&gt;213g&lt;/p&gt;
-&lt;p&gt;重量 (含電池,SD)&lt;/p&gt;
-&lt;p&gt;267g (不含鏡頭)&lt;br&gt;
-367g (含20mm鏡頭)&lt;/p&gt;
-&lt;p&gt;298g&lt;/p&gt;
-&lt;p&gt;240g&lt;/p&gt;
-&lt;p&gt;像素&lt;/p&gt;
-&lt;p&gt;1210 萬&lt;/p&gt;
-&lt;p&gt;1270 萬&lt;/p&gt;
-&lt;p&gt;2020 萬&lt;/p&gt;
-&lt;p&gt;CCD&lt;/p&gt;
-&lt;p&gt;4/3&amp;quot;&lt;/p&gt;
-&lt;p&gt;1/1.7&amp;quot;&lt;/p&gt;
-&lt;p&gt;1&amp;quot;&lt;/p&gt;
-&lt;p&gt;連拍&lt;/p&gt;
-&lt;p&gt;4fps&lt;/p&gt;
-&lt;p&gt;5fps&lt;/p&gt;
-&lt;p&gt;10fps&lt;/p&gt;
-&lt;p&gt;錄影&lt;/p&gt;
-&lt;p&gt;1920x1080@60i (17Mbps)&lt;br&gt;
-AVHCD, MP4&lt;/p&gt;
-&lt;p&gt;1920x1080@60p (28Mbps)&lt;br&gt;
-AVHCD, MP4&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Panasonic m43 相機, 鏡頭規格</title>
-      <link>http://localhost:1313/2012/09/panasonic-m43.html</link>
-      <pubDate>Sat, 22 Sep 2012 00:23:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/2012/09/panasonic-m43.html</guid>
-      <description>
-        
-          
-            &lt;p&gt;G2&lt;/p&gt;
-&lt;p&gt;GH2&lt;/p&gt;
-&lt;p&gt;G5&lt;/p&gt;
-&lt;p&gt;GH3&lt;/p&gt;
-&lt;p&gt;發佈日期&lt;/p&gt;
-&lt;p&gt;2010年4月&lt;/p&gt;
-&lt;p&gt;2010年9月&lt;/p&gt;
-&lt;p&gt;2012年10月 &lt;/p&gt;
-&lt;p&gt;2012年12月 &lt;/p&gt;
-&lt;p&gt;體積 (mm)&lt;/p&gt;
-&lt;p&gt;124 x 84 x 74&lt;/p&gt;
-&lt;p&gt;124 x 90 x 76&lt;/p&gt;
-&lt;p&gt;112 x 83 x 71&lt;/p&gt;
-&lt;p&gt;133 x 93 x 82.0&lt;/p&gt;
-&lt;p&gt;重量 (g)&lt;/p&gt;
-&lt;p&gt;371g&lt;/p&gt;
-&lt;p&gt;392g&lt;/p&gt;
-&lt;p&gt;346g&lt;/p&gt;
-&lt;p&gt;470g&lt;/p&gt;
-&lt;p&gt;重量 (含電池,SD)&lt;/p&gt;
-&lt;p&gt;428g&lt;/p&gt;
-&lt;p&gt;434g&lt;/p&gt;
-&lt;p&gt;396g&lt;/p&gt;
-&lt;p&gt;550g&lt;/p&gt;
-&lt;p&gt;像素&lt;/p&gt;
-&lt;p&gt;1210 萬&lt;/p&gt;
-&lt;p&gt;1605 萬&lt;/p&gt;
-&lt;p&gt;1605 萬&lt;/p&gt;
-&lt;p&gt;1605 萬&lt;/p&gt;
-&lt;p&gt;連拍&lt;/p&gt;
-&lt;p&gt;3.2 fps&lt;/p&gt;
-&lt;p&gt;5 fps&lt;/p&gt;
-&lt;p&gt;6 fps&lt;/p&gt;
-&lt;p&gt;6 fps&lt;/p&gt;
-&lt;p&gt;錄影&lt;/p&gt;
-&lt;p&gt;AVCHD Lite:&lt;br&gt;
-720, 60p (30 fps)&lt;br&gt;
-720, 50p (25 fps)&lt;/p&gt;
-&lt;p&gt;AVHCD:&lt;br&gt;
-1080i@60 FPS&lt;br&gt;
-1080p@24FPS ( 24Mbps)&lt;br&gt;
-720p@60FPS&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>m43 用閃光燈</title>
-      <link>http://localhost:1313/2012/09/flash.html</link>
-      <pubDate>Sat, 08 Sep 2012 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/2012/09/flash.html</guid>
-      <description>
-        
-          
-            &lt;p&gt;For Panasonic m43&lt;/p&gt;
-&lt;p&gt;型號&lt;/p&gt;
-&lt;p&gt;GN&lt;/p&gt;
-&lt;p&gt;重量&lt;br&gt;
-(無電池)&lt;/p&gt;
-&lt;p&gt;體積&lt;/p&gt;
-&lt;p&gt;優點&lt;/p&gt;
-&lt;p&gt;缺點&lt;/p&gt;
-&lt;p&gt;價位&lt;/p&gt;
-&lt;p&gt;備註&lt;/p&gt;
-&lt;p&gt;Nissin Di466&lt;/p&gt;
-&lt;p&gt;33&lt;/p&gt;
-&lt;p&gt;240g&lt;/p&gt;
-&lt;p&gt;67x105x95mm&lt;/p&gt;
-&lt;p&gt;不能擺頭&lt;/p&gt;
-&lt;p&gt;&amp;lt;4,000&lt;/p&gt;
-&lt;p&gt;Panasonic DMW-FL360&lt;/p&gt;
-&lt;p&gt;36&lt;/p&gt;
-&lt;p&gt;270g&lt;/p&gt;
-&lt;p&gt;67x108x95mm&lt;/p&gt;
-&lt;p&gt;支援FP&lt;/p&gt;
-&lt;p&gt;回電速度慢&lt;/p&gt;
-&lt;p&gt;8,000~9,000&lt;/p&gt;
-&lt;p&gt;Panasonic DMW-FL500&lt;/p&gt;
-&lt;p&gt;50&lt;/p&gt;
-&lt;p&gt;375g&lt;/p&gt;
-&lt;p&gt;79x141x107mm&lt;/p&gt;
-&lt;p&gt;支援FP&lt;/p&gt;
-&lt;p&gt;貴&lt;/p&gt;
-&lt;p&gt;16,000~17,000&lt;/p&gt;
-&lt;p&gt;很少二手貨&lt;/p&gt;
-&lt;p&gt;Metz 50 AF-1&lt;/p&gt;
-&lt;p&gt;50&lt;/p&gt;
-&lt;p&gt;340g&lt;/p&gt;
-&lt;p&gt;71x137x99mm&lt;/p&gt;
-&lt;p&gt;10,000~11,000&lt;/p&gt;
-&lt;p&gt;Metz 58 AF-2&lt;/p&gt;
-&lt;p&gt;58 (ISO 100/105mm)&lt;br&gt;
-42 (ISO 100/50mm)&lt;/p&gt;
-&lt;p&gt;355g&lt;/p&gt;
-&lt;p&gt;71×148×99mm&lt;/p&gt;
-&lt;p&gt;12,000~15,000&lt;/p&gt;
-&lt;p&gt;Cactus AF50&lt;/p&gt;
-&lt;p&gt;不常見?&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>小紅歷險記</title>
-      <link>http://localhost:1313/tw/posts/201008/2010-car-accident/</link>
+      <link>https://dennys.github.io/tw/posts/201008/2010-car-accident/</link>
       <pubDate>Sat, 28 Aug 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/201008/2010-car-accident/</guid>
+      <guid>https://dennys.github.io/tw/posts/201008/2010-car-accident/</guid>
       <description>
         
           
@@ -417,7 +184,7 @@ AVHCD, MP4&lt;/p&gt;
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;314&#34;
         height=&#34;400&#34;
-        src=&#34;http://localhost:1313/car_11222483294858384412.jpg&#34;
+        src=&#34;https://dennys.github.io/car_11222483294858384412.jpg&#34;
       
       
     /&gt;
@@ -439,10 +206,10 @@ AVHCD, MP4&lt;/p&gt;
     
     <item>
       <title>在電梯裡跨年</title>
-      <link>http://localhost:1313/tw/posts/201001/2010-elevator/</link>
+      <link>https://dennys.github.io/tw/posts/201001/2010-elevator/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/201001/2010-elevator/</guid>
+      <guid>https://dennys.github.io/tw/posts/201001/2010-elevator/</guid>
       <description>
         
           
@@ -466,10 +233,10 @@ AVHCD, MP4&lt;/p&gt;
     
     <item>
       <title>Blog 開張 (Movable Type 2.64)</title>
-      <link>http://localhost:1313/tw/posts/200308/blog-initial.zh-tw/</link>
+      <link>https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/</link>
       <pubDate>Sat, 16 Aug 2003 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tw/posts/200308/blog-initial.zh-tw/</guid>
+      <guid>https://dennys.github.io/tw/posts/200308/blog-initial.zh-tw/</guid>
       <description>
         
           

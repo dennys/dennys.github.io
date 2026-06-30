@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android 使用小技巧 on Dennys Diary</title>
-    <link>http://localhost:1313/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+    <link>https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
     <description>Recent content in Android 使用小技巧 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 06:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 06:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Change the Gmail Notification Action from Archive to Delete</title>
-      <link>http://localhost:1313/en/doc/android/gmail-notify-delete-archive/</link>
+      <link>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Mon, 10 Oct 2022 06:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>https://dennys.github.io/en/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
@@ -37,7 +37,7 @@ But you can change it.&lt;/p&gt;
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.en.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_archive.en.webp&#34;
       
       
     /&gt;
@@ -67,7 +67,7 @@ The default action is &lt;em&gt;Archive&lt;/em&gt;, but you can change it to &lt
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.en.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_notification_setup.en.webp&#34;
       
       
     /&gt;
@@ -95,7 +95,7 @@ The default action is &lt;em&gt;Archive&lt;/em&gt;, but you can change it to &lt
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.en.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_delete.en.webp&#34;
       
       
     /&gt;
@@ -111,10 +111,10 @@ The default action is &lt;em&gt;Archive&lt;/em&gt;, but you can change it to &lt
     
     <item>
       <title>Android Gmail Notification Actions (Archive, Delete, ...)</title>
-      <link>http://localhost:1313/en/doc/android/android-gmail-notification-actions/</link>
+      <link>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/android/android-gmail-notification-actions/</guid>
+      <guid>https://dennys.github.io/en/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
@@ -147,7 +147,7 @@ But we cannot enable &lt;strong&gt;BOTH&lt;/strong&gt;, therefore, I try to find
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
       
       
     /&gt;
@@ -176,7 +176,7 @@ The default action is &lt;em&gt;Archive&lt;/em&gt;, you can change it to &lt;em&
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.en.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_notification_setup.en.webp&#34;
       
       
     /&gt;

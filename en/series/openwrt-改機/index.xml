@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenWrt 改機 on Dennys Diary</title>
-    <link>http://localhost:1313/en/series/openwrt-%E6%94%B9%E6%A9%9F/</link>
+    <link>https://dennys.github.io/en/series/openwrt-%E6%94%B9%E6%A9%9F/</link>
     <description>Recent content in OpenWrt 改機 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/openwrt-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/openwrt-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenWrt Bandwidth Management (by interface) </title>
-      <link>http://localhost:1313/en/doc/router/openwrt-bandwidth-by-interface/</link>
+      <link>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <guid>https://dennys.github.io/en/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
@@ -38,27 +38,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Usage&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>OpenWrt ADGuard Home</title>
-      <link>http://localhost:1313/en/doc/router/openwrt-adguard/</link>
-      <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/en/doc/router/openwrt-adguard/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AdGuard for OpenWrt: &lt;a href=&#34;https://openwrt.org/docs/guide-user/services/dns/adguard-home&#34;&gt;https://openwrt.org/docs/guide-user/services/dns/adguard-home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;AdGuard GitHub: &lt;a href=&#34;https://github.com/AdguardTeam/AdGuardHome&#34;&gt;https://github.com/AdguardTeam/AdGuardHome&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;IThome (Traditional Chinese): &lt;a href=&#34;https://ithelp.ithome.com.tw/articles/10280241&#34;&gt;https://ithelp.ithome.com.tw/articles/10280241&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
           
           
         

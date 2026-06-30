@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DotNet on Dennys Diary</title>
-    <link>http://localhost:1313/en/series/dotnet/</link>
+    <link>https://dennys.github.io/en/series/dotnet/</link>
     <description>Recent content in DotNet on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/dotnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sharing components between two view models in C# MVVM</title>
-      <link>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <link>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <guid>https://dennys.github.io/en/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
       <description>
         
           

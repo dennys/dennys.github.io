@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Magisk on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/magisk/</link>
+    <link>https://dennys.github.io/tw/tags/magisk/</link>
     <description>Recent content in Magisk on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/magisk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/magisk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -43,10 +43,10 @@
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -57,7 +57,7 @@
   &lt;/div&gt;
 
 &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;在上次這篇 &lt;a href=&#34;http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
+&lt;p&gt;在上次這篇 &lt;a href=&#34;https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
 &lt;h3 id=&#34;方法-1&#34;&gt;方法 1&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -90,10 +90,10 @@
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -152,10 +152,10 @@
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -197,10 +197,10 @@
     
     <item>
       <title>Samsung Galaxy View Root</title>
-      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</guid>
       <description>
         
           
@@ -252,7 +252,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/samsung/samsung_odin.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/samsung/samsung_odin.webp&#34;
       
       
     /&gt;
@@ -278,10 +278,10 @@
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           

@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI/CD on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/ci/cd/</link>
+    <link>https://dennys.github.io/tw/tags/ci/cd/</link>
     <description>Recent content in CI/CD on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Grafana 管理 SonarQube KPI</title>
-      <link>http://localhost:1313/tw/doc/devops/grafana-sonarqube-integration/</link>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/devops/grafana-sonarqube-integration/</guid>
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</guid>
       <description>
         
           
             &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
 &lt;p&gt;一般來講, 我們會直接在 SonarQube 上面看各 project 的各項 KPI 如下
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Project 的 build history 的部分也可以直接看到
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;在-grafana-上面顯示-sonarqube-kpi&#34;&gt;在 Grafana 上面顯示 SonarQube KPI&lt;/h2&gt;
@@ -79,10 +79,10 @@
     
     <item>
       <title>使用 Grafana 管理 GitLab CI/CD Pipelines</title>
-      <link>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</link>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           

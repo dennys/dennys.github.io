@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android 使用小技巧 on Dennys Diary</title>
-    <link>http://localhost:1313/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+    <link>https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
     <description>Recent content in Android 使用小技巧 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android App 備份 (使用 Syncthing)</title>
-      <link>http://localhost:1313/tw/doc/android/android-app-backup/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-app-backup/</link>
       <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-app-backup/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-app-backup/</guid>
       <description>
         
           
@@ -35,7 +35,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 
 &lt;/li&gt;
@@ -47,7 +47,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 
 &lt;/li&gt;
@@ -81,10 +81,10 @@
     
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
-      <link>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
@@ -127,7 +127,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/k9_notification.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/k9_notification.zh-tw.webp&#34;
       
       
     /&gt;
@@ -154,7 +154,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
       
       
     /&gt;
@@ -170,10 +170,10 @@
     
     <item>
       <title>如何修改預設的 YouTube App (YouTube Vanced, NewPipe, ...)</title>
-      <link>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
@@ -213,7 +213,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
       
       
     /&gt;
@@ -241,7 +241,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
       
       
     /&gt;
@@ -269,7 +269,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
       
       
     /&gt;
@@ -297,7 +297,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
       
       
     /&gt;
@@ -313,10 +313,10 @@
     
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
-      <link>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</guid>
       <description>
         
           
@@ -358,7 +358,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/sound/Android_Sound.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/sound/Android_Sound.webp&#34;
       
       
     /&gt;
@@ -397,7 +397,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/sound/SoundProfile.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/sound/SoundProfile.webp&#34;
       
       
     /&gt;
@@ -413,10 +413,10 @@
     
     <item>
       <title>如何設定 Android 零打擾的時間長度</title>
-      <link>http://localhost:1313/tw/doc/android/android-do-not-disturb/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
       <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-do-not-disturb/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
       <description>
         
           
@@ -441,10 +441,10 @@
     
     <item>
       <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
-      <link>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
       <description>
         
           
@@ -461,10 +461,10 @@
     
     <item>
       <title>將 Gmail 的通知改成可以直接刪除 (預設是封存)</title>
-      <link>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</link>
+      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
@@ -487,7 +487,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
       
       
     /&gt;
@@ -516,7 +516,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
       
       
     /&gt;
@@ -544,7 +544,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
       
       
     /&gt;
@@ -562,10 +562,10 @@
     
     <item>
       <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
       <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
       <description>
         
           

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/security/</link>
+    <link>https://dennys.github.io/tw/tags/security/</link>
     <description>Recent content in Security on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Wireshark 擷取 HTTP 密碼</title>
-      <link>http://localhost:1313/tw/doc/network/wireshark-http-password/</link>
+      <link>https://dennys.github.io/tw/doc/network/wireshark-http-password/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wireshark-http-password/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wireshark-http-password/</guid>
       <description>
         
           
@@ -24,13 +24,13 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;切換到 Chrome, 登入進 phyMyAdmin.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -41,14 +41,14 @@
 &lt;li&gt;按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture&lt;/li&gt;
 &lt;li&gt;因為我們只看 http, 所以要在 filter 欄位輸入 &lt;em&gt;http&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;就可以看到剛剛輸入的帳號密碼了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;

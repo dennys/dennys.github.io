@@ -2,204 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT on Dennys Diary</title>
-    <link>http://localhost:1313/tw/categories/it/</link>
+    <link>https://dennys.github.io/tw/categories/it/</link>
     <description>Recent content in IT on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何使用 Python &#43; LINE Message API 發送訊息</title>
-      <link>http://localhost:1313/tw/doc/software/line-message-api-python/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/line-message-api-python/</guid>
-      <description>
-        
-          
-            &lt;h1 id=&#34;需求&#34;&gt;需求&lt;/h1&gt;
-&lt;p&gt;使用 Python 程式發送 LINE 訊息到特定群組&lt;/p&gt;
-&lt;h1 id=&#34;帳號準備&#34;&gt;帳號準備&lt;/h1&gt;
-&lt;p&gt;請先註冊 &lt;a href=&#34;https://developers.line.biz/en/&#34;&gt;LINE Developer 帳號&lt;/a&gt; (用一般 LINE 帳號即可, 不需要商用帳號)&lt;/p&gt;
-&lt;h2 id=&#34;步驟&#34;&gt;步驟&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;連線到 &lt;a href=&#34;https://developers.line.biz/&#34;&gt;https://developers.line.biz/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;選擇右上角 Log in to Console&lt;/li&gt;
-&lt;li&gt;建立一個新的 Provider, 步驟如下:
-&lt;ol&gt;
-&lt;li&gt;選擇 Providers, 然後按下 Create&lt;/li&gt;
-&lt;li&gt;取個有意義的名字&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;建立一個新的 Message API
-&lt;ol&gt;
-&lt;li&gt;在上面建好的 Provider 裡面選擇 Channels -&amp;gt; Create a Message API channel&lt;/li&gt;
-&lt;li&gt;選擇 &lt;strong&gt;Create a LINE Official Account&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;他會開一個新視窗, 然後請 &lt;strong&gt;建立 LINE 官方帳號&lt;/strong&gt;, 完成後請按確定&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;設定 Message API
-&lt;ol&gt;
-&lt;li&gt;在 provider 裡面選擇剛建好的 Message API channel&lt;/li&gt;
-&lt;li&gt;選擇 Message API 這個 tab 進行以下設定
-&lt;ol&gt;
-&lt;li&gt;如果要用 Webhook, 請設定 Webhook URL, 並且將 Use webhook 打開&lt;/li&gt;
-&lt;li&gt;打開 Allow bot to join group chats, 因為這樣才能在群組發訊息&lt;/li&gt;
-&lt;li&gt;產生一個 Channel access token&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;選 console&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>VSCode</title>
-      <link>http://localhost:1313/tw/doc/software/vscode/</link>
-      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/vscode/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;style&#34;&gt;Style&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons&#34;&gt;file-icons&lt;/a&gt;
-&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&#34;&gt;Material Icon Theme&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;test-related&#34;&gt;Test related&lt;/h2&gt;
-&lt;h3 id=&#34;coverage-gutters&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters&#34;&gt;Coverage Gutters&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Ctrl-Shift-6: Generate a HTML report.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;settings.json&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;coverage-gutters.showLineCoverage&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;coverage-gutters.showGutterCoverage&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;formatter&#34;&gt;Formatter&lt;/h2&gt;
-&lt;h3 id=&#34;isort&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.isort&#34;&gt;isort&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--line-length=150&lt;/td&gt;
-					&lt;td&gt;Change the line width to 150 chars.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;isort.check: true&lt;/td&gt;
-					&lt;td&gt;Enable the check.&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;isort.args&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--line-length=150&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    ],
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;isort.check&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;black-formatter&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&#34;&gt;Black Formatter&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--line-length=150&lt;/td&gt;
-					&lt;td&gt;Change the line width to 150 chars.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;--skip-string-normalization&lt;/td&gt;
-					&lt;td&gt;Disables Black&#39;s conversion of string delimiters, e.g. it will NOT convert single quote to double quote.&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;black-formatter.args&amp;#34;: [
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--line-length=150&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;--skip-string-normalization&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    ],
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;editor&#34;&gt;Editor&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnPaste&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer paste&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnSave&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer save&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.formatOnType&lt;/td&gt;
-					&lt;td&gt;Automatically format the line afer typing&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnPaste&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnSave&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;editor.formatOnType&amp;#34;: true,
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Parameter&lt;/th&gt;
-					&lt;th&gt;Purpose&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;editor.defaultFormatter&lt;/td&gt;
-					&lt;td&gt;Assign the default formatter&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;source.organizeImports&lt;/td&gt;
-					&lt;td&gt;Execute isort when save&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;[python]&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;ms-python.black-formatter&amp;#34;,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.codeActionsOnSave&amp;#34;: {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;source.organizeImports&amp;#34;: true
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    },
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;diffEditor.ignoreTrimWhitespace&amp;#34;: false,
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.wordBasedSuggestions&amp;#34;: false
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Sun, 28 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/categories/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Micro:bit 射擊遊戲 (有聲光效果)</title>
-      <link>http://localhost:1313/tw/doc/microbit/microbit-shooting-game/</link>
+      <link>https://dennys.github.io/tw/doc/microbit/microbit-shooting-game/</link>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/microbit/microbit-shooting-game/</guid>
+      <guid>https://dennys.github.io/tw/doc/microbit/microbit-shooting-game/</guid>
       <description>
         
           
@@ -301,10 +115,10 @@
     
     <item>
       <title>Asuswrt Merlin AdGuard Home - 針對 IP 擋某些服務</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
       <description>
         
           
@@ -333,10 +147,10 @@
     
     <item>
       <title>HTTPS Checker by PowerShell</title>
-      <link>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</link>
+      <link>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/https-checker-by-powershell/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/https-checker-by-powershell/</guid>
       <description>
         
           
@@ -448,10 +262,10 @@
     
     <item>
       <title>使用 Wireshark 擷取 HTTP 密碼</title>
-      <link>http://localhost:1313/tw/doc/network/wireshark-http-password/</link>
+      <link>https://dennys.github.io/tw/doc/network/wireshark-http-password/</link>
       <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wireshark-http-password/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wireshark-http-password/</guid>
       <description>
         
           
@@ -462,13 +276,13 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;因為我的 XAMPP 跑在 localhost, 所以網路要選擇 loopback
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-loopback.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;切換到 Chrome, 登入進 phyMyAdmin.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/phpmyadmin-login.webp&#34; width=&#34;600&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -479,14 +293,14 @@
 &lt;li&gt;按下 toolbar 的第二個紅色按鈕 Stop capturing packets, 他就會停止 capture&lt;/li&gt;
 &lt;li&gt;因為我們只看 http, 所以要在 filter 欄位輸入 &lt;em&gt;http&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;就可以看到剛剛輸入的帳號密碼了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-phpmyadmin-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;這個是有被 Base64 編碼過的, 不過 Wireshark 很貼心的幫忙 decode 好了
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/software/wireshark-capture-http-base64-login.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -503,10 +317,10 @@
     
     <item>
       <title>用 YOLO v7 和 EasyOCR 做車牌辨識</title>
-      <link>http://localhost:1313/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</link>
+      <link>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</guid>
+      <guid>https://dennys.github.io/tw/doc/ai/license-plate-recognition-by-yolo-v7-easyocr/</guid>
       <description>
         
           
@@ -551,10 +365,10 @@
     
     <item>
       <title>YOLO v7 在不同硬體下, 判讀影片的速度</title>
-      <link>http://localhost:1313/tw/doc/ai/yolo-v7-detect-speed-test/</link>
+      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</link>
       <pubDate>Mon, 31 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/ai/yolo-v7-detect-speed-test/</guid>
+      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-speed-test/</guid>
       <description>
         
           
@@ -608,10 +422,10 @@
     
     <item>
       <title>在 dotNet GUI 呼叫檔案總管的 Context Menu</title>
-      <link>http://localhost:1313/tw/doc/dotnet/show-explorer-context-menu/</link>
+      <link>https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/dotnet/show-explorer-context-menu/</guid>
+      <guid>https://dennys.github.io/tw/doc/dotnet/show-explorer-context-menu/</guid>
       <description>
         
           
@@ -661,10 +475,10 @@
     
     <item>
       <title>在 dotNet WPF 裡面使用 WinForm</title>
-      <link>http://localhost:1313/tw/doc/dotnet/run-winform-in-wpf/</link>
+      <link>https://dennys.github.io/tw/doc/dotnet/run-winform-in-wpf/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/dotnet/run-winform-in-wpf/</guid>
+      <guid>https://dennys.github.io/tw/doc/dotnet/run-winform-in-wpf/</guid>
       <description>
         
           
@@ -711,10 +525,10 @@
     
     <item>
       <title>Android App 備份 (使用 Syncthing)</title>
-      <link>http://localhost:1313/tw/doc/android/android-app-backup/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-app-backup/</link>
       <pubDate>Mon, 03 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-app-backup/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-app-backup/</guid>
       <description>
         
           
@@ -736,7 +550,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;執行 設定 -&amp;gt; OsmAnd 設定 -&amp;gt; 資料儲存器資料夾 -&amp;gt; 手動指定 -&amp;gt; 輸入目錄&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/android/gps/OsmAndStorageFolder.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 
 &lt;/li&gt;
@@ -748,7 +562,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;打開 即時運動後匯出, 這樣他每次都會自動匯出一份檔案&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/android/gps/OpenTrack.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 
 &lt;/li&gt;
@@ -782,10 +596,10 @@
     
     <item>
       <title>使用 Grafana 做 Ping 和 測速</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-ping-speedtest/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-ping-speedtest/</guid>
       <description>
         
           
@@ -835,7 +649,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;測速, 直接打開上面的網站, 做幾次測速. 然後可以用 browser 開一些跨國 VPN 來模擬從其他國家來的測速.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/speedtest.webp&#34; width=&#34;442&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/speedtest.webp&#34; width=&#34;442&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           
@@ -846,10 +660,10 @@
     
     <item>
       <title>在 Colab 上用 YOLO v7 判讀照片, 並將結果存到 Google Drive</title>
-      <link>http://localhost:1313/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
+      <link>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</guid>
+      <guid>https://dennys.github.io/tw/doc/ai/yolo-v7-detect-on-google-colab-drive/</guid>
       <description>
         
           
@@ -884,68 +698,11 @@
     </item>
     
     <item>
-      <title>如何在 XnView MP 中添加照片 GPS 信息</title>
-      <link>http://localhost:1313/tw/doc/software/xnview-how-to-add-gps-info/</link>
-      <pubDate>Fri, 31 Mar 2023 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/xnview-how-to-add-gps-info/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;用相機拍的照片, 一般來講不會有 GPS 資訊, 得手動設定, 需要這些功能&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;支援 Google Maps&lt;/li&gt;
-&lt;li&gt;支援一次寫入多張&lt;/li&gt;
-&lt;li&gt;盡量不要用 &lt;a href=&#34;https://exiftool.org/&#34;&gt;ExifTool&lt;/a&gt;, 因為檔案一多, 呼叫外部程式一張一張改要很久.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;使用-xnview-mp-編輯-gps-資訊&#34;&gt;使用 XnView MP 編輯 GPS 資訊&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.xnview.com/en/xnviewmp/&#34;&gt;XnView MP&lt;/a&gt; 是老牌影像軟體了, 依下列步驟可編輯 GPS 資訊&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;使用 Google Maps 找到你的位置, 並對著經緯度按左鍵, 他就會把經位度複製到剪貼簿 (實際內容類似 25.171603204182567, 121.55359931326444)&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/google-map-copy-gps-data.webp&#34; width=&#34;350&#34;&gt;
-    &lt;/figure&gt;
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;執行 XnView MP&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;選好照片 (單張或多張)&lt;/li&gt;
-&lt;li&gt;執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit GPS&lt;/li&gt;
-&lt;li&gt;按下 Paste, 就會看到經緯度貼上來了. 記得要按 Write(單張)或 Write all(多張), 他才會真的寫入檔案.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-gps-data.webp&#34; width=&#34;553&#34;&gt;
-    &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;如果你還要編輯地點,國家,城市等等, 有兩個地方可以修改
-&lt;ol&gt;
-&lt;li&gt;若要放在 IPTC, 則執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit IPTC..., 然後選 Source tab
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-iptc.webp&#34; width=&#34;528&#34;&gt;
-        &lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;若要放在 XMP, 則執行 Menu -&amp;gt; Tools -&amp;gt; Metadata -&amp;gt; edit XMP..., 然後選 Origin tab
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/software/xnview-edit-xmp.webp&#34; width=&#34;528&#34;&gt;
-        &lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;編輯完後請記得要 Write (or Write all)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;存檔完後, 在 XnView 的 Info 視窗裡面的 GPS, Exif, IPTC-IIM, XMP 這幾個 tab 都會有相關資訊&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Wake on Lan</title>
-      <link>http://localhost:1313/tw/doc/network/wake_on_lan/</link>
+      <link>https://dennys.github.io/tw/doc/network/wake_on_lan/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/wake_on_lan/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/wake_on_lan/</guid>
       <description>
         
           
@@ -955,7 +712,7 @@
 &lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
 &lt;h3 id=&#34;synology-dsm&#34;&gt;Synology DSM&lt;/h3&gt;
 &lt;p&gt;Synology DSM 的設定很簡單, 將 控制台 -&amp;gt; 硬體 &amp;amp; 電源 -&amp;gt; 啟動區域網路的網路喚醒 打開就好了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/synology_wake_on_lan.webp&#34; width=&#34;700&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h3 id=&#34;asuswrt-merlin-不需設定&#34;&gt;Asuswrt Merlin (不需設定)&lt;/h3&gt;
@@ -965,7 +722,7 @@
 &lt;p&gt;選單 -&amp;gt; Network Tools (網路工具) - Wale on LAN (透過網路（LAN）喚醒), 然後輸入 MAC address, 按下 Wake up, 就可以了.
 (這畫面是 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asyswrt Merlin&lt;/a&gt; 的, 但應該不是 Merlin 才有的功能, 原生內建應該就有支援 WOL 了.)&lt;/p&gt;
 &lt;p&gt;他下面也可以把設備記錄下來, 這樣就不用另外找地方紀錄 MAC address 了.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/network/asuswrt_wake_on_lan.webp&#34; width=&#34;600&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;耗電&#34;&gt;耗電&lt;/h2&gt;
@@ -979,10 +736,10 @@
     
     <item>
       <title>C# MVVM 中兩個 View Model 之間如何分享組件</title>
-      <link>http://localhost:1313/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
+      <link>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
+      <guid>https://dennys.github.io/tw/doc/dotnet/sharing-components-between-two-view-models-in-csharp-mvvm/</guid>
       <description>
         
           
@@ -1026,10 +783,10 @@
     
     <item>
       <title>Double Commander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/double-commander/</link>
+      <link>https://dennys.github.io/tw/doc/software/double-commander/</link>
       <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/double-commander/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/double-commander/</guid>
       <description>
         
           
@@ -1045,7 +802,7 @@
 &lt;ol&gt;
 &lt;li&gt;這個很好用, 在 double commander 裡面按 ctrl-d, 就可以快速切換預先定義好的目錄.&lt;/li&gt;
 &lt;li&gt;建議是把目錄還要加上 hotkey, 譬如這裡我就可以按 ctrl-d -&amp;gt; D, 他就會跳到 &lt;strong&gt;下載&lt;/strong&gt; 目錄, 很方便.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/double_commander/doublecmd_directory_hotlist.webp&#34; width=&#34;800&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/double_commander/doublecmd_directory_hotlist.webp&#34; width=&#34;800&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1062,7 +819,7 @@
 &lt;li&gt;Parameters: 我是用 &lt;em&gt;%&amp;quot;0&amp;quot;%f&amp;quot; %&amp;quot;0&amp;quot;%o.webp&amp;quot;&lt;/em&gt;, 因為 ImageMagick 是認檔案名稱來決定轉檔格式, 所以這裡直接寫檔名就好. 變數的部分可參考 &lt;a href=&#34;https://doublecmd.github.io/doc/en/variables.html&#34;&gt;https://doublecmd.github.io/doc/en/variables.html&lt;/a&gt;.
 這邊請 &lt;a href=&#34;https://doublecmd.github.io/doc/en/variables.html#quotation&#34;&gt;&lt;em&gt;&lt;strong&gt;特別注意雙引號的問題&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; .&lt;/li&gt;
 &lt;li&gt;Start path 預設就會是執行的目錄, 所以我這邊不填
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/double_commander/doublecmd_file_associations.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/double_commander/doublecmd_file_associations.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;如果跑出來不如預期, 可以從 Layout 打開 &lt;em&gt;Show log window&lt;/em&gt;, 看他實際執行的指令
@@ -1083,83 +840,11 @@
     </item>
     
     <item>
-      <title>FreeCommander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/free-commander/</link>
-      <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/free-commander/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;a href=&#34;https://freecommander.com/&#34;&gt;FreeCommander&lt;/a&gt; 是個好用的跨平台 open source 的 file manager (設計理念接近 &lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;),  他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.&lt;/p&gt;
-&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Tools -&amp;gt; Define action toolsbars: 把 splitter 取消, 就可以關掉中間那條 toolbar.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;不順手的地方&#34;&gt;不順手的地方&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;暫時沒有&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;64 bit 是要錢的&lt;/li&gt;
-&lt;li&gt;更版沒有很頻繁, 大概一年一版&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;和其他類似軟體的比較&#34;&gt;和其他類似軟體的比較&lt;/h2&gt;
-&lt;p&gt;類似的軟體很多, 功能都有些許接近和重複, 挑喜歡的就好.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://freecommander.com/en/summary/&#34;&gt;FreeCommander&lt;/a&gt;, &lt;a href=&#34;http://multicommander.com/&#34;&gt;MultiCommander&lt;/a&gt;: 這兩個是免費的.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.q-dir.com/&#34;&gt;Q-Dir&lt;/a&gt;: 這個也是免費的, 小巧, 可以開 4 個 panel.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;, &lt;a href=&#34;https://www.xyplorer.com/&#34;&gt;XYplorer&lt;/a&gt;: 這兩個是要付錢的.&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Multi Commander (檔案總管替代工具)</title>
-      <link>http://localhost:1313/tw/doc/software/multi-commander/</link>
-      <pubDate>Fri, 27 Jan 2023 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/multi-commander/</guid>
-      <description>
-        
-          
-            &lt;p&gt;&lt;a href=&#34;http://multicommander.com/&#34;&gt;Multi Commander&lt;/a&gt; 是個好用的跨平台 open source 的 file manager (設計理念接近 &lt;a href=&#34;https://www.ghisler.com/&#34;&gt;Total Commander&lt;/a&gt;),  他可以調整的設定很多, 把他調得順手了, 順便做個紀錄.&lt;/p&gt;
-&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;如何關閉下方 button panel&lt;/p&gt;
-&lt;p&gt;按下 Ctrl-B 可開關&lt;/p&gt;
-&lt;p&gt;Menu &amp;gt; Configuration &amp;gt; Core Settings, 然後參考 &lt;a href=&#34;http://multicommander.com/docs/buttonpanel&#34;&gt;這篇&lt;/a&gt;, 把 &lt;em&gt;Allow button panel to be undocked&lt;/em&gt; 打勾.
-重開後就可以把 button panel 關掉了.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;顯示 special folders&lt;/p&gt;
-&lt;p&gt;Menu &amp;gt; Configuration &amp;gt; Explorer panel Settings -&amp;gt; Layout, 參考&lt;a href=&#34;http://multicommander.com/docs/drivebar&#34;&gt;這篇&lt;/a&gt;,&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;不順手的地方&#34;&gt;不順手的地方&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;他的一般 toolbar 沒法自行加減 button, 只能修改 launch bar 上的 button. 但 launch bar 會是獨立的一列, 沒法和其他合併.&lt;/li&gt;
-&lt;li&gt;他的 script 不容易 debug.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;和其他類似軟體的比較&#34;&gt;和其他類似軟體的比較&lt;/h2&gt;
-&lt;p&gt;類似的軟體很多, 功能都有些許接近和重複, 挑喜歡的就好.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Asuswrt-Merlin Syncthing (檔案同步)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-asuswrt-merlin/</guid>
       <description>
         
           
@@ -1191,10 +876,10 @@
     
     <item>
       <title>在 Synology DSM 上面跑 Syncthing (檔案同步)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/syncthing-synology/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/syncthing-synology/</guid>
       <description>
         
           
@@ -1249,10 +934,10 @@
     
     <item>
       <title>Asuswrt Merlin AdGuard Home (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
       <description>
         
           
@@ -1281,10 +966,10 @@
     
     <item>
       <title>非專業 2.5 吋外接硬碟效能測試大亂鬥</title>
-      <link>http://localhost:1313/tw/doc/hardware/external-hdd-speed-test/</link>
+      <link>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/hardware/external-hdd-speed-test/</guid>
+      <guid>https://dennys.github.io/tw/doc/hardware/external-hdd-speed-test/</guid>
       <description>
         
           
@@ -1314,10 +999,10 @@
 	&lt;/thead&gt;
 	&lt;tbody&gt;
 			&lt;tr&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_ADATA_HV320_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_ADATA_HV320_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_ADATA_HV320_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_ADATA_HV320_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
 			&lt;/tr&gt;
@@ -1333,10 +1018,10 @@
 	&lt;/thead&gt;
 	&lt;tbody&gt;
 			&lt;tr&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate_ST5000LM000_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
 			&lt;/tr&gt;
@@ -1352,10 +1037,10 @@
 	&lt;/thead&gt;
 	&lt;tbody&gt;
 			&lt;tr&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate%20ST4000LM016_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
 			&lt;/tr&gt;
@@ -1371,10 +1056,10 @@
 	&lt;/thead&gt;
 	&lt;tbody&gt;
 			&lt;tr&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_USB3_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
-					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
+					&lt;td&gt;&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/hardware/test/CrystalDiskMark_Seagate_ST1500LM006_HooToo_20230124.webp&#34; width=&#34;400&#34;&gt;
 &lt;/figure&gt;
 &lt;/td&gt;
 			&lt;/tr&gt;
@@ -1392,10 +1077,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>手機照片自動備份到電腦 (使用 Syncthing for Android)</title>
-      <link>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
+      <link>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
+      <guid>https://dennys.github.io/tw/doc/syncthing/android-files-sync-to-pc-by-syncthing-fork/</guid>
       <description>
         
           
@@ -1428,10 +1113,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>如何在 FortiClient VPN for Windows 保存密碼</title>
-      <link>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</link>
+      <link>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</link>
       <pubDate>Wed, 04 Jan 2023 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/forticlient-vpn-save-password/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/forticlient-vpn-save-password/</guid>
       <description>
         
           
@@ -1450,13 +1135,13 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
 &lt;p&gt;按右鍵新增一個 DWORD, 有 2 個設定可以使用
 *. show_remember_password: 這個設成 1, 他就會出現 &lt;strong&gt;保存密碼&lt;/strong&gt; 這個選項
 *. SavePass: 這個設成 1, 他就會把密碼存起來
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/forticlient_vpn/forticlient_vpn_registry_password.webp&#34; width=&#34;600&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/forticlient_vpn/forticlient_vpn_login_password.webp&#34; width=&#34;500&#34;&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
@@ -1471,10 +1156,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>使用 TWCC-CLI 從 TWCC 容器複本建立新的容器</title>
-      <link>http://localhost:1313/tw/doc/software/twcc-twccli-duplicate-ccs/</link>
+      <link>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</link>
       <pubDate>Wed, 26 Oct 2022 18:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/twcc-twccli-duplicate-ccs/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/twcc-twccli-duplicate-ccs/</guid>
       <description>
         
           
@@ -1526,10 +1211,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>檔案搜尋替代工具</title>
-      <link>http://localhost:1313/tw/doc/software/file-search-and-replace-tool/</link>
+      <link>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</link>
       <pubDate>Sun, 23 Oct 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/file-search-and-replace-tool/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/file-search-and-replace-tool/</guid>
       <description>
         
           
@@ -1610,10 +1295,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>Android 各種 Gmail 的通知動作 (封存, 刪除, ...)</title>
-      <link>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-gmail-notification-actions/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-gmail-notification-actions/</guid>
       <description>
         
           
@@ -1656,7 +1341,7 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/k9_notification.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/k9_notification.zh-tw.webp&#34;
       
       
     /&gt;
@@ -1683,7 +1368,7 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/fairemail_notification.zh-tw.webp&#34;
       
       
     /&gt;
@@ -1699,10 +1384,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>使用 SSH Tunnel, 把 localhost 變成遠端 server</title>
-      <link>http://localhost:1313/tw/doc/network/ssh-tunnel/</link>
+      <link>https://dennys.github.io/tw/doc/network/ssh-tunnel/</link>
       <pubDate>Sat, 17 Sep 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/ssh-tunnel/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/ssh-tunnel/</guid>
       <description>
         
           
@@ -1726,7 +1411,7 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/network/ssh-tunnel.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/network/ssh-tunnel.webp&#34;
       
       
     /&gt;
@@ -1775,10 +1460,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>YouTube 各種加強工具</title>
-      <link>http://localhost:1313/tw/doc/software/youtube-enhancer/</link>
+      <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>
       <pubDate>Wed, 31 Aug 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/youtube-enhancer/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/youtube-enhancer/</guid>
       <description>
         
           
@@ -1890,10 +1575,10 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     
     <item>
       <title>OpenWrt 頻寬管理 (依照 interface) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</link>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-interface/</guid>
       <description>
         
           
@@ -1944,38 +1629,11 @@ USB 2.0 的理論速度是 480 Mbps (就是 60MB/s), 實際測起來, 讀取有 
     </item>
     
     <item>
-      <title>OpenWrt Collectd</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-collectd/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/router/openwrt-collectd/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h3 id=&#34;protocols&#34;&gt;protocols&lt;/h3&gt;
-&lt;p&gt;官方網站: &lt;a href=&#34;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&#34;&gt;https://github.com/signalfx/integrations/blob/master/signalfx-agent/agent_docs/monitors/collectd-protocols.md&lt;/a&gt;
-opkg install collectd-mod-protocols&lt;/p&gt;
-&lt;h3 id=&#34;samples&#34;&gt;Samples:&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&#34;&gt;https://github.com/wavefrontHQ/install/blob/master/collectd.conf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://pastebin.com/YYzvFFmR&#34;&gt;https://pastebin.com/YYzvFFmR&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;whats-next&#34;&gt;What&#39;s next&lt;/h3&gt;
-&lt;p&gt;pmacct: &lt;a href=&#34;http://www.pmacct.net/&#34;&gt;http://www.pmacct.net/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ntop.org/&#34;&gt;https://www.ntop.org/&lt;/a&gt;  =&amp;gt; 這個可以看出 application (YouTube, Facebook, Gmail, ...) 的流量
-但前面要用 nProbe/fProbe/ipt-netflow/pmacct 之類的東西把資料送過去
-&lt;a href=&#34;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&#34;&gt;https://openwrt.org/docs/guide-user/services/network_monitoring/bwmon&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>OpenWrt 頻寬管理 (依照使用者) </title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-bandwidth-by-user/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-bandwidth-by-user/</guid>
       <description>
         
           
@@ -1988,7 +1646,7 @@ opkg install collectd-mod-protocols&lt;/p&gt;
 &lt;p&gt;找一個 &lt;a href=&#34;https://openwrt.org/&#34;&gt;OpenWrt&lt;/a&gt; 上的頻寬管理工具, 看誰用了多少頻寬.
 以 &lt;a href=&#34;https://www.asuswrt-merlin.net/&#34;&gt;Asuswrt-Merlin&lt;/a&gt; 來說, 目前提供的報表如下, 他可以依照&lt;strong&gt;使用者&lt;/strong&gt;或&lt;strong&gt;時段&lt;/strong&gt;來看流量.
 甚至都幫你挑出他在做甚麼了, 譬如下圖中的 Facebook, LINE 等等, 很方便.
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/asuswrt/asuswrt_merlin_traffic_static.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;其他 Asuswrt-Merlin 提供的報表可參考這裡: &lt;a href=&#34;https://www.asuswrt-merlin.net/screenshots&#34;&gt;https://www.asuswrt-merlin.net/screenshots&lt;/a&gt;&lt;/p&gt;
@@ -2026,7 +1684,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;基本報表如下
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/openwrt/openwrt_nlbwmon_traffic.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           
@@ -2037,10 +1695,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Fortinet VPN on OpenWrt</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</link>
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-fortinet-vpn/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-fortinet-vpn/</guid>
       <description>
         
           
@@ -2065,20 +1723,20 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>使用 Grafana 管理 SonarQube KPI</title>
-      <link>http://localhost:1313/tw/doc/devops/grafana-sonarqube-integration/</link>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/devops/grafana-sonarqube-integration/</guid>
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-sonarqube-integration/</guid>
       <description>
         
           
             &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
 &lt;p&gt;一般來講, 我們會直接在 SonarQube 上面看各 project 的各項 KPI 如下
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_dashboard.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Project 的 build history 的部分也可以直接看到
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/sonarqube/sonarqube_project_activity.webp&#34; width=&#34;700&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;在-grafana-上面顯示-sonarqube-kpi&#34;&gt;在 Grafana 上面顯示 SonarQube KPI&lt;/h2&gt;
@@ -2134,10 +1792,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>使用 Grafana 管理 GitLab CI/CD Pipelines</title>
-      <link>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</link>
+      <link>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/devops/grafana-gitlab-integration/</guid>
+      <guid>https://dennys.github.io/tw/doc/devops/grafana-gitlab-integration/</guid>
       <description>
         
           
@@ -2183,10 +1841,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router Samba</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-samba/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-samba/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
       <description>
         
           
@@ -2219,10 +1877,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenWrt Router 選擇</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-router-choice/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</link>
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-router-choice/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-router-choice/</guid>
       <description>
         
           
@@ -2246,10 +1904,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>跳過 Podcast 的片頭片尾</title>
-      <link>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</link>
+      <link>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</link>
       <pubDate>Sat, 09 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/how-to-skip-podcast-intro/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/how-to-skip-podcast-intro/</guid>
       <description>
         
           
@@ -2277,7 +1935,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/podcast/pocket-casts-skip-intro.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/podcast/pocket-casts-skip-intro.zh-tw.webp&#34;
       
       
     /&gt;
@@ -2299,10 +1957,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</title>
-      <link>http://localhost:1313/tw/doc/grafana/prometheus-alertmanager-silence/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</link>
       <pubDate>Fri, 08 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/prometheus-alertmanager-silence/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</guid>
       <description>
         
           
@@ -2333,7 +1991,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts.webp&#34;
       
       
     /&gt;
@@ -2361,7 +2019,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts_silence1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts_silence1.webp&#34;
       
       
     /&gt;
@@ -2390,7 +2048,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts_silence2.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts_silence2.webp&#34;
       
       
     /&gt;
@@ -2406,10 +2064,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>把 Grafana 的 Alert 訊息發到 LINE 群組</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-alert-line-notify/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-alert-line-notify/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</guid>
       <description>
         
           
@@ -2430,19 +2088,19 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇 &lt;strong&gt;發行權杖&lt;/strong&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token1.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token1.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇 你要接受訊息的聊天室
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token2.webp&#34; width=&#34;400&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token2.webp&#34; width=&#34;400&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;把權杖 token 存下來
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token3.webp&#34; width=&#34;350&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token3.webp&#34; width=&#34;350&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -2473,7 +2131,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/grafana_line_config.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/grafana_line_config.webp&#34;
       
       
     /&gt;
@@ -2502,7 +2160,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/grafana_line_msg_test.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/grafana_line_msg_test.webp&#34;
       
       
     /&gt;
@@ -2518,10 +2176,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</link>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</guid>
       <description>
         
           
@@ -2577,10 +2235,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>使用 PostgreSQL 當作 Grafana 的資料庫</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-postgresql/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</link>
       <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-postgresql/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</guid>
       <description>
         
           
@@ -2628,132 +2286,11 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     </item>
     
     <item>
-      <title>ActivityWatch</title>
-      <link>http://localhost:1313/tw/doc/software/activity-watch/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/activity-watch/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;他有一堆 Watcher &lt;a href=&#34;https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers&#34;&gt;https://docs.activitywatch.net/en/latest/watchers.html#editor-watchers&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;chrome-plugin&#34;&gt;Chrome Plugin&lt;/h2&gt;
-&lt;p&gt;如果要看他開的是哪個 tab, 可裝這個 &lt;a href=&#34;https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi&#34;&gt;https://chrome.google.com/webstore/detail/activitywatch-web-watcher/nglaklhklhcoonedhgnpgddginnjdadi&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Amazon Kindle</title>
-      <link>http://localhost:1313/tw/doc/software/amazon-kindle/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/amazon-kindle/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;用 email 傳檔
-優點: 雲端同步, 我甚至可以從手機管理書籍 (collection, ...)
-缺點: 只有 mobi 格式會顯示封面&lt;/p&gt;
-&lt;p&gt;Kindle 殘體書看得很痛苦？一勞永逸簡中轉繁中教學（免越獄免轉書檔）
-&lt;a href=&#34;http://blog.chrisflicker.com/post/kindle-%E7%B0%A1%E8%BD%89%E7%B9%81&#34;&gt;http://blog.chrisflicker.com/post/kindle-%E7%B0%A1%E8%BD%89%E7%B9%81&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>HandBrake</title>
-      <link>http://localhost:1313/tw/doc/software/handbrake/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/handbrake/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/HandBrake/HandBrake&#34;&gt;HandBrake&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>NeoVIM</title>
-      <link>http://localhost:1313/tw/doc/software/neovim/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/neovim/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://ddadaal.me/articles/from-vscode-to-vim-to-both&#34;&gt;https://ddadaal.me/articles/from-vscode-to-vim-to-both&lt;/a&gt;&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Windows Terminal Power Shell</title>
-      <link>http://localhost:1313/tw/doc/software/windows-terminal-power-shell/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/windows-terminal-power-shell/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;h2 id=&#34;參考&#34;&gt;參考&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.miniasp.com/post/2021/11/24/PowerShell-prompt-with-Oh-My-Posh-and-Windows-Terminal&#34;&gt;如何打造一個華麗又實用的 PowerShell 命令輸入環境&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kwchang0831.dev/dev-env/pwsh/oh-my-posh&#34;&gt;安裝新版 Oh My Posh 與插件來美化 PowerShell&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/137595941&#34;&gt;Windows Terminal 完美配置PowerShell 7.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>看圖軟體</title>
-      <link>http://localhost:1313/tw/doc/software/image-viewer/</link>
-      <pubDate>Sat, 02 Jul 2022 10:18:32 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tw/doc/software/image-viewer/</guid>
-      <description>
-        
-          
-            &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.irfanview.com/&#34;&gt;IrfanView&lt;/a&gt;, 唯一缺點: free for non-commercial use, 不是 open source&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nyam.pe.kr/dev/imagine/&#34;&gt;Imagine&lt;/a&gt;, freeware, no restriction.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sylikc/jpegview&#34;&gt;JPEGView&lt;/a&gt;: GPL, 缺了一些基本編輯功能 (ex: 裁切和改變大小), 而且他的 portable mode 得去裝 &lt;a href=&#34;https://portableapps.com/apps/graphics_pictures/jpegview_portable&#34;&gt;https://portableapps.com/apps/graphics_pictures/jpegview_portable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.xnview.com/en/&#34;&gt;XnView&lt;/a&gt;: 他的&lt;/li&gt;
-&lt;/ol&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
       <title>如何修改預設的 YouTube App (YouTube Vanced, NewPipe, ...)</title>
-      <link>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
@@ -2793,7 +2330,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
       
       
     /&gt;
@@ -2821,7 +2358,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
       
       
     /&gt;
@@ -2849,7 +2386,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
       
       
     /&gt;
@@ -2877,7 +2414,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
       
       
     /&gt;
@@ -2893,10 +2430,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Open Source VPN 之不嚴謹比較</title>
-      <link>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</link>
+      <link>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/open-source-vpn-comparison/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/open-source-vpn-comparison/</guid>
       <description>
         
           
@@ -2973,7 +2510,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/network/vpn_google_trend.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/network/vpn_google_trend.webp&#34;
       
       
     /&gt;
@@ -2989,10 +2526,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何分開調整 Android 鈴聲和通知的音量大小</title>
-      <link>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-separate-call-and-notification-volume/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-separate-call-and-notification-volume/</guid>
       <description>
         
           
@@ -3034,7 +2571,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/sound/Android_Sound.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/sound/Android_Sound.webp&#34;
       
       
     /&gt;
@@ -3073,7 +2610,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/sound/SoundProfile.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/sound/SoundProfile.webp&#34;
       
       
     /&gt;
@@ -3089,10 +2626,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何把檔案傳出 Google TV</title>
-      <link>http://localhost:1313/tw/doc/google_tv/googletv-file-transfer/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/</link>
       <pubDate>Sun, 26 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/google_tv/googletv-file-transfer/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-file-transfer/</guid>
       <description>
         
           
@@ -3113,7 +2650,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/x-plore-file-manager.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/x-plore-file-manager.webp&#34;
       
       
     /&gt;
@@ -3141,7 +2678,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/x-plore-dir.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/x-plore-dir.webp&#34;
       
       
     /&gt;
@@ -3170,7 +2707,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/x-plore-ftp0.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/x-plore-ftp0.webp&#34;
       
       
     /&gt;
@@ -3198,7 +2735,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/x-plore-ftp1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/x-plore-ftp1.webp&#34;
       
       
     /&gt;
@@ -3226,7 +2763,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/filezilla.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/filezilla.webp&#34;
       
       
     /&gt;
@@ -3257,7 +2794,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/x-plore-web-storage1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/x-plore-web-storage1.webp&#34;
       
       
     /&gt;
@@ -3273,10 +2810,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>使用 NonCompressibleFiles 產生自訂大小/不可壓縮的測試檔案</title>
-      <link>http://localhost:1313/tw/doc/software/noncompressiblefiles/</link>
+      <link>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/noncompressiblefiles/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/noncompressiblefiles/</guid>
       <description>
         
           
@@ -3311,10 +2848,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>點對點網路測速軟體 iPerf3</title>
-      <link>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
+      <link>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/iperf3-point-to-point-network-speed-test/</guid>
       <description>
         
           
@@ -3431,10 +2968,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)</title>
-      <link>http://localhost:1313/tw/doc/word/word-with-syntax-highlighting-code/</link>
+      <link>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/word/word-with-syntax-highlighting-code/</guid>
+      <guid>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</guid>
       <description>
         
           
@@ -3456,7 +2993,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/notepad/notepad_copy_all_format.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/notepad/notepad_copy_all_format.webp&#34;
       
       
     /&gt;
@@ -3482,7 +3019,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/word/word_code_result.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/word/word_code_result.webp&#34;
       
       
     /&gt;
@@ -3499,10 +3036,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>OpenVPN server 簡易安裝使用 (Ubuntu)</title>
-      <link>http://localhost:1313/tw/doc/network/openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server/</link>
       <pubDate>Fri, 17 Jun 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server/</guid>
       <description>
         
           
@@ -3543,10 +3080,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Google TV 遙控器如何擷圖 (screenshot)</title>
-      <link>http://localhost:1313/tw/doc/google_tv/googletv-screenshot/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/google_tv/googletv-screenshot/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-screenshot/</guid>
       <description>
         
           
@@ -3576,7 +3113,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/ButtonMapperAdd1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/ButtonMapperAdd1.webp&#34;
       
       
     /&gt;
@@ -3604,7 +3141,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/ButtonMapperAdd2.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/ButtonMapperAdd2.webp&#34;
       
       
     /&gt;
@@ -3632,7 +3169,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/ButtonMapperAdd3.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/ButtonMapperAdd3.webp&#34;
       
       
     /&gt;
@@ -3660,7 +3197,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/ButtonMapperAdd4.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/ButtonMapperAdd4.webp&#34;
       
       
     /&gt;
@@ -3688,7 +3225,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/ButtonMapperAdd5.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/ButtonMapperAdd5.webp&#34;
       
       
     /&gt;
@@ -3704,10 +3241,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Google TV 遙控器調整 Infocus 電視音量 (妥協做法)</title>
-      <link>http://localhost:1313/tw/doc/google_tv/googletv-volume-up-down/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/google_tv/googletv-volume-up-down/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-volume-up-down/</guid>
       <description>
         
           
@@ -3744,7 +3281,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/remote1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/remote1.webp&#34;
       
       
     /&gt;
@@ -3772,7 +3309,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/remote2.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/remote2.webp&#34;
       
       
     /&gt;
@@ -3800,7 +3337,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/remote_volume_control.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/remote_volume_control.webp&#34;
       
       
     /&gt;
@@ -3828,7 +3365,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/remote_volume_chromecast.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/remote_volume_chromecast.webp&#34;
       
       
     /&gt;
@@ -3844,10 +3381,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Google TV 遙控器開關 Infocus 電視 (使用 HDMI-CEC)</title>
-      <link>http://localhost:1313/tw/doc/google_tv/googletv-power-on-off/</link>
+      <link>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</link>
       <pubDate>Sat, 11 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/google_tv/googletv-power-on-off/</guid>
+      <guid>https://dennys.github.io/tw/doc/google_tv/googletv-power-on-off/</guid>
       <description>
         
           
@@ -3890,7 +3427,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/infocus_hdmi_setup.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/infocus_hdmi_setup.webp&#34;
       
       
     /&gt;
@@ -3922,7 +3459,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/google_tv/googletv_enable_hdmicec1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/google_tv/googletv_enable_hdmicec1.webp&#34;
       
       
     /&gt;
@@ -3938,10 +3475,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何更新 Unlock 過的 Pixel 5</title>
-      <link>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</link>
+      <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
       <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</guid>
       <description>
         
           
@@ -3987,10 +3524,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
-      <link>http://localhost:1313/tw/doc/software/download-youtube-private-video/</link>
+      <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/download-youtube-private-video/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</guid>
       <description>
         
           
@@ -4035,10 +3572,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>無聲無影遠端桌面連線 - VNC</title>
-      <link>http://localhost:1313/tw/doc/network/realvnc/</link>
+      <link>https://dennys.github.io/tw/doc/network/realvnc/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/realvnc/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/realvnc/</guid>
       <description>
         
           
@@ -4073,10 +3610,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
       <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
       <description>
         
           
@@ -4118,10 +3655,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何設定 Android 零打擾的時間長度</title>
-      <link>http://localhost:1313/tw/doc/android/android-do-not-disturb/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</link>
       <pubDate>Mon, 23 May 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-do-not-disturb/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-do-not-disturb/</guid>
       <description>
         
           
@@ -4146,10 +3683,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Google Maps 將音樂輸出到藍牙喇叭, 但語音留在手機</title>
-      <link>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-maps-bluetooth-voice-music/</guid>
       <description>
         
           
@@ -4166,10 +3703,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>將 Gmail 的通知改成可以直接刪除 (預設是封存)</title>
-      <link>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</link>
+      <link>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</link>
       <pubDate>Wed, 20 Apr 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/gmail-notify-delete-archive/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/gmail-notify-delete-archive/</guid>
       <description>
         
           
@@ -4192,7 +3729,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_archive.zh-tw.webp&#34;
       
       
     /&gt;
@@ -4221,7 +3758,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_notification_setup.zh-tw.webp&#34;
       
       
     /&gt;
@@ -4249,7 +3786,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/email/gmail_action_delete.zh-tw.webp&#34;
       
       
     /&gt;
@@ -4267,10 +3804,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>把 Android 12 鎖定畫面的時鐘改單行</title>
-      <link>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</link>
       <pubDate>Sun, 10 Apr 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-lock-screen-double-line-clock/</guid>
       <description>
         
           
@@ -4297,10 +3834,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -4330,10 +3867,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -4344,7 +3881,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
   &lt;/div&gt;
 
 &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;在上次這篇 &lt;a href=&#34;http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
+&lt;p&gt;在上次這篇 &lt;a href=&#34;https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
 &lt;h3 id=&#34;方法-1&#34;&gt;方法 1&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -4377,10 +3914,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>IFTTT 自動發 LINE 訊息 (免寫程式) - 以美元匯率為例</title>
-      <link>http://localhost:1313/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>
+      <link>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</guid>
+      <guid>https://dennys.github.io/tw/doc/ifttt/line-robot-send-currency-exchange-rate-ifttt/</guid>
       <description>
         
           
@@ -4431,10 +3968,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -4493,10 +4030,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -4538,10 +4075,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</title>
-      <link>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
       <pubDate>Fri, 28 Jan 2022 18:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
       <description>
         
           
@@ -4576,7 +4113,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;300&#34;
         height=&#34;106&#34;
-        src=&#34;http://localhost:1313/old_1698246484852952014.png&#34;
+        src=&#34;https://dennys.github.io/old_1698246484852952014.png&#34;
       
       
     /&gt;
@@ -4604,7 +4141,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;400&#34;
         height=&#34;157&#34;
-        src=&#34;http://localhost:1313/internet_15842000385930727438.png&#34;
+        src=&#34;https://dennys.github.io/internet_15842000385930727438.png&#34;
       
       
     /&gt;
@@ -4632,7 +4169,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;400&#34;
         height=&#34;499&#34;
-        src=&#34;http://localhost:1313/internet2_1766533305285528634.png&#34;
+        src=&#34;https://dennys.github.io/internet2_1766533305285528634.png&#34;
       
       
     /&gt;
@@ -4660,7 +4197,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;713&#34;
         height=&#34;248&#34;
-        src=&#34;http://localhost:1313/internet3_17129319179048612052.jpg&#34;
+        src=&#34;https://dennys.github.io/internet3_17129319179048612052.jpg&#34;
       
       
     /&gt;
@@ -4688,7 +4225,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;698&#34;
         height=&#34;263&#34;
-        src=&#34;http://localhost:1313/image-10_13389724086430110577.png&#34;
+        src=&#34;https://dennys.github.io/image-10_13389724086430110577.png&#34;
       
       
     /&gt;
@@ -4704,10 +4241,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -4747,10 +4284,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Samsung Galaxy View Root</title>
-      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-view-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-view-root/</guid>
       <description>
         
           
@@ -4802,7 +4339,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/samsung/samsung_odin.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/samsung/samsung_odin.webp&#34;
       
       
     /&gt;
@@ -4828,10 +4365,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           
@@ -4881,10 +4418,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -4929,7 +4466,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;465&#34;
         height=&#34;193&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_4017759652474118919.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_4017759652474118919.png&#34;
       
       
     /&gt;
@@ -4963,7 +4500,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;790&#34;
         height=&#34;174&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_13300853250689698010.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_13300853250689698010.png&#34;
       
       
     /&gt;
@@ -4993,7 +4530,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;474&#34;
         height=&#34;133&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_3974293899304740460.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_3974293899304740460.png&#34;
       
       
     /&gt;
@@ -5020,7 +4557,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;438&#34;
         height=&#34;110&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_15191974654561182337.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_15191974654561182337.png&#34;
       
       
     /&gt;
@@ -5053,7 +4590,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;789&#34;
         height=&#34;299&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_5859030795245524685.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_5859030795245524685.png&#34;
       
       
     /&gt;
@@ -5083,7 +4620,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;479&#34;
         height=&#34;135&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_11522542528187301806.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_11522542528187301806.png&#34;
       
       
     /&gt;
@@ -5110,7 +4647,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;543&#34;
         height=&#34;337&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_2149974349091501244.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_2149974349091501244.png&#34;
       
       
     /&gt;
@@ -5130,10 +4667,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -5171,7 +4708,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;768&#34;
         height=&#34;407&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_17655262974304489079.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_17655262974304489079.png&#34;
       
       
     /&gt;
@@ -5192,10 +4729,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>PTool 修改 Panasonic G2</title>
-      <link>http://localhost:1313/tw/doc/camera/ptool-panasonic-g2/</link>
+      <link>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</link>
       <pubDate>Sat, 08 Dec 2012 18:17:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/camera/ptool-panasonic-g2/</guid>
+      <guid>https://dennys.github.io/tw/doc/camera/ptool-panasonic-g2/</guid>
       <description>
         
           
@@ -5241,10 +4778,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Maven 4 - Others</title>
-      <link>http://localhost:1313/tw/doc/java/maven-4-others/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-4-others/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
       <description>
         
           
@@ -5279,10 +4816,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Maven 3 - 打包 EJB, EAR</title>
-      <link>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
       <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
       <description>
         
           
@@ -5327,10 +4864,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Maven 2 - 打包 war (含 applet)</title>
-      <link>http://localhost:1313/tw/doc/java/maven-2-war-applet/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
       <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-2-war-applet/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
       <description>
         
           
@@ -5380,10 +4917,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
-      <link>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
       <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
       <description>
         
           
@@ -5444,10 +4981,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>XBMC (XBox, Windows 7) &#43; iPhone</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</link>
       <pubDate>Wed, 03 Aug 2011 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-xbox-windows-7-iphone/</guid>
       <description>
         
           
@@ -5468,10 +5005,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>設定 WebLogic 的 memory 參數</title>
-      <link>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</link>
       <pubDate>Fri, 02 Apr 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</guid>
       <description>
         
           
@@ -5522,10 +5059,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>DD-WRT 之 3G 上網嘗鮮 (使用 lly driver)</title>
-      <link>http://localhost:1313/tw/doc/router/dd-wrt-3g-lly-driver/</link>
+      <link>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</link>
       <pubDate>Thu, 04 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/dd-wrt-3g-lly-driver/</guid>
       <description>
         
           
@@ -5548,7 +5085,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -5595,10 +5132,10 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
     
     <item>
       <title>CDMA@wifi (Oleg) 之 3G 上網</title>
-      <link>http://localhost:1313/tw/doc/router/cdma-wifi-oleg-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/cdma-wifi-oleg-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/cdma-wifi-oleg-3g/</guid>
       <description>
         
           
@@ -5621,7 +5158,7 @@ Prometheus 似乎沒有免費的可用, 得自己找機器裝一個.!!! (Raspber
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -5687,10 +5224,10 @@ Modem type: Huawei E169
     
     <item>
       <title>使用 Asus WL-500gP v1 的 3.5G 無線上網</title>
-      <link>http://localhost:1313/tw/doc/router/asus-wl-500gp-v1-35g/</link>
+      <link>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</link>
       <pubDate>Sat, 09 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asus-wl-500gp-v1-35g/</guid>
       <description>
         
           
@@ -5713,7 +5250,7 @@ Modem type: Huawei E169
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -5748,10 +5285,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>Tomato DualWan 之 3G 上網</title>
-      <link>http://localhost:1313/tw/doc/router/tomato-dualwan-3g/</link>
+      <link>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</link>
       <pubDate>Sun, 03 Jan 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/tomato-dualwan-3g/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/tomato-dualwan-3g/</guid>
       <description>
         
           
@@ -5774,7 +5311,7 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;320&#34;
         height=&#34;213&#34;
-        src=&#34;http://localhost:1313/Asus_500gp_1_7047875881970246251.jpg&#34;
+        src=&#34;https://dennys.github.io/Asus_500gp_1_7047875881970246251.jpg&#34;
       
       
     /&gt;
@@ -5825,7 +5362,7 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;476&#34;
         height=&#34;500&#34;
-        src=&#34;http://localhost:1313/4394875396_f4933b89fd_15941939331289937129.jpg&#34;
+        src=&#34;https://dennys.github.io/4394875396_f4933b89fd_15941939331289937129.jpg&#34;
       
       
         title=&#34;Tomato DualWan 3G&#34;
@@ -5843,10 +5380,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>XBMC Babylon 9.04 安裝筆記</title>
-      <link>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</link>
+      <link>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</link>
       <pubDate>Thu, 24 Dec 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/xbmc-babylon-904/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/xbmc-babylon-904/</guid>
       <description>
         
           
@@ -5878,10 +5415,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>WebLogic 和 NetWeaver 的 License</title>
-      <link>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</link>
       <pubDate>Sat, 08 Aug 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</guid>
       <description>
         
           
@@ -5908,10 +5445,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>JDBC Leaked Connection in WebLogic</title>
-      <link>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
       <pubDate>Mon, 06 Jul 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
       <description>
         
           
@@ -5941,7 +5478,7 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;929&#34;
         height=&#34;132&#34;
-        src=&#34;http://localhost:1313/3373931575_16a47e0632_o_10117429165571155939.jpg&#34;
+        src=&#34;https://dennys.github.io/3373931575_16a47e0632_o_10117429165571155939.jpg&#34;
       
       
         title=&#34;jdbc_monitor&#34;
@@ -5964,10 +5501,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>如何對 Drupal 的 cron 做 Debug</title>
-      <link>http://localhost:1313/tw/doc/drupal/drupal-cron-debug/</link>
+      <link>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</link>
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/drupal/drupal-cron-debug/</guid>
+      <guid>https://dennys.github.io/tw/doc/drupal/drupal-cron-debug/</guid>
       <description>
         
           
@@ -5991,10 +5528,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>Command Line Deploy on NetWeaver</title>
-      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</link>
       <pubDate>Sun, 22 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</guid>
       <description>
         
           
@@ -6016,10 +5553,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>Command Line Deploy on WebLogic</title>
-      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</link>
       <pubDate>Sat, 21 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</guid>
       <description>
         
           
@@ -6042,10 +5579,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>抓某個區間的第一筆資料</title>
-      <link>http://localhost:1313/tw/doc/database/get-first-record-of-a-range-sql/</link>
+      <link>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</link>
       <pubDate>Fri, 06 May 2005 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/database/get-first-record-of-a-range-sql/</guid>
+      <guid>https://dennys.github.io/tw/doc/database/get-first-record-of-a-range-sql/</guid>
       <description>
         
           
@@ -6065,10 +5602,10 @@ ps: Vigor 的 hub 也有&lt;a href=&#34;http://www.draytek.co.uk/support/kb_vigo
     
     <item>
       <title>How to analyze size of table, index in Oracle</title>
-      <link>http://localhost:1313/tw/doc/database/how-to-analyze-size-of-table-index/</link>
+      <link>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</link>
       <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <guid>https://dennys.github.io/tw/doc/database/how-to-analyze-size-of-table-index/</guid>
       <description>
         
           

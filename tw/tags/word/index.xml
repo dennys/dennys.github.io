@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Word on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/word/</link>
+    <link>https://dennys.github.io/tw/tags/word/</link>
     <description>Recent content in Word on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/word/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/word/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何讓 Word 裡面的程式有 syntax highlighting (語法突顯)</title>
-      <link>http://localhost:1313/tw/doc/word/word-with-syntax-highlighting-code/</link>
+      <link>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/word/word-with-syntax-highlighting-code/</guid>
+      <guid>https://dennys.github.io/tw/doc/word/word-with-syntax-highlighting-code/</guid>
       <description>
         
           
@@ -35,7 +35,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/notepad/notepad_copy_all_format.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/notepad/notepad_copy_all_format.webp&#34;
       
       
     /&gt;
@@ -61,7 +61,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/word/word_code_result.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/word/word_code_result.webp&#34;
       
       
     /&gt;

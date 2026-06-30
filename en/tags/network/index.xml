@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/network/</link>
+    <link>https://dennys.github.io/en/tags/network/</link>
     <description>Recent content in Network on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Never Type Your Password Again: Automatic SSH Logins in Windows Terminal</title>
-      <link>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</link>
+      <link>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</link>
       <pubDate>Thu, 30 Jan 2025 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
+      <guid>https://dennys.github.io/en/doc/network/ssh-login-automatically-windows-terminal/</guid>
       <description>
         
           

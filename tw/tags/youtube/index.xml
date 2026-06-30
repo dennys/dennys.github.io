@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>YouTube on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/youtube/</link>
+    <link>https://dennys.github.io/tw/tags/youtube/</link>
     <description>Recent content in YouTube on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 10:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2022 10:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>YouTube 各種加強工具</title>
-      <link>http://localhost:1313/tw/doc/software/youtube-enhancer/</link>
+      <link>https://dennys.github.io/tw/doc/software/youtube-enhancer/</link>
       <pubDate>Wed, 31 Aug 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/youtube-enhancer/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/youtube-enhancer/</guid>
       <description>
         
           
@@ -125,10 +125,10 @@
     
     <item>
       <title>如何修改預設的 YouTube App (YouTube Vanced, NewPipe, ...)</title>
-      <link>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
@@ -168,7 +168,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link.zh-tw.webp&#34;
       
       
     /&gt;
@@ -196,7 +196,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link_disable.zh-tw.webp&#34;
       
       
     /&gt;
@@ -224,7 +224,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default1.zh-tw.webp&#34;
       
       
     /&gt;
@@ -252,7 +252,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/newpipe_set_default2.zh-tw.webp&#34;
       
       
     /&gt;
@@ -268,10 +268,10 @@
     
     <item>
       <title>如何下載 YouTube 私人影片 (使用 youtube-dl 或 ytl-dp)</title>
-      <link>http://localhost:1313/tw/doc/software/download-youtube-private-video/</link>
+      <link>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</link>
       <pubDate>Thu, 02 Jun 2022 10:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/software/download-youtube-private-video/</guid>
+      <guid>https://dennys.github.io/tw/doc/software/download-youtube-private-video/</guid>
       <description>
         
           

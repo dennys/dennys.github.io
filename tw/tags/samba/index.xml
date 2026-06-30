@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Samba on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/samba/</link>
+    <link>https://dennys.github.io/tw/tags/samba/</link>
     <description>Recent content in Samba on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/samba/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/samba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenWrt Router Samba</title>
-      <link>http://localhost:1313/tw/doc/router/openwrt-samba/</link>
+      <link>https://dennys.github.io/tw/doc/router/openwrt-samba/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/openwrt-samba/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/openwrt-samba/</guid>
       <description>
         
           

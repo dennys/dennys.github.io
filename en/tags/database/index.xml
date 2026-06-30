@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on Dennys Diary</title>
-    <link>http://localhost:1313/en/tags/database/</link>
+    <link>https://dennys.github.io/en/tags/database/</link>
     <description>Recent content in Database on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dennys.github.io/en/tags/database/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL to get 1st record of a range</title>
-      <link>http://localhost:1313/en/doc/database/get-first-record-of-a-range-sql/</link>
+      <link>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/doc/database/get-first-record-of-a-range-sql/</guid>
+      <guid>https://dennys.github.io/en/doc/database/get-first-record-of-a-range-sql/</guid>
       <description>
         
           
@@ -34,10 +34,10 @@
     
     <item>
       <title>How to analyze size of table, index in Oracle</title>
-      <link>http://localhost:1313/en/doc/database/how-to-analyze-size-of-table-index/</link>
+      <link>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</link>
       <pubDate>Thu, 05 May 2005 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/en/doc/database/how-to-analyze-size-of-table-index/</guid>
+      <guid>https://dennys.github.io/en/doc/database/how-to-analyze-size-of-table-index/</guid>
       <description>
         
           

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Edus on Dennys Diary</title>
-    <link>http://localhost:1313/tw/edu/</link>
+    <link>https://dennys.github.io/tw/edu/</link>
     <description>Recent content in Edus on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Jun 2026 18:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/edu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jun 2026 18:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/edu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>英文學習紀錄</title>
-      <link>http://localhost:1313/tw/edu/english/english-study-record/</link>
+      <link>https://dennys.github.io/tw/edu/english/english-study-record/</link>
       <pubDate>Sun, 28 Jun 2026 18:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/edu/english/english-study-record/</guid>
+      <guid>https://dennys.github.io/tw/edu/english/english-study-record/</guid>
       <description>
         
           
@@ -35,7 +35,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2023.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2023.webp&#34;
       
       
     /&gt;
@@ -60,7 +60,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2024.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2024.webp&#34;
       
       
     /&gt;
@@ -85,7 +85,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2025.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2025.webp&#34;
       
       
     /&gt;
@@ -110,7 +110,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_2026.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_2026.webp&#34;
       
       
     /&gt;
@@ -135,7 +135,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_reviews_20260628.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_reviews_20260628.webp&#34;
       
       
     /&gt;
@@ -160,7 +160,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/edu/english/anki_card_count_20260628.webp&#34;
+        src=&#34;https://dennys.github.io/images/edu/english/anki_card_count_20260628.webp&#34;
       
       
     /&gt;
@@ -176,10 +176,10 @@
     
     <item>
       <title>Kids A to Z 給家長看的報表</title>
-      <link>http://localhost:1313/tw/edu/kids_atoz/kids-a-z-parent-reports/</link>
+      <link>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</link>
       <pubDate>Thu, 29 Dec 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/edu/kids_atoz/kids-a-z-parent-reports/</guid>
+      <guid>https://dennys.github.io/tw/edu/kids_atoz/kids-a-z-parent-reports/</guid>
       <description>
         
           
@@ -192,7 +192,7 @@
 &lt;li&gt;看書的頻率&lt;/li&gt;
 &lt;li&gt;回答問題的正確率&lt;/li&gt;
 &lt;li&gt;等級的記錄, 如下圖
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/edu/Kids_AtoZ/Kids_AtoZ_Level_Progress.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/edu/Kids_AtoZ/Kids_AtoZ_Level_Progress.webp&#34; width=&#34;500&#34;&gt;
     &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -207,25 +207,25 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇右上角的 &lt;strong&gt;Parents&lt;/strong&gt; 連結
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_1.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_1.webp&#34; width=&#34;500&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇左邊的 &lt;strong&gt;Request Parent Access&lt;/strong&gt; (我是申請之後才來抓圖, 所以左邊馬賽克的地方是我已經註冊好的 email)
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_2.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_2.webp&#34; width=&#34;500&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;填好右邊的姓名還有 email, 然後按下 &lt;strong&gt;Request Access&lt;/strong&gt; (我是申請之後才來抓圖, 所以左邊馬賽克的地方是我已經註冊好的 email)
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_3.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_3.webp&#34; width=&#34;500&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;這時會收到一封信, 通知你申請程序已經完成, 現在要等老師核准
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_4.webp&#34; width=&#34;500&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/edu/Kids_AtoZ/Kids_AtoZ_Parent_Access_Request_4.webp&#34; width=&#34;500&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
           

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android 改機 on Dennys Diary</title>
-    <link>http://localhost:1313/tw/series/android-%E6%94%B9%E6%A9%9F/</link>
+    <link>https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/</link>
     <description>Recent content in Android 改機 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/android-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 22:18:32 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/android-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何更新 Unlock 過的 Pixel 5</title>
-      <link>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</link>
+      <link>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</link>
       <pubDate>Thu, 02 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/update-unlocked-pixel5/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/update-unlocked-pixel5/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@
     
     <item>
       <title>Android 11 如何不要驗證 Wi-Fi CA 憑證</title>
-      <link>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
+      <link>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/</guid>
       <description>
         
           
@@ -92,10 +92,10 @@
     
     <item>
       <title>Android 移除 Root 和 Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-remove-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-remove-root-magisk/</guid>
       <description>
         
           
@@ -106,7 +106,7 @@
   &lt;/div&gt;
 
 &lt;h2 id=&#34;需求&#34;&gt;需求&lt;/h2&gt;
-&lt;p&gt;在上次這篇 &lt;a href=&#34;http://localhost:1313/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
+&lt;p&gt;在上次這篇 &lt;a href=&#34;https://dennys.github.io/tw/doc/android/add-do-not-validate-android-11-peap-mschapv2-wifi/&#34;&gt;Android 11 如何不要驗證 Wi-Fi CA 憑證&lt;/a&gt; 有說明如何修改系統設定檔, 修改完後, 其實就不需要 Root 了, 因此可以 UnRoot. 方法如下:&lt;/p&gt;
 &lt;h3 id=&#34;方法-1&#34;&gt;方法 1&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -139,10 +139,10 @@
     
     <item>
       <title>Samsung Galaxy S7 Edge 刷 LineageOS</title>
-      <link>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
+      <link>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</link>
       <pubDate>Fri, 25 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/samsung-galaxy-s7-edge-lineageos/</guid>
       <description>
         
           
@@ -201,10 +201,10 @@
     
     <item>
       <title>Google Pixel 5 Root &amp; Magisk</title>
-      <link>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</link>
+      <link>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</link>
       <pubDate>Wed, 16 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/google-pixel-5-root-magisk/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/google-pixel-5-root-magisk/</guid>
       <description>
         
           
@@ -246,10 +246,10 @@
     
     <item>
       <title>如何還原 Android 12 的 Wi-Fi / 行動數據 快速開關 (免 Root)</title>
-      <link>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
+      <link>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</link>
       <pubDate>Fri, 28 Jan 2022 18:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/android-12-wifi-mobile-data-toggles/</guid>
       <description>
         
           
@@ -284,7 +284,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;300&#34;
         height=&#34;106&#34;
-        src=&#34;http://localhost:1313/old_1698246484852952014.png&#34;
+        src=&#34;https://dennys.github.io/old_1698246484852952014.png&#34;
       
       
     /&gt;
@@ -312,7 +312,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;400&#34;
         height=&#34;157&#34;
-        src=&#34;http://localhost:1313/internet_15842000385930727438.png&#34;
+        src=&#34;https://dennys.github.io/internet_15842000385930727438.png&#34;
       
       
     /&gt;
@@ -340,7 +340,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;400&#34;
         height=&#34;499&#34;
-        src=&#34;http://localhost:1313/internet2_1766533305285528634.png&#34;
+        src=&#34;https://dennys.github.io/internet2_1766533305285528634.png&#34;
       
       
     /&gt;
@@ -368,7 +368,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;713&#34;
         height=&#34;248&#34;
-        src=&#34;http://localhost:1313/internet3_17129319179048612052.jpg&#34;
+        src=&#34;https://dennys.github.io/internet3_17129319179048612052.jpg&#34;
       
       
     /&gt;
@@ -396,7 +396,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;698&#34;
         height=&#34;263&#34;
-        src=&#34;http://localhost:1313/image-10_13389724086430110577.png&#34;
+        src=&#34;https://dennys.github.io/image-10_13389724086430110577.png&#34;
       
       
     /&gt;
@@ -412,10 +412,10 @@
     
     <item>
       <title>HTC U Ultra 刷機</title>
-      <link>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</link>
+      <link>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</link>
       <pubDate>Thu, 30 Jan 2020 08:04:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/android/htc-u-ultra-root/</guid>
+      <guid>https://dennys.github.io/tw/doc/android/htc-u-ultra-root/</guid>
       <description>
         
           

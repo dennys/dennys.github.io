@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grafana-Prometheus on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/grafana-prometheus/</link>
+    <link>https://dennys.github.io/tw/tags/grafana-prometheus/</link>
     <description>Recent content in Grafana-Prometheus on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 08 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/grafana-prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/grafana-prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Prometheus Alertmanager Silence 暫時停止通知一段時間</title>
-      <link>http://localhost:1313/tw/doc/grafana/prometheus-alertmanager-silence/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</link>
       <pubDate>Fri, 08 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/prometheus-alertmanager-silence/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/prometheus-alertmanager-silence/</guid>
       <description>
         
           
@@ -44,7 +44,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts.webp&#34;
       
       
     /&gt;
@@ -72,7 +72,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts_silence1.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts_silence1.webp&#34;
       
       
     /&gt;
@@ -101,7 +101,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/alertmanager_alerts_silence2.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/alertmanager_alerts_silence2.webp&#34;
       
       
     /&gt;
@@ -117,10 +117,10 @@
     
     <item>
       <title>把 Grafana 的 Alert 訊息發到 LINE 群組</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-alert-line-notify/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-alert-line-notify/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-alert-line-notify/</guid>
       <description>
         
           
@@ -141,19 +141,19 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇 &lt;strong&gt;發行權杖&lt;/strong&gt;
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token1.webp&#34; width=&#34;300&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token1.webp&#34; width=&#34;300&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;選擇 你要接受訊息的聊天室
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token2.webp&#34; width=&#34;400&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token2.webp&#34; width=&#34;400&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;把權杖 token 存下來
-&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/software/grafana/line_token3.webp&#34; width=&#34;350&#34;&gt;
+&lt;figure&gt;&lt;img src=&#34;https://dennys.github.io/images/software/grafana/line_token3.webp&#34; width=&#34;350&#34;&gt;
     &lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -184,7 +184,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/grafana_line_config.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/grafana_line_config.webp&#34;
       
       
     /&gt;
@@ -213,7 +213,7 @@
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/grafana/grafana_line_msg_test.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/grafana/grafana_line_msg_test.webp&#34;
       
       
     /&gt;
@@ -229,10 +229,10 @@
     
     <item>
       <title>用 Prometheus 來監控 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</link>
+      <link>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</link>
       <pubDate>Wed, 06 Jul 2022 00:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/network/openvpn-server-prometheus/</guid>
+      <guid>https://dennys.github.io/tw/doc/network/openvpn-server-prometheus/</guid>
       <description>
         
           
@@ -288,10 +288,10 @@
     
     <item>
       <title>使用 PostgreSQL 當作 Grafana 的資料庫</title>
-      <link>http://localhost:1313/tw/doc/grafana/grafana-postgresql/</link>
+      <link>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</link>
       <pubDate>Wed, 06 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/grafana/grafana-postgresql/</guid>
+      <guid>https://dennys.github.io/tw/doc/grafana/grafana-postgresql/</guid>
       <description>
         
           

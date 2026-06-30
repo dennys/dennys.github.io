@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android Tips on Dennys Diary</title>
-    <link>http://localhost:1313/en/series/android-tips/</link>
+    <link>https://dennys.github.io/en/series/android-tips/</link>
     <description>Recent content in Android Tips on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/series/android-tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/en/series/android-tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Change Default YouTube App (YouTube Vanced, NewPipe, ...) in Android</title>
-      <link>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</link>
+      <link>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/en/doc/android/android-modify-default-youtube-app/</guid>
+      <guid>https://dennys.github.io/en/doc/android/android-modify-default-youtube-app/</guid>
       <description>
         
           
@@ -53,7 +53,7 @@ although you can install them, if you don&#39;t change the default YouTube App, 
       alt=&#34; &#34;
       
         class=&#34;image_figure image_internal image_unprocessed&#34;
-        src=&#34;http://localhost:1313/images/software/android/default_youtube/youtube_link.en.webp&#34;
+        src=&#34;https://dennys.github.io/images/software/android/default_youtube/youtube_link.en.webp&#34;
       
       
     /&gt;

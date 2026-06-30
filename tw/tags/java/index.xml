@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Dennys Diary</title>
-    <link>http://localhost:1313/tw/tags/java/</link>
+    <link>https://dennys.github.io/tw/tags/java/</link>
     <description>Recent content in Java on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Sep 2011 22:40:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maven 4 - Others</title>
-      <link>http://localhost:1313/tw/doc/java/maven-4-others/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-4-others/</link>
       <pubDate>Fri, 30 Sep 2011 22:40:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-4-others/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-4-others/</guid>
       <description>
         
           
@@ -48,10 +48,10 @@
     
     <item>
       <title>Maven 3 - 打包 EJB, EAR</title>
-      <link>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</link>
       <pubDate>Thu, 29 Sep 2011 10:37:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-3-ejb-ear/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-3-ejb-ear/</guid>
       <description>
         
           
@@ -96,10 +96,10 @@
     
     <item>
       <title>Maven 2 - 打包 war (含 applet)</title>
-      <link>http://localhost:1313/tw/doc/java/maven-2-war-applet/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</link>
       <pubDate>Wed, 28 Sep 2011 22:37:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-2-war-applet/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-2-war-applet/</guid>
       <description>
         
           
@@ -149,10 +149,10 @@
     
     <item>
       <title>Maven 1 - 打包 Jar, Applet 並簽名 Sign</title>
-      <link>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</link>
+      <link>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</link>
       <pubDate>Tue, 27 Sep 2011 20:49:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/maven-1-jar-applet-sign/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/maven-1-jar-applet-sign/</guid>
       <description>
         
           
@@ -213,10 +213,10 @@
     
     <item>
       <title>設定 WebLogic 的 memory 參數</title>
-      <link>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</link>
       <pubDate>Fri, 02 Apr 2010 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/weblogic-memory-parameter/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-memory-parameter/</guid>
       <description>
         
           
@@ -267,10 +267,10 @@
     
     <item>
       <title>WebLogic 和 NetWeaver 的 License</title>
-      <link>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</link>
+      <link>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</link>
       <pubDate>Sat, 08 Aug 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/weblogic-netweaver-license/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/weblogic-netweaver-license/</guid>
       <description>
         
           
@@ -297,10 +297,10 @@
     
     <item>
       <title>JDBC Leaked Connection in WebLogic</title>
-      <link>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</link>
       <pubDate>Mon, 06 Jul 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/jdbc-leaked-connection-in-weblogic/</guid>
       <description>
         
           
@@ -330,7 +330,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;929&#34;
         height=&#34;132&#34;
-        src=&#34;http://localhost:1313/3373931575_16a47e0632_o_10117429165571155939.jpg&#34;
+        src=&#34;https://dennys.github.io/3373931575_16a47e0632_o_10117429165571155939.jpg&#34;
       
       
         title=&#34;jdbc_monitor&#34;
@@ -353,10 +353,10 @@
     
     <item>
       <title>Command Line Deploy on NetWeaver</title>
-      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</link>
       <pubDate>Sun, 22 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-netweaver/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-netweaver/</guid>
       <description>
         
           
@@ -378,10 +378,10 @@
     
     <item>
       <title>Command Line Deploy on WebLogic</title>
-      <link>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</link>
+      <link>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</link>
       <pubDate>Sat, 21 Mar 2009 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/java/command-line-deploy-on-weblogic/</guid>
+      <guid>https://dennys.github.io/tw/doc/java/command-line-deploy-on-weblogic/</guid>
       <description>
         
           

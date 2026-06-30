@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asuswrt-Merlin 改機 on Dennys Diary</title>
-    <link>http://localhost:1313/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</link>
+    <link>https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/</link>
     <description>Recent content in Asuswrt-Merlin 改機 on Dennys Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://dennys.github.io/tw/series/asuswrt-merlin-%E6%94%B9%E6%A9%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asuswrt Merlin AdGuard Home - 針對 IP 擋某些服務</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home-block-ip-service/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@
     
     <item>
       <title>Asuswrt Merlin AdGuard Home (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-adguard-home/</guid>
       <description>
         
           
@@ -74,10 +74,10 @@
     
     <item>
       <title>在 Asuswrt-Merlin 使用 OpenVPN server</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</link>
       <pubDate>Wed, 01 Jun 2022 22:18:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-openvpn-server/</guid>
       <description>
         
           
@@ -119,10 +119,10 @@
     
     <item>
       <title>Asuswrt Merlin Diversion &#43; YouTube (分享器擋 YouTube 廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion-youtube/</guid>
       <description>
         
           
@@ -162,10 +162,10 @@
     
     <item>
       <title>Asuswrt Merlin FreshJR Adaptive QoS (流量管理)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-freshjr-adaptive-qos/</guid>
       <description>
         
           
@@ -210,7 +210,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;465&#34;
         height=&#34;193&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_4017759652474118919.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_4017759652474118919.png&#34;
       
       
     /&gt;
@@ -244,7 +244,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;790&#34;
         height=&#34;174&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_13300853250689698010.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_13300853250689698010.png&#34;
       
       
     /&gt;
@@ -274,7 +274,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;474&#34;
         height=&#34;133&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_3974293899304740460.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_3974293899304740460.png&#34;
       
       
     /&gt;
@@ -301,7 +301,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;438&#34;
         height=&#34;110&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_15191974654561182337.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_15191974654561182337.png&#34;
       
       
     /&gt;
@@ -334,7 +334,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;789&#34;
         height=&#34;299&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_5859030795245524685.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_5859030795245524685.png&#34;
       
       
     /&gt;
@@ -364,7 +364,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;479&#34;
         height=&#34;135&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_11522542528187301806.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_11522542528187301806.png&#34;
       
       
     /&gt;
@@ -391,7 +391,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;543&#34;
         height=&#34;337&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_2149974349091501244.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_2149974349091501244.png&#34;
       
       
     /&gt;
@@ -411,10 +411,10 @@
     
     <item>
       <title>Asuswrt Merlin Diversion (分享器擋廣告)</title>
-      <link>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</link>
+      <link>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/tw/doc/router/asuswrt-merlin-diversion/</guid>
+      <guid>https://dennys.github.io/tw/doc/router/asuswrt-merlin-diversion/</guid>
       <description>
         
           
@@ -452,7 +452,7 @@
         class=&#34;image_figure image_external image_processed&#34;
         width=&#34;768&#34;
         height=&#34;407&#34;
-        src=&#34;http://localhost:1313/pasted%20image%200_17655262974304489079.png&#34;
+        src=&#34;https://dennys.github.io/pasted%20image%200_17655262974304489079.png&#34;
       
       
     /&gt;
